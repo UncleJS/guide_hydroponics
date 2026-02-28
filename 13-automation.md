@@ -35,30 +35,34 @@ Automation and continuous data logging transform your system from reactive ("the
 
 Your system generates data 24 hours a day. With manual monitoring you capture two data points per day — a morning reading and maybe an evening check. That's 2 out of 1,440 minutes, or **0.14% observability**.
 
+```mermaid
+flowchart TD
+    subgraph manual["WHAT MANUAL MONITORING SEES"]
+        M1["📍 Morning check\n~08:00"]
+        M2["📍 Evening check\n~18:00"]
+        M1 -.->|"14 hours unobserved"| M2
+    end
+
+    subgraph actual["WHAT ACTUALLY HAPPENED — Reservoir Temp"]
+        T1["18°C\n00:00"]
+        T2["20°C\n06:00"]
+        T3["22°C\n10:00"]
+        T4["26°C — DANGER\n14:00"]
+        T5["22°C\n18:00"]
+        T6["18°C\n22:00"]
+        T1 --> T2 --> T3 --> T4 --> T5 --> T6
+    end
+
+    M1 -. "missed spike" .-> T4
+    M2 -. "missed spike" .-> T4
+
+    style T4 fill:#ff4444,color:#fff,stroke:#cc0000
+    style manual fill:#1a1a2e,stroke:#4a4a8a,color:#ccc
+    style actual fill:#1a2e1a,stroke:#4a8a4a,color:#ccc
 ```
-WHAT MANUAL MONITORING SEES:
-
-Time    00  02  04  06  08  10  12  14  16  18  20  22
-        ·   ·   ·   ·   ·   📍  ·   ·   ·   📍  ·   ·
-                              ↑                ↑
-                           morning          evening
-                           check             check
-
-WHAT ACTUALLY HAPPENED:
-
-Reservoir  ┌───────────────────────────────────────────────┐
-Temp (°C)  │                         ╱╲                    │
-    26 ─── │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─╱─ ─╲─ DANGER ─ ─ ─  │
-    24 ─── │                      ╱     ╲                  │
-    22 ─── │            ╱────────╱       ╲                 │
-    20 ─── │     ──────╱                   ╲───────        │
-    18 ─── │ ────╱                                 ╲────── │
-           └───────────────────────────────────────────────┘
-        00  02  04  06  08  10  12  14  16  18  20  22
 
 The dangerous 26°C spike at 2 PM was invisible to both manual checks.
 Continuous logging would have caught it AND alerted you.
-```
 
 ### 1.2 What Data Logging Gives You
 
@@ -86,24 +90,15 @@ Logging tells you what happened. Automation takes action:
 
 ## 2. Automation Tiers Overview
 
-```
-TIER 0                TIER 1                 TIER 2                 TIER 3                 TIER 4
-Manual only           Off-the-shelf          Single ESP32           Multi-node sensor      Automated
-                      smart devices          sensor node            network + dashboard    control
+```mermaid
+flowchart LR
+    T0["**Tier 0**\nManual only\n\nCost: $0\n─────────\nManual pH/EC pen\nManual temp check\nPaper logbook\n\nSkill: None"]
+    T1["**Tier 1**\nOff-the-shelf\nsmart devices\n\nCost: $15–$60\n─────────\nWiFi thermometer\nWiFi smart plug\nPhone alerts\nBasic timer\n\nSkill: None"]
+    T2["**Tier 2**\nSingle ESP32\nsensor node\n\nCost: $30–$80\n─────────\nContinuous temp\nContinuous humidity\nWater level sensor\nPump current monitor\nWiFi data upload\nSimple web UI\n\nSkill: Basic wiring,\nflash firmware"]
+    T3["**Tier 3**\nMulti-node sensor\nnetwork + dashboard\n\nCost: $80–$160\n─────────\nAll Tier 2 sensors\n+ pH probe (inline)\n+ EC probe (inline)\n+ light sensor (LDR)\nGrafana dashboard\nHistorical data\nTrend analysis\n\nSkill: Moderate\nelectronics, WiFi\nnetworking"]
+    T4["**Tier 4**\nAutomated\ncontrol\n\nCost: $150–$300\n─────────\nAll Tier 3 +\nAutomated pH dosing\nAutomated EC dosing\nSmart pump control\nTelegram/email alerts\nRelay-controlled\ndosing pumps\n\nSkill: Intermediate\nelectronics, plumbing\nfor dosing lines"]
 
-Cost: $0              Cost: $15–$60          Cost: $30–$80          Cost: $80–$160         Cost: $150–$300
-────────────────────────────────────────────────────────────────────────────────────────────────────────
-Manual pH/EC pen      WiFi thermometer       Continuous temp        All Tier 2 sensors     All Tier 3 +
-Manual temp check     WiFi smart plug        Continuous humidity    + pH probe (inline)    Automated pH dosing
-Paper logbook         Phone alerts           Water level sensor     + EC probe (inline)    Automated EC dosing
-                      Basic timer            Pump current monitor   + light sensor (LDR)   Smart pump control
-                                             WiFi data upload       Grafana dashboard      Telegram/email alerts
-                                             Simple web UI          Historical data        Relay-controlled
-                                                                    Trend analysis          dosing pumps
-
-Skill: None           Skill: None            Skill: Basic wiring,   Skill: Moderate        Skill: Intermediate
-                                             flash firmware         electronics, WiFi       electronics, plumbing
-                                                                    networking              for dosing lines
+    T0 --> T1 --> T2 --> T3 --> T4
 ```
 
 Each tier builds on the previous. You never have to skip ahead — start at Tier 1 and upgrade when you're ready.
@@ -331,24 +326,21 @@ Inline pH and EC probes are the most valuable automation sensors but also the mo
 
 **Placement for inline monitoring:**
 
-```
-INLINE SENSOR PLACEMENT
+```mermaid
+flowchart TD
+    RES["Reservoir"]
+    PUMP["PUMP"]
+    TCELL["T-junction / Sensor Cell\n(32 mm PVC T-piece with probe ports)"]
+    MAN["Manifold → channels"]
+    RET["Return from channels"]
 
-  [Reservoir]
-       │
-       │ ← PUMP
-       │
-       ▼
-  ┌──[T-junction]──────────────────────────────────────┐
-  │                                                     │
-  │  pH probe ─────┐                                    │
-  │  EC probe ─────┤  ← probes inserted into a         │
-  │  Temp probe ───┘    "sensor cell" (PVC T-piece      │
-  │                      with probe ports)               │
-  │                                                     │
-  └───────────────── to manifold → channels             │
-                                                        │
-  Return from channels ──────────────────────► Reservoir │
+    RES -->|"pumped flow"| PUMP --> TCELL
+    TCELL -->|"main flow"| MAN
+    MAN -.->|"drain return"| RET --> RES
+
+    PH["pH probe"] --> TCELL
+    EC["EC probe"] --> TCELL
+    TP["Temp probe"] --> TCELL
 ```
 
 **Building a simple sensor cell:**
@@ -362,20 +354,26 @@ INLINE SENSOR PLACEMENT
 
 A dashboard turns raw sensor data into visual charts, trend lines, and alerts. The recommended free stack:
 
-```
-DATA FLOW
+```mermaid
+flowchart LR
+    subgraph nodes["ESP32 nodes"]
+        S["Sensors\nread data\n(every 60s)"]
+    end
+    subgraph db["InfluxDB"]
+        I["Time-series\ndatabase"]
+    end
+    subgraph dash["Grafana"]
+        G["Dashboard\ncharts\nalerts"]
+    end
 
-  ESP32 nodes                  InfluxDB              Grafana
-  ┌──────────┐    HTTP POST    ┌──────────┐   query  ┌──────────┐
-  │ Sensors  │ ──────────────► │ Time-    │ ◄──────► │ Dashboard│
-  │ read     │   (every 60s)   │ series   │          │ charts   │
-  │ data     │                 │ database │          │ alerts   │
-  └──────────┘                 └──────────┘          └──────────┘
+    S -->|"HTTP POST"| I
+    I <-->|"query"| G
 
-  Options for running InfluxDB + Grafana:
-  A) Raspberry Pi (local, always on)         ← best for privacy, no internet needed
-  B) Old laptop / mini PC (local)            ← reuse existing hardware
-  C) Free cloud: InfluxDB Cloud + Grafana Cloud  ← zero hardware, free tier sufficient
+    subgraph options["Options for running InfluxDB + Grafana"]
+        A["A) Raspberry Pi\n(local, always on)\nbest for privacy"]
+        B["B) Old laptop / mini PC\n(local, reuse hardware)"]
+        C["C) InfluxDB Cloud\n+ Grafana Cloud\n(free tier, zero hardware)"]
+    end
 ```
 
 **Option C (free cloud) is recommended for beginners:**
@@ -385,49 +383,37 @@ DATA FLOW
 
 **What the dashboard shows:**
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  HYDROPONICS DASHBOARD                          Last updated: now   │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  CURRENT VALUES                                                     │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐           │
-│  │ Sol.Temp │  │ Air Temp │  │    pH    │  │    EC    │           │
-│  │  20.3°C  │  │  22.1°C  │  │   5.94   │  │  1.42    │           │
-│  │    ✅    │  │    ✅    │  │    ✅    │  │    ✅    │           │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────┘           │
-│                                                                     │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐                          │
-│  │ Humidity │  │  Water   │  │  Pump    │                          │
-│  │   68%    │  │  Level   │  │  Status  │                          │
-│  │    ✅    │  │   72%    │  │  RUNNING │                          │
-│  └──────────┘  └──────────┘  └──────────┘                          │
-│                                                                     │
-│  SOLUTION TEMPERATURE — Last 7 Days                                 │
-│  26 ──│─────────────────────────────────── DANGER ──────            │
-│  24 ──│─────────────────────────── ╱╲ ──────────────────            │
-│  22 ──│──────────────── ╱╲ ──────╱──╲───╱╲──────────────            │
-│  20 ──│── ╱╲ ────╱╲───╱──╲────╱────╲─╱──╲──── ╱╲ ─────            │
-│  18 ──│─╱──╲───╱──╲─╱────╲──╱──────╲╱────╲──╱──╲─────             │
-│  16 ──│╱────╲─╱────╲╱──────╲╱────────╲────╲╱────╲─────             │
-│       └──Mon──Tue──Wed──Thu──Fri──Sat──Sun──────────────             │
-│                                                                     │
-│  pH HISTORY — Last 7 Days                                           │
-│  7.0 ─│──────────────────────────────────── HIGH ──────             │
-│  6.5 ─│───────────────────────────────────────────────              │
-│  6.0 ─│── ─── ──── ──── ──── ──── ──── ──── ──── ─────             │
-│  5.5 ─│───────────────────────────────────────────────              │
-│  5.0 ─│──────────────────────────────────── LOW ───────             │
-│       └──Mon──Tue──Wed──Thu──Fri──Sat──Sun──────────────             │
-│                                                                     │
-│  RESERVOIR LEVEL — Last 7 Days                                      │
-│  100%─│▓▓▓▓                                                        │
-│   75%─│▓▓▓▓▓▓▓▓▓▓▓                                                │
-│   50%─│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                        │
-│   25%─│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ← topped up here               │
-│    0%─│───────────────────────────────────────────────              │
-│       └──Mon──Tue──Wed──Thu──Fri──Sat──Sun──────────────             │
-└─────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph dashboard["HYDROPONICS DASHBOARD — Last updated: now"]
+        subgraph current["CURRENT VALUES"]
+            ST["Sol. Temp\n20.3°C ✅"]
+            AT["Air Temp\n22.1°C ✅"]
+            PH["pH\n5.94 ✅"]
+            EC["EC\n1.42 ✅"]
+            HU["Humidity\n68% ✅"]
+            WL["Water Level\n72%"]
+            PS["Pump Status\nRUNNING"]
+        end
+
+        subgraph tempChart["SOLUTION TEMPERATURE — Last 7 Days"]
+            TC["Line chart: 16–26°C range\nMon→Sun · DANGER line at 26°C\nDaily peaks visible mid-week"]
+        end
+
+        subgraph phChart["pH HISTORY — Last 7 Days"]
+            PC["Line chart: 5.0–7.0 range\nMon→Sun · HIGH at 7.0 · LOW at 5.0\nStable ~6.0 throughout"]
+        end
+
+        subgraph levelChart["RESERVOIR LEVEL — Last 7 Days"]
+            LC["Bar chart: 0–100%\nMon→Sun · steady decline\nthen topped up mid-week"]
+        end
+    end
+
+    style ST fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style AT fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style PH fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style EC fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style HU fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
 ```
 
 ---
@@ -454,38 +440,32 @@ Tier 4 adds actuators — devices that take physical action based on sensor read
 
 This is the single highest-value automation you can add. pH drift is the most common daily intervention in hydroponics, and automating it saves daily effort while keeping pH tighter than manual dosing ever could.
 
-```
-AUTO pH DOSING — SYSTEM SCHEMATIC
+```mermaid
+flowchart TD
+    PROBE["pH Probe\n(in sensor cell)"]
+    ESP["ESP32\nDecision Logic"]
+    CHECK{"Is pH > 6.3?"}
+    RELAY["Activate Relay\n→ Peristaltic Pump\n(pH Down bottle)"]
+    DOSE["Dose 0.5 mL pH Down\ninto reservoir"]
+    WAIT["Wait 5 minutes\n(mixing time)"]
+    REREAD["Re-read pH"]
+    AGAIN{"Still > 6.3?"}
+    DOSEX["Dose again\n(up to 3× per cycle)"]
+    MONITOR["Return to monitoring"]
 
-  ┌──────────────────────────────────────────────────────────────┐
-  │                                                              │
-  │  pH Probe ────► ESP32 ────► Decision logic                   │
-  │  (in sensor       │         "Is pH > 6.3?"                   │
-  │   cell)            │              │                           │
-  │                    │             YES                          │
-  │                    │              │                           │
-  │                    │              ▼                           │
-  │                    │     Activate Relay → Peristaltic Pump    │
-  │                    │              │       (pH Down bottle)    │
-  │                    │              ▼                           │
-  │                    │     Dose 0.5 mL pH Down into reservoir  │
-  │                    │              │                           │
-  │                    │              ▼                           │
-  │                    │     Wait 5 minutes (mixing time)        │
-  │                    │              │                           │
-  │                    │              ▼                           │
-  │                    │     Re-read pH                          │
-  │                    │              │                           │
-  │                    │         Still > 6.3?                     │
-  │                    │          YES → dose again (up to 3×)    │
-  │                    │          NO  → return to monitoring     │
-  │                    │                                         │
-  │                    │     SAFETY:                              │
-  │                    │     Max 3 doses per cycle               │
-  │                    │     Max 10 doses per 24h                │
-  │                    │     If 10 reached → ALERT, stop dosing  │
-  │                    │     (something else is wrong)            │
-  └──────────────────────────────────────────────────────────────┘
+    SAFETY["SAFETY LIMITS\n───────────────\nMax 3 doses per cycle\nMax 10 doses per 24h\nIf 10 reached → ALERT + stop dosing\n(something else is wrong)"]
+
+    PROBE --> ESP --> CHECK
+    CHECK -->|YES| RELAY --> DOSE --> WAIT --> REREAD --> AGAIN
+    AGAIN -->|YES — up to 3×| DOSEX --> WAIT
+    AGAIN -->|NO| MONITOR
+    CHECK -->|NO| MONITOR
+
+    ESP -.-> SAFETY
+
+    style SAFETY fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
+    style RELAY fill:#1a1a3a,stroke:#4a4a8a,color:#aaaaff
+    style DOSE fill:#1a1a3a,stroke:#4a4a8a,color:#aaaaff
 ```
 
 **Peristaltic pump details:**
@@ -506,29 +486,31 @@ AUTO pH DOSING — SYSTEM SCHEMATIC
 
 EC dosing is more complex than pH because you're dosing two or three separate nutrient concentrates that must be added in the correct ratio and never mixed together in concentrated form.
 
-```
-AUTO EC DOSING — TWO-PUMP SYSTEM
+```mermaid
+flowchart TD
+    ECCA["Stock A: Calcium Nitrate solution\n(100 g/L in water)"]
+    ECCB["Stock B: MasterBlend + Epsom Salt\n(100 g MasterBlend + 50 g Epsom / L)"]
 
-  Stock A: Calcium Nitrate solution (100g/L in water)
-  Stock B: MasterBlend + Epsom Salt solution (100g MasterBlend + 50g Epsom / L)
+    ECR["EC Probe"] --> ESP["ESP32"]
+    ESP --> CHK{"Is EC < 1.0?"}
 
-  EC Probe ──► ESP32 ──► "Is EC < 1.0?"
-                              │
-                             YES
-                              │
-                              ▼
-                    Dose 5 mL Stock A  ──► Peristaltic Pump A
-                    Wait 30 seconds
-                    Dose 5 mL Stock B  ──► Peristaltic Pump B
-                    Wait 5 minutes (mixing)
-                    Re-read EC
-                    Still < 1.0? → dose again (max 5×)
-                    
-  SAFETY:
-  - NEVER run both pumps simultaneously (prevents mixing concentrates)
-  - Always dose A first, wait, then B
-  - Maximum doses per 24h: 20
-  - If limit reached → ALERT (possible leak or heavy consumption)
+    CHK -->|YES| DA["Dose 5 mL Stock A\n→ Peristaltic Pump A"]
+    DA --> WAIT1["Wait 30 seconds"]
+    WAIT1 --> DB["Dose 5 mL Stock B\n→ Peristaltic Pump B"]
+    DB --> WAIT2["Wait 5 minutes\n(mixing)"]
+    WAIT2 --> REREAD["Re-read EC"]
+    REREAD --> AGAIN{"Still < 1.0?"}
+    AGAIN -->|"YES (max 5×)"| DA
+    AGAIN -->|NO| MON["Return to monitoring"]
+    CHK -->|NO| MON
+
+    SAFETY["SAFETY\n───────────────\nNEVER run both pumps simultaneously\nAlways dose A first, wait, then B\nMax 20 doses per 24h\nIf limit reached → ALERT (leak or heavy consumption)"]
+
+    ESP -.-> SAFETY
+    ECCA -.-> DA
+    ECCB -.-> DB
+
+    style SAFETY fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
 **Stock solution preparation:**
@@ -610,41 +592,39 @@ DOSING SAFETY INTERLOCKS
 
 ### 9.2 ESP32 Pin Layout for Sensor Node
 
-```
-ESP32-WROOM-32 PIN ASSIGNMENTS
+```mermaid
+flowchart LR
+    subgraph esp["ESP32-WROOM-32 DevKit"]
+        PWR3["3V3"] -->|"3.3V supply"| S1["DS18B20 probes\n(solution + air temp)"]
+        PWR3 --> S2["DHT22\n(air humidity)"]
+        PWR3 --> S5["BH1750\n(light — I2C SDA/SCL)"]
 
-          ┌───────────────────────────────┐
-          │         ESP32 DevKit          │
-          │                               │
-  3.3V ──►│ 3V3                      VIN │◄── 5V USB power
-  GND  ──►│ GND                      GND │◄── Ground (shared)
-          │                               │
-          │ GPIO 4  ◄── DS18B20 OneWire   │  (solution + air temp, all on one pin)
-          │ GPIO 15 ◄── DHT22 data        │  (air humidity)
-          │ GPIO 16 ──► JSN-SR04T Trigger │  (water level)
-          │ GPIO 17 ◄── JSN-SR04T Echo    │  (water level)
-          │ GPIO 34 ◄── ACS712 analog out │  (pump current — input-only pin)
-          │ GPIO 35 ◄── pH sensor analog  │  (Tier 3)
-          │ GPIO 32 ◄── EC sensor analog  │  (Tier 3)
-          │ GPIO 33 ◄── Soil moisture     │  (Tier 3, Zone C)
-          │ GPIO 21 ──► I2C SDA           │  (BH1750 light, BME280 weather)
-          │ GPIO 22 ──► I2C SCL           │  (shared I2C bus)
-          │                               │
-          │ GPIO 25 ──► Relay 1 (pH pump) │  (Tier 4)
-          │ GPIO 26 ──► Relay 2 (EC-A)    │  (Tier 4)
-          │ GPIO 27 ──► Relay 3 (EC-B)    │  (Tier 4)
-          │ GPIO 14 ──► Relay 4 (fan)     │  (Tier 4)
-          │                               │
-          └───────────────────────────────┘
+        PWR5["5V"] -->|"5V supply"| S3["JSN-SR04T\n(water level)"]
+        PWR5 --> S4["ACS712\n(pump current)"]
+        PWR5 --> S6["DFRobot pH board"]
+        PWR5 --> S7["DFRobot EC board"]
 
-POWER:
-  USB 5V from a phone charger → ESP32 VIN
-  3.3V from ESP32 → sensors (DS18B20, DHT22, BH1750)
-  5V from separate supply → relay module, peristaltic pumps
-  
-IMPORTANT:
-  GPIO 34, 35, 36, 39 are INPUT-ONLY — use these for analog sensors
-  GPIO 6–11 are connected to flash memory — do NOT use
+        G4["GPIO 4"] -->|"OneWire"| S1
+        G15["GPIO 15"] -->|"data"| S2
+        G16["GPIO 16"] -->|"TRIG"| S3
+        G17["GPIO 17"] ---|"ECHO"| S3
+        G34["GPIO 34\n(input-only)"] ---|"analog out"| S4
+        G35["GPIO 35\n(input-only)"] ---|"pH analog"| S6
+        G32["GPIO 32"] ---|"EC analog"| S7
+        G33["GPIO 33"] ---|"soil moisture"| S8["Capacitive soil sensor\n(Tier 3, Zone C)"]
+        G21["GPIO 21"] -->|"I2C SDA"| S5
+        G22["GPIO 22"] -->|"I2C SCL"| S5
+
+        G25["GPIO 25"] -->|"Relay 1"| R1["pH pump\n(Tier 4)"]
+        G26["GPIO 26"] -->|"Relay 2"| R2["EC-A pump\n(Tier 4)"]
+        G27["GPIO 27"] -->|"Relay 3"| R3["EC-B pump\n(Tier 4)"]
+        G14["GPIO 14"] -->|"Relay 4"| R4["Cooling fan\n(Tier 4)"]
+
+        VIN["VIN"] ---|"5V USB power"| USB["USB phone charger"]
+    end
+
+    note["GPIO 34/35/36/39: INPUT-ONLY\nGPIO 6–11: flash memory — DO NOT USE"]
+    style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
 ### 9.3 Power Supply
@@ -682,86 +662,80 @@ For Tier 4 with relays and peristaltic pumps:
 
 ### 10.1 Tier 2 — Basic Sensor Node
 
-```
-WIRING — TIER 2 SENSOR NODE
+```mermaid
+flowchart TD
+    subgraph esp["ESP32 DevKit ← USB 5V charger"]
+        subgraph v33["3.3V rail"]
+            VCC33["3.3V ──┬── VCC DS18B20 probe\n         ├── VCC DS18B20 air\n         ├── VCC DHT22\n         └── VCC BH1750"]
+        end
+        subgraph v5["5V rail"]
+            VCC5["5V  ──┬── VCC JSN-SR04T\n        └── VCC ACS712"]
+        end
+        subgraph gnd["GND (shared)"]
+            GND["GND ──── all sensors"]
+        end
 
-                        ┌────────────────────────────────────────────┐
-    USB 5V charger ────►│ ESP32 DevKit                               │
-                        │                                            │
-                        │  3.3V ──┬──────── VCC DS18B20 (probe)      │
-                        │         ├──────── VCC DS18B20 (air)        │
-                        │         ├──────── VCC DHT22                │
-                        │         └──────── VCC BH1750               │
-                        │                                            │
-                        │  5V   ──┬──────── VCC JSN-SR04T            │
-                        │         └──────── VCC ACS712               │
-                        │                                            │
-                        │  GND  ──┬──────── GND (all sensors)        │
-                        │         └──────── GND (all sensors)        │
-                        │                                            │
-                        │  GPIO4 ─── DATA (both DS18B20 via OneWire) │
-                        │              │                              │
-                        │         4.7kΩ resistor between DATA & 3.3V │
-                        │              (pull-up — required for       │
-                        │               OneWire protocol)             │
-                        │                                            │
-                        │  GPIO15 ── DATA (DHT22)                    │
-                        │              │                              │
-                        │         10kΩ resistor between DATA & 3.3V  │
-                        │                                            │
-                        │  GPIO16 ── TRIG (JSN-SR04T)                │
-                        │  GPIO17 ── ECHO (JSN-SR04T)                │
-                        │                                            │
-                        │  GPIO34 ── OUT (ACS712)                    │
-                        │         ACS712 module in-line with pump    │
-                        │         power cable (pass pump wire        │
-                        │         through the sensor module)          │
-                        │                                            │
-                        │  GPIO21 ── SDA (BH1750)                    │
-                        │  GPIO22 ── SCL (BH1750)                    │
-                        │                                            │
-                        └────────────────────────────────────────────┘
+        G4["GPIO 4 ── DATA (both DS18B20 via OneWire)\n        4.7 kΩ pull-up to 3.3V required"]
+        G15["GPIO 15 ── DATA (DHT22)\n         10 kΩ pull-up to 3.3V"]
+        G16["GPIO 16 ── TRIG (JSN-SR04T)"]
+        G17["GPIO 17 ── ECHO (JSN-SR04T)"]
+        G34["GPIO 34 ── OUT (ACS712)\nACS712 in-line with pump power cable"]
+        G2122["GPIO 21 ── SDA (BH1750)\nGPIO 22 ── SCL (BH1750)"]
+    end
 
-DS18B20 WIRING DETAIL (OneWire bus with 2 probes):
-
-  3.3V ───┐
-          ├── 4.7kΩ ──┬── DATA pin (GPIO4)
-          │           │
-          │    ┌──────┤
-          │    │      │
-        [DS18B20    [DS18B20
-         probe]      air]
-          │           │
-  GND ────┴───────────┘
+    subgraph onewire["DS18B20 OneWire Bus (2 probes)"]
+        direction LR
+        OW33["3.3V"] -->|"4.7 kΩ"| OWDATA["DATA → GPIO 4"]
+        OWDATA --- P1["DS18B20 probe\n(solution)"]
+        OWDATA --- P2["DS18B20\n(air)"]
+        P1 & P2 --> OWGND["GND"]
+    end
 ```
 
 ### 10.2 Tier 4 — Adding Relay Module for Dosing
 
-```
-WIRING — TIER 4 ADDITIONS (relay + peristaltic pumps)
+```mermaid
+flowchart LR
+    subgraph esp["ESP32"]
+        G25["GPIO 25"]
+        G26["GPIO 26"]
+        G27["GPIO 27"]
+        G14["GPIO 14"]
+        ESPVCC["5V"]
+        ESPGND["GND"]
+    end
 
-  ESP32 GPIO25 ──► IN1 ┐
-  ESP32 GPIO26 ──► IN2 ├── 4-Channel Relay Module
-  ESP32 GPIO27 ──► IN3 │   (5V coil, optocoupled)
-  ESP32 GPIO14 ──► IN4 ┘
-  ESP32 5V     ──► VCC (relay module)
-  ESP32 GND    ──► GND (relay module)
+    subgraph relay["4-Channel Relay Module\n(5V coil, optocoupled)"]
+        IN1["IN1"]
+        IN2["IN2"]
+        IN3["IN3"]
+        IN4["IN4"]
+        RVCC["VCC"]
+        RGND["GND"]
+    end
 
-  Relay 1 (NO contact) ──► 12V to Peristaltic Pump 1 (pH Down)
-  Relay 2 (NO contact) ──► 12V to Peristaltic Pump 2 (Stock A)
-  Relay 3 (NO contact) ──► 12V to Peristaltic Pump 3 (Stock B)
-  Relay 4 (NO contact) ──► 12V to Cooling Fan
+    G25 --> IN1
+    G26 --> IN2
+    G27 --> IN3
+    G14 --> IN4
+    ESPVCC --> RVCC
+    ESPGND --> RGND
 
-  12V Power Supply ──► Common terminal on each relay (shared)
+    IN1 -->|"NO contact → 12V"| PP1["Peristaltic Pump 1\n(pH Down)"]
+    IN2 -->|"NO contact → 12V"| PP2["Peristaltic Pump 2\n(Stock A)"]
+    IN3 -->|"NO contact → 12V"| PP3["Peristaltic Pump 3\n(Stock B)"]
+    IN4 -->|"NO contact → 12V"| FAN["Cooling Fan"]
 
-  PERISTALTIC PUMP PLUMBING:
+    PSU["12V Power Supply"] -->|"Common terminal\n(all relays)"| relay
 
-  pH Down bottle ──► silicone tube ──► peristaltic pump ──► tube into reservoir
-  Stock A bottle ──► silicone tube ──► peristaltic pump ──► tube into reservoir
-  Stock B bottle ──► silicone tube ──► peristaltic pump ──► tube into reservoir
+    subgraph plumbing["Peristaltic Pump Plumbing"]
+        BOT1["pH Down bottle"] -->|"silicone tube"| PP1 -->|"tube"| RES1["Reservoir"]
+        BOT2["Stock A bottle"] -->|"silicone tube"| PP2 -->|"tube"| RES1
+        BOT3["Stock B bottle"] -->|"silicone tube"| PP3 -->|"tube"| RES1
+    end
 
-  Keep all stock bottles ABOVE the pump to prevent siphoning when pump is off.
-  Add a non-return valve on each line as extra protection.
+    note["Keep stock bottles ABOVE pump (prevent siphoning)\nAdd non-return valve on each line"]
+    style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
 ---
@@ -896,14 +870,10 @@ binary_sensor:
 
 If you don't use Home Assistant, the ESP32 can push data directly to InfluxDB Cloud via HTTP POST. With custom Arduino/PlatformIO firmware:
 
-```
-DATA FLOW (no Home Assistant)
-
-ESP32 ──► HTTP POST every 60s ──► InfluxDB Cloud (free tier)
-                                        │
-                                        ▼
-                                  Grafana Cloud (free tier)
-                                  queries InfluxDB for charts
+```mermaid
+flowchart LR
+    ESP["ESP32"] -->|"HTTP POST every 60s"| IDB["InfluxDB Cloud\n(free tier)"]
+    IDB -->|"query"| GRF["Grafana Cloud\n(free tier)\ncharts + dashboards"]
 ```
 
 The ESP32 sends an HTTP POST like:
@@ -1208,30 +1178,22 @@ The ESP32 and its wiring must be protected from rain, splash, and UV degradation
 
 **Recommended enclosure: IP65 junction box** (~$5–$10)
 
-```
-ENCLOSURE LAYOUT
+```mermaid
+flowchart TD
+    subgraph box["IP65 Junction Box — 150 mm × 100 mm × 70 mm"]
+        ESP["ESP32 DevKit\nmounted on standoffs or adhesive"]
+        CG["Cable glands on BOTTOM face\n(water drains away, never pools at entry)\n─────────────────────────\n• USB power cable in\n• Sensor cables out: DS18B20, DHT22, etc.\n• Relay cables out (Tier 4)"]
+        SG["Silica gel packet\n(absorbs residual moisture)"]
+        ESP --- CG
+        CG --- SG
+    end
 
-  ┌──────────────────────────────────────────────────────┐
-  │  IP65 JUNCTION BOX (150mm × 100mm × 70mm)            │
-  │                                                       │
-  │  ┌─────────────┐                                      │
-  │  │   ESP32      │  mounted on standoffs or adhesive   │
-  │  │   DevKit     │                                      │
-  │  └──────┬──────┘                                      │
-  │         │                                              │
-  │  Cable glands on bottom face for:                      │
-  │    • USB power cable in                                │
-  │    • Sensor cables out (DS18B20, DHT22, etc.)          │
-  │    • Relay cables out (Tier 4)                         │
-  │                                                        │
-  │  Silica gel packet inside (absorbs residual moisture)  │
-  │                                                        │
-  └──────────────────────────────────────────────────────┘
+    USB["USB power\n(5V charger)"] -->|"cable gland"| ESP
+    ESP -->|"sensor cables\n(route downward)"| SENSORS["DS18B20 probes\nDHT22\nJSN-SR04T\nACS712\netc."]
 
-  CABLE GLANDS:
-  Use PG7 or PG9 cable glands ($2 for a pack of 10)
-  Drill holes in the BOTTOM face of the box only (water drains away,
-  never pools on entry points)
+    note["Use PG7 or PG9 cable glands\nDrill holes in BOTTOM face only"]
+    style note fill:#1a2a1a,stroke:#4a8a4a,color:#aaffaa
+    style box fill:#1a1a2a,stroke:#4a4a8a,color:#ccccff
 ```
 
 **Placement:**
@@ -1383,6 +1345,26 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 - Keep all electronics in IP65 enclosures
 - Use stainless steel or gold-plated sensor probes (pH probes have glass tips specifically for this reason)
 - Inspect wiring connections every 2–3 months
+
+### Pitfall 7 — Sensor Reading Garbage
+
+**Problem:** A sensor returns obviously wrong values — pH reads -1 or 14, EC reads 0 despite nutrients being present, temperature reads -127°C, or the ultrasonic distance sensor reads its maximum range constantly. The dashboard shows nonsense data, and if automation is running, dosing pumps may react to phantom readings.
+
+**Diagnosis:**
+
+| Symptom | Likely Cause | Fix |
+|---------|-------------|-----|
+| **pH reads -1 or 14** | Probe disconnected, cable break, or BNC connector corroded | Check BNC connection is fully seated; inspect cable for breaks; clean connector pins with isopropyl alcohol; replace probe if glass tip is cracked or dry-stored without storage solution |
+| **pH reads fixed at 7.0 and never changes** | Probe dead (exhausted reference electrode) or signal wire shorted to ground | Try recalibrating with pH 4.0 and 7.0 buffers — if the probe cannot distinguish them, replace it. Typical probe lifespan: 12–18 months |
+| **EC reads 0 despite nutrient solution present** | Probe not submerged, probe plates corroded/fouled, or cable break | Clean probe plates with soft brush + vinegar; ensure probe is fully submerged; check cable continuity with a multimeter |
+| **EC reads extremely high (>10 mS/cm)** | Probe plates shorted (mineral deposit bridging them), or calibration lost | Clean probe plates thoroughly; recalibrate with standard solution; if persistent, replace probe |
+| **Temperature reads -127°C** | DS18B20 sensor disconnected or wiring fault (this is the DS18B20 error code) | Check the 3-wire connection (VCC, GND, Data); ensure 4.7 kΩ pull-up resistor is present on Data line; try a different GPIO pin; replace sensor if wiring is confirmed correct |
+| **Temperature reads +85°C constantly** | DS18B20 returning power-on reset value — not being read properly | Firmware is not completing the read cycle; check OneWire library initialisation; ensure adequate delay between requesting temperature and reading it (750 ms for 12-bit) |
+| **Ultrasonic reads max range (e.g., 400 cm)** | No echo received — sensor misaligned, obstructed, or wiring fault | Check sensor is pointing straight down at water surface; ensure no foam or turbulence; verify TRIG and ECHO wires are not swapped; test sensor outside the reservoir to confirm it works |
+| **Ultrasonic reads 0 or near-0** | Echo returning immediately — obstruction directly in front of sensor | Check for objects within 2 cm of sensor face; ensure mounting bracket is not reflecting the signal back |
+| **All sensors reading 0 or NaN simultaneously** | Power supply issue, I2C bus locked up, or ESP32 crash/reboot loop | Check 3.3V and 5V power rails with a multimeter; power-cycle the ESP32; check serial log for crash traces; if I2C, add `Wire.begin()` recovery in firmware |
+
+> **General rule:** If a sensor reads a physically impossible value, the problem is almost always **wiring, connectors, or a dead probe** — not your nutrient solution. Check the hardware before changing anything in your reservoir.
 
 ---
 

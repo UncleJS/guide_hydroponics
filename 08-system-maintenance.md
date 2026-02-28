@@ -17,9 +17,9 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
 
 ---
 
-## 2. Daily Tasks (5–15 minutes)
+## 2. Daily Tasks (10–20 minutes)
 
-### Morning Routine (~5–10 min)
+### Morning Routine (~10–15 min)
 
 ```
   DAILY MORNING CHECKLIST:
@@ -49,9 +49,11 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
   [ ] Note date and any observations in your logbook (see Section 7)
 ```
 
-### Evening Top-Up (~5 min, as needed)
+### Evening Top-Up (~5–10 min, as needed)
 
 On hot days, the reservoir can drop significantly through evaporation and plant transpiration.
+
+> **Realistic daily total:** In peak summer with all 3 zones active, expect 20–30 minutes total daily (morning check + evening top-up + any adjustments). In cool weather or with fewer plants, 10–15 minutes is typical. The times listed here are per-task minimums — add extra time when you spot issues that need investigation.
 
 ```
   TOP-UP PROTOCOL:
@@ -66,6 +68,16 @@ On hot days, the reservoir can drop significantly through evaporation and plant 
   5. Re-test EC and pH after top-up (adding water slightly dilutes the solution)
   6. If EC has dropped more than 0.3 mS/cm below target, a small nutrient addition
      may be needed — but this is unusual with daily top-up
+
+  WHICH WATER TO USE FOR TOP-UPS:
+  Use the same source water you used for the original reservoir fill.
+  - RO or rainwater (best): Adds no minerals, doesn't raise EC. pH adjust and add.
+  - Soft tap water (EC <0.3): Fine — minimal mineral addition per top-up.
+  - Hard tap water (EC >0.5): Each top-up adds calcium, magnesium, and
+    bicarbonates. Over 7–10 days of daily top-ups, this accumulates and
+    raises baseline EC. If using hard tap water, do full reservoir changes
+    more frequently (every 7 days) to prevent mineral buildup.
+  See Guide 03 for full water source analysis.
 ```
 
 ---
@@ -223,15 +235,20 @@ Same as above but with a more thorough approach — also check solution colour, 
 
 ---
 
-## 5. Monthly Tasks (2–3 hours)
+## 5. Periodic Deep Tasks (2–3 hours per session)
 
 ### Full Reservoir Drain and Clean
 
-Even with good water management, nutrient salts accumulate, organic matter builds up, and microbial populations shift over time. A full monthly clean resets the system.
+Even with good water management, nutrient salts accumulate, organic matter builds up, and microbial populations shift over time. A regular full drain and clean resets the system.
+
+**Frequency depends on reservoir size:**
+- **80L reservoir (this system):** Full change every **7–10 days** — our reservoir-to-plant ratio is tight (1.9L per site), so nutrient imbalance builds up faster. This aligns with Guide 02 and Guide 03 recommendations.
+- **120–200L reservoir:** Every 10–14 days is acceptable with daily EC/pH monitoring.
+- **200L+ reservoir:** Monthly changes are sufficient if EC and pH remain stable.
 
 ```
-  FULL MONTHLY RESERVOIR CHANGE:
-  (More frequent if using a small 80L reservoir — every 7–10 days is better)
+  FULL RESERVOIR CHANGE:
+  (For this 80L system: every 7–10 days. See frequency guide above.)
 
   1. Drain all nutrient solution from reservoir
      - Use pump or siphon hose to a bucket/drain

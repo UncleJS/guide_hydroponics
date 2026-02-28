@@ -416,7 +416,35 @@ It is possible to grow hydroponically with organic nutrient sources, though it i
 - **Molasses:** Feeds beneficial microbes, provides trace minerals
 - **Worm castings extract (worm tea):** Broad-spectrum nutrients + microbial inoculant
 
-> **Recommendation for beginners:** Start with Masterblend or GH Flora Series. Once you understand your system and crops, explore organic supplements as additives rather than replacing the mineral base.
+### Simple Organic Nutrient Recipe (Vegetative Stage)
+
+```
+  BASIC ORGANIC FORMULA (per 10L of water):
+
+  Fish hydrolysate (2-4-1 NPK):     5 ml/L  → 50 ml per 10L
+  Liquid seaweed extract (0-0-1):    2 ml/L  → 20 ml per 10L
+
+  Mix fish hydrolysate into water first, stir well, then add seaweed.
+  pH adjust to 5.8–6.2 with citric acid (down) or potassium bicarbonate (up).
+
+  NOTE: EC meters read LOWER with organics than the actual nutrient content —
+  organic molecules are partially non-ionic until broken down by microbes.
+  Target EC 1.0–1.2 on the meter (actual nutrient availability is higher).
+
+  Change solution every 5 days maximum — organic solutions degrade faster
+  than mineral salts and can develop anaerobic bacteria if left too long.
+```
+
+### Why Organic Is Harder in NFT Specifically
+
+Organic hydroponics works best in media-based systems (deep water culture, flood-and-drain with expanded clay) where beneficial microbes colonise surfaces. In NFT, the thin film of flowing solution creates specific challenges:
+
+- **Clogging:** Organic particles and biofilm accumulate in narrow NFT channels (especially the 75 mm channels in this system). Expect to flush channels weekly with plain water.
+- **Inconsistent EC:** Standard EC meters measure ionic conductivity — organic nutrients are partially non-ionic, so readings understate actual nutrient content. You must rely more on plant appearance than meter readings.
+- **Microbial balance:** The constant flow and thin film make it harder to establish a stable beneficial microbial community compared to a deep reservoir with media surfaces. Biofilm can go anaerobic in dead spots, producing hydrogen sulphide (rotten egg smell).
+- **Reservoir hygiene:** Organic reservoirs need aeration (air stone running 24/7) to keep the microbial population aerobic. Without aeration, pathogenic anaerobes outcompete beneficial microbes within days.
+
+> **Recommendation for beginners:** Start with Masterblend or GH Flora Series. Once you understand your system and crops, explore organic supplements as additives rather than replacing the mineral base. A practical middle ground is running mineral nutrients in NFT and reserving organic growing for Zone C (grow bags), where the soil-like media supports a healthy microbial ecosystem naturally.
 
 ---
 
@@ -424,34 +452,49 @@ It is possible to grow hydroponically with organic nutrient sources, though it i
 
 ### Reservoir Volume Needed
 
-```
-  MINIMUM RESERVOIR SIZE:
+This system is designed around an **80 L HDPE food-grade reservoir**. The maths below shows how we arrive at that number — it is not a compromise but the deliberate design choice for a home-scale NFT system with daily management.
 
-  Rule: Allow 10–15 litres per active plant site for stable chemistry.
+```
+  RESERVOIR SIZING — FROM THEORY TO PRACTICE:
+
+  TEXTBOOK RULE (commercial greenhouses):
+  Allow 10–15 litres per active plant site for maximum chemistry stability.
 
   Our system:
-  Zone A: 43 plant sites × 10L minimum = 430L (impractical for a home system)
+  Zone A: ~40 plant sites × 10L minimum = 400L (impractical for a home system)
   
-  PRACTICAL RULE: Reservoir = 5L per site minimum, plus 30% buffer
+  REDUCED RULE: 5L per site minimum + 30% buffer
+  ~40 sites × 5L = 200L — still large for a home setup.
+
+  HOME-SCALE DESIGN (this system):
+  An 80L reservoir is the designed capacity for this specific build.
+  It works well because:
+  - You check EC/pH daily and adjust (part of the daily 10–15 min routine)
+  - You do full solution changes every 7 days
+  - You ramp up plant density gradually (not all 40 sites from day one)
+  - Channels run at 1–2 L/min each — the 80L volume recirculates fully
+    every 20–40 minutes, keeping conditions uniform
+
+  The trade-off vs. a larger reservoir is more frequent monitoring —
+  but daily checks are already best practice for any home system.
   
-  43 sites × 5L = 215L — still large. In practice:
-  
-  For a 4-channel system (43 sites), 80–100L is workable IF:
-  - You check EC/pH daily and adjust
-  - You do full changes every 7 days
-  - You don't run all channels at max plant density simultaneously
-  
-  This system uses: 80L reservoir — adequate with diligent daily management.
+  This system uses: 80L reservoir — the designed capacity with daily management.
 ```
 
 ### Solution Volume per Full Mix (80L reservoir)
 
 ```
-  MASTERBLEND RECIPE FOR 80L FILL:
+  MASTERBLEND RECIPE FOR 80L FILL (standard vegetative mix):
 
   Calcium Nitrate:  0.6g/L × 80L = 48g
   MasterBlend:      0.6g/L × 80L = 48g
   Epsom Salt:       0.3g/L × 80L = 24g
+
+  Target EC: ~1.4–1.6 mS/cm (standard vegetative)
+
+  For a lower-EC seedling fill (EC ~1.0–1.4), use the 0.45g/L rate instead:
+  36g / 36g / 18g — see Guide 11 first fill instructions.
+  For higher-EC fruiting crops, use the dose scaling table above.
 
   Always weigh on a digital scale. Tablespoon/teaspoon estimation is inaccurate.
   

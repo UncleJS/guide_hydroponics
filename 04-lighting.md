@@ -132,6 +132,8 @@ These are the daily light requirements your plants need for optimal growth:
   - Winter growing outdoors: not viable without supplemental lighting
 ```
 
+> **Latitude matters:** The table above is calibrated for **50–55°N latitude** (UK, northern Europe, southern Canada). If you are at a **lower latitude** (30–45°N — southern US, Mediterranean, Japan), expect higher DLI year-round and a longer viable outdoor season. If you are at a **higher latitude** (55–65°N — Scandinavia, northern Canada), expect more extreme seasonal swings — very long summer days but significantly less winter light. Adjust your planting calendar and supplemental lighting plans accordingly.
+
 ---
 
 ## 3. Minimum Sun Hours Per Crop
@@ -358,7 +360,87 @@ If you want to extend your growing season beyond September outdoors, supplementa
 ### Target PPFD for Supplemental Lighting
 
 - Lettuce/herbs: 200–400 μmol/m²/s at canopy level
+- Fruiting crops (tomatoes/peppers): 400–600 μmol/m²/s at canopy level
 - 16–18 hours of light per day total (natural + supplemental combined)
+
+### Wattage & Hanging Height Per Channel
+
+```
+  SIZING SUPPLEMENTAL LIGHT FOR A 2.4 m NFT CHANNEL:
+
+  Each channel is 2.4 m long × ~0.1 m wide = ~0.24 m² canopy area.
+  In practice, plant canopy spreads to ~0.3 m wide → ~0.72 m² effective area.
+
+  TARGET: 200–400 μmol/m²/s (PPFD) for lettuce/herbs
+
+  LED quantum board (typical efficacy: 2.5 μmol/J):
+    To deliver 300 μmol/m²/s over 0.72 m²:
+    Power needed = (300 × 0.72) / 2.5 ≈ 86 W
+    → A single 100 W LED quantum board covers one channel comfortably.
+    → Two channels side-by-side: one 200 W board, or two 100 W boards.
+
+  T5 fluorescent (typical efficacy: 1.5 μmol/J):
+    Same target: (300 × 0.72) / 1.5 ≈ 144 W
+    → A 4-tube T5 fixture (4 × 54 W = 216 W) covers one channel with margin.
+    → Less efficient than LED but cheaper upfront.
+
+  HANGING HEIGHTS (measured from canopy top, not from channel):
+  ─────────────────────────────────────────────────────────────
+  Light type         Recommended height    Notes
+  LED quantum board  30–45 cm              Closer = more intense, smaller footprint
+  T5 fluorescent     15–25 cm              Low heat — can hang close
+  LED grow strips    10–15 cm              Very close; good for microgreens shelves
+  CMH 315 W          60–90 cm              High heat — needs ventilation clearance
+```
+
+### Photoperiod Recommendations
+
+```
+  COMBINING NATURAL + SUPPLEMENTAL LIGHT:
+
+  Lettuce/herbs need 14–18 hours total light, target DLI ≥ 15 mol/m²/day.
+
+  EXAMPLE — NOVEMBER (50–55°N):
+    Natural daylight: ~8.5 hours, overcast DLI: 3–6 mol/m²/day
+    Shortfall: need ~10–12 mol/m²/day from supplemental light
+
+    A 100 W LED quantum board at 300 μmol/m²/s over 0.72 m²:
+    DLI contribution = 300 × 3600 × hours / 1,000,000
+    At 10 hours supplemental: 300 × 36,000 / 1,000,000 = 10.8 mol/m²/day ✓
+
+    Schedule: lights on at 06:00, off at 22:00 (16 hours total).
+    If some natural light enters during the day, reduce artificial hours accordingly.
+    Use a timer — never rely on manually switching lights.
+
+  FRUITING CROPS (tomatoes, peppers):
+    Not recommended for supplemental growing — the wattage and heat required
+    make it uneconomical for a budget system. Focus supplemental lighting on
+    lettuce, herbs, and microgreens only.
+```
+
+### Cost-Benefit Summary
+
+```
+  IS SUPPLEMENTAL LIGHTING WORTH IT?
+
+  FOR LETTUCE/HERBS (YES — if you have a sheltered spot):
+    One 100 W LED board: ~$80–$120
+    Electricity: 100 W × 10 h/day × 90 days (Oct–Dec) = 90 kWh ≈ $15–$25
+    Extends harvest by 2–3 months → ~5–8 kg extra lettuce/herbs
+    Retail value of extended harvest: $50–$100
+    → Pays for itself in Season 1 if you value fresh winter greens.
+
+  FOR MICROGREENS (YES — excellent ROI):
+    LED grow strips: $20–$60
+    Electricity: negligible (10–30 W)
+    Enables year-round microgreens production indoors.
+    → Pays for itself in 2–4 weeks of production.
+
+  FOR FRUITING CROPS (NO — not cost-effective):
+    Would need 200+ W per channel, plus heating.
+    Electricity cost exceeds the value of the produce.
+    → Grow fruiting crops in their natural season (May–September) only.
+```
 
 > **Budget consideration:** For a $100–$500 budget system, supplemental lighting is an optional upgrade. Focus on getting the outdoor system working perfectly first.
 

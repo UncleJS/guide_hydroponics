@@ -31,46 +31,47 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 Before building, confirm the full system you are constructing:
 
-```
-TOP-DOWN OVERVIEW — Full 3-Zone System
-
-┌──────────────────────────────────────────────────────────────────┐
-│                         ZONE A — NFT SYSTEM                       │
-│                                                                    │
-│  ┌───────────────── Channel 1 (75mm) ──────────────────────────┐  │
-│  │  L  L  L  L  L  L  L  L  L  L  L  │ (Lettuce × 11)        │  │
-│  └──────────────────────────────── ► drain ──────────────────┘  │
-│  ┌───────────────── Channel 2 (75mm) ──────────────────────────┐  │
-│  │  S  S  S  S  S  S  S  S  S  S  S  │ (Spinach/Kale × 11)   │  │
-│  └──────────────────────────────── ► drain ──────────────────┘  │
-│  ┌───────────────── Channel 3 (75mm) ──────────────────────────┐  │
-│  │  H  H  H  H  H  H  H  H  H  H  H  │ (Herbs × 11)          │  │
-│  └──────────────────────────────── ► drain ──────────────────┘  │
-│  ┌───────────────── Channel 4 (100mm) ─────────────────────────┐  │
-│  │  T  T  T  T  T  P  P  P  St St    │ (Tom/Pep/Straw × 10)  │  │
-│  └──────────────────────────────── ► drain ──────────────────┘  │
-│                                          │                        │
-│            ┌─────[RESERVOIR 80L]────────┘                        │
-│            │     [PUMP inside]                                    │
-│            └──── supply manifold ──→ all channels (inlets)        │
-│                                                                    │
-├──────────────────────────────────────────────────────────────────┤
-│              ZONE B — MICROGREENS STATION                         │
-│  [shelf] [tray] [tray] [tray] [LED panel above]                   │
-├──────────────────────────────────────────────────────────────────┤
-│              ZONE C — ROOT VEG GROW BAGS                          │
-│  [bag] [bag] [bag] [bag] [bag] [bag]                              │
-└──────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph ZA["ZONE A — NFT SYSTEM"]
+        direction TB
+        CH1["Channel 1 — 75mm\nL L L L L L L L L L L\nLettuce × 11"]
+        CH2["Channel 2 — 75mm\nH H H H H H H H H H H\nHerbs × 11"]
+        CH3["Channel 3 — 75mm\nS S S S S S S S S S S\nSpinach/Kale × 11"]
+        CH4["Channel 4 — 100mm\nT T T P P St St\nTom/Pep/Straw × 7"]
+        RES["RESERVOIR 80L\nPUMP inside"]
+        MAN["Supply Manifold"]
+        CH1 -->|drain| DH1(( ))
+        CH2 -->|drain| DH2(( ))
+        CH3 -->|drain| DH3(( ))
+        CH4 -->|drain| DH4(( ))
+        DH1 & DH2 & DH3 & DH4 --> RES
+        RES --> MAN
+        MAN -->|inlet| CH1
+        MAN -->|inlet| CH2
+        MAN -->|inlet| CH3
+        MAN -->|inlet| CH4
+    end
+    subgraph ZB["ZONE B — MICROGREENS STATION"]
+        direction LR
+        SHELF["shelf"] --- T1["tray"] --- T2["tray"] --- T3["tray"] --- LED["LED panel above"]
+    end
+    subgraph ZC["ZONE C — ROOT VEG GROW BAGS"]
+        direction LR
+        B1["bag"] --- B2["bag"] --- B3["bag"] --- B4["bag"] --- B5["bag"] --- B6["bag"]
+    end
+    ZA --> ZB
+    ZB --> ZC
 ```
 
 **System specifications:**
 - 4 NFT channels: 3 × 75 mm square PVC + 1 × 100 mm square PVC
 - Channel length: 2.4 m each
-- Slope: 1:30 (40 mm drop over 2.4 m → ~33 mm from high to low end)
+- Slope: 1:30 (80 mm drop over 2.4 m)
 - Reservoir: 80 L HDPE food-grade bin or container
 - Pump: 600–800 L/h submersible
 - Flow per channel: 1–2 L/min (via adjustable manifold valves)
-- ~43 plant sites in Zone A
+- ~40 plant sites in Zone A
 
 ---
 
@@ -171,43 +172,47 @@ If North–South is not possible due to site constraints, East–West is accepta
 
 **Supply manifold end should be at the HIGH end** (inlet at top, drain at bottom, water flows downhill). Orient so the low/drain end is closest to where the reservoir will sit, minimising return pipe length.
 
-```
-OPTIMAL ORIENTATION (top-down)
-
-          NORTH
-            ↑
-            │
-  ←West     │     East→
-            │
-         [FRAME]
-   ════════════════════  Channel 1
-   ════════════════════  Channel 2   ← channels run N-S
-   ════════════════════  Channel 3
-   ════════════════════  Channel 4
-          [INLET END — HIGH]
-                ↓ slope
-          [DRAIN END — LOW]
-          [RESERVOIR sits here or to south]
-            │
-          SOUTH
-
-Prevailing wind: from West
-→ Position windbreak to the West side of the frame
+```mermaid
+flowchart TD
+    subgraph compass["OPTIMAL ORIENTATION — top-down"]
+        direction TB
+        N["↑ NORTH"]
+        W["← West"]
+        E["East →"]
+        S["SOUTH ↓"]
+        FRAME["[ FRAME ]"]
+        CH1["════════════════════  Channel 1"]
+        CH2["════════════════════  Channel 2  ← channels run N–S"]
+        CH3["════════════════════  Channel 3"]
+        CH4["════════════════════  Channel 4"]
+        INLET["INLET END — HIGH"]
+        DRAIN["DRAIN END — LOW"]
+        RES["RESERVOIR sits here\nor to south"]
+        WIND["Prevailing wind: from West\n→ Position windbreak to West side"]
+    end
+    N --> FRAME
+    FRAME --> CH1 --> CH2 --> CH3 --> CH4
+    CH4 --> INLET
+    INLET -->|"↓ slope"| DRAIN
+    DRAIN --> RES
+    RES --> S
+    W -.- FRAME
+    E -.- FRAME
+    WIND -.- W
 ```
 
 ### 4.3 Marking Out the Footprint
 
 Mark out the exact footprint of the frame on the ground before building:
 
-```
-ZONE A FOOTPRINT (typical)
-
-┌──────────── 1.6 m wide ────────────┐
-│                                    │ ← 2.4 m long
-│  ch1   ch2   ch3   ch4             │
-│                                    │
-└────────────────────────────────────┘
- + 30 cm each side for frame uprights and access = ~2.2 m wide total
+```mermaid
+block-beta
+    columns 1
+    block:footprint["ZONE A FOOTPRINT (typical)"]
+        columns 4
+        ch1["ch1"] ch2["ch2"] ch3["ch3"] ch4["ch4"]
+    end
+    note["1.6 m wide × 2.4 m long\n+30 cm each side for frame uprights and access = ~2.2 m wide total"]
 ```
 
 Mark corners with pegs or chalk. This avoids building the frame and discovering it doesn't fit.
@@ -222,23 +227,16 @@ The frame supports the channels at the correct height and slope. Two design opti
 
 An elevated bench frame raises channels to a comfortable working height (~90 cm), with adjustable leg heights to create the slope.
 
-```
-ELEVATED BENCH FRAME (front elevation)
-
-  ┌──────────────────────────────────────┐
-  │  CHANNEL RAILS  (2× timber rails)   │  ← channels rest on these
-  └──────────────────────────────────────┘
-  │            │            │            │
-  │            │            │            │
-  │     ↕ 90cm (high end)               │ ↕ ~57mm shorter (low end, 1:30 slope)
-  │                                     │
- leg           leg          leg         leg
-  │             │            │           │
-─────────────────────────────────────────────── (ground)
-
-Legs: 45mm × 45mm PAR timber (smooth)
-Rails: 75mm × 25mm timber, 2 rails per frame, run the full 2.4m length
-Cross-braces: 45mm × 45mm, at 600mm intervals for stability
+```mermaid
+block-beta
+    columns 4
+    block:rails["CHANNEL RAILS\n2× timber rails\nchannels rest on these"]:4
+    end
+    space:4
+    LEG1["leg\n↕ 90 cm\nhigh end"] space:2 LEG4["leg\n↕ 82 cm\nlow end\n1:30 slope"]
+    space:4
+    ground["─────────────────── ground ───────────────────"]:4
+    note["Legs: 45×45 mm PAR timber\nRails: 75×25 mm timber, full 2.4 m length\nCross-braces: 45×45 mm at 600 mm intervals"]
 ```
 
 **Timber cut list (Zone A bench):**
@@ -246,7 +244,7 @@ Cross-braces: 45mm × 45mm, at 600mm intervals for stability
 | Piece | Qty | Dimension | Length | Notes |
 |---|---|---|---|---|
 | Leg, high end | 2 | 45×45 mm PAR | 900 mm | Vertical |
-| Leg, low end | 2 | 45×45 mm PAR | 843 mm | 900 – 57 mm = 843 mm (1:30 slope) |
+| Leg, low end | 2 | 45×45 mm PAR | 820 mm | 900 – 80 mm = 820 mm (1:30 slope) |
 | Channel rail (long) | 2 | 75×25 mm | 2,400 mm | Runs full channel length |
 | Cross-brace (top) | 3 | 45×45 mm | 1,400 mm | Connects the two rails |
 | Cross-brace (lower) | 3 | 45×45 mm | 1,400 mm | Stabilises legs mid-height |
@@ -273,28 +271,30 @@ SLOPE CALCULATION
   Difference:   80 mm
 ```
 
-**Important:** The slope is achieved by cutting the low-end legs shorter — the channel rails are horizontal on the frame, but the frame itself sits at an angle. Double-check slope with a spirit level + ruler before drilling anything into the frame permanently.
+> **Important:** The slope is achieved by cutting the low-end legs shorter — the channel rails are horizontal on the frame, but the frame itself sits at an angle. Double-check slope with a spirit level + ruler before drilling anything into the frame permanently.
 
 ### 5.2 Frame Option B — A-Frame (Compact)
 
 An A-frame creates a triangular structure where channels are mounted on both sloping sides. This uses less footprint and allows more channels in less space.
 
+```mermaid
+flowchart TD
+    APEX["apex"]
+    subgraph aframe["A-FRAME — end elevation"]
+        direction TB
+        LEFTLEG["╱ left\n  face"]
+        RIGHTLEG["╲ right\n     face"]
+        BRACE["│ frame\n  cross\n  brace │"]
+    end
+    APEX --- LEFTLEG
+    APEX --- RIGHTLEG
+    LEFTLEG --- GND["────────── ground ──────────"]
+    RIGHTLEG --- GND
+    BRACE --- GND
+    note1["Channels mount on each angled face\n→ Natural slope created by the incline\n→ Typically 30–40° angle → 1:1.2 slope (too steep for NFT!)"]
 ```
-A-FRAME (end elevation)
-           ┌─────────┐
-          ╱│         │╲
-         ╱ │         │ ╲
-        ╱  │  frame  │  ╲
-       ╱   │  cross  │   ╲
-      ╱    │  brace  │    ╲
-─────╱─────┼─────────┼─────╲──── (ground)
 
-Channels mount on each angled face
-→ Natural slope created by the incline
-→ Typically 30–40° angle → 1:1.2 slope (too steep for NFT!)
-```
-
-**Caution with A-frames:** The natural slope of a typical A-frame is far too steep for NFT (you want 1:30 to 1:40; an A-frame gives you something closer to 1:1). To use an A-frame for NFT, you must mount horizontal shelf boards at the correct offset and attach the channels to those boards — it becomes complicated. The elevated bench is much simpler for NFT.
+> **Caution:** The natural slope of a typical A-frame is far too steep for NFT (you want 1:30 to 1:40; an A-frame gives you something closer to 1:1). To use an A-frame for NFT, you must mount horizontal shelf boards at the correct offset and attach the channels to those boards — it becomes complicated. The elevated bench is much simpler for NFT.
 
 **A-frame is better suited to:** Ebb-and-flow or kratky systems, not NFT.
 
@@ -325,21 +325,14 @@ Channels mount on each angled face
 
 Net pot holes are drilled along the top face of each channel at regular spacing.
 
-```
-NET POT HOLE LAYOUT (top view of channel)
-
-High end                                            Low end
-   │────200mm─────200mm─────200mm─────200mm──...──│
-   │    ○         ○         ○         ○           │
-   │    first   second    third     fourth  ...    │
-   │    hole     hole      hole      hole          │
-   │                                               │
-   │←─50mm→│                               │←50mm─┘
-   (edge buffer — no holes in first/last 50mm)
-
-For 11 holes in 2,400mm channel:
-  Usable length: 2,400 - 100 (edge buffer) = 2,300mm
-  Spacing: 2,300 ÷ 10 = 230mm centre-to-centre
+```mermaid
+block-beta
+    columns 11
+    block:channel["NET POT HOLE LAYOUT — top view of channel"]:11
+        columns 11
+        buf1["←50mm\nedge\nbuffer"] H1["○\nhole 1"] sp1["←200mm→"] H2["○\nhole 2"] sp2["←200mm→"] H3["○\nhole 3"] sp3["←200mm→"] H4["○\nhole 4"] dots["..."] HN["○\nhole 11"] buf2["50mm→\nedge\nbuffer"]
+    end
+    calc["For 11 holes in 2,400 mm channel:\nUsable length: 2,400 − 100 (edge buffer) = 2,300 mm\nSpacing: 2,300 ÷ 10 = 230 mm centre-to-centre"]
 ```
 
 **Hole size:**
@@ -368,18 +361,20 @@ For 11 holes in 2,400mm channel:
 - Fit a short 25 mm section of pipe as the drain stub.
 - All NFT drain stubs collect into a shared drain pipe (see Step 5 — Plumbing).
 
-```
-CHANNEL CROSS-SECTION (end view at inlet cap)
-
-     ┌────────────────────┐
-     │                    │  ← 75mm × 75mm square channel
-     │      ○             │  ← 50mm net pot sitting in hole (top face)
-     │   [net pot]        │
-  ───┤                    ├─── ← top face
-     │    ~~film~~        │  ← nutrient solution film (1–3mm deep)
-     └──────┬─────────────┘
-            │ ← supply inlet (high end)
-            ▼ supply tube from pump manifold
+```mermaid
+block-beta
+    columns 1
+    CHANNEL["75 mm × 75 mm square channel"]:1
+    block:cross["CHANNEL CROSS-SECTION — end view at inlet cap"]:1
+        columns 3
+        space
+        NETPOT["○ 50 mm net pot\nsitting in hole\n(top face)"]
+        space
+        space
+        FILM["~~ nutrient solution film ~~\n1–3 mm deep"]
+        space
+    end
+    INLET["↑ supply inlet (high end)\n▲ supply tube from pump manifold"]
 ```
 
 ### 6.5 Spray Bar (Optional Alternative to Direct Feed)
@@ -451,27 +446,20 @@ For most DIY builds, the top-fill return is simpler and provides better oxygenat
 
 The plumbing system routes water from the reservoir pump up to the channels and back again in a continuous loop.
 
-```
-PLUMBING SCHEMATIC (side view)
-
-    [pump inside reservoir]
-            │
-            │ 20mm supply pipe (rising)
-            │
-    ┌───────┴──────────┐
-    │   MANIFOLD       │ ← distribution header pipe with valves
-    └┬──────┬────┬────┬┘
-     │      │    │    │
-   ch1    ch2  ch3  ch4   ← 12mm supply tubes, one per channel (high end)
-     │      │    │    │
-     ▼      ▼    ▼    ▼   ← water flows downhill through channels
-   [drain][drain][drain][drain]  ← drain fittings at low end of each channel
-     │      │    │    │
-     └──────┴────┴────┘
-            │
-     ─────drain header (25mm pipe)────────►
-            │
-    [return into reservoir]
+```mermaid
+flowchart TD
+    PUMP["pump inside reservoir"]
+    PUMP -->|"20 mm supply pipe rising"| MAN["MANIFOLD\ndistribution header pipe with valves"]
+    MAN -->|"12 mm supply tube"| CH1["ch1\nhigh end inlet"]
+    MAN -->|"12 mm supply tube"| CH2["ch2\nhigh end inlet"]
+    MAN -->|"12 mm supply tube"| CH3["ch3\nhigh end inlet"]
+    MAN -->|"12 mm supply tube"| CH4["ch4\nhigh end inlet"]
+    CH1 -->|"water flows downhill"| D1["drain\nlow end"]
+    CH2 -->|"water flows downhill"| D2["drain\nlow end"]
+    CH3 -->|"water flows downhill"| D3["drain\nlow end"]
+    CH4 -->|"water flows downhill"| D4["drain\nlow end"]
+    D1 & D2 & D3 & D4 -->|"drain header 25 mm pipe"| RET["return into reservoir"]
+    RET --> PUMP
 ```
 
 ### 8.2 Building the Supply Manifold
@@ -485,17 +473,13 @@ The manifold is a short header pipe that distributes pump output to each channel
 - 1× 20 mm × 32 mm reducer (connects pump output to manifold)
 - End cap for manifold pipe (one end is the inlet from pump, other end is capped)
 
-```
-MANIFOLD DETAIL (top view)
-
-Pump output (20mm) →  [32mm manifold pipe]
-                              │
-              ┌───────┬───────┬───────┬───────┐
-              │       │       │       │       │
-           [valve] [valve] [valve] [valve]
-              │       │       │       │
-           to ch1  to ch2  to ch3  to ch4
-          (12mm)  (12mm)  (12mm)  (12mm)
+```mermaid
+flowchart LR
+    PUMP["Pump output\n20 mm"] --> MAN["32 mm manifold pipe"]
+    MAN --> V1["valve"] --> CH1["to ch1\n12 mm"]
+    MAN --> V2["valve"] --> CH2["to ch2\n12 mm"]
+    MAN --> V3["valve"] --> CH3["to ch3\n12 mm"]
+    MAN --> V4["valve"] --> CH4["to ch4\n12 mm"]
 ```
 
 **Assembly:**
@@ -512,16 +496,13 @@ Pump output (20mm) →  [32mm manifold pipe]
 From the manifold valves to the channel inlets, use 12 mm ID irrigation tube (black, UV-stabilised). Cut to length with scissors or a utility knife. Push firmly onto barbed fittings. Secure with hose clips for a watertight connection.
 
 **Routing:**
-```
-SUPPLY TUBE ROUTING (end view)
-
-  ┌──────────[manifold]──────────────────┐
-  │  12mm tubes                          │
-  │  hanging down                        │
-  │  │      │      │      │              │
-  ▼  ▼      ▼      ▼      ▼              │
- ch4  ch3   ch2   ch1
- inlet inlet inlet inlet
+```mermaid
+flowchart TD
+    MAN["MANIFOLD\n12 mm tubes hanging down"]
+    MAN -->|"12 mm tube"| I4["ch4 inlet"]
+    MAN -->|"12 mm tube"| I3["ch3 inlet"]
+    MAN -->|"12 mm tube"| I2["ch2 inlet"]
+    MAN -->|"12 mm tube"| I1["ch1 inlet"]
 ```
 
 Keep supply tubes as short as possible (30–60 cm maximum) to minimise flow resistance.
@@ -543,14 +524,10 @@ All channel drains collect into a common return header that flows back to the re
 4. Connect each channel drain stub to the corresponding T-piece using short hose lengths.
 5. Run the header to the reservoir return point. Ensure the header pipe slopes slightly downhill (at least 1:40) to prevent pooling.
 
-```
-DRAIN HEADER (side view, low end of frame)
-                                       → to reservoir
-  ch1     ch2     ch3     ch4
-drain   drain   drain   drain
-  │       │       │       │
-  └───────┴───────┴───────┴───── [drain header pipe] ────────► [reservoir]
-         ↗ slight downhill slope throughout
+```mermaid
+flowchart LR
+    D1["ch1 drain"] & D2["ch2 drain"] & D3["ch3 drain"] & D4["ch4 drain"] --> HDR["drain header pipe\n↗ slight downhill slope throughout"]
+    HDR -->|"→ to reservoir"| RES["reservoir"]
 ```
 
 **Return to reservoir:** The return pipe can either:
@@ -597,23 +574,14 @@ The pump needs a timer to run on a schedule (for intermittent pump mode — see 
 **Timer housing:**
 Place the timer in a weatherproof enclosure or outdoor timer box. Do not leave a standard indoor timer exposed to rain.
 
-```
-ELECTRICAL LAYOUT (schematic)
-
-Wall outlet (GFCI protected)
-        │
-        ▼
-   [Outdoor extension lead] (IP44 or better)
-        │
-        ▼
-   [Weatherproof timer enclosure]
-        │
-        ├──→ [Submersible pump] (in reservoir)
-        │
-        └──→ [Air pump] (optional; runs continuously or on same timer)
-                  │
-                  ▼
-             [air stone in reservoir]
+```mermaid
+flowchart TD
+    WALL["Wall outlet\nGFCI protected"]
+    WALL -->|"outdoor-rated"| EXT["Outdoor extension lead\nIP44 or better"]
+    EXT --> TIMER["Weatherproof timer enclosure"]
+    TIMER -->|"switched"| PUMP["Submersible pump\nin reservoir"]
+    TIMER -->|"switched or continuous"| AIR["Air pump\noptional"]
+    AIR --> STONE["air stone\nin reservoir"]
 ```
 
 ### 9.3 Air Pump (Optional but Recommended)
@@ -699,15 +667,17 @@ After a successful water test, prepare the first nutrient batch.
 
 ### 11.1 Mixing the Nutrient Solution
 
-See Guide 02 for full Masterblend recipe. Summary for first fill:
+See Guide 02 for full Masterblend recipe and dose scaling table. Summary for first fill:
 
-**For 80 L reservoir at EC 1.2 (good general starting EC):**
+**For 80 L reservoir at EC ~1.0–1.4 (conservative first fill for seedlings/young transplants):**
 
-| Component | Amount |
-|---|---|
-| MasterBlend 4-18-38 | 96 g |
-| Calcium Nitrate (Ca(NO₃)₂) | 96 g |
-| Epsom Salt (MgSO₄) | 48 g |
+| Component | Amount | Rate |
+|---|---|---|
+| MasterBlend 4-18-38 | 36 g | 0.45 g/L |
+| Calcium Nitrate (Ca(NO₃)₂) | 36 g | 0.45 g/L |
+| Epsom Salt (MgSO₄) | 18 g | 0.23 g/L |
+
+> **Note:** This is a reduced-strength first fill suitable for seedlings and young transplants. Once plants are established (2–3 weeks after transplant), increase to the standard rate of 0.6 g/L each (48g MasterBlend, 48g Calcium Nitrate, 24g Epsom Salt for 80L) for EC ~1.4–1.6. See Guide 02, Section 7 for the full dose scaling table.
 
 **Mixing order (always in this sequence):**
 1. Fill reservoir with 75 L of water.
@@ -738,20 +708,22 @@ Seedlings should be ready to transplant when they have 2–3 true leaves and a w
 **From coco plugs or Rapid Rooter:**
 1. Same process as rockwool — place plug in net pot, fill with LECA, insert into channel.
 
-```
-NET POT PLACEMENT (cross-section)
-
-     ┌─────────────────────────────┐
-     │        net pot              │  ← sits in 50mm hole
-     │    ┌───────────────┐        │
-     │    │  rockwool     │        │
-     │    │  cube         │        │  ← 25mm cube
-     │    │               │        │
-  ───┼────┼───────────────┼────────┼── channel walls
-     │    └───────────────┘        │
-     │         roots               │
-     │    ~~~~~solution film~~~~~  │  ← 1-3mm deep
-     └─────────────────────────────┘
+```mermaid
+block-beta
+    columns 1
+    block:xsec["NET POT PLACEMENT — cross-section"]:1
+        columns 3
+        space
+        NETPOT["net pot\nsits in 50 mm hole"]
+        space
+        space
+        CUBE["rockwool cube\n25 mm"]
+        space
+        WALL1["── channel wall ──"] ROOTS["roots"] WALL2["── channel wall ──"]
+        space
+        FILM["~~~~~ solution film ~~~~~\n1–3 mm deep"]
+        space
+    end
 ```
 
 ### 12.2 Spacing by Crop
@@ -841,19 +813,18 @@ Hour 48:
 
 ### 13.4 Shelf Layout
 
-```
-ZONE B STATION (front elevation)
-
-   ┌───────────── LED panel (50–100W) ─────────────┐
-                   ↕ 25–30cm
-   ┌────[tray]────────[tray]────────[tray]──────────┐  ← top shelf (under LED)
-   │ TIER 1: Growth stage (3–7 days under light)    │
-   ├────────────────────────────────────────────────┤
-   │ TIER 2: Germination stage (dark, 2–4 days)     │
-   └────[tray, covered]──[tray, covered]────────────┘  ← bottom shelf
-   ┌────────────────────────────────────────────────┐
-   │ TIER 3: Seed soaking / preparation / harvested │
-   └────────────────────────────────────────────────┘
+```mermaid
+block-beta
+    columns 1
+    LED["LED panel 50–100W\n↕ 25–30 cm above trays"]
+    block:tier1["TIER 1 — Growth stage (3–7 days under light)"]:3
+        T1A["tray"] T1B["tray"] T1C["tray"]
+    end
+    block:tier2["TIER 2 — Germination stage (dark, 2–4 days)"]:2
+        T2A["tray, covered"] T2B["tray, covered"]
+    end
+    block:tier3["TIER 3 — Seed soaking / preparation / harvested"]:1
+    end
 ```
 
 ---
@@ -881,9 +852,9 @@ ZONE C MIX RECIPE (per bag, ~15L bag)
 
   Component              Volume    Purpose
   ────────────────────────────────────────────────────
-  Coco coir              8 L       Water retention, base medium
-  Perlite                5 L       Drainage, aeration, prevents compaction
-  Vermiculite            2 L       Water retention, mineral buffer
+  Coco coir              9 L       Water retention, base medium (60%)
+  Perlite                4.5 L     Drainage, aeration, prevents compaction (30%)
+  Vermiculite            1.5 L     Water retention, mineral buffer (10%)
   Slow-release fert.     30–40 ml  Season-long nutrition
   ────────────────────────────────────────────────────
   Total:                 ~15 L
@@ -911,16 +882,14 @@ Root vegetables do NOT transplant well. Sow seeds directly in the grow bags.
 
 ### 14.4 Grow Bag Layout
 
-```
-ZONE C LAYOUT (top-down)
-
-  ┌───────────────────────────────────────────────────┐
-  │  [bag-R] [bag-R] [bag-R]    R = Radishes (fast)   │
-  │  [bag-C]         [bag-B]    C = Carrots (slow)    │
-  │                             B = Beetroot (medium)  │
-  └───────────────────────────────────────────────────┘
-  Each bag sits in a drip tray to catch runoff
-  Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete
+```mermaid
+block-beta
+    columns 1
+    block:layout["ZONE C LAYOUT — top-down"]:3
+        BR1["bag-R\nRadishes"] BR2["bag-R\nRadishes"] BR3["bag-R\nRadishes"]
+        BC["bag-C\nCarrots"] space BB["bag-B\nBeetroot"]
+    end
+    note2["Each bag sits in a drip tray to catch runoff\nKeep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]
 ```
 
 ---
@@ -1031,6 +1000,7 @@ GENERAL
 □ Logbook started (date, initial EC, pH, reservoir level)
 □ Pest/disease reference (Guide 07) reviewed
 □ Spare pump sourced or ordered
+□ Spare fittings kit: 4× barbed connectors, 6× hose clips, 1 m spare 12 mm tubing
 □ Shade cloth and fleece ready to deploy
 ```
 

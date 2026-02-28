@@ -259,22 +259,14 @@ These are not one-time costs but will recur each growing season (or more frequen
 
 The stated budget range is achievable by **phasing the build:**
 
-```
-PHASE 1 — Zone A Only, Tier 1: ~$200–$275
-  → Get the NFT system running with basic equipment
-  → No microgreens station, no grow bags yet
-  → Monitor and learn the system for 4–6 weeks
+```mermaid
+flowchart TD
+    P1["**PHASE 1** — Zone A Only, Tier 1\n~$200–$275\nNFT system running with basic equipment\nNo microgreens station, no grow bags yet\nMonitor and learn for 4–6 weeks"]
+    P2["**PHASE 2** — Add Zone B (Microgreens), Tier 1\n+$89 → Total so far: ~$289–$364"]
+    P3["**PHASE 3** — Add Zone C (Root Veg), Tier 1\n+$57 → Full system running: ~$346–$421"]
+    P4["**PHASE 4** — Upgrade individual items as budget allows\nBetter pH/EC meter first (biggest yield impact)\nBetter pump for reliability\nReservoir insulation for summer performance"]
 
-PHASE 2 — Add Zone B (Microgreens), Tier 1: +$89
-  → Total so far: ~$289–$364
-
-PHASE 3 — Add Zone C (Root Veg), Tier 1: +$57
-  → Full system running: ~$346–$421
-
-PHASE 4 — Upgrade individual items as budget allows
-  → Better pH/EC meter first (biggest impact on yield quality)
-  → Better pump for reliability
-  → Reservoir insulation for summer performance
+    P1 --> P2 --> P3 --> P4
 ```
 
 This phased approach lets you start with a functional system at ~$200 and expand as you gain confidence and see results.
@@ -448,28 +440,28 @@ Water usage varies significantly by temperature and crop. Typical outdoor NFT sy
 
 ### 9.3 Nutrient Costs (Masterblend Trio)
 
-At a mixing rate of 1.2 g/L Masterblend per mix and 80 L reservoir, changed every 10–14 days:
+At the standard mixing rate of 0.6 g/L and 80 L reservoir, changed every 7–10 days:
 
 ```
-Per reservoir change:
-  Masterblend:     1.2 g/L × 80L = 96g
-  Calcium Nitrate: 96g
-  Epsom Salt:      48g
-  Total:           240g of nutrients
+Per reservoir change (standard vegetative EC ~1.4–1.6):
+  Masterblend:     0.6 g/L × 80L = 48g
+  Calcium Nitrate: 48g
+  Epsom Salt:      24g
+  Total:           120g of nutrients
 
 At 2.27kg Masterblend pack ($35):
-  Cost per 96g Masterblend = 96 × ($35 ÷ 2270) = $1.48
-  Calcium Nitrate 96g at $15/500g = $2.88
-  Epsom Salt 48g at $5/1000g = $0.24
+  Cost per 48g Masterblend = 48 × ($35 ÷ 2270) = $0.74
+  Calcium Nitrate 48g at $15/500g = $1.44
+  Epsom Salt 24g at $5/1000g = $0.12
   ──────────────────────────────────
-  Total per reservoir fill: ~$4.60
+  Total per reservoir fill: ~$2.30
 
-At 26 changes per season (biweekly for 9 months + top-ups):
-  ~26 × $4.60 = ~$120/season (full reservoir change)
-  With partial top-ups (more common), actual cost closer to $60–$90
+At 36 changes per season (every ~7 days for 9 months):
+  ~36 × $2.30 = ~$83/season (full reservoir changes)
+  With partial top-ups (more common), actual cost closer to $50–$70
 ```
 
-**Typical nutrient cost: $60–$120/season.**
+**Typical nutrient cost: $50–$85/season.**
 
 ### 9.4 Full Annual Running Cost Summary
 
@@ -477,15 +469,15 @@ At 26 changes per season (biweekly for 9 months + top-ups):
 |---|---|---|---|
 | Electricity | $40 | $65 | $100 |
 | Water | $4 | $12 | $24 |
-| Nutrients (Masterblend trio) | $60 | $90 | $120 |
+| Nutrients (Masterblend trio) | $50 | $70 | $85 |
 | pH adjustment chemicals | $10 | $20 | $30 |
 | Seeds (all zones) | $20 | $35 | $50 |
 | Growing media top-up | $10 | $15 | $20 |
 | Pest/disease treatments | $5 | $15 | $30 |
 | Misc replacements (hose, fitting, fuse) | $5 | $15 | $30 |
-| **Annual running total** | **$154** | **$267** | **$404** |
+| **Annual running total** | **$144** | **$247** | **$369** |
 
-**Realistic mid-range annual running cost: ~$200–$270.**
+**Realistic mid-range annual running cost: ~$200–$250.**
 
 ---
 
@@ -494,6 +486,8 @@ At 26 changes per season (biweekly for 9 months + top-ups):
 ### 10.1 Zone A — NFT Expected Yields
 
 Yield estimates are based on moderately experienced management of the system. Actual yields will vary with genetics, season length, and growing conditions.
+
+> **First-season adjustment:** If this is your first hydroponic grow, expect to achieve **40–60% of the yields listed below**. Transplant losses, pH/EC learning curve, pest surprises, and setup optimisation all reduce first-season output. This is normal. By your second full season, with a tuned system and practiced routine, you should approach the figures shown. Do not judge the system's viability on first-season results alone.
 
 #### Lettuce (Channel 1, 11 sites, ~230mm spacing)
 
@@ -604,11 +598,11 @@ Beetroot (2 bags, ~16 plants):
 TIER 2 FULL BUILD (3 ZONES)
 
 Total build cost:          $671
-Annual running cost:       $267 (mid estimate)
+Annual running cost:       $247 (mid estimate)
 Annual yield value:        $1,000–$1,500 (conservative; household consumption)
 
-Net value per season:      $1,200 (mid) - $267 (running) = $933/season
-Break-even (payback):      $671 ÷ $933 = ~0.7 seasons
+Net value per season:      $1,200 (mid) - $247 (running) = $953/season
+Break-even (payback):      $671 ÷ $953 = ~0.7 seasons
                            → Paid off within first season
 ```
 
@@ -616,10 +610,10 @@ Even accounting for the fact that one household cannot consume $1,200 worth of p
 
 ```
 Conservative household savings: $500/season
-Running cost: $267/season
-Net annual benefit: $233/season
+Running cost: $247/season
+Net annual benefit: $253/season
 
-Payback on $671 build: $671 ÷ $233 = ~2.9 seasons (≈3 years)
+Payback on $671 build: $671 ÷ $253 = ~2.7 seasons (≈3 years)
 ```
 
 ### 11.2 Tier 1 — Lean Build Payback
@@ -628,29 +622,23 @@ Payback on $671 build: $671 ÷ $233 = ~2.9 seasons (≈3 years)
 TIER 1 FULL BUILD
 
 Total build cost:          $421
-Annual running cost:       $154 (low estimate)
+Annual running cost:       $144 (low estimate)
 Conservative savings:      $400/season
-Net benefit:               $400 - $154 = $246/season
-Payback:                   $421 ÷ $246 = ~1.7 seasons
+Net benefit:               $400 - $144 = $256/season
+Payback:                   $421 ÷ $256 = ~1.6 seasons
 ```
 
 ### 11.3 Payback Summary Chart
 
+```mermaid
+xychart-beta
+    title "Cumulative Cash Flow — Tier 2, Conservative Savings Scenario"
+    x-axis "Year" [0, 1, 2, 3, 4, 5]
+    y-axis "Cumulative Net ($)" -800 --> 600
+    line [-671, -418, -165, 88, 341, 594]
 ```
-CUMULATIVE CASH FLOW (Tier 2, conservative savings scenario)
 
-Year  Build  Running  Value Saved  Cumulative Net
-────────────────────────────────────────────────────────
-  0   -$671    $0         $0          -$671
-  1    $0     -$267      +$500        -$438
-  2    $0     -$267      +$500        -$205
-  3    $0     -$267      +$500        +$28  ← break-even
-  4    $0     -$267      +$500        +$261
-  5    $0     -$267      +$500        +$494
-────────────────────────────────────────────────────────
-Assumes no major equipment replacement in 5 years.
-Pump may need replacement at year 2–3 (~$20–$35).
-```
+> Assumes no major equipment replacement in 5 years. Pump may need replacement at year 2–3 (~$20–$35).
 
 ### 11.4 Non-Financial Value
 
@@ -667,21 +655,21 @@ The ROI analysis only captures direct grocery savings. The full value of the sys
 
 ## Quick Reference — Budget at a Glance
 
+```mermaid
+xychart-beta
+    title "System Build Cost by Tier"
+    x-axis ["Zone A (NFT)", "Zone B (Microgreens)", "Zone C (Root Veg)", "TOTAL BUILD"]
+    y-axis "Cost ($)" 0 --> 1000
+    bar [275, 89, 57, 421]
+    bar [450, 140, 81, 671]
+    bar [617, 203, 110, 930]
 ```
-SYSTEM BUILD COST SUMMARY
-───────────────────────────────────────────────────────
-                   TIER 1      TIER 2      TIER 3
-                   LEAN        STANDARD    OPTIMISED
-Zone A (NFT)       $275        $450        $617
-Zone B (Microgreen)$89         $140        $203
-Zone C (Root veg)  $57         $81         $110
-─────────────────────────────────────────────────────
-TOTAL BUILD COST   $421        $671        $930
-Annual running     ~$154       ~$267       ~$404
-Annual value saved ~$500–$800  ~$700–$1200 ~$900–$1500
-Break-even         ~1.5–2 yr   ~1.5–3 yr   ~2–3 yr
-───────────────────────────────────────────────────────
-```
+
+| | Tier 1 Lean | Tier 2 Standard | Tier 3 Optimised |
+|---|---|---|---|
+| **Annual running** | ~$144 | ~$247 | ~$369 |
+| **Annual value saved** | ~$500–$800 | ~$700–$1,200 | ~$900–$1,500 |
+| **Break-even** | ~1.5–2 yr | ~1.5–3 yr | ~2–3 yr |
 
 ---
 

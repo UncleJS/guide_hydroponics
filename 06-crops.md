@@ -14,7 +14,22 @@ Each crop entry includes:
 - **Common problems:** Specific to this crop
 - **Succession planting:** How to maintain continuous supply
 
+> **First-season expectations:** Timelines and yields listed below assume a reasonably tuned system with stable EC/pH. In your first season, expect slower growth, more crop losses, and lower yields as you learn your system's behaviour. This is normal — see Guide 12 Section 10 for realistic first-season yield adjustments (typically 40–60% of listed figures).
+
 ---
+
+## Quick Reference — Zone, Channel & Crop Map
+
+| Zone | Channel | Channel Size | Crops | Net Pot Size | Plant Sites |
+|------|---------|-------------|-------|-------------|-------------|
+| **A — NFT** | CH1 | 75 mm square PVC | Lettuce (butter, romaine, loose-leaf) | 50 mm | 11 |
+| **A — NFT** | CH2 | 75 mm square PVC | Herbs (basil, cilantro, chives, parsley) | 50 mm | 11 |
+| **A — NFT** | CH3 | 75 mm square PVC | Spinach, kale, mint | 50 mm | 11 |
+| **A — NFT** | CH4 | 100 mm square PVC | Tomatoes, peppers, strawberries | 75 mm | 7 |
+| **B — Trays** | — | 25×50 cm trays | Microgreens (sunflower, pea, radish, broccoli, amaranth, wheatgrass) | — | — |
+| **C — Grow bags** | — | 40 L grow bags | Radishes, carrots, beetroot | — | — |
+
+> **Total NFT plant sites: ~40** (33 in 75 mm channels + 7 in 100 mm channel). All channels are 2.4 m long with a 1:30 slope (80 mm drop). The system runs on an 80 L reservoir with a 600–800 L/h submersible pump delivering 1–2 L/min per channel.
 
 ---
 
@@ -59,7 +74,7 @@ Each crop entry includes:
 
 **Common problems:**
 - **Bolting** (sending up a seed stalk): Triggered by temperatures above 24°C and/or long days. Switch to bolt-resistant varieties or shade in summer. Bolted lettuce tastes bitter — harvest immediately before/as bolt begins.
-- **Tip burn** (brown leaf edges): Calcium deficiency often caused by low humidity or poor air circulation. Check EC, ensure adequate Ca. Increase air movement.
+- **Tip burn** (brown leaf edges): Usually NOT a lack of calcium in the solution — caused by heat-driven transpiration outpacing calcium transport through the xylem to leaf margins. Worsened by low humidity, poor airflow, and high EC. Fix: add shade, increase airflow, lower EC, ensure good root aeration. Choose resistant varieties (Jericho, Nevada). See guide/09 Section B2 and guide/10 Section 4.
 - **Slimy root zone:** Pythium root rot — caused by warm water. Reduce reservoir temp, treat with H₂O₂ (see guide/07).
 - **Pale/yellowing leaves:** Nitrogen deficiency or pH out of range. Test and adjust.
 
@@ -487,7 +502,24 @@ flowchart TD
 
 Microgreens are harvested at the seedling stage (7–14 days) when cotyledons are fully open and the first true leaves are just emerging. They are among the most nutrient-dense foods per gram of any crop — studies show they contain 4–40× the nutrient concentration of mature plants.
 
-**Media:** Coco coir, 2–3cm depth in a 25×50cm tray
+### Equipment & Supplies
+
+```
+  ZONE B EQUIPMENT LIST:
+
+  Trays:           4–6 standard 25×50 cm propagation trays (no drainage holes)
+  Drain trays:     4–6 matching trays WITH drainage holes (nest inside the solid trays)
+  Humidity domes:  2–3 clear plastic domes (for blackout/germination phase)
+  Growing media:   Coco coir — fine grade, pre-buffered
+                   Budget ~2–3 kg per month at full production
+  Spray bottle:    1 × fine mist, for initial watering before germination
+  Scissors:        Sharp kitchen scissors or microgreens harvesting shears
+  Scale:           Digital kitchen scale for seed weighing (0.1 g resolution)
+  Labels:          Waterproof plant labels or masking tape + marker
+  Storage:         Shallow containers + damp paper towel for fridge storage
+```
+
+**Media:** Coco coir, 2–3 cm depth in a 25×50 cm tray
 **Watering:** Bottom watering preferred once growing (prevents mould from overhead watering)
 **No nutrient solution needed** — seeds contain sufficient reserves for the short microgreens lifecycle. Plain pH-adjusted water (pH 6.0) is sufficient.
 
@@ -502,11 +534,69 @@ Microgreens are harvested at the seedling stage (7–14 days) when cotyledons ar
 | **Amaranth** | No | 1–2 days | 4–6 days | 8–12 days | Earthy, mild | 8g/tray |
 | **Wheatgrass** | 8–12h | 1–2 days | 6–8 days | 10–14 days | Sweet, grassy | 250g/tray |
 
+### Per-Tray Yield Estimates
+
+> **Note:** These are established-grower yields. First-time microgreens growers typically achieve 50–70% of these figures while learning seed density, watering, and harvest timing. Yields improve quickly — most growers hit full potential by their 3rd–4th tray cycle.
+
+```
+  EXPECTED YIELD PER TRAY (25×50 cm):
+
+  Crop              Seed input    Harvest yield    Yield ratio    Cost/tray (seed only)
+  ──────────────────────────────────────────────────────────────────────────────────────
+  Sunflower shoots  250 g         300–400 g        1.2–1.6×       $1.50–$2.50
+  Pea shoots        200 g         250–350 g        1.2–1.8×       $1.00–$2.00
+  Radish            30 g          150–200 g        5–7×           $0.50–$1.00
+  Broccoli          15 g          100–150 g        7–10×          $1.00–$2.00
+  Amaranth          8 g           80–120 g         10–15×         $0.50–$1.00
+  Wheatgrass        250 g         300–400 g        1.2–1.6×       $0.50–$1.00
+
+  Coco coir cost per tray: ~$0.30–$0.50
+
+  RETAIL VALUE (supermarket equivalent):
+  Microgreens retail at $30–$80/kg depending on variety.
+  A single tray of radish microgreens (150 g) ≈ $5–$12 retail value.
+  At 2 trays/week, Zone B produces ~$10–$25/week in retail-equivalent greens.
+```
+
+### Succession Schedule — Staggered Production
+
+```
+  GOAL: Continuous microgreens harvest, 2–3 trays per week
+
+  Run 4–6 trays in rotation, staggered by 3–4 days:
+
+  Day 1:  Sow Tray 1 (radish) — blackout
+  Day 4:  Sow Tray 2 (pea shoots) — blackout
+          Tray 1 → move to light
+  Day 7:  Sow Tray 3 (sunflower) — blackout
+          Tray 2 → move to light
+          Tray 1 → harvest (radish, 6–8 day crop)
+  Day 10: Sow Tray 4 (broccoli) — blackout
+          Tray 3 → move to light
+          Tray 2 → harvest (pea shoots, 8–10 day crop)
+  Day 14: Tray 3 → harvest (sunflower, 10–14 day crop)
+          Clean and resow Trays 1 & 2
+
+  Result: Harvesting every 3–4 days once the rotation is established.
+  Ramp up slowly — start with 2 trays and add more as you build confidence.
+```
+
 ### Harvest
 
 Cut at soil level with sharp scissors. Rinse, spin or pat dry. Eat immediately or store in the fridge for 3–5 days.
 
 After harvest, remove spent root mat from tray, compost, clean tray, and resow.
+
+### Microgreens Troubleshooting
+
+| Problem | Cause | Fix |
+|---------|-------|-----|
+| **White fuzzy mould on surface** | Too much moisture + poor airflow during blackout phase | Reduce misting frequency; ensure humidity dome is cracked slightly for airflow; spray with dilute hydrogen peroxide (3%, 1:10 with water) if mould appears |
+| **Leggy, pale, stretched seedlings** | Blackout phase too long, or insufficient light after uncovering | Move to light promptly after 3–4 days; if growing indoors, use a grow light 15–20 cm above trays |
+| **Uneven germination (patchy tray)** | Uneven seed distribution, dry spots, or old seed | Spread seeds evenly by hand; ensure media is uniformly moist before sowing; test seed viability — old seeds germinate poorly |
+| **Seeds rotting instead of germinating** | Waterlogged media, especially with large seeds (sunflower, pea) | Use drain trays to prevent standing water; pre-soak large seeds but do not submerge media; ensure good drainage |
+| **Bitter or strong off-flavour** | Harvested too late (true leaves well developed) or heat stress | Harvest earlier — when cotyledons are fully open but before true leaves exceed 1 cm; keep trays below 25°C |
+| **Slimy stems at base** | Bacterial growth from bottom watering standing too long | Do not leave trays sitting in water for more than 30 minutes; ensure trays drain fully |
 
 ---
 
@@ -627,6 +717,43 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 ---
 
 ## Crop Rotation and Succession Planning
+
+### Zone C — Root Vegetable Succession Planting
+
+Root vegetables in grow bags benefit from staggered sowing to maintain a continuous harvest rather than a single glut followed by nothing.
+
+```
+  ZONE C SUCCESSION SCHEDULE:
+
+  RADISHES (25–35 day crop — fastest turnaround):
+    Sow a new batch every 2–3 weeks.
+    With 2 grow bags dedicated to radishes, alternate:
+      Bag 1: Sow Week 1 → harvest Week 4–5 → resow immediately
+      Bag 2: Sow Week 3 → harvest Week 7–8 → resow immediately
+    Result: Harvesting radishes every 2–3 weeks continuously.
+    Final sowing: 5 weeks before your expected first frost.
+
+  CARROTS (70–80 day crop — plan 2–3 successions per season):
+    Sow second batch when the first batch reaches the 4-week stage
+    (seedlings established, first true leaves visible).
+      Batch 1: Sow Week 1 → harvest Week 10–12
+      Batch 2: Sow Week 4–5 → harvest Week 14–17
+      Batch 3: Sow Week 9–10 → harvest Week 19–22
+    Thin to 5 cm spacing when seedlings are 5 cm tall — do not skip this step.
+    Late-sown carrots can be left in bags and harvested through early winter
+    if protected with fleece.
+
+  BEETROOT (55–70 day crop — plan 2–3 successions):
+    Sow second batch when first batch is 3–4 weeks old.
+      Batch 1: Sow Week 1 → harvest Week 8–10
+      Batch 2: Sow Week 4 → harvest Week 12–14
+      Batch 3: Sow Week 8 → harvest Week 16–18
+    Remember: each beetroot "seed" is a cluster — thin to 1 plant per 10 cm.
+    Harvest baby beets early (5 cm) for salads, or leave to full size (8 cm).
+
+  TIP: Label each sowing with the date using waterproof markers on plant tags.
+  This removes guesswork about when each batch is ready.
+```
 
 ### Succession Planting Schedule (CH1 — Lettuce Example)
 

@@ -366,7 +366,7 @@ flowchart LR
   Dose: 2ml per litre, add to each reservoir fill.
 ```
 
-**Prevention:** Keep water below 22°C, maintain dissolved oxygen, keep reservoir clean, avoid overfeeding.
+**Prevention:** Keep water below 24°C (ideally 18–22°C), maintain dissolved oxygen, keep reservoir clean, avoid overfeeding.
 
 ---
 

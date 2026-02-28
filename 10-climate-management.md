@@ -302,7 +302,7 @@ In high temperatures, plants transpire more heavily, uptake water faster than nu
 | Mint | 18–28 °C | 32 °C | Wilting |
 | Radishes | 10–18 °C | 24 °C | Woody, pungent roots |
 
-**Tip burn in lettuce** is caused by calcium deficiency at the leaf margins — but the root cause is usually heat-driven transpiration outpacing calcium uptake through the xylem. Solution: increase flow rate, lower EC, add shade, ensure good root aeration.
+> **Tip:** Tip burn in lettuce is caused by calcium deficiency at the leaf margins — but the root cause is usually heat-driven transpiration outpacing calcium uptake through the xylem. Solution: increase flow rate, lower EC, add shade, ensure good root aeration.
 
 ---
 
@@ -559,10 +559,10 @@ Rainwater is often excellent quality for hydroponics:
 
 Harvest roof runoff into a covered water butt and use it to top up the reservoir or prepare fresh nutrient batches. A 1 m² of roof area collects approximately 1 L per mm of rainfall.
 
-**Caution:** Avoid collecting runoff from:
-- Treated timber roofs (preservative leach)
-- Asbestos cement roofs
-- Roofs with moss killer treatments applied in the last 3 months
+> **Caution:** Avoid collecting runoff from:
+> - Treated timber roofs (preservative leach)
+> - Asbestos cement roofs
+> - Roofs with moss killer treatments applied in the last 3 months
 
 ---
 
@@ -638,16 +638,12 @@ During periods of persistent high humidity (>80% RH), especially in late summer 
 
 A cold frame is a low-profile, transparent-lidded box placed over plants. It is the simplest, cheapest season extension tool.
 
-```
-COLD FRAME (cross-section)
-  ┌─────────────────────────────────┐
-  │  polycarbonate or glass lid     │ ← opens on hinges
-  ├─────────────────────────────────┤
-  │                                 │
-  │   [plant] [plant] [plant]       │ ← NFT channel inside
-  │                                 │
-  └─────────────────────────────────┘
-  Timber or polycarbonate sides, 30–60cm high
+```mermaid
+block-beta
+    columns 1
+    lid["Polycarbonate or glass lid (opens on hinges)"]
+    interior["[plant]   [plant]   [plant]   ← NFT channel inside"]
+    sides["Timber or polycarbonate sides, 30–60 cm high"]
 ```
 
 **Performance:**
@@ -655,23 +651,18 @@ COLD FRAME (cross-section)
 - Extends season by 4–6 weeks in spring and autumn
 - Cost: ~$30–$80 for a timber DIY cold frame, or use 4 straw bales + old window glass
 
-**Important:** Vent cold frames on sunny days — temperatures inside can reach 40 °C+ even in early spring.
+> **Important:** Vent cold frames on sunny days — temperatures inside can reach 40 °C+ even in early spring.
 
 ### 9.2 Polytunnels
 
 A polytunnel (hoop tunnel) provides significant season extension and weather protection for the entire system.
 
-```
-MINI HOOP TUNNEL (cross-section)
-      ╭─────────polythene film──────────╮
-     ╱                                   ╲
-    │    [ch]      [ch]      [ch]         │
-    │                                     │
-  ██████████████████████████████████████████
-  Ground
-
-  Hoops: 25mm poly pipe or metal conduit, 2m long
-  Film: 200 micron UV-stabilised polytunnel film
+```mermaid
+block-beta
+    columns 1
+    film["Polythene film (200 micron UV-stabilised)\narched over hoops"]
+    interior["[ch]         [ch]         [ch]   ← NFT channels"]
+    ground["Ground\n(hoops: 25 mm poly pipe or metal conduit, 2 m long)"]
 ```
 
 **Performance:**
@@ -841,40 +832,28 @@ Actions taken today:
 
 ## 12. Quick-Reference Decision Tree
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│              DAILY OUTDOOR CLIMATE CHECK                          │
-└──────────────────────────┬───────────────────────────────────────┘
-                           ▼
-         Is solution temperature above 24°C?
-              │                    │
-             YES                   NO
-              │                    │
-              ▼                    ▼
-    Implement heat protocol    Is solution temp below 15°C?
-    (shade, ice, lower EC,          │              │
-     increase aeration)            YES              NO
-                                    │               │
-                                    ▼               ▼
-                             Implement cold       CHECK WIND
-                             protocol             Is wind > Force 4
-                             (fleece, heater,     (28+ km/h)?
-                              harvest tender)          │        │
-                                                      YES       NO
-                                                       │         │
-                                                       ▼         ▼
-                                                Check EC for   CHECK RAIN
-                                                wind-driven    Has it rained
-                                                concentration  significantly?
-                                                top up water        │       │
-                                                if EC +10%         YES      NO
-                                                                    │        │
-                                                                    ▼        ▼
-                                                             Check EC,    All good
-                                                             pH after     — log and
-                                                             rain; re-    continue
-                                                             dose if
-                                                             needed
+```mermaid
+flowchart TD
+    START(["DAILY OUTDOOR CLIMATE CHECK"])
+    Q1{"Solution temp\nabove 24 °C?"}
+    HEAT["Implement heat protocol\n(shade, ice, lower EC,\nincrease aeration)"]
+    Q2{"Solution temp\nbelow 15 °C?"}
+    COLD["Implement cold protocol\n(fleece, heater,\nharvest tender crops)"]
+    Q3{"Wind &gt; Force 4\n(28+ km/h)?"}
+    WIND["Check EC for\nwind-driven concentration;\ntop up water if EC +10%"]
+    Q4{"Rained\nsignificantly?"}
+    RAIN["Check EC and pH after rain;\nre-dose if needed"]
+    OK(["All good — log and continue"])
+
+    START --> Q1
+    Q1 -->|YES| HEAT
+    Q1 -->|NO| Q2
+    Q2 -->|YES| COLD
+    Q2 -->|NO| Q3
+    Q3 -->|YES| WIND
+    Q3 -->|NO| Q4
+    Q4 -->|YES| RAIN
+    Q4 -->|NO| OK
 ```
 
 ---

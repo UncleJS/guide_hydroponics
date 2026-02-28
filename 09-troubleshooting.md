@@ -7,6 +7,8 @@
 
 Find your symptom in the relevant section. Follow the decision tree to identify the most likely cause, then apply the fix. Always start with the most common cause before assuming something unusual.
 
+**Seeing multiple symptoms at once?** Skip to **Section D: Multiple Simultaneous Symptoms** — it's faster than working through individual sections when several things look wrong.
+
 **Golden rule:** When something goes wrong, check in this order:
 1. **pH first** — most plant symptoms are pH-related
 2. **EC second** — over/under feeding
@@ -100,8 +102,11 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
   2. RESERVOIR TOO SMALL FOR PLANT LOAD
      An 80L reservoir with 40+ plants will see rapid EC swings.
-     FIX: Increase reservoir size to 120–150L, OR reduce plant count, OR change
-          solution more frequently (every 5–7 days).
+     FIX: Reduce plant count, OR change solution more frequently (every 5–7 days).
+          NOTE: This system is designed around an 80L reservoir. Increasing to
+          120–150L requires a larger container and proportionally more nutrients
+          per fill. For most home growers, reducing plant density in peak summer
+          or changing solution twice per week is more practical than upsizing.
 
   3. EVAPORATION RATE HIGH (hot day)
      Water evaporating faster than plants consume it — EC and all nutrients remain,
@@ -195,6 +200,7 @@ flowchart TD
     Old --> N[Uniform yellow whole leaf\nNitrogen deficiency\nFIX: Check EC in range, check pH above 5.5,\nadd Cal-mag or increase N in mix]
     Old --> Mg[Yellow between green veins interveinal\nMagnesium deficiency\nFIX: Add 0.3ml/L Epsom salt,\ncheck pH 6.0–6.5]
     Old --> P[Yellow with purple undersides\nPhosphorus deficiency\nFIX: Check pH above 5.5,\nadjust pH up, check EC]
+    Old --> K[Brown scorched dry margins on leaf edges\nPotassium deficiency\nFIX: Check EC is in range,\nincrease K in mix or raise overall Masterblend dose]
 
     New --> Fe[Yellow between green veins interveinal\nIron deficiency\nFIX: pH too high above 6.5 — lower to 5.8–6.2,\niron is present but locked out]
     New --> Mn[Similar interveinal pattern\nManganese deficiency\nFIX: Check pH, Mn locks out above 6.5]
@@ -565,7 +571,128 @@ flowchart TD
 
 ---
 
-## SECTION D: Master Decision Flowchart
+## SECTION D: Multiple Simultaneous Symptoms
+
+Real-world problems rarely present as a single textbook symptom. When you're seeing **two or more symptoms at once**, use this section to narrow down the root cause faster than working through individual symptom sections.
+
+### Key Principle
+
+Multiple symptoms appearing **simultaneously across multiple plants** almost always indicate a **system-level problem** (reservoir, pump, temperature, pH) rather than a plant-specific issue (pest, individual nutrient deficiency). If only one plant is affected, check that plant individually using Sections A–C.
+
+### D1: Yellowing + Wilting (Multiple Plants)
+
+```
+  MOST LIKELY: Root zone failure
+
+  CHECK IN THIS ORDER:
+  1. Pump running?        → NO: Pump failure (see C1). Roots drying out.
+  2. Roots healthy?       → Brown/slimy: Pythium root rot (see guide/07).
+  3. Reservoir temp?      → Above 26°C: Heat stress + low DO₂. Shade and cool reservoir.
+  4. pH in range?         → Below 4.5 or above 7.5: Severe nutrient lockout.
+                             Multiple elements become unavailable simultaneously.
+  5. EC extremely high?   → Above 4.0 for greens: Osmotic stress causing both wilt
+                             (can't take up water) and yellowing (nutrient imbalance).
+
+  IF ALL METRICS ARE NORMAL:
+  → Check for root mat blockage in channels (roots blocking flow to downstream plants).
+  → Check each channel individually — one channel may have a blocked inlet.
+```
+
+### D2: Brown Leaf Edges + Stunted Growth
+
+```
+  MOST LIKELY: Nutrient lockout from pH or EC problem
+
+  CHECK IN THIS ORDER:
+  1. pH out of range?     → Below 5.0 or above 7.0: Ca, Mg, Fe all lock out.
+                             Fix pH first, wait 48h, then reassess growth.
+  2. EC too high?         → High EC causes osmotic stress (stunting) AND
+                             calcium transport failure (tip burn).
+                             Dilute with plain water or do full reservoir change.
+  3. EC too low?          → Very low EC (<0.6) starves the plant overall.
+                             Growth stalls AND leaf edges burn from nutrient deficiency.
+  4. Solution age?        → Old solution (>14 days) accumulates salt byproducts
+                             even if EC reads normal. Do a full change.
+
+  IF ALL METRICS ARE NORMAL:
+  → Root-bound plants in net pots (roots circling, not extending into channel).
+  → Temperature stress (check air temp — cold nights stunt growth, hot days burn edges).
+```
+
+### D3: Yellowing + Stunted Growth + Brown Edges (The Triad)
+
+```
+  MOST LIKELY: Severe system-level failure
+
+  This combination of all three major symptoms means the plant cannot access
+  nutrients at all. The root cause is almost always one of:
+
+  1. PYTHIUM ROOT ROT — roots are damaged and cannot function.
+     → Inspect roots immediately. Brown, slimy = Pythium. See guide/07.
+
+  2. pH SEVERELY OUT OF RANGE — below 4.5 or above 8.0.
+     → Most nutrients become unavailable. Fix pH, do full reservoir change.
+
+  3. PUMP FAILURE (partial) — flow reduced but not stopped.
+     → Check flow rate at each channel drain. Should be 1–2 L/min.
+     → Pump impeller may be partially blocked.
+
+  4. COMPLETE NUTRIENT DEPLETION — EC reads very low (<0.4).
+     → Solution is exhausted. Full reservoir change with fresh nutrients.
+
+  ACTION: Do not try to diagnose further. Do a full reservoir change,
+  inspect roots, verify pump flow, and restart. This resets everything.
+```
+
+### D4: Multiple Plants Affected Simultaneously vs One Plant
+
+```mermaid
+flowchart TD
+    Start([Multiple symptoms detected])
+
+    Start --> HowMany{How many plants affected?}
+
+    HowMany -->|ONE plant| Single[Likely plant-specific:\n- Root damage on that plant\n- Pest on that plant\n- Blocked net pot\n- That plant is end-of-life]
+
+    HowMany -->|Multiple plants\nSAME channel| Channel[Likely channel-specific:\n- Blocked inlet tube\n- Root mat blocking flow\n- Slope problem creating dry spot\nCheck that channel individually]
+
+    HowMany -->|Multiple plants\nDIFFERENT channels| System[System-level problem:\n- Reservoir issue pH/EC/temp\n- Pump problem\n- Pythium spreading\nCheck reservoir metrics first]
+
+    System --> Reservoir{Check reservoir:\npH, EC, temp, clarity}
+    Reservoir -->|Abnormal| FixRes[Fix the abnormal metric\nSee Sections A1–A5]
+    Reservoir -->|All normal| Roots{Inspect roots\non worst plant}
+    Roots -->|Brown/slimy| Pythium[Pythium — see guide/07\nFull system response needed]
+    Roots -->|White/healthy| Mystery[Rare: environmental stress\nCheck wind, recent weather,\nshade cloth deployment]
+```
+
+### D5: Rapid Onset (Problem Appeared Overnight or Within Hours)
+
+```
+  RAPID-ONSET SYMPTOMS (fine yesterday, bad today):
+
+  Wilting across all plants:
+  → PUMP FAILURE. Check pump immediately. See C1.
+
+  Yellowing across all plants:
+  → pH crash or spike overnight. Test pH immediately.
+  → Chemical contamination (cleaning product, pesticide overspray, etc.)
+
+  Brown/burned edges across all plants:
+  → EC spiked (evaporation concentrated nutrients). Test EC.
+  → Frost damage overnight. Check min temperature readings.
+
+  Solution turned green/brown overnight:
+  → Algae bloom (green) — light leak appeared. See A5.
+  → Pythium explosion (brown) — reservoir was too warm. See guide/07.
+
+  RULE: If something changed rapidly, something EXTERNAL changed rapidly.
+  Think: weather event, power outage (pump off), accidental contamination,
+  someone topped up with the wrong water, timer malfunction.
+```
+
+---
+
+## SECTION E: Master Decision Flowchart
 
 ```mermaid
 flowchart TD
