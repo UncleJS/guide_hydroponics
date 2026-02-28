@@ -1,0 +1,1460 @@
+# Guide 13 — Budget-Friendly Automation and Data Logging
+
+Manual monitoring — the 10-minute daily walk-and-check — works. But it has hard limits: you can't check the system at 3 AM when a frost arrives, you can't spot the moment EC drifts past a threshold while you're at work, and you'll never notice the slow creep of reservoir temperature that precedes a Pythium outbreak unless you happen to check at the right time.
+
+Automation and continuous data logging transform your system from reactive ("the plants look stressed — what happened?") to proactive ("the reservoir hit 24 °C at 2 PM yesterday, I need shade cloth before it happens again today"). This guide covers every level of automation — from a $15 WiFi thermometer to a full ESP32-based sensor network with dashboards, alerts, and automated dosing — all within the budget-conscious, DIY spirit of this project.
+
+---
+
+## Table of Contents
+
+1. [Why Automate?](#1-why-automate)
+2. [Automation Tiers Overview](#2-automation-tiers-overview)
+3. [Tier 0 — Manual Baseline (What You Already Have)](#3-tier-0--manual-baseline)
+4. [Tier 1 — Off-the-Shelf Smart Devices ($15–$60)](#4-tier-1--off-the-shelf-smart-devices)
+5. [Tier 2 — ESP32 Sensor Node ($30–$80)](#5-tier-2--esp32-sensor-node)
+6. [Tier 3 — Multi-Sensor Network + Dashboard ($80–$160)](#6-tier-3--multi-sensor-network--dashboard)
+7. [Tier 4 — Automated Control ($150–$300)](#7-tier-4--automated-control)
+8. [Sensor Reference — What to Measure and Why](#8-sensor-reference--what-to-measure-and-why)
+9. [ESP32 Hardware Guide](#9-esp32-hardware-guide)
+10. [Wiring Diagrams](#10-wiring-diagrams)
+11. [Firmware and Software](#11-firmware-and-software)
+12. [Data Storage and Dashboards](#12-data-storage-and-dashboards)
+13. [Alerts and Notifications](#13-alerts-and-notifications)
+14. [Using Your Data — Pattern Recognition](#14-using-your-data--pattern-recognition)
+15. [Weatherproofing and Power](#15-weatherproofing-and-power)
+16. [Automation BOM by Tier](#16-automation-bom-by-tier)
+17. [Common Pitfalls](#17-common-pitfalls)
+18. [Upgrade Path — From Tier 1 to Tier 4](#18-upgrade-path--from-tier-1-to-tier-4)
+
+---
+
+## 1. Why Automate?
+
+### 1.1 The Problem with Manual-Only Monitoring
+
+Your system generates data 24 hours a day. With manual monitoring you capture two data points per day — a morning reading and maybe an evening check. That's 2 out of 1,440 minutes, or **0.14% observability**.
+
+```
+WHAT MANUAL MONITORING SEES:
+
+Time    00  02  04  06  08  10  12  14  16  18  20  22
+        ·   ·   ·   ·   ·   📍  ·   ·   ·   📍  ·   ·
+                              ↑                ↑
+                           morning          evening
+                           check             check
+
+WHAT ACTUALLY HAPPENED:
+
+Reservoir  ┌───────────────────────────────────────────────┐
+Temp (°C)  │                         ╱╲                    │
+    26 ─── │ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─╱─ ─╲─ DANGER ─ ─ ─  │
+    24 ─── │                      ╱     ╲                  │
+    22 ─── │            ╱────────╱       ╲                 │
+    20 ─── │     ──────╱                   ╲───────        │
+    18 ─── │ ────╱                                 ╲────── │
+           └───────────────────────────────────────────────┘
+        00  02  04  06  08  10  12  14  16  18  20  22
+
+The dangerous 26°C spike at 2 PM was invisible to both manual checks.
+Continuous logging would have caught it AND alerted you.
+```
+
+### 1.2 What Data Logging Gives You
+
+| Benefit | Example |
+|---|---|
+| **Early warning** | pH drifting 0.1/day → act before it reaches 7.0 |
+| **Pattern recognition** | Reservoir always peaks at 2 PM → install shade before it matters |
+| **Root cause analysis** | Wilting at 4 PM? Check logs — EC spiked to 3.2 at noon from evaporation |
+| **Season learning** | Compare July 2026 to July 2027 — was shade cloth timing better? |
+| **Remote monitoring** | Check your system from work via phone dashboard |
+| **Night-time coverage** | Frost at 4 AM? Get an alert, deploy fleece or heater remotely |
+| **Trend analysis** | Nutrient consumption rate increasing → plants are growing fast, good |
+
+### 1.3 What Automation Gives You Beyond Logging
+
+Logging tells you what happened. Automation takes action:
+
+- **Pump failure → automatic alert** (before roots dry out)
+- **Reservoir temp > 24 °C → turn on a fan or chiller** automatically
+- **pH drift > 6.5 → dose pH Down** automatically (Tier 4)
+- **EC drop below target → dose concentrate** automatically (Tier 4)
+- **Frost forecast → turn on reservoir heater** automatically
+
+---
+
+## 2. Automation Tiers Overview
+
+```
+TIER 0                TIER 1                 TIER 2                 TIER 3                 TIER 4
+Manual only           Off-the-shelf          Single ESP32           Multi-node sensor      Automated
+                      smart devices          sensor node            network + dashboard    control
+
+Cost: $0              Cost: $15–$60          Cost: $30–$80          Cost: $80–$160         Cost: $150–$300
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+Manual pH/EC pen      WiFi thermometer       Continuous temp        All Tier 2 sensors     All Tier 3 +
+Manual temp check     WiFi smart plug        Continuous humidity    + pH probe (inline)    Automated pH dosing
+Paper logbook         Phone alerts           Water level sensor     + EC probe (inline)    Automated EC dosing
+                      Basic timer            Pump current monitor   + light sensor (LDR)   Smart pump control
+                                             WiFi data upload       Grafana dashboard      Telegram/email alerts
+                                             Simple web UI          Historical data        Relay-controlled
+                                                                    Trend analysis          dosing pumps
+
+Skill: None           Skill: None            Skill: Basic wiring,   Skill: Moderate        Skill: Intermediate
+                                             flash firmware         electronics, WiFi       electronics, plumbing
+                                                                    networking              for dosing lines
+```
+
+Each tier builds on the previous. You never have to skip ahead — start at Tier 1 and upgrade when you're ready.
+
+---
+
+## 3. Tier 0 — Manual Baseline
+
+This is your current setup as documented in Guides 08 and 10. It works — but it requires discipline and physical presence.
+
+**What you already have:**
+- Handheld pH pen (calibrated monthly)
+- Handheld EC pen (calibrated monthly)
+- Aquarium thermometer (reservoir temp)
+- Min/max thermometer (air temp)
+- Paper logbook
+
+**Limitations:**
+- 2 readings per day at most
+- No alerts — you discover problems on your next check
+- No historical trends — paper logs are hard to analyse
+- No remote access — you must be physically present
+
+---
+
+## 4. Tier 1 — Off-the-Shelf Smart Devices
+
+### Cost: $15–$60 | Skill: None | Time: 15 minutes to set up
+
+This is the easiest, fastest way to add 24/7 monitoring and alerts with zero technical skill. You buy consumer devices, download their app, and place them.
+
+### 4.1 WiFi Temperature and Humidity Logger
+
+**Recommended: Govee H5075 or H5179** (~$15–$25)
+
+Features:
+- Logs temperature and humidity every 2 seconds
+- Stores up to 20 days of data locally; syncs to phone app over Bluetooth/WiFi
+- Configurable high/low temperature and humidity alerts (push notification to phone)
+- Accuracy: ±0.3 °C temperature, ±3% RH
+- Battery powered (AAA or CR2032), lasts 6–12 months
+- Water resistant but NOT waterproof — keep under cover
+
+**Placement:**
+```
+GOVEE SENSOR PLACEMENT
+
+Location 1 — Air temperature (ambient):
+  Mount on the frame shaded side, at plant height (~90cm)
+  NOT in direct sun (reads artificially high)
+  NOT against reservoir (reads warm)
+
+Location 2 — Near reservoir (optional second unit):
+  Mount on the reservoir shade box exterior
+  Captures reservoir ambient temperature
+  Alert if box temp exceeds 30°C → reservoir is likely above 24°C
+
+For reservoir WATER temperature:
+  Use a waterproof Govee probe sensor (H5179 model)
+  Or continue using the aquarium thermometer
+```
+
+**Setting alerts:**
+- High temp alert: >30 °C (air) or >24 °C (water probe) → action: deploy shade, ice bottles
+- Low temp alert: <3 °C → action: deploy fleece, check reservoir heater
+- High humidity alert: >85% RH → action: ventilate, check for Botrytis
+
+### 4.2 WiFi Smart Plug with Energy Monitoring
+
+**Recommended: TP-Link Tapo P110 or Shelly Plug S** (~$12–$18)
+
+Plug your submersible pump into this smart plug. Benefits:
+
+1. **Pump failure detection:** If the pump draws 0W when it should be running → the smart plug sends an alert. You know the pump has failed before roots dry out.
+2. **Power monitoring:** Track actual pump electricity consumption. Typical: 8–15W.
+3. **Remote on/off:** Turn the pump on or off from your phone (useful for emergency shutoff if you're away and get a high-temp alert — stopping the pump stops warm solution circulation).
+4. **Scheduling:** Replace the mechanical timer with the smart plug's built-in schedule.
+
+**Setup:**
+- Plug smart plug into the GFCI outlet
+- Plug pump into smart plug
+- Set schedule: 24h on (or 15-min-on/45-min-off cycle)
+- Set power alert: if consumption = 0W during scheduled ON → send notification
+
+### 4.3 WiFi Camera (Optional)
+
+A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at the system gives you:
+- Visual confirmation that water is flowing (you can see the drain return splashing)
+- Time-lapse growth tracking
+- Remote plant health check (zoom in on leaves)
+- Night vision for nocturnal pest detection (slugs, caterpillars)
+
+### 4.4 Tier 1 Summary
+
+| Device | Cost | What it provides |
+|---|---|---|
+| Govee H5075 (air temp/humidity) | $15 | 24/7 temp + RH logging, phone alerts |
+| Govee H5179 (water temp probe) | $20 | Reservoir water temp logging |
+| TP-Link Tapo P110 (smart plug) | $15 | Pump failure alert, remote control, scheduling |
+| WiFi camera (optional) | $25 | Visual monitoring, time-lapse |
+| **Tier 1 total** | **$50–$75** | |
+
+---
+
+## 5. Tier 2 — ESP32 Sensor Node
+
+### Cost: $30–$80 | Skill: Basic soldering, firmware flashing | Time: 2–4 hours
+
+This is where you build your own sensor system. The ESP32 is a $5–$8 microcontroller with built-in WiFi and Bluetooth, dozens of GPIO pins for sensors, low power consumption, and a massive open-source community. It's the best value platform for DIY IoT monitoring.
+
+### 5.1 Why ESP32 Over Arduino or Raspberry Pi?
+
+```
+PLATFORM COMPARISON FOR HYDROPONIC MONITORING
+
+                    Arduino Uno    ESP32          Raspberry Pi 4
+                    ───────────    ──────────     ──────────────
+Cost                $5–$25         $5–$8          $35–$75
+WiFi built-in       ❌              ✅              ✅
+Bluetooth           ❌              ✅              ✅
+Analog inputs       6              Up to 18       0 (needs ADC)
+Power consumption   ~50 mA         ~80 mA active  ~600 mA (always on)
+                                   ~10 µA sleep
+Can run headless    ✅              ✅              ✅ (but overkill)
+Ideal for sensors   ✅              ✅ (best)       Overkill
+Dashboard server    ❌              ✅ (basic)      ✅ (best)
+SD card logging     With shield    ✅ (built-in)   ✅
+OTA firmware update ❌              ✅              ✅
+Outdoor suitability Good           Best            Poor (SD card, heat)
+Community/guides    Huge           Large, growing  Huge
+
+VERDICT: ESP32 is the best fit for sensor nodes (cheap, WiFi, low power,
+         rugged). Raspberry Pi is best if you want to run a local
+         dashboard server — but that's optional (you can use free cloud).
+```
+
+### 5.2 What Can a Single ESP32 Node Measure?
+
+With one ESP32 board and a few sensors, you can continuously monitor:
+
+| Sensor | Measurement | Why it matters | Cost |
+|---|---|---|---|
+| DS18B20 (waterproof) | Solution temperature | Pythium risk, DO₂ proxy | $2–$4 |
+| DS18B20 (standard) | Air temperature | Heat/frost alerts | $2–$3 |
+| DHT22 / SHT30 | Air humidity + temp | Disease risk, transpiration | $3–$6 |
+| HC-SR04 / JSN-SR04T | Reservoir water level | Low-level alert, usage tracking | $2–$5 |
+| ACS712 / SCT-013 | Pump current draw | Pump failure detection | $3–$6 |
+| LDR (photoresistor) | Light level (relative) | Cloud cover, DLI estimation | $0.50 |
+
+**Total sensor cost: ~$13–$25**
+**ESP32 board: ~$5–$8**
+**Supporting components (resistors, wires, breadboard): ~$5–$10**
+
+### 5.3 Recommended Starter Sensor Suite
+
+For your first ESP32 node, start with these four sensors — they cover the most critical variables:
+
+```
+ESP32 STARTER SENSOR KIT
+
+1. DS18B20 waterproof probe  → Reservoir solution temperature
+2. DHT22 module              → Air temperature + humidity
+3. JSN-SR04T ultrasonic      → Reservoir water level (waterproof version)
+4. ACS712 current sensor     → Pump power draw (failure detection)
+
+Total cost: ESP32 ($6) + sensors ($15) + wires/resistors ($5) = ~$26
+```
+
+### 5.4 What This Node Can Do
+
+Once assembled and programmed:
+
+```
+EVERY 60 SECONDS, THE NODE:
+
+  1. Reads solution temperature  ──→ Logs to WiFi endpoint
+  2. Reads air temp + humidity   ──→ Logs to WiFi endpoint
+  3. Reads water level           ──→ Logs to WiFi endpoint
+  4. Reads pump current          ──→ Logs to WiFi endpoint
+
+  IF solution temp > 24°C       ──→ Sends alert (Telegram/email)
+  IF solution temp < 10°C       ──→ Sends alert
+  IF air temp < 3°C             ──→ Sends alert (frost warning)
+  IF humidity > 85%             ──→ Sends alert (disease risk)
+  IF water level < 30%          ──→ Sends alert (top up needed)
+  IF pump current = 0A          ──→ Sends alert (PUMP FAILURE)
+
+  Also serves a local web page at http://hydro.local showing
+  current readings and a simple 24-hour chart.
+```
+
+---
+
+## 6. Tier 3 — Multi-Sensor Network + Dashboard
+
+### Cost: $80–$160 | Skill: Moderate wiring, networking | Time: 6–10 hours
+
+Tier 3 adds inline pH and EC probes for continuous water quality monitoring, a light sensor for DLI tracking, and a proper data dashboard for historical analysis.
+
+### 6.1 Additional Sensors (Beyond Tier 2)
+
+| Sensor | Measurement | Cost | Notes |
+|---|---|---|---|
+| Gravity Analog pH Sensor Kit (DFRobot SEN0161-V2) | Solution pH (continuous) | $30–$40 | Requires calibration; probe lasts 12–18 months |
+| Gravity Analog EC Sensor Kit (DFRobot DFR0300) | Solution EC (continuous) | $40–$55 | Temperature-compensated; requires calibration |
+| BH1750 digital light sensor | Lux / light intensity | $2–$4 | Can estimate DLI over time |
+| Soil moisture sensor (capacitive) | Zone C grow bag moisture | $2–$3 | Capacitive type only (resistive corrodes) |
+
+### 6.2 pH and EC Probes — Important Notes
+
+Inline pH and EC probes are the most valuable automation sensors but also the most maintenance-intensive.
+
+**pH probe care:**
+- Store the probe tip in KCl storage solution when not submerged (if removed from system)
+- Calibrate every 2–4 weeks with pH 4.0 and 7.0 buffer solutions
+- Probe lifespan: 12–18 months before drift becomes unacceptable
+- Replacement probe: ~$15–$25
+- Never let the probe dry out — the glass membrane must stay hydrated
+
+**EC probe care:**
+- Rinse with distilled water after calibration
+- Calibrate every 4–8 weeks with 1413 µS/cm standard
+- Probe lifespan: 2–3 years typically
+- Less fragile than pH probes but still needs periodic attention
+
+**Placement for inline monitoring:**
+
+```
+INLINE SENSOR PLACEMENT
+
+  [Reservoir]
+       │
+       │ ← PUMP
+       │
+       ▼
+  ┌──[T-junction]──────────────────────────────────────┐
+  │                                                     │
+  │  pH probe ─────┐                                    │
+  │  EC probe ─────┤  ← probes inserted into a         │
+  │  Temp probe ───┘    "sensor cell" (PVC T-piece      │
+  │                      with probe ports)               │
+  │                                                     │
+  └───────────────── to manifold → channels             │
+                                                        │
+  Return from channels ──────────────────────► Reservoir │
+```
+
+**Building a simple sensor cell:**
+1. Use a 32 mm PVC T-piece.
+2. Drill probe-diameter holes in the top of the T (or in a fitted end cap).
+3. Insert probes through rubber grommets so they hang into the flowing solution.
+4. Place the sensor cell between the pump output and the manifold inlet — all solution flows past the probes.
+5. Ensure probes are fully submerged but not blocking flow.
+
+### 6.3 Dashboard — Grafana + InfluxDB
+
+A dashboard turns raw sensor data into visual charts, trend lines, and alerts. The recommended free stack:
+
+```
+DATA FLOW
+
+  ESP32 nodes                  InfluxDB              Grafana
+  ┌──────────┐    HTTP POST    ┌──────────┐   query  ┌──────────┐
+  │ Sensors  │ ──────────────► │ Time-    │ ◄──────► │ Dashboard│
+  │ read     │   (every 60s)   │ series   │          │ charts   │
+  │ data     │                 │ database │          │ alerts   │
+  └──────────┘                 └──────────┘          └──────────┘
+
+  Options for running InfluxDB + Grafana:
+  A) Raspberry Pi (local, always on)         ← best for privacy, no internet needed
+  B) Old laptop / mini PC (local)            ← reuse existing hardware
+  C) Free cloud: InfluxDB Cloud + Grafana Cloud  ← zero hardware, free tier sufficient
+```
+
+**Option C (free cloud) is recommended for beginners:**
+- InfluxDB Cloud free tier: 30-day retention, 5 MB writes/5 min — more than enough
+- Grafana Cloud free tier: 3 dashboards, 10,000 series — more than enough
+- No hardware to maintain, accessible from any device with a browser
+
+**What the dashboard shows:**
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│  HYDROPONICS DASHBOARD                          Last updated: now   │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  CURRENT VALUES                                                     │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐           │
+│  │ Sol.Temp │  │ Air Temp │  │    pH    │  │    EC    │           │
+│  │  20.3°C  │  │  22.1°C  │  │   5.94   │  │  1.42    │           │
+│  │    ✅    │  │    ✅    │  │    ✅    │  │    ✅    │           │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘           │
+│                                                                     │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐                          │
+│  │ Humidity │  │  Water   │  │  Pump    │                          │
+│  │   68%    │  │  Level   │  │  Status  │                          │
+│  │    ✅    │  │   72%    │  │  RUNNING │                          │
+│  └──────────┘  └──────────┘  └──────────┘                          │
+│                                                                     │
+│  SOLUTION TEMPERATURE — Last 7 Days                                 │
+│  26 ──│─────────────────────────────────── DANGER ──────            │
+│  24 ──│─────────────────────────── ╱╲ ──────────────────            │
+│  22 ──│──────────────── ╱╲ ──────╱──╲───╱╲──────────────            │
+│  20 ──│── ╱╲ ────╱╲───╱──╲────╱────╲─╱──╲──── ╱╲ ─────            │
+│  18 ──│─╱──╲───╱──╲─╱────╲──╱──────╲╱────╲──╱──╲─────             │
+│  16 ──│╱────╲─╱────╲╱──────╲╱────────╲────╲╱────╲─────             │
+│       └──Mon──Tue──Wed──Thu──Fri──Sat──Sun──────────────             │
+│                                                                     │
+│  pH HISTORY — Last 7 Days                                           │
+│  7.0 ─│──────────────────────────────────── HIGH ──────             │
+│  6.5 ─│───────────────────────────────────────────────              │
+│  6.0 ─│── ─── ──── ──── ──── ──── ──── ──── ──── ─────             │
+│  5.5 ─│───────────────────────────────────────────────              │
+│  5.0 ─│──────────────────────────────────── LOW ───────             │
+│       └──Mon──Tue──Wed──Thu──Fri──Sat──Sun──────────────             │
+│                                                                     │
+│  RESERVOIR LEVEL — Last 7 Days                                      │
+│  100%─│▓▓▓▓                                                        │
+│   75%─│▓▓▓▓▓▓▓▓▓▓▓                                                │
+│   50%─│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                        │
+│   25%─│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ← topped up here               │
+│    0%─│───────────────────────────────────────────────              │
+│       └──Mon──Tue──Wed──Thu──Fri──Sat──Sun──────────────             │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 7. Tier 4 — Automated Control
+
+### Cost: $150–$300 | Skill: Intermediate electronics, basic plumbing | Time: 10–16 hours
+
+Tier 4 adds actuators — devices that take physical action based on sensor readings. The ESP32 doesn't just read and report; it controls.
+
+### 7.1 What Can Be Automated?
+
+| Function | How it works | Components | Cost |
+|---|---|---|---|
+| **pH auto-dosing** | Peristaltic pump dispenses pH Down/Up into reservoir when pH drifts | Peristaltic pump + relay + pH probe | $25–$40 |
+| **EC auto-dosing** | Peristaltic pump dispenses nutrient concentrate when EC drops | Peristaltic pump + relay + EC probe | $25–$40 |
+| **Reservoir top-up** | Solenoid valve on water supply opens when level drops | Float valve or solenoid + level sensor | $15–$25 |
+| **Cooling fan** | Fan blows across reservoir surface when temp exceeds threshold | 12V fan + relay module | $8–$12 |
+| **Reservoir heater** | Aquarium heater turns on when temp drops below threshold | Relay module (heater has its own thermostat, but relay adds remote control) | $5 (relay only; heater from Tier 2 budget) |
+| **Grow light control** | LED panel switches based on light sensor or schedule | Relay module | $5 |
+| **Misting** | Misting nozzles activate for foliar cooling in heatwaves | Solenoid + misting line | $20–$35 |
+
+### 7.2 Automated pH Dosing — Detailed Design
+
+This is the single highest-value automation you can add. pH drift is the most common daily intervention in hydroponics, and automating it saves daily effort while keeping pH tighter than manual dosing ever could.
+
+```
+AUTO pH DOSING — SYSTEM SCHEMATIC
+
+  ┌──────────────────────────────────────────────────────────────┐
+  │                                                              │
+  │  pH Probe ────► ESP32 ────► Decision logic                   │
+  │  (in sensor       │         "Is pH > 6.3?"                   │
+  │   cell)            │              │                           │
+  │                    │             YES                          │
+  │                    │              │                           │
+  │                    │              ▼                           │
+  │                    │     Activate Relay → Peristaltic Pump    │
+  │                    │              │       (pH Down bottle)    │
+  │                    │              ▼                           │
+  │                    │     Dose 0.5 mL pH Down into reservoir  │
+  │                    │              │                           │
+  │                    │              ▼                           │
+  │                    │     Wait 5 minutes (mixing time)        │
+  │                    │              │                           │
+  │                    │              ▼                           │
+  │                    │     Re-read pH                          │
+  │                    │              │                           │
+  │                    │         Still > 6.3?                     │
+  │                    │          YES → dose again (up to 3×)    │
+  │                    │          NO  → return to monitoring     │
+  │                    │                                         │
+  │                    │     SAFETY:                              │
+  │                    │     Max 3 doses per cycle               │
+  │                    │     Max 10 doses per 24h                │
+  │                    │     If 10 reached → ALERT, stop dosing  │
+  │                    │     (something else is wrong)            │
+  └──────────────────────────────────────────────────────────────┘
+```
+
+**Peristaltic pump details:**
+- A peristaltic pump squeezes liquid through a silicone tube using a rotating mechanism. The liquid never contacts the pump motor — only the tube. This makes it ideal for corrosive chemicals like pH Down (phosphoric acid).
+- Recommended: 12V DC peristaltic pump, 1–100 mL/min flow rate
+- Cost: $8–$15 (AliExpress, Amazon)
+- Controlled via a relay module connected to ESP32 GPIO pin
+
+**Dosing calculation example:**
+- Reservoir: 80 L
+- Current pH: 6.5
+- Target pH: 5.9
+- pH Down stock: 85% phosphoric acid diluted to 10% working solution
+- Typical dose: 0.5–1.0 mL per dose lowers 80 L by ~0.1–0.2 pH
+- Always under-dose and re-check — you can add more but can't take it back
+
+### 7.3 Automated EC Dosing — Detailed Design
+
+EC dosing is more complex than pH because you're dosing two or three separate nutrient concentrates that must be added in the correct ratio and never mixed together in concentrated form.
+
+```
+AUTO EC DOSING — TWO-PUMP SYSTEM
+
+  Stock A: Calcium Nitrate solution (100g/L in water)
+  Stock B: MasterBlend + Epsom Salt solution (100g MasterBlend + 50g Epsom / L)
+
+  EC Probe ──► ESP32 ──► "Is EC < 1.0?"
+                              │
+                             YES
+                              │
+                              ▼
+                    Dose 5 mL Stock A  ──► Peristaltic Pump A
+                    Wait 30 seconds
+                    Dose 5 mL Stock B  ──► Peristaltic Pump B
+                    Wait 5 minutes (mixing)
+                    Re-read EC
+                    Still < 1.0? → dose again (max 5×)
+                    
+  SAFETY:
+  - NEVER run both pumps simultaneously (prevents mixing concentrates)
+  - Always dose A first, wait, then B
+  - Maximum doses per 24h: 20
+  - If limit reached → ALERT (possible leak or heavy consumption)
+```
+
+**Stock solution preparation:**
+- Stock A (Calcium Nitrate): Dissolve 100 g Ca(NO₃)₂ in 1 L of water. Store in opaque bottle. Shelf life: 2–3 weeks.
+- Stock B (MasterBlend + Epsom): Dissolve 100 g MasterBlend 4-18-38 + 50 g Epsom Salt in 1 L of water. Store in opaque bottle. Shelf life: 1–2 weeks.
+- Label bottles clearly. Keep away from children and pets.
+
+### 7.4 Safety Interlocks (Critical)
+
+Automated dosing without safety limits is dangerous. A stuck relay or misread sensor could dump an entire bottle of acid into your reservoir.
+
+**Mandatory safety rules for any automated dosing system:**
+
+```
+DOSING SAFETY INTERLOCKS
+
+1. DOSE LIMIT per cycle:    Max 3 sequential doses before mandatory wait
+2. DOSE LIMIT per 24h:     Max 10–20 doses total (pH) / 20–30 doses (EC)
+3. MAXIMUM pH CHANGE:      If pH changes by >1.0 in 1 hour → HALT all dosing, ALERT
+4. MAXIMUM EC CHANGE:      If EC changes by >0.5 in 1 hour → HALT all dosing, ALERT
+5. LOW STOCK DETECTION:    If peristaltic pump runs but pH/EC doesn't change → bottle empty
+6. WATCHDOG TIMER:         If ESP32 hasn't sent data in 5 minutes → alert (node crash)
+7. MANUAL OVERRIDE:        Physical switch to disable all relays without software
+8. NEVER dose into empty reservoir: If water level < 20% → halt dosing
+9. LOG EVERY DOSE:         Record timestamp, volume, before/after reading
+```
+
+---
+
+## 8. Sensor Reference — What to Measure and Why
+
+### 8.1 Complete Sensor Matrix
+
+| Parameter | Sensor | Interface | ESP32 Pin | Reads | Accuracy | Why measure? |
+|---|---|---|---|---|---|---|
+| Solution temp | DS18B20 (waterproof) | OneWire (digital) | Any GPIO | -55 to +125 °C | ±0.5 °C | Pythium risk, DO₂ proxy |
+| Air temp + humidity | DHT22 or SHT30 | Digital | Any GPIO | -40–80 °C, 0–100% RH | ±0.5 °C / ±2% RH | Frost, heatwave, disease |
+| Water level | JSN-SR04T (waterproof ultrasonic) | Trigger + Echo | 2 GPIO | 25–450 cm range | ±1 cm | Low reservoir alert |
+| Pump current | ACS712 (5A module) | Analog | ADC pin | 0–5A | ±50 mA | Pump failure detection |
+| Solution pH | DFRobot SEN0161-V2 | Analog | ADC pin | 0–14 pH | ±0.1 pH | Nutrient availability |
+| Solution EC | DFRobot DFR0300 | Analog | ADC pin | 0–20 mS/cm | ±5% | Nutrient concentration |
+| Light intensity | BH1750 | I2C (digital) | SDA + SCL | 1–65535 lux | ±1 lux | DLI estimation |
+| Grow bag moisture | Capacitive soil sensor | Analog | ADC pin | Relative % | Relative | Zone C watering trigger |
+| Barometric pressure | BME280 | I2C (digital) | SDA + SCL | 300–1100 hPa | ±1 hPa | Weather trend prediction |
+
+### 8.2 Sensor Selection Tips
+
+**Temperature — DS18B20 is king:**
+- The DS18B20 is the standard for hydroponics temperature. It costs $2, is waterproof (probe version), and you can run multiple probes on a single GPIO pin using the OneWire bus. This means one pin can read 5+ temperature probes simultaneously.
+- Use the waterproof probe version for solution temp and the bare TO-92 package for air temp.
+
+**Humidity — DHT22 vs. SHT30:**
+- DHT22: $3, widely available, adequate accuracy. Use 10 kΩ pull-up resistor.
+- SHT30: $5, I2C interface, better accuracy (±2% vs ±3%), faster reads. Preferred if you want cleaner data.
+
+**Water level — JSN-SR04T over HC-SR04:**
+- The HC-SR04 is the common cheap ultrasonic sensor, but it's NOT waterproof. In a humid outdoor environment near a reservoir, it corrodes quickly.
+- The JSN-SR04T is the waterproof version with a sealed transducer on a cable. It's designed for liquid level measurement. Worth the extra $2.
+
+**pH and EC probes — DFRobot kits:**
+- DFRobot's Gravity series pH and EC sensor kits are the de facto standard for hobbyist hydroponic automation. They come with a signal conditioning board that outputs a clean analog voltage to the ESP32's ADC.
+- They are NOT laboratory-grade but are accurate enough for hydroponic management (±0.1 pH, ±5% EC).
+- Budget alternative: Atlas Scientific probes are more accurate and longer-lasting but cost 3–5× more. Not recommended unless you need lab-grade data.
+
+---
+
+## 9. ESP32 Hardware Guide
+
+### 9.1 Which ESP32 Board?
+
+| Board | Cost | Pro | Con | Recommended for |
+|---|---|---|---|---|
+| ESP32-WROOM-32 DevKit | $5–$8 | Cheapest, widely available | No battery management | Tier 2 sensor node |
+| ESP32-S3 DevKit | $7–$12 | More ADC channels, USB-C | Slightly more expensive | Tier 3 with many analog sensors |
+| ESP32-C3 Super Mini | $3–$5 | Tiny, very cheap | Fewer pins | Single-purpose nodes |
+| LILYGO T-Display S3 | $15–$20 | Built-in LCD screen | Higher cost | Display node showing current values |
+
+**Recommended: ESP32-WROOM-32 DevKit** for the first build. It's the most documented, cheapest, and has plenty of pins.
+
+### 9.2 ESP32 Pin Layout for Sensor Node
+
+```
+ESP32-WROOM-32 PIN ASSIGNMENTS
+
+          ┌───────────────────────────────┐
+          │         ESP32 DevKit          │
+          │                               │
+  3.3V ──►│ 3V3                      VIN │◄── 5V USB power
+  GND  ──►│ GND                      GND │◄── Ground (shared)
+          │                               │
+          │ GPIO 4  ◄── DS18B20 OneWire   │  (solution + air temp, all on one pin)
+          │ GPIO 15 ◄── DHT22 data        │  (air humidity)
+          │ GPIO 16 ──► JSN-SR04T Trigger │  (water level)
+          │ GPIO 17 ◄── JSN-SR04T Echo    │  (water level)
+          │ GPIO 34 ◄── ACS712 analog out │  (pump current — input-only pin)
+          │ GPIO 35 ◄── pH sensor analog  │  (Tier 3)
+          │ GPIO 32 ◄── EC sensor analog  │  (Tier 3)
+          │ GPIO 33 ◄── Soil moisture     │  (Tier 3, Zone C)
+          │ GPIO 21 ──► I2C SDA           │  (BH1750 light, BME280 weather)
+          │ GPIO 22 ──► I2C SCL           │  (shared I2C bus)
+          │                               │
+          │ GPIO 25 ──► Relay 1 (pH pump) │  (Tier 4)
+          │ GPIO 26 ──► Relay 2 (EC-A)    │  (Tier 4)
+          │ GPIO 27 ──► Relay 3 (EC-B)    │  (Tier 4)
+          │ GPIO 14 ──► Relay 4 (fan)     │  (Tier 4)
+          │                               │
+          └───────────────────────────────┘
+
+POWER:
+  USB 5V from a phone charger → ESP32 VIN
+  3.3V from ESP32 → sensors (DS18B20, DHT22, BH1750)
+  5V from separate supply → relay module, peristaltic pumps
+  
+IMPORTANT:
+  GPIO 34, 35, 36, 39 are INPUT-ONLY — use these for analog sensors
+  GPIO 6–11 are connected to flash memory — do NOT use
+```
+
+### 9.3 Power Supply
+
+The ESP32 and sensors draw very little power:
+
+```
+POWER BUDGET
+
+Component                   Current (mA)    Voltage
+─────────────────────────────────────────────────────
+ESP32 (WiFi active)         80–160          3.3V (from USB 5V)
+DS18B20 × 2                 3               3.3V
+DHT22                       2.5             3.3V
+JSN-SR04T                   15              5V
+ACS712                      10              5V
+BH1750                      1               3.3V
+DFRobot pH board            5               5V
+DFRobot EC board            5               5V
+─────────────────────────────────────────────────────
+Total:                      ~120–200 mA at 5V
+
+Any USB phone charger (5V / 1A minimum) is sufficient.
+A 5V / 2A charger provides ample headroom for relays too.
+```
+
+For Tier 4 with relays and peristaltic pumps:
+- Relay module: ~60 mA per relay coil (use a 4-channel relay module)
+- Peristaltic pumps: ~200–300 mA each at 12V
+- Separate 12V supply for peristaltic pumps (do NOT power from ESP32)
+
+---
+
+## 10. Wiring Diagrams
+
+### 10.1 Tier 2 — Basic Sensor Node
+
+```
+WIRING — TIER 2 SENSOR NODE
+
+                        ┌────────────────────────────────────────────┐
+    USB 5V charger ────►│ ESP32 DevKit                               │
+                        │                                            │
+                        │  3.3V ──┬──────── VCC DS18B20 (probe)      │
+                        │         ├──────── VCC DS18B20 (air)        │
+                        │         ├──────── VCC DHT22                │
+                        │         └──────── VCC BH1750               │
+                        │                                            │
+                        │  5V   ──┬──────── VCC JSN-SR04T            │
+                        │         └──────── VCC ACS712               │
+                        │                                            │
+                        │  GND  ──┬──────── GND (all sensors)        │
+                        │         └──────── GND (all sensors)        │
+                        │                                            │
+                        │  GPIO4 ─── DATA (both DS18B20 via OneWire) │
+                        │              │                              │
+                        │         4.7kΩ resistor between DATA & 3.3V │
+                        │              (pull-up — required for       │
+                        │               OneWire protocol)             │
+                        │                                            │
+                        │  GPIO15 ── DATA (DHT22)                    │
+                        │              │                              │
+                        │         10kΩ resistor between DATA & 3.3V  │
+                        │                                            │
+                        │  GPIO16 ── TRIG (JSN-SR04T)                │
+                        │  GPIO17 ── ECHO (JSN-SR04T)                │
+                        │                                            │
+                        │  GPIO34 ── OUT (ACS712)                    │
+                        │         ACS712 module in-line with pump    │
+                        │         power cable (pass pump wire        │
+                        │         through the sensor module)          │
+                        │                                            │
+                        │  GPIO21 ── SDA (BH1750)                    │
+                        │  GPIO22 ── SCL (BH1750)                    │
+                        │                                            │
+                        └────────────────────────────────────────────┘
+
+DS18B20 WIRING DETAIL (OneWire bus with 2 probes):
+
+  3.3V ───┐
+          ├── 4.7kΩ ──┬── DATA pin (GPIO4)
+          │           │
+          │    ┌──────┤
+          │    │      │
+        [DS18B20    [DS18B20
+         probe]      air]
+          │           │
+  GND ────┴───────────┘
+```
+
+### 10.2 Tier 4 — Adding Relay Module for Dosing
+
+```
+WIRING — TIER 4 ADDITIONS (relay + peristaltic pumps)
+
+  ESP32 GPIO25 ──► IN1 ┐
+  ESP32 GPIO26 ──► IN2 ├── 4-Channel Relay Module
+  ESP32 GPIO27 ──► IN3 │   (5V coil, optocoupled)
+  ESP32 GPIO14 ──► IN4 ┘
+  ESP32 5V     ──► VCC (relay module)
+  ESP32 GND    ──► GND (relay module)
+
+  Relay 1 (NO contact) ──► 12V to Peristaltic Pump 1 (pH Down)
+  Relay 2 (NO contact) ──► 12V to Peristaltic Pump 2 (Stock A)
+  Relay 3 (NO contact) ──► 12V to Peristaltic Pump 3 (Stock B)
+  Relay 4 (NO contact) ──► 12V to Cooling Fan
+
+  12V Power Supply ──► Common terminal on each relay (shared)
+
+  PERISTALTIC PUMP PLUMBING:
+
+  pH Down bottle ──► silicone tube ──► peristaltic pump ──► tube into reservoir
+  Stock A bottle ──► silicone tube ──► peristaltic pump ──► tube into reservoir
+  Stock B bottle ──► silicone tube ──► peristaltic pump ──► tube into reservoir
+
+  Keep all stock bottles ABOVE the pump to prevent siphoning when pump is off.
+  Add a non-return valve on each line as extra protection.
+```
+
+---
+
+## 11. Firmware and Software
+
+### 11.1 Firmware Options
+
+You don't need to write code from scratch. Several open-source firmware projects support ESP32 + sensors with zero or minimal coding:
+
+| Firmware | Skill level | Features | Best for |
+|---|---|---|---|
+| **ESPHome** | Beginner | YAML config, Home Assistant integration, OTA updates | Tier 2–3, if using Home Assistant |
+| **Tasmota** | Beginner | Web-based config, MQTT, rule engine | Tier 1–2, simple setups |
+| **Custom Arduino/PlatformIO** | Intermediate | Full control, any sensor, any logic | Tier 3–4, advanced customisation |
+| **MicroPython** | Intermediate | Python on ESP32, rapid prototyping | Quick experiments |
+
+### 11.2 ESPHome — Recommended for Most Users
+
+ESPHome lets you define your entire sensor node in a YAML configuration file. No C++ coding. It compiles firmware, flashes it to the ESP32, and provides over-the-air updates.
+
+**Example ESPHome configuration for a Tier 2 node:**
+
+```yaml
+# hydro-node.yaml — ESPHome configuration for hydroponics sensor node
+
+esphome:
+  name: hydro-node
+  platform: ESP32
+  board: esp32dev
+
+wifi:
+  ssid: "YourWiFiNetwork"
+  password: "YourWiFiPassword"
+
+# Enable web server for local access at http://hydro-node.local
+web_server:
+  port: 80
+
+# Enable logging
+logger:
+
+# Enable over-the-air updates
+ota:
+  password: "your-ota-password"
+
+# --- SENSORS ---
+
+# Dallas OneWire bus (DS18B20 temperature probes)
+dallas:
+  - pin: GPIO4
+
+sensor:
+  # Solution temperature (waterproof DS18B20 probe)
+  - platform: dallas
+    address: 0x1234567890ABCDEF   # Replace with your probe's unique address
+    name: "Solution Temperature"
+    unit_of_measurement: "°C"
+    accuracy_decimals: 1
+    filters:
+      - sliding_window_moving_average:
+          window_size: 5
+          send_every: 1
+
+  # Air temperature (second DS18B20)
+  - platform: dallas
+    address: 0xFEDCBA0987654321   # Replace with your probe's unique address
+    name: "Air Temperature"
+    unit_of_measurement: "°C"
+
+  # Air humidity (DHT22)
+  - platform: dht
+    pin: GPIO15
+    model: DHT22
+    temperature:
+      name: "DHT Air Temperature"
+    humidity:
+      name: "Air Humidity"
+      unit_of_measurement: "%"
+    update_interval: 30s
+
+  # Reservoir water level (JSN-SR04T ultrasonic)
+  - platform: ultrasonic
+    trigger_pin: GPIO16
+    echo_pin: GPIO17
+    name: "Reservoir Level"
+    update_interval: 60s
+    unit_of_measurement: "%"
+    filters:
+      # Convert distance (cm) to percentage
+      # Adjust 40 (empty) and 5 (full) to your reservoir dimensions
+      - lambda: |-
+          float empty_cm = 40.0;
+          float full_cm = 5.0;
+          float pct = (empty_cm - x) / (empty_cm - full_cm) * 100.0;
+          return clamp(pct, 0.0f, 100.0f);
+
+  # Pump current (ACS712 via ADC)
+  - platform: adc
+    pin: GPIO34
+    name: "Pump Current"
+    unit_of_measurement: "A"
+    update_interval: 10s
+    attenuation: 11db
+    filters:
+      - calibrate_linear:
+          - 1.65 -> 0      # 0A = mid-point voltage (2.5V at 5V, ~1.65V via divider)
+          - 2.15 -> 1.0    # Calibrate with known load
+      - sliding_window_moving_average:
+          window_size: 10
+
+  # Light level (BH1750 via I2C)
+  - platform: bh1750
+    name: "Light Level"
+    address: 0x23
+    update_interval: 60s
+    unit_of_measurement: "lx"
+
+# --- ALERTS (via Home Assistant or direct notification) ---
+
+binary_sensor:
+  # Pump failure detection
+  - platform: template
+    name: "Pump Failure"
+    lambda: |-
+      return id(pump_current).state < 0.05;
+    on_press:
+      - logger.log: "ALERT: Pump current is zero — possible pump failure!"
+```
+
+### 11.3 Sending Data to InfluxDB (Without Home Assistant)
+
+If you don't use Home Assistant, the ESP32 can push data directly to InfluxDB Cloud via HTTP POST. With custom Arduino/PlatformIO firmware:
+
+```
+DATA FLOW (no Home Assistant)
+
+ESP32 ──► HTTP POST every 60s ──► InfluxDB Cloud (free tier)
+                                        │
+                                        ▼
+                                  Grafana Cloud (free tier)
+                                  queries InfluxDB for charts
+```
+
+The ESP32 sends an HTTP POST like:
+
+```
+POST /api/v2/write?org=your-org&bucket=hydroponics
+Authorization: Token your-api-token
+
+solution_temp,node=hydro-1 value=20.3
+air_temp,node=hydro-1 value=22.1
+humidity,node=hydro-1 value=68.2
+water_level,node=hydro-1 value=72.0
+pump_current,node=hydro-1 value=0.12
+```
+
+InfluxDB stores this as time-series data. Grafana queries it and renders charts.
+
+### 11.4 Local-Only Option (No Cloud, No Internet)
+
+If you don't want cloud services or internet dependency:
+
+1. ESP32 hosts a local web server (built into ESPHome or custom firmware).
+2. Access it at `http://hydro-node.local` on your home WiFi.
+3. Current sensor values displayed as a simple web page.
+4. Optional: ESP32 logs data to a microSD card (using an SD card breakout board, ~$3). You can pull the card periodically and import into a spreadsheet.
+
+This option provides 100% local operation — no cloud accounts, no subscriptions, no privacy concerns.
+
+---
+
+## 12. Data Storage and Dashboards
+
+### 12.1 Options Comparison
+
+| Option | Cost | Retention | Access | Skill | Best for |
+|---|---|---|---|---|---|
+| **Paper logbook** | $0 | Forever (physical) | Physical only | None | Manual-only Tier 0 |
+| **Spreadsheet (manual entry)** | $0 | Forever | Your computer | Basic | Tier 0–1 |
+| **Google Sheets (auto-populated via IFTTT)** | $0 | Forever | Any browser | Basic | Tier 1 with Govee |
+| **InfluxDB Cloud + Grafana Cloud** | $0 (free tier) | 30 days | Any browser | Moderate | Tier 2–4 |
+| **Home Assistant + InfluxDB (local)** | $35–$75 (Pi) | Forever | Local network | Moderate | Tier 2–4, privacy-first |
+| **SD card on ESP32** | $3 | Until card full | Physical card | Basic | Offline sites |
+
+### 12.2 Google Sheets — Simplest Auto-Logging
+
+If you're using Tier 1 Govee devices, you can export data to Google Sheets via the Govee app's export feature (CSV). This gives you spreadsheet-based charts and historical analysis at zero cost.
+
+For ESP32 data, you can push readings directly to Google Sheets using the Google Sheets API (via a Google Apps Script webhook). The ESP32 sends an HTTP GET to a script URL, which appends the data to a spreadsheet row. Many tutorials exist for this — search "ESP32 Google Sheets logging".
+
+### 12.3 InfluxDB + Grafana — The Power Combo
+
+This is the recommended stack for Tier 2+ because:
+- InfluxDB is purpose-built for time-series sensor data (fast writes, efficient queries)
+- Grafana provides beautiful, configurable dashboards with alerting built in
+- Both have generous free tiers that exceed our needs
+
+**Setup steps (cloud, ~20 minutes):**
+
+```
+SETUP: INFLUXDB CLOUD + GRAFANA CLOUD
+
+Step 1: Create free InfluxDB Cloud account
+  → https://cloud2.influxdata.com/signup
+  → Create a bucket called "hydroponics"
+  → Generate an API token (write access)
+  → Note your org name and bucket name
+
+Step 2: Configure ESP32 to POST data
+  → In firmware, set the InfluxDB URL, org, bucket, and token
+  → Data should appear in InfluxDB within 60 seconds of first POST
+
+Step 3: Create free Grafana Cloud account
+  → https://grafana.com/auth/sign-up
+  → Add InfluxDB as a data source (use your cloud URL + token)
+  → Create a new dashboard
+
+Step 4: Build dashboard panels
+  → Panel 1: Solution temperature (line chart, last 7 days)
+  → Panel 2: Air temperature + humidity (dual-axis chart)
+  → Panel 3: pH history (line chart with threshold bands)
+  → Panel 4: EC history (line chart with threshold bands)
+  → Panel 5: Water level (gauge, current %)
+  → Panel 6: Pump status (stat panel, current/previous state)
+
+Step 5: Configure alerts in Grafana
+  → Alert: Solution temp > 24°C → notification
+  → Alert: Pump current = 0 for > 2 min → notification
+  → Alert: Water level < 25% → notification
+  → Notification channel: Email, Telegram, or Slack (all free)
+```
+
+### 12.4 Home Assistant — The Local Hub
+
+If you want to keep everything local (no cloud), Home Assistant running on a Raspberry Pi provides:
+- Auto-discovery of ESPHome devices
+- Beautiful dashboard (Lovelace UI)
+- Automation engine (if temp > X, turn on relay Y)
+- Long-term data storage (built-in recorder)
+- Notifications via Telegram, email, or phone push
+
+**Home Assistant setup:**
+1. Install Home Assistant OS on a Raspberry Pi 4 (4 GB RAM recommended) — ~$50–$75 for the Pi
+2. Install the ESPHome add-on from the HA Add-on Store
+3. Flash your ESP32 via ESPHome
+4. The ESP32 appears automatically in Home Assistant
+5. Add sensor entities to your dashboard
+
+---
+
+## 13. Alerts and Notifications
+
+### 13.1 Alert Priority Matrix
+
+Not all alerts are equal. Structure your notifications to avoid alert fatigue:
+
+```
+ALERT PRIORITIES
+
+🔴 CRITICAL (immediate action required — wake you up at night)
+  • Pump current = 0A (pump failure)           → roots dry in 30 min
+  • Solution temp < 2°C (freeze imminent)      → system damage risk
+  • Water level < 10% (nearly empty)            → pump dry run risk
+  • pH outside 4.0–8.0 (extreme drift)          → system malfunction
+
+🟡 WARNING (action within 2–4 hours)
+  • Solution temp > 24°C (heat stress)          → deploy shade/ice
+  • Solution temp < 10°C (cold stress)          → deploy heater/fleece
+  • Air temp < 3°C (frost warning)              → deploy fleece
+  • pH outside 5.5–6.5                          → adjust pH
+  • EC outside target range by >20%             → top up / dilute
+  • Water level < 30%                           → top up reservoir
+  • Humidity > 85% for 6+ hours                 → disease risk
+
+🟢 INFORMATIONAL (check at convenience)
+  • Daily summary: min/max temp, avg pH, avg EC, water consumed
+  • Weekly trend: is pH drifting steadily?
+  • Reservoir top-up reminder
+  • Calibration due reminder
+```
+
+### 13.2 Notification Channels
+
+| Channel | Cost | Latency | Setup effort | Best for |
+|---|---|---|---|---|
+| **Telegram bot** | Free | Instant | 10 min | All alert levels — best overall |
+| **Email (Gmail SMTP)** | Free | 1–5 min | 15 min | Non-urgent alerts, daily summaries |
+| **Pushover** | $5 one-time | Instant | 5 min | Push notifications with priority levels |
+| **Home Assistant Companion** | Free | Instant | 5 min (if using HA) | Phone push notifications |
+| **Slack webhook** | Free | Instant | 10 min | If you already use Slack |
+| **Discord webhook** | Free | Instant | 5 min | If you already use Discord |
+
+### 13.3 Telegram Bot — Recommended Setup
+
+Telegram is the best free notification channel for hydroponic alerts because:
+- Free, no message limits, instant delivery
+- Works on phone + desktop
+- Supports images (you could send a dashboard screenshot daily)
+- Bot setup takes 10 minutes
+
+**Setup:**
+1. Open Telegram, search for `@BotFather`
+2. Send `/newbot`, follow the prompts, name it "HydroAlert" or similar
+3. Save the bot token (a long string like `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11`)
+4. Start a chat with your new bot and send any message
+5. Get your chat ID: visit `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates`
+6. In ESP32 firmware, send alerts via HTTP GET:
+   ```
+   https://api.telegram.org/bot<TOKEN>/sendMessage?chat_id=<CHAT_ID>&text=ALERT: Pump failure detected!
+   ```
+
+**Example alert messages:**
+
+```
+🔴 PUMP FAILURE
+Pump current: 0.00A (expected >0.05A)
+Duration: 3 minutes
+Action required: Check pump immediately
+
+🟡 HEAT WARNING
+Solution temp: 25.2°C (threshold: 24°C)
+Air temp: 31.4°C
+Recommendation: Deploy shade cloth, add ice bottles
+
+🟢 DAILY SUMMARY — Feb 28
+Solution temp: min 16.8°C / max 22.3°C
+Air temp: min 8.2°C / max 19.7°C
+pH: avg 5.92 (range 5.78–6.08)
+EC: avg 1.38 (range 1.31–1.44)
+Water consumed: ~6.2 L
+Pump uptime: 100%
+No alerts triggered today.
+```
+
+---
+
+## 14. Using Your Data — Pattern Recognition
+
+Data is only valuable if you use it. Here's how to read your logs and dashboards to make better growing decisions.
+
+### 14.1 Temperature Patterns
+
+```
+WHAT TO LOOK FOR IN TEMPERATURE CHARTS
+
+Pattern: Solution temp peaks at 2–3 PM daily, reaching 24°C+
+Meaning: Reservoir is receiving direct afternoon sun
+Action:  Install shade structure or move reservoir to north side of frame
+
+Pattern: Solution temp drops sharply overnight (20°C → 12°C)
+Meaning: Large diurnal swing — reservoir is poorly insulated
+Action:  Insulate reservoir walls and lid; consider burying reservoir
+
+Pattern: Air temp regularly below solution temp at night
+Meaning: Normal — reservoir acts as thermal mass (retains heat)
+Action:  None required — this is beneficial in cool weather
+
+Pattern: Solution temp consistently 3–5°C above air temp in daytime
+Meaning: Pump and plumbing are absorbing heat (dark pipes in sun)
+Action:  Insulate or shade supply pipes; use white or reflective pipe cover
+```
+
+### 14.2 pH Patterns
+
+```
+WHAT TO LOOK FOR IN pH CHARTS
+
+Pattern: pH rises 0.2–0.4 during daylight, drops overnight
+Meaning: Normal — plants take up more nitrate during photosynthesis,
+         raising pH. At night, respiration reverses slightly.
+Action:  None if within 5.5–6.5. Add pH Down in morning if it regularly
+         exceeds 6.5 by afternoon.
+
+Pattern: pH steadily rising by 0.1/day, never comes back down
+Meaning: Solution is alkaline-drifting — possibly high carbonate source water,
+         or algae blooms consuming CO₂
+Action:  Check for light leaks (algae), test source water KH/alkalinity,
+         consider pre-treating with acid or using RO water
+
+Pattern: pH crashes suddenly (drops from 6.0 to 4.5 in hours)
+Meaning: Possible over-dosing of pH Down (manual or auto), or organic acid
+         from decaying roots (Pythium)
+Action:  Inspect roots immediately. If dosing — check peristaltic pump for
+         stuck relay. Dilute reservoir with plain water to raise pH.
+
+Pattern: pH stable for days, then swings wildly for a day
+Meaning: Possible meter calibration drift, or reservoir was changed/topped up
+         with different source water
+Action:  Recalibrate meter. Check water source consistency.
+```
+
+### 14.3 EC Patterns
+
+```
+WHAT TO LOOK FOR IN EC CHARTS
+
+Pattern: EC rises 0.1–0.3/day even without adding nutrients
+Meaning: Plants are taking up more water than nutrients (transpiration-heavy).
+         Common in hot, windy weather.
+Action:  Top up with plain water more frequently. Lower target EC slightly.
+
+Pattern: EC drops 0.1–0.2/day
+Meaning: Plants are actively consuming nutrients — they're growing well.
+Action:  Good sign. Top up nutrients to maintain target EC.
+
+Pattern: EC stable, not rising or falling
+Meaning: Nutrient uptake matches water uptake — balanced.
+Action:  None — ideal situation.
+
+Pattern: EC suddenly drops by 0.5+ overnight
+Meaning: Possible rain dilution (reservoir lid not sealed), or a large
+         top-up was made with plain water
+Action:  Check reservoir cover seal. Re-dose nutrients if needed.
+```
+
+### 14.4 Correlation Analysis
+
+The real power of continuous data is seeing how variables interact:
+
+```
+EXAMPLE CORRELATION: Reservoir temp vs. pH drift rate
+
+If your data shows:
+  Day 1: avg solution temp 18°C → pH changed +0.05
+  Day 2: avg solution temp 20°C → pH changed +0.08
+  Day 3: avg solution temp 24°C → pH changed +0.18
+  Day 4: avg solution temp 26°C → pH changed +0.31
+
+Conclusion: Every 2°C rise in solution temp roughly doubles pH drift rate.
+Action:     Prioritise temperature control (shade, insulation) over
+            pH dosing — treating the cause, not the symptom.
+```
+
+After 4–6 weeks of continuous data, patterns like this become clearly visible in your Grafana charts. This is knowledge that paper logs and twice-daily checks simply cannot provide.
+
+---
+
+## 15. Weatherproofing and Power
+
+### 15.1 Enclosure for ESP32 and Wiring
+
+The ESP32 and its wiring must be protected from rain, splash, and UV degradation.
+
+**Recommended enclosure: IP65 junction box** (~$5–$10)
+
+```
+ENCLOSURE LAYOUT
+
+  ┌──────────────────────────────────────────────────────┐
+  │  IP65 JUNCTION BOX (150mm × 100mm × 70mm)            │
+  │                                                       │
+  │  ┌─────────────┐                                      │
+  │  │   ESP32      │  mounted on standoffs or adhesive   │
+  │  │   DevKit     │                                      │
+  │  └──────┬──────┘                                      │
+  │         │                                              │
+  │  Cable glands on bottom face for:                      │
+  │    • USB power cable in                                │
+  │    • Sensor cables out (DS18B20, DHT22, etc.)          │
+  │    • Relay cables out (Tier 4)                         │
+  │                                                        │
+  │  Silica gel packet inside (absorbs residual moisture)  │
+  │                                                        │
+  └──────────────────────────────────────────────────────┘
+
+  CABLE GLANDS:
+  Use PG7 or PG9 cable glands ($2 for a pack of 10)
+  Drill holes in the BOTTOM face of the box only (water drains away,
+  never pools on entry points)
+```
+
+**Placement:**
+- Mount the enclosure on the frame, above channel height (water falls away)
+- Route sensor cables downward (gravity prevents water running along cables into the box)
+- Keep USB power entry at the bottom
+- Inspect enclosure monthly for condensation
+
+### 15.2 Sensor Protection
+
+| Sensor | Protection needed |
+|---|---|
+| DS18B20 waterproof probe | None — already sealed. Just ensure cable gland entry into box |
+| DHT22 / SHT30 | Mount inside a radiation shield (small white louvred housing, $3) to prevent direct sun on the sensor. Needs airflow. |
+| JSN-SR04T | Transducer is waterproof. Mount above reservoir, pointing down. Controller board goes in main box. |
+| ACS712 | Inside main box — only the pump wire passes through the sensor |
+| BH1750 | Mount outside box under a small clear polycarbonate cover — needs to see sky |
+| pH/EC probes | Probes stay in the sensor cell (wet environment). Signal conditioning boards go in the main box. |
+
+### 15.3 Power Options
+
+| Power source | Cost | Runtime | Best for |
+|---|---|---|---|
+| USB wall charger + outdoor extension | $0 (existing) | Unlimited | Systems near mains power |
+| USB power bank (20,000 mAh) | $15–$25 | ~4–7 days (ESP32 @ 120 mA average) | Remote locations, backup |
+| 5W solar panel + LiPo battery | $15–$25 | Unlimited (with sun) | Off-grid sites |
+| PoE splitter (if Ethernet available) | $10 | Unlimited | Wired setups |
+
+**Solar power option:**
+A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery can run an ESP32 sensor node indefinitely in most climates. The ESP32 can deep-sleep between readings (waking every 60 seconds) to reduce average current to ~5 mA, extending battery life to weeks even without sun.
+
+---
+
+## 16. Automation BOM by Tier
+
+### Tier 1 — Off-the-Shelf ($50–$75)
+
+| Item | Cost |
+|---|---|
+| Govee H5075 temp/humidity logger | $15 |
+| Govee H5179 water temp probe (or aquarium thermometer) | $20 |
+| TP-Link Tapo P110 smart plug | $15 |
+| WiFi camera (optional) | $25 |
+| **Total** | **$50–$75** |
+
+### Tier 2 — ESP32 Sensor Node ($26–$50)
+
+| Item | Cost |
+|---|---|
+| ESP32-WROOM-32 DevKit | $6 |
+| DS18B20 waterproof probe (solution temp) | $3 |
+| DS18B20 TO-92 (air temp) | $2 |
+| DHT22 module (humidity) | $4 |
+| JSN-SR04T waterproof ultrasonic (water level) | $5 |
+| ACS712 5A current sensor (pump monitor) | $4 |
+| BH1750 light sensor | $3 |
+| 4.7kΩ + 10kΩ resistors (assorted pack) | $2 |
+| Dupont jumper wires (40-pack) | $3 |
+| Breadboard or proto board | $3 |
+| IP65 junction box | $6 |
+| Cable glands PG7 (10-pack) | $2 |
+| USB charger 5V/2A | $5 |
+| Micro-USB cable (2m) | $3 |
+| **Total** | **$51** |
+
+### Tier 3 — Full Monitoring ($80–$160, adds to Tier 2)
+
+| Item | Add to Tier 2 cost |
+|---|---|
+| DFRobot Gravity pH Sensor Kit (SEN0161-V2) | $35 |
+| DFRobot Gravity EC Sensor Kit (DFR0300) | $45 |
+| Capacitive soil moisture sensor (Zone C) × 2 | $4 |
+| BME280 weather sensor (temp/humidity/pressure) | $4 |
+| pH calibration buffers (4.0 + 7.0 sachets × 3) | $6 |
+| EC calibration solution (1413 µS/cm, 250 mL) | $5 |
+| Raspberry Pi 4 (4 GB) for local dashboard (optional) | $55 |
+| **Tier 3 total (Tier 2 + additions)** | **$100–$160** |
+
+### Tier 4 — Automated Control ($150–$300, adds to Tier 3)
+
+| Item | Add to Tier 3 cost |
+|---|---|
+| 4-channel relay module (5V, optocoupled) | $5 |
+| 12V DC peristaltic pump × 3 (pH, Stock A, Stock B) | $30 |
+| 12V / 2A power supply (for pumps) | $8 |
+| Silicone tubing (2m × 3 lines) | $6 |
+| Non-return valves (3×) | $5 |
+| Stock solution bottles (3× 1L opaque HDPE) | $5 |
+| 12V cooling fan (80mm, brushless) | $6 |
+| Physical kill switch (toggle, inline) | $3 |
+| **Tier 4 total (Tier 3 + additions)** | **$168–$230** |
+
+### Combined Tier Totals
+
+| Tier | Standalone cost | Cumulative (if building up from Tier 1) |
+|---|---|---|
+| Tier 1 | $50–$75 | $50–$75 |
+| Tier 2 | $51 | $101–$126 |
+| Tier 3 | $100–$160 | $150–$235 |
+| Tier 4 | $168–$230 | $218–$305 |
+
+---
+
+## 17. Common Pitfalls
+
+### Pitfall 1 — Skipping Calibration
+
+**Problem:** pH and EC probes drift. If you don't calibrate them, your automated dosing system bases decisions on wrong data. A pH probe reading 6.0 when the actual pH is 5.2 means the system under-doses acid — or worse, adds acid when it shouldn't.
+
+**Prevention:** Calibrate pH probes every 2–4 weeks, EC probes every 4–8 weeks. Set a calendar reminder. Log calibration dates. The dashboard should include a "days since last calibration" counter.
+
+### Pitfall 2 — Alert Fatigue
+
+**Problem:** You set alerts for everything and receive 30 notifications a day. After a week you start ignoring them. You miss the one that matters.
+
+**Prevention:** Use the priority matrix in Section 13.1. Only push 🔴 CRITICAL alerts to your phone as notifications. Send 🟡 WARNINGs as a digest every 4 hours. 🟢 INFOs go to a daily summary email or dashboard log only.
+
+### Pitfall 3 — WiFi Reliability
+
+**Problem:** The ESP32 loses WiFi connection. Data stops flowing. No alerts are sent. You think everything is fine — but the system is unmonitored.
+
+**Prevention:**
+- Implement a watchdog: if the dashboard hasn't received data in 5 minutes, send an alert from the server side (not from the ESP32 itself)
+- The ESP32 firmware should auto-reconnect to WiFi with exponential backoff
+- Consider a local SD card logger as backup (writes data even when WiFi is down)
+- Place the ESP32 within strong WiFi range (test signal strength with a phone at the mounting location before installing)
+
+### Pitfall 4 — Analog Sensor Noise on ESP32
+
+**Problem:** The ESP32's built-in ADC (analog-to-digital converter) is notoriously noisy. Raw readings from pH and EC probes fluctuate by ±10–20% reading-to-reading, making data unusable.
+
+**Prevention:**
+- Use software filtering: take 20 readings, discard the top and bottom 5, average the middle 10 (median filter)
+- Use `multisampling` in ESPHome (set `attenuation: 11db` and `samples: 20`)
+- For Tier 3–4: consider an ADS1115 external ADC module ($3) — 16-bit resolution vs. ESP32's noisy 12-bit. Dramatically improves pH and EC reading stability.
+
+### Pitfall 5 — Over-Engineering Too Early
+
+**Problem:** You spend 3 weekends building a Tier 4 auto-dosing system before you've grown a single plant. The system breaks, you don't understand why, and you can't tell if it's a hardware problem or a plant problem.
+
+**Prevention:** Start at Tier 0 (manual) for your first 4–6 weeks. Understand how the system behaves. Then add Tier 1 (off-the-shelf). Add Tier 2 after your first harvest. Add Tier 3–4 in your second growing season. Each tier builds on knowledge from the previous one.
+
+### Pitfall 6 — Corrosion
+
+**Problem:** Metal contacts, bare copper wire, and cheap connectors corrode in the humid, acidic environment near a hydroponic reservoir. Connections fail silently.
+
+**Prevention:**
+- Use silicone-sealed connectors or heat-shrink-covered solder joints
+- Keep all electronics in IP65 enclosures
+- Use stainless steel or gold-plated sensor probes (pH probes have glass tips specifically for this reason)
+- Inspect wiring connections every 2–3 months
+
+---
+
+## 18. Upgrade Path — From Tier 1 to Tier 4
+
+You don't need to commit to a tier upfront. The system is designed to grow incrementally.
+
+```
+RECOMMENDED UPGRADE TIMELINE
+
+MONTH 1 (FIRST GROW):
+  Start with Tier 0 (manual)
+  → Learn the system, understand pH drift, EC behaviour, pump reliability
+  → Record data in paper logbook
+
+MONTH 2:
+  Add Tier 1 (Govee + smart plug)
+  → Get 24/7 temperature alerts
+  → Get pump failure alerts
+  → Start seeing temperature patterns on your phone
+  Cost: +$50
+
+MONTH 3–4 (CONFIDENT GROWER):
+  Build Tier 2 ESP32 node
+  → Continuous logging of temp, humidity, water level, pump current
+  → Set up InfluxDB + Grafana dashboard (free cloud)
+  → Start sending alerts via Telegram
+  Cost: +$51
+
+SEASON 2:
+  Upgrade to Tier 3 (add pH + EC probes)
+  → Continuous water quality monitoring
+  → Full dashboard with all critical parameters
+  → Historical trend analysis — compare this season to last
+  Cost: +$80–$110
+
+SEASON 2–3 (WHEN YOU'RE TIRED OF DAILY pH ADJUSTMENTS):
+  Upgrade to Tier 4 (automated dosing)
+  → pH and EC maintain themselves
+  → You check the dashboard once a day and top up stock bottles weekly
+  → The system runs itself with human oversight
+  Cost: +$70–$100
+
+TOTAL INVESTED OVER 2+ SEASONS: $250–$310
+  → Equivalent to a mid-range commercial hydroponic controller
+  → But fully customisable, repairable, and you understand every component
+```
+
+---
+
+## Summary — What Each Tier Gives You
+
+| Capability | Tier 0 | Tier 1 | Tier 2 | Tier 3 | Tier 4 |
+|---|---|---|---|---|---|
+| Temperature monitoring | 2×/day | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ |
+| Humidity monitoring | ❌ | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ |
+| pH monitoring | 2×/day | 2×/day | 2×/day | 24/7 ✅ | 24/7 ✅ |
+| EC monitoring | 2×/day | 2×/day | 2×/day | 24/7 ✅ | 24/7 ✅ |
+| Water level monitoring | Visual | Visual | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ |
+| Pump failure detection | Next check | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ |
+| Light level tracking | ❌ | ❌ | 24/7 ✅ | 24/7 ✅ | 24/7 ✅ |
+| Phone alerts | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Dashboard | ❌ | App only | Basic web | Full Grafana | Full Grafana |
+| Historical data | Paper log | 20 days (app) | 30+ days | 30+ days | 30+ days |
+| Automated pH dosing | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Automated EC dosing | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Automated cooling | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Daily time required | 10–15 min | 5–10 min | 5 min | 3–5 min | 1–2 min |
+
+> The best automation system is the one you actually build. Start simple, learn, upgrade.
+
+---
+
+> **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
+> **Back to:** [Master Plan (PLAN.md)](../PLAN.md)
