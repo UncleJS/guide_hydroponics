@@ -37,6 +37,7 @@
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## Introduction
@@ -46,6 +47,7 @@ Crop choice is one of the starkest differences between NFT and Ebb & Flow. Both 
 This guide covers which crops belong in which system, why, how to plan year-round production across both, and how to avoid the most common crop selection mistakes.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -84,6 +86,7 @@ Leafy crops grow fast and need consistent, high-nitrogen nutrition throughout th
 Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): high nitrogen during vegetative growth, reduced nitrogen and increased potassium and calcium from flower set through fruit swelling, and a final flush. The intermittent flood cycle in E&F allows the grower to change the nutrient profile on a schedule that decouples nicely from the plant's root uptake — change the reservoir, and the new profile gradually reaches the roots over the next 3–4 flood cycles.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -170,6 +173,7 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 3. Ebb & Flow Crop Library
@@ -245,6 +249,7 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 4. Side-by-Side Crop Comparison Table
@@ -272,6 +277,7 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 | Chilli pepper | ★★★☆☆ | ★★★★☆ | E&F (mild preference) | Both work; E&F yields more per plant |
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -319,6 +325,7 @@ The following estimates are for a 3-zone outdoor system in a temperate climate (
 | Chilli | Late April | 12–14 weeks | October | 50–200 pods (variety-dependent) |
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -376,6 +383,7 @@ This gives 52 weeks of lettuce, herbs, and spinach from NFT, plus 20+ weeks of h
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 7. Spacing and Plant Density
@@ -409,6 +417,7 @@ This gives 52 weeks of lettuce, herbs, and spinach from NFT, plus 20+ weeks of h
 | Herbs (mixed) | 4–6 | 20–25 cm spacing depending on variety |
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -444,6 +453,7 @@ If you need to transfer (e.g., system fault repair), handle as follows:
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 9. Crop-Specific Problem Hotspots
@@ -465,6 +475,7 @@ If you need to transfer (e.g., system fault repair), handle as follows:
 | Mint | NFT | Spreading roots blocking channels | Use large net pot (100 mm); check channel flow monthly; remove and divide annually |
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -493,5 +504,8 @@ graph TD
 5. **If you have both systems** → put all fruiting crops in E&F, all leafy crops and herbs in NFT; use E&F tables in spring and autumn for additional leafy crop overflow
 
 ---
+
+
+[↑ Back to TOC](#table-of-contents)
 
 *Next: [Comparison Guide 03 — Automation: NFT vs Ebb & Flow](03-automation.md) — how sensor requirements, failure modes, and automation priorities differ between the two systems*

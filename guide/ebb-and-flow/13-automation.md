@@ -1604,6 +1604,107 @@ CRITICAL — immediate investigation:
 
 ---
 
+### 14.6 VPD — Vapour Pressure Deficit and Flood Frequency
+
+VPD (Vapour Pressure Deficit) quantifies how hard the air is pulling moisture from plant leaves. In E&F, VPD is directly relevant to **flood frequency decisions**: high VPD means plants are transpiring rapidly, which can lead to salt accumulation in the LECA between floods. Low VPD means slow transpiration and potentially waterlogged media if flood frequency is too high.
+
+**Target VPD range:**
+| Growth stage | Target VPD |
+|---|---|
+| Seedling / cutting | 0.4–0.8 kPa |
+| Vegetative growth | 0.8–1.2 kPa |
+| Fruiting / flowering | 1.0–1.5 kPa |
+| Above 1.8 kPa | Wilting risk — increase flood frequency temporarily |
+| Below 0.4 kPa | Disease risk — reduce flood frequency; improve ventilation |
+
+**Flood frequency adjustment guide based on VPD:**
+
+| VPD (kPa) | Typical air temp | Recommended floods/day |
+|---|---|---|
+| < 0.6 | < 18°C | 2–3 |
+| 0.6–1.0 | 18–22°C | 3–4 |
+| 1.0–1.4 | 22–26°C | 4–5 |
+| > 1.4 | > 26°C | 5–6 (or add shading) |
+
+**ESPHome YAML — VPD as a derived sensor:**
+
+```yaml
+sensor:
+  # Air temperature + humidity (from DHT22 — already in your config)
+  - platform: dht
+    pin: GPIO4
+    model: DHT22
+    temperature:
+      name: "Air Temperature"
+      id: air_temp
+    humidity:
+      name: "Air Humidity"
+      id: air_humidity
+    update_interval: 60s
+
+  # VPD — calculated from air temp + humidity
+  - platform: template
+    name: "VPD"
+    id: vpd
+    unit_of_measurement: "kPa"
+    icon: "mdi:water-percent"
+    update_interval: 60s
+    lambda: |-
+      float T  = id(air_temp).state;
+      float RH = id(air_humidity).state;
+      if (isnan(T) || isnan(RH)) return NAN;
+      // Tetens equation: SVP = 0.6108 * exp(17.27 * T / (T + 237.3))
+      float svp = 0.6108f * expf(17.27f * T / (T + 237.3f));
+      float vpd = svp * (1.0f - RH / 100.0f);
+      return vpd;
+    filters:
+      - sliding_window_moving_average:
+          window_size: 5
+
+# VPD alerts
+binary_sensor:
+  - platform: template
+    name: "VPD High — Increase Flood Frequency"
+    device_class: problem
+    lambda: |-
+      return id(vpd).state > 1.4;
+    filters:
+      - delayed_on: 20min
+    on_press:
+      - logger.log: "VPD > 1.4 kPa — consider adding a flood cycle today"
+
+  - platform: template
+    name: "VPD Very High — Wilting Risk"
+    device_class: problem
+    lambda: |-
+      return id(vpd).state > 1.8;
+    filters:
+      - delayed_on: 10min
+    on_press:
+      - logger.log: "ALERT: VPD > 1.8 kPa — wilting risk; add shade cloth"
+
+  - platform: template
+    name: "VPD Low — Disease Risk"
+    device_class: problem
+    lambda: |-
+      return id(vpd).state < 0.4 && id(vpd).state > 0.0;
+    filters:
+      - delayed_on: 30min
+    on_press:
+      - logger.log: "WARNING: VPD < 0.4 kPa — mildew risk; improve airflow"
+```
+
+**Grafana — add VPD to your dashboard:**
+
+Add a time-series panel for `vpd` alongside flood count:
+- Green band: 0.8–1.4 kPa (healthy range for most fruiting crops)
+- Yellow band: 0.4–0.8 kPa or 1.4–1.8 kPa (caution)
+- Red band: <0.4 kPa or >1.8 kPa
+
+This lets you correlate VPD spikes with EC rise (evaporation-driven concentration), drain confirmation failures (fast uptake on hot days), and flood count sufficiency — all from the same dashboard.
+
+---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1863,6 +1964,224 @@ if (millis() - flood_end_ms > 300000) {  // 5 min post-flood
 3. The ESP32 has waited a 5-minute grace period for the primary to respond.
 
 If both primary and backup are trying to turn on the pump simultaneously — that is fine, both closing means pump definitely runs. The conflict to avoid is: backup holds pump ON after primary timer has turned it OFF (sticking the pump in ON state). The stuck-ON alert catches this regardless: any run > 35 min triggers a critical alert.
+
+---
+
+### Pitfall 9 — WiFi Outage Creates a Silent Monitoring Blackout
+
+**Problem:** The ESP32 loses WiFi connection. Data stops flowing. No alerts are sent — including no stuck-ON alert if the pump fails open while the node is offline. Because you've been receiving alerts, silence feels like "nothing to report." But silence could mean the node is offline and the pump has been running for 6 hours.
+
+This is especially dangerous in E&F because the stuck-ON failure (the most catastrophic mode) produces no unusual sound or visual sign. Continuous flooding looks exactly like a normal flood cycle until you physically walk over.
+
+**Prevention — two layers:**
+
+**Layer 1: ESP32 firmware auto-reconnect (ESPHome):**
+
+```yaml
+wifi:
+  ssid: "YourWiFiNetwork"
+  password: "YourWiFiPassword"
+  fast_connect: true
+  reboot_timeout: 15min   # reboot ESP32 if WiFi not recovered within 15 min
+  ap:
+    ssid: "EbbFlow-Fallback"
+    password: "hydro1234"
+```
+
+**Layer 2: Server-side watchdog — Grafana data staleness alert (fastest to set up):**
+
+In Grafana, create an alert on the flood cycle counter or any sensor:
+
+```
+Alert rule: "E&F ESP32 Node Offline"
+  Query: last value of flood_count_today WHERE time > now()-10m
+  Condition: IS NULL  (no data in last 10 minutes)
+  Alert: send Telegram + email
+  Message: "⚠️ E&F node offline — pump status unknown. Check WiFi and go verify pump state manually."
+```
+
+**Layer 2 (alternative): Python watchdog script — runs every 5 minutes:**
+
+```python
+#!/usr/bin/env python3
+"""
+hydro_watchdog.py — server-side dead-man monitor.
+Run via cron or systemd timer every 5 minutes.
+"""
+
+import os, time, requests
+from influxdb_client import InfluxDBClient
+
+INFLUX_URL    = "https://us-east-1-1.aws.cloud2.influxdata.com"
+INFLUX_TOKEN  = "your-influx-api-token"
+INFLUX_ORG    = "your-org"
+INFLUX_BUCKET = "hydroponics"
+
+TELEGRAM_TOKEN   = "your-bot-token"
+TELEGRAM_CHAT_ID = "your-chat-id"
+
+TIMEOUT_MINUTES = 10
+NODE_NAME       = "ebb-flow-1"
+STATE_FILE      = "/tmp/ef_watchdog_alerted.flag"
+
+def get_last_data_age_minutes():
+    client = InfluxDBClient(url=INFLUX_URL, token=INFLUX_TOKEN, org=INFLUX_ORG)
+    tables = client.query_api().query(f'''
+        from(bucket: "{INFLUX_BUCKET}")
+          |> range(start: -1h)
+          |> filter(fn: (r) => r["node"] == "{NODE_NAME}")
+          |> last()
+    ''')
+    client.close()
+    if not tables or not tables[0].records:
+        return 999
+    age = time.time() - tables[0].records[-1].get_time().timestamp()
+    return age / 60.0
+
+def send_telegram(msg):
+    requests.post(
+        f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+        data={"chat_id": TELEGRAM_CHAT_ID, "text": msg}
+    )
+
+def main():
+    age = get_last_data_age_minutes()
+    if age > TIMEOUT_MINUTES:
+        if not os.path.exists(STATE_FILE):
+            send_telegram(
+                f"⚠️ E&F WATCHDOG ALERT\n"
+                f"Node '{NODE_NAME}' silent for {age:.0f} min.\n"
+                f"Pump state unknown — GO CHECK MANUALLY.\n"
+                f"A stuck-ON pump drains the reservoir in 4–6 hours."
+            )
+            open(STATE_FILE, "w").close()
+    else:
+        if os.path.exists(STATE_FILE):
+            os.remove(STATE_FILE)
+            send_telegram(f"✅ E&F node back online. Last data {age:.1f} min ago.")
+
+if __name__ == "__main__":
+    main()
+```
+
+**Run via cron:**
+```bash
+*/5 * * * * /usr/bin/python3 /home/pi/hydro_watchdog.py >> /var/log/hydro_watchdog.log 2>&1
+```
+
+**Or as a systemd timer (preferred):**
+```ini
+# /etc/systemd/system/ef-watchdog.timer
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+[Install]
+WantedBy=timers.target
+```
+
+> **Why E&F makes this more urgent than NFT:** In NFT, a pump failure causes wilting — obvious within a few hours. In E&F, a stuck-ON pump causes invisible continuous flooding. You may not notice until root rot has established and plants begin wilting for a completely different reason. A 10-minute watchdog is the difference between a 10-minute response window and a 6-hour damage window.
+
+---
+
+### Pitfall 10 — Analog Sensor Noise Causing False Dosing Triggers
+
+**Problem:** The ESP32's built-in ADC is noisy. pH readings can swing ±0.2–0.5 units reading-to-reading from electrical noise alone. In E&F, where dosing is automated, a noisy pH reading that momentarily dips to 5.1 triggers an unnecessary base dose. Repeated false doses can push pH above 7.0, locking out nutrients, before you notice.
+
+**Prevention — software filtering (apply always):**
+
+```yaml
+sensor:
+  - platform: adc
+    pin: GPIO34
+    name: "pH Sensor"
+    id: ph_sensor
+    attenuation: 11db
+    samples: 20
+    update_interval: 30s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 5
+      - calibrate_linear:
+          - 2.03 -> 4.0
+          - 2.46 -> 7.0
+```
+
+**Prevention — hardware upgrade: ADS1115 external ADC ($3)**
+
+For Tier 3–4 where pH and EC readings drive automated dosing, the ADS1115 16-bit external ADC provides dramatically cleaner readings than the ESP32's internal 12-bit ADC.
+
+| | ESP32 internal ADC | ADS1115 external ADC |
+|---|---|---|
+| Resolution | 12-bit (4096 steps) | 16-bit (65536 steps) |
+| Noise (typical) | ±15–30 mV | ±0.1–0.5 mV |
+| Cost | Free | $2–$4 |
+| Interface | Dedicated GPIO pin | I2C (shared bus) |
+| Channels | 2 usable | 4 per module |
+
+**ADS1115 wiring:**
+
+```
+ADS1115 module    →  ESP32
+─────────────────────────────────────
+VDD               →  3.3V
+GND               →  GND
+SCL               →  GPIO 22  (shared I2C bus)
+SDA               →  GPIO 21  (shared I2C bus)
+ADDR              →  GND      (I2C address 0x48)
+
+ADS1115 inputs:
+  A0  →  pH probe signal board OUT
+  A1  →  EC probe signal board OUT
+  A2  →  spare
+  A3  →  spare
+```
+
+**ESPHome YAML — ADS1115 with pH and EC:**
+
+```yaml
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+ads1115:
+  - address: 0x48
+
+sensor:
+  # pH via ADS1115 A0
+  - platform: ads1115
+    multiplexer: "A0_GND"
+    gain: 4.096
+    name: "pH"
+    id: ph_sensor
+    update_interval: 15s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 4
+      - calibrate_linear:
+          - 2.03 -> 4.0
+          - 2.46 -> 7.0
+    unit_of_measurement: "pH"
+
+  # EC via ADS1115 A1
+  - platform: ads1115
+    multiplexer: "A1_GND"
+    gain: 4.096
+    name: "EC"
+    id: ec_sensor
+    update_interval: 15s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 4
+      - calibrate_linear:
+          - 0.33 -> 0.0
+          - 1.20 -> 1.413
+    unit_of_measurement: "mS/cm"
+```
+
+**E&F-specific note — never dose based on a single reading:**
+
+Even with ADS1115, always use a sliding window average in the dosing decision logic. The ESPHome Tier 4 dosing lambdas already do this (they check `id(ph_sensor).state` which is the filtered value). Additionally, enforce a minimum inter-dose interval of 15 minutes regardless of pH reading — this prevents a single noisy spike from triggering back-to-back doses.
 
 ---
 

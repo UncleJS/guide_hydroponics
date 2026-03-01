@@ -38,6 +38,7 @@
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## Introduction
@@ -47,6 +48,7 @@ ROI analysis on a home hydroponic system is complicated by the fact that the pri
 The financial figures used throughout are conservative, based on UK retail prices (2025) for components and produce. Adjust the produce values for your local retail prices — in many urban areas, specialty lettuces, heritage tomatoes, and fresh herbs command considerably higher prices than the figures used here.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -66,6 +68,7 @@ The financial figures used throughout are conservative, based on UK retail price
 - Water cost (hydroponic water use is low; <500 L/season for a 3-zone system)
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -130,6 +133,7 @@ Three zones, larger channels (125 mm), proper insulated reservoir, Atlas Scienti
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 3. Ebb & Flow Build Costs
@@ -191,6 +195,7 @@ Three flood tables, Atlas Scientific probes, relay-based pump safety cutoff, ful
 | **Tier 3 total** | | | **~£578** |
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -264,6 +269,7 @@ NFT uses slightly less nutrients because there is no media salt accumulation req
 E&F is significantly cheaper to run annually, primarily due to the huge electricity saving from intermittent pump operation.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -342,6 +348,7 @@ This is significantly lower than NFT because:
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 6. Payback Period Analysis
@@ -383,6 +390,7 @@ E&F payback is slower because fruiting crops, while highly valued by the grower,
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 7. Cost Comparison Table: NFT vs E&F
@@ -402,6 +410,7 @@ E&F payback is slower because fruiting crops, while highly valued by the grower,
 | 10-year net value | £9,740 | £2,230 | **NFT** |
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -436,6 +445,7 @@ E&F payback is slower because fruiting crops, while highly valued by the grower,
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 9. Prioritising Spend: Where Money Has the Most Impact
@@ -462,6 +472,7 @@ For growers building on a budget, the following spend hierarchy maximises yield 
 - Multiple grow lights for outdoor systems: fix the outdoor environment first (site selection, shade cloth, timing) before spending on artificial lighting
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 

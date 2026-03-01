@@ -42,6 +42,7 @@
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## Introduction
@@ -51,6 +52,7 @@ Both NFT and Ebb & Flow benefit from automation, but what they need automated �
 This guide maps the automation priorities, sensor types, wiring patterns, and alert logic for each system, and then shows how to build a unified controller for a two-system grow.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -103,6 +105,7 @@ The pattern: **drain confirmation is everything** in E&F. Knowing that the table
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 2. Essential Monitoring (Both Systems)
@@ -140,6 +143,7 @@ Automated EC and pH monitoring requires submersible probes in the reservoir. Opt
 - Alternative: ultrasonic distance sensor (HC-SR04) for continuous level reading rather than binary alert
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -210,6 +214,7 @@ From highest to lowest value-for-money:
 9. **Automated pH dosing** → peristaltic pump + pH up/down reservoir (Full Tier)
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -307,6 +312,7 @@ From highest to lowest value-for-money:
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 5. Shared Automation Architecture
@@ -385,6 +391,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 6. Wiring and Relay Control
@@ -440,6 +447,7 @@ graph TD
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 7. Alert Logic Comparison
@@ -484,6 +492,7 @@ graph TD
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 8. Dashboard Design for a Two-System Setup
@@ -517,6 +526,7 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 - History log of past alerts
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -552,5 +562,8 @@ graph TD
 This configuration, running ESPHome and Home Assistant, gives you 24/7 monitoring with phone alerts for less than the cost of replacing one batch of tomato plants lost to an undetected timer failure.
 
 ---
+
+
+[↑ Back to TOC](#table-of-contents)
 
 *Next: [Comparison Guide 04 — Cost and ROI: NFT vs Ebb & Flow](04-cost.md) — build costs, running costs, yield value, and payback period for each system*

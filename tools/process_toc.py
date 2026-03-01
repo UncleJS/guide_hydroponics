@@ -14,6 +14,7 @@ Usage:
     # Process a specific guide set (relative to cwd, or absolute)
     python tools/process_toc.py guide/nft
     python tools/process_toc.py guide/ebb-and-flow
+    python tools/process_toc.py guide/compare
 
     # Process ALL known guide sets (default when no argument given)
     python tools/process_toc.py
@@ -32,6 +33,7 @@ REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 DEFAULT_GUIDE_DIRS = [
     os.path.join(REPO_ROOT, "guide", "nft"),
     os.path.join(REPO_ROOT, "guide", "ebb-and-flow"),
+    os.path.join(REPO_ROOT, "guide", "compare"),
 ]
 
 BACK_LINK_LINE = "[↑ Back to TOC](#table-of-contents)"
@@ -41,12 +43,18 @@ SKIP = {
     "00-system-overview.md",
 }
 
-# Files that already have a hand-written TOC (only insert back-links)
+# Files that already have a hand-written TOC (only insert back-links).
+# Includes all compare/ guide files (01–04) which have rich hand-written TOCs.
 HAS_TOC = {
     "10-climate-management.md",
     "11-build-guide.md",
     "12-budget-and-sourcing.md",
     "13-automation.md",
+    # compare/ files — all have hand-written TOCs
+    "01-nutrients.md",
+    "02-crops.md",
+    "03-automation.md",
+    "04-cost.md",
 }
 
 
@@ -68,6 +76,20 @@ def build_toc(headings):
         lines.append(f"{indent}- [{text}](#{anchor})")
     lines.append("")
     return "\n".join(lines)
+
+
+def strip_back_links_only(content):
+    """
+    Remove only auto-inserted back-link lines, leaving any hand-written TOC
+    block intact.  Used for HAS_TOC files where we only manage back-links.
+    """
+    content = re.sub(
+        r"\n[ \t]*\[↑ Back to TOC\]\(#table-of-contents\)[ \t]*(?=\n)",
+        "",
+        content,
+    )
+    content = re.sub(r"\n{4,}", "\n\n\n", content)
+    return content
 
 
 def strip_existing(content):
@@ -111,9 +133,14 @@ def process_file(filepath, needs_toc):
         content = f.read()
 
     # ----------------------------------------------------------------
-    # Step 0: Strip any previously inserted TOC blocks and back-links
+    # Step 0: Strip existing content — strategy differs by file type.
+    #   needs_toc=True  → full strip (removes generated TOC + back-links)
+    #   needs_toc=False → back-links only (preserves hand-written TOC)
     # ----------------------------------------------------------------
-    content = strip_existing(content)
+    if needs_toc:
+        content = strip_existing(content)
+    else:
+        content = strip_back_links_only(content)
     lines = content.split("\n")
 
     # ----------------------------------------------------------------

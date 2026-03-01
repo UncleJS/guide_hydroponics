@@ -38,6 +38,7 @@
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## Introduction
@@ -47,6 +48,7 @@ Both NFT and Ebb & Flow use the same nutrient chemistry — the 17 essential ele
 This guide compares how you manage nutrients in practice across both systems: what you measure, how often, what drifts, what accumulates, and where the failure modes differ.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -92,6 +94,7 @@ graph TD
 ```
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -147,6 +150,7 @@ Hot weather, high VPD, and large fruiting plants with high transpiration rates a
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 3. pH Management
@@ -187,6 +191,7 @@ In E&F, roughly 15–20% of total solution volume is retained in the media at an
 For both systems, the target pH range is **5.5–6.5**, with the sweet spot at **5.8–6.2** for most crops.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -246,6 +251,7 @@ This is one of the genuine operational simplicity advantages of NFT over E&F.
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 5. Nutrient Solution Changes
@@ -289,6 +295,7 @@ Old nutrient solution is a mild fertiliser. Options:
 - **Do not** pour undiluted old solution repeatedly onto the same garden patch — salt build-up will damage soil over time.
 
 ---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -341,6 +348,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 7. Deficiency and Toxicity Patterns
@@ -384,6 +392,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 8. Monitoring Regimen Comparison
@@ -402,6 +411,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 
 ---
 
+
 [↑ Back to TOC](#table-of-contents)
 
 ## 9. Quick-Reference Decision Table
@@ -419,5 +429,8 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Solution change overdue | Full reservoir drain and refill | Full reservoir drain and refill; follow with media flush |
 
 ---
+
+
+[↑ Back to TOC](#table-of-contents)
 
 *Next: [Comparison Guide 02 — Crops: NFT vs Ebb & Flow](02-crops.md) — which system suits which plants, yield comparisons, and crop scheduling differences*

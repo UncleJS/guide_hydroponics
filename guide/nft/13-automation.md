@@ -75,7 +75,7 @@ Logging tells you what happened. Automation takes action:
 flowchart LR
     T0["**Tier 0**<br/>Manual only<br/><br/>Cost: $0<br/>─────────<br/>Manual pH/EC pen<br/>Manual temp check<br/>Paper logbook<br/><br/>Skill: None"]
     T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60<br/>─────────<br/>WiFi thermometer<br/>WiFi smart plug<br/>Phone alerts<br/>Basic timer<br/><br/>Skill: None"]
-    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80<br/>─────────<br/>Continuous temp<br/>Continuous humidity<br/>Water level sensor<br/>Pump current monitor<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
+    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80<br/>─────────<br/>Continuous temp<br/>Continuous humidity<br/>Water level sensor<br/>Pump current monitor<br/>Return flow confirm<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
     T3["**Tier 3**<br/>Multi-node sensor<br/>network + dashboard<br/><br/>Cost: $80–$160<br/>─────────<br/>All Tier 2 sensors<br/>+ pH probe (inline)<br/>+ EC probe (inline)<br/>+ light sensor (LDR)<br/>Grafana dashboard<br/>Historical data<br/>Trend analysis<br/><br/>Skill: Moderate<br/>electronics, WiFi<br/>networking"]
     T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150–$300<br/>─────────<br/>All Tier 3 +<br/>Automated pH dosing<br/>Automated EC dosing<br/>Smart pump control<br/>Telegram/email alerts<br/>Relay-controlled<br/>dosing pumps<br/><br/>Skill: Intermediate<br/>electronics, plumbing<br/>for dosing lines"]
 
@@ -236,6 +236,7 @@ With one ESP32 board and a few sensors, you can continuously monitor:
 | DHT22 / SHT30 | Air humidity + temp | Disease risk, transpiration | $3–$6 |
 | HC-SR04 / JSN-SR04T | Reservoir water level | Low-level alert, usage tracking | $2–$5 |
 | ACS712 / SCT-013 | Pump current draw | Pump failure detection | $3–$6 |
+| Float switch (NC) or YF-S201 | Return flow confirmation | **#1 NFT sensor** — confirms solution is actually flowing | $3–$15 |
 | LDR (photoresistor) | Light level (relative) | Cloud cover, DLI estimation | $0.50 |
 
 **Total sensor cost: ~$13–$25**
@@ -253,11 +254,154 @@ ESP32 STARTER SENSOR KIT
 2. DHT22 module              → Air temperature + humidity
 3. JSN-SR04T ultrasonic      → Reservoir water level (waterproof version)
 4. ACS712 current sensor     → Pump power draw (failure detection)
+5. Float switch (NC)         → Return tank flow confirmation (NFT #1 sensor)
 
-Total cost: ESP32 ($6) + sensors ($15) + wires/resistors ($5) = ~$26
+Total cost: ESP32 ($6) + sensors ($18) + wires/resistors ($5) = ~$29
 ```
 
-### 5.4 What This Node Can Do
+### 5.4 Flow Confirmation — The #1 NFT-Specific Sensor
+
+The pump current sensor (ACS712) tells you the pump is **drawing power** — but not that solution is **actually flowing**. A pump can run with an air lock, a blocked inlet, or a broken impeller, drawing normal current while delivering zero flow. In NFT, where roots die within 1–2 hours of a dry film, confirming actual flow is the single highest-value sensor upgrade.
+
+There are three ways to confirm flow:
+
+---
+
+**Option A — Float switch in the return/collection tank (recommended first build)**
+
+Mount a float switch at the low-water mark in the return tank at the base of the NFT channels. When the pump is running, return water fills the tank and keeps the float up. If the pump fails or a channel blocks, the return tank drains within 5–10 minutes and the float drops.
+
+- **Cost:** $3–$8
+- **Wiring:** Single digital input with 10 kΩ pull-up to 3.3V
+- **Alert:** Float LOW while pump is scheduled ON → pump failure or channel blockage
+- **False positives:** Negligible — the return tank is always full during normal operation
+- **Limitation:** Does not distinguish pump failure from pipe blockage, but both are critical
+
+```mermaid
+flowchart LR
+    PUMP["Pump (in reservoir)"] -->|"solution"| CHANNELS["NFT Channels"]
+    CHANNELS -->|"return drain"| RTANK["Return / Catch Tank"]
+    RTANK -->|"gravity drain"| RES["Main Reservoir"]
+    RTANK --- FS["Float Switch\n(mounted at low-water mark)\nHIGH = flow OK\nLOW = alert"]
+```
+
+**Wiring to ESP32:**
+
+```
+Float switch    →  GPIO 25 (or any digital GPIO)
+                   + 10kΩ pull-up to 3.3V
+GND             →  GND
+```
+
+**ESPHome YAML — float switch in return tank:**
+
+```yaml
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO25
+      mode: INPUT_PULLUP
+    name: "Return Tank Float"
+    id: return_tank_float
+    device_class: moisture
+    filters:
+      - delayed_on: 5s    # debounce — ignore momentary turbulence
+      - delayed_off: 30s  # only alert if float stays LOW for 30s
+    on_press:
+      # Float went HIGH (submerged) — flow confirmed
+      - logger.log: "Return tank float: FLOW CONFIRMED"
+    on_release:
+      # Float went LOW (dry) — potential flow loss
+      - logger.log: "ALERT: Return tank float LOW — check pump and channels!"
+
+# Pump-failure template sensor combining float + current
+  - platform: template
+    name: "NFT Flow Failure"
+    id: nft_flow_failure
+    device_class: problem
+    lambda: |-
+      // Alert if pump is drawing current BUT return tank is empty
+      // (pump running, no flow arriving back)
+      // OR if pump current has dropped to zero
+      bool pump_on   = id(pump_current).state > 0.05;
+      bool flow_back = id(return_tank_float).state;  // HIGH = submerged = flow OK
+      return pump_on && !flow_back;
+    on_press:
+      - logger.log: "CRITICAL: NFT flow failure — pump running but no return flow!"
+```
+
+---
+
+**Option B — Hall-effect flow sensor on the return pipe (YF-S201)**
+
+A YF-S201 (or YF-B10 for 1/2" pipe) measures actual flow rate by counting magnetic pulses from a spinning rotor in the flow path. Mounts inline on the return pipe from the channels to the reservoir.
+
+- **Cost:** $6–$15
+- **Wiring:** One digital interrupt pin on ESP32
+- **Alert:** Flow rate drops below threshold (e.g., < 2 L/min) during pump-on hours
+- **Advantage over float switch:** Can detect **partial blockage** — reduced flow rather than total stoppage
+- **Disadvantage:** Requires cutting into the return pipe; rotor can jam with algae/debris after months of use
+
+**ESPHome YAML — YF-S201 flow sensor:**
+
+```yaml
+sensor:
+  - platform: pulse_counter
+    pin:
+      number: GPIO26
+      mode: INPUT_PULLUP
+    name: "Return Flow Rate"
+    id: return_flow_rate
+    unit_of_measurement: "L/min"
+    update_interval: 30s
+    filters:
+      # YF-S201 outputs ~450 pulses/L (calibrate with measured volume)
+      - multiply: 0.00222   # pulses → L/min at 30s window (450 pulses/L ÷ 60s × 30s window × 2)
+      - sliding_window_moving_average:
+          window_size: 3
+
+binary_sensor:
+  - platform: template
+    name: "Flow Rate Low"
+    device_class: problem
+    lambda: |-
+      // Alert if flow drops below 2 L/min when pump should be running
+      return id(return_flow_rate).state < 2.0;
+    filters:
+      - delayed_on: 120s   # only alert if low flow persists for 2 minutes
+```
+
+> **Calibration note:** YF-S201 pulse factor varies by pressure and temperature. Calibrate by running a known volume (e.g., 5 L) into a bucket and counting pulses. `pulse_factor = pulses_counted / volume_litres`.
+
+---
+
+**Option C — SCT-013 clamp current sensor (no pipe cutting)**
+
+A non-invasive AC current clamp that clips around the pump power cable without cutting anything. Detects whether the pump is drawing current. Cheaper than a flow sensor and easier to install than inline ACS712.
+
+- **Cost:** $8–$15 (SCT-013-030 for loads up to 30A)
+- **Wiring:** Analog input + 2× 10 kΩ burden resistors (voltage divider for ESP32 ADC)
+- **Limitation:** Confirms pump is drawing power — does NOT confirm water is flowing (air lock not detected)
+- **Best use case:** As an addition to the float switch, not a replacement
+
+---
+
+**Which option to choose:**
+
+| Scenario | Recommended |
+|---|---|
+| First build — keep it simple | Option A (float switch, $3–$8) |
+| Want to detect partial blockages | Option B (YF-S201, $6–$15) |
+| Can't cut the return pipe | Option C (SCT-013, $8–$15) |
+| Best protection | Option A + Option C together ($11–$23) |
+
+Add this row to your sensor matrix in Section 8.1:
+
+| Return flow confirmation | Float switch (NC) or YF-S201 | Digital GPIO / Pulse counter | GPIO 25–26 | Flow present/absent or L/min | Binary or ±5% | #1 NFT failure mode — pump stop |
+
+---
+
+### 5.5 What This Node Can Do
 
 Once assembled and programmed:
 
@@ -268,6 +412,7 @@ EVERY 60 SECONDS, THE NODE:
   2. Reads air temp + humidity   ──→ Logs to WiFi endpoint
   3. Reads water level           ──→ Logs to WiFi endpoint
   4. Reads pump current          ──→ Logs to WiFi endpoint
+  5. Reads return tank float     ──→ Logs to WiFi endpoint
 
   IF solution temp > 24°C       ──→ Sends alert (Telegram/email)
   IF solution temp < 10°C       ──→ Sends alert
@@ -275,6 +420,7 @@ EVERY 60 SECONDS, THE NODE:
   IF humidity > 85%             ──→ Sends alert (disease risk)
   IF water level < 30%          ──→ Sends alert (top up needed)
   IF pump current = 0A          ──→ Sends alert (PUMP FAILURE)
+  IF pump ON but float LOW      ──→ Sends alert (NO RETURN FLOW — check channels)
 
   Also serves a local web page at http://hydro.local showing
   current readings and a simple 24-hour chart.
@@ -549,6 +695,7 @@ DOSING SAFETY INTERLOCKS
 | Air temp + humidity | DHT22 or SHT30 | Digital | Any GPIO | -40–80 °C, 0–100% RH | ±0.5 °C / ±2% RH | Frost, heatwave, disease |
 | Water level | JSN-SR04T (waterproof ultrasonic) | Trigger + Echo | 2 GPIO | 25–450 cm range | ±1 cm | Low reservoir alert |
 | Pump current | ACS712 (5A module) | Analog | ADC pin | 0–5A | ±50 mA | Pump failure detection |
+| Return flow | Float switch (NC) or YF-S201 | Digital / Pulse | Any GPIO | Present/absent or L/min | Binary / ±5% | **#1 NFT sensor** — confirms solution is flowing, not just pump drawing power |
 | Solution pH | DFRobot SEN0161-V2 | Analog | ADC pin | 0–14 pH | ±0.1 pH | Nutrient availability |
 | Solution EC | DFRobot DFR0300 | Analog | ADC pin | 0–20 mS/cm | ±5% | Nutrient concentration |
 | Light intensity | BH1750 | I2C (digital) | SDA + SCL | 1–65535 lux | ±1 lux | DLI estimation |
@@ -845,6 +992,7 @@ sensor:
   - platform: adc
     pin: GPIO34
     name: "Pump Current"
+    id: pump_current
     unit_of_measurement: "A"
     update_interval: 10s
     attenuation: 11db
@@ -1187,6 +1335,94 @@ After 4–6 weeks of continuous data, patterns like this become clearly visible 
 
 ---
 
+### 14.5 VPD — Vapour Pressure Deficit as a Derived Metric
+
+VPD (Vapour Pressure Deficit) quantifies the "drying power" of the air: how hard the air is pulling moisture from plant leaves. High VPD causes plants to close stomata, reducing CO₂ uptake and slowing growth. Very high VPD causes wilting. Low VPD encourages disease (Botrytis, mildew).
+
+You already log air temperature and humidity with your DHT22/SHT30 — VPD can be calculated from these two values in firmware and logged as a derived sensor.
+
+**Target VPD range:**
+| Growth stage | Target VPD |
+|---|---|
+| Seedling / cutting | 0.4–0.8 kPa |
+| Vegetative growth | 0.8–1.2 kPa |
+| Fruiting / flowering | 1.0–1.5 kPa |
+| Above 1.8 kPa | Wilting risk — shade or mist |
+| Below 0.4 kPa | Disease risk — improve ventilation |
+
+**ESPHome YAML — VPD as a lambda sensor:**
+
+```yaml
+sensor:
+  # Air temperature (from DHT22 — already in your config)
+  - platform: dht
+    pin: GPIO4
+    model: DHT22
+    temperature:
+      name: "Air Temperature"
+      id: air_temp
+    humidity:
+      name: "Air Humidity"
+      id: air_humidity
+    update_interval: 60s
+
+  # VPD — calculated from air temp + humidity
+  - platform: template
+    name: "VPD"
+    id: vpd
+    unit_of_measurement: "kPa"
+    icon: "mdi:water-percent"
+    update_interval: 60s
+    lambda: |-
+      // Tetens equation for saturation vapour pressure (kPa)
+      // SVP = 0.6108 * exp(17.27 * T / (T + 237.3))
+      float T  = id(air_temp).state;
+      float RH = id(air_humidity).state;
+      if (isnan(T) || isnan(RH)) return NAN;
+      float svp = 0.6108f * expf(17.27f * T / (T + 237.3f));
+      float vpd = svp * (1.0f - RH / 100.0f);
+      return vpd;
+    filters:
+      - sliding_window_moving_average:
+          window_size: 5   # smooth over 5 minutes
+```
+
+**VPD alerts — add to your alert config:**
+
+```yaml
+binary_sensor:
+  - platform: template
+    name: "VPD Too High"
+    device_class: problem
+    lambda: |-
+      return id(vpd).state > 1.8;
+    filters:
+      - delayed_on: 15min   # only alert if consistently high for 15 min
+    on_press:
+      - logger.log: "ALERT: VPD above 1.8 kPa — wilting risk, check shade/ventilation"
+
+  - platform: template
+    name: "VPD Too Low"
+    device_class: problem
+    lambda: |-
+      return id(vpd).state < 0.4 && id(vpd).state > 0.0;
+    filters:
+      - delayed_on: 30min
+    on_press:
+      - logger.log: "WARNING: VPD below 0.4 kPa — disease risk, check air circulation"
+```
+
+**Grafana panel — VPD over 24 hours:**
+
+Create a time-series panel for `vpd` with colour-coded thresholds:
+- Green band: 0.8–1.5 kPa (healthy range)
+- Yellow band: 0.4–0.8 kPa or 1.5–1.8 kPa (caution)
+- Red band: <0.4 kPa or >1.8 kPa (alert zones)
+
+This gives an immediate visual of how many hours per day the crop is under heat or disease stress, and whether adding shade cloth or improving airflow made a measurable difference.
+
+---
+
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1337,24 +1573,323 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 
 **Prevention:** Use the priority matrix in Section 13.1. Only push 🔴 CRITICAL alerts to your phone as notifications. Send 🟡 WARNINGs as a digest every 4 hours. 🟢 INFOs go to a daily summary email or dashboard log only.
 
-### Pitfall 3 — WiFi Reliability
+### Pitfall 3 — WiFi Reliability and the Silent Blackout
 
-**Problem:** The ESP32 loses WiFi connection. Data stops flowing. No alerts are sent. You think everything is fine — but the system is unmonitored.
+**Problem:** The ESP32 loses WiFi connection. Data stops flowing. No alerts are sent. You think everything is fine — but the system is completely unmonitored. If the pump then fails while the ESP32 is offline, you won't know until you walk out and find wilting plants.
 
-**Prevention:**
-- Implement a watchdog: if the dashboard hasn't received data in 5 minutes, send an alert from the server side (not from the ESP32 itself)
-- The ESP32 firmware should auto-reconnect to WiFi with exponential backoff
-- Consider a local SD card logger as backup (writes data even when WiFi is down)
+This is sometimes called the "dead-man problem": the alerting system itself can go silent, and you have no way to know from the phone alerts alone whether silence means "all is well" or "the node has gone offline."
+
+**Prevention — two layers:**
+
+**Layer 1: ESP32 firmware auto-reconnect (ESPHome handles this automatically)**
+
+ESPHome's WiFi component includes exponential-backoff reconnect by default. Add a reboot safeguard for the case where reconnect keeps failing:
+
+```yaml
+wifi:
+  ssid: "YourWiFiNetwork"
+  password: "YourWiFiPassword"
+  fast_connect: true
+  reboot_timeout: 15min   # reboot ESP32 if WiFi not recovered within 15 min
+  ap:
+    ssid: "Hydro-Fallback"   # creates a local access point as fallback
+    password: "hydro1234"
+
+# Also log last-seen time as a sensor so InfluxDB can track it
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "IP Address"
+    ssid:
+      name: "Connected SSID"
+    bssid:
+      name: "Connected BSSID"
+```
+
+**Layer 2: Server-side watchdog (the most important part)**
+
+The ESP32 cannot alert you about its own silence — if it's offline, it can't send anything. The watchdog must run on the **server side** (your InfluxDB/Grafana instance, a Raspberry Pi, or a free cloud function).
+
+**Option A — Grafana alert on data staleness (recommended if using Grafana):**
+
+In Grafana, create an alert rule on any sensor (e.g., solution temperature):
+
+```
+Alert rule: "ESP32 Node Offline"
+  Query: last value of solution_temp WHERE time > now()-10m
+  Condition: IS NULL  (no data in last 10 minutes)
+  Alert: send Telegram + email
+  Message: "⚠️ Hydro node has not reported for 10+ minutes — check WiFi"
+```
+
+This fires if the ESP32 hasn't sent *any* data in 10 minutes. It costs nothing extra if you're already using Grafana.
+
+**Option B — Python watchdog script on a Raspberry Pi or always-on server:**
+
+```python
+#!/usr/bin/env python3
+"""
+hydro_watchdog.py — server-side dead-man monitor for ESP32 sensor node.
+Run as a cron job or systemd service every 5 minutes.
+Sends a Telegram alert if the ESP32 has not reported in TIMEOUT_MINUTES.
+"""
+
+import time
+import requests
+from influxdb_client import InfluxDBClient
+
+# ── Configuration ──────────────────────────────────────────────────────────────
+INFLUX_URL    = "https://us-east-1-1.aws.cloud2.influxdata.com"
+INFLUX_TOKEN  = "your-influx-api-token"
+INFLUX_ORG    = "your-org"
+INFLUX_BUCKET = "hydroponics"
+
+TELEGRAM_TOKEN  = "your-bot-token"
+TELEGRAM_CHAT_ID = "your-chat-id"
+
+TIMEOUT_MINUTES = 10   # alert if no data for this long
+NODE_NAME       = "hydro-1"
+
+# State file — prevents repeat alerts every 5 minutes
+STATE_FILE = "/tmp/hydro_watchdog_alerted.flag"
+
+# ── Query last data timestamp ───────────────────────────────────────────────────
+def get_last_data_age_minutes():
+    client = InfluxDBClient(url=INFLUX_URL, token=INFLUX_TOKEN, org=INFLUX_ORG)
+    query_api = client.query_api()
+    query = f'''
+        from(bucket: "{INFLUX_BUCKET}")
+          |> range(start: -1h)
+          |> filter(fn: (r) => r["node"] == "{NODE_NAME}")
+          |> last()
+    '''
+    tables = query_api.query(query)
+    client.close()
+
+    if not tables or not tables[0].records:
+        return 999   # no data at all — definitely alert
+
+    last_time = tables[0].records[-1].get_time()
+    age_seconds = (time.time() - last_time.timestamp())
+    return age_seconds / 60.0
+
+# ── Send Telegram alert ────────────────────────────────────────────────────────
+def send_telegram(message):
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    requests.post(url, data={"chat_id": TELEGRAM_CHAT_ID, "text": message})
+
+# ── Main ───────────────────────────────────────────────────────────────────────
+def main():
+    import os
+    age = get_last_data_age_minutes()
+
+    if age > TIMEOUT_MINUTES:
+        # Only alert once until data resumes (state file prevents spam)
+        if not os.path.exists(STATE_FILE):
+            send_telegram(
+                f"⚠️ HYDRO WATCHDOG\n"
+                f"Node '{NODE_NAME}' has not reported for {age:.0f} minutes.\n"
+                f"Last data: {age:.0f} min ago\n"
+                f"Check WiFi connection and power to ESP32."
+            )
+            open(STATE_FILE, "w").close()
+    else:
+        # Data is fresh — clear the alert flag so next outage triggers a new alert
+        if os.path.exists(STATE_FILE):
+            os.remove(STATE_FILE)
+            send_telegram(
+                f"✅ HYDRO WATCHDOG — RECOVERED\n"
+                f"Node '{NODE_NAME}' is back online. Last data {age:.1f} min ago."
+            )
+
+if __name__ == "__main__":
+    main()
+```
+
+**Run it every 5 minutes via cron:**
+
+```bash
+# crontab -e
+*/5 * * * * /usr/bin/python3 /home/pi/hydro_watchdog.py >> /var/log/hydro_watchdog.log 2>&1
+```
+
+**Or as a systemd timer (preferred):**
+
+```ini
+# /etc/systemd/system/hydro-watchdog.service
+[Unit]
+Description=Hydroponics ESP32 watchdog
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/pi/hydro_watchdog.py
+```
+
+```ini
+# /etc/systemd/system/hydro-watchdog.timer
+[Unit]
+Description=Run hydroponics watchdog every 5 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target
+```
+
+```bash
+systemctl enable --now hydro-watchdog.timer
+```
+
+**Option C — InfluxDB task (no extra server needed):**
+
+If you use InfluxDB Cloud, you can write a Flux task that runs every 5 minutes and sends an alert via a webhook if no data has arrived:
+
+```flux
+// InfluxDB task: hydro-watchdog
+// Runs every 5 minutes; alerts if ESP32 node goes silent
+
+option task = {name: "hydro-watchdog", every: 5m}
+
+last_point = from(bucket: "hydroponics")
+  |> range(start: -15m)
+  |> filter(fn: (r) => r["node"] == "hydro-1")
+  |> last()
+
+count = last_point |> count()
+
+// If no records, send HTTP POST to Telegram webhook
+// (use InfluxDB's http.post() function)
+```
+
+> **Minimum viable watchdog:** Even if you skip all of the above, set a Grafana alert on any sensor panel to "Alert when no data for 10 minutes." This takes 2 minutes to configure and eliminates the silent blackout problem entirely.
+
+- The ESP32 firmware should auto-reconnect to WiFi with exponential backoff (ESPHome `reboot_timeout` handles this)
+- Consider a local SD card logger as backup (writes data even when WiFi is down, readable later via USB)
 - Place the ESP32 within strong WiFi range (test signal strength with a phone at the mounting location before installing)
 
 ### Pitfall 4 — Analog Sensor Noise on ESP32
 
-**Problem:** The ESP32's built-in ADC (analog-to-digital converter) is notoriously noisy. Raw readings from pH and EC probes fluctuate by ±10–20% reading-to-reading, making data unusable.
+**Problem:** The ESP32's built-in ADC (analog-to-digital converter) is notoriously noisy. Raw readings from pH and EC probes fluctuate by ±10–20% reading-to-reading, making data unusable and causing false dosing triggers in Tier 4.
 
-**Prevention:**
+**Prevention — software filtering (always apply these first):**
 - Use software filtering: take 20 readings, discard the top and bottom 5, average the middle 10 (median filter)
-- Use `multisampling` in ESPHome (set `attenuation: 11db` and `samples: 20`)
-- For Tier 3–4: consider an ADS1115 external ADC module ($3) — 16-bit resolution vs. ESP32's noisy 12-bit. Dramatically improves pH and EC reading stability.
+- Use `multisampling` in ESPHome (set `attenuation: 11db` and `samples: 20`):
+
+```yaml
+sensor:
+  - platform: adc
+    pin: GPIO34
+    name: "pH Sensor"
+    id: ph_sensor
+    attenuation: 11db
+    samples: 20             # average 20 ADC readings per update
+    update_interval: 30s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 5    # average last 5 readings (over 2.5 min)
+          send_every: 1
+      - calibrate_linear:
+          - 2.03 -> 4.0     # calibrate with pH 4.0 buffer
+          - 2.46 -> 7.0     # calibrate with pH 7.0 buffer
+```
+
+**Prevention — hardware upgrade: ADS1115 external ADC ($3)**
+
+For Tier 3–4 where pH and EC readings drive automated dosing decisions, the ESP32's internal ADC is not adequate. The ADS1115 is a 16-bit I2C ADC that provides dramatically cleaner readings.
+
+| | ESP32 internal ADC | ADS1115 external ADC |
+|---|---|---|
+| Resolution | 12-bit (4096 steps) | 16-bit (65536 steps) |
+| Noise (typical) | ±15–30 mV | ±0.1–0.5 mV |
+| Cost | Free (already on ESP32) | $2–$4 |
+| Interface | Dedicated GPIO pin | I2C (shared with other sensors) |
+| Max channels | 2 usable (GPIO35, GPIO34) | 4 channels per module |
+
+**ADS1115 wiring:**
+
+```
+ADS1115 module    →  ESP32
+─────────────────────────────────────
+VDD               →  3.3V
+GND               →  GND
+SCL               →  GPIO 22  (shared I2C bus)
+SDA               →  GPIO 21  (shared I2C bus)
+ADDR              →  GND      (sets I2C address 0x48)
+
+ADS1115 inputs:
+  A0  →  pH probe signal board OUT
+  A1  →  EC probe signal board OUT
+  A2  →  spare (e.g., soil moisture)
+  A3  →  spare
+
+Probe signal boards still powered from 5V; their OUT voltage is
+0–3.3V (within ADS1115 input range with default ±4.096V gain).
+```
+
+```mermaid
+flowchart LR
+    ESP["ESP32\n(3.3V)"]
+    ADS["ADS1115\n(I2C addr 0x48)"]
+    PH_BOARD["DFRobot pH\nsignal board\n(5V powered)"]
+    EC_BOARD["DFRobot EC\nsignal board\n(5V powered)"]
+    PH_PROBE["pH probe"]
+    EC_PROBE["EC probe"]
+
+    ESP -->|"I2C SDA/SCL\nGPIO 21/22"| ADS
+    PH_BOARD -->|"OUT → A0"| ADS
+    EC_BOARD -->|"OUT → A1"| ADS
+    PH_PROBE --- PH_BOARD
+    EC_PROBE --- EC_BOARD
+```
+
+**ESPHome YAML — ADS1115 with pH and EC:**
+
+```yaml
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+ads1115:
+  - address: 0x48
+
+sensor:
+  # pH via ADS1115 channel A0
+  - platform: ads1115
+    multiplexer: "A0_GND"
+    gain: 4.096         # ±4.096V range (covers 0–3.3V signal board output)
+    name: "pH Raw Voltage"
+    id: ph_raw
+    update_interval: 15s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 4
+      - calibrate_linear:
+          - 2.03 -> 4.0   # pH 4.0 buffer reading
+          - 2.46 -> 7.0   # pH 7.0 buffer reading
+    unit_of_measurement: "pH"
+
+  # EC via ADS1115 channel A1
+  - platform: ads1115
+    multiplexer: "A1_GND"
+    gain: 4.096
+    name: "EC Raw Voltage"
+    id: ec_raw
+    update_interval: 15s
+    filters:
+      - sliding_window_moving_average:
+          window_size: 4
+      - calibrate_linear:
+          - 0.33 -> 0.0       # distilled water (0 mS/cm)
+          - 1.20 -> 1.413     # standard 1413 µS/cm solution
+      - multiply: 1.0         # already in mS/cm after calibration
+    unit_of_measurement: "mS/cm"
+```
+
+> **Calibration note:** The `calibrate_linear` values shown are examples only. You must perform a two-point calibration with your actual buffer solutions and record the measured voltage at each point to fill in the correct values.
 
 ### Pitfall 5 — Over-Engineering Too Early
 
@@ -1471,4 +2006,4 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310
 ---
 
 > **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
-> **Back to:** [Master Plan (PLAN.md)](../PLAN.md)
+> **Back to:** [README — Hydroponics Guide Index](../../README.md)
