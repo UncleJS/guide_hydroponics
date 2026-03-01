@@ -19,22 +19,22 @@ flowchart TD
     SOUTH["SOUTH — direction of sunlight ↓"]:::label
 
     subgraph SITE["Site Footprint  ←  4.0 metres wide  →"]
-        WB["WIND BREAK / FENCE / TRELLIS MESH\n(north edge)"]
+        WB["WIND BREAK / FENCE / TRELLIS MESH<br/>(north edge)"]
 
-        subgraph ZA["ZONE A — NFT CHANNEL ARRAY\nFrame height: 80 cm"]
+        subgraph ZA["ZONE A — NFT CHANNEL ARRAY<br/>Frame height: 80 cm"]
             direction LR
-            RES["RES\nReservoir 80L"] --> P["P\nPump"] --> M["M\nManifold"]
-            M --> CH1["CH1 ══════════ ▶ D\n(75mm, 2.4m long)"]
-            M --> CH2["CH2 ══════════ ▶ D\n(75mm, 2.4m long)"]
-            M --> CH3["CH3 ══════════ ▶ D\n(75mm, 2.4m long)"]
-            M --> CH4["CH4 ══════════ ▶ D\n(100mm wide channel, 2.4m long)"]
+            RES["RES<br/>Reservoir 80L"] --> P["P<br/>Pump"] --> M["M<br/>Manifold"]
+            M --> CH1["CH1 ══════════ ▶ D<br/>(75mm, 2.4m long)"]
+            M --> CH2["CH2 ══════════ ▶ D<br/>(75mm, 2.4m long)"]
+            M --> CH3["CH3 ══════════ ▶ D<br/>(75mm, 2.4m long)"]
+            M --> CH4["CH4 ══════════ ▶ D<br/>(100mm wide channel, 2.4m long)"]
         end
 
         subgraph SOUTH_ROW["South row"]
             direction LR
-            subgraph ZB["ZONE B\nMicrogreens Tray Shelf\n2-tier"]
+            subgraph ZB["ZONE B<br/>Microgreens Tray Shelf<br/>2-tier"]
             end
-            subgraph ZC["ZONE C\nRoot Veg Bags\nB B B\nB B B"]
+            subgraph ZC["ZONE C<br/>Root Veg Bags<br/>B B B<br/>B B B"]
             end
         end
 
@@ -74,9 +74,9 @@ flowchart TD
 ```mermaid
 block-beta
     columns 3
-    HIGH["HIGH END\n(inlet)\n80 cm post"]:1
+    HIGH["HIGH END<br/>(inlet)<br/>80 cm post"]:1
     CHANNELS:1
-    LOW["LOW END\n(drain)\n72 cm post"]:1
+    LOW["LOW END<br/>(drain)<br/>72 cm post"]:1
 
     block:CHANNELS:1
         columns 1
@@ -86,7 +86,7 @@ block-beta
         CH4["CH4 — 100mm square tube"]
     end
 
-    SLOPE["Slope: 8 cm drop over 2.4 m = 1:30 ratio (3.3%)\nChannels rest on cross-supports at each end\n←────────────── 2.4 metres ──────────────→"]:3
+    SLOPE["Slope: 8 cm drop over 2.4 m = 1:30 ratio (3.3%)<br/>Channels rest on cross-supports at each end<br/>←────────────── 2.4 metres ──────────────→"]:3
 ```
 
 ### Channel Spacing (Front-View Cross Section)
@@ -94,13 +94,13 @@ block-beta
 ```mermaid
 block-beta
     columns 5
-    RAIL["Frame top rail\n←────────── ~1.0 metre ──────────→"]:5
-    CH1["CH1\n75 mm"]:1
+    RAIL["Frame top rail<br/>←────────── ~1.0 metre ──────────→"]:5
+    CH1["CH1<br/>75 mm"]:1
     GAP1[" "]:1
-    CH2["CH2\n75 mm"]:1
+    CH2["CH2<br/>75 mm"]:1
     GAP2[" "]:1
-    CH3["CH3\n75 mm"]:1
-    CH4["CH4\n100 mm"]:2
+    CH3["CH3<br/>75 mm"]:1
+    CH4["CH4<br/>100 mm"]:2
     NOTE["↕ 15 cm gap between channels for airflow"]:3
 ```
 
@@ -109,15 +109,15 @@ block-beta
 ```mermaid
 flowchart LR
     INLET["← inlet end"]
-    P1["[O]\nSite 1"] --> P2["[O]\nSite 2"] --> P3["[O]\nSite 3"] --> P4["[O]\nSite 4"] --> P5["[O]\nSite 5"] --> P6["[O]\nSite 6"] --> P7["[O]\nSite 7 (CH1–3)"]
+    P1["[O]<br/>Site 1"] --> P2["[O]<br/>Site 2"] --> P3["[O]<br/>Site 3"] --> P4["[O]<br/>Site 4"] --> P5["[O]<br/>Site 5"] --> P6["[O]<br/>Site 6"] --> P7["[O]<br/>Site 7 (CH1–3)"]
     INLET --> P1
     P7 --> DRAIN["drain end →"]
 
-    W1["[O]\nSite 1"] --> W2["[O]\nSite 2"] --> W3["[O]\nSite 3"] --> W4["[O]\nSite 4"] --> W5["[O]\nSite 5"] --> W6["[O]\nSite 6"]
+    W1["[O]<br/>Site 1"] --> W2["[O]<br/>Site 2"] --> W3["[O]<br/>Site 3"] --> W4["[O]<br/>Site 4"] --> W5["[O]<br/>Site 5"] --> W6["[O]<br/>Site 6"]
     W6 --> DRAIN4["drain end →"]
 
-    note1["CH1–3: 75mm channel · 50mm net pots · 230mm spacing\n11 sites per channel (50mm edge buffer each end)\nTotal CH1–3: 11 × 3 = 33 sites"]
-    note2["CH4: 100mm channel · 75mm net pots · 300mm spacing\n7 plant sites"]
+    note1["CH1–3: 75mm channel · 50mm net pots · 230mm spacing<br/>11 sites per channel (50mm edge buffer each end)<br/>Total CH1–3: 11 × 3 = 33 sites"]
+    note2["CH4: 100mm channel · 75mm net pots · 300mm spacing<br/>7 plant sites"]
     note3["Total Zone A sites: (11 × 3) + 7 = 40 plant sites"]
 ```
 
@@ -125,10 +125,10 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    RES["RESERVOIR 80L\n(placed BESIDE frame at LOW end of slope)"]
-    LID["Lid with 2 holes:\n1. Pump power cable\n2. Inlet / return pipe"]
-    BODY["Exterior: painted white\n+ insulated with foam sheet"]
-    POS["Position: low end of channels\nso gravity returns flow naturally.\nShade: under the frame or\nwrapped with reflective foam."]
+    RES["RESERVOIR 80L<br/>(placed BESIDE frame at LOW end of slope)"]
+    LID["Lid with 2 holes:<br/>1. Pump power cable<br/>2. Inlet / return pipe"]
+    BODY["Exterior: painted white<br/>+ insulated with foam sheet"]
+    POS["Position: low end of channels<br/>so gravity returns flow naturally.<br/>Shade: under the frame or<br/>wrapped with reflective foam."]
 
     RES --> LID
     LID --> BODY
@@ -140,15 +140,15 @@ flowchart TD
 ```mermaid
 flowchart TD
     RES1["RESERVOIR"]
-    PUMP["PUMP\nsubmersible · 600–800 L/h\nsitting on reservoir floor"]
-    OUTLET["25mm outlet pipe\nup through lid"]
-    MANIFOLD["25mm PVC manifold\nruns along HIGH end of frame"]
-    CH1["CH1\n13mm inlet tube"]
-    CH2["CH2\n13mm inlet tube"]
-    CH3["CH3\n13mm inlet tube"]
-    CH4["CH4\n13mm inlet tube"]
-    RETURN["19–25mm return pipe\nruns along LOW end of frame · gravity"]
-    RES2["RESERVOIR\n← gravity drain-back · no second pump needed"]
+    PUMP["PUMP<br/>submersible · 600–800 L/h<br/>sitting on reservoir floor"]
+    OUTLET["25mm outlet pipe<br/>up through lid"]
+    MANIFOLD["25mm PVC manifold<br/>runs along HIGH end of frame"]
+    CH1["CH1<br/>13mm inlet tube"]
+    CH2["CH2<br/>13mm inlet tube"]
+    CH3["CH3<br/>13mm inlet tube"]
+    CH4["CH4<br/>13mm inlet tube"]
+    RETURN["19–25mm return pipe<br/>runs along LOW end of frame · gravity"]
+    RES2["RESERVOIR<br/>← gravity drain-back · no second pump needed"]
 
     RES1 --> PUMP --> OUTLET --> MANIFOLD
     MANIFOLD --> CH1
@@ -180,11 +180,11 @@ block-beta
 
     block:SIDEVIEW["SIDE VIEW"]:3
         columns 2
-        H80["80 cm\n(Tier 2 height)"] TIER2["Tier 2 trays\n← top tier"]
-        H40["40 cm\n(Tier 1 height)"] TIER1["Tier 1 trays\n← bottom tier"]
+        H80["80 cm<br/>(Tier 2 height)"] TIER2["Tier 2 trays<br/>← top tier"]
+        H40["40 cm<br/>(Tier 1 height)"] TIER1["Tier 1 trays<br/>← bottom tier"]
     end
 
-    DIMS["Shelf: 60 cm wide × 55 cm deep × 90 cm tall\nBuild from: 2×4 timber + plywood, or wire shelving unit"]:3
+    DIMS["Shelf: 60 cm wide × 55 cm deep × 90 cm tall<br/>Build from: 2×4 timber + plywood, or wire shelving unit"]:3
 ```
 
 ### Tray Configuration
@@ -222,7 +222,7 @@ block-beta
     TITLE["TOP VIEW — Grow Bag Layout"]:3
     B1["Radish 20L"] B2["Radish 20L"] B3["Beetroot 20L"]
     B4["Carrot 30L"] B5["Carrot 30L"] B6["Carrot 30L"]
-    NOTE["All bags sit on a slatted wooden pallet or gravel/bark chip bed for drainage.\nEnsure no standing water under bags."]:3
+    NOTE["All bags sit on a slatted wooden pallet or gravel/bark chip bed for drainage.<br/>Ensure no standing water under bags."]:3
 ```
 
 ### Bag Sizes and Depths
@@ -242,7 +242,7 @@ block-beta
     COCO["Coco coir · 12L · 60%"]
     PERL["Perlite · 6L · 30%"]
     VERM["Vermiculite · 2L · 10%"]
-    NOTE["Moisten coco before filling.\nDo NOT use garden soil."]
+    NOTE["Moisten coco before filling.<br/>Do NOT use garden soil."]
 ```
 
 ### Fertigation Schedule (Zone C)
@@ -263,10 +263,10 @@ block-beta
 
 ```mermaid
 flowchart TD
-    CLOTH["Shade cloth 40%\nstretched over bamboo/conduit frame\n(summer: June–August peak)"]
+    CLOTH["Shade cloth 40%<br/>stretched over bamboo/conduit frame<br/>(summer: June–August peak)"]
     GAP["↓ 30–50 cm clearance ↓"]
     ZONES["NFT CHANNELS  ·  ZONE B  ·  ZONE C"]
-    NOTE["Deploy when daily temps exceed 28°C\nor plants show heat stress.\nRemove in overcast / autumn conditions\nto maximise light."]
+    NOTE["Deploy when daily temps exceed 28°C<br/>or plants show heat stress.<br/>Remove in overcast / autumn conditions<br/>to maximise light."]
 
     CLOTH --> GAP --> ZONES
     ZONES --> NOTE
@@ -297,13 +297,13 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    NORTH["NORTH SIDE\nWind break — no access needed"]
-    NFT["NFT CHANNELS\nAccessible from SOUTH SIDE\n→ Net pots · channel inspection · inlet check"]
-    RES_ACCESS["RESERVOIR — LOW END (right/east side)\n→ Fill point · pump check · EC/pH testing"]
-    ZB_ACCESS["ZONE B SHELF — EAST side\n→ Tray swap · watering · harvest"]
-    ZC_ACCESS["ZONE C BAGS — SOUTH-EAST corner\n→ Daily watering · harvest"]
-    BENCH_ACCESS["WORK BENCH — SOUTH side, central\n→ Nutrient mixing · propagation · tools"]
-    SOUTH["SOUTH SIDE\nMain access aisle — 0.6 m wide"]
+    NORTH["NORTH SIDE<br/>Wind break — no access needed"]
+    NFT["NFT CHANNELS<br/>Accessible from SOUTH SIDE<br/>→ Net pots · channel inspection · inlet check"]
+    RES_ACCESS["RESERVOIR — LOW END (right/east side)<br/>→ Fill point · pump check · EC/pH testing"]
+    ZB_ACCESS["ZONE B SHELF — EAST side<br/>→ Tray swap · watering · harvest"]
+    ZC_ACCESS["ZONE C BAGS — SOUTH-EAST corner<br/>→ Daily watering · harvest"]
+    BENCH_ACCESS["WORK BENCH — SOUTH side, central<br/>→ Nutrient mixing · propagation · tools"]
+    SOUTH["SOUTH SIDE<br/>Main access aisle — 0.6 m wide"]
 
     NORTH --> NFT --> RES_ACCESS --> ZB_ACCESS --> ZC_ACCESS --> BENCH_ACCESS --> SOUTH
 ```

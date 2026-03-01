@@ -282,7 +282,7 @@ flowchart LR
     PUMP["Pump (in reservoir)"] -->|"solution"| CHANNELS["NFT Channels"]
     CHANNELS -->|"return drain"| RTANK["Return / Catch Tank"]
     RTANK -->|"gravity drain"| RES["Main Reservoir"]
-    RTANK --- FS["Float Switch\n(mounted at low-water mark)\nHIGH = flow OK\nLOW = alert"]
+    RTANK --- FS["Float Switch<br/>(mounted at low-water mark)<br/>HIGH = flow OK<br/>LOW = alert"]
 ```
 
 **Wiring to ESP32:**
@@ -1831,14 +1831,14 @@ Probe signal boards still powered from 5V; their OUT voltage is
 
 ```mermaid
 flowchart LR
-    ESP["ESP32\n(3.3V)"]
-    ADS["ADS1115\n(I2C addr 0x48)"]
-    PH_BOARD["DFRobot pH\nsignal board\n(5V powered)"]
-    EC_BOARD["DFRobot EC\nsignal board\n(5V powered)"]
+    ESP["ESP32<br/>(3.3V)"]
+    ADS["ADS1115<br/>(I2C addr 0x48)"]
+    PH_BOARD["DFRobot pH<br/>signal board<br/>(5V powered)"]
+    EC_BOARD["DFRobot EC<br/>signal board<br/>(5V powered)"]
     PH_PROBE["pH probe"]
     EC_PROBE["EC probe"]
 
-    ESP -->|"I2C SDA/SCL\nGPIO 21/22"| ADS
+    ESP -->|"I2C SDA/SCL<br/>GPIO 21/22"| ADS
     PH_BOARD -->|"OUT → A0"| ADS
     EC_BOARD -->|"OUT → A1"| ADS
     PH_PROBE --- PH_BOARD
