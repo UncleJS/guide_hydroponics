@@ -42,47 +42,6 @@
   - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
 
 
-## Table of Contents
-
-- [1. Why Starting Water Quality Matters](#1-why-starting-water-quality-matters)
-- [2. TDS (Total Dissolved Solids) and EC Baseline](#2-tds-total-dissolved-solids-and-ec-baseline)
-  - [Testing Your Source Water](#testing-your-source-water)
-  - [Why Source EC Matters](#why-source-ec-matters)
-  - [Interpreting Your Local Water Report](#interpreting-your-local-water-report)
-- [3. Tap Water: Chlorine, Chloramine, and Hardness](#3-tap-water-chlorine-chloramine-and-hardness)
-  - [Chlorine vs Chloramine — Critical Difference](#chlorine-vs-chloramine-critical-difference)
-  - [Hard Water Management in E&F](#hard-water-management-in-ef)
-- [4. Well Water Issues](#4-well-water-issues)
-- [5. Reverse Osmosis (RO) — When It's Worth It](#5-reverse-osmosis-ro-when-its-worth-it)
-  - [What RO Does](#what-ro-does)
-  - [Is RO Worth It for This System?](#is-ro-worth-it-for-this-system)
-- [6. Rainwater Harvesting](#6-rainwater-harvesting)
-  - [Rainwater Characteristics](#rainwater-characteristics)
-  - [Collection System](#collection-system)
-- [7. pH Testing Methods Compared](#7-ph-testing-methods-compared)
-  - [Digital pH Meters (Recommended)](#digital-ph-meters-recommended)
-  - [Calibrating a pH Meter](#calibrating-a-ph-meter)
-- [8. EC Meters: Types, Calibration, and Use](#8-ec-meters-types-calibration-and-use)
-  - [EC Meter Types](#ec-meter-types)
-  - [Testing in E&F: Reservoir vs Media EC](#testing-in-ef-reservoir-vs-media-ec)
-- [9. pH Up and pH Down — Safe Handling](#9-ph-up-and-ph-down-safe-handling)
-  - [pH Adjustment Protocol for E&F](#ph-adjustment-protocol-for-ef)
-- [10. Water Temperature Management Outdoors](#10-water-temperature-management-outdoors)
-  - [The Outdoor Heat Problem](#the-outdoor-heat-problem)
-  - [E&F Reservoir Positioning Advantage](#ef-reservoir-positioning-advantage)
-  - [Management Strategies](#management-strategies)
-- [11. Algae Prevention in E&F Systems](#11-algae-prevention-in-ef-systems)
-  - [E&F Algae Risk Profile](#ef-algae-risk-profile)
-  - [Prevention Checklist](#prevention-checklist)
-  - [Treatment](#treatment)
-- [12. Salt Accumulation and Flush Scheduling](#12-salt-accumulation-and-flush-scheduling)
-  - [EC Monitoring Protocol](#ec-monitoring-protocol)
-- [13. Full Water Change Protocol](#13-full-water-change-protocol)
-  - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Starting Water Quality Matters
@@ -101,7 +60,6 @@ Your source water directly affects:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -157,7 +115,6 @@ Most municipal water suppliers publish annual quality reports. Look for:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -222,7 +179,6 @@ Hard water causes the same problems as in NFT (pH creep, scale, excess Ca/Mg) bu
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -243,7 +199,6 @@ If you use well water, test it thoroughly before use. Common problems in well wa
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -278,7 +233,6 @@ For a 100L reservoir requiring weekly full changes, a countertop RO unit with a 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -316,7 +270,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -374,7 +327,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -419,7 +371,6 @@ This is unique to media-based systems. Your management routine should include bo
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -476,7 +427,6 @@ This is unique to media-based systems. Your management routine should include bo
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -529,7 +479,6 @@ Maximise this advantage:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -592,7 +541,6 @@ If algae is already established:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -629,7 +577,6 @@ The most important water management practice unique to E&F is **monitoring and m
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -677,9 +624,6 @@ The most important water management practice unique to E&F is **monitoring and m
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

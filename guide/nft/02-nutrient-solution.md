@@ -50,55 +50,6 @@
   - [Solution Volume per Full Mix (80L reservoir)](#solution-volume-per-full-mix-80l-reservoir)
 
 
-## Table of Contents
-
-- [1. Why Nutrients Matter in Hydroponics](#1-why-nutrients-matter-in-hydroponics)
-- [2. The 17 Essential Plant Nutrients](#2-the-17-essential-plant-nutrients)
-  - [Macronutrients (needed in large quantities)](#macronutrients-needed-in-large-quantities)
-  - [Secondary Macronutrients (needed in moderate quantities)](#secondary-macronutrients-needed-in-moderate-quantities)
-  - [Micronutrients (needed in trace quantities — but still essential)](#micronutrients-needed-in-trace-quantities-but-still-essential)
-- [3. NPK at Each Growth Stage](#3-npk-at-each-growth-stage)
-- [4. EC — Electrical Conductivity](#4-ec-electrical-conductivity)
-  - [What EC Measures](#what-ec-measures)
-  - [Why EC Matters](#why-ec-matters)
-  - [EC Target Ranges by Crop](#ec-target-ranges-by-crop)
-- [5. pH — The Key to Nutrient Availability](#5-ph-the-key-to-nutrient-availability)
-  - [What pH Measures](#what-ph-measures)
-  - [Target pH Range for Hydroponics: 5.5–6.5](#target-ph-range-for-hydroponics-5565)
-  - [Nutrient Availability vs pH (Mulder's Chart Simplified)](#nutrient-availability-vs-ph-mulders-chart-simplified)
-  - [Ideal pH by Crop](#ideal-ph-by-crop)
-  - [pH Drift](#ph-drift)
-- [6. Two-Part vs Three-Part vs One-Part Nutrients](#6-two-part-vs-three-part-vs-one-part-nutrients)
-  - [One-Part / All-in-One](#one-part-all-in-one)
-  - [Two-Part Systems](#two-part-systems)
-  - [Three-Part Systems](#three-part-systems)
-  - [The Masterblend Trio (Budget Champion)](#the-masterblend-trio-budget-champion)
-- [7. Masterblend Trio — Mixing Recipe](#7-masterblend-trio-mixing-recipe)
-  - [Components](#components)
-  - [Standard Mixing Recipe (per 4 litres / ~1 US gallon of water)](#standard-mixing-recipe-per-4-litres-1-us-gallon-of-water)
-  - [Masterblend Dose Scaling](#masterblend-dose-scaling)
-- [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
-  - [Mix Ratios (per litre of water)](#mix-ratios-per-litre-of-water)
-- [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
-  - [Optimal: 18–22°C](#optimal-1822c)
-- [10. Reservoir Top-Up vs Full Change](#10-reservoir-top-up-vs-full-change)
-  - [Two Operations — Very Different Purposes](#two-operations-very-different-purposes)
-- [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
-  - [How to Identify Location of Symptoms (Key Diagnostic Clue)](#how-to-identify-location-of-symptoms-key-diagnostic-clue)
-  - [Deficiency Quick Reference](#deficiency-quick-reference)
-  - [Toxicity Signs](#toxicity-signs)
-- [12. Organic Hydroponics](#12-organic-hydroponics)
-  - [Key Differences](#key-differences)
-  - [Common Organic Nutrient Sources](#common-organic-nutrient-sources)
-  - [Simple Organic Nutrient Recipe (Vegetative Stage)](#simple-organic-nutrient-recipe-vegetative-stage)
-  - [Why Organic Is Harder in NFT Specifically](#why-organic-is-harder-in-nft-specifically)
-- [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
-  - [Reservoir Volume Needed](#reservoir-volume-needed)
-  - [Solution Volume per Full Mix (80L reservoir)](#solution-volume-per-full-mix-80l-reservoir)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Nutrients Matter in Hydroponics
@@ -111,7 +62,6 @@ This is both the power and the responsibility of hydroponics:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -155,7 +105,6 @@ Plants require 17 elements to complete their life cycle. These are divided into 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -190,7 +139,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -236,7 +184,6 @@ Units: **mS/cm** (millisiemens per centimetre) — some meters display as EC, ot
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -305,7 +252,6 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -333,7 +279,6 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -386,7 +331,6 @@ This is the most cost-effective nutrient system available. Used by professional 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -410,7 +354,6 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -446,7 +389,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -482,7 +424,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -530,7 +471,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -590,7 +530,6 @@ Organic hydroponics works best in media-based systems (deep water culture, flood
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -651,9 +590,6 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

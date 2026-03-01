@@ -30,35 +30,6 @@
 - [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
 
 
-## Table of Contents
-
-- [1. The Outdoor NFT Vulnerability Profile](#1-the-outdoor-nft-vulnerability-profile)
-- [2. Integrated Pest Management (IPM) Framework](#2-integrated-pest-management-ipm-framework)
-  - [Scouting Protocol](#scouting-protocol)
-- [3. Common Pests](#3-common-pests)
-  - [APHIDS](#aphids)
-  - [FUNGUS GNATS (Bradysia spp.)](#fungus-gnats-bradysia-spp)
-  - [SPIDER MITES (Tetranychus urticae)](#spider-mites-tetranychus-urticae)
-  - [WHITEFLIES](#whiteflies)
-  - [SLUGS AND SNAILS](#slugs-and-snails)
-  - [CATERPILLARS / MOTHS](#caterpillars-moths)
-  - [THRIPS](#thrips)
-- [4. Common Diseases](#4-common-diseases)
-  - [PYTHIUM ROOT ROT](#pythium-root-rot)
-  - [POWDERY MILDEW](#powdery-mildew)
-  - [BOTRYTIS (GREY MOULD)](#botrytis-grey-mould)
-  - [FUSARIUM WILT](#fusarium-wilt)
-  - [DOWNY MILDEW](#downy-mildew)
-  - [DAMPING OFF](#damping-off)
-- [5. Pesticide Pre-Harvest Interval (PHI) Reference](#5-pesticide-pre-harvest-interval-phi-reference)
-- [6. Beneficial Insects: Attracting and Using Them](#6-beneficial-insects-attracting-and-using-them)
-  - [Naturally Occurring Beneficials (Attract to Your Garden)](#naturally-occurring-beneficials-attract-to-your-garden)
-  - [Purchased Biological Controls](#purchased-biological-controls)
-- [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor NFT Vulnerability Profile
@@ -80,7 +51,6 @@ Growing outdoors exposes your system to the full range of garden pests and disea
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -114,7 +84,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -383,7 +352,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -579,7 +547,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -604,7 +571,6 @@ PHI is the number of days that must pass between the last application and harves
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -637,7 +603,6 @@ Available from specialist suppliers (Koppert, Neudorff, BioBest):
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -669,9 +634,6 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

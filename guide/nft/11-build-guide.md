@@ -6,30 +6,6 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 ---
 
-## Table of Contents
-
-1. [System Overview Recap](#1-system-overview-recap)
-2. [Tools Required](#2-tools-required)
-3. [Safety and Prep Notes](#3-safety-and-prep-notes)
-4. [Step 1 — Site Preparation and Orientation](#4-step-1--site-preparation-and-orientation)
-5. [Step 2 — Frame Construction](#5-step-2--frame-construction)
-6. [Step 3 — Channel Preparation](#6-step-3--channel-preparation)
-7. [Step 4 — Reservoir Setup](#7-step-4--reservoir-setup)
-8. [Step 5 — Plumbing](#8-step-5--plumbing)
-9. [Step 6 — Electrical and Timer Setup](#9-step-6--electrical-and-timer-setup)
-10. [Step 7 — System Test (Water Only)](#10-step-7--system-test-water-only)
-11. [Step 8 — First Nutrient Solution Fill](#11-step-8--first-nutrient-solution-fill)
-12. [Step 9 — Planting](#12-step-9--planting)
-13. [Step 10 — Zone B Microgreens Station](#13-step-10--zone-b-microgreens-station)
-14. [Step 11 — Zone C Root Veg Grow Bags](#14-step-11--zone-c-root-veg-grow-bags)
-15. [Common Build Mistakes and How to Avoid Them](#15-common-build-mistakes-and-how-to-avoid-them)
-16. [Build Checklist](#16-build-checklist)
-
----
-
-[↑ Back to TOC](#table-of-contents)
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. System Overview Recap
 
@@ -79,7 +55,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -118,7 +93,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -139,7 +113,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -235,7 +208,6 @@ Mark corners with pegs or chalk. This avoids building the frame and discovering 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -320,7 +292,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -413,7 +384,6 @@ To make a simple spray bar:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -468,7 +438,6 @@ For most DIY builds, the top-fill return is simpler and provides better oxygenat
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -579,7 +548,6 @@ Before testing the full system, inspect every joint:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -630,7 +598,6 @@ Position air stones at the bottom of the reservoir. Run the airline along the fr
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -701,7 +668,6 @@ Step 9: Drain test water
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -736,7 +702,6 @@ See Guide 02 for full Masterblend recipe and dose scaling table. Summary for fir
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -821,7 +786,6 @@ Hour 48:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -881,7 +845,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -950,7 +913,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1020,7 +982,6 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 

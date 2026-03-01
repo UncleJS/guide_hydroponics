@@ -37,42 +37,6 @@
 - [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
 
 
-## Table of Contents
-
-- [How to Use This Guide](#how-to-use-this-guide)
-- [SECTION A: Water and Solution Problems](#section-a-water-and-solution-problems)
-  - [A1: pH DRIFTING UP (alkaline creep)](#a1-ph-drifting-up-alkaline-creep)
-  - [A2: pH DRIFTING DOWN (acidic drop)](#a2-ph-drifting-down-acidic-drop)
-  - [A3: EC DROPPING FASTER THAN EXPECTED](#a3-ec-dropping-faster-than-expected)
-  - [A4: EC RISING ABOVE TARGET](#a4-ec-rising-above-target)
-  - [A5: SOLUTION TURNS BROWN, GREEN, OR SLIMY](#a5-solution-turns-brown-green-or-slimy)
-- [SECTION B: Plant Problems](#section-b-plant-problems)
-  - [B1: YELLOWING LEAVES](#b1-yellowing-leaves)
-  - [B2: BROWN OR CRISPY LEAF EDGES / TIP BURN](#b2-brown-or-crispy-leaf-edges-tip-burn)
-  - [B3: WILTING](#b3-wilting)
-  - [B4: STUNTED GROWTH](#b4-stunted-growth)
-  - [B5: BOLTING (PREMATURE FLOWERING — GREENS/HERBS)](#b5-bolting-premature-flowering-greensherbs)
-  - [B6: BLOSSOM DROP (TOMATOES / PEPPERS)](#b6-blossom-drop-tomatoes-peppers)
-  - [B7: PURPLE LEAVES](#b7-purple-leaves)
-  - [B8: WHITE CRUSTY DEPOSITS ON CHANNELS OR NET POTS](#b8-white-crusty-deposits-on-channels-or-net-pots)
-- [SECTION C: System and Equipment Problems](#section-c-system-and-equipment-problems)
-  - [C1: PUMP NOT FLOWING](#c1-pump-not-flowing)
-  - [C2: CHANNELS OVERFLOWING OR POOLING](#c2-channels-overflowing-or-pooling)
-  - [C3: DRY SPOTS IN CHANNELS](#c3-dry-spots-in-channels)
-  - [C4: RESERVOIR OVERHEATING](#c4-reservoir-overheating)
-  - [C5: FITTINGS LEAKING](#c5-fittings-leaking)
-- [SECTION D: Multiple Simultaneous Symptoms](#section-d-multiple-simultaneous-symptoms)
-  - [Key Principle](#key-principle)
-  - [D1: Yellowing + Wilting (Multiple Plants)](#d1-yellowing-wilting-multiple-plants)
-  - [D2: Brown Leaf Edges + Stunted Growth](#d2-brown-leaf-edges-stunted-growth)
-  - [D3: Yellowing + Stunted Growth + Brown Edges (The Triad)](#d3-yellowing-stunted-growth-brown-edges-the-triad)
-  - [D4: Multiple Plants Affected Simultaneously vs One Plant](#d4-multiple-plants-affected-simultaneously-vs-one-plant)
-  - [D5: Rapid Onset (Problem Appeared Overnight or Within Hours)](#d5-rapid-onset-problem-appeared-overnight-or-within-hours)
-- [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
@@ -89,7 +53,6 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -257,7 +220,6 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -508,7 +470,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -655,7 +616,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -780,7 +740,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -821,9 +780,6 @@ flowchart TD
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

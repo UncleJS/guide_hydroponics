@@ -43,48 +43,6 @@
 - [13. Quick Reference: Media Selection Guide](#13-quick-reference-media-selection-guide)
 
 
-## Table of Contents
-
-- [1. Why Ebb & Flow Needs Substantial Media](#1-why-ebb-flow-needs-substantial-media)
-- [2. Clay Pebbles (LECA) — The Primary E&F Media](#2-clay-pebbles-leca-the-primary-ef-media)
-  - [What LECA Is](#what-leca-is)
-  - [Why LECA Is Ideal for Ebb & Flow](#why-leca-is-ideal-for-ebb--flow)
-  - [Properties at a Glance](#properties-at-a-glance)
-- [3. Clay Pebble Preparation — Critical Step](#3-clay-pebble-preparation-critical-step)
-  - [The Rinse and Pre-Soak Protocol](#the-rinse-and-pre-soak-protocol)
-  - [What Happens If You Skip This](#what-happens-if-you-skip-this)
-- [4. Media Depth in Flood Tables](#4-media-depth-in-flood-tables)
-  - [Standard Depths by Crop](#standard-depths-by-crop)
-  - [How Depth Affects Flood Frequency](#how-depth-affects-flood-frequency)
-- [5. Coco Coir Use in Ebb & Flow](#5-coco-coir-use-in-ebb--flow)
-  - [Where Coco Coir Works in E&F](#where-coco-coir-works-in-ef)
-  - [Where Coco Coir Does NOT Work in E&F](#where-coco-coir-does-not-work-in-ef)
-  - [Flood Frequency Adjustment with Coco](#flood-frequency-adjustment-with-coco)
-- [6. Rockwool Cubes for Germination and Seedlings](#6-rockwool-cubes-for-germination-and-seedlings)
-  - [Rockwool Properties](#rockwool-properties)
-  - [pH Conditioning — Mandatory](#ph-conditioning-mandatory)
-  - [Germination Protocol](#germination-protocol)
-- [7. Perlite — Limited Use in E&F Flood Tables](#7-perlite-limited-use-in-ef-flood-tables)
-- [8. Vermiculite — Zone C Grow Bags Only](#8-vermiculite-zone-c-grow-bags-only)
-- [9. What NOT to Use in Flood Tables](#9-what-not-to-use-in-flood-tables)
-- [10. Germination Methods: Side-by-Side Comparison](#10-germination-methods-side-by-side-comparison)
-  - [Paper Towel Method](#paper-towel-method)
-  - [Rockwool Starter Cubes](#rockwool-starter-cubes)
-  - [Rapid Rooter Plugs](#rapid-rooter-plugs)
-  - [Direct Germination in LECA Net Pots](#direct-germination-in-leca-net-pots)
-- [11. Transitioning Seedlings into Flood Tables](#11-transitioning-seedlings-into-flood-tables)
-  - [From Rockwool Cube to LECA Net Pot](#from-rockwool-cube-to-leca-net-pot)
-  - [First Flood After Transplant](#first-flood-after-transplant)
-  - [Depth Requirements by Crop](#depth-requirements-by-crop)
-- [12. Media Reuse and Sterilisation](#12-media-reuse-and-sterilisation)
-  - [Salt Accumulation in E&F vs NFT](#salt-accumulation-in-ef-vs-nft)
-  - [Full Sterilisation Protocol](#full-sterilisation-protocol)
-  - [Assessment Before Reuse](#assessment-before-reuse)
-- [13. Quick Reference: Media Selection Guide](#13-quick-reference-media-selection-guide)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Ebb & Flow Needs Substantial Media
@@ -147,7 +105,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -204,7 +161,6 @@ The speed of LECA's drainage is its most important property for E&F. Media that 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -281,7 +237,6 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -341,7 +296,6 @@ Deeper media holds more moisture between floods — but it also takes longer to 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -401,7 +355,6 @@ If you are using any coco in your flood table media mix (e.g., coco chips blende
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -474,7 +427,6 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -504,7 +456,6 @@ Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~8
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -526,7 +477,6 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -550,7 +500,6 @@ This section covers media types that are inappropriate for Zone A flood tables s
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -607,7 +556,6 @@ For robust, fast-germinating crops (herbs, kale, mint), seeds can be germinated 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -680,7 +628,6 @@ The timing of the first flood after transplant is important. Seedlings need time
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -770,7 +717,6 @@ Before refilling flood tables with previously used LECA:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -785,9 +731,6 @@ Before refilling flood tables with previously used LECA:
 | Propagation | Germination tray (all zones) | Rockwool 25–36mm cubes or Rapid Rooter plugs | — | pH 5.5 conditioning required for rockwool |
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

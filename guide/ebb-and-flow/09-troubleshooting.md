@@ -38,44 +38,6 @@
 - [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
 
 
-## Table of Contents
-
-- [How to Use This Guide](#how-to-use-this-guide)
-- [SECTION A: Water and Solution Problems](#section-a-water-and-solution-problems)
-  - [A1: FLOOD NOT REACHING TARGET DEPTH](#a1-flood-not-reaching-target-depth)
-  - [A2: SLOW DRAIN OR TABLE NOT DRAINING FULLY](#a2-slow-drain-or-table-not-draining-fully)
-  - [A3: SALT CRUST BUILDING UP IN LECA](#a3-salt-crust-building-up-in-leca)
-  - [A4: RESERVOIR LEVEL DROPPING FASTER THAN EXPECTED](#a4-reservoir-level-dropping-faster-than-expected)
-  - [A5: EC SPIKING OR CRASHING UNEXPECTEDLY](#a5-ec-spiking-or-crashing-unexpectedly)
-  - [A6: SOLUTION TURNS BROWN, GREEN, OR SLIMY](#a6-solution-turns-brown-green-or-slimy)
-- [SECTION B: Plant Problems](#section-b-plant-problems)
-  - [B1: ROOT ROT (BROWN SLIMY ROOTS)](#b1-root-rot-brown-slimy-roots)
-  - [B2: WILTING — ROOTS LOOK HEALTHY](#b2-wilting--roots-look-healthy)
-  - [B3: YELLOWING LEAVES](#b3-yellowing-leaves)
-  - [B4: TIP BURN AND BROWN LEAF EDGES](#b4-tip-burn-and-brown-leaf-edges)
-  - [B5: STUNTED GROWTH](#b5-stunted-growth)
-  - [B6: NUTRIENT DEFICIENCY FROM SALT LOCKOUT IN MEDIA](#b6-nutrient-deficiency-from-salt-lockout-in-media)
-  - [B7: BLOSSOM DROP (TOMATOES / PEPPERS)](#b7-blossom-drop-tomatoes--peppers)
-- [SECTION C: System and Equipment Problems](#section-c-system-and-equipment-problems)
-  - [C1: TIMER FAILURE — PUMP STUCK ON](#c1-timer-failure--pump-stuck-on)
-  - [C2: TIMER FAILURE — PUMP STUCK OFF](#c2-timer-failure--pump-stuck-off)
-  - [C3: OVERFLOW FITTING BLOCKED](#c3-overflow-fitting-blocked)
-  - [C4: TABLE LINER LEAK](#c4-table-liner-leak)
-  - [C5: PUMP CAVITATION OR NOISE](#c5-pump-cavitation-or-noise)
-  - [C6: FILL PORT PARTIAL BLOCKAGE](#c6-fill-port-partial-blockage)
-- [SECTION D: Multiple Simultaneous Symptoms](#section-d-multiple-simultaneous-symptoms)
-  - [Key Principle](#key-principle)
-  - [D1: Wilting + Table Wet (Not Draining)](#d1-wilting--table-wet-not-draining)
-  - [D2: Wilting + Table Dry (No Recent Flood)](#d2-wilting--table-dry-no-recent-flood)
-  - [D3: Yellowing + Stunted Growth + Salt Crust](#d3-yellowing--stunted-growth--salt-crust)
-  - [D4: EC Rising + Reservoir Dropping Fast](#d4-ec-rising--reservoir-dropping-fast)
-  - [D5: Multiple Plants Affected vs. One Plant](#d5-multiple-plants-affected-vs-one-plant)
-- [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
-
----
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
@@ -95,7 +57,6 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -337,7 +298,6 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -607,7 +567,6 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -844,7 +803,6 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -951,7 +909,6 @@ Refer to: **C2** — timer/pump failure.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1011,8 +968,6 @@ flowchart TD
 ```
 
 ---
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

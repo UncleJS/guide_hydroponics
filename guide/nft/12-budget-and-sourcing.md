@@ -4,25 +4,6 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
 
 ---
 
-## Table of Contents
-
-1. [Build Tier Overview](#1-build-tier-overview)
-2. [Zone A — NFT System BOM](#2-zone-a--nft-system-bom)
-3. [Zone B — Microgreens Station BOM](#3-zone-b--microgreens-station-bom)
-4. [Zone C — Root Veg Grow Bags BOM](#4-zone-c--root-veg-grow-bags-bom)
-5. [Consumables and Ongoing Supplies](#5-consumables-and-ongoing-supplies)
-6. [Tier Totals Summary](#6-tier-totals-summary)
-7. [Where to Buy](#7-where-to-buy)
-8. [Cost-Saving Strategies](#8-cost-saving-strategies)
-9. [Running Costs](#9-running-costs)
-10. [Yield Estimates and ROI](#10-yield-estimates-and-roi)
-11. [Payback Period Analysis](#11-payback-period-analysis)
-
----
-
-[↑ Back to TOC](#table-of-contents)
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Build Tier Overview
 
@@ -52,7 +33,6 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -194,7 +174,6 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -216,7 +195,6 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -235,7 +213,6 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -265,7 +242,6 @@ These are not one-time costs but will recur each growing season (or more frequen
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -297,7 +273,6 @@ This phased approach lets you start with a functional system at ~$200 and expand
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -380,7 +355,6 @@ WHAT TO BUY LOCALLY (hardware store)
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -446,7 +420,6 @@ Rockwool cubes are single-use (they degrade and can harbour pathogens). Switch t
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -517,7 +490,6 @@ At 36 changes per season (every ~7 days for 9 months):
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -630,7 +602,6 @@ Beetroot (2 bags, ~16 plants):
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -697,7 +668,6 @@ The ROI analysis only captures direct grocery savings. The full value of the sys
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 

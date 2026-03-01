@@ -41,45 +41,6 @@
   - [Reservoir Volume and E&F Flood Cycling](#reservoir-volume-and-ef-flood-cycling)
 
 
-## Table of Contents
-
-- [1. Why Nutrients Matter in Ebb & Flow Hydroponics](#1-why-nutrients-matter-in-ebb-flow-hydroponics)
-- [2. The 17 Essential Plant Nutrients](#2-the-17-essential-plant-nutrients)
-  - [Macronutrients (needed in large quantities)](#macronutrients-needed-in-large-quantities)
-  - [Secondary Macronutrients (needed in moderate quantities)](#secondary-macronutrients-needed-in-moderate-quantities)
-  - [Micronutrients (needed in trace quantities — but still essential)](#micronutrients-needed-in-trace-quantities-but-still-essential)
-- [3. NPK at Each Growth Stage](#3-npk-at-each-growth-stage)
-- [4. EC — Electrical Conductivity in E&F Systems](#4-ec-electrical-conductivity-in-ef-systems)
-  - [What EC Measures](#what-ec-measures)
-  - [Why E&F Tolerates Slightly Higher EC](#why-ef-tolerates-slightly-higher-ec)
-  - [EC Target Ranges by Crop](#ec-target-ranges-by-crop)
-- [5. pH — Management in Media vs Solution](#5-ph-management-in-media-vs-solution)
-  - [Target pH Range](#target-ph-range)
-  - [How Clay Pebbles Affect pH](#how-clay-pebbles-affect-ph)
-  - [pH Drift Patterns in E&F](#ph-drift-patterns-in-ef)
-- [6. Two-Part vs Three-Part vs One-Part Nutrients](#6-two-part-vs-three-part-vs-one-part-nutrients)
-- [7. Masterblend Trio — Mixing Recipe for E&F](#7-masterblend-trio-mixing-recipe-for-ef)
-  - [Components](#components)
-  - [Standard Mixing Recipe (per litre of water)](#standard-mixing-recipe-per-litre-of-water)
-  - [Masterblend Dose Scaling](#masterblend-dose-scaling)
-- [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
-- [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
-- [10. Reservoir Top-Up vs Full Change — E&F Specifics](#10-reservoir-top-up-vs-full-change-ef-specifics)
-  - [The Salt Accumulation Problem in E&F Media](#the-salt-accumulation-problem-in-ef-media)
-  - [Media Flush Protocol](#media-flush-protocol)
-- [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
-  - [Mobility of Nutrients — Key Diagnostic Clue](#mobility-of-nutrients-key-diagnostic-clue)
-  - [Deficiency Quick Reference](#deficiency-quick-reference)
-  - [Toxicity Signs](#toxicity-signs)
-- [12. Organic Hydroponics in E&F — Advantages and Challenges](#12-organic-hydroponics-in-ef-advantages-and-challenges)
-  - [Why E&F Suits Organic Better Than NFT](#why-ef-suits-organic-better-than-nft)
-  - [Common Organic Nutrient Sources](#common-organic-nutrient-sources)
-- [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
-  - [Reservoir Volume and E&F Flood Cycling](#reservoir-volume-and-ef-flood-cycling)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Nutrients Matter in Ebb & Flow Hydroponics
@@ -96,7 +57,6 @@ Ebb & Flow adds a layer of complexity not found in NFT or DWC: **the media itsel
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -138,7 +98,6 @@ Plants require 17 elements to complete their life cycle:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -161,7 +120,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -213,7 +171,6 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -267,7 +224,6 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -284,7 +240,6 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -344,7 +299,6 @@ This is the most cost-effective professional nutrient system available. The mixi
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -367,7 +321,6 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -402,7 +355,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -466,7 +418,6 @@ This is the most important nutrient management issue specific to Ebb & Flow that
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -513,7 +464,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -545,7 +495,6 @@ Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F s
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -591,9 +540,6 @@ The 100L reservoir in this system is sized for the two 1.2m × 0.6m flood tables
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

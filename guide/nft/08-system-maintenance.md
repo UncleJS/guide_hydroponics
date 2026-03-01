@@ -33,38 +33,6 @@
 - [8. Early Warning Signs Checklist](#8-early-warning-signs-checklist)
 
 
-## Table of Contents
-
-- [1. Why Maintenance Discipline Matters](#1-why-maintenance-discipline-matters)
-- [2. Daily Tasks (10–20 minutes)](#2-daily-tasks-1020-minutes)
-  - [Morning Routine (~10–15 min)](#morning-routine-1015-min)
-  - [Evening Top-Up (~5–10 min, as needed)](#evening-top-up-510-min-as-needed)
-- [3. Twice-Weekly Tasks (15–20 minutes)](#3-twice-weekly-tasks-1520-minutes)
-  - [EC and pH Measurement](#ec-and-ph-measurement)
-  - [Actions Based on Readings](#actions-based-on-readings)
-- [4. Weekly Tasks (30–60 minutes)](#4-weekly-tasks-3060-minutes)
-  - [Full EC/pH Assessment and Adjustment](#full-ecph-assessment-and-adjustment)
-  - [Root Zone Inspection](#root-zone-inspection)
-  - [Algae and Biofilm Check](#algae-and-biofilm-check)
-  - [Pump and Flow Check](#pump-and-flow-check)
-  - [Harvest and Succession Planting](#harvest-and-succession-planting)
-  - [Nutrient Stock Solution Top-Up](#nutrient-stock-solution-top-up)
-- [5. Periodic Deep Tasks (2–3 hours per session)](#5-periodic-deep-tasks-23-hours-per-session)
-  - [Full Reservoir Drain and Clean](#full-reservoir-drain-and-clean)
-  - [Channel Inspection and Flush](#channel-inspection-and-flush)
-  - [Meter Calibration](#meter-calibration)
-  - [Grow Bag Media Refresh (Zone C)](#grow-bag-media-refresh-zone-c)
-- [6. End-of-Season Tasks (3–6 hours total over 1–2 days)](#6-end-of-season-tasks-36-hours-total-over-12-days)
-  - [November Winterisation Checklist](#november-winterisation-checklist)
-  - [Season-End Review](#season-end-review)
-- [7. Maintenance Logbook Template](#7-maintenance-logbook-template)
-  - [Daily Log Entry Format](#daily-log-entry-format)
-  - [Weekly Summary Entry](#weekly-summary-entry)
-- [8. Early Warning Signs Checklist](#8-early-warning-signs-checklist)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Maintenance Discipline Matters
@@ -81,7 +49,6 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -150,7 +117,6 @@ On hot days, the reservoir can drop significantly through evaporation and plant 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -207,7 +173,6 @@ While you can assess plant health daily with visual inspection, accurate EC and 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -311,7 +276,6 @@ Same as above but with a more thorough approach — also check solution colour, 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -419,7 +383,6 @@ Even with good water management, nutrient salts accumulate, organic matter build
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -487,7 +450,6 @@ Even with good water management, nutrient salts accumulate, organic matter build
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -554,7 +516,6 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -586,9 +547,6 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

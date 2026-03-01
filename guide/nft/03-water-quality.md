@@ -51,56 +51,6 @@
   - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
 
 
-## Table of Contents
-
-- [1. Why Starting Water Quality Matters](#1-why-starting-water-quality-matters)
-- [2. TDS (Total Dissolved Solids) and EC Baseline](#2-tds-total-dissolved-solids-and-ec-baseline)
-  - [Testing Your Source Water](#testing-your-source-water)
-  - [Why Source EC Matters](#why-source-ec-matters)
-  - [Interpreting Your Local Water Report](#interpreting-your-local-water-report)
-- [3. Tap Water: Chlorine, Chloramine, and Hardness](#3-tap-water-chlorine-chloramine-and-hardness)
-  - [Chlorine vs Chloramine — Critical Difference](#chlorine-vs-chloramine-critical-difference)
-  - [How to Identify Which Your Water Uses](#how-to-identify-which-your-water-uses)
-  - [Chloramine Removal](#chloramine-removal)
-  - [Hard Water Management](#hard-water-management)
-- [4. Well Water Issues](#4-well-water-issues)
-- [5. Reverse Osmosis (RO) — When It's Worth It](#5-reverse-osmosis-ro-when-its-worth-it)
-  - [What RO Does](#what-ro-does)
-  - [Pros and Cons](#pros-and-cons)
-  - [Is RO Worth It for This System?](#is-ro-worth-it-for-this-system)
-  - [RO Setup for This System](#ro-setup-for-this-system)
-- [6. Rainwater Harvesting](#6-rainwater-harvesting)
-  - [Rainwater Characteristics](#rainwater-characteristics)
-  - [Collection System](#collection-system)
-  - [Legality Note](#legality-note)
-  - [Using Rainwater in the System](#using-rainwater-in-the-system)
-- [7. pH Testing Methods Compared](#7-ph-testing-methods-compared)
-  - [pH Drops / Test Kits (Liquid)](#ph-drops-test-kits-liquid)
-  - [pH Test Strips](#ph-test-strips)
-  - [Digital pH Meters (Recommended)](#digital-ph-meters-recommended)
-  - [Calibrating a pH Meter](#calibrating-a-ph-meter)
-- [8. EC Meters: Types, Calibration, and Use](#8-ec-meters-types-calibration-and-use)
-  - [EC Meter Types](#ec-meter-types)
-  - [Calibration](#calibration)
-  - [Temperature Compensation](#temperature-compensation)
-- [9. pH Up and pH Down — Safe Handling](#9-ph-up-and-ph-down-safe-handling)
-  - [pH Down (Acid)](#ph-down-acid)
-  - [pH Up (Base)](#ph-up-base)
-  - [pH Adjustment Protocol](#ph-adjustment-protocol)
-- [10. Water Temperature Management Outdoors](#10-water-temperature-management-outdoors)
-  - [The Outdoor Heat Problem](#the-outdoor-heat-problem)
-  - [Management Strategies](#management-strategies)
-- [11. Algae Prevention](#11-algae-prevention)
-  - [Cause](#cause)
-  - [Hydrogen Peroxide Treatment](#hydrogen-peroxide-treatment)
-- [12. Reservoir Size Calculations](#12-reservoir-size-calculations)
-  - [Minimum Volume per Plant Site](#minimum-volume-per-plant-site)
-- [13. Full Water Change Protocol](#13-full-water-change-protocol)
-  - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Starting Water Quality Matters
@@ -116,7 +66,6 @@ In hydroponics, water is the delivery vehicle for every nutrient your plants wil
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -167,7 +116,6 @@ Most municipal water suppliers publish annual water quality reports online. Look
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -236,7 +184,6 @@ Hard water contains excess calcium and magnesium carbonate (bicarbonates). Probl
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -257,7 +204,6 @@ If you use well water, test it thoroughly before use. Common problems:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -299,7 +245,6 @@ A countertop or under-sink RO unit with a storage tank (10–20L) is sufficient 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -344,7 +289,6 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -413,7 +357,6 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -451,7 +394,6 @@ EC readings change with temperature (warm water = higher EC reading for same con
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -518,7 +460,6 @@ Most commonly: **Potassium hydroxide (KOH)** — sold as pH Up or pH Plus
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -563,7 +504,6 @@ An 80L reservoir in direct sun on a hot summer day can reach 28–35°C — a te
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -620,7 +560,6 @@ If algae is already present:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -646,7 +585,6 @@ If algae is already present:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -684,9 +622,6 @@ If algae is already present:
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

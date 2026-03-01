@@ -42,47 +42,6 @@
   - [LECA Sterilisation Between Heavy Fruiting Crops](#leca-sterilisation-between-heavy-fruiting-crops)
 
 
-## Table of Contents
-
-- [How to Use This Guide](#how-to-use-this-guide)
-- [Quick Reference — Zone, Table & Crop Map](#quick-reference-zone-table--crop-map)
-- [LEAFY GREENS & HERBS — Zone A, Table 1](#leafy-greens--herbs-zone-a-table-1)
-  - [Lettuce — Butterhead](#lettuce-butterhead)
-  - [Lettuce — Romaine / Cos](#lettuce-romaine--cos)
-  - [Lettuce — Loose-Leaf / Cut-and-Come-Again](#lettuce-loose-leaf--cut-and-come-again)
-  - [Spinach](#spinach)
-  - [Kale](#kale)
-  - [Basil](#basil)
-  - [Cilantro / Coriander](#cilantro--coriander)
-  - [Mint](#mint)
-  - [Chives](#chives)
-  - [Parsley](#parsley)
-- [FRUITING CROPS — Zone A, Table 2](#fruiting-crops-zone-a-table-2)
-  - [Cherry Tomatoes](#cherry-tomatoes)
-  - [Peppers — Sweet Bell](#peppers-sweet-bell)
-  - [Peppers — Chilli](#peppers-chilli)
-  - [Strawberries](#strawberries)
-  - [Cucumbers](#cucumbers)
-  - [Courgettes / Zucchini](#courgettes--zucchini)
-  - [Aubergine / Eggplant](#aubergine--eggplant)
-- [MICROGREENS — Zone B, Tray Station](#microgreens-zone-b-tray-station)
-  - [Sunflower Shoots](#sunflower-shoots)
-  - [Radish Microgreens](#radish-microgreens)
-  - [Peas (Pea Shoots)](#peas-pea-shoots)
-  - [Broccoli Microgreens](#broccoli-microgreens)
-  - [Wheatgrass](#wheatgrass)
-- [ROOT VEGETABLES — Zone C, Grow Bags](#root-vegetables-zone-c-grow-bags)
-  - [Radishes](#radishes)
-  - [Carrots](#carrots)
-  - [Beetroot](#beetroot)
-- [Crop Rotation and Succession Planning](#crop-rotation-and-succession-planning)
-  - [Table 1 — Leafy Greens Rotation Strategy](#table-1-leafy-greens-rotation-strategy)
-  - [Table 2 — Fruiting Crop Rotation and Seasonal Planning](#table-2-fruiting-crop-rotation-and-seasonal-planning)
-  - [LECA Sterilisation Between Heavy Fruiting Crops](#leca-sterilisation-between-heavy-fruiting-crops)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
@@ -104,7 +63,6 @@ Each crop entry includes:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -138,7 +96,6 @@ Each crop entry includes:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -379,7 +336,6 @@ Each crop entry includes:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -560,7 +516,6 @@ Each crop entry includes:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -660,7 +615,6 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -724,7 +678,6 @@ Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -834,9 +787,6 @@ After a season of tomatoes, cucumbers, or courgettes, the LECA in Table 2 accumu
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

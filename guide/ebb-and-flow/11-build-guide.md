@@ -3,51 +3,6 @@
 
 ---
 
-## Table of Contents
-
-- [1. System Overview Recap](#1-system-overview-recap)
-- [2. Tools Required](#2-tools-required)
-- [3. Safety and Prep Notes](#3-safety-and-prep-notes)
-- [4. Step 1 — Site Preparation](#4-step-1--site-preparation)
-- [5. Step 2 — Building or Sourcing the Flood Tables](#5-step-2--building-or-sourcing-the-flood-tables)
-  - [Option A — Buy a Ready-Made Flood Table](#option-a--buy-a-ready-made-flood-table)
-  - [Option B — DIY Timber + Pond Liner Table](#option-b--diy-timber--pond-liner-table)
-  - [Levelling the Tables](#levelling-the-tables)
-- [6. Step 3 — Reservoir Setup and Positioning](#6-step-3--reservoir-setup-and-positioning)
-  - [Under-Table vs. Beside-Table Reservoir](#under-table-vs-beside-table-reservoir)
-  - [Reservoir Preparation](#reservoir-preparation)
-- [7. Step 4 — Installing Overflow and Drain Fittings](#7-step-4--installing-overflow-and-drain-fittings)
-  - [The Two-Fitting System Explained](#the-two-fitting-system-explained)
-  - [Setting Flood Depth with Overflow Height](#setting-flood-depth-with-overflow-height)
-  - [Installing Bulkhead Fittings](#installing-bulkhead-fittings)
-- [8. Step 5 — Plumbing](#8-step-5--plumbing)
-  - [Plumbing Overview Diagram](#plumbing-overview-diagram)
-  - [Supply Side (Pump to Tables)](#supply-side-pump-to-tables)
-  - [Drain Side (Tables to Reservoir)](#drain-side-tables-to-reservoir)
-  - [Pipe Sizing Reference](#pipe-sizing-reference)
-- [9. Step 6 — Timer Setup](#9-step-6--timer-setup)
-  - [Mechanical vs Digital Timer](#mechanical-vs-digital-timer)
-  - [Setting Flood Times](#setting-flood-times)
-  - [Testing the Timer](#testing-the-timer)
-- [10. Step 7 — System Test (Water Only)](#10-step-7--system-test-water-only)
-  - [Water Test Procedure](#water-test-procedure)
-  - [Common Test Failures and Fixes](#common-test-failures-and-fixes)
-- [11. Step 8 — Media Preparation](#11-step-8--media-preparation)
-  - [Rinsing and Pre-Soaking LECA](#rinsing-and-pre-soaking-leca)
-  - [Filling Tables with LECA](#filling-tables-with-leca)
-- [12. Step 9 — First Nutrient Solution Fill](#12-step-9--first-nutrient-solution-fill)
-- [13. Step 10 — Planting](#13-step-10--planting)
-  - [Transplanting Seedlings into LECA](#transplanting-seedlings-into-leca)
-  - [Spacing by Crop](#spacing-by-crop)
-  - [First 48 Hours Protocol](#first-48-hours-protocol)
-- [14. Step 11 — Zone B Microgreens Station](#14-step-11--zone-b-microgreens-station)
-- [15. Step 12 — Zone C Root Veg Grow Bags](#15-step-12--zone-c-root-veg-grow-bags)
-- [16. Common Build Mistakes and How to Avoid Them](#16-common-build-mistakes-and-how-to-avoid-them)
-- [17. Build Checklist](#17-build-checklist)
-
----
-
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -95,7 +50,6 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -136,7 +90,6 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -159,7 +112,6 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -221,7 +173,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -360,7 +311,6 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -411,7 +361,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -525,7 +474,6 @@ Each table needs two bulkhead fittings (fill port + overflow/drain port). For 2 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -622,7 +570,6 @@ The drain is entirely gravity-fed. No pump required — when the flood pump stop
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -681,7 +628,6 @@ Before any nutrient solution is involved, test the timer with plain water:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -755,7 +701,6 @@ Before any nutrient solution is involved, test the timer with plain water:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -805,7 +750,6 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -835,7 +779,6 @@ After a successful water test and LECA installation, mix the first nutrient batc
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -920,7 +863,6 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -968,7 +910,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1015,7 +956,6 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1071,7 +1011,6 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1166,8 +1105,6 @@ Use this as a final sign-off before moving to nutrient operation.
 ```
 
 ---
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

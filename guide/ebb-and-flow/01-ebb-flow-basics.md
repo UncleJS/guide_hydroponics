@@ -36,41 +36,6 @@
 - [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
 
 
-## Table of Contents
-
-- [1. History and Origin](#1-history-and-origin)
-- [2. Core Principle: The Flood-and-Drain Cycle](#2-core-principle-the-flood-and-drain-cycle)
-- [3. Anatomy of an Ebb & Flow System](#3-anatomy-of-an-ebb-flow-system)
-  - [Component Descriptions](#component-descriptions)
-- [4. The Overflow Fitting — The Critical Safety Device](#4-the-overflow-fitting-the-critical-safety-device)
-  - [How It Sets Flood Depth](#how-it-sets-flood-depth)
-  - [Fill Tube vs Overflow Tube](#fill-tube-vs-overflow-tube)
-- [5. Flood Frequency and Duration Science](#5-flood-frequency-and-duration-science)
-  - [The Core Variables](#the-core-variables)
-  - [Calculating Your Schedule](#calculating-your-schedule)
-  - [Media-Specific Guidelines](#media-specific-guidelines)
-- [6. Root Zone Dynamics During Flood and Drain](#6-root-zone-dynamics-during-flood-and-drain)
-  - [The Wet-Dry Cycle Is the Point](#the-wet-dry-cycle-is-the-point)
-  - [Anaerobic Risk](#anaerobic-risk)
-- [7. Ebb & Flow vs Other Systems Comparison](#7-ebb-flow-vs-other-systems-comparison)
-- [8. Why Ebb & Flow Suits a Wider Crop Range](#8-why-ebb-flow-suits-a-wider-crop-range)
-  - [Strengths for Heavier Crops](#strengths-for-heavier-crops)
-  - [Limitations](#limitations)
-- [9. Timer Science: Mechanical vs Digital Timers](#9-timer-science-mechanical-vs-digital-timers)
-  - [Mechanical (Analogue) Timers](#mechanical-analogue-timers)
-  - [Digital Timers](#digital-timers)
-  - [Redundancy Strategy](#redundancy-strategy)
-- [10. What Happens During Pump or Timer Failure](#10-what-happens-during-pump-or-timer-failure)
-  - [Failure Mode A — Pump Stuck ON (Flood Won't Drain)](#failure-mode-a-pump-stuck-on-flood-wont-drain)
-  - [Failure Mode B — Pump or Timer Stuck OFF (No Floods)](#failure-mode-b-pump-or-timer-stuck-off-no-floods)
-  - [Emergency Protocol](#emergency-protocol)
-- [11. Scaling: Adding Tables and Channels](#11-scaling-adding-tables-and-channels)
-- [12. Pros and Cons Summary](#12-pros-and-cons-summary)
-- [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. History and Origin
@@ -85,7 +50,6 @@ The home and hobby hydroponic market adopted Ebb & Flow extensively from the 199
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -119,7 +83,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -168,7 +131,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -229,7 +191,6 @@ The overflow standpipe height is adjustable — by using a taller or shorter sta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -300,7 +261,6 @@ A flood cycle must be long enough to fully wet the media column from bottom to t
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -357,7 +317,6 @@ The risk arises when:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -384,7 +343,6 @@ The risk arises when:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -429,7 +387,6 @@ Ebb & Flow is not ideal for every scenario:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -484,7 +441,6 @@ For an outdoor system, a single timer failure can destroy an entire crop. Recomm
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -548,7 +504,6 @@ This is the more common failure mode — the pump stops and no further floods oc
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -595,7 +550,6 @@ When adding tables, also consider:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -625,7 +579,6 @@ When adding tables, also consider:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -648,9 +601,6 @@ When adding tables, also consider:
 | Reservoir change interval | Every 7–14 days |
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

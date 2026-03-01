@@ -4,26 +4,6 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 
 ---
 
-## Table of Contents
-
-1. [The Outdoor Climate Challenge](#1-the-outdoor-climate-challenge)
-2. [Temperate Seasonal Calendar](#2-temperate-seasonal-calendar)
-3. [Temperature Effects on the Hydroponic System](#3-temperature-effects-on-the-hydroponic-system)
-4. [Summer Heat Management](#4-summer-heat-management)
-5. [Cold and Frost Management](#5-cold-and-frost-management)
-6. [Wind Management](#6-wind-management)
-7. [Rain Management](#7-rain-management)
-8. [Humidity and Airflow](#8-humidity-and-airflow)
-9. [Season Extension Techniques](#9-season-extension-techniques)
-10. [Putting It Together — Seasonal Action Plans](#10-putting-it-together--seasonal-action-plans)
-11. [Climate Monitoring Setup](#11-climate-monitoring-setup)
-12. [Quick-Reference Decision Tree](#12-quick-reference-decision-tree)
-
----
-
-[↑ Back to TOC](#table-of-contents)
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor Climate Challenge
 
@@ -54,7 +34,6 @@ Both environments must stay within acceptable ranges simultaneously. When one go
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -123,7 +102,6 @@ PHASE 4 — WINTER REST (Dec–Feb)
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -196,7 +174,6 @@ Warmer solution accelerates biological activity (algae, bacteria) and degasses C
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -322,7 +299,6 @@ In high temperatures, plants transpire more heavily, uptake water faster than nu
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -436,7 +412,6 @@ Extended (>7 days below 5°C): Consider moving containers inside
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -512,7 +487,6 @@ In sustained windy conditions (Force 4–5), monitor EC more frequently:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -594,7 +568,6 @@ Harvest roof runoff into a covered water butt and use it to top up the reservoir
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -664,7 +637,6 @@ During periods of persistent high humidity (>80% RH), especially in late summer 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -730,7 +702,6 @@ A 50W LED panel running 16 h/day ≈ 0.05 kW × 16 h = 0.8 kWh/day ≈ $0.15–$
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -818,7 +789,6 @@ NOVEMBER:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -874,7 +844,6 @@ Actions taken today:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -906,7 +875,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 

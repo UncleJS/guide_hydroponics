@@ -48,53 +48,6 @@
 - [12. Quick Reference: Media Selection Guide](#12-quick-reference-media-selection-guide)
 
 
-## Table of Contents
-
-- [1. Why NFT Uses Minimal Media](#1-why-nft-uses-minimal-media)
-- [2. Net Pot Sizes](#2-net-pot-sizes)
-  - [Sizes for This System](#sizes-for-this-system)
-  - [Net Pot Materials](#net-pot-materials)
-  - [Hole Drilling](#hole-drilling)
-- [3. Clay Pebbles (LECA — Lightweight Expanded Clay Aggregate)](#3-clay-pebbles-leca-lightweight-expanded-clay-aggregate)
-  - [What They Are](#what-they-are)
-  - [Properties](#properties)
-  - [Preparation Before First Use](#preparation-before-first-use)
-  - [How to Use in NFT](#how-to-use-in-nft)
-  - [Reuse and Sterilisation](#reuse-and-sterilisation)
-- [4. Rockwool (Mineral Wool / Stone Wool)](#4-rockwool-mineral-wool-stone-wool)
-  - [What It Is](#what-it-is)
-  - [Properties](#properties)
-  - [Types](#types)
-  - [Critical: pH Conditioning](#critical-ph-conditioning)
-  - [How to Use for Seed Germination](#how-to-use-for-seed-germination)
-  - [Health and Safety Note](#health-and-safety-note)
-  - [Disposal](#disposal)
-- [5. Rapid Rooter / Jiffy Plugs (Alternative to Rockwool)](#5-rapid-rooter-jiffy-plugs-alternative-to-rockwool)
-  - [Comparison with Rockwool](#comparison-with-rockwool)
-- [6. Coco Coir: The Zone C Media](#6-coco-coir-the-zone-c-media)
-  - [Properties](#properties)
-  - [Coco Coir Types](#coco-coir-types)
-  - [Cal-Mag Warning](#cal-mag-warning)
-  - [Media Mix for Zone C Grow Bags](#media-mix-for-zone-c-grow-bags)
-- [7. Perlite](#7-perlite)
-  - [Properties](#properties)
-  - [Uses](#uses)
-  - [Note on Dust](#note-on-dust)
-- [8. Vermiculite](#8-vermiculite)
-  - [Properties](#properties)
-  - [Uses in This System](#uses-in-this-system)
-- [9. What NOT to Use](#9-what-not-to-use)
-- [10. Germination Methods: Side-by-Side Comparison](#10-germination-methods-side-by-side-comparison)
-  - [Transplanting from Soil to NFT (If You Start in Soil)](#transplanting-from-soil-to-nft-if-you-start-in-soil)
-- [11. Media Reuse and Sterilisation](#11-media-reuse-and-sterilisation)
-  - [Clay Pebbles (Multi-season reuse)](#clay-pebbles-multi-season-reuse)
-  - [Rockwool Cubes](#rockwool-cubes)
-  - [Coco Coir (Zone C grow bags)](#coco-coir-zone-c-grow-bags)
-- [12. Quick Reference: Media Selection Guide](#12-quick-reference-media-selection-guide)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. Why NFT Uses Minimal Media
@@ -133,7 +86,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -182,7 +134,6 @@ Use a **hole saw drill bit** of the correct size:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -250,7 +201,6 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -327,7 +277,6 @@ Rockwool is not biodegradable and should not go in compost. Bag and place in gen
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -351,7 +300,6 @@ Rapid Rooter plugs (by General Hydroponics) and Jiffy peat plugs are pre-formed 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -414,7 +362,6 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -446,7 +393,6 @@ New perlite contains fine silica dust — rinse before use or wet it down before
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -471,7 +417,6 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -488,7 +433,6 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -525,7 +469,6 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -566,7 +509,6 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -584,9 +526,6 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 | Propagation | Germination tray | Rockwool cubes or Rapid Rooter plugs | None |
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

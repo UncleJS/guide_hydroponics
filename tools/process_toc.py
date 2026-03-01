@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """
-Add Table of Contents and 'Back to TOC' links to all guide files.
+Add (or refresh) Table of Contents and 'Back to TOC' links in all guide files.
 
-For files 01-09: insert a TOC block after the subtitle line and add goto links before each ## section heading.
-For files 10-13: TOC already exists; only add goto links before each ## section heading (skip the TOC heading itself).
+This script is fully IDEMPOTENT — safe to run multiple times.  On each run it:
+  1. Strips any existing TOC block(s) and any existing back-link lines.
+  2. Rebuilds a single, correct TOC and places one back-link before each section.
+
+For files 01–09 (needs_toc=True):  inserts TOC after the first '---' divider.
+For files 10–13 (needs_toc=False): TOC already hand-written; only inserts back-links.
+Files in SKIP are left completely untouched.
 
 Usage:
-    # Process a specific guide set (relative to this script's parent directory)
+    # Process a specific guide set (relative to cwd, or absolute)
     python tools/process_toc.py guide/nft
     python tools/process_toc.py guide/ebb-and-flow
 
@@ -29,9 +34,14 @@ DEFAULT_GUIDE_DIRS = [
     os.path.join(REPO_ROOT, "guide", "ebb-and-flow"),
 ]
 
-BACK_LINK = "\n[↑ Back to TOC](#table-of-contents)\n"
+BACK_LINK_LINE = "[↑ Back to TOC](#table-of-contents)"
 
-# Files that already have a TOC (only need goto links)
+# Files to skip entirely — already fully formatted; do not touch
+SKIP = {
+    "00-system-overview.md",
+}
+
+# Files that already have a hand-written TOC (only insert back-links)
 HAS_TOC = {
     "10-climate-management.md",
     "11-build-guide.md",
@@ -50,7 +60,7 @@ def heading_to_anchor(heading_text):
 
 
 def build_toc(headings):
-    """Build a TOC block from a list of (level, text) tuples, skipping the subtitle."""
+    """Build a TOC block from a list of (level, text) tuples."""
     lines = ["## Table of Contents", ""]
     for level, text in headings:
         anchor = heading_to_anchor(text)
@@ -60,82 +70,111 @@ def build_toc(headings):
     return "\n".join(lines)
 
 
+def strip_existing(content):
+    """
+    Remove all previously-inserted TOC blocks and back-link lines so the
+    script can rebuild them cleanly.  Operates on the raw string.
+
+    A TOC block looks like:
+        ## Table of Contents
+        <lines that are NOT a blank line followed by ##>
+        <blank line>
+
+    We also strip every line that is exactly the back-link pattern.
+    """
+    # --- Strip all back-link lines (with surrounding blank lines) ---
+    # We want to remove the pattern:  \n[↑ Back to TOC…]\n  (with optional blanks)
+    content = re.sub(
+        r"\n[ \t]*\[↑ Back to TOC\]\(#table-of-contents\)[ \t]*(?=\n)",
+        "",
+        content,
+    )
+
+    # --- Strip all '## Table of Contents' blocks ---
+    # Match from '## Table of Contents' up to (but not including) the next '##' heading
+    # or end of string.
+    content = re.sub(
+        r"## Table of Contents\n.*?(?=\n## |\Z)",
+        "",
+        content,
+        flags=re.DOTALL,
+    )
+
+    # Clean up any triple+ blank lines that stripping may have created
+    content = re.sub(r"\n{4,}", "\n\n\n", content)
+
+    return content
+
+
 def process_file(filepath, needs_toc):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
+    # ----------------------------------------------------------------
+    # Step 0: Strip any previously inserted TOC blocks and back-links
+    # ----------------------------------------------------------------
+    content = strip_existing(content)
     lines = content.split("\n")
 
     # ----------------------------------------------------------------
-    # Collect all ## headings (and deeper) for TOC — but skip:
-    #   - line 1 (# title)
-    #   - line 2 (## subtitle)
-    #   - any existing "## Table of Contents" section
+    # Step 1: Collect section headings for the TOC
+    #   Skip:  line 0 (# Title), line 1 (## Subtitle)
     # ----------------------------------------------------------------
     toc_headings = []
-    in_toc_section = False
     for i, line in enumerate(lines):
-        if i == 0:
-            continue  # # Title
-        if i == 1:
-            continue  # ## Subtitle
+        if i <= 1:
+            continue
         m = re.match(r"^(#{2,})\s+(.+)$", line)
         if m:
             level = len(m.group(1))
             text = m.group(2).strip()
-            if text == "Table of Contents":
-                in_toc_section = True
-                continue
-            if in_toc_section:
-                in_toc_section = False
             toc_headings.append((level, text))
 
     # ----------------------------------------------------------------
-    # Rebuild the file line-by-line
+    # Step 2: Insert TOC (for files that need it)
     # ----------------------------------------------------------------
-    toc_inserted = not needs_toc
-    first_hr_seen = False
-
-    # ---- Pass 1: insert TOC ----
-    result = []
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        result.append(line)
-
-        if needs_toc and not toc_inserted:
-            if line.strip() == "---" and not first_hr_seen:
+    if needs_toc:
+        result = []
+        first_hr_seen = False
+        toc_inserted = False
+        for line in lines:
+            result.append(line)
+            if not toc_inserted and not first_hr_seen and line.strip() == "---":
                 first_hr_seen = True
                 toc_block = build_toc(toc_headings)
                 result.append("")
                 result.append(toc_block)
                 result.append("")
                 result.append("---")
-                result.pop()  # remove the extra ---
-                result.pop()  # remove the extra blank
+                # The '---' we just added is the separator AFTER the TOC;
+                # remove the blank we added after the TOC block.
+                result.pop()   # remove the extra ---
+                result.pop()   # remove the extra blank
                 toc_inserted = True
-        i += 1
+        lines = result
 
-    lines = result
-
-    # ---- Pass 2: insert back links before eligible ## headings ----
+    # ----------------------------------------------------------------
+    # Step 3: Insert one back-link before each eligible ## heading
+    # ----------------------------------------------------------------
     result2 = []
     subtitle_done = False
 
-    for i, line in enumerate(lines):
+    for line in lines:
         m = re.match(r"^(##)\s+(.+)$", line)
         if m:
             text = m.group(2).strip()
             if not subtitle_done:
+                # This is the ## Subtitle line — never add a back-link before it
                 subtitle_done = True
                 result2.append(line)
                 continue
             if text == "Table of Contents":
                 result2.append(line)
                 continue
+            # Ensure there's a blank line above the back-link
             if result2 and result2[-1].strip() != "":
                 result2.append("")
-            result2.append("[↑ Back to TOC](#table-of-contents)")
+            result2.append(BACK_LINK_LINE)
             result2.append("")
             result2.append(line)
             continue
@@ -143,14 +182,14 @@ def process_file(filepath, needs_toc):
 
     final_content = "\n".join(result2)
 
-    # Insert back link before the final *Next: navigation line
+    # Step 4: Insert back-link before the final *Next: navigation line
     final_content = re.sub(
         r"\n(\*Next:)",
-        r"\n\n[↑ Back to TOC](#table-of-contents)\n\n\1",
+        r"\n\n" + BACK_LINK_LINE + r"\n\n\1",
         final_content,
     )
 
-    # Clean up any triple+ blank lines
+    # Step 5: Normalise — collapse triple+ blank lines
     final_content = re.sub(r"\n{4,}", "\n\n\n", final_content)
 
     with open(filepath, "w", encoding="utf-8") as f:
@@ -167,10 +206,13 @@ def process_dir(guide_dir):
     for fname in files:
         if not fname.endswith(".md"):
             continue
+        if fname in SKIP:
+            print(f"  — skipping {fname} (already fully formatted)")
+            continue
         fpath = os.path.join(guide_dir, fname)
         needs_toc = fname not in HAS_TOC
-        action = "TOC + goto links" if needs_toc else "goto links only"
-        print(f"Processing {fname} ({action})...")
+        action = "TOC + back-links" if needs_toc else "back-links only"
+        print(f"  Processing {fname} ({action})...")
         process_file(fpath, needs_toc)
 
 

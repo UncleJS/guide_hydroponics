@@ -33,38 +33,6 @@
 - [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
 
 
-## Table of Contents
-
-- [1. History and Origin](#1-history-and-origin)
-- [2. Core Principle: The Thin Film](#2-core-principle-the-thin-film)
-- [3. Anatomy of an NFT System](#3-anatomy-of-an-nft-system)
-  - [Component Descriptions](#component-descriptions)
-- [4. Channel Slope: The Critical Variable](#4-channel-slope-the-critical-variable)
-  - [Optimal Slope: 1:30 to 1:40](#optimal-slope-130-to-140)
-  - [Slope Effects Table](#slope-effects-table)
-- [5. Flow Rate Science](#5-flow-rate-science)
-  - [Target: 1–2 Litres Per Minute Per Channel](#target-12-litres-per-minute-per-channel)
-  - [Calculating Pump Requirements](#calculating-pump-requirements)
-  - [Laminar vs Turbulent Flow](#laminar-vs-turbulent-flow)
-- [6. Root Zone Oxygenation](#6-root-zone-oxygenation)
-- [7. NFT vs Other Systems Comparison](#7-nft-vs-other-systems-comparison)
-- [8. Why NFT Is Ideal for Leafy Crops — and Why It Fails for Root Veg](#8-why-nft-is-ideal-for-leafy-crops-and-why-it-fails-for-root-veg)
-  - [Ideal for leafy crops because:](#ideal-for-leafy-crops-because)
-  - [Poor for root vegetables because:](#poor-for-root-vegetables-because)
-- [9. Pump Runtime: Continuous vs Timed](#9-pump-runtime-continuous-vs-timed)
-  - [NFT is almost always run 24/7 (continuously)](#nft-is-almost-always-run-247-continuously)
-  - [When a Timer Makes Sense](#when-a-timer-makes-sense)
-- [10. What Happens During Pump Failure](#10-what-happens-during-pump-failure)
-  - [Emergency Protocol for NFT Pump Failure](#emergency-protocol-for-nft-pump-failure)
-- [11. Scaling: Modular Channel Design](#11-scaling-modular-channel-design)
-- [12. Pros and Cons Summary](#12-pros-and-cons-summary)
-  - [Pros](#pros)
-  - [Cons](#cons)
-- [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. History and Origin
@@ -75,7 +43,6 @@ The original NFT systems were built with aluminum channels and used relatively c
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -105,7 +72,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -162,7 +128,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -197,7 +162,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -246,7 +210,6 @@ Turbulence is caused by excessive flow rate, rough channel surfaces, debris in t
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -271,7 +234,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -293,7 +255,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -315,7 +276,6 @@ block-beta
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -350,7 +310,6 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -372,7 +331,6 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -399,7 +357,6 @@ When scaling, consider:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -432,7 +389,6 @@ When scaling, consider:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -451,9 +407,6 @@ When scaling, consider:
 | Channel material | 75mm or 100mm square opaque PVC |
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

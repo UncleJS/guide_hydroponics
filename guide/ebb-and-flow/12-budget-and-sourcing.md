@@ -3,23 +3,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Build Tier Overview](#1-build-tier-overview)
-2. [Zone A — Flood Table System BOM](#2-zone-a--flood-table-system-bom)
-3. [Zone B — Microgreens Station BOM](#3-zone-b--microgreens-station-bom)
-4. [Zone C — Root Veg Grow Bags BOM](#4-zone-c--root-veg-grow-bags-bom)
-5. [Consumables and Ongoing Supplies](#5-consumables-and-ongoing-supplies)
-6. [Tier Totals Summary](#6-tier-totals-summary)
-7. [Where to Buy](#7-where-to-buy)
-8. [Cost-Saving Strategies](#8-cost-saving-strategies)
-9. [Running Costs](#9-running-costs)
-10. [Yield Estimates and ROI](#10-yield-estimates-and-roi)
-11. [Payback Period Analysis](#11-payback-period-analysis)
-
----
-
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -55,7 +38,6 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -224,7 +206,6 @@ Using Option B (DIY tables) for Tier 1 and Option A (bought tables) for Tier 2 a
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -248,7 +229,6 @@ This zone is identical to the NFT system Zone B — the microgreens station has 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -270,7 +250,6 @@ The E&F system uses larger grow bags than the NFT guide specifies — 3× 20L ba
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -302,7 +281,6 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -366,7 +344,6 @@ TIER 3 ($400–$600):
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -460,7 +437,6 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -549,7 +525,6 @@ The E&F specification uses a single pump serving both tables via a T-splitter. A
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -637,7 +612,6 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -754,7 +728,6 @@ Beetroot (1× 30L deep bag, 10 plants):
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -837,7 +810,6 @@ The ROI analysis captures only direct grocery savings. The full value of the E&F
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 

@@ -7,30 +7,6 @@ This guide covers every level of E&F automation — from a $15 smart plug that c
 
 ---
 
-## Table of Contents
-
-1. [Why Automate?](#1-why-automate)
-2. [Automation Tiers Overview](#2-automation-tiers-overview)
-3. [Tier 0 — Manual Baseline](#3-tier-0--manual-baseline)
-4. [Tier 1 — Off-the-Shelf Smart Devices ($15–$60)](#4-tier-1--off-the-shelf-smart-devices)
-5. [Tier 2 — ESP32 Sensor Node ($30–$80)](#5-tier-2--esp32-sensor-node)
-6. [Tier 3 — Multi-Sensor Network + Dashboard ($80–$160)](#6-tier-3--multi-sensor-network--dashboard)
-7. [Tier 4 — Automated Control ($150–$300)](#7-tier-4--automated-control)
-8. [Sensor Reference — What to Measure and Why](#8-sensor-reference--what-to-measure-and-why)
-9. [ESP32 Hardware Guide](#9-esp32-hardware-guide)
-10. [Wiring Diagrams](#10-wiring-diagrams)
-11. [Firmware and Software](#11-firmware-and-software)
-12. [Data Storage and Dashboards](#12-data-storage-and-dashboards)
-13. [Alerts and Notifications](#13-alerts-and-notifications)
-14. [Using Your Data — Pattern Recognition](#14-using-your-data--pattern-recognition)
-15. [Weatherproofing and Power](#15-weatherproofing-and-power)
-16. [Automation BOM by Tier](#16-automation-bom-by-tier)
-17. [Common Pitfalls](#17-common-pitfalls)
-18. [Upgrade Path — From Tier 1 to Tier 4](#18-upgrade-path--from-tier-1-to-tier-4)
-
----
-
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -110,7 +86,6 @@ WITH TIER 4 (automated dosing + backup relay):
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -131,7 +106,6 @@ Each tier builds on the previous. You can pause at any tier and run the system i
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -176,7 +150,6 @@ automation step in the entire E&F guide.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -281,7 +254,6 @@ For E&F specifically, a camera angled to show the drain hose exit into the reser
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -396,7 +368,6 @@ EVERY 60 SECONDS, THE NODE:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -591,7 +562,6 @@ Panel 7: ALERT LOG
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -743,7 +713,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -805,7 +774,6 @@ The FC-37 and similar rain sensors are very basic: a conductive pad that short-c
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -919,7 +887,6 @@ For Tier 4 with relay module and peristaltic pumps:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1048,7 +1015,6 @@ flowchart LR
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1287,7 +1253,6 @@ void postToInfluxDB(float sol_temp, float air_temp, float humidity,
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1370,7 +1335,6 @@ After one full month of continuous logging, you will be able to read:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1491,7 +1455,6 @@ Rain: no events
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1641,7 +1604,6 @@ CRITICAL — immediate investigation:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1737,7 +1699,6 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1813,7 +1774,6 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1906,7 +1866,6 @@ If both primary and backup are trying to turn on the pump simultaneously — tha
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -2000,7 +1959,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -2029,4 +1987,3 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)

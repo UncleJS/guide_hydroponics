@@ -39,44 +39,6 @@
   - [Post-Outbreak Replanting Rules](#post-outbreak-replanting-rules)
 
 
-## Table of Contents
-
-- [1. The Outdoor E&F Vulnerability Profile](#1-the-outdoor-ef-vulnerability-profile)
-  - [E&F vs NFT — Risk Comparison](#ef-vs-nft-risk-comparison)
-  - [The Three Primary Risks in E&F](#the-three-primary-risks-in-ef)
-- [2. Integrated Pest Management (IPM) Framework](#2-integrated-pest-management-ipm-framework)
-  - [The IPM Hierarchy](#the-ipm-hierarchy)
-  - [Monitoring Schedule](#monitoring-schedule)
-  - [Action Thresholds](#action-thresholds)
-- [3. Common Pests](#3-common-pests)
-  - [Fungus Gnats — Priority Pest #1 in E&F](#fungus-gnats-priority-pest-1-in-ef)
-  - [Aphids](#aphids)
-  - [Whitefly](#whitefly)
-  - [Spider Mites](#spider-mites)
-  - [Thrips](#thrips)
-  - [Slugs and Snails](#slugs-and-snails)
-  - [Caterpillars and Leaf Miners](#caterpillars-and-leaf-miners)
-- [4. Common Diseases](#4-common-diseases)
-  - [Pythium (Root Rot)](#pythium-root-rot)
-  - [Fusarium Wilt](#fusarium-wilt)
-  - [Powdery Mildew](#powdery-mildew)
-  - [Botrytis (Grey Mould)](#botrytis-grey-mould)
-  - [Algae on LECA Surface](#algae-on-leca-surface)
-  - [Damping Off](#damping-off)
-- [5. Pesticide PHI Reference](#5-pesticide-phi-reference)
-  - [Understanding PHI (Pre-Harvest Interval)](#understanding-phi-pre-harvest-interval)
-  - [PHI Table — Common Products](#phi-table-common-products)
-- [6. Beneficial Insects](#6-beneficial-insects)
-  - [Encouraging Beneficials Outdoors](#encouraging-beneficials-outdoors)
-  - [Purchased Beneficial Insects](#purchased-beneficial-insects)
-- [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
-  - [When Full Sterilisation Is Required](#when-full-sterilisation-is-required)
-  - [Complete System Sterilisation — Step by Step](#complete-system-sterilisation-step-by-step)
-  - [Post-Outbreak Replanting Rules](#post-outbreak-replanting-rules)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor E&F Vulnerability Profile
@@ -117,7 +79,6 @@ In NFT, the channel surface is largely shielded from light. In an E&F flood tabl
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -185,7 +146,6 @@ IPM action thresholds define when to escalate from monitoring to active control:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -452,7 +412,6 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -712,7 +671,6 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -748,7 +706,6 @@ In a continuously-harvested system (lettuce, herbs, cut-and-come-again crops, ch
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -807,7 +764,6 @@ When natural populations are insufficient or an infestation is established, comm
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -895,9 +851,6 @@ Scrub the inside of all fittings with a long bottle brush. Consider replacing pl
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

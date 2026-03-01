@@ -38,43 +38,6 @@
   - [NFT Channel Rotation Between Seasons](#nft-channel-rotation-between-seasons)
 
 
-## Table of Contents
-
-- [How to Use This Guide](#how-to-use-this-guide)
-- [Quick Reference — Zone, Channel & Crop Map](#quick-reference-zone-channel-crop-map)
-- [LEAFY GREENS & HERBS (Zone A — NFT Channels)](#leafy-greens-herbs-zone-a-nft-channels)
-  - [LETTUCE — Butter, Romaine, Loose-Leaf](#lettuce-butter-romaine-loose-leaf)
-  - [SPINACH](#spinach)
-  - [KALE](#kale)
-  - [BASIL (Sweet / Thai / Purple)](#basil-sweet-thai-purple)
-  - [CILANTRO / CORIANDER](#cilantro-coriander)
-  - [MINT](#mint)
-  - [CHIVES](#chives)
-  - [PARSLEY (Flat-Leaf / Curly)](#parsley-flat-leaf-curly)
-- [FRUITING CROPS (Zone A — CH4, Wide Channel)](#fruiting-crops-zone-a-ch4-wide-channel)
-  - [CHERRY TOMATOES](#cherry-tomatoes)
-  - [PEPPERS (Sweet Bell / Chilli)](#peppers-sweet-bell-chilli)
-  - [STRAWBERRIES](#strawberries)
-- [MICROGREENS (Zone B — Tray Station)](#microgreens-zone-b-tray-station)
-  - [MICROGREENS — General Protocol](#microgreens-general-protocol)
-  - [Equipment & Supplies](#equipment-supplies)
-  - [Individual Crop Profiles](#individual-crop-profiles)
-  - [Per-Tray Yield Estimates](#per-tray-yield-estimates)
-  - [Succession Schedule — Staggered Production](#succession-schedule-staggered-production)
-  - [Harvest](#harvest)
-  - [Microgreens Troubleshooting](#microgreens-troubleshooting)
-- [ROOT VEGETABLES (Zone C — Grow Bags)](#root-vegetables-zone-c-grow-bags)
-  - [RADISHES](#radishes)
-  - [CARROTS](#carrots)
-  - [BEETROOT](#beetroot)
-- [Crop Rotation and Succession Planning](#crop-rotation-and-succession-planning)
-  - [Zone C — Root Vegetable Succession Planting](#zone-c-root-vegetable-succession-planting)
-  - [Succession Planting Schedule (CH1 — Lettuce Example)](#succession-planting-schedule-ch1-lettuce-example)
-  - [NFT Channel Rotation Between Seasons](#nft-channel-rotation-between-seasons)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
@@ -92,7 +55,6 @@ Each crop entry includes:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -111,7 +73,6 @@ Each crop entry includes:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -414,7 +375,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -580,7 +540,6 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -692,7 +651,6 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -810,7 +768,6 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -882,9 +839,6 @@ After a full channel crop completes:
 5. Start new seedlings in parallel (always have seedlings ready to transplant when a site opens)
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)

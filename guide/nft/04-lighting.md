@@ -39,44 +39,6 @@
 - [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
 
 
-## Table of Contents
-
-- [1. The Language of Plant Light](#1-the-language-of-plant-light)
-  - [PAR — Photosynthetically Active Radiation](#par-photosynthetically-active-radiation)
-  - [PPFD — Photosynthetic Photon Flux Density](#ppfd-photosynthetic-photon-flux-density)
-  - [DLI — Daily Light Integral](#dli-daily-light-integral)
-- [2. DLI Targets by Crop](#2-dli-targets-by-crop)
-  - [Seasonal DLI in a Temperate Climate](#seasonal-dli-in-a-temperate-climate)
-- [3. Minimum Sun Hours Per Crop](#3-minimum-sun-hours-per-crop)
-- [4. Siting the System: Sun Mapping](#4-siting-the-system-sun-mapping)
-  - [Southern Exposure (Northern Hemisphere)](#southern-exposure-northern-hemisphere)
-  - [Obstruction Mapping](#obstruction-mapping)
-- [5. Shade Cloth: Percentages, Timing, and Deployment](#5-shade-cloth-percentages-timing-and-deployment)
-  - [Why Shade Cloth?](#why-shade-cloth)
-  - [Shade Cloth Percentages](#shade-cloth-percentages)
-  - [Deployment Method](#deployment-method)
-  - [When to Deploy and Remove](#when-to-deploy-and-remove)
-- [6. Heat Stress vs Light Stress: Distinguishing the Two](#6-heat-stress-vs-light-stress-distinguishing-the-two)
-- [7. Photoperiod Sensitivity](#7-photoperiod-sensitivity)
-  - [Crop Categories](#crop-categories)
-  - [Implications for Your System](#implications-for-your-system)
-- [8. Seasonal Light Strategy](#8-seasonal-light-strategy)
-  - [Spring (March–May) — Establishment Phase](#spring-marchmay-establishment-phase)
-  - [Summer (June–August) — Peak Production, Heat Management](#summer-juneaugust-peak-production-heat-management)
-  - [Autumn (September–October) — Second Season](#autumn-septemberoctober-second-season)
-  - [Winter (November–February) — Shutdown / Planning](#winter-novemberfebruary-shutdown-planning)
-- [9. Supplemental Lighting for Season Extension](#9-supplemental-lighting-for-season-extension)
-  - [When It Makes Sense](#when-it-makes-sense)
-  - [Options](#options)
-  - [Target PPFD for Supplemental Lighting](#target-ppfd-for-supplemental-lighting)
-  - [Wattage & Hanging Height Per Channel](#wattage-hanging-height-per-channel)
-  - [Photoperiod Recommendations](#photoperiod-recommendations)
-  - [Cost-Benefit Summary](#cost-benefit-summary)
-- [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
-
-
-[↑ Back to TOC](#table-of-contents)
-
 [↑ Back to TOC](#table-of-contents)
 
 ## 1. The Language of Plant Light
@@ -161,7 +123,6 @@ DLI is the **total quantity of PAR light delivered over an entire day**. It inte
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -216,7 +177,6 @@ These are the daily light requirements your plants need for optimal growth:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -239,7 +199,6 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -278,7 +237,6 @@ If your site is in shadow at 12pm due to a building or tall fence, you either ne
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -331,7 +289,6 @@ Install 4 posts at the corners of Zone A. Stretch 40% shade cloth over the top, 
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -353,7 +310,6 @@ These can look similar but have different causes and solutions:
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -385,7 +341,6 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -442,7 +397,6 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -554,7 +508,6 @@ If you want to extend your growing season beyond September outdoors, supplementa
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -582,9 +535,6 @@ Microgreens have different light needs from mature crops:
 ```
 
 ---
-
-
-[↑ Back to TOC](#table-of-contents)
 
 
 [↑ Back to TOC](#table-of-contents)
