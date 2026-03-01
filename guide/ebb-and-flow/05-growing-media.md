@@ -54,15 +54,13 @@ Ebb & Flow is different. In a flood table, the media is not incidental to the sy
 ```mermaid
 flowchart LR
     subgraph NFT["NFT SYSTEM — Minimal Media"]
-        direction TB
         NP["50mm net pot<br/>(~150ml LECA)"]
         RW["rockwool cube<br/>(germination only)"]
         CH["channel — nutrient film<br/>(roots hang into film)"]
         NP --> RW --> CH
     end
 
-    subgraph EF["E&F SYSTEM — Substantial Media"]
-        direction TB
+    subgraph EF["Ebb &amp; Flow SYSTEM — Substantial Media"]
         TABLE["Flood table<br/>(1.2m × 0.6m × 100–150mm deep)"]
         LECA["20–30L LECA per table<br/>(fills entire table depth)"]
         NP2["Multiple net pots<br/>in the media bed"]

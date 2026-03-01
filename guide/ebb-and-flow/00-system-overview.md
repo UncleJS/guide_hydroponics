@@ -87,23 +87,25 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for a temperate b
 
 **Three-zone overview:**
 
+**OUTDOOR HYBRID GROW STATION**
+
 ```mermaid
 flowchart TD
-    subgraph STATION["OUTDOOR HYBRID GROW STATION"]
-        subgraph ZoneA["ZONE A — EBB & FLOW TABLES"]
-            T1["TABLE 1<br/>Tomatoes / Cucumbers"] --> OF1["overflow fitting"]
-            T2["TABLE 2<br/>Peppers / Courgettes"] --> OF2["overflow fitting"]
-            T3["TABLE 3<br/>Leafy / Herbs"] --> OF3["overflow fitting"]
-            OF1 & OF2 & OF3 -->|gravity drain-back| RES["RESERVOIR 150-200L"]
-            RES --> PUMP["PUMP<br/>timer controlled"]
-            PUMP -->|flood supply| T1 & T2 & T3
-        end
-        subgraph ZoneB["ZONE B — MICROGREENS"]
-            B["Tiered tray shelf<br/>6 trays, 2 levels"]
-        end
-        subgraph ZoneC["ZONE C — ROOT VEG BAGS"]
-            C["6x grow bags on ground<br/>coco/perlite mix"]
-        end
+    subgraph ZoneA["ZONE A — EBB &amp; FLOW TABLES"]
+        T1["TABLE 1<br/>Tomatoes / Cucumbers"] --> OF1["overflow fitting"]
+        T2["TABLE 2<br/>Peppers / Courgettes"] --> OF2["overflow fitting"]
+        T3["TABLE 3<br/>Leafy / Herbs"] --> OF3["overflow fitting"]
+        OF1 & OF2 & OF3 -->|gravity drain-back| RES["RESERVOIR 150-200L"]
+        RES --> PUMP["PUMP<br/>timer controlled"]
+        PUMP -->|flood supply| T1 & T2 & T3
+    end
+
+    subgraph ZoneB["ZONE B — MICROGREENS"]
+        B["Tiered tray shelf<br/>6 trays, 2 levels"]
+    end
+
+    subgraph ZoneC["ZONE C — ROOT VEG BAGS"]
+        C["6x grow bags on ground<br/>coco/perlite mix"]
     end
 ```
 

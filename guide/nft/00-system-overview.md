@@ -87,25 +87,27 @@ This hybrid approach delivers maximum crop diversity within a single outdoor foo
 
 **Three-zone overview:**
 
+**OUTDOOR HYBRID GROW STATION**
+
 ```mermaid
 flowchart TD
-    subgraph STATION["OUTDOOR HYBRID GROW STATION"]
-        subgraph ZoneA["ZONE A — NFT CHANNEL ARRAY"]
-            CH1["CH1 — channel flow →"] --> D1["drain"]
-            CH2["CH2 — channel flow →"] --> D2["drain"]
-            CH3["CH3 — channel flow →"] --> D3["drain"]
-            CH4["CH4 wide — channel flow →"] --> D4["drain"]
-            D1 & D2 & D3 & D4 --> RES["RESERVOIR 80L"]
-            RES --> PUMP["PUMP"]
-            PUMP --> MAN["manifold"]
-            MAN --> CH1 & CH2 & CH3 & CH4
-        end
-        subgraph ZoneB["ZONE B — MICROGREENS"]
-            B["Tiered tray shelf<br/>6 trays, 2 levels"]
-        end
-        subgraph ZoneC["ZONE C — ROOT VEG BAGS"]
-            C["6x grow bags on ground<br/>coco/perlite mix"]
-        end
+    subgraph ZoneA["ZONE A — NFT CHANNEL ARRAY"]
+        CH1["CH1 — channel flow"] --> D1["drain"]
+        CH2["CH2 — channel flow"] --> D2["drain"]
+        CH3["CH3 — channel flow"] --> D3["drain"]
+        CH4["CH4 wide — channel flow"] --> D4["drain"]
+        D1 & D2 & D3 & D4 --> RES["RESERVOIR 80L"]
+        RES --> PUMP["PUMP"]
+        PUMP --> MAN["manifold"]
+        MAN --> CH1 & CH2 & CH3 & CH4
+    end
+
+    subgraph ZoneB["ZONE B — MICROGREENS"]
+        B["Tiered tray shelf<br/>6 trays, 2 levels"]
+    end
+
+    subgraph ZoneC["ZONE C — ROOT VEG BAGS"]
+        C["6x grow bags on ground<br/>coco/perlite mix"]
     end
 ```
 

@@ -235,7 +235,6 @@ If North–South is not possible due to site constraints, East–West is accepta
 ```mermaid
 flowchart TD
     subgraph compass["OPTIMAL ORIENTATION — top-down"]
-        direction TB
         N["↑ NORTH"]
         W["← West"]
         E["East →"]
@@ -344,7 +343,6 @@ An A-frame creates a triangular structure where channels are mounted on both slo
 flowchart TD
     APEX["apex"]
     subgraph aframe["A-FRAME — end elevation"]
-        direction TB
         LEFTLEG["╱ left<br/>  face"]
         RIGHTLEG["╲ right<br/>     face"]
         BRACE["│ frame<br/>  cross<br/>  brace │"]

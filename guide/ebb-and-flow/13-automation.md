@@ -120,7 +120,7 @@ flowchart TD
         M1 -.->|"14 hours unobserved"| M2
     end
 
-    subgraph actual["WHAT ACTUALLY HAPPENED — E&F Flood Cycle"]
+    subgraph actual["WHAT ACTUALLY HAPPENED — Ebb &amp; Flow Flood Cycle"]
         T1["07:00 — Flood ON<br/>Table floods normally"]
         T2["07:20 — Flood OFF<br/>Table drains normally"]
         T3["12:00 — Flood ON<br/>Table floods normally"]
@@ -784,7 +784,6 @@ flowchart TD
         ALERT["Telegram alert<br/>+ dashboard log"]
     end
 
-    sensors --> logic
     PH --> SAFE
     EC --> SAFE
     LVL --> SAFE
@@ -993,16 +992,9 @@ For Tier 4 with relay module and peristaltic pumps:
 ```mermaid
 flowchart TD
     subgraph esp["ESP32 DevKit ← USB 5V charger (1A min)"]
-        subgraph v33["3.3V rail"]
-            VCC33["3.3V ──┬── VCC DS18B20 probe<br/>         ├── VCC DHT22<br/>         ├── VCC BH1750<br/>         └── pull-up for float switches"]
-        end
-        subgraph v5["5V rail"]
-            VCC5["5V  ──┬── VCC JSN-SR04T<br/>        ├── VCC ACS712<br/>        └── GND to shared GND"]
-        end
-        subgraph gnd["GND (shared — all sensors common)"]
-            GND["GND ──── all sensors"]
-        end
-
+        VCC33["3.3V rail:<br/>3.3V → VCC DS18B20 probe<br/>3.3V → VCC DHT22<br/>3.3V → VCC BH1750<br/>3.3V → pull-up for float switches"]
+        VCC5["5V rail:<br/>5V → VCC JSN-SR04T<br/>5V → VCC ACS712<br/>5V GND → shared GND"]
+        GND["GND (shared — all sensors common)"]
         G4["GPIO 4 ── OneWire DATA (DS18B20)<br/>         4.7kΩ pull-up to 3.3V required"]
         G15["GPIO 15 ── DATA (DHT22)<br/>         10kΩ pull-up to 3.3V"]
         G16["GPIO 16 ── TRIG (JSN-SR04T)"]
@@ -1014,13 +1006,11 @@ flowchart TD
     end
 
     subgraph float_sw["Float Switch Wiring (both tables)"]
-        direction LR
         FS1["Table 1 float switch<br/>Wire A → GPIO 18<br/>Wire B → GND"]
         FS2["Table 2 float switch<br/>Wire A → GPIO 19<br/>Wire B → GND"]
     end
 
     subgraph onewire["DS18B20 OneWire Bus"]
-        direction LR
         OW33["3.3V"] -->|"4.7kΩ"| OWDATA["DATA → GPIO 4"]
         OWDATA --- P1["DS18B20 waterproof<br/>(solution temp)"]
         P1 --> OWGND["GND"]
@@ -1097,7 +1087,7 @@ flowchart LR
     IN3 -->|"NO → 12V"| PP3["Peristaltic Pump 3<br/>(Stock B — Masterblend + Epsom)"]
     IN4 -->|"NO → AC"| BKP["Backup relay — pump power circuit<br/>(bypasses primary timer if needed)"]
 
-    PSU12["12V / 2A PSU<br/>(for peristaltic pumps)"] --> relay
+    PSU12["12V / 2A PSU<br/>(for peristaltic pumps)"] --> RVCC
 
     subgraph plumbing["Dosing Plumbing"]
         BOT1["pH Down bottle<br/>(keep ABOVE pump)"] -->|"silicone tube + NRV"| PP1 -->|"tube"| RES["Reservoir"]
@@ -2351,11 +2341,11 @@ flowchart TD
     Q3{"Do you know if each<br/>table drained completely<br/>after the last flood?"}
     Q4{"Do you see EC/pH<br/>continuously on<br/>a dashboard?"}
     Q5{"Does EC/pH adjust<br/>itself automatically?"}
-    Q6["🎉 Tier 4 — fully automated<br/>E&F system. Enjoy!"]
+    Q6["🎉 Tier 4 — fully automated<br/>Ebb &amp; Flow system. Enjoy!"]
 
     A1["Add Tier 1:<br/>Smart plug on pump<br/>→ flood cycle visibility<br/>+ stuck-ON protection"]
     A2["Add Tier 2:<br/>ESP32 + JSN-SR04T<br/>→ reservoir level sensor<br/>+ flood cycle counter"]
-    A3["Add Tier 2:<br/>Float switches per table<br/>→ drain confirmation<br/>(most important E&F sensor)"]
+    A3["Add Tier 2:<br/>Float switches per table<br/>→ drain confirmation<br/>(most important Ebb &amp; Flow sensor)"]
     A4["Add Tier 3:<br/>EC/pH probes + Grafana<br/>→ continuous water quality"]
     A5["Add Tier 4:<br/>Peristaltic pumps + relays<br/>→ automated dosing"]
 

@@ -63,7 +63,6 @@ Once a plant's roots reach the nutrient film in the channel, the media becomes l
 ```mermaid
 flowchart TD
     subgraph W1["Week 1–2 — Seedling Stage"]
-        direction TB
         NP1["NET POT"]
         CP1["clay pebbles<br/>(media is key — holding the rockwool cube + plant)"]
         RW1["rockwool cube<br/>(germination plug)"]
@@ -71,8 +70,9 @@ flowchart TD
         NP1 --> CP1 --> RW1 --> SR1
     end
 
+    SR1 -->|"plant matures"| NP2
+
     subgraph W2["Week 3–4 — Roots Reach Channel"]
-        direction TB
         NP2["NET POT"]
         CP2["clay pebbles<br/>(now mostly structural)"]
         RW2["rockwool cube<br/>(mostly structural)"]
@@ -80,8 +80,6 @@ flowchart TD
         NF["~~~ nutrient film ~~~<br/>(plant now fed directly from film)"]
         NP2 --> CP2 --> RW2 --> RM --> NF
     end
-
-    W1 -->|"plant matures"| W2
 ```
 
 ---

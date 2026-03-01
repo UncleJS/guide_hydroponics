@@ -337,7 +337,7 @@ flowchart LR
     T3["✅ 18–22°C — TARGET<br/>DO: Optimal (8–9 mg/L)<br/>Roots: Excellent<br/>Pathogens: Low"]
     T4["22–26°C<br/>DO: Reduced (7–8 mg/L)<br/>Roots: Good<br/>Pathogens: Moderate"]
     T5["26–30°C<br/>DO: Low (7 mg/L)<br/>Roots: Stressed<br/>Pathogens: High — Pythium risk"]
-    T6["30°C+<br/>DO: Very low (<7 mg/L)<br/>Roots: Severe stress<br/>Pathogens: Very high"]
+    T6["30°C+<br/>DO: Very low (&lt;7 mg/L)<br/>Roots: Severe stress<br/>Pathogens: Very high"]
 
     T1 --> T2 --> T3 --> T4 --> T5 --> T6
 

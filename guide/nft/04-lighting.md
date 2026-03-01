@@ -52,7 +52,7 @@ PAR defines the **spectrum of light** that plants use for photosynthesis: wavele
 ```mermaid
 block-beta
   columns 9
-  UV["Ultraviolet<br/>< 400nm"]:1
+  UV["Ultraviolet<br/>&lt; 400nm"]:1
   Violet["Violet<br/>400–450nm"]:1
   Blue["Blue<br/>450–490nm"]:1
   Cyan["Cyan<br/>490–520nm"]:1
@@ -60,7 +60,7 @@ block-beta
   Yellow["Yellow<br/>560–590nm"]:1
   Orange["Orange<br/>590–625nm"]:1
   Red["Red<br/>625–700nm"]:1
-  IR["Infrared<br/>> 700nm"]:1
+  IR["Infrared<br/>&gt; 700nm"]:1
 
   space:1
   PAR["◄── PAR RANGE (400–700nm) ──►"]:7

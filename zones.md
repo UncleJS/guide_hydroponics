@@ -13,40 +13,42 @@ The station is oriented with the **long axis running east–west** so that the s
 
 ## Full Site Layout Map (Top-Down View)
 
+**↑ NORTH — wind break / fence / trellis mesh (north edge)**
+
 ```mermaid
 flowchart TD
-    NORTH["NORTH ↑"]:::label
-    SOUTH["SOUTH — direction of sunlight ↓"]:::label
+    WB["WIND BREAK / FENCE / TRELLIS MESH — north edge"]
 
-    subgraph SITE["Site Footprint  ←  4.0 metres wide  →"]
-        WB["WIND BREAK / FENCE / TRELLIS MESH<br/>(north edge)"]
-
-        subgraph ZA["ZONE A — NFT CHANNEL ARRAY<br/>Frame height: 80 cm"]
-            direction LR
-            RES["RES<br/>Reservoir 80L"] --> P["P<br/>Pump"] --> M["M<br/>Manifold"]
-            M --> CH1["CH1 ══════════ ▶ D<br/>(75mm, 2.4m long)"]
-            M --> CH2["CH2 ══════════ ▶ D<br/>(75mm, 2.4m long)"]
-            M --> CH3["CH3 ══════════ ▶ D<br/>(75mm, 2.4m long)"]
-            M --> CH4["CH4 ══════════ ▶ D<br/>(100mm wide channel, 2.4m long)"]
-        end
-
-        subgraph SOUTH_ROW["South row"]
-            direction LR
-            subgraph ZB["ZONE B<br/>Microgreens Tray Shelf<br/>2-tier"]
-            end
-            subgraph ZC["ZONE C<br/>Root Veg Bags<br/>B B B<br/>B B B"]
-            end
-        end
-
-        BENCH["WORK / MIXING BENCH"]
-        STORE["STORAGE BOX"]
+    subgraph ZA["ZONE A — NFT CHANNEL ARRAY  (frame height: 80 cm)"]
+        RES["RES — Reservoir 80L"] --> P["P — Pump"] --> M["M — Manifold"]
+        M --> CH1["CH1 ══════════ D  (75mm, 2.4m)"]
+        M --> CH2["CH2 ══════════ D  (75mm, 2.4m)"]
+        M --> CH3["CH3 ══════════ D  (75mm, 2.4m)"]
+        M --> CH4["CH4 ══════════ D  (100mm, 2.4m)"]
     end
 
-    NORTH --> SITE
-    SITE --> SOUTH
+    subgraph ZB["ZONE B — Microgreens Tray Shelf  (2-tier)"]
+        B["Tier 1 trays · Tier 2 trays"]
+    end
 
-    classDef label fill:none,stroke:none,font-weight:bold
+    subgraph ZC["ZONE C — Root Veg Bags"]
+        C["B B B<br/>B B B"]
+    end
+
+    BENCH["WORK / MIXING BENCH"]
+    STORE["STORAGE BOX"]
+
+    WB --> ZA
+    ZA --> ZB
+    ZA --> ZC
+    ZB --> BENCH
+    ZC --> BENCH
+    BENCH --> STORE
 ```
+
+**↓ SOUTH — direction of sunlight · main access aisle (0.6 m)**
+
+> **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
 > **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
 
 ---

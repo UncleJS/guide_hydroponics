@@ -610,27 +610,16 @@ flowchart LR
 ```mermaid
 flowchart TD
     subgraph dashboard["HYDROPONICS DASHBOARD — Last updated: now"]
-        subgraph current["CURRENT VALUES"]
-            ST["Sol. Temp<br/>20.3°C ✅"]
-            AT["Air Temp<br/>22.1°C ✅"]
-            PH["pH<br/>5.94 ✅"]
-            EC["EC<br/>1.42 ✅"]
-            HU["Humidity<br/>68% ✅"]
-            WL["Water Level<br/>72%"]
-            PS["Pump Status<br/>RUNNING"]
-        end
-
-        subgraph tempChart["SOLUTION TEMPERATURE — Last 7 Days"]
-            TC["Line chart: 16–26°C range<br/>Mon→Sun · DANGER line at 26°C<br/>Daily peaks visible mid-week"]
-        end
-
-        subgraph phChart["pH HISTORY — Last 7 Days"]
-            PC["Line chart: 5.0–7.0 range<br/>Mon→Sun · HIGH at 7.0 · LOW at 5.0<br/>Stable ~6.0 throughout"]
-        end
-
-        subgraph levelChart["RESERVOIR LEVEL — Last 7 Days"]
-            LC["Bar chart: 0–100%<br/>Mon→Sun · steady decline<br/>then topped up mid-week"]
-        end
+        ST["Sol. Temp<br/>20.3°C ✅"]
+        AT["Air Temp<br/>22.1°C ✅"]
+        PH["pH<br/>5.94 ✅"]
+        EC["EC<br/>1.42 ✅"]
+        HU["Humidity<br/>68% ✅"]
+        WL["Water Level<br/>72%"]
+        PS["Pump Status<br/>RUNNING"]
+        TC["SOLUTION TEMP — Last 7 Days<br/>Line chart: 16–26°C range<br/>Mon→Sun · DANGER line at 26°C"]
+        PC["pH HISTORY — Last 7 Days<br/>Line chart: 5.0–7.0 range<br/>Mon→Sun · stable ~6.0 throughout"]
+        LC["RESERVOIR LEVEL — Last 7 Days<br/>Bar chart: 0–100%<br/>Mon→Sun · topped up mid-week"]
     end
 
     style ST fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
@@ -902,16 +891,9 @@ For Tier 4 with relays and peristaltic pumps:
 ```mermaid
 flowchart TD
     subgraph esp["ESP32 DevKit ← USB 5V charger"]
-        subgraph v33["3.3V rail"]
-            VCC33["3.3V ──┬── VCC DS18B20 probe<br/>         ├── VCC DS18B20 air<br/>         ├── VCC DHT22<br/>         └── VCC BH1750"]
-        end
-        subgraph v5["5V rail"]
-            VCC5["5V  ──┬── VCC JSN-SR04T<br/>        └── VCC ACS712"]
-        end
-        subgraph gnd["GND (shared)"]
-            GND["GND ──── all sensors"]
-        end
-
+        VCC33["3.3V rail:<br/>3.3V → VCC DS18B20 probe<br/>3.3V → VCC DS18B20 air<br/>3.3V → VCC DHT22<br/>3.3V → VCC BH1750"]
+        VCC5["5V rail:<br/>5V → VCC JSN-SR04T<br/>5V → VCC ACS712"]
+        GND["GND (shared)"]
         G4["GPIO 4 ── DATA (both DS18B20 via OneWire)<br/>        4.7 kΩ pull-up to 3.3V required"]
         G15["GPIO 15 ── DATA (DHT22)<br/>         10 kΩ pull-up to 3.3V"]
         G16["GPIO 16 ── TRIG (JSN-SR04T)"]
@@ -921,7 +903,6 @@ flowchart TD
     end
 
     subgraph onewire["DS18B20 OneWire Bus (2 probes)"]
-        direction LR
         OW33["3.3V"] -->|"4.7 kΩ"| OWDATA["DATA → GPIO 4"]
         OWDATA --- P1["DS18B20 probe<br/>(solution)"]
         OWDATA --- P2["DS18B20<br/>(air)"]

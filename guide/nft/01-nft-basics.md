@@ -140,11 +140,9 @@ The slope of the channel determines everything about how the thin film behaves. 
 ```mermaid
 flowchart LR
     subgraph s1["1:30 slope — 8cm drop over 2.4m channel"]
-        direction LR
         IN1["INLET<br/>(high end)"] -->|"← 2.4m →"| OUT1["DRAIN<br/>(low end)<br/>↕ 8cm drop"]
     end
     subgraph s2["1:40 slope — 6cm drop over 2.4m channel"]
-        direction LR
         IN2["INLET<br/>(high end)"] -->|"← 2.4m →"| OUT2["DRAIN<br/>(low end)<br/>↕ 6cm drop"]
     end
 ```

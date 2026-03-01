@@ -48,10 +48,10 @@ flowchart LR
     subgraph nft["NFT CHANNEL — enclosed"]
         NC["Solution flows inside<br/>closed 75mm square tube<br/>Shaded from above<br/>Insulated by plastic walls<br/>Minimal surface area exposed"]
     end
-    subgraph ef["E&F FLOOD TABLE — open"]
+    subgraph ef["Ebb &amp; Flow FLOOD TABLE — open"]
         ET["Solution floods open tray<br/>1.2m × 0.6m exposed surface<br/>Direct sun during flood<br/>Wind across open surface<br/>Rain falls directly in<br/>Large thermal mass in LECA bed"]
     end
-    nft -.->|"more exposure<br/>more challenges"| ef
+    NC -.->|"more exposure<br/>more challenges"| ET
 ```
 
 Key differences for climate management:
