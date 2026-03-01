@@ -29,6 +29,10 @@ Automation and continuous data logging transform your system from reactive ("the
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. Why Automate?
 
 ### 1.1 The Problem with Manual-Only Monitoring
@@ -38,18 +42,18 @@ Your system generates data 24 hours a day. With manual monitoring you capture tw
 ```mermaid
 flowchart TD
     subgraph manual["WHAT MANUAL MONITORING SEES"]
-        M1["📍 Morning check\n~08:00"]
-        M2["📍 Evening check\n~18:00"]
+        M1["📍 Morning check<br/>~08:00"]
+        M2["📍 Evening check<br/>~18:00"]
         M1 -.->|"14 hours unobserved"| M2
     end
 
     subgraph actual["WHAT ACTUALLY HAPPENED — Reservoir Temp"]
-        T1["18°C\n00:00"]
-        T2["20°C\n06:00"]
-        T3["22°C\n10:00"]
-        T4["26°C — DANGER\n14:00"]
-        T5["22°C\n18:00"]
-        T6["18°C\n22:00"]
+        T1["18°C<br/>00:00"]
+        T2["20°C<br/>06:00"]
+        T3["22°C<br/>10:00"]
+        T4["26°C — DANGER<br/>14:00"]
+        T5["22°C<br/>18:00"]
+        T6["18°C<br/>22:00"]
         T1 --> T2 --> T3 --> T4 --> T5 --> T6
     end
 
@@ -88,15 +92,19 @@ Logging tells you what happened. Automation takes action:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 2. Automation Tiers Overview
 
 ```mermaid
 flowchart LR
-    T0["**Tier 0**\nManual only\n\nCost: $0\n─────────\nManual pH/EC pen\nManual temp check\nPaper logbook\n\nSkill: None"]
-    T1["**Tier 1**\nOff-the-shelf\nsmart devices\n\nCost: $15–$60\n─────────\nWiFi thermometer\nWiFi smart plug\nPhone alerts\nBasic timer\n\nSkill: None"]
-    T2["**Tier 2**\nSingle ESP32\nsensor node\n\nCost: $30–$80\n─────────\nContinuous temp\nContinuous humidity\nWater level sensor\nPump current monitor\nWiFi data upload\nSimple web UI\n\nSkill: Basic wiring,\nflash firmware"]
-    T3["**Tier 3**\nMulti-node sensor\nnetwork + dashboard\n\nCost: $80–$160\n─────────\nAll Tier 2 sensors\n+ pH probe (inline)\n+ EC probe (inline)\n+ light sensor (LDR)\nGrafana dashboard\nHistorical data\nTrend analysis\n\nSkill: Moderate\nelectronics, WiFi\nnetworking"]
-    T4["**Tier 4**\nAutomated\ncontrol\n\nCost: $150–$300\n─────────\nAll Tier 3 +\nAutomated pH dosing\nAutomated EC dosing\nSmart pump control\nTelegram/email alerts\nRelay-controlled\ndosing pumps\n\nSkill: Intermediate\nelectronics, plumbing\nfor dosing lines"]
+    T0["**Tier 0**<br/>Manual only<br/><br/>Cost: $0<br/>─────────<br/>Manual pH/EC pen<br/>Manual temp check<br/>Paper logbook<br/><br/>Skill: None"]
+    T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60<br/>─────────<br/>WiFi thermometer<br/>WiFi smart plug<br/>Phone alerts<br/>Basic timer<br/><br/>Skill: None"]
+    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80<br/>─────────<br/>Continuous temp<br/>Continuous humidity<br/>Water level sensor<br/>Pump current monitor<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
+    T3["**Tier 3**<br/>Multi-node sensor<br/>network + dashboard<br/><br/>Cost: $80–$160<br/>─────────<br/>All Tier 2 sensors<br/>+ pH probe (inline)<br/>+ EC probe (inline)<br/>+ light sensor (LDR)<br/>Grafana dashboard<br/>Historical data<br/>Trend analysis<br/><br/>Skill: Moderate<br/>electronics, WiFi<br/>networking"]
+    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150–$300<br/>─────────<br/>All Tier 3 +<br/>Automated pH dosing<br/>Automated EC dosing<br/>Smart pump control<br/>Telegram/email alerts<br/>Relay-controlled<br/>dosing pumps<br/><br/>Skill: Intermediate<br/>electronics, plumbing<br/>for dosing lines"]
 
     T0 --> T1 --> T2 --> T3 --> T4
 ```
@@ -104,6 +112,10 @@ flowchart LR
 Each tier builds on the previous. You never have to skip ahead — start at Tier 1 and upgrade when you're ready.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tier 0 — Manual Baseline
 
@@ -123,6 +135,10 @@ This is your current setup as documented in Guides 08 and 10. It works — but i
 - No remote access — you must be physically present
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Tier 1 — Off-the-Shelf Smart Devices
 
@@ -202,6 +218,10 @@ A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at t
 | **Tier 1 total** | **$50–$75** | |
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Tier 2 — ESP32 Sensor Node
 
@@ -292,6 +312,10 @@ EVERY 60 SECONDS, THE NODE:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Tier 3 — Multi-Sensor Network + Dashboard
 
 ### Cost: $80–$160 | Skill: Moderate wiring, networking | Time: 6–10 hours
@@ -330,7 +354,7 @@ Inline pH and EC probes are the most valuable automation sensors but also the mo
 flowchart TD
     RES["Reservoir"]
     PUMP["PUMP"]
-    TCELL["T-junction / Sensor Cell\n(32 mm PVC T-piece with probe ports)"]
+    TCELL["T-junction / Sensor Cell<br/>(32 mm PVC T-piece with probe ports)"]
     MAN["Manifold → channels"]
     RET["Return from channels"]
 
@@ -357,22 +381,22 @@ A dashboard turns raw sensor data into visual charts, trend lines, and alerts. T
 ```mermaid
 flowchart LR
     subgraph nodes["ESP32 nodes"]
-        S["Sensors\nread data\n(every 60s)"]
+        S["Sensors<br/>read data<br/>(every 60s)"]
     end
     subgraph db["InfluxDB"]
-        I["Time-series\ndatabase"]
+        I["Time-series<br/>database"]
     end
     subgraph dash["Grafana"]
-        G["Dashboard\ncharts\nalerts"]
+        G["Dashboard<br/>charts<br/>alerts"]
     end
 
     S -->|"HTTP POST"| I
     I <-->|"query"| G
 
     subgraph options["Options for running InfluxDB + Grafana"]
-        A["A) Raspberry Pi\n(local, always on)\nbest for privacy"]
-        B["B) Old laptop / mini PC\n(local, reuse hardware)"]
-        C["C) InfluxDB Cloud\n+ Grafana Cloud\n(free tier, zero hardware)"]
+        A["A) Raspberry Pi<br/>(local, always on)<br/>best for privacy"]
+        B["B) Old laptop / mini PC<br/>(local, reuse hardware)"]
+        C["C) InfluxDB Cloud<br/>+ Grafana Cloud<br/>(free tier, zero hardware)"]
     end
 ```
 
@@ -387,25 +411,25 @@ flowchart LR
 flowchart TD
     subgraph dashboard["HYDROPONICS DASHBOARD — Last updated: now"]
         subgraph current["CURRENT VALUES"]
-            ST["Sol. Temp\n20.3°C ✅"]
-            AT["Air Temp\n22.1°C ✅"]
-            PH["pH\n5.94 ✅"]
-            EC["EC\n1.42 ✅"]
-            HU["Humidity\n68% ✅"]
-            WL["Water Level\n72%"]
-            PS["Pump Status\nRUNNING"]
+            ST["Sol. Temp<br/>20.3°C ✅"]
+            AT["Air Temp<br/>22.1°C ✅"]
+            PH["pH<br/>5.94 ✅"]
+            EC["EC<br/>1.42 ✅"]
+            HU["Humidity<br/>68% ✅"]
+            WL["Water Level<br/>72%"]
+            PS["Pump Status<br/>RUNNING"]
         end
 
         subgraph tempChart["SOLUTION TEMPERATURE — Last 7 Days"]
-            TC["Line chart: 16–26°C range\nMon→Sun · DANGER line at 26°C\nDaily peaks visible mid-week"]
+            TC["Line chart: 16–26°C range<br/>Mon→Sun · DANGER line at 26°C<br/>Daily peaks visible mid-week"]
         end
 
         subgraph phChart["pH HISTORY — Last 7 Days"]
-            PC["Line chart: 5.0–7.0 range\nMon→Sun · HIGH at 7.0 · LOW at 5.0\nStable ~6.0 throughout"]
+            PC["Line chart: 5.0–7.0 range<br/>Mon→Sun · HIGH at 7.0 · LOW at 5.0<br/>Stable ~6.0 throughout"]
         end
 
         subgraph levelChart["RESERVOIR LEVEL — Last 7 Days"]
-            LC["Bar chart: 0–100%\nMon→Sun · steady decline\nthen topped up mid-week"]
+            LC["Bar chart: 0–100%<br/>Mon→Sun · steady decline<br/>then topped up mid-week"]
         end
     end
 
@@ -417,6 +441,10 @@ flowchart TD
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Tier 4 — Automated Control
 
@@ -442,18 +470,18 @@ This is the single highest-value automation you can add. pH drift is the most co
 
 ```mermaid
 flowchart TD
-    PROBE["pH Probe\n(in sensor cell)"]
-    ESP["ESP32\nDecision Logic"]
+    PROBE["pH Probe<br/>(in sensor cell)"]
+    ESP["ESP32<br/>Decision Logic"]
     CHECK{"Is pH > 6.3?"}
-    RELAY["Activate Relay\n→ Peristaltic Pump\n(pH Down bottle)"]
-    DOSE["Dose 0.5 mL pH Down\ninto reservoir"]
-    WAIT["Wait 5 minutes\n(mixing time)"]
+    RELAY["Activate Relay<br/>→ Peristaltic Pump<br/>(pH Down bottle)"]
+    DOSE["Dose 0.5 mL pH Down<br/>into reservoir"]
+    WAIT["Wait 5 minutes<br/>(mixing time)"]
     REREAD["Re-read pH"]
     AGAIN{"Still > 6.3?"}
-    DOSEX["Dose again\n(up to 3× per cycle)"]
+    DOSEX["Dose again<br/>(up to 3× per cycle)"]
     MONITOR["Return to monitoring"]
 
-    SAFETY["SAFETY LIMITS\n───────────────\nMax 3 doses per cycle\nMax 10 doses per 24h\nIf 10 reached → ALERT + stop dosing\n(something else is wrong)"]
+    SAFETY["SAFETY LIMITS<br/>───────────────<br/>Max 3 doses per cycle<br/>Max 10 doses per 24h<br/>If 10 reached → ALERT + stop dosing<br/>(something else is wrong)"]
 
     PROBE --> ESP --> CHECK
     CHECK -->|YES| RELAY --> DOSE --> WAIT --> REREAD --> AGAIN
@@ -488,23 +516,23 @@ EC dosing is more complex than pH because you're dosing two or three separate nu
 
 ```mermaid
 flowchart TD
-    ECCA["Stock A: Calcium Nitrate solution\n(100 g/L in water)"]
-    ECCB["Stock B: MasterBlend + Epsom Salt\n(100 g MasterBlend + 50 g Epsom / L)"]
+    ECCA["Stock A: Calcium Nitrate solution<br/>(100 g/L in water)"]
+    ECCB["Stock B: MasterBlend + Epsom Salt<br/>(100 g MasterBlend + 50 g Epsom / L)"]
 
     ECR["EC Probe"] --> ESP["ESP32"]
     ESP --> CHK{"Is EC < 1.0?"}
 
-    CHK -->|YES| DA["Dose 5 mL Stock A\n→ Peristaltic Pump A"]
+    CHK -->|YES| DA["Dose 5 mL Stock A<br/>→ Peristaltic Pump A"]
     DA --> WAIT1["Wait 30 seconds"]
-    WAIT1 --> DB["Dose 5 mL Stock B\n→ Peristaltic Pump B"]
-    DB --> WAIT2["Wait 5 minutes\n(mixing)"]
+    WAIT1 --> DB["Dose 5 mL Stock B<br/>→ Peristaltic Pump B"]
+    DB --> WAIT2["Wait 5 minutes<br/>(mixing)"]
     WAIT2 --> REREAD["Re-read EC"]
     REREAD --> AGAIN{"Still < 1.0?"}
     AGAIN -->|"YES (max 5×)"| DA
     AGAIN -->|NO| MON["Return to monitoring"]
     CHK -->|NO| MON
 
-    SAFETY["SAFETY\n───────────────\nNEVER run both pumps simultaneously\nAlways dose A first, wait, then B\nMax 20 doses per 24h\nIf limit reached → ALERT (leak or heavy consumption)"]
+    SAFETY["SAFETY<br/>───────────────<br/>NEVER run both pumps simultaneously<br/>Always dose A first, wait, then B<br/>Max 20 doses per 24h<br/>If limit reached → ALERT (leak or heavy consumption)"]
 
     ESP -.-> SAFETY
     ECCA -.-> DA
@@ -539,6 +567,10 @@ DOSING SAFETY INTERLOCKS
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Sensor Reference — What to Measure and Why
 
@@ -577,6 +609,10 @@ DOSING SAFETY INTERLOCKS
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 9. ESP32 Hardware Guide
 
 ### 9.1 Which ESP32 Board?
@@ -595,12 +631,12 @@ DOSING SAFETY INTERLOCKS
 ```mermaid
 flowchart LR
     subgraph esp["ESP32-WROOM-32 DevKit"]
-        PWR3["3V3"] -->|"3.3V supply"| S1["DS18B20 probes\n(solution + air temp)"]
-        PWR3 --> S2["DHT22\n(air humidity)"]
-        PWR3 --> S5["BH1750\n(light — I2C SDA/SCL)"]
+        PWR3["3V3"] -->|"3.3V supply"| S1["DS18B20 probes<br/>(solution + air temp)"]
+        PWR3 --> S2["DHT22<br/>(air humidity)"]
+        PWR3 --> S5["BH1750<br/>(light — I2C SDA/SCL)"]
 
-        PWR5["5V"] -->|"5V supply"| S3["JSN-SR04T\n(water level)"]
-        PWR5 --> S4["ACS712\n(pump current)"]
+        PWR5["5V"] -->|"5V supply"| S3["JSN-SR04T<br/>(water level)"]
+        PWR5 --> S4["ACS712<br/>(pump current)"]
         PWR5 --> S6["DFRobot pH board"]
         PWR5 --> S7["DFRobot EC board"]
 
@@ -608,22 +644,22 @@ flowchart LR
         G15["GPIO 15"] -->|"data"| S2
         G16["GPIO 16"] -->|"TRIG"| S3
         G17["GPIO 17"] ---|"ECHO"| S3
-        G34["GPIO 34\n(input-only)"] ---|"analog out"| S4
-        G35["GPIO 35\n(input-only)"] ---|"pH analog"| S6
+        G34["GPIO 34<br/>(input-only)"] ---|"analog out"| S4
+        G35["GPIO 35<br/>(input-only)"] ---|"pH analog"| S6
         G32["GPIO 32"] ---|"EC analog"| S7
-        G33["GPIO 33"] ---|"soil moisture"| S8["Capacitive soil sensor\n(Tier 3, Zone C)"]
+        G33["GPIO 33"] ---|"soil moisture"| S8["Capacitive soil sensor<br/>(Tier 3, Zone C)"]
         G21["GPIO 21"] -->|"I2C SDA"| S5
         G22["GPIO 22"] -->|"I2C SCL"| S5
 
-        G25["GPIO 25"] -->|"Relay 1"| R1["pH pump\n(Tier 4)"]
-        G26["GPIO 26"] -->|"Relay 2"| R2["EC-A pump\n(Tier 4)"]
-        G27["GPIO 27"] -->|"Relay 3"| R3["EC-B pump\n(Tier 4)"]
-        G14["GPIO 14"] -->|"Relay 4"| R4["Cooling fan\n(Tier 4)"]
+        G25["GPIO 25"] -->|"Relay 1"| R1["pH pump<br/>(Tier 4)"]
+        G26["GPIO 26"] -->|"Relay 2"| R2["EC-A pump<br/>(Tier 4)"]
+        G27["GPIO 27"] -->|"Relay 3"| R3["EC-B pump<br/>(Tier 4)"]
+        G14["GPIO 14"] -->|"Relay 4"| R4["Cooling fan<br/>(Tier 4)"]
 
         VIN["VIN"] ---|"5V USB power"| USB["USB phone charger"]
     end
 
-    note["GPIO 34/35/36/39: INPUT-ONLY\nGPIO 6–11: flash memory — DO NOT USE"]
+    note["GPIO 34/35/36/39: INPUT-ONLY<br/>GPIO 6–11: flash memory — DO NOT USE"]
     style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
@@ -658,6 +694,10 @@ For Tier 4 with relays and peristaltic pumps:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 10. Wiring Diagrams
 
 ### 10.1 Tier 2 — Basic Sensor Node
@@ -666,28 +706,28 @@ For Tier 4 with relays and peristaltic pumps:
 flowchart TD
     subgraph esp["ESP32 DevKit ← USB 5V charger"]
         subgraph v33["3.3V rail"]
-            VCC33["3.3V ──┬── VCC DS18B20 probe\n         ├── VCC DS18B20 air\n         ├── VCC DHT22\n         └── VCC BH1750"]
+            VCC33["3.3V ──┬── VCC DS18B20 probe<br/>         ├── VCC DS18B20 air<br/>         ├── VCC DHT22<br/>         └── VCC BH1750"]
         end
         subgraph v5["5V rail"]
-            VCC5["5V  ──┬── VCC JSN-SR04T\n        └── VCC ACS712"]
+            VCC5["5V  ──┬── VCC JSN-SR04T<br/>        └── VCC ACS712"]
         end
         subgraph gnd["GND (shared)"]
             GND["GND ──── all sensors"]
         end
 
-        G4["GPIO 4 ── DATA (both DS18B20 via OneWire)\n        4.7 kΩ pull-up to 3.3V required"]
-        G15["GPIO 15 ── DATA (DHT22)\n         10 kΩ pull-up to 3.3V"]
+        G4["GPIO 4 ── DATA (both DS18B20 via OneWire)<br/>        4.7 kΩ pull-up to 3.3V required"]
+        G15["GPIO 15 ── DATA (DHT22)<br/>         10 kΩ pull-up to 3.3V"]
         G16["GPIO 16 ── TRIG (JSN-SR04T)"]
         G17["GPIO 17 ── ECHO (JSN-SR04T)"]
-        G34["GPIO 34 ── OUT (ACS712)\nACS712 in-line with pump power cable"]
-        G2122["GPIO 21 ── SDA (BH1750)\nGPIO 22 ── SCL (BH1750)"]
+        G34["GPIO 34 ── OUT (ACS712)<br/>ACS712 in-line with pump power cable"]
+        G2122["GPIO 21 ── SDA (BH1750)<br/>GPIO 22 ── SCL (BH1750)"]
     end
 
     subgraph onewire["DS18B20 OneWire Bus (2 probes)"]
         direction LR
         OW33["3.3V"] -->|"4.7 kΩ"| OWDATA["DATA → GPIO 4"]
-        OWDATA --- P1["DS18B20 probe\n(solution)"]
-        OWDATA --- P2["DS18B20\n(air)"]
+        OWDATA --- P1["DS18B20 probe<br/>(solution)"]
+        OWDATA --- P2["DS18B20<br/>(air)"]
         P1 & P2 --> OWGND["GND"]
     end
 ```
@@ -705,7 +745,7 @@ flowchart LR
         ESPGND["GND"]
     end
 
-    subgraph relay["4-Channel Relay Module\n(5V coil, optocoupled)"]
+    subgraph relay["4-Channel Relay Module<br/>(5V coil, optocoupled)"]
         IN1["IN1"]
         IN2["IN2"]
         IN3["IN3"]
@@ -721,12 +761,12 @@ flowchart LR
     ESPVCC --> RVCC
     ESPGND --> RGND
 
-    IN1 -->|"NO contact → 12V"| PP1["Peristaltic Pump 1\n(pH Down)"]
-    IN2 -->|"NO contact → 12V"| PP2["Peristaltic Pump 2\n(Stock A)"]
-    IN3 -->|"NO contact → 12V"| PP3["Peristaltic Pump 3\n(Stock B)"]
+    IN1 -->|"NO contact → 12V"| PP1["Peristaltic Pump 1<br/>(pH Down)"]
+    IN2 -->|"NO contact → 12V"| PP2["Peristaltic Pump 2<br/>(Stock A)"]
+    IN3 -->|"NO contact → 12V"| PP3["Peristaltic Pump 3<br/>(Stock B)"]
     IN4 -->|"NO contact → 12V"| FAN["Cooling Fan"]
 
-    PSU["12V Power Supply"] -->|"Common terminal\n(all relays)"| relay
+    PSU["12V Power Supply"] -->|"Common terminal<br/>(all relays)"| relay
 
     subgraph plumbing["Peristaltic Pump Plumbing"]
         BOT1["pH Down bottle"] -->|"silicone tube"| PP1 -->|"tube"| RES1["Reservoir"]
@@ -734,11 +774,15 @@ flowchart LR
         BOT3["Stock B bottle"] -->|"silicone tube"| PP3 -->|"tube"| RES1
     end
 
-    note["Keep stock bottles ABOVE pump (prevent siphoning)\nAdd non-return valve on each line"]
+    note["Keep stock bottles ABOVE pump (prevent siphoning)<br/>Add non-return valve on each line"]
     style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Firmware and Software
 
@@ -872,8 +916,8 @@ If you don't use Home Assistant, the ESP32 can push data directly to InfluxDB Cl
 
 ```mermaid
 flowchart LR
-    ESP["ESP32"] -->|"HTTP POST every 60s"| IDB["InfluxDB Cloud\n(free tier)"]
-    IDB -->|"query"| GRF["Grafana Cloud\n(free tier)\ncharts + dashboards"]
+    ESP["ESP32"] -->|"HTTP POST every 60s"| IDB["InfluxDB Cloud<br/>(free tier)"]
+    IDB -->|"query"| GRF["Grafana Cloud<br/>(free tier)<br/>charts + dashboards"]
 ```
 
 The ESP32 sends an HTTP POST like:
@@ -903,6 +947,10 @@ If you don't want cloud services or internet dependency:
 This option provides 100% local operation — no cloud accounts, no subscriptions, no privacy concerns.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Data Storage and Dashboards
 
@@ -982,6 +1030,10 @@ If you want to keep everything local (no cloud), Home Assistant running on a Ras
 5. Add sensor entities to your dashboard
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Alerts and Notifications
 
@@ -1068,6 +1120,10 @@ No alerts triggered today.
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 14. Using Your Data — Pattern Recognition
 
@@ -1170,6 +1226,10 @@ After 4–6 weeks of continuous data, patterns like this become clearly visible 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 15. Weatherproofing and Power
 
 ### 15.1 Enclosure for ESP32 and Wiring
@@ -1181,17 +1241,17 @@ The ESP32 and its wiring must be protected from rain, splash, and UV degradation
 ```mermaid
 flowchart TD
     subgraph box["IP65 Junction Box — 150 mm × 100 mm × 70 mm"]
-        ESP["ESP32 DevKit\nmounted on standoffs or adhesive"]
-        CG["Cable glands on BOTTOM face\n(water drains away, never pools at entry)\n─────────────────────────\n• USB power cable in\n• Sensor cables out: DS18B20, DHT22, etc.\n• Relay cables out (Tier 4)"]
-        SG["Silica gel packet\n(absorbs residual moisture)"]
+        ESP["ESP32 DevKit<br/>mounted on standoffs or adhesive"]
+        CG["Cable glands on BOTTOM face<br/>(water drains away, never pools at entry)<br/>─────────────────────────<br/>• USB power cable in<br/>• Sensor cables out: DS18B20, DHT22, etc.<br/>• Relay cables out (Tier 4)"]
+        SG["Silica gel packet<br/>(absorbs residual moisture)"]
         ESP --- CG
         CG --- SG
     end
 
-    USB["USB power\n(5V charger)"] -->|"cable gland"| ESP
-    ESP -->|"sensor cables\n(route downward)"| SENSORS["DS18B20 probes\nDHT22\nJSN-SR04T\nACS712\netc."]
+    USB["USB power<br/>(5V charger)"] -->|"cable gland"| ESP
+    ESP -->|"sensor cables<br/>(route downward)"| SENSORS["DS18B20 probes<br/>DHT22<br/>JSN-SR04T<br/>ACS712<br/>etc."]
 
-    note["Use PG7 or PG9 cable glands\nDrill holes in BOTTOM face only"]
+    note["Use PG7 or PG9 cable glands<br/>Drill holes in BOTTOM face only"]
     style note fill:#1a2a1a,stroke:#4a8a4a,color:#aaffaa
     style box fill:#1a1a2a,stroke:#4a4a8a,color:#ccccff
 ```
@@ -1226,6 +1286,10 @@ flowchart TD
 A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery can run an ESP32 sensor node indefinitely in most climates. The ESP32 can deep-sleep between readings (waking every 60 seconds) to reduce average current to ~5 mA, extending battery life to weeks even without sun.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 16. Automation BOM by Tier
 
@@ -1296,6 +1360,10 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 | Tier 4 | $168–$230 | $218–$305 |
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 17. Common Pitfalls
 
@@ -1368,6 +1436,10 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 18. Upgrade Path — From Tier 1 to Tier 4
 
 You don't need to commit to a tier upfront. The system is designed to grow incrementally.
@@ -1414,6 +1486,10 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Summary — What Each Tier Gives You
 

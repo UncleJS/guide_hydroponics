@@ -3,6 +3,70 @@
 
 ---
 
+## Table of Contents
+
+- [1. History and Origin](#1-history-and-origin)
+- [2. Core Principle: The Thin Film](#2-core-principle-the-thin-film)
+- [3. Anatomy of an NFT System](#3-anatomy-of-an-nft-system)
+  - [Component Descriptions](#component-descriptions)
+- [4. Channel Slope: The Critical Variable](#4-channel-slope-the-critical-variable)
+  - [Optimal Slope: 1:30 to 1:40](#optimal-slope-130-to-140)
+  - [Slope Effects Table](#slope-effects-table)
+- [5. Flow Rate Science](#5-flow-rate-science)
+  - [Target: 1–2 Litres Per Minute Per Channel](#target-12-litres-per-minute-per-channel)
+  - [Calculating Pump Requirements](#calculating-pump-requirements)
+  - [Laminar vs Turbulent Flow](#laminar-vs-turbulent-flow)
+- [6. Root Zone Oxygenation](#6-root-zone-oxygenation)
+- [7. NFT vs Other Systems Comparison](#7-nft-vs-other-systems-comparison)
+- [8. Why NFT Is Ideal for Leafy Crops — and Why It Fails for Root Veg](#8-why-nft-is-ideal-for-leafy-crops-and-why-it-fails-for-root-veg)
+  - [Ideal for leafy crops because:](#ideal-for-leafy-crops-because)
+  - [Poor for root vegetables because:](#poor-for-root-vegetables-because)
+- [9. Pump Runtime: Continuous vs Timed](#9-pump-runtime-continuous-vs-timed)
+  - [NFT is almost always run 24/7 (continuously)](#nft-is-almost-always-run-247-continuously)
+  - [When a Timer Makes Sense](#when-a-timer-makes-sense)
+- [10. What Happens During Pump Failure](#10-what-happens-during-pump-failure)
+  - [Emergency Protocol for NFT Pump Failure](#emergency-protocol-for-nft-pump-failure)
+- [11. Scaling: Modular Channel Design](#11-scaling-modular-channel-design)
+- [12. Pros and Cons Summary](#12-pros-and-cons-summary)
+  - [Pros](#pros)
+  - [Cons](#cons)
+- [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
+
+
+## Table of Contents
+
+- [1. History and Origin](#1-history-and-origin)
+- [2. Core Principle: The Thin Film](#2-core-principle-the-thin-film)
+- [3. Anatomy of an NFT System](#3-anatomy-of-an-nft-system)
+  - [Component Descriptions](#component-descriptions)
+- [4. Channel Slope: The Critical Variable](#4-channel-slope-the-critical-variable)
+  - [Optimal Slope: 1:30 to 1:40](#optimal-slope-130-to-140)
+  - [Slope Effects Table](#slope-effects-table)
+- [5. Flow Rate Science](#5-flow-rate-science)
+  - [Target: 1–2 Litres Per Minute Per Channel](#target-12-litres-per-minute-per-channel)
+  - [Calculating Pump Requirements](#calculating-pump-requirements)
+  - [Laminar vs Turbulent Flow](#laminar-vs-turbulent-flow)
+- [6. Root Zone Oxygenation](#6-root-zone-oxygenation)
+- [7. NFT vs Other Systems Comparison](#7-nft-vs-other-systems-comparison)
+- [8. Why NFT Is Ideal for Leafy Crops — and Why It Fails for Root Veg](#8-why-nft-is-ideal-for-leafy-crops-and-why-it-fails-for-root-veg)
+  - [Ideal for leafy crops because:](#ideal-for-leafy-crops-because)
+  - [Poor for root vegetables because:](#poor-for-root-vegetables-because)
+- [9. Pump Runtime: Continuous vs Timed](#9-pump-runtime-continuous-vs-timed)
+  - [NFT is almost always run 24/7 (continuously)](#nft-is-almost-always-run-247-continuously)
+  - [When a Timer Makes Sense](#when-a-timer-makes-sense)
+- [10. What Happens During Pump Failure](#10-what-happens-during-pump-failure)
+  - [Emergency Protocol for NFT Pump Failure](#emergency-protocol-for-nft-pump-failure)
+- [11. Scaling: Modular Channel Design](#11-scaling-modular-channel-design)
+- [12. Pros and Cons Summary](#12-pros-and-cons-summary)
+  - [Pros](#pros)
+  - [Cons](#cons)
+- [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. History and Origin
 
 Nutrient Film Technique was developed by **Dr. Allen Cooper** at the Glasshouse Crops Research Institute in Littlehampton, England, in the late 1960s and early 1970s. Cooper published his findings in the 1970s, revolutionising commercial hydroponics by demonstrating that plants could thrive with their roots exposed to a continuous, very shallow stream of nutrient solution — no solid growing medium required.
@@ -10,6 +74,10 @@ Nutrient Film Technique was developed by **Dr. Allen Cooper** at the Glasshouse 
 The original NFT systems were built with aluminum channels and used relatively crude flow controls, but the core principle has remained essentially unchanged for over 50 years. Today NFT is one of the most widely used hydroponic methods in commercial lettuce and herb production globally, chosen for its simplicity, low water usage, excellent oxygenation, and easy root zone access.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Core Principle: The Thin Film
 
@@ -20,7 +88,7 @@ block-beta
   columns 1
   block:channel["NFT CHANNEL CROSS-SECTION"]:1
     columns 1
-    air["Air gap above roots\n(oxygen zone)"]
+    air["Air gap above roots<br/>(oxygen zone)"]
     pots["Net pots → ▓ ▓ ▓ ▓ ▓"]
     roots["Root zone — partially air-exposed, partially submerged"]
     film["~~~~ Nutrient film — 2–4mm deep ~~~~"]
@@ -37,16 +105,20 @@ block-beta
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 3. Anatomy of an NFT System
 
 Every NFT system — from a 2-channel home setup to a commercial greenhouse — shares the same fundamental components:
 
 ```mermaid
 flowchart TD
-    RES1["RESERVOIR\n(nutrient solution storage)"]
-    PUMP["PUMP\n(submersible, sits on reservoir floor)"]
-    SUPPLY["SUPPLY LINE\n(pipe/tube carrying solution upward)"]
-    MAN["MANIFOLD\n(splits flow to multiple channels)"]
+    RES1["RESERVOIR<br/>(nutrient solution storage)"]
+    PUMP["PUMP<br/>(submersible, sits on reservoir floor)"]
+    SUPPLY["SUPPLY LINE<br/>(pipe/tube carrying solution upward)"]
+    MAN["MANIFOLD<br/>(splits flow to multiple channels)"]
 
     CH1["CHANNEL 1"]
     CH2["CHANNEL 2"]
@@ -58,7 +130,7 @@ flowchart TD
     D3["DRAIN FITTING"]
     D4["DRAIN FITTING"]
 
-    RETURN["RETURN LINE\n(gravity)"]
+    RETURN["RETURN LINE<br/>(gravity)"]
     RES2["RESERVOIR"]
 
     RES1 --> PUMP --> SUPPLY --> MAN
@@ -90,6 +162,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 4. Channel Slope: The Critical Variable
 
 The slope of the channel determines everything about how the thin film behaves. Too shallow and solution pools; too steep and solution rushes through without adequate contact.
@@ -100,11 +176,11 @@ The slope of the channel determines everything about how the thin film behaves. 
 flowchart LR
     subgraph s1["1:30 slope — 8cm drop over 2.4m channel"]
         direction LR
-        IN1["INLET\n(high end)"] -->|"← 2.4m →"| OUT1["DRAIN\n(low end)\n↕ 8cm drop"]
+        IN1["INLET<br/>(high end)"] -->|"← 2.4m →"| OUT1["DRAIN<br/>(low end)<br/>↕ 8cm drop"]
     end
     subgraph s2["1:40 slope — 6cm drop over 2.4m channel"]
         direction LR
-        IN2["INLET\n(high end)"] -->|"← 2.4m →"| OUT2["DRAIN\n(low end)\n↕ 6cm drop"]
+        IN2["INLET<br/>(high end)"] -->|"← 2.4m →"| OUT2["DRAIN<br/>(low end)<br/>↕ 6cm drop"]
     end
 ```
 
@@ -120,6 +196,10 @@ flowchart LR
 **Practical tip:** Set slope with a spirit level and shims under the frame. A 1:30 slope on a 2.4m channel = raise the inlet end 8cm higher than the drain end. This is a very gentle angle — not visually obvious but critical to measure correctly.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Flow Rate Science
 
@@ -166,6 +246,10 @@ Turbulence is caused by excessive flow rate, rough channel surfaces, debris in t
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Root Zone Oxygenation
 
 This is the biological engine behind NFT's effectiveness. The root system that develops in an NFT channel is divided into two distinct zones:
@@ -175,8 +259,8 @@ block-beta
   columns 1
   block:rz["ROOT ZONE ANATOMY"]:1
     columns 1
-    air["AIR ZONE\nRoot hairs proliferate here — white, fuzzy, healthy\nAbsorbs oxygen directly from air"]
-    film["NUTRIENT FILM ZONE\nRoot tips and lower mass contact the thin film\nAbsorbs water and dissolved nutrients"]
+    air["AIR ZONE<br/>Root hairs proliferate here — white, fuzzy, healthy<br/>Absorbs oxygen directly from air"]
+    film["NUTRIENT FILM ZONE<br/>Root tips and lower mass contact the thin film<br/>Absorbs water and dissolved nutrients"]
     floor["CHANNEL FLOOR"]
   end
 ```
@@ -186,6 +270,10 @@ block-beta
 **Why this matters for temperature:** At 28°C, water only holds ~7.8 mg/L dissolved O₂. At 30°C, it drops to ~7.5 mg/L. This is why warm reservoirs increase root rot risk — less O₂ available in the film itself.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. NFT vs Other Systems Comparison
 
@@ -205,6 +293,10 @@ block-beta
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 8. Why NFT Is Ideal for Leafy Crops — and Why It Fails for Root Veg
 
 ### Ideal for leafy crops because:
@@ -222,6 +314,10 @@ block-beta
 **Solution:** Use grow bags with deep coco/perlite mix for root veg (Zone C in this system).
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Pump Runtime: Continuous vs Timed
 
@@ -254,6 +350,10 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 10. What Happens During Pump Failure
 
 ### Emergency Protocol for NFT Pump Failure
@@ -271,6 +371,10 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 - Consider a cheap WiFi smart plug — if the pump draws 0W, it sends an alert
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Scaling: Modular Channel Design
 
@@ -294,6 +398,10 @@ When scaling, consider:
 - **Return pipe:** Ensure drain pipe can handle combined flow from all channels
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Pros and Cons Summary
 
@@ -324,6 +432,10 @@ When scaling, consider:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 13. Key Numbers Reference Card
 
 | Parameter | Value |
@@ -340,4 +452,10 @@ When scaling, consider:
 
 ---
 
-*Next: [`guide/02-nutrient-solution.md`](02-nutrient-solution.md) — Nutrients, EC, pH, and mixing*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/02-nutrient-solution.md`](02-nutrient-solution.md) — Nutrients, EC, pH, and mixing*

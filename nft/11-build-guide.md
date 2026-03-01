@@ -27,6 +27,10 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. System Overview Recap
 
 Before building, confirm the full system you are constructing:
@@ -35,11 +39,11 @@ Before building, confirm the full system you are constructing:
 flowchart TD
     subgraph ZA["ZONE A — NFT SYSTEM"]
         direction TB
-        CH1["Channel 1 — 75mm\nL L L L L L L L L L L\nLettuce × 11"]
-        CH2["Channel 2 — 75mm\nH H H H H H H H H H H\nHerbs × 11"]
-        CH3["Channel 3 — 75mm\nS S S S S S S S S S S\nSpinach/Kale × 11"]
-        CH4["Channel 4 — 100mm\nT T T P P St St\nTom/Pep/Straw × 7"]
-        RES["RESERVOIR 80L\nPUMP inside"]
+        CH1["Channel 1 — 75mm<br/>L L L L L L L L L L L<br/>Lettuce × 11"]
+        CH2["Channel 2 — 75mm<br/>H H H H H H H H H H H<br/>Herbs × 11"]
+        CH3["Channel 3 — 75mm<br/>S S S S S S S S S S S<br/>Spinach/Kale × 11"]
+        CH4["Channel 4 — 100mm<br/>T T T P P St St<br/>Tom/Pep/Straw × 7"]
+        RES["RESERVOIR 80L<br/>PUMP inside"]
         MAN["Supply Manifold"]
         CH1 -->|drain| DH1(( ))
         CH2 -->|drain| DH2(( ))
@@ -74,6 +78,10 @@ flowchart TD
 - ~40 plant sites in Zone A
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Tools Required
 
@@ -110,6 +118,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 3. Safety and Prep Notes
 
 1. **Wear safety glasses for all cutting.** PVC and timber generate chips that can permanently damage eyes.
@@ -126,6 +138,10 @@ flowchart TD
    - Copper pipe — ❌ (copper toxicity to roots)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Step 1 — Site Preparation and Orientation
 
@@ -187,8 +203,8 @@ flowchart TD
         CH4["════════════════════  Channel 4"]
         INLET["INLET END — HIGH"]
         DRAIN["DRAIN END — LOW"]
-        RES["RESERVOIR sits here\nor to south"]
-        WIND["Prevailing wind: from West\n→ Position windbreak to West side"]
+        RES["RESERVOIR sits here<br/>or to south"]
+        WIND["Prevailing wind: from West<br/>→ Position windbreak to West side"]
     end
     N --> FRAME
     FRAME --> CH1 --> CH2 --> CH3 --> CH4
@@ -212,12 +228,16 @@ block-beta
         columns 4
         ch1["ch1"] ch2["ch2"] ch3["ch3"] ch4["ch4"]
     end
-    note["1.6 m wide × 2.4 m long\n+30 cm each side for frame uprights and access = ~2.2 m wide total"]
+    note["1.6 m wide × 2.4 m long<br/>+30 cm each side for frame uprights and access = ~2.2 m wide total"]
 ```
 
 Mark corners with pegs or chalk. This avoids building the frame and discovering it doesn't fit.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Step 2 — Frame Construction
 
@@ -230,13 +250,13 @@ An elevated bench frame raises channels to a comfortable working height (~90 cm)
 ```mermaid
 block-beta
     columns 4
-    block:rails["CHANNEL RAILS\n2× timber rails\nchannels rest on these"]:4
+    block:rails["CHANNEL RAILS<br/>2× timber rails<br/>channels rest on these"]:4
     end
     space:4
-    LEG1["leg\n↕ 90 cm\nhigh end"] space:2 LEG4["leg\n↕ 82 cm\nlow end\n1:30 slope"]
+    LEG1["leg<br/>↕ 90 cm<br/>high end"] space:2 LEG4["leg<br/>↕ 82 cm<br/>low end<br/>1:30 slope"]
     space:4
     ground["─────────────────── ground ───────────────────"]:4
-    note["Legs: 45×45 mm PAR timber\nRails: 75×25 mm timber, full 2.4 m length\nCross-braces: 45×45 mm at 600 mm intervals"]
+    note["Legs: 45×45 mm PAR timber<br/>Rails: 75×25 mm timber, full 2.4 m length<br/>Cross-braces: 45×45 mm at 600 mm intervals"]
 ```
 
 **Timber cut list (Zone A bench):**
@@ -282,16 +302,16 @@ flowchart TD
     APEX["apex"]
     subgraph aframe["A-FRAME — end elevation"]
         direction TB
-        LEFTLEG["╱ left\n  face"]
-        RIGHTLEG["╲ right\n     face"]
-        BRACE["│ frame\n  cross\n  brace │"]
+        LEFTLEG["╱ left<br/>  face"]
+        RIGHTLEG["╲ right<br/>     face"]
+        BRACE["│ frame<br/>  cross<br/>  brace │"]
     end
     APEX --- LEFTLEG
     APEX --- RIGHTLEG
     LEFTLEG --- GND["────────── ground ──────────"]
     RIGHTLEG --- GND
     BRACE --- GND
-    note1["Channels mount on each angled face\n→ Natural slope created by the incline\n→ Typically 30–40° angle → 1:1.2 slope (too steep for NFT!)"]
+    note1["Channels mount on each angled face<br/>→ Natural slope created by the incline<br/>→ Typically 30–40° angle → 1:1.2 slope (too steep for NFT!)"]
 ```
 
 > **Caution:** The natural slope of a typical A-frame is far too steep for NFT (you want 1:30 to 1:40; an A-frame gives you something closer to 1:1). To use an A-frame for NFT, you must mount horizontal shelf boards at the correct offset and attach the channels to those boards — it becomes complicated. The elevated bench is much simpler for NFT.
@@ -299,6 +319,10 @@ flowchart TD
 **A-frame is better suited to:** Ebb-and-flow or kratky systems, not NFT.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Step 3 — Channel Preparation
 
@@ -330,9 +354,9 @@ block-beta
     columns 11
     block:channel["NET POT HOLE LAYOUT — top view of channel"]:11
         columns 11
-        buf1["←50mm\nedge\nbuffer"] H1["○\nhole 1"] sp1["←200mm→"] H2["○\nhole 2"] sp2["←200mm→"] H3["○\nhole 3"] sp3["←200mm→"] H4["○\nhole 4"] dots["..."] HN["○\nhole 11"] buf2["50mm→\nedge\nbuffer"]
+        buf1["←50mm<br/>edge<br/>buffer"] H1["○<br/>hole 1"] sp1["←200mm→"] H2["○<br/>hole 2"] sp2["←200mm→"] H3["○<br/>hole 3"] sp3["←200mm→"] H4["○<br/>hole 4"] dots["..."] HN["○<br/>hole 11"] buf2["50mm→<br/>edge<br/>buffer"]
     end
-    calc["For 11 holes in 2,400 mm channel:\nUsable length: 2,400 − 100 (edge buffer) = 2,300 mm\nSpacing: 2,300 ÷ 10 = 230 mm centre-to-centre"]
+    calc["For 11 holes in 2,400 mm channel:<br/>Usable length: 2,400 − 100 (edge buffer) = 2,300 mm<br/>Spacing: 2,300 ÷ 10 = 230 mm centre-to-centre"]
 ```
 
 **Hole size:**
@@ -368,13 +392,13 @@ block-beta
     block:cross["CHANNEL CROSS-SECTION — end view at inlet cap"]:1
         columns 3
         space
-        NETPOT["○ 50 mm net pot\nsitting in hole\n(top face)"]
+        NETPOT["○ 50 mm net pot<br/>sitting in hole<br/>(top face)"]
         space
         space
-        FILM["~~ nutrient solution film ~~\n1–3 mm deep"]
+        FILM["~~ nutrient solution film ~~<br/>1–3 mm deep"]
         space
     end
-    INLET["↑ supply inlet (high end)\n▲ supply tube from pump manifold"]
+    INLET["↑ supply inlet (high end)<br/>▲ supply tube from pump manifold"]
 ```
 
 ### 6.5 Spray Bar (Optional Alternative to Direct Feed)
@@ -388,6 +412,10 @@ To make a simple spray bar:
 4. The water fans out across the channel base rather than channelling to one corner.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Step 4 — Reservoir Setup
 
@@ -440,6 +468,10 @@ For most DIY builds, the top-fill return is simpler and provides better oxygenat
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 8. Step 5 — Plumbing
 
 ### 8.1 Plumbing Overview
@@ -449,15 +481,15 @@ The plumbing system routes water from the reservoir pump up to the channels and 
 ```mermaid
 flowchart TD
     PUMP["pump inside reservoir"]
-    PUMP -->|"20 mm supply pipe rising"| MAN["MANIFOLD\ndistribution header pipe with valves"]
-    MAN -->|"12 mm supply tube"| CH1["ch1\nhigh end inlet"]
-    MAN -->|"12 mm supply tube"| CH2["ch2\nhigh end inlet"]
-    MAN -->|"12 mm supply tube"| CH3["ch3\nhigh end inlet"]
-    MAN -->|"12 mm supply tube"| CH4["ch4\nhigh end inlet"]
-    CH1 -->|"water flows downhill"| D1["drain\nlow end"]
-    CH2 -->|"water flows downhill"| D2["drain\nlow end"]
-    CH3 -->|"water flows downhill"| D3["drain\nlow end"]
-    CH4 -->|"water flows downhill"| D4["drain\nlow end"]
+    PUMP -->|"20 mm supply pipe rising"| MAN["MANIFOLD<br/>distribution header pipe with valves"]
+    MAN -->|"12 mm supply tube"| CH1["ch1<br/>high end inlet"]
+    MAN -->|"12 mm supply tube"| CH2["ch2<br/>high end inlet"]
+    MAN -->|"12 mm supply tube"| CH3["ch3<br/>high end inlet"]
+    MAN -->|"12 mm supply tube"| CH4["ch4<br/>high end inlet"]
+    CH1 -->|"water flows downhill"| D1["drain<br/>low end"]
+    CH2 -->|"water flows downhill"| D2["drain<br/>low end"]
+    CH3 -->|"water flows downhill"| D3["drain<br/>low end"]
+    CH4 -->|"water flows downhill"| D4["drain<br/>low end"]
     D1 & D2 & D3 & D4 -->|"drain header 25 mm pipe"| RET["return into reservoir"]
     RET --> PUMP
 ```
@@ -475,11 +507,11 @@ The manifold is a short header pipe that distributes pump output to each channel
 
 ```mermaid
 flowchart LR
-    PUMP["Pump output\n20 mm"] --> MAN["32 mm manifold pipe"]
-    MAN --> V1["valve"] --> CH1["to ch1\n12 mm"]
-    MAN --> V2["valve"] --> CH2["to ch2\n12 mm"]
-    MAN --> V3["valve"] --> CH3["to ch3\n12 mm"]
-    MAN --> V4["valve"] --> CH4["to ch4\n12 mm"]
+    PUMP["Pump output<br/>20 mm"] --> MAN["32 mm manifold pipe"]
+    MAN --> V1["valve"] --> CH1["to ch1<br/>12 mm"]
+    MAN --> V2["valve"] --> CH2["to ch2<br/>12 mm"]
+    MAN --> V3["valve"] --> CH3["to ch3<br/>12 mm"]
+    MAN --> V4["valve"] --> CH4["to ch4<br/>12 mm"]
 ```
 
 **Assembly:**
@@ -498,7 +530,7 @@ From the manifold valves to the channel inlets, use 12 mm ID irrigation tube (bl
 **Routing:**
 ```mermaid
 flowchart TD
-    MAN["MANIFOLD\n12 mm tubes hanging down"]
+    MAN["MANIFOLD<br/>12 mm tubes hanging down"]
     MAN -->|"12 mm tube"| I4["ch4 inlet"]
     MAN -->|"12 mm tube"| I3["ch3 inlet"]
     MAN -->|"12 mm tube"| I2["ch2 inlet"]
@@ -526,7 +558,7 @@ All channel drains collect into a common return header that flows back to the re
 
 ```mermaid
 flowchart LR
-    D1["ch1 drain"] & D2["ch2 drain"] & D3["ch3 drain"] & D4["ch4 drain"] --> HDR["drain header pipe\n↗ slight downhill slope throughout"]
+    D1["ch1 drain"] & D2["ch2 drain"] & D3["ch3 drain"] & D4["ch4 drain"] --> HDR["drain header pipe<br/>↗ slight downhill slope throughout"]
     HDR -->|"→ to reservoir"| RES["reservoir"]
 ```
 
@@ -546,6 +578,10 @@ Before testing the full system, inspect every joint:
 - Solvent-welded joints: must cure 1 hour at minimum (24 h recommended) before pressure
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Step 6 — Electrical and Timer Setup
 
@@ -576,12 +612,12 @@ Place the timer in a weatherproof enclosure or outdoor timer box. Do not leave a
 
 ```mermaid
 flowchart TD
-    WALL["Wall outlet\nGFCI protected"]
-    WALL -->|"outdoor-rated"| EXT["Outdoor extension lead\nIP44 or better"]
+    WALL["Wall outlet<br/>GFCI protected"]
+    WALL -->|"outdoor-rated"| EXT["Outdoor extension lead<br/>IP44 or better"]
     EXT --> TIMER["Weatherproof timer enclosure"]
-    TIMER -->|"switched"| PUMP["Submersible pump\nin reservoir"]
-    TIMER -->|"switched or continuous"| AIR["Air pump\noptional"]
-    AIR --> STONE["air stone\nin reservoir"]
+    TIMER -->|"switched"| PUMP["Submersible pump<br/>in reservoir"]
+    TIMER -->|"switched or continuous"| AIR["Air pump<br/>optional"]
+    AIR --> STONE["air stone<br/>in reservoir"]
 ```
 
 ### 9.3 Air Pump (Optional but Recommended)
@@ -593,6 +629,10 @@ An air pump driving one or two air stones in the reservoir dramatically increase
 Position air stones at the bottom of the reservoir. Run the airline along the frame to the reservoir, securing with cable ties. Keep the air pump above the reservoir water level (or use a non-return valve) to prevent back-siphoning.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Step 7 — System Test (Water Only)
 
@@ -661,6 +701,10 @@ Step 9: Drain test water
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 11. Step 8 — First Nutrient Solution Fill
 
 After a successful water test, prepare the first nutrient batch.
@@ -692,6 +736,10 @@ See Guide 02 for full Masterblend recipe and dose scaling table. Summary for fir
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 12. Step 9 — Planting
 
 ### 12.1 Transplanting Seedlings
@@ -714,14 +762,14 @@ block-beta
     block:xsec["NET POT PLACEMENT — cross-section"]:1
         columns 3
         space
-        NETPOT["net pot\nsits in 50 mm hole"]
+        NETPOT["net pot<br/>sits in 50 mm hole"]
         space
         space
-        CUBE["rockwool cube\n25 mm"]
+        CUBE["rockwool cube<br/>25 mm"]
         space
         WALL1["── channel wall ──"] ROOTS["roots"] WALL2["── channel wall ──"]
         space
-        FILM["~~~~~ solution film ~~~~~\n1–3 mm deep"]
+        FILM["~~~~~ solution film ~~~~~<br/>1–3 mm deep"]
         space
     end
 ```
@@ -773,6 +821,10 @@ Hour 48:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 13. Step 10 — Zone B Microgreens Station
 
 ### 13.1 Materials for Zone B
@@ -816,7 +868,7 @@ Hour 48:
 ```mermaid
 block-beta
     columns 1
-    LED["LED panel 50–100W\n↕ 25–30 cm above trays"]
+    LED["LED panel 50–100W<br/>↕ 25–30 cm above trays"]
     block:tier1["TIER 1 — Growth stage (3–7 days under light)"]:3
         T1A["tray"] T1B["tray"] T1C["tray"]
     end
@@ -828,6 +880,10 @@ block-beta
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 14. Step 11 — Zone C Root Veg Grow Bags
 
@@ -886,13 +942,17 @@ Root vegetables do NOT transplant well. Sow seeds directly in the grow bags.
 block-beta
     columns 1
     block:layout["ZONE C LAYOUT — top-down"]:3
-        BR1["bag-R\nRadishes"] BR2["bag-R\nRadishes"] BR3["bag-R\nRadishes"]
-        BC["bag-C\nCarrots"] space BB["bag-B\nBeetroot"]
+        BR1["bag-R<br/>Radishes"] BR2["bag-R<br/>Radishes"] BR3["bag-R<br/>Radishes"]
+        BC["bag-C<br/>Carrots"] space BB["bag-B<br/>Beetroot"]
     end
-    note2["Each bag sits in a drip tray to catch runoff\nKeep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]
+    note2["Each bag sits in a drip tray to catch runoff<br/>Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 15. Common Build Mistakes and How to Avoid Them
 
@@ -959,6 +1019,10 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 **Prevention:** Keep a spare submersible pump in your kit. They are inexpensive (~$10–$20). If you cannot source a spare, at minimum know where you can buy one locally same-day.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 16. Build Checklist
 

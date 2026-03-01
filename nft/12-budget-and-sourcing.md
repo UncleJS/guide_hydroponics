@@ -20,6 +20,10 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. Build Tier Overview
 
 Three tiers are defined based on total budget and the trade-offs at each level:
@@ -47,6 +51,10 @@ TIER 3 — OPTIMISED ($350–$500)
 Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices are based on typical 2024–2025 retail prices; check current pricing at purchase time.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Zone A — NFT System BOM
 
@@ -186,6 +194,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 3. Zone B — Microgreens Station BOM
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
@@ -204,6 +216,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 4. Zone C — Root Veg Grow Bags BOM
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
@@ -218,6 +234,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 | **Zone C TOTAL** | **$57** | **$81** | **$110** |
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Consumables and Ongoing Supplies
 
@@ -245,6 +265,10 @@ These are not one-time costs but will recur each growing season (or more frequen
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Tier Totals Summary
 
 ### Full 3-Zone System (All Zones)
@@ -261,10 +285,10 @@ The stated budget range is achievable by **phasing the build:**
 
 ```mermaid
 flowchart TD
-    P1["**PHASE 1** — Zone A Only, Tier 1\n~$200–$275\nNFT system running with basic equipment\nNo microgreens station, no grow bags yet\nMonitor and learn for 4–6 weeks"]
-    P2["**PHASE 2** — Add Zone B (Microgreens), Tier 1\n+$89 → Total so far: ~$289–$364"]
-    P3["**PHASE 3** — Add Zone C (Root Veg), Tier 1\n+$57 → Full system running: ~$346–$421"]
-    P4["**PHASE 4** — Upgrade individual items as budget allows\nBetter pH/EC meter first (biggest yield impact)\nBetter pump for reliability\nReservoir insulation for summer performance"]
+    P1["**PHASE 1** — Zone A Only, Tier 1<br/>~$200–$275<br/>NFT system running with basic equipment<br/>No microgreens station, no grow bags yet<br/>Monitor and learn for 4–6 weeks"]
+    P2["**PHASE 2** — Add Zone B (Microgreens), Tier 1<br/>+$89 → Total so far: ~$289–$364"]
+    P3["**PHASE 3** — Add Zone C (Root Veg), Tier 1<br/>+$57 → Full system running: ~$346–$421"]
+    P4["**PHASE 4** — Upgrade individual items as budget allows<br/>Better pH/EC meter first (biggest yield impact)<br/>Better pump for reliability<br/>Reservoir insulation for summer performance"]
 
     P1 --> P2 --> P3 --> P4
 ```
@@ -272,6 +296,10 @@ flowchart TD
 This phased approach lets you start with a functional system at ~$200 and expand as you gain confidence and see results.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Where to Buy
 
@@ -352,6 +380,10 @@ WHAT TO BUY LOCALLY (hardware store)
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 8. Cost-Saving Strategies
 
 ### 8.1 Repurpose Food-Grade Containers
@@ -413,6 +445,10 @@ Clay pebbles (LECA) can be reused indefinitely if properly cleaned. After each c
 Rockwool cubes are single-use (they degrade and can harbour pathogens). Switch to Rapid Rooter or coco plugs (both biodegradable) for slightly easier disposal.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Running Costs
 
@@ -480,6 +516,10 @@ At 36 changes per season (every ~7 days for 9 months):
 **Realistic mid-range annual running cost: ~$200–$250.**
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Yield Estimates and ROI
 
@@ -590,6 +630,10 @@ Beetroot (2 bags, ~16 plants):
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 11. Payback Period Analysis
 
 ### 11.1 Tier 2 — Standard Build Payback
@@ -652,6 +696,10 @@ The ROI analysis only captures direct grocery savings. The full value of the sys
 - **Carbon footprint:** Eliminating packaging, transport, and refrigeration chain for your own fresh produce
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Budget at a Glance
 

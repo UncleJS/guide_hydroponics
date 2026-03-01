@@ -3,6 +3,104 @@
 
 ---
 
+## Table of Contents
+
+- [1. Why Nutrients Matter in Hydroponics](#1-why-nutrients-matter-in-hydroponics)
+- [2. The 17 Essential Plant Nutrients](#2-the-17-essential-plant-nutrients)
+  - [Macronutrients (needed in large quantities)](#macronutrients-needed-in-large-quantities)
+  - [Secondary Macronutrients (needed in moderate quantities)](#secondary-macronutrients-needed-in-moderate-quantities)
+  - [Micronutrients (needed in trace quantities — but still essential)](#micronutrients-needed-in-trace-quantities-but-still-essential)
+- [3. NPK at Each Growth Stage](#3-npk-at-each-growth-stage)
+- [4. EC — Electrical Conductivity](#4-ec-electrical-conductivity)
+  - [What EC Measures](#what-ec-measures)
+  - [Why EC Matters](#why-ec-matters)
+  - [EC Target Ranges by Crop](#ec-target-ranges-by-crop)
+- [5. pH — The Key to Nutrient Availability](#5-ph-the-key-to-nutrient-availability)
+  - [What pH Measures](#what-ph-measures)
+  - [Target pH Range for Hydroponics: 5.5–6.5](#target-ph-range-for-hydroponics-5565)
+  - [Nutrient Availability vs pH (Mulder's Chart Simplified)](#nutrient-availability-vs-ph-mulders-chart-simplified)
+  - [Ideal pH by Crop](#ideal-ph-by-crop)
+  - [pH Drift](#ph-drift)
+- [6. Two-Part vs Three-Part vs One-Part Nutrients](#6-two-part-vs-three-part-vs-one-part-nutrients)
+  - [One-Part / All-in-One](#one-part-all-in-one)
+  - [Two-Part Systems](#two-part-systems)
+  - [Three-Part Systems](#three-part-systems)
+  - [The Masterblend Trio (Budget Champion)](#the-masterblend-trio-budget-champion)
+- [7. Masterblend Trio — Mixing Recipe](#7-masterblend-trio-mixing-recipe)
+  - [Components](#components)
+  - [Standard Mixing Recipe (per 4 litres / ~1 US gallon of water)](#standard-mixing-recipe-per-4-litres-1-us-gallon-of-water)
+  - [Masterblend Dose Scaling](#masterblend-dose-scaling)
+- [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
+  - [Mix Ratios (per litre of water)](#mix-ratios-per-litre-of-water)
+- [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
+  - [Optimal: 18–22°C](#optimal-1822c)
+- [10. Reservoir Top-Up vs Full Change](#10-reservoir-top-up-vs-full-change)
+  - [Two Operations — Very Different Purposes](#two-operations-very-different-purposes)
+- [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
+  - [How to Identify Location of Symptoms (Key Diagnostic Clue)](#how-to-identify-location-of-symptoms-key-diagnostic-clue)
+  - [Deficiency Quick Reference](#deficiency-quick-reference)
+  - [Toxicity Signs](#toxicity-signs)
+- [12. Organic Hydroponics](#12-organic-hydroponics)
+  - [Key Differences](#key-differences)
+  - [Common Organic Nutrient Sources](#common-organic-nutrient-sources)
+  - [Simple Organic Nutrient Recipe (Vegetative Stage)](#simple-organic-nutrient-recipe-vegetative-stage)
+  - [Why Organic Is Harder in NFT Specifically](#why-organic-is-harder-in-nft-specifically)
+- [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
+  - [Reservoir Volume Needed](#reservoir-volume-needed)
+  - [Solution Volume per Full Mix (80L reservoir)](#solution-volume-per-full-mix-80l-reservoir)
+
+
+## Table of Contents
+
+- [1. Why Nutrients Matter in Hydroponics](#1-why-nutrients-matter-in-hydroponics)
+- [2. The 17 Essential Plant Nutrients](#2-the-17-essential-plant-nutrients)
+  - [Macronutrients (needed in large quantities)](#macronutrients-needed-in-large-quantities)
+  - [Secondary Macronutrients (needed in moderate quantities)](#secondary-macronutrients-needed-in-moderate-quantities)
+  - [Micronutrients (needed in trace quantities — but still essential)](#micronutrients-needed-in-trace-quantities-but-still-essential)
+- [3. NPK at Each Growth Stage](#3-npk-at-each-growth-stage)
+- [4. EC — Electrical Conductivity](#4-ec-electrical-conductivity)
+  - [What EC Measures](#what-ec-measures)
+  - [Why EC Matters](#why-ec-matters)
+  - [EC Target Ranges by Crop](#ec-target-ranges-by-crop)
+- [5. pH — The Key to Nutrient Availability](#5-ph-the-key-to-nutrient-availability)
+  - [What pH Measures](#what-ph-measures)
+  - [Target pH Range for Hydroponics: 5.5–6.5](#target-ph-range-for-hydroponics-5565)
+  - [Nutrient Availability vs pH (Mulder's Chart Simplified)](#nutrient-availability-vs-ph-mulders-chart-simplified)
+  - [Ideal pH by Crop](#ideal-ph-by-crop)
+  - [pH Drift](#ph-drift)
+- [6. Two-Part vs Three-Part vs One-Part Nutrients](#6-two-part-vs-three-part-vs-one-part-nutrients)
+  - [One-Part / All-in-One](#one-part-all-in-one)
+  - [Two-Part Systems](#two-part-systems)
+  - [Three-Part Systems](#three-part-systems)
+  - [The Masterblend Trio (Budget Champion)](#the-masterblend-trio-budget-champion)
+- [7. Masterblend Trio — Mixing Recipe](#7-masterblend-trio-mixing-recipe)
+  - [Components](#components)
+  - [Standard Mixing Recipe (per 4 litres / ~1 US gallon of water)](#standard-mixing-recipe-per-4-litres-1-us-gallon-of-water)
+  - [Masterblend Dose Scaling](#masterblend-dose-scaling)
+- [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
+  - [Mix Ratios (per litre of water)](#mix-ratios-per-litre-of-water)
+- [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
+  - [Optimal: 18–22°C](#optimal-1822c)
+- [10. Reservoir Top-Up vs Full Change](#10-reservoir-top-up-vs-full-change)
+  - [Two Operations — Very Different Purposes](#two-operations-very-different-purposes)
+- [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
+  - [How to Identify Location of Symptoms (Key Diagnostic Clue)](#how-to-identify-location-of-symptoms-key-diagnostic-clue)
+  - [Deficiency Quick Reference](#deficiency-quick-reference)
+  - [Toxicity Signs](#toxicity-signs)
+- [12. Organic Hydroponics](#12-organic-hydroponics)
+  - [Key Differences](#key-differences)
+  - [Common Organic Nutrient Sources](#common-organic-nutrient-sources)
+  - [Simple Organic Nutrient Recipe (Vegetative Stage)](#simple-organic-nutrient-recipe-vegetative-stage)
+  - [Why Organic Is Harder in NFT Specifically](#why-organic-is-harder-in-nft-specifically)
+- [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
+  - [Reservoir Volume Needed](#reservoir-volume-needed)
+  - [Solution Volume per Full Mix (80L reservoir)](#solution-volume-per-full-mix-80l-reservoir)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. Why Nutrients Matter in Hydroponics
 
 In soil, plants access nutrients through complex microbial activity, organic matter decomposition, and mineral weathering. The soil acts as a buffer — it holds reserves and slowly releases them. In hydroponics, **you are the soil**. Every nutrient the plant will ever receive comes directly from the solution you mix. There is no buffer, no reserve, no margin for error beyond what you build into your management routine.
@@ -12,6 +110,10 @@ This is both the power and the responsibility of hydroponics:
 - **Responsibility:** Get it wrong and plants suffer immediately — there is no soil to compensate
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. The 17 Essential Plant Nutrients
 
@@ -53,28 +155,32 @@ Plants require 17 elements to complete their life cycle. These are divided into 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 3. NPK at Each Growth Stage
 
 The ratio of N:P:K that plants need changes dramatically across their life cycle:
 
 ```mermaid
 flowchart TD
-    A["🌱 SEEDLING (0–2 weeks)\nNPK ratio: 1 : 1.5 : 1\nEC: 0.5–0.8 mS/cm"]
+    A["🌱 SEEDLING (0–2 weeks)<br/>NPK ratio: 1 : 1.5 : 1<br/>EC: 0.5–0.8 mS/cm"]
     A --> AN["N: Moderate — establish first leaves"]
     A --> AP["P: High — root development is priority"]
     A --> AK["K: Moderate"]
 
-    B["🌿 VEGETATIVE (2–6 weeks — greens/herbs)\nNPK ratio: 3 : 1 : 2\nEC: crop-specific (see Section 5)"]
+    B["🌿 VEGETATIVE (2–6 weeks — greens/herbs)<br/>NPK ratio: 3 : 1 : 2<br/>EC: crop-specific (see Section 5)"]
     B --> BN["N: High — leafy growth, chlorophyll"]
     B --> BP["P: Moderate"]
     B --> BK["K: Moderate"]
 
-    C["🍅 FRUITING / FLOWERING (tomatoes, peppers, strawberries)\nNPK ratio: 1 : 2 : 3\nEC: 2.5–4.0 mS/cm"]
+    C["🍅 FRUITING / FLOWERING (tomatoes, peppers, strawberries)<br/>NPK ratio: 1 : 2 : 3<br/>EC: 2.5–4.0 mS/cm"]
     C --> CN["N: Reduce — too much N delays fruiting"]
     C --> CP["P: High — flower initiation, seed/fruit set"]
     C --> CK["K: Very high — fruit quality, sugar, firmness"]
 
-    D["🍓 LATE FRUIT / HARVEST\nNPK ratio: 1 : 1.5 : 4"]
+    D["🍓 LATE FRUIT / HARVEST<br/>NPK ratio: 1 : 1.5 : 4"]
     D --> DN["N: Low"]
     D --> DP["P: Moderate"]
     D --> DK["K: Very high — final fruit ripening"]
@@ -83,6 +189,10 @@ flowchart TD
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. EC — Electrical Conductivity
 
@@ -125,6 +235,10 @@ Units: **mS/cm** (millisiemens per centimetre) — some meters display as EC, ot
 > **Mixed channel note:** When running a channel with multiple crop types, set EC to the **lower end** of the most sensitive crop's range. In CH1 (lettuce + herbs), target 1.0–1.4 mS/cm.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. pH — The Key to Nutrient Availability
 
@@ -191,6 +305,10 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Two-Part vs Three-Part vs One-Part Nutrients
 
 ### One-Part / All-in-One
@@ -214,6 +332,10 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 - **Cons:** Dry salts, requires accurate weighing (digital scale needed), no pH buffering built in
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Masterblend Trio — Mixing Recipe
 
@@ -264,6 +386,10 @@ This is the most cost-effective nutrient system available. Used by professional 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 8. General Hydroponics Flora Series Schedule
 
 For those preferring a liquid system. This is the most documented nutrient schedule in hobby hydroponics.
@@ -284,6 +410,10 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 9. Nutrient Solution Temperature
 
 ### Optimal: 18–22°C
@@ -295,12 +425,12 @@ Nutrient solution temperature affects:
 
 ```mermaid
 flowchart LR
-    T1["10–15°C\nDO: High (9–11 mg/L)\nRoots: Slow — cold stress\nPathogens: Very low"]
-    T2["15–18°C\nDO: Good (8–9 mg/L)\nRoots: Slightly reduced\nPathogens: Low"]
-    T3["✅ 18–22°C — TARGET\nDO: Optimal (8–9 mg/L)\nRoots: Excellent\nPathogens: Low"]
-    T4["22–26°C\nDO: Reduced (7–8 mg/L)\nRoots: Good\nPathogens: Moderate"]
-    T5["26–30°C\nDO: Low (7 mg/L)\nRoots: Stressed\nPathogens: High"]
-    T6["30°C+\nDO: Very low (&lt;7 mg/L)\nRoots: Severe stress\nPathogens: Very high"]
+    T1["10–15°C<br/>DO: High (9–11 mg/L)<br/>Roots: Slow — cold stress<br/>Pathogens: Very low"]
+    T2["15–18°C<br/>DO: Good (8–9 mg/L)<br/>Roots: Slightly reduced<br/>Pathogens: Low"]
+    T3["✅ 18–22°C — TARGET<br/>DO: Optimal (8–9 mg/L)<br/>Roots: Excellent<br/>Pathogens: Low"]
+    T4["22–26°C<br/>DO: Reduced (7–8 mg/L)<br/>Roots: Good<br/>Pathogens: Moderate"]
+    T5["26–30°C<br/>DO: Low (7 mg/L)<br/>Roots: Stressed<br/>Pathogens: High"]
+    T6["30°C+<br/>DO: Very low (&lt;7 mg/L)<br/>Roots: Severe stress<br/>Pathogens: Very high"]
 
     T1 --> T2 --> T3 --> T4 --> T5 --> T6
 
@@ -315,6 +445,10 @@ flowchart LR
 **Outdoor challenge:** Reservoir water temperature tracks ambient temperature. A black or exposed reservoir in summer can reach 28–32°C — dangerous territory. Solutions: shade the reservoir, insulate it, paint it white, partially bury it, or use an aquarium chiller (see guide/10).
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Reservoir Top-Up vs Full Change
 
@@ -348,17 +482,21 @@ flowchart LR
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 11. Visual Nutrient Deficiency and Toxicity Guide
 
 ### How to Identify Location of Symptoms (Key Diagnostic Clue)
 
 ```mermaid
 flowchart TD
-    M["MOBILE NUTRIENTS\nN · P · K · Mg\nPlant moves these from OLD leaves\nto feed new growth"]
-    M --> MS["Deficiency symptoms appear on\nOLDER / LOWER leaves FIRST"]
+    M["MOBILE NUTRIENTS<br/>N · P · K · Mg<br/>Plant moves these from OLD leaves<br/>to feed new growth"]
+    M --> MS["Deficiency symptoms appear on<br/>OLDER / LOWER leaves FIRST"]
 
-    I["IMMOBILE NUTRIENTS\nCa · Fe · Mn · B · Cu · Zn\nPlant cannot redistribute these"]
-    I --> IS["Deficiency symptoms appear on\nYOUNG / NEW growth FIRST"]
+    I["IMMOBILE NUTRIENTS<br/>Ca · Fe · Mn · B · Cu · Zn<br/>Plant cannot redistribute these"]
+    I --> IS["Deficiency symptoms appear on<br/>YOUNG / NEW growth FIRST"]
 
     style M fill:#2a4a2a,color:#cfc
     style MS fill:#1a3a1a,color:#afa
@@ -391,6 +529,10 @@ flowchart TD
 | General salt burn | Brown leaf tips/edges, wilting despite wet roots |
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Organic Hydroponics
 
@@ -447,6 +589,10 @@ Organic hydroponics works best in media-based systems (deep water culture, flood
 > **Recommendation for beginners:** Start with Masterblend or GH Flora Series. Once you understand your system and crops, explore organic supplements as additives rather than replacing the mineral base. A practical middle ground is running mineral nutrients in NFT and reserving organic growing for Zone C (grow bags), where the soil-like media supports a healthy microbial ecosystem naturally.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Water Volume Calculator Reference
 
@@ -506,4 +652,10 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
 
 ---
 
-*Next: [`guide/03-water-quality.md`](03-water-quality.md) — Water sources, testing, and treatment*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/03-water-quality.md`](03-water-quality.md) — Water sources, testing, and treatment*

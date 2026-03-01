@@ -3,6 +3,82 @@
 
 ---
 
+## Table of Contents
+
+- [1. The Language of Plant Light](#1-the-language-of-plant-light)
+  - [PAR — Photosynthetically Active Radiation](#par-photosynthetically-active-radiation)
+  - [PPFD — Photosynthetic Photon Flux Density](#ppfd-photosynthetic-photon-flux-density)
+  - [DLI — Daily Light Integral](#dli-daily-light-integral)
+- [2. DLI Targets by Crop](#2-dli-targets-by-crop)
+  - [Seasonal DLI in a Temperate Climate](#seasonal-dli-in-a-temperate-climate)
+- [3. Minimum Sun Hours Per Crop](#3-minimum-sun-hours-per-crop)
+- [4. Siting the System: Sun Mapping](#4-siting-the-system-sun-mapping)
+  - [Southern Exposure (Northern Hemisphere)](#southern-exposure-northern-hemisphere)
+  - [Obstruction Mapping](#obstruction-mapping)
+- [5. Shade Cloth: Percentages, Timing, and Deployment](#5-shade-cloth-percentages-timing-and-deployment)
+  - [Why Shade Cloth?](#why-shade-cloth)
+  - [Shade Cloth Percentages](#shade-cloth-percentages)
+  - [Deployment Method](#deployment-method)
+  - [When to Deploy and Remove](#when-to-deploy-and-remove)
+- [6. Heat Stress vs Light Stress: Distinguishing the Two](#6-heat-stress-vs-light-stress-distinguishing-the-two)
+- [7. Photoperiod Sensitivity](#7-photoperiod-sensitivity)
+  - [Crop Categories](#crop-categories)
+  - [Implications for Your System](#implications-for-your-system)
+- [8. Seasonal Light Strategy](#8-seasonal-light-strategy)
+  - [Spring (March–May) — Establishment Phase](#spring-marchmay-establishment-phase)
+  - [Summer (June–August) — Peak Production, Heat Management](#summer-juneaugust-peak-production-heat-management)
+  - [Autumn (September–October) — Second Season](#autumn-septemberoctober-second-season)
+  - [Winter (November–February) — Shutdown / Planning](#winter-novemberfebruary-shutdown-planning)
+- [9. Supplemental Lighting for Season Extension](#9-supplemental-lighting-for-season-extension)
+  - [When It Makes Sense](#when-it-makes-sense)
+  - [Options](#options)
+  - [Target PPFD for Supplemental Lighting](#target-ppfd-for-supplemental-lighting)
+  - [Wattage & Hanging Height Per Channel](#wattage-hanging-height-per-channel)
+  - [Photoperiod Recommendations](#photoperiod-recommendations)
+  - [Cost-Benefit Summary](#cost-benefit-summary)
+- [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
+
+
+## Table of Contents
+
+- [1. The Language of Plant Light](#1-the-language-of-plant-light)
+  - [PAR — Photosynthetically Active Radiation](#par-photosynthetically-active-radiation)
+  - [PPFD — Photosynthetic Photon Flux Density](#ppfd-photosynthetic-photon-flux-density)
+  - [DLI — Daily Light Integral](#dli-daily-light-integral)
+- [2. DLI Targets by Crop](#2-dli-targets-by-crop)
+  - [Seasonal DLI in a Temperate Climate](#seasonal-dli-in-a-temperate-climate)
+- [3. Minimum Sun Hours Per Crop](#3-minimum-sun-hours-per-crop)
+- [4. Siting the System: Sun Mapping](#4-siting-the-system-sun-mapping)
+  - [Southern Exposure (Northern Hemisphere)](#southern-exposure-northern-hemisphere)
+  - [Obstruction Mapping](#obstruction-mapping)
+- [5. Shade Cloth: Percentages, Timing, and Deployment](#5-shade-cloth-percentages-timing-and-deployment)
+  - [Why Shade Cloth?](#why-shade-cloth)
+  - [Shade Cloth Percentages](#shade-cloth-percentages)
+  - [Deployment Method](#deployment-method)
+  - [When to Deploy and Remove](#when-to-deploy-and-remove)
+- [6. Heat Stress vs Light Stress: Distinguishing the Two](#6-heat-stress-vs-light-stress-distinguishing-the-two)
+- [7. Photoperiod Sensitivity](#7-photoperiod-sensitivity)
+  - [Crop Categories](#crop-categories)
+  - [Implications for Your System](#implications-for-your-system)
+- [8. Seasonal Light Strategy](#8-seasonal-light-strategy)
+  - [Spring (March–May) — Establishment Phase](#spring-marchmay-establishment-phase)
+  - [Summer (June–August) — Peak Production, Heat Management](#summer-juneaugust-peak-production-heat-management)
+  - [Autumn (September–October) — Second Season](#autumn-septemberoctober-second-season)
+  - [Winter (November–February) — Shutdown / Planning](#winter-novemberfebruary-shutdown-planning)
+- [9. Supplemental Lighting for Season Extension](#9-supplemental-lighting-for-season-extension)
+  - [When It Makes Sense](#when-it-makes-sense)
+  - [Options](#options)
+  - [Target PPFD for Supplemental Lighting](#target-ppfd-for-supplemental-lighting)
+  - [Wattage & Hanging Height Per Channel](#wattage-hanging-height-per-channel)
+  - [Photoperiod Recommendations](#photoperiod-recommendations)
+  - [Cost-Benefit Summary](#cost-benefit-summary)
+- [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. The Language of Plant Light
 
 Before managing light for your plants, you need to understand the three key metrics used to describe it. These are not interchangeable — they measure very different things.
@@ -14,15 +90,15 @@ PAR defines the **spectrum of light** that plants use for photosynthesis: wavele
 ```mermaid
 block-beta
   columns 9
-  UV["Ultraviolet\n< 400nm"]:1
-  Violet["Violet\n400–450nm"]:1
-  Blue["Blue\n450–490nm"]:1
-  Cyan["Cyan\n490–520nm"]:1
-  Green["Green\n520–560nm"]:1
-  Yellow["Yellow\n560–590nm"]:1
-  Orange["Orange\n590–625nm"]:1
-  Red["Red\n625–700nm"]:1
-  IR["Infrared\n> 700nm"]:1
+  UV["Ultraviolet<br/>< 400nm"]:1
+  Violet["Violet<br/>400–450nm"]:1
+  Blue["Blue<br/>450–490nm"]:1
+  Cyan["Cyan<br/>490–520nm"]:1
+  Green["Green<br/>520–560nm"]:1
+  Yellow["Yellow<br/>560–590nm"]:1
+  Orange["Orange<br/>590–625nm"]:1
+  Red["Red<br/>625–700nm"]:1
+  IR["Infrared<br/>> 700nm"]:1
 
   space:1
   PAR["◄── PAR RANGE (400–700nm) ──►"]:7
@@ -85,6 +161,10 @@ DLI is the **total quantity of PAR light delivered over an entire day**. It inte
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 2. DLI Targets by Crop
 
 These are the daily light requirements your plants need for optimal growth:
@@ -136,6 +216,10 @@ These are the daily light requirements your plants need for optimal growth:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 3. Minimum Sun Hours Per Crop
 
 While DLI is more accurate, a simple sun hours estimate works for practical planning:
@@ -155,6 +239,10 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 4. Siting the System: Sun Mapping
 
 ### Southern Exposure (Northern Hemisphere)
@@ -163,12 +251,12 @@ The sun moves from east to west across the southern sky. Your system should face
 
 ```mermaid
 flowchart TD
-    N["N — Wall / fence / windbreak\n(north side)"]
-    Sys["Your grow system\n(open to south)"]
+    N["N — Wall / fence / windbreak<br/>(north side)"]
+    Sys["Your grow system<br/>(open to south)"]
     EW["E ←————————————————————————→ W"]
-    MS["Morning sun\n(southeast)"]
-    NS["Noon sun\n(south)"]
-    AS["Afternoon sun\n(southwest)"]
+    MS["Morning sun<br/>(southeast)"]
+    NS["Noon sun<br/>(south)"]
+    AS["Afternoon sun<br/>(southwest)"]
 
     N --> Sys
     Sys --> EW
@@ -189,6 +277,10 @@ If your site is in shadow at 12pm due to a building or tall fence, you either ne
 **Height rule of thumb:** A wall or fence at a distance D from your system will cast a shadow with a length of approximately **D × (1/tan(sun altitude angle))**. At summer noon in the UK (~60°N), sun altitude is ~55°; shadow length = D × 0.7. At winter noon, it is ~10°; shadow length = D × 5.7 (this is why winter indoor growing requires much more space from walls).
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shade Cloth: Percentages, Timing, and Deployment
 
@@ -215,8 +307,8 @@ Shade cloth reduces PPFD to a level that maximises photosynthesis without heat s
 ```mermaid
 block-beta
   columns 1
-  cloth["40% shade cloth\n(stretched over 4 corner posts, 1.2m tall, outside channel frame)"]
-  gap["30–50cm air gap\n(clearance above plant tops — required for airflow)"]
+  cloth["40% shade cloth<br/>(stretched over 4 corner posts, 1.2m tall, outside channel frame)"]
+  gap["30–50cm air gap<br/>(clearance above plant tops — required for airflow)"]
   channels["NFT CHANNELS — ZONE A"]
 ```
 
@@ -239,6 +331,10 @@ Install 4 posts at the corners of Zone A. Stretch 40% shade cloth over the top, 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Heat Stress vs Light Stress: Distinguishing the Two
 
 These can look similar but have different causes and solutions:
@@ -256,6 +352,10 @@ These can look similar but have different causes and solutions:
 **Test:** Check your reservoir water temperature. If it's above 24°C, heat is the primary stressor. Deploy shade AND insulate the reservoir.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Photoperiod Sensitivity
 
@@ -284,6 +384,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
 **Tomatoes and peppers:** Day-neutral — flower and fruit based on plant maturity and temperature, not photoperiod. No photoperiod concerns.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Seasonal Light Strategy
 
@@ -337,6 +441,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Supplemental Lighting for Season Extension
 
@@ -446,6 +554,10 @@ If you want to extend your growing season beyond September outdoors, supplementa
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 10. Microgreens Lighting (Zone B)
 
 Microgreens have different light needs from mature crops:
@@ -471,4 +583,10 @@ Microgreens have different light needs from mature crops:
 
 ---
 
-*Next: [`guide/05-growing-media.md`](05-growing-media.md) — Net pots, clay pebbles, rockwool, coco, and germination*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/05-growing-media.md`](05-growing-media.md) — Net pots, clay pebbles, rockwool, coco, and germination*

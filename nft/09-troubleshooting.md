@@ -3,6 +3,78 @@
 
 ---
 
+## Table of Contents
+
+- [How to Use This Guide](#how-to-use-this-guide)
+- [SECTION A: Water and Solution Problems](#section-a-water-and-solution-problems)
+  - [A1: pH DRIFTING UP (alkaline creep)](#a1-ph-drifting-up-alkaline-creep)
+  - [A2: pH DRIFTING DOWN (acidic drop)](#a2-ph-drifting-down-acidic-drop)
+  - [A3: EC DROPPING FASTER THAN EXPECTED](#a3-ec-dropping-faster-than-expected)
+  - [A4: EC RISING ABOVE TARGET](#a4-ec-rising-above-target)
+  - [A5: SOLUTION TURNS BROWN, GREEN, OR SLIMY](#a5-solution-turns-brown-green-or-slimy)
+- [SECTION B: Plant Problems](#section-b-plant-problems)
+  - [B1: YELLOWING LEAVES](#b1-yellowing-leaves)
+  - [B2: BROWN OR CRISPY LEAF EDGES / TIP BURN](#b2-brown-or-crispy-leaf-edges-tip-burn)
+  - [B3: WILTING](#b3-wilting)
+  - [B4: STUNTED GROWTH](#b4-stunted-growth)
+  - [B5: BOLTING (PREMATURE FLOWERING — GREENS/HERBS)](#b5-bolting-premature-flowering-greensherbs)
+  - [B6: BLOSSOM DROP (TOMATOES / PEPPERS)](#b6-blossom-drop-tomatoes-peppers)
+  - [B7: PURPLE LEAVES](#b7-purple-leaves)
+  - [B8: WHITE CRUSTY DEPOSITS ON CHANNELS OR NET POTS](#b8-white-crusty-deposits-on-channels-or-net-pots)
+- [SECTION C: System and Equipment Problems](#section-c-system-and-equipment-problems)
+  - [C1: PUMP NOT FLOWING](#c1-pump-not-flowing)
+  - [C2: CHANNELS OVERFLOWING OR POOLING](#c2-channels-overflowing-or-pooling)
+  - [C3: DRY SPOTS IN CHANNELS](#c3-dry-spots-in-channels)
+  - [C4: RESERVOIR OVERHEATING](#c4-reservoir-overheating)
+  - [C5: FITTINGS LEAKING](#c5-fittings-leaking)
+- [SECTION D: Multiple Simultaneous Symptoms](#section-d-multiple-simultaneous-symptoms)
+  - [Key Principle](#key-principle)
+  - [D1: Yellowing + Wilting (Multiple Plants)](#d1-yellowing-wilting-multiple-plants)
+  - [D2: Brown Leaf Edges + Stunted Growth](#d2-brown-leaf-edges-stunted-growth)
+  - [D3: Yellowing + Stunted Growth + Brown Edges (The Triad)](#d3-yellowing-stunted-growth-brown-edges-the-triad)
+  - [D4: Multiple Plants Affected Simultaneously vs One Plant](#d4-multiple-plants-affected-simultaneously-vs-one-plant)
+  - [D5: Rapid Onset (Problem Appeared Overnight or Within Hours)](#d5-rapid-onset-problem-appeared-overnight-or-within-hours)
+- [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
+
+
+## Table of Contents
+
+- [How to Use This Guide](#how-to-use-this-guide)
+- [SECTION A: Water and Solution Problems](#section-a-water-and-solution-problems)
+  - [A1: pH DRIFTING UP (alkaline creep)](#a1-ph-drifting-up-alkaline-creep)
+  - [A2: pH DRIFTING DOWN (acidic drop)](#a2-ph-drifting-down-acidic-drop)
+  - [A3: EC DROPPING FASTER THAN EXPECTED](#a3-ec-dropping-faster-than-expected)
+  - [A4: EC RISING ABOVE TARGET](#a4-ec-rising-above-target)
+  - [A5: SOLUTION TURNS BROWN, GREEN, OR SLIMY](#a5-solution-turns-brown-green-or-slimy)
+- [SECTION B: Plant Problems](#section-b-plant-problems)
+  - [B1: YELLOWING LEAVES](#b1-yellowing-leaves)
+  - [B2: BROWN OR CRISPY LEAF EDGES / TIP BURN](#b2-brown-or-crispy-leaf-edges-tip-burn)
+  - [B3: WILTING](#b3-wilting)
+  - [B4: STUNTED GROWTH](#b4-stunted-growth)
+  - [B5: BOLTING (PREMATURE FLOWERING — GREENS/HERBS)](#b5-bolting-premature-flowering-greensherbs)
+  - [B6: BLOSSOM DROP (TOMATOES / PEPPERS)](#b6-blossom-drop-tomatoes-peppers)
+  - [B7: PURPLE LEAVES](#b7-purple-leaves)
+  - [B8: WHITE CRUSTY DEPOSITS ON CHANNELS OR NET POTS](#b8-white-crusty-deposits-on-channels-or-net-pots)
+- [SECTION C: System and Equipment Problems](#section-c-system-and-equipment-problems)
+  - [C1: PUMP NOT FLOWING](#c1-pump-not-flowing)
+  - [C2: CHANNELS OVERFLOWING OR POOLING](#c2-channels-overflowing-or-pooling)
+  - [C3: DRY SPOTS IN CHANNELS](#c3-dry-spots-in-channels)
+  - [C4: RESERVOIR OVERHEATING](#c4-reservoir-overheating)
+  - [C5: FITTINGS LEAKING](#c5-fittings-leaking)
+- [SECTION D: Multiple Simultaneous Symptoms](#section-d-multiple-simultaneous-symptoms)
+  - [Key Principle](#key-principle)
+  - [D1: Yellowing + Wilting (Multiple Plants)](#d1-yellowing-wilting-multiple-plants)
+  - [D2: Brown Leaf Edges + Stunted Growth](#d2-brown-leaf-edges-stunted-growth)
+  - [D3: Yellowing + Stunted Growth + Brown Edges (The Triad)](#d3-yellowing-stunted-growth-brown-edges-the-triad)
+  - [D4: Multiple Plants Affected Simultaneously vs One Plant](#d4-multiple-plants-affected-simultaneously-vs-one-plant)
+  - [D5: Rapid Onset (Problem Appeared Overnight or Within Hours)](#d5-rapid-onset-problem-appeared-overnight-or-within-hours)
+- [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## How to Use This Guide
 
 Find your symptom in the relevant section. Follow the decision tree to identify the most likely cause, then apply the fix. Always start with the most common cause before assuming something unusual.
@@ -16,6 +88,10 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 4. **Pest or disease** — only after ruling out chemistry
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION A: Water and Solution Problems
 
@@ -181,6 +257,10 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## SECTION B: Plant Problems
 
 ---
@@ -193,22 +273,22 @@ Yellowing (chlorosis) is the most common and most ambiguous plant symptom. Use t
 flowchart TD
     Start([Which leaves are yellowing?])
 
-    Start --> Old[Old / lower leaves first\nmobile nutrient deficiency]
-    Start --> New[Young / new leaves first\nimmobile nutrient deficiency]
+    Start --> Old[Old / lower leaves first<br/>mobile nutrient deficiency]
+    Start --> New[Young / new leaves first<br/>immobile nutrient deficiency]
     Start --> All[All leaves simultaneously]
 
-    Old --> N[Uniform yellow whole leaf\nNitrogen deficiency\nFIX: Check EC in range, check pH above 5.5,\nadd Cal-mag or increase N in mix]
-    Old --> Mg[Yellow between green veins interveinal\nMagnesium deficiency\nFIX: Add 0.3ml/L Epsom salt,\ncheck pH 6.0–6.5]
-    Old --> P[Yellow with purple undersides\nPhosphorus deficiency\nFIX: Check pH above 5.5,\nadjust pH up, check EC]
-    Old --> K[Brown scorched dry margins on leaf edges\nPotassium deficiency\nFIX: Check EC is in range,\nincrease K in mix or raise overall Masterblend dose]
+    Old --> N[Uniform yellow whole leaf<br/>Nitrogen deficiency<br/>FIX: Check EC in range, check pH above 5.5,<br/>add Cal-mag or increase N in mix]
+    Old --> Mg[Yellow between green veins interveinal<br/>Magnesium deficiency<br/>FIX: Add 0.3ml/L Epsom salt,<br/>check pH 6.0–6.5]
+    Old --> P[Yellow with purple undersides<br/>Phosphorus deficiency<br/>FIX: Check pH above 5.5,<br/>adjust pH up, check EC]
+    Old --> K[Brown scorched dry margins on leaf edges<br/>Potassium deficiency<br/>FIX: Check EC is in range,<br/>increase K in mix or raise overall Masterblend dose]
 
-    New --> Fe[Yellow between green veins interveinal\nIron deficiency\nFIX: pH too high above 6.5 — lower to 5.8–6.2,\niron is present but locked out]
-    New --> Mn[Similar interveinal pattern\nManganese deficiency\nFIX: Check pH, Mn locks out above 6.5]
-    New --> S[Uniform pale yellow in newest growth\nSulfur deficiency\nFIX: Rare with Masterblend, check EC,\nmay need Epsom salt]
+    New --> Fe[Yellow between green veins interveinal<br/>Iron deficiency<br/>FIX: pH too high above 6.5 — lower to 5.8–6.2,<br/>iron is present but locked out]
+    New --> Mn[Similar interveinal pattern<br/>Manganese deficiency<br/>FIX: Check pH, Mn locks out above 6.5]
+    New --> S[Uniform pale yellow in newest growth<br/>Sulfur deficiency<br/>FIX: Rare with Masterblend, check EC,<br/>may need Epsom salt]
 
-    All --> Pythium[Root rot Pythium\nroots cannot supply nutrients\nFIX: Inspect roots, see guide/07]
-    All --> pHOut[pH severely out of range\nbelow 4.5 or above 8.0\nFIX: Urgent pH correction,\nchange reservoir solution]
-    All --> PumpFail[Pump failure\nplants starving from no nutrient flow\nFIX: Restore pump immediately]
+    All --> Pythium[Root rot Pythium<br/>roots cannot supply nutrients<br/>FIX: Inspect roots, see guide/07]
+    All --> pHOut[pH severely out of range<br/>below 4.5 or above 8.0<br/>FIX: Urgent pH correction,<br/>change reservoir solution]
+    All --> PumpFail[Pump failure<br/>plants starving from no nutrient flow<br/>FIX: Restore pump immediately]
 ```
 
 ---
@@ -253,29 +333,29 @@ flowchart TD
 flowchart TD
     Start([Plants wilting])
 
-    Start --> Overnight{Overnight wilting only?\nPlants wilt in morning}
-    Overnight -->|Recovers by evening| Normal[NORMAL — temporary heat stress\nNo action needed]
+    Start --> Overnight{Overnight wilting only?<br/>Plants wilt in morning}
+    Overnight -->|Recovers by evening| Normal[NORMAL — temporary heat stress<br/>No action needed]
     Overnight -->|Stays wilted all day| Pump
 
     Start --> Pump{Is the pump running?}
-    Pump -->|NO| PumpFix[Pump failure\nSee Section C1\nRestore flow immediately]
+    Pump -->|NO| PumpFix[Pump failure<br/>See Section C1<br/>Restore flow immediately]
     Pump -->|YES| Roots
 
-    Roots{Are roots healthy?\nwhite and firm}
-    Roots -->|NO brown/slimy| Pythium[Pythium root rot\nSee guide/07 treatment]
+    Roots{Are roots healthy?<br/>white and firm}
+    Roots -->|NO brown/slimy| Pythium[Pythium root rot<br/>See guide/07 treatment]
     Roots -->|YES| Temp
 
-    Temp{Reservoir temperature\nabove 26°C?}
-    Temp -->|YES| HeatStress[Heat stress on roots\nShade reservoir, add frozen bottles, insulate]
+    Temp{Reservoir temperature<br/>above 26°C?}
+    Temp -->|YES| HeatStress[Heat stress on roots<br/>Shade reservoir, add frozen bottles, insulate]
     Temp -->|NO| EC
 
-    EC{EC very high?\nabove 4.0 greens\nor above 5.0 tomatoes}
-    EC -->|YES| Osmotic[Osmotic stress\nDilute with plain water\nPartial reservoir change]
+    EC{EC very high?<br/>above 4.0 greens<br/>or above 5.0 tomatoes}
+    EC -->|YES| Osmotic[Osmotic stress<br/>Dilute with plain water<br/>Partial reservoir change]
     EC -->|NO| Wind
 
     Wind{Windy and hot outside?}
-    Wind -->|YES| Transpiration[Transpiration exceeding uptake\nConsider windbreak, shade cloth]
-    Wind -->|NO| Unusual[Check unusual causes:\nRoot mat blocking channel flow\nBlocked inlet tube\npH extremely out of range below 4.5]
+    Wind -->|YES| Transpiration[Transpiration exceeding uptake<br/>Consider windbreak, shade cloth]
+    Wind -->|NO| Unusual[Check unusual causes:<br/>Root mat blocking channel flow<br/>Blocked inlet tube<br/>pH extremely out of range below 4.5]
 ```
 
 ---
@@ -428,6 +508,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## SECTION C: System and Equipment Problems
 
 ---
@@ -571,6 +655,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## SECTION D: Multiple Simultaneous Symptoms
 
 Real-world problems rarely present as a single textbook symptom. When you're seeing **two or more symptoms at once**, use this section to narrow down the root cause faster than working through individual symptom sections.
@@ -652,17 +740,17 @@ flowchart TD
 
     Start --> HowMany{How many plants affected?}
 
-    HowMany -->|ONE plant| Single[Likely plant-specific:\n- Root damage on that plant\n- Pest on that plant\n- Blocked net pot\n- That plant is end-of-life]
+    HowMany -->|ONE plant| Single[Likely plant-specific:<br/>- Root damage on that plant<br/>- Pest on that plant<br/>- Blocked net pot<br/>- That plant is end-of-life]
 
-    HowMany -->|Multiple plants\nSAME channel| Channel[Likely channel-specific:\n- Blocked inlet tube\n- Root mat blocking flow\n- Slope problem creating dry spot\nCheck that channel individually]
+    HowMany -->|Multiple plants<br/>SAME channel| Channel[Likely channel-specific:<br/>- Blocked inlet tube<br/>- Root mat blocking flow<br/>- Slope problem creating dry spot<br/>Check that channel individually]
 
-    HowMany -->|Multiple plants\nDIFFERENT channels| System[System-level problem:\n- Reservoir issue pH/EC/temp\n- Pump problem\n- Pythium spreading\nCheck reservoir metrics first]
+    HowMany -->|Multiple plants<br/>DIFFERENT channels| System[System-level problem:<br/>- Reservoir issue pH/EC/temp<br/>- Pump problem<br/>- Pythium spreading<br/>Check reservoir metrics first]
 
-    System --> Reservoir{Check reservoir:\npH, EC, temp, clarity}
-    Reservoir -->|Abnormal| FixRes[Fix the abnormal metric\nSee Sections A1–A5]
-    Reservoir -->|All normal| Roots{Inspect roots\non worst plant}
-    Roots -->|Brown/slimy| Pythium[Pythium — see guide/07\nFull system response needed]
-    Roots -->|White/healthy| Mystery[Rare: environmental stress\nCheck wind, recent weather,\nshade cloth deployment]
+    System --> Reservoir{Check reservoir:<br/>pH, EC, temp, clarity}
+    Reservoir -->|Abnormal| FixRes[Fix the abnormal metric<br/>See Sections A1–A5]
+    Reservoir -->|All normal| Roots{Inspect roots<br/>on worst plant}
+    Roots -->|Brown/slimy| Pythium[Pythium — see guide/07<br/>Full system response needed]
+    Roots -->|White/healthy| Mystery[Rare: environmental stress<br/>Check wind, recent weather,<br/>shade cloth deployment]
 ```
 
 ### D5: Rapid Onset (Problem Appeared Overnight or Within Hours)
@@ -692,6 +780,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## SECTION E: Master Decision Flowchart
 
 ```mermaid
@@ -700,34 +792,40 @@ flowchart TD
 
     Start --> Wilting{Are plants wilting?}
     Wilting -->|YES| PumpQ{Is pump running?}
-    PumpQ -->|NO| FixPump[Fix pump immediately\nsee C1]
-    PumpQ -->|YES| CheckRoots[Check roots brown = Pythium\nCheck EC too high?\nCheck reservoir temperature]
+    PumpQ -->|NO| FixPump[Fix pump immediately<br/>see C1]
+    PumpQ -->|YES| CheckRoots[Check roots brown = Pythium<br/>Check EC too high?<br/>Check reservoir temperature]
     Wilting -->|NO| Yellowing
 
     Yellowing{Are leaves yellowing?}
-    Yellowing -->|YES| pHCheck{Check pH first\npH in range?}
-    pHCheck -->|Wrong| FixpH[Fix pH\nwait 24h\nreassess]
-    pHCheck -->|Correct| CheckEC_B1[Check EC\nIdentify symptom location\nsee B1]
+    Yellowing -->|YES| pHCheck{Check pH first<br/>pH in range?}
+    pHCheck -->|Wrong| FixpH[Fix pH<br/>wait 24h<br/>reassess]
+    pHCheck -->|Correct| CheckEC_B1[Check EC<br/>Identify symptom location<br/>see B1]
     Yellowing -->|NO| Spots
 
-    Spots{Discolouration, spots,\nor mould on leaves?}
-    Spots -->|YES| Pests[See guide/07\nPests and Disease\nidentify and treat]
+    Spots{Discolouration, spots,<br/>or mould on leaves?}
+    Spots -->|YES| Pests[See guide/07<br/>Pests and Disease<br/>identify and treat]
     Spots -->|NO| SolnColor
 
-    SolnColor{Is the solution\ndiscoloured?}
-    SolnColor -->|YES| AlgaeRot[Green = algae\nBrown = root rot\nCloudy = bacteria\nsee A5]
+    SolnColor{Is the solution<br/>discoloured?}
+    SolnColor -->|YES| AlgaeRot[Green = algae<br/>Brown = root rot<br/>Cloudy = bacteria<br/>see A5]
     SolnColor -->|NO| ECRange
 
-    ECRange{Is EC outside\ntarget range?}
+    ECRange{Is EC outside<br/>target range?}
     ECRange -->|HIGH| DilutEC[Dilute or change reservoir]
     ECRange -->|LOW| AddNutes[Add nutrients]
     ECRange -->|In range| Structural
 
-    Structural{Structural issues?\noverflow, no flow, leaks}
-    Structural -->|YES| SectionC[See relevant section\nin C — C1 through C5]
-    Structural -->|NO| AllGood[Plants growing and metrics in range:\nYou may be expecting too much too soon\nwait and observe]
+    Structural{Structural issues?<br/>overflow, no flow, leaks}
+    Structural -->|YES| SectionC[See relevant section<br/>in C — C1 through C5]
+    Structural -->|NO| AllGood[Plants growing and metrics in range:<br/>You may be expecting too much too soon<br/>wait and observe]
 ```
 
 ---
 
-*Next: [`guide/10-climate-management.md`](10-climate-management.md) — Heat, cold, wind, rain, and seasonal strategy*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/10-climate-management.md`](10-climate-management.md) — Heat, cold, wind, rain, and seasonal strategy*

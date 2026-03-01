@@ -3,6 +3,64 @@
 
 ---
 
+## Table of Contents
+
+- [1. The Outdoor NFT Vulnerability Profile](#1-the-outdoor-nft-vulnerability-profile)
+- [2. Integrated Pest Management (IPM) Framework](#2-integrated-pest-management-ipm-framework)
+  - [Scouting Protocol](#scouting-protocol)
+- [3. Common Pests](#3-common-pests)
+  - [APHIDS](#aphids)
+  - [FUNGUS GNATS (Bradysia spp.)](#fungus-gnats-bradysia-spp)
+  - [SPIDER MITES (Tetranychus urticae)](#spider-mites-tetranychus-urticae)
+  - [WHITEFLIES](#whiteflies)
+  - [SLUGS AND SNAILS](#slugs-and-snails)
+  - [CATERPILLARS / MOTHS](#caterpillars-moths)
+  - [THRIPS](#thrips)
+- [4. Common Diseases](#4-common-diseases)
+  - [PYTHIUM ROOT ROT](#pythium-root-rot)
+  - [POWDERY MILDEW](#powdery-mildew)
+  - [BOTRYTIS (GREY MOULD)](#botrytis-grey-mould)
+  - [FUSARIUM WILT](#fusarium-wilt)
+  - [DOWNY MILDEW](#downy-mildew)
+  - [DAMPING OFF](#damping-off)
+- [5. Pesticide Pre-Harvest Interval (PHI) Reference](#5-pesticide-pre-harvest-interval-phi-reference)
+- [6. Beneficial Insects: Attracting and Using Them](#6-beneficial-insects-attracting-and-using-them)
+  - [Naturally Occurring Beneficials (Attract to Your Garden)](#naturally-occurring-beneficials-attract-to-your-garden)
+  - [Purchased Biological Controls](#purchased-biological-controls)
+- [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
+
+
+## Table of Contents
+
+- [1. The Outdoor NFT Vulnerability Profile](#1-the-outdoor-nft-vulnerability-profile)
+- [2. Integrated Pest Management (IPM) Framework](#2-integrated-pest-management-ipm-framework)
+  - [Scouting Protocol](#scouting-protocol)
+- [3. Common Pests](#3-common-pests)
+  - [APHIDS](#aphids)
+  - [FUNGUS GNATS (Bradysia spp.)](#fungus-gnats-bradysia-spp)
+  - [SPIDER MITES (Tetranychus urticae)](#spider-mites-tetranychus-urticae)
+  - [WHITEFLIES](#whiteflies)
+  - [SLUGS AND SNAILS](#slugs-and-snails)
+  - [CATERPILLARS / MOTHS](#caterpillars-moths)
+  - [THRIPS](#thrips)
+- [4. Common Diseases](#4-common-diseases)
+  - [PYTHIUM ROOT ROT](#pythium-root-rot)
+  - [POWDERY MILDEW](#powdery-mildew)
+  - [BOTRYTIS (GREY MOULD)](#botrytis-grey-mould)
+  - [FUSARIUM WILT](#fusarium-wilt)
+  - [DOWNY MILDEW](#downy-mildew)
+  - [DAMPING OFF](#damping-off)
+- [5. Pesticide Pre-Harvest Interval (PHI) Reference](#5-pesticide-pre-harvest-interval-phi-reference)
+- [6. Beneficial Insects: Attracting and Using Them](#6-beneficial-insects-attracting-and-using-them)
+  - [Naturally Occurring Beneficials (Attract to Your Garden)](#naturally-occurring-beneficials-attract-to-your-garden)
+  - [Purchased Biological Controls](#purchased-biological-controls)
+- [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. The Outdoor NFT Vulnerability Profile
 
 Growing outdoors exposes your system to the full range of garden pests and diseases. However, hydroponics has a different risk profile than soil growing:
@@ -22,17 +80,21 @@ Growing outdoors exposes your system to the full range of garden pests and disea
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 2. Integrated Pest Management (IPM) Framework
 
 IPM is a systematic, evidence-based approach to pest management that prioritises prevention, monitoring, and targeted intervention — minimising chemical use while maximising effectiveness.
 
 ```mermaid
 flowchart TD
-    A["1. PREVENTION\nGood practices before problems start\nSanitation · airflow · healthy plants · clean water"]
-    B["2. PHYSICAL / CULTURAL CONTROLS\nRemove pests by hand · use barriers · traps\nYellow sticky traps · copper tape · netting · row cover"]
-    C["3. BIOLOGICAL CONTROLS\nIntroduce or encourage natural predators\nLadybugs · lacewings · parasitic wasps · Bt bacteria"]
-    D["4. ORGANIC / SOFT CHEMICAL CONTROLS\nNeem oil · insecticidal soap · pyrethrin · spinosad\nMinimal environmental impact · short pre-harvest interval"]
-    E["5. SYNTHETIC CHEMICAL CONTROLS — last resort\nSystemic pesticides · synthetic pyrethroids\nOnly if all other methods fail · full PHI observance"]
+    A["1. PREVENTION<br/>Good practices before problems start<br/>Sanitation · airflow · healthy plants · clean water"]
+    B["2. PHYSICAL / CULTURAL CONTROLS<br/>Remove pests by hand · use barriers · traps<br/>Yellow sticky traps · copper tape · netting · row cover"]
+    C["3. BIOLOGICAL CONTROLS<br/>Introduce or encourage natural predators<br/>Ladybugs · lacewings · parasitic wasps · Bt bacteria"]
+    D["4. ORGANIC / SOFT CHEMICAL CONTROLS<br/>Neem oil · insecticidal soap · pyrethrin · spinosad<br/>Minimal environmental impact · short pre-harvest interval"]
+    E["5. SYNTHETIC CHEMICAL CONTROLS — last resort<br/>Systemic pesticides · synthetic pyrethroids<br/>Only if all other methods fail · full PHI observance"]
 
     A --> B --> C --> D --> E
 ```
@@ -52,6 +114,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 3. Common Pests
 
 ---
@@ -66,8 +132,8 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A["● ● ● ● ●\ncluster of aphids\n~1–2mm actual size"]
-    B["pear-shaped body\ntwo cornicles (tail tubes) on back\nsix legs · soft body · easily squished"]
+    A["● ● ● ● ●<br/>cluster of aphids<br/>~1–2mm actual size"]
+    B["pear-shaped body<br/>two cornicles (tail tubes) on back<br/>six legs · soft body · easily squished"]
     A --> B
 ```
 
@@ -317,6 +383,10 @@ flowchart LR
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 4. Common Diseases
 
 ---
@@ -333,8 +403,8 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    H["HEALTHY ROOTS\nColour: White\nTexture: Firm, fine white hairs\nSmell: Neutral"]
-    P["PYTHIUM-INFECTED ROOTS\nColour: Brown / grey\nTexture: Slimy, mushy, falls apart\nSmell: Foul — sewer / rotten odour in reservoir"]
+    H["HEALTHY ROOTS<br/>Colour: White<br/>Texture: Firm, fine white hairs<br/>Smell: Neutral"]
+    P["PYTHIUM-INFECTED ROOTS<br/>Colour: Brown / grey<br/>Texture: Slimy, mushy, falls apart<br/>Smell: Foul — sewer / rotten odour in reservoir"]
 ```
 
 **Cause:** Pythium is an oomycete (water mould) that thrives in:
@@ -509,6 +579,10 @@ flowchart LR
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 5. Pesticide Pre-Harvest Interval (PHI) Reference
 
 PHI is the number of days that must pass between the last application and harvest.
@@ -529,6 +603,10 @@ PHI is the number of days that must pass between the last application and harves
 > **Rule:** When in doubt, do not spray within 3 days of harvest. Wash all produce thoroughly. For anything systemic or unknown, err on the side of caution or discard the plant.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Beneficial Insects: Attracting and Using Them
 
@@ -559,6 +637,10 @@ Available from specialist suppliers (Koppert, Neudorff, BioBest):
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 7. Sterilisation Protocol After Disease Outbreak
 
 When a significant pest outbreak or disease (especially Pythium, Fusarium, or severe mould) is detected:
@@ -588,4 +670,10 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 
 ---
 
-*Next: [`guide/08-system-maintenance.md`](08-system-maintenance.md) — Daily, weekly, monthly, and seasonal schedules*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/08-system-maintenance.md`](08-system-maintenance.md) — Daily, weekly, monthly, and seasonal schedules*

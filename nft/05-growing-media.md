@@ -3,6 +3,100 @@
 
 ---
 
+## Table of Contents
+
+- [1. Why NFT Uses Minimal Media](#1-why-nft-uses-minimal-media)
+- [2. Net Pot Sizes](#2-net-pot-sizes)
+  - [Sizes for This System](#sizes-for-this-system)
+  - [Net Pot Materials](#net-pot-materials)
+  - [Hole Drilling](#hole-drilling)
+- [3. Clay Pebbles (LECA — Lightweight Expanded Clay Aggregate)](#3-clay-pebbles-leca-lightweight-expanded-clay-aggregate)
+  - [What They Are](#what-they-are)
+  - [Properties](#properties)
+  - [Preparation Before First Use](#preparation-before-first-use)
+  - [How to Use in NFT](#how-to-use-in-nft)
+  - [Reuse and Sterilisation](#reuse-and-sterilisation)
+- [4. Rockwool (Mineral Wool / Stone Wool)](#4-rockwool-mineral-wool-stone-wool)
+  - [What It Is](#what-it-is)
+  - [Properties](#properties)
+  - [Types](#types)
+  - [Critical: pH Conditioning](#critical-ph-conditioning)
+  - [How to Use for Seed Germination](#how-to-use-for-seed-germination)
+  - [Health and Safety Note](#health-and-safety-note)
+  - [Disposal](#disposal)
+- [5. Rapid Rooter / Jiffy Plugs (Alternative to Rockwool)](#5-rapid-rooter-jiffy-plugs-alternative-to-rockwool)
+  - [Comparison with Rockwool](#comparison-with-rockwool)
+- [6. Coco Coir: The Zone C Media](#6-coco-coir-the-zone-c-media)
+  - [Properties](#properties)
+  - [Coco Coir Types](#coco-coir-types)
+  - [Cal-Mag Warning](#cal-mag-warning)
+  - [Media Mix for Zone C Grow Bags](#media-mix-for-zone-c-grow-bags)
+- [7. Perlite](#7-perlite)
+  - [Properties](#properties)
+  - [Uses](#uses)
+  - [Note on Dust](#note-on-dust)
+- [8. Vermiculite](#8-vermiculite)
+  - [Properties](#properties)
+  - [Uses in This System](#uses-in-this-system)
+- [9. What NOT to Use](#9-what-not-to-use)
+- [10. Germination Methods: Side-by-Side Comparison](#10-germination-methods-side-by-side-comparison)
+  - [Transplanting from Soil to NFT (If You Start in Soil)](#transplanting-from-soil-to-nft-if-you-start-in-soil)
+- [11. Media Reuse and Sterilisation](#11-media-reuse-and-sterilisation)
+  - [Clay Pebbles (Multi-season reuse)](#clay-pebbles-multi-season-reuse)
+  - [Rockwool Cubes](#rockwool-cubes)
+  - [Coco Coir (Zone C grow bags)](#coco-coir-zone-c-grow-bags)
+- [12. Quick Reference: Media Selection Guide](#12-quick-reference-media-selection-guide)
+
+
+## Table of Contents
+
+- [1. Why NFT Uses Minimal Media](#1-why-nft-uses-minimal-media)
+- [2. Net Pot Sizes](#2-net-pot-sizes)
+  - [Sizes for This System](#sizes-for-this-system)
+  - [Net Pot Materials](#net-pot-materials)
+  - [Hole Drilling](#hole-drilling)
+- [3. Clay Pebbles (LECA — Lightweight Expanded Clay Aggregate)](#3-clay-pebbles-leca-lightweight-expanded-clay-aggregate)
+  - [What They Are](#what-they-are)
+  - [Properties](#properties)
+  - [Preparation Before First Use](#preparation-before-first-use)
+  - [How to Use in NFT](#how-to-use-in-nft)
+  - [Reuse and Sterilisation](#reuse-and-sterilisation)
+- [4. Rockwool (Mineral Wool / Stone Wool)](#4-rockwool-mineral-wool-stone-wool)
+  - [What It Is](#what-it-is)
+  - [Properties](#properties)
+  - [Types](#types)
+  - [Critical: pH Conditioning](#critical-ph-conditioning)
+  - [How to Use for Seed Germination](#how-to-use-for-seed-germination)
+  - [Health and Safety Note](#health-and-safety-note)
+  - [Disposal](#disposal)
+- [5. Rapid Rooter / Jiffy Plugs (Alternative to Rockwool)](#5-rapid-rooter-jiffy-plugs-alternative-to-rockwool)
+  - [Comparison with Rockwool](#comparison-with-rockwool)
+- [6. Coco Coir: The Zone C Media](#6-coco-coir-the-zone-c-media)
+  - [Properties](#properties)
+  - [Coco Coir Types](#coco-coir-types)
+  - [Cal-Mag Warning](#cal-mag-warning)
+  - [Media Mix for Zone C Grow Bags](#media-mix-for-zone-c-grow-bags)
+- [7. Perlite](#7-perlite)
+  - [Properties](#properties)
+  - [Uses](#uses)
+  - [Note on Dust](#note-on-dust)
+- [8. Vermiculite](#8-vermiculite)
+  - [Properties](#properties)
+  - [Uses in This System](#uses-in-this-system)
+- [9. What NOT to Use](#9-what-not-to-use)
+- [10. Germination Methods: Side-by-Side Comparison](#10-germination-methods-side-by-side-comparison)
+  - [Transplanting from Soil to NFT (If You Start in Soil)](#transplanting-from-soil-to-nft-if-you-start-in-soil)
+- [11. Media Reuse and Sterilisation](#11-media-reuse-and-sterilisation)
+  - [Clay Pebbles (Multi-season reuse)](#clay-pebbles-multi-season-reuse)
+  - [Rockwool Cubes](#rockwool-cubes)
+  - [Coco Coir (Zone C grow bags)](#coco-coir-zone-c-grow-bags)
+- [12. Quick Reference: Media Selection Guide](#12-quick-reference-media-selection-guide)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. Why NFT Uses Minimal Media
 
 One of NFT's key advantages is that it requires **almost no growing media**. Unlike soil or media-bed hydroponics (such as ebb-and-flow or Dutch buckets), NFT plants are supported by net pots containing just enough material to:
@@ -18,8 +112,8 @@ flowchart TD
     subgraph W1["Week 1–2 — Seedling Stage"]
         direction TB
         NP1["NET POT"]
-        CP1["clay pebbles\n(media is key — holding the rockwool cube + plant)"]
-        RW1["rockwool cube\n(germination plug)"]
+        CP1["clay pebbles<br/>(media is key — holding the rockwool cube + plant)"]
+        RW1["rockwool cube<br/>(germination plug)"]
         SR1["seedling roots"]
         NP1 --> CP1 --> RW1 --> SR1
     end
@@ -27,10 +121,10 @@ flowchart TD
     subgraph W2["Week 3–4 — Roots Reach Channel"]
         direction TB
         NP2["NET POT"]
-        CP2["clay pebbles\n(now mostly structural)"]
-        RW2["rockwool cube\n(mostly structural)"]
+        CP2["clay pebbles<br/>(now mostly structural)"]
+        RW2["rockwool cube<br/>(mostly structural)"]
         RM["root mass extends DOWN into channel"]
-        NF["~~~ nutrient film ~~~\n(plant now fed directly from film)"]
+        NF["~~~ nutrient film ~~~<br/>(plant now fed directly from film)"]
         NP2 --> CP2 --> RW2 --> RM --> NF
     end
 
@@ -38,6 +132,10 @@ flowchart TD
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Net Pot Sizes
 
@@ -63,9 +161,9 @@ When building channels, holes must be drilled to fit net pots snugly:
 
 ```mermaid
 flowchart TD
-    A["─── channel top surface ───\n(net pot lips rest here)"]
-    B["NET POT\n(sits in drilled hole;\nbottom hangs 2–3cm inside channel)"]
-    C["─── channel floor ───\n(nutrient film runs here)"]
+    A["─── channel top surface ───<br/>(net pot lips rest here)"]
+    B["NET POT<br/>(sits in drilled hole;<br/>bottom hangs 2–3cm inside channel)"]
+    C["─── channel floor ───<br/>(nutrient film runs here)"]
 
     A --> B --> C
 
@@ -83,6 +181,10 @@ Use a **hole saw drill bit** of the correct size:
 - 75mm net pot: use a 71–73mm hole saw
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Clay Pebbles (LECA — Lightweight Expanded Clay Aggregate)
 
@@ -147,6 +249,10 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Rockwool (Mineral Wool / Stone Wool)
 
@@ -221,6 +327,10 @@ Rockwool is not biodegradable and should not go in compost. Bag and place in gen
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 5. Rapid Rooter / Jiffy Plugs (Alternative to Rockwool)
 
 Rapid Rooter plugs (by General Hydroponics) and Jiffy peat plugs are pre-formed germination plugs made from composted organic materials bound with a polymer.
@@ -240,6 +350,10 @@ Rapid Rooter plugs (by General Hydroponics) and Jiffy peat plugs are pre-formed 
 **Rapid Rooter advantage:** No pH conditioning needed — just moisten with pH-adjusted nutrient solution (EC 0.4) and use. Excellent for beginners.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Coco Coir: The Zone C Media
 
@@ -300,6 +414,10 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 7. Perlite
 
 Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~870°C, causing it to expand like popcorn into lightweight, highly porous granules.
@@ -328,6 +446,10 @@ New perlite contains fine silica dust — rinse before use or wet it down before
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 8. Vermiculite
 
 Vermiculite is a naturally occurring mineral that expands when heated. Unlike perlite (which drains freely), vermiculite holds moisture and creates a sponge-like microenvironment.
@@ -349,6 +471,10 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 9. What NOT to Use
 
 | Media | Problem | Verdict |
@@ -361,6 +487,10 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 | **Aquarium gravel (decorative)** | May be pH-neutral, but no aeration, no moisture retention — poor media | Only acceptable in emergency |
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Germination Methods: Side-by-Side Comparison
 
@@ -394,6 +524,10 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Media Reuse and Sterilisation
 
@@ -432,6 +566,10 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 12. Quick Reference: Media Selection Guide
 
 | Zone | Component | Media | Net Pot |
@@ -447,4 +585,10 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 
 ---
 
-*Next: [`guide/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*

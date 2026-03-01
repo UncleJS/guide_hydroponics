@@ -21,15 +21,19 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 1. The Outdoor Climate Challenge
 
 A hydroponic plant lives at the intersection of two environments:
 
 ```mermaid
 flowchart TD
-    A["**AERIAL ENVIRONMENT**\nAir temp · Humidity · Wind · UV\nRain · Light · CO₂"]
+    A["**AERIAL ENVIRONMENT**<br/>Air temp · Humidity · Wind · UV<br/>Rain · Light · CO₂"]
     B["**PLANT**"]
-    C["**ROOT ZONE ENVIRONMENT**\nSolution temp · EC · pH · DO₂\nReservoir temp · Flow rate"]
+    C["**ROOT ZONE ENVIRONMENT**<br/>Solution temp · EC · pH · DO₂<br/>Reservoir temp · Flow rate"]
 
     A -->|affects| B
     B -->|affects| C
@@ -49,6 +53,10 @@ Both environments must stay within acceptable ranges simultaneously. When one go
 | Daily light integral (DLI) | 12–25 mol/m²/day | <8 (low light stress) |
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Temperate Seasonal Calendar
 
@@ -114,6 +122,10 @@ PHASE 4 — WINTER REST (Dec–Feb)
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Temperature Effects on the Hydroponic System
 
@@ -184,6 +196,10 @@ Warmer solution accelerates biological activity (algae, bacteria) and degasses C
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 4. Summer Heat Management
 
 ### 4.1 Priority Stack
@@ -229,7 +245,7 @@ Shade cloth reduces both air and surface temperature around the system. Choose s
 ```mermaid
 flowchart TD
     A["**CORRECT** — Shade cloth above, with air gap"]
-    B["Shade cloth\n(mounted on frame)"]
+    B["Shade cloth<br/>(mounted on frame)"]
     C["↕ air gap 30–60 cm"]
     D["channel │ channel │ channel"]
     E["→ Air gap allows convective cooling"]
@@ -306,6 +322,10 @@ In high temperatures, plants transpire more heavily, uptake water faster than nu
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 5. Cold and Frost Management
 
 ### 5.1 How Cold Damages Hydroponic Plants
@@ -320,12 +340,12 @@ Cold affects plants in two ways:
 
 ```mermaid
 flowchart LR
-    A["Kale\n**–10 °C**\nVery hardy"]
-    B["Spinach\n**–6 °C**"]
-    C["Lettuce\n**–2 °C**"]
-    D["Parsley\n**–4 °C**"]
-    E["Cilantro\n**–1 °C**"]
-    F["Basil\n**0 °C**\nFrost-tender"]
+    A["Kale<br/>**–10 °C**<br/>Very hardy"]
+    B["Spinach<br/>**–6 °C**"]
+    C["Lettuce<br/>**–2 °C**"]
+    D["Parsley<br/>**–4 °C**"]
+    E["Cilantro<br/>**–1 °C**"]
+    F["Basil<br/>**0 °C**<br/>Frost-tender"]
 
     A --- B --- D --- C --- E --- F
 
@@ -416,6 +436,10 @@ Extended (>7 days below 5°C): Consider moving containers inside
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Wind Management
 
 ### 6.1 How Wind Affects the System
@@ -459,8 +483,8 @@ A physical windbreak reduces wind speed dramatically on the leeward side. The pr
 
 ```mermaid
 flowchart LR
-    WB["Windbreak\nH = 1.5 m\n(hedge / fence /\nslatted board)"]
-    PZ["Protected zone\n10–15 m leeward\n~70% wind reduction"]
+    WB["Windbreak<br/>H = 1.5 m<br/>(hedge / fence /<br/>slatted board)"]
+    PZ["Protected zone<br/>10–15 m leeward<br/>~70% wind reduction"]
 
     WB -->|wind shadow| PZ
 ```
@@ -488,6 +512,10 @@ In sustained windy conditions (Force 4–5), monitor EC more frequently:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 7. Rain Management
 
 ### 7.1 Rain and Reservoir Dilution
@@ -510,7 +538,7 @@ A 12% drop in EC is generally acceptable. But in a sustained downpour where 20�
 ```mermaid
 flowchart TD
     subgraph A["Option A — Rigid lid with pipe cutouts"]
-        A1["LID (wood / polycarbonate)\nwith cutouts for inlet and outlet pipes"]
+        A1["LID (wood / polycarbonate)<br/>with cutouts for inlet and outlet pipes"]
         A2["Reservoir"]
         A3["Foam seal around pipe holes prevents ingress"]
         A1 --> A2 --> A3
@@ -565,6 +593,10 @@ Harvest roof runoff into a covered water butt and use it to top up the reservoir
 > - Roofs with moss killer treatments applied in the last 3 months
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Humidity and Airflow
 
@@ -632,6 +664,10 @@ During periods of persistent high humidity (>80% RH), especially in late summer 
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 9. Season Extension Techniques
 
 ### 9.1 Cold Frames
@@ -660,9 +696,9 @@ A polytunnel (hoop tunnel) provides significant season extension and weather pro
 ```mermaid
 block-beta
     columns 1
-    film["Polythene film (200 micron UV-stabilised)\narched over hoops"]
+    film["Polythene film (200 micron UV-stabilised)<br/>arched over hoops"]
     interior["[ch]         [ch]         [ch]   ← NFT channels"]
-    ground["Ground\n(hoops: 25 mm poly pipe or metal conduit, 2 m long)"]
+    ground["Ground<br/>(hoops: 25 mm poly pipe or metal conduit, 2 m long)"]
 ```
 
 **Performance:**
@@ -693,6 +729,10 @@ For year-round production of some crops, consider a simple indoor setup during t
 A 50W LED panel running 16 h/day ≈ 0.05 kW × 16 h = 0.8 kWh/day ≈ $0.15–$0.20/day electricity.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Putting It Together — Seasonal Action Plans
 
@@ -778,6 +818,10 @@ NOVEMBER:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 11. Climate Monitoring Setup
 
 ### 11.1 Minimum Monitoring Kit
@@ -830,19 +874,23 @@ Actions taken today:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## 12. Quick-Reference Decision Tree
 
 ```mermaid
 flowchart TD
     START(["DAILY OUTDOOR CLIMATE CHECK"])
-    Q1{"Solution temp\nabove 24 °C?"}
-    HEAT["Implement heat protocol\n(shade, ice, lower EC,\nincrease aeration)"]
-    Q2{"Solution temp\nbelow 15 °C?"}
-    COLD["Implement cold protocol\n(fleece, heater,\nharvest tender crops)"]
-    Q3{"Wind &gt; Force 4\n(28+ km/h)?"}
-    WIND["Check EC for\nwind-driven concentration;\ntop up water if EC +10%"]
-    Q4{"Rained\nsignificantly?"}
-    RAIN["Check EC and pH after rain;\nre-dose if needed"]
+    Q1{"Solution temp<br/>above 24 °C?"}
+    HEAT["Implement heat protocol<br/>(shade, ice, lower EC,<br/>increase aeration)"]
+    Q2{"Solution temp<br/>below 15 °C?"}
+    COLD["Implement cold protocol<br/>(fleece, heater,<br/>harvest tender crops)"]
+    Q3{"Wind &gt; Force 4<br/>(28+ km/h)?"}
+    WIND["Check EC for<br/>wind-driven concentration;<br/>top up water if EC +10%"]
+    Q4{"Rained<br/>significantly?"}
+    RAIN["Check EC and pH after rain;<br/>re-dose if needed"]
     OK(["All good — log and continue"])
 
     START --> Q1
@@ -857,6 +905,10 @@ flowchart TD
 ```
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Summary
 

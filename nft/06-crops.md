@@ -3,6 +3,80 @@
 
 ---
 
+## Table of Contents
+
+- [How to Use This Guide](#how-to-use-this-guide)
+- [Quick Reference — Zone, Channel & Crop Map](#quick-reference-zone-channel-crop-map)
+- [LEAFY GREENS & HERBS (Zone A — NFT Channels)](#leafy-greens-herbs-zone-a-nft-channels)
+  - [LETTUCE — Butter, Romaine, Loose-Leaf](#lettuce-butter-romaine-loose-leaf)
+  - [SPINACH](#spinach)
+  - [KALE](#kale)
+  - [BASIL (Sweet / Thai / Purple)](#basil-sweet-thai-purple)
+  - [CILANTRO / CORIANDER](#cilantro-coriander)
+  - [MINT](#mint)
+  - [CHIVES](#chives)
+  - [PARSLEY (Flat-Leaf / Curly)](#parsley-flat-leaf-curly)
+- [FRUITING CROPS (Zone A — CH4, Wide Channel)](#fruiting-crops-zone-a-ch4-wide-channel)
+  - [CHERRY TOMATOES](#cherry-tomatoes)
+  - [PEPPERS (Sweet Bell / Chilli)](#peppers-sweet-bell-chilli)
+  - [STRAWBERRIES](#strawberries)
+- [MICROGREENS (Zone B — Tray Station)](#microgreens-zone-b-tray-station)
+  - [MICROGREENS — General Protocol](#microgreens-general-protocol)
+  - [Equipment & Supplies](#equipment-supplies)
+  - [Individual Crop Profiles](#individual-crop-profiles)
+  - [Per-Tray Yield Estimates](#per-tray-yield-estimates)
+  - [Succession Schedule — Staggered Production](#succession-schedule-staggered-production)
+  - [Harvest](#harvest)
+  - [Microgreens Troubleshooting](#microgreens-troubleshooting)
+- [ROOT VEGETABLES (Zone C — Grow Bags)](#root-vegetables-zone-c-grow-bags)
+  - [RADISHES](#radishes)
+  - [CARROTS](#carrots)
+  - [BEETROOT](#beetroot)
+- [Crop Rotation and Succession Planning](#crop-rotation-and-succession-planning)
+  - [Zone C — Root Vegetable Succession Planting](#zone-c-root-vegetable-succession-planting)
+  - [Succession Planting Schedule (CH1 — Lettuce Example)](#succession-planting-schedule-ch1-lettuce-example)
+  - [NFT Channel Rotation Between Seasons](#nft-channel-rotation-between-seasons)
+
+
+## Table of Contents
+
+- [How to Use This Guide](#how-to-use-this-guide)
+- [Quick Reference — Zone, Channel & Crop Map](#quick-reference-zone-channel-crop-map)
+- [LEAFY GREENS & HERBS (Zone A — NFT Channels)](#leafy-greens-herbs-zone-a-nft-channels)
+  - [LETTUCE — Butter, Romaine, Loose-Leaf](#lettuce-butter-romaine-loose-leaf)
+  - [SPINACH](#spinach)
+  - [KALE](#kale)
+  - [BASIL (Sweet / Thai / Purple)](#basil-sweet-thai-purple)
+  - [CILANTRO / CORIANDER](#cilantro-coriander)
+  - [MINT](#mint)
+  - [CHIVES](#chives)
+  - [PARSLEY (Flat-Leaf / Curly)](#parsley-flat-leaf-curly)
+- [FRUITING CROPS (Zone A — CH4, Wide Channel)](#fruiting-crops-zone-a-ch4-wide-channel)
+  - [CHERRY TOMATOES](#cherry-tomatoes)
+  - [PEPPERS (Sweet Bell / Chilli)](#peppers-sweet-bell-chilli)
+  - [STRAWBERRIES](#strawberries)
+- [MICROGREENS (Zone B — Tray Station)](#microgreens-zone-b-tray-station)
+  - [MICROGREENS — General Protocol](#microgreens-general-protocol)
+  - [Equipment & Supplies](#equipment-supplies)
+  - [Individual Crop Profiles](#individual-crop-profiles)
+  - [Per-Tray Yield Estimates](#per-tray-yield-estimates)
+  - [Succession Schedule — Staggered Production](#succession-schedule-staggered-production)
+  - [Harvest](#harvest)
+  - [Microgreens Troubleshooting](#microgreens-troubleshooting)
+- [ROOT VEGETABLES (Zone C — Grow Bags)](#root-vegetables-zone-c-grow-bags)
+  - [RADISHES](#radishes)
+  - [CARROTS](#carrots)
+  - [BEETROOT](#beetroot)
+- [Crop Rotation and Succession Planning](#crop-rotation-and-succession-planning)
+  - [Zone C — Root Vegetable Succession Planting](#zone-c-root-vegetable-succession-planting)
+  - [Succession Planting Schedule (CH1 — Lettuce Example)](#succession-planting-schedule-ch1-lettuce-example)
+  - [NFT Channel Rotation Between Seasons](#nft-channel-rotation-between-seasons)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## How to Use This Guide
 
 Each crop entry includes:
@@ -18,6 +92,10 @@ Each crop entry includes:
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## Quick Reference — Zone, Channel & Crop Map
 
 | Zone | Channel | Channel Size | Crops | Net Pot Size | Plant Sites |
@@ -32,6 +110,10 @@ Each crop entry includes:
 > **Total NFT plant sites: ~40** (33 in 75 mm channels + 7 in 100 mm channel). All channels are 2.4 m long with a 1:30 slope (80 mm drop). The system runs on an 80 L reservoir with a 600–800 L/h submersible pump delivering 1–2 L/min per channel.
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## LEAFY GREENS & HERBS (Zone A — NFT Channels)
 
@@ -176,7 +258,7 @@ Each crop entry includes:
 flowchart TD
     GT["[growing tip] ← remove this at harvest"]
     LP1["[leaf pair]"]
-    CUT["[leaf pair] ← CUT HERE above this node\ntwo new shoots will emerge here"]
+    CUT["[leaf pair] ← CUT HERE above this node<br/>two new shoots will emerge here"]
     LP2["[leaf pair]"]
     STEM["─── stem"]
 
@@ -331,6 +413,10 @@ flowchart TD
 ---
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## FRUITING CROPS (Zone A — CH4, Wide Channel)
 
@@ -494,6 +580,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## MICROGREENS (Zone B — Tray Station)
 
 ---
@@ -601,6 +691,10 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 ---
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
 
 ## ROOT VEGETABLES (Zone C — Grow Bags)
 
@@ -716,6 +810,10 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
+[↑ Back to TOC](#table-of-contents)
+
 ## Crop Rotation and Succession Planning
 
 ### Zone C — Root Vegetable Succession Planting
@@ -785,4 +883,10 @@ After a full channel crop completes:
 
 ---
 
-*Next: [`guide/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, and IPM*
+
+[↑ Back to TOC](#table-of-contents)
+
+
+[↑ Back to TOC](#table-of-contents)
+
+*Next: [`guide/nft/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, and IPM*
