@@ -100,16 +100,14 @@ flowchart TD
         MAN -->|inlet| CH3
         MAN -->|inlet| CH4
     end
-    subgraph ZB["ZONE B<br/>MICROGREENS STATION"]
+    subgraph ZB["ZONE B — MICROGREENS STATION"]
         direction LR
         SHELF["shelf"] --- T1["tray"] --- T2["tray"] --- T3["tray"] --- LED["LED panel above"]
     end
-    subgraph ZC["ZONE C<br/>ROOT VEG GROW BAGS"]
+    subgraph ZC["ZONE C — ROOT VEG GROW BAGS"]
         direction LR
         B1["bag"] --- B2["bag"] --- B3["bag"] --- B4["bag"] --- B5["bag"] --- B6["bag"]
     end
-    ZA --> ZB
-    ZB --> ZC
 ```
 
 **System specifications:**
