@@ -4,6 +4,65 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
 
 ---
 
+## Table of Contents
+
+- [1. Build Tier Overview](#1-build-tier-overview)
+- [2. Zone A — NFT System BOM](#2-zone-a-nft-system-bom)
+  - [2.1 Frame](#21-frame)
+  - [2.2 Channels](#22-channels)
+  - [2.3 Reservoir](#23-reservoir)
+  - [2.4 Pump and Aeration](#24-pump-and-aeration)
+  - [2.5 Plumbing](#25-plumbing)
+  - [2.6 Electrical](#26-electrical)
+  - [2.7 Monitoring and Testing](#27-monitoring-and-testing)
+  - [2.8 Growing Media (Zone A)](#28-growing-media-zone-a)
+  - [2.9 Nutrients](#29-nutrients)
+  - [2.10 Climate / Protection](#210-climate-protection)
+  - [Zone A Total (NFT System)](#zone-a-total-nft-system)
+- [3. Zone B — Microgreens Station BOM](#3-zone-b-microgreens-station-bom)
+- [4. Zone C — Root Veg Grow Bags BOM](#4-zone-c-root-veg-grow-bags-bom)
+- [5. Consumables and Ongoing Supplies](#5-consumables-and-ongoing-supplies)
+  - [Per Season (8–9 month outdoor season)](#per-season-89-month-outdoor-season)
+- [6. Tier Totals Summary](#6-tier-totals-summary)
+  - [Full 3-Zone System (All Zones)](#full-3-zone-system-all-zones)
+  - [How to Achieve the $100–$500 Stated Range](#how-to-achieve-the-100500-stated-range)
+- [7. Where to Buy](#7-where-to-buy)
+  - [7.1 Online — General](#71-online-general)
+  - [7.2 Online — Hydroponics Specialist](#72-online-hydroponics-specialist)
+  - [7.3 Local — Hardware / DIY Stores](#73-local-hardware-diy-stores)
+  - [7.4 Local — Garden Centres and Plant Nurseries](#74-local-garden-centres-and-plant-nurseries)
+  - [7.5 Buying Used / Secondhand](#75-buying-used-secondhand)
+  - [7.6 Nutrients — Sourcing the Masterblend Trio](#76-nutrients-sourcing-the-masterblend-trio)
+- [8. Cost-Saving Strategies](#8-cost-saving-strategies)
+  - [8.1 Repurpose Food-Grade Containers](#81-repurpose-food-grade-containers)
+  - [8.2 PVC Offcuts from Builders and Plumbers](#82-pvc-offcuts-from-builders-and-plumbers)
+  - [8.3 Buy Nutrients in Bulk](#83-buy-nutrients-in-bulk)
+  - [8.4 Make Your Own pH Buffers](#84-make-your-own-ph-buffers)
+  - [8.5 Seed Saving and Division](#85-seed-saving-and-division)
+  - [8.6 Reuse Growing Media](#86-reuse-growing-media)
+- [9. Running Costs](#9-running-costs)
+  - [9.1 Electricity](#91-electricity)
+  - [9.2 Water](#92-water)
+  - [9.3 Nutrient Costs (Masterblend Trio)](#93-nutrient-costs-masterblend-trio)
+  - [9.4 Full Annual Running Cost Summary](#94-full-annual-running-cost-summary)
+- [10. Yield Estimates and ROI](#10-yield-estimates-and-roi)
+  - [10.1 Zone A — NFT Expected Yields](#101-zone-a-nft-expected-yields)
+    - [Lettuce (Channel 1, 11 sites, ~230mm spacing)](#lettuce-channel-1-11-sites-230mm-spacing)
+    - [Herbs (Channel 3, 11 sites)](#herbs-channel-3-11-sites)
+    - [Cherry Tomatoes (Channel 4, 3–4 plants)](#cherry-tomatoes-channel-4-34-plants)
+    - [Strawberries (Channel 4, 4–6 plants)](#strawberries-channel-4-46-plants)
+  - [10.2 Zone B — Microgreens Yield](#102-zone-b-microgreens-yield)
+  - [10.3 Zone C — Root Veg Yield](#103-zone-c-root-veg-yield)
+  - [10.4 Total Annual Yield Value](#104-total-annual-yield-value)
+- [11. Payback Period Analysis](#11-payback-period-analysis)
+  - [11.1 Tier 2 — Standard Build Payback](#111-tier-2-standard-build-payback)
+  - [11.2 Tier 1 — Lean Build Payback](#112-tier-1-lean-build-payback)
+  - [11.3 Payback Summary Chart](#113-payback-summary-chart)
+  - [11.4 Non-Financial Value](#114-non-financial-value)
+- [Quick Reference — Budget at a Glance](#quick-reference-budget-at-a-glance)
+
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Build Tier Overview
 
@@ -692,6 +751,9 @@ xychart-beta
 ---
 
 > This completes the core guide series. For a full system overview and build timeline, see [PLAN.md](../PLAN.md).
+
+
+[↑ Back to TOC](#table-of-contents)
 
 > **Next:** [Guide 13 — Automation and Data Logging →](./13-automation.md) — budget-friendly sensor networks, ESP32 builds, dashboards, and automated pH/EC dosing from $15 to $300.
 

@@ -6,8 +6,13 @@ This script is fully IDEMPOTENT — safe to run multiple times.  On each run it:
   1. Strips any existing TOC block(s) and any existing back-link lines.
   2. Rebuilds a single, correct TOC and places one back-link before each section.
 
-For files 01–09 (needs_toc=True):  inserts TOC after the first '---' divider.
-For files 10–13 (needs_toc=False): TOC already hand-written; only inserts back-links.
+For all files except those in HAS_TOC: inserts auto-generated TOC after the
+first '---' divider, then inserts back-links before every ## section heading
+and before the final navigation line (*Next: or > **Next:**).
+
+For files in HAS_TOC (compare/ guides only): TOC is hand-written; only
+back-links are inserted/refreshed.
+
 Files in SKIP are left completely untouched.
 
 Usage:
@@ -45,11 +50,9 @@ SKIP = {
 
 # Files that already have a hand-written TOC (only insert back-links).
 # Includes all compare/ guide files (01–04) which have rich hand-written TOCs.
+# NOTE: files 10–13 were previously listed here but they do NOT have hand-written
+# TOCs — they need auto-generated ones, so they are NOT in this set.
 HAS_TOC = {
-    "10-climate-management.md",
-    "11-build-guide.md",
-    "12-budget-and-sourcing.md",
-    "13-automation.md",
     # compare/ files — all have hand-written TOCs
     "01-nutrients.md",
     "02-crops.md",
@@ -181,21 +184,33 @@ def process_file(filepath, needs_toc):
         lines = result
 
     # ----------------------------------------------------------------
-    # Step 3: Insert one back-link before each eligible ## heading
+    # Step 3: Insert one back-link before each eligible ## heading.
+    #
+    # Some files have a ## Subtitle immediately after the # Title (line 2).
+    # Others (files 10–13) have no subtitle — prose follows the # Title.
+    # We detect the subtitle by checking whether a ## heading appears as
+    # the second non-empty line of the file (right after the # Title).
     # ----------------------------------------------------------------
-    result2 = []
-    subtitle_done = False
 
+    # Identify subtitle text (if present) so we can skip it below.
+    subtitle_text = None
+    non_empty_count = 0
+    for line in lines:
+        if line.strip():
+            non_empty_count += 1
+            if non_empty_count == 2:
+                m2 = re.match(r"^##\s+(.+)$", line)
+                if m2:
+                    subtitle_text = m2.group(1).strip()
+                break
+
+    result2 = []
     for line in lines:
         m = re.match(r"^(##)\s+(.+)$", line)
         if m:
             text = m.group(2).strip()
-            if not subtitle_done:
-                # This is the ## Subtitle line — never add a back-link before it
-                subtitle_done = True
-                result2.append(line)
-                continue
-            if text == "Table of Contents":
+            # Never add a back-link before the ## Subtitle or the ## TOC heading
+            if text == subtitle_text or text == "Table of Contents":
                 result2.append(line)
                 continue
             # Ensure there's a blank line above the back-link
@@ -209,9 +224,12 @@ def process_file(filepath, needs_toc):
 
     final_content = "\n".join(result2)
 
-    # Step 4: Insert back-link before the final *Next: navigation line
+    # Step 4: Insert back-link before the final navigation line.
+    # Handles both formats:
+    #   *Next: ...          (ebb-and-flow style)
+    #   > **Next:** ...     (nft style blockquote)
     final_content = re.sub(
-        r"\n(\*Next:)",
+        r"\n(\*Next:|> \*\*Next:\*\*)",
         r"\n\n" + BACK_LINK_LINE + r"\n\n\1",
         final_content,
     )
@@ -238,7 +256,7 @@ def process_dir(guide_dir):
             continue
         fpath = os.path.join(guide_dir, fname)
         needs_toc = fname not in HAS_TOC
-        action = "TOC + back-links" if needs_toc else "back-links only"
+        action = "TOC + back-links" if needs_toc else "back-links only (hand-written TOC)"
         print(f"  Processing {fname} ({action})...")
         process_file(fpath, needs_toc)
 

@@ -4,6 +4,70 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 
 ---
 
+## Table of Contents
+
+- [1. The Outdoor Climate Challenge](#1-the-outdoor-climate-challenge)
+  - [Key variables to monitor outdoors](#key-variables-to-monitor-outdoors)
+- [2. Temperate Seasonal Calendar](#2-temperate-seasonal-calendar)
+  - [Grow window by zone](#grow-window-by-zone)
+  - [Season phases](#season-phases)
+- [3. Temperature Effects on the Hydroponic System](#3-temperature-effects-on-the-hydroponic-system)
+  - [3.1 Air Temperature vs. Root Zone Temperature](#31-air-temperature-vs-root-zone-temperature)
+  - [3.2 Dissolved Oxygen (DO₂) and Temperature](#32-dissolved-oxygen-do₂-and-temperature)
+  - [3.3 Nutrient Uptake and Temperature](#33-nutrient-uptake-and-temperature)
+  - [3.4 pH Drift and Temperature](#34-ph-drift-and-temperature)
+- [4. Summer Heat Management](#4-summer-heat-management)
+  - [4.1 Priority Stack](#41-priority-stack)
+  - [4.2 Shade Cloth](#42-shade-cloth)
+  - [4.3 Reservoir Insulation and Covering](#43-reservoir-insulation-and-covering)
+  - [4.4 Ice Bottle Method](#44-ice-bottle-method)
+  - [4.5 Adjusting Nutrient Solution in Heat](#45-adjusting-nutrient-solution-in-heat)
+  - [4.6 Crop Heat Thresholds](#46-crop-heat-thresholds)
+- [5. Cold and Frost Management](#5-cold-and-frost-management)
+  - [5.1 How Cold Damages Hydroponic Plants](#51-how-cold-damages-hydroponic-plants)
+  - [5.2 Frost Hardiness by Crop](#52-frost-hardiness-by-crop)
+  - [5.3 Protecting the System from Cold](#53-protecting-the-system-from-cold)
+    - [Horticultural Fleece (Frost Cloth)](#horticultural-fleece-frost-cloth)
+    - [Protecting the Reservoir in Cold](#protecting-the-reservoir-in-cold)
+    - [Channel and Pipe Protection](#channel-and-pipe-protection)
+  - [5.4 Minimum Operational Temperatures](#54-minimum-operational-temperatures)
+  - [5.5 Extended Cold Spells](#55-extended-cold-spells)
+- [6. Wind Management](#6-wind-management)
+  - [6.1 How Wind Affects the System](#61-how-wind-affects-the-system)
+  - [6.2 Wind Speed Reference](#62-wind-speed-reference)
+  - [6.3 Wind Management Strategies](#63-wind-management-strategies)
+    - [Windbreaks](#windbreaks)
+    - [Securing the Structure](#securing-the-structure)
+    - [Managing Wind-Driven EC Rise](#managing-wind-driven-ec-rise)
+- [7. Rain Management](#7-rain-management)
+  - [7.1 Rain and Reservoir Dilution](#71-rain-and-reservoir-dilution)
+  - [7.2 Rain Management Strategy](#72-rain-management-strategy)
+  - [7.3 After a Rain Event](#73-after-a-rain-event)
+  - [7.4 Benefiting from Rain](#74-benefiting-from-rain)
+- [8. Humidity and Airflow](#8-humidity-and-airflow)
+  - [8.1 Why Humidity Matters](#81-why-humidity-matters)
+  - [8.2 Humidity by Crop](#82-humidity-by-crop)
+  - [8.3 Improving Airflow Around the System](#83-improving-airflow-around-the-system)
+  - [8.4 Managing High Humidity Events](#84-managing-high-humidity-events)
+- [9. Season Extension Techniques](#9-season-extension-techniques)
+  - [9.1 Cold Frames](#91-cold-frames)
+  - [9.2 Polytunnels](#92-polytunnels)
+  - [9.3 Fleece Tunnels](#93-fleece-tunnels)
+  - [9.4 Moving Crops Indoors for Winter](#94-moving-crops-indoors-for-winter)
+- [10. Putting It Together — Seasonal Action Plans](#10-putting-it-together-seasonal-action-plans)
+  - [Spring Startup (March–April)](#spring-startup-marchapril)
+  - [Full Season (May–September)](#full-season-mayseptember)
+  - [Autumn Wind-Down (October–November)](#autumn-wind-down-octobernovember)
+  - [Winter (December–February)](#winter-decemberfebruary)
+- [11. Climate Monitoring Setup](#11-climate-monitoring-setup)
+  - [11.1 Minimum Monitoring Kit](#111-minimum-monitoring-kit)
+  - [11.2 Optional / Upgrade Monitoring](#112-optional-upgrade-monitoring)
+  - [11.3 Logbook Integration](#113-logbook-integration)
+- [12. Quick-Reference Decision Tree](#12-quick-reference-decision-tree)
+- [Summary](#summary)
+
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor Climate Challenge
 
@@ -888,6 +952,9 @@ flowchart TD
 | Winter | Freeze, system damage | Drain, store, maintain |
 
 The outdoor environment is unpredictable, but with systematic monitoring, a stocked toolkit (fleece, shade cloth, ice), and a daily 10-minute check routine, a temperate outdoor NFT system can produce continuously for 8–9 months of the year and be a rewarding, low-cost food source.
+
+
+[↑ Back to TOC](#table-of-contents)
 
 > **Next:** [Guide 11 — DIY Build Guide →](./11-build-guide.md)
 

@@ -3,6 +3,39 @@
 
 ---
 
+## Table of Contents
+
+- [1. Why Climate Matters Differently in Ebb & Flow](#1-why-climate-matters-differently-in-ebb-flow)
+- [2. Temperature — The Critical Variable](#2-temperature-the-critical-variable)
+  - [Solution Temperature Targets](#solution-temperature-targets)
+  - [How E&F Tables Respond to Temperature Differently from NFT](#how-ef-tables-respond-to-temperature-differently-from-nft)
+  - [Reservoir Thermal Profile — 100L Under-Table](#reservoir-thermal-profile-100l-under-table)
+- [3. Managing Heat — Summer Strategies](#3-managing-heat-summer-strategies)
+  - [Shade Cloth for Flood Tables](#shade-cloth-for-flood-tables)
+  - [Reservoir Cooling Strategies](#reservoir-cooling-strategies)
+  - [Flood Cycle Adjustments for Heat](#flood-cycle-adjustments-for-heat)
+- [4. Managing Cold — Frost Protection](#4-managing-cold-frost-protection)
+  - [Frost Risk Assessment](#frost-risk-assessment)
+  - [Protection Measures](#protection-measures)
+  - [Reservoir Freeze Risk — 100L Thermal Mass](#reservoir-freeze-risk-100l-thermal-mass)
+- [5. Wind — The Often-Overlooked Factor](#5-wind-the-often-overlooked-factor)
+  - [Wind Effects on Ebb & Flow Specifically](#wind-effects-on-ebb-flow-specifically)
+  - [Windbreak Options](#windbreak-options)
+- [6. Rain — A Unique Challenge for Open Flood Tables](#6-rain-a-unique-challenge-for-open-flood-tables)
+  - [Rain Dilution Mechanisms](#rain-dilution-mechanisms)
+  - [Rain Management Strategies](#rain-management-strategies)
+- [7. Seasonal Calendar — Outdoor Ebb & Flow (Temperate)](#7-seasonal-calendar-outdoor-ebb-flow-temperate)
+  - [Spring (March–May)](#spring-marchmay)
+  - [Summer (June–August)](#summer-juneaugust)
+  - [Autumn (September–October)](#autumn-septemberoctober)
+  - [Winter (November–February)](#winter-novemberfebruary)
+- [8. Flood Cycle Frequency by Season and Temperature](#8-flood-cycle-frequency-by-season-and-temperature)
+- [9. EC and pH Management by Season](#9-ec-and-ph-management-by-season)
+- [10. Emergency Action Plans](#10-emergency-action-plans)
+  - [Heatwave Protocol (>30°C forecast)](#heatwave-protocol-30c-forecast)
+  - [Frost Warning Protocol (<3°C forecast)](#frost-warning-protocol-3c-forecast)
+  - [Storm Protocol (Heavy Rain + Wind)](#storm-protocol-heavy-rain-wind)
+
 
 [↑ Back to TOC](#table-of-contents)
 

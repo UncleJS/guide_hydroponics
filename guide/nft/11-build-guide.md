@@ -6,6 +6,74 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 ---
 
+## Table of Contents
+
+- [1. System Overview Recap](#1-system-overview-recap)
+- [2. Tools Required](#2-tools-required)
+  - [Essential Tools](#essential-tools)
+  - [Useful But Optional](#useful-but-optional)
+- [3. Safety and Prep Notes](#3-safety-and-prep-notes)
+- [4. Step 1 — Site Preparation and Orientation](#4-step-1-site-preparation-and-orientation)
+  - [4.1 Choosing the Site](#41-choosing-the-site)
+  - [4.2 Orientation](#42-orientation)
+  - [4.3 Marking Out the Footprint](#43-marking-out-the-footprint)
+- [5. Step 2 — Frame Construction](#5-step-2-frame-construction)
+  - [5.1 Frame Option A — Elevated Bench (Recommended)](#51-frame-option-a-elevated-bench-recommended)
+  - [5.2 Frame Option B — A-Frame (Compact)](#52-frame-option-b-a-frame-compact)
+- [6. Step 3 — Channel Preparation](#6-step-3-channel-preparation)
+  - [6.1 Channel Material Choices](#61-channel-material-choices)
+  - [6.2 Cutting Channels to Length](#62-cutting-channels-to-length)
+  - [6.3 Drilling Net Pot Holes](#63-drilling-net-pot-holes)
+  - [6.4 Fitting End Caps](#64-fitting-end-caps)
+  - [6.5 Spray Bar (Optional Alternative to Direct Feed)](#65-spray-bar-optional-alternative-to-direct-feed)
+- [7. Step 4 — Reservoir Setup](#7-step-4-reservoir-setup)
+  - [7.1 Reservoir Selection](#71-reservoir-selection)
+  - [7.2 Preparing the Reservoir](#72-preparing-the-reservoir)
+  - [7.3 Drilling Bulkhead Holes in the Reservoir](#73-drilling-bulkhead-holes-in-the-reservoir)
+- [8. Step 5 — Plumbing](#8-step-5-plumbing)
+  - [8.1 Plumbing Overview](#81-plumbing-overview)
+  - [8.2 Building the Supply Manifold](#82-building-the-supply-manifold)
+  - [8.3 Supply Tubes](#83-supply-tubes)
+  - [8.4 Drain System](#84-drain-system)
+  - [8.5 Sealing and Testing Joints](#85-sealing-and-testing-joints)
+- [9. Step 6 — Electrical and Timer Setup](#9-step-6-electrical-and-timer-setup)
+  - [9.1 Safety First](#91-safety-first)
+  - [9.2 Timer Setup](#92-timer-setup)
+  - [9.3 Air Pump (Optional but Recommended)](#93-air-pump-optional-but-recommended)
+- [10. Step 7 — System Test (Water Only)](#10-step-7-system-test-water-only)
+  - [10.1 Water Test Procedure](#101-water-test-procedure)
+  - [10.2 Common Test Failures and Fixes](#102-common-test-failures-and-fixes)
+- [11. Step 8 — First Nutrient Solution Fill](#11-step-8-first-nutrient-solution-fill)
+  - [11.1 Mixing the Nutrient Solution](#111-mixing-the-nutrient-solution)
+- [12. Step 9 — Planting](#12-step-9-planting)
+  - [12.1 Transplanting Seedlings](#121-transplanting-seedlings)
+  - [12.2 Spacing by Crop](#122-spacing-by-crop)
+  - [12.3 First 48 Hours After Planting](#123-first-48-hours-after-planting)
+- [13. Step 10 — Zone B Microgreens Station](#13-step-10-zone-b-microgreens-station)
+  - [13.1 Materials for Zone B](#131-materials-for-zone-b)
+  - [13.2 Coco Coir Preparation](#132-coco-coir-preparation)
+  - [13.3 Filling and Seeding Trays](#133-filling-and-seeding-trays)
+  - [13.4 Shelf Layout](#134-shelf-layout)
+- [14. Step 11 — Zone C Root Veg Grow Bags](#14-step-11-zone-c-root-veg-grow-bags)
+  - [14.1 Materials for Zone C](#141-materials-for-zone-c)
+  - [14.2 Growing Medium Mix](#142-growing-medium-mix)
+  - [14.3 Sowing Root Veg Direct](#143-sowing-root-veg-direct)
+  - [14.4 Grow Bag Layout](#144-grow-bag-layout)
+- [15. Common Build Mistakes and How to Avoid Them](#15-common-build-mistakes-and-how-to-avoid-them)
+  - [Mistake 1 — Insufficient slope](#mistake-1-insufficient-slope)
+  - [Mistake 2 — Flow rate too high](#mistake-2-flow-rate-too-high)
+  - [Mistake 3 — Light leaks into reservoir](#mistake-3-light-leaks-into-reservoir)
+  - [Mistake 4 — Not deburring holes](#mistake-4-not-deburring-holes)
+  - [Mistake 5 — Skipping the water test](#mistake-5-skipping-the-water-test)
+  - [Mistake 6 — EC or pH meter uncalibrated](#mistake-6-ec-or-ph-meter-uncalibrated)
+  - [Mistake 7 — Planting too early in spring](#mistake-7-planting-too-early-in-spring)
+  - [Mistake 8 — Overcrowding channels](#mistake-8-overcrowding-channels)
+  - [Mistake 9 — Letting the reservoir run low](#mistake-9-letting-the-reservoir-run-low)
+  - [Mistake 10 — Not having a backup plan for pump failure](#mistake-10-not-having-a-backup-plan-for-pump-failure)
+- [16. Build Checklist](#16-build-checklist)
+
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. System Overview Recap
 
@@ -1030,6 +1098,9 @@ GENERAL
 ```
 
 ---
+
+
+[↑ Back to TOC](#table-of-contents)
 
 > **Next:** [Guide 12 — Budget and Sourcing →](./12-budget-and-sourcing.md)
 
