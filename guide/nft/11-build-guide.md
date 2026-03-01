@@ -79,35 +79,40 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 Before building, confirm the full system you are constructing:
 
+**Zone A — NFT Channel Array**
+
 ```mermaid
-flowchart TD
-    subgraph ZA["ZONE A — NFT SYSTEM"]
-        direction TB
-        CH1["Channel 1 — 75mm<br/>L L L L L L L L L L L<br/>Lettuce × 11"]
-        CH2["Channel 2 — 75mm<br/>H H H H H H H H H H H<br/>Herbs × 11"]
-        CH3["Channel 3 — 75mm<br/>S S S S S S S S S S S<br/>Spinach/Kale × 11"]
-        CH4["Channel 4 — 100mm<br/>T T T P P St St<br/>Tom/Pep/Straw × 7"]
-        RES["RESERVOIR 80L<br/>PUMP inside"]
-        MAN["Supply Manifold"]
-        CH1 -->|drain| DH1(( ))
-        CH2 -->|drain| DH2(( ))
-        CH3 -->|drain| DH3(( ))
-        CH4 -->|drain| DH4(( ))
-        DH1 & DH2 & DH3 & DH4 --> RES
-        RES --> MAN
-        MAN -->|inlet| CH1
-        MAN -->|inlet| CH2
-        MAN -->|inlet| CH3
-        MAN -->|inlet| CH4
-    end
-    subgraph ZB["ZONE B — MICROGREENS STATION"]
-        direction LR
-        SHELF["shelf"] --- T1["tray"] --- T2["tray"] --- T3["tray"] --- LED["LED panel above"]
-    end
-    subgraph ZC["ZONE C — ROOT VEG GROW BAGS"]
-        direction LR
-        B1["bag"] --- B2["bag"] --- B3["bag"] --- B4["bag"] --- B5["bag"] --- B6["bag"]
-    end
+flowchart TB
+    CH1["Channel 1 — 75mm<br/>L L L L L L L L L L L<br/>Lettuce × 11"]
+    CH2["Channel 2 — 75mm<br/>H H H H H H H H H H H<br/>Herbs × 11"]
+    CH3["Channel 3 — 75mm<br/>S S S S S S S S S S S<br/>Spinach/Kale × 11"]
+    CH4["Channel 4 — 100mm<br/>T T T P P St St<br/>Tom/Pep/Straw × 7"]
+    RES["RESERVOIR 80L<br/>PUMP inside"]
+    MAN["Supply Manifold"]
+    CH1 -->|drain| DH1(( ))
+    CH2 -->|drain| DH2(( ))
+    CH3 -->|drain| DH3(( ))
+    CH4 -->|drain| DH4(( ))
+    DH1 & DH2 & DH3 & DH4 --> RES
+    RES --> MAN
+    MAN -->|inlet| CH1
+    MAN -->|inlet| CH2
+    MAN -->|inlet| CH3
+    MAN -->|inlet| CH4
+```
+
+**Zone B — Microgreens Station**
+
+```mermaid
+flowchart LR
+    SHELF["2-tier shelf"] --- T1["tray"] --- T2["tray"] --- T3["tray"] --- LED["LED panel above"]
+```
+
+**Zone C — Root Veg Grow Bags**
+
+```mermaid
+flowchart LR
+    B1["bag"] --- B2["bag"] --- B3["bag"] --- B4["bag"] --- B5["bag"] --- B6["bag"]
 ```
 
 **System specifications:**

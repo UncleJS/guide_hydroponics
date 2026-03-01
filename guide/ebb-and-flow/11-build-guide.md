@@ -70,28 +70,33 @@
 
 Before building, confirm the full three-zone system you are constructing:
 
+**Zone A — Ebb & Flow Tables**
+
 ```mermaid
-flowchart TD
-    subgraph ZA["ZONE A — EBB & FLOW TABLES"]
-        direction TB
-        T1["FLOOD TABLE 1 — 1.2m × 0.6m<br/>Crops: lettuce, herbs, leafy greens<br/>50mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-        T2["FLOOD TABLE 2 — 1.2m × 0.6m<br/>Crops: tomatoes, peppers, cucumbers, strawberries<br/>75–100mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-        RES["RESERVOIR — 100L food-grade<br/>Submersible pump + timer<br/>Positioned BELOW or beside tables"]
-        TIMER["TIMER<br/>2–4× floods per day<br/>15–30 min per flood"]
-        T1 -->|"gravity drain → reservoir"| RES
-        T2 -->|"gravity drain → reservoir"| RES
-        RES -->|"pump → fill port"| T1
-        RES -->|"pump → fill port"| T2
-        TIMER -.- RES
-    end
-    subgraph ZB["ZONE B — MICROGREENS STATION"]
-        direction LR
-        SHELF["2-tier shelf"] --- TR1["tray"] --- TR2["tray"] --- TR3["tray"] --- LED["LED panel above"]
-    end
-    subgraph ZC["ZONE C — ROOT VEG GROW BAGS"]
-        direction LR
-        B1["bag"] --- B2["bag"] --- B3["bag"] --- B4["bag"] --- B5["bag"] --- B6["bag"]
-    end
+flowchart TB
+    T1["FLOOD TABLE 1 — 1.2m × 0.6m<br/>Crops: lettuce, herbs, leafy greens<br/>50mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
+    T2["FLOOD TABLE 2 — 1.2m × 0.6m<br/>Crops: tomatoes, peppers, cucumbers, strawberries<br/>75–100mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
+    RES["RESERVOIR — 100L food-grade<br/>Submersible pump + timer<br/>Positioned BELOW or beside tables"]
+    TIMER["TIMER<br/>2–4× floods per day<br/>15–30 min per flood"]
+    T1 -->|"gravity drain → reservoir"| RES
+    T2 -->|"gravity drain → reservoir"| RES
+    RES -->|"pump → fill port"| T1
+    RES -->|"pump → fill port"| T2
+    TIMER -.- RES
+```
+
+**Zone B — Microgreens Station**
+
+```mermaid
+flowchart LR
+    SHELF["2-tier shelf"] --- TR1["tray"] --- TR2["tray"] --- TR3["tray"] --- LED["LED panel above"]
+```
+
+**Zone C — Root Veg Grow Bags**
+
+```mermaid
+flowchart LR
+    B1["bag"] --- B2["bag"] --- B3["bag"] --- B4["bag"] --- B5["bag"] --- B6["bag"]
 ```
 
 **System specifications:**
