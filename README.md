@@ -27,6 +27,7 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 | Document | Description |
 |----------|-------------|
 | [`zones.md`](zones.md) | Full zone layout with spatial diagrams, dimensions, plumbing routes, and maintenance access map |
+| [`guide/glossary.md`](guide/glossary.md) | All acronyms, abbreviations, and technical terms used across both guide sets — nutrients, units, electronics, materials, and methods |
 
 ---
 
