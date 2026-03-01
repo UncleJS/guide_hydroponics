@@ -961,8 +961,8 @@ This zone is identical to the NFT system Zone B and is not affected by the E&F s
 
 ```mermaid
 block-beta
-    columns 1
-    LED["LED panel 50–100W — 25 cm above trays"]
+    columns 3
+    LED["LED panel 50–100W — 25 cm above trays"]:3
     block:tier1["TIER 1 — GROWTH STAGE (3–7 days under light)"]:3
         T1A["tray<br/>light growth"] T1B["tray<br/>light growth"] T1C["tray<br/>light growth"]
     end

@@ -292,8 +292,7 @@ An elevated bench frame raises channels to a comfortable working height (~90 cm)
 ```mermaid
 block-beta
     columns 4
-    block:rails["CHANNEL RAILS<br/>2× timber rails<br/>channels rest on these"]:4
-    end
+    rails["CHANNEL RAILS<br/>2× timber rails<br/>channels rest on these"]:4
     space:4
     LEG1["leg<br/>↕ 90 cm<br/>high end"] space:2 LEG4["leg<br/>↕ 82 cm<br/>low end<br/>1:30 slope"]
     space:4
@@ -900,8 +899,8 @@ Hour 48:
 
 ```mermaid
 block-beta
-    columns 1
-    LED["LED panel 50–100W<br/>↕ 25–30 cm above trays"]
+    columns 3
+    LED["LED panel 50–100W<br/>↕ 25–30 cm above trays"]:3
     block:tier1["TIER 1 — Growth stage (3–7 days under light)"]:3
         T1A["tray"] T1B["tray"] T1C["tray"]
     end
@@ -909,6 +908,7 @@ block-beta
         T2A["tray, covered"] T2B["tray, covered"]
     end
     block:tier3["TIER 3 — Seed soaking / preparation / harvested"]:1
+        TIER3["trays awaiting sowing or harvest"]
     end
 ```
 
@@ -972,12 +972,12 @@ Root vegetables do NOT transplant well. Sow seeds directly in the grow bags.
 
 ```mermaid
 block-beta
-    columns 1
+    columns 3
     block:layout["ZONE C LAYOUT — top-down"]:3
         BR1["bag-R<br/>Radishes"] BR2["bag-R<br/>Radishes"] BR3["bag-R<br/>Radishes"]
         BC["bag-C<br/>Carrots"] space BB["bag-B<br/>Beetroot"]
     end
-    note2["Each bag sits in a drip tray to catch runoff<br/>Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]
+    note2["Each bag sits in a drip tray to catch runoff<br/>Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]:3
 ```
 
 ---
