@@ -509,3 +509,8 @@ graph TD
 ---
 
 *This is the final comparison guide. Return to the [main README](../../README.md) for the full guide library.*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

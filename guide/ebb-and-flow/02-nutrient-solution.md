@@ -545,3 +545,8 @@ The 100L reservoir in this system is sized for the two 1.2m × 0.6m flood tables
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/03-water-quality.md`](03-water-quality.md) — Sources, testing, treatment, and management*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

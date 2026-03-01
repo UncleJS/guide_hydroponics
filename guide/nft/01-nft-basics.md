@@ -412,3 +412,8 @@ When scaling, consider:
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/02-nutrient-solution.md`](02-nutrient-solution.md) — Nutrients, EC, pH, and mixing*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

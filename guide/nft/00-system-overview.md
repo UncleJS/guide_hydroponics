@@ -284,3 +284,8 @@ By the end of the first growing season:
 | 11 | [11-build-guide.md](11-build-guide.md) | Step-by-step DIY build instructions |
 | 12 | [12-budget-and-sourcing.md](12-budget-and-sourcing.md) | BOM, costs, sourcing, ROI |
 | 13 | [13-automation.md](13-automation.md) | Automation, sensors, data logging, dashboards |
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

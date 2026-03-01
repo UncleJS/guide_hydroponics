@@ -606,3 +606,8 @@ When adding tables, also consider:
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/02-nutrient-solution.md`](02-nutrient-solution.md) — EC, pH, macros, micros, mixing, and schedules*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

@@ -1,5 +1,7 @@
 # Home Hydroponics — Outdoor Hydroponic Systems Guide
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 A complete DIY guide for building and running outdoor hydroponic systems in a temperate backyard. Two full systems are covered — **Nutrient Film Technique (NFT)** and **Ebb & Flow (flood-and-drain)** — each with 13 in-depth guides, from first principles to automation, on a **$150–$600 budget**.
 
 ---
@@ -114,3 +116,8 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 ---
 
 *Last updated: March 2026*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

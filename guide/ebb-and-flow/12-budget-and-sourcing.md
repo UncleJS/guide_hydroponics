@@ -838,3 +838,8 @@ xychart-beta
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [Guide 13 — Budget-Friendly Automation and Data Logging →](./13-automation.md)*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

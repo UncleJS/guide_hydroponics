@@ -434,3 +434,8 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [Comparison Guide 02 — Crops: NFT vs Ebb & Flow](02-crops.md) — which system suits which plants, yield comparisons, and crop scheduling differences*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

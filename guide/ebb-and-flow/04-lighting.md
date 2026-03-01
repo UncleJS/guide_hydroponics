@@ -668,3 +668,8 @@ The 2-tier shelf for microgreens should be positioned where it receives direct l
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/05-growing-media.md`](05-growing-media.md) — Clay pebbles, coco coir, rockwool, perlite, and germination*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

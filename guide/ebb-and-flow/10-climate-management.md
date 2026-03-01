@@ -638,3 +638,8 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/11-build-guide.md`](11-build-guide.md) — Complete step-by-step build instructions for the outdoor Ebb & Flow system*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

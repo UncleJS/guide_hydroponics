@@ -785,3 +785,8 @@ flowchart TD
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/10-climate-management.md`](10-climate-management.md) — Heat, cold, wind, rain, and seasonal strategy*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

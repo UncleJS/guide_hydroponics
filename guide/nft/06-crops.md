@@ -844,3 +844,8 @@ After a full channel crop completes:
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, and IPM*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

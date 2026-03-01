@@ -627,3 +627,8 @@ If algae is already present:
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/04-lighting.md`](04-lighting.md) — Outdoor light, DLI targets, shade cloth, and seasons*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

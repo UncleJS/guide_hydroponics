@@ -554,3 +554,8 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 *Next: [`guide/nft/09-troubleshooting.md`](09-troubleshooting.md) — Symptom → cause → fix decision trees*
 
 > **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for budget-friendly ways to automate monitoring, get phone alerts for pump failures and temperature spikes, and build a dashboard to track pH/EC/temperature trends over time.
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

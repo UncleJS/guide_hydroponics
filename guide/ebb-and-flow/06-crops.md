@@ -792,3 +792,8 @@ After a season of tomatoes, cucumbers, or courgettes, the LECA in Table 2 accumu
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, IPM, and prevention*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

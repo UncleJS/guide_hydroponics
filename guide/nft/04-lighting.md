@@ -540,3 +540,8 @@ Microgreens have different light needs from mature crops:
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/05-growing-media.md`](05-growing-media.md) — Net pots, clay pebbles, rockwool, coco, and germination*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

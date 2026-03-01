@@ -595,3 +595,8 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/03-water-quality.md`](03-water-quality.md) — Water sources, testing, and treatment*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

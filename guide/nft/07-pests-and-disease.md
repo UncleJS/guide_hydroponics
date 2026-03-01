@@ -639,3 +639,8 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/nft/08-system-maintenance.md`](08-system-maintenance.md) — Daily, weekly, monthly, and seasonal schedules*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

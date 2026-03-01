@@ -2007,3 +2007,8 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310
 
 > **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
 > **Back to:** [README — Hydroponics Guide Index](../../README.md)
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

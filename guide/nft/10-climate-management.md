@@ -892,3 +892,8 @@ The outdoor environment is unpredictable, but with systematic monitoring, a stoc
 > **Next:** [Guide 11 — DIY Build Guide →](./11-build-guide.md)
 
 > **See also:** [Guide 13 — Automation and Data Logging](./13-automation.md) — automate temperature and humidity monitoring with 24/7 alerts, so you never miss a frost event or heatwave spike again.
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

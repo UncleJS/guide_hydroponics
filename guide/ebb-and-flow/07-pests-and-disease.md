@@ -856,3 +856,8 @@ Scrub the inside of all fittings with a long bottle brush. Consider replacing pl
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/08-system-maintenance.md`](08-system-maintenance.md) — Routine maintenance, cleaning schedules, and seasonal tasks*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

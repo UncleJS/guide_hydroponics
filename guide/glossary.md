@@ -267,3 +267,8 @@ A simple text file format for storing tabular data (rows and columns separated b
 A measure of the financial return relative to the cost of a project. In the context of these guides: how long it takes for the value of harvested produce to equal the cost of building and running the system.
 
 *See also: [Guide 12 — Budget & Sourcing (NFT)](nft/12-budget-and-sourcing.md) · [Guide 12 — Budget & Sourcing (E&F)](ebb-and-flow/12-budget-and-sourcing.md) · [Compare 04 — Cost & ROI](compare/04-cost.md)*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

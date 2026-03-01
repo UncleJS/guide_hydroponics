@@ -694,3 +694,8 @@ xychart-beta
 > This completes the core guide series. For a full system overview and build timeline, see [PLAN.md](../PLAN.md).
 
 > **Next:** [Guide 13 — Automation and Data Logging →](./13-automation.md) — budget-friendly sensor networks, ESP32 builds, dashboards, and automated pH/EC dosing from $15 to $300.
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

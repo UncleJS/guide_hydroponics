@@ -509,3 +509,8 @@ graph TD
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [Comparison Guide 03 — Automation: NFT vs Ebb & Flow](03-automation.md) — how sensor requirements, failure modes, and automation priorities differ between the two systems*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

@@ -567,3 +567,8 @@ This configuration, running ESPHome and Home Assistant, gives you 24/7 monitorin
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [Comparison Guide 04 — Cost and ROI: NFT vs Ebb & Flow](04-cost.md) — build costs, running costs, yield value, and payback period for each system*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*

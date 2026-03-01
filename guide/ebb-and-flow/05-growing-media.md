@@ -736,3 +736,8 @@ Before refilling flood tables with previously used LECA:
 [↑ Back to TOC](#table-of-contents)
 
 *Next: [`guide/ebb-and-flow/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*
+
+---
+
+<!-- copyright -->
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
