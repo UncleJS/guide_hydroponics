@@ -1,6 +1,10 @@
 # Glossary
 ## Acronyms, Abbreviations, and Technical Terms Used in This Guide
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -16,7 +20,6 @@
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Nutrients and Chemistry
 
@@ -86,9 +89,10 @@ A measure of the difference between the moisture the air can hold and the moistu
 **Zn — Zinc**
 A micronutrient involved in growth hormone production and enzyme function. Deficiency causes small leaves, short internodes, and distorted growth.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Measurement Units
 
@@ -113,9 +117,10 @@ The unit for PPFD (Photosynthetic Photon Flux Density) — the number of photons
 **RH — Relative Humidity**
 The percentage of moisture in the air relative to the maximum it could hold at that temperature. Expressed as a percentage (e.g. 60% RH). Target range for most crops: 50–70%.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Systems and Methods
 
@@ -137,9 +142,10 @@ A variant of DWC where the nutrient solution is circulated between multiple buck
 **RO — Reverse Osmosis**
 A water purification process that forces water through a semi-permeable membrane to remove dissolved solids, minerals, and contaminants. Produces very pure, near-zero-EC water. Useful when tap water has high EC (>0.4 mS/cm) or problematic mineral content.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Growing Media and Materials
 
@@ -167,9 +173,10 @@ Commonly known by the brand name Teflon. Used as thread-seal tape (PTFE tape) wh
 **PVC — Polyvinyl Chloride**
 A rigid plastic used for NFT channels, pipes, manifolds, and fittings. Food-safe and readily available in standard sizes. Used in this guide for 75 mm and 100 mm square NFT channels and all plumbing connections.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Lighting
 
@@ -188,9 +195,10 @@ The number of PAR photons hitting one square metre of surface per second. The st
 **UV — Ultraviolet**
 Light with wavelengths below 400 nm, outside the visible spectrum. In these guides: (1) UV exposure degrades non-UV-stabilised plastics over time — use UV-stabilised materials outdoors; (2) UV sterilisation can be used to kill algae and pathogens in reservoir water.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Electronics and Automation
 
@@ -239,9 +247,10 @@ The positive power supply terminal in an electronic circuit. Components are wire
 **WiFi — Wireless Fidelity**
 The standard for wireless local networking (IEEE 802.11). The ESP32's built-in WiFi allows it to send alerts, push data to cloud services, and be remotely configured without a physical connection.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Electrical Safety
 
@@ -251,9 +260,10 @@ A safety device that cuts power in milliseconds if it detects current leaking to
 **RCD — Residual Current Device**
 The UK and European term for what North America calls a GFCI. Detects a difference between current flowing in the live and neutral conductors — if current is "leaking" (e.g. through water to ground), the RCD trips within 30 ms, preventing electrocution. Always use an RCD-protected outlet for outdoor hydroponic systems.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## General
 
@@ -268,7 +278,9 @@ A measure of the financial return relative to the cost of a project. In the cont
 
 *See also: [Guide 12 — Budget & Sourcing (NFT)](nft/12-budget-and-sourcing.md) · [Guide 12 — Budget & Sourcing (E&F)](ebb-and-flow/12-budget-and-sourcing.md) · [Compare 04 — Cost & ROI](compare/04-cost.md)*
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

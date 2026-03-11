@@ -1,26 +1,33 @@
 # Ebb & Flow System — Overview & Build Plan
 ## Outdoor Flood-and-Drain | Medium Backyard Scale | DIY Build
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
 
 - [System Summary](#system-summary)
 - [Zone Design](#zone-design)
-  - [Zone A — Ebb & Flow Flood Tables](#zone-a--ebb--flow-flood-tables)
-  - [Zone B — Microgreens Station](#zone-b--microgreens-station)
-  - [Zone C — Root Veg Grow Bags](#zone-c--root-veg-grow-bags)
+  - [Zone A — Ebb & Flow Flood Tables](#zone-a-ebb-flow-flood-tables)
+  - [Zone B — Microgreens Station](#zone-b-microgreens-station)
+  - [Zone C — Root Veg Grow Bags](#zone-c-root-veg-grow-bags)
 - [System Architecture Diagrams](#system-architecture-diagrams)
 - [Component Inventory](#component-inventory)
 - [Seasonal Grow Calendar](#seasonal-grow-calendar)
 - [4-Week Build Timeline](#4-week-build-timeline)
+  - [Week 1 — Procurement & Preparation](#week-1-procurement-preparation)
+  - [Week 2 — Build Frames & Tables](#week-2-build-frames-tables)
+  - [Week 3 — Plumbing, Timer & Testing](#week-3-plumbing-timer-testing)
+  - [Week 4 — LECA, Nutrients & First Plants](#week-4-leca-nutrients-first-plants)
 - [Daily Quick-Start Checklist](#daily-quick-start-checklist)
 - [Success Criteria](#success-criteria)
 - [Guide Index](#guide-index)
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## System Summary
 
@@ -34,9 +41,10 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for a temperate b
 
 **Critical difference from NFT:** Ebb & Flow uses a timer to control flood cycles. A timer that fails ON (pump runs continuously) will flood roots permanently and cause root rot within 2–4 hours. **A drain confirmation sensor is strongly recommended** before the first crop goes in — see [Guide 13 — Automation](13-automation.md).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Zone Design
 
@@ -79,9 +87,10 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for a temperate b
 | Watering | Manual fertigation, 1–2× daily |
 | Drainage | Bags on slatted rack or gravel tray |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## System Architecture Diagrams
 
@@ -123,9 +132,10 @@ flowchart TD
     TABLE -->|float switch monitors drain| FS["DRAIN CONFIRMATION<br/>FLOAT SWITCH<br/>ALERT if table not drained<br/>within 30 min of pump-OFF"]
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Component Inventory
 
@@ -164,9 +174,10 @@ flowchart TD
 | Bamboo canes or tomato string | 12 | Vertical support for indeterminate plants |
 | Spare timer (mechanical, backup) | 1 | Critical: timer failure is highest-severity E&F fault |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Seasonal Grow Calendar
 
@@ -196,9 +207,10 @@ flowchart TD
 - Run monthly media flush in July, August, and September (see [Guide 02 — Nutrients](02-nutrient-solution.md))
 - Check overflow fitting gaskets at the start of each season — silicone perishes over winter
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 4-Week Build Timeline
 
@@ -242,9 +254,10 @@ flowchart TD
 - [ ] Sow first microgreens trays (Zone B)
 - [ ] Fill and plant root veg grow bags (Zone C)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Daily Quick-Start Checklist
 
@@ -265,9 +278,10 @@ Once the system is running, use this each morning:
 
 **After a power cut:** timers may reset to 12:00. Check and re-programme the timer before leaving the system unattended.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Success Criteria
 
@@ -282,9 +296,10 @@ By the end of the first growing season:
 7. pH stable within 5.5–6.5 and EC within crop target ranges for **80%+ of operational days**
 8. Flood cycle timer never missed for more than one cycle without detection and correction
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Guide Index
 
@@ -306,7 +321,9 @@ By the end of the first growing season:
 | 12 | [12-budget-and-sourcing.md](12-budget-and-sourcing.md) | BOM, costs, sourcing, ROI |
 | 13 | [13-automation.md](13-automation.md) | Drain confirmation sensor, flood cycle logging, ESP32 |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,6 +1,10 @@
 # Guide 01 — NFT Basics
 ## How Nutrient Film Technique Works
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -32,8 +36,8 @@
   - [Cons](#cons)
 - [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. History and Origin
 
@@ -41,10 +45,10 @@ Nutrient Film Technique was developed by **Dr. Allen Cooper** at the Glasshouse 
 
 The original NFT systems were built with aluminum channels and used relatively crude flow controls, but the core principle has remained essentially unchanged for over 50 years. Today NFT is one of the most widely used hydroponic methods in commercial lettuce and herb production globally, chosen for its simplicity, low water usage, excellent oxygenation, and easy root zone access.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Core Principle: The Thin Film
 
@@ -70,10 +74,10 @@ block-beta
 
 **Why this matters:** Roots need both water/nutrients AND oxygen. Submerging roots fully (as in DWC without aeration) risks suffocation without an air pump. NFT's thin film naturally provides the air-water interface that maximises root health.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Anatomy of an NFT System
 
@@ -126,10 +130,10 @@ flowchart TD
 | **Drain fittings** | Exit point at low end of each channel | Gravity-fed |
 | **Return line** | Carries drained solution back to reservoir | 25mm pipe, gravity only |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Channel Slope: The Critical Variable
 
@@ -158,10 +162,10 @@ flowchart LR
 
 **Practical tip:** Set slope with a spirit level and shims under the frame. A 1:30 slope on a 2.4m channel = raise the inlet end 8cm higher than the drain end. This is a very gentle angle — not visually obvious but critical to measure correctly.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Flow Rate Science
 
@@ -206,10 +210,10 @@ For a 4-channel system at 1.5 L/min per channel:
 
 Turbulence is caused by excessive flow rate, rough channel surfaces, debris in the channel, or kinked inlet tubes. Keep inlets smooth, flow rates controlled, and channels clean.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Root Zone Oxygenation
 
@@ -230,10 +234,10 @@ block-beta
 
 **Why this matters for temperature:** At 28°C, water only holds ~7.8 mg/L dissolved O₂. At 30°C, it drops to ~7.5 mg/L. This is why warm reservoirs increase root rot risk — less O₂ available in the film itself.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. NFT vs Other Systems Comparison
 
@@ -251,10 +255,10 @@ block-beta
 | **Commercial use** | Very common | Common | Less common | Rare | Rare |
 | **Beginner friendly** | Moderate | Moderate | Moderate | Very | Very |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Why NFT Is Ideal for Leafy Crops — and Why It Fails for Root Veg
 
@@ -272,10 +276,10 @@ block-beta
 
 **Solution:** Use grow bags with deep coco/perlite mix for root veg (Zone C in this system).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Pump Runtime: Continuous vs Timed
 
@@ -292,7 +296,7 @@ Unlike ebb-and-flow systems that flood and drain on a timer, NFT relies on a **c
   30–60 minutes: Outer root hairs desiccate and die
   1–2 hours:     Serious root damage, plants may not recover
   2–4 hours:     Catastrophic root failure in established plants
-  
+
   (Times vary by temperature, humidity, and plant size. Hot, dry, windy
   conditions dramatically shorten these windows.)
 ```
@@ -306,10 +310,10 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 
 **This is risky for beginners.** If the timer fails in the OFF position, roots dry out. Only use timed NFT if you have a reliable backup alert system. **Recommendation: run 24/7.**
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. What Happens During Pump Failure
 
@@ -327,10 +331,10 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 - Set a phone reminder to visually confirm pump operation every morning
 - Consider a cheap WiFi smart plug — if the pump draws 0W, it sends an alert
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Scaling: Modular Channel Design
 
@@ -343,7 +347,7 @@ NFT is highly modular. Each channel is independent — you can add or remove cha
   Expand to:  1 reservoir + 4 channels = ~48 plant sites  ← this system
   Grow to:    1 reservoir + 6 channels = ~72 plant sites  (upgrade pump)
   Commercial: Multiple reservoirs, 10–20 channels per zone
-  
+
   Rule of thumb: 1 channel per 0.4–0.8 L/min pump capacity
 ```
 
@@ -353,10 +357,10 @@ When scaling, consider:
 - **Manifold size:** Upgrade to 32mm if adding more than 6 channels
 - **Return pipe:** Ensure drain pipe can handle combined flow from all channels
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Pros and Cons Summary
 
@@ -385,10 +389,10 @@ When scaling, consider:
 | Algae risk | Light entering channels grows algae; channels must be opaque |
 | Limited buffering | Small reservoir = fast pH/EC swings |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Key Numbers Reference Card
 
@@ -407,11 +411,11 @@ When scaling, consider:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/02-nutrient-solution.md`](02-nutrient-solution.md) — Nutrients, EC, pH, and mixing*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

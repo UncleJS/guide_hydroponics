@@ -1,6 +1,10 @@
 # Guide 06 — Crops
 ## Per-Crop Growing Guide for Every Plant in This System
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -41,8 +45,8 @@
   - [Table 2 — Fruiting Crop Rotation and Seasonal Planning](#table-2-fruiting-crop-rotation-and-seasonal-planning)
   - [LECA Sterilisation Between Heavy Fruiting Crops](#leca-sterilisation-between-heavy-fruiting-crops)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -61,10 +65,10 @@ Each crop entry includes:
 
 > **EC and pH values given are for the reservoir.** In E&F, the media buffers these values slightly — the root zone may experience a slightly higher EC than the reservoir due to salt accumulation in LECA between floods. Monitor reservoir EC and pH daily; check media flush performance weekly (see Guide 05 Section 12).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Zone, Table & Crop Map
 
@@ -94,10 +98,10 @@ Each crop entry includes:
 | Carrots | C | Grow bags | 1.0–1.8 | 6.0–7.0 | Manual | 70–90 days |
 | Beetroot | C | Grow bags | 1.4–2.0 | 6.0–7.0 | Manual | 50–70 days |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## LEAFY GREENS & HERBS — Zone A, Table 1
 
@@ -334,10 +338,10 @@ Each crop entry includes:
 - Parsley is biennial — in its second season it will bolt and set seed in spring; treat as an annual and replant each season for best leaf production
 - The taproot of parsley benefits from the deeper LECA media in E&F — use 12cm depth minimum. Parsley in NFT often produces inferior yields because its taproot has nowhere to develop
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## FRUITING CROPS — Zone A, Table 2
 
@@ -514,10 +518,10 @@ Each crop entry includes:
 - Limit to 4–6 fruits per plant for the best individual fruit size — remove excess flowers/small fruits on plants already carrying several developing fruits
 - The purple calyx (cap) and stem are spiny — use gloves when harvesting
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## MICROGREENS — Zone B, Tray Station
 
@@ -613,10 +617,10 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 
 **Tips:** Pre-soak wheat berries for 8–12 hours. Harvest before jointing (before second leaf appears from the same sheath as the first). Juice or blend immediately after harvest — wheatgrass loses nutritional quality rapidly after cutting.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## ROOT VEGETABLES — Zone C, Grow Bags
 
@@ -676,10 +680,10 @@ Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix
 
 **Tips:** Beetroot seeds are actually a cluster of 2–4 seeds — thin to one seedling per cluster at 2 weeks. Boron deficiency (black heart) is common in coco media — ensure your nutrient mix includes boron (most complete hydroponic nutrients do). High nitrogen gives abundant leaves but small roots — keep EC moderate.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Crop Rotation and Succession Planning
 
@@ -789,11 +793,11 @@ After a season of tomatoes, cucumbers, or courgettes, the LECA in Table 2 accumu
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, IPM, and prevention*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

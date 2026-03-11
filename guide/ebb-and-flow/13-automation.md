@@ -1,6 +1,10 @@
 # Guide 13 — Budget-Friendly Automation and Data Logging
 ## Timers, Sensors, ESP32, Dashboards, and Alerts for Ebb & Flow
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 Manual monitoring works. But Ebb & Flow systems carry a silent failure mode that makes continuous data logging more important than in almost any other hydroponics method: **timer failure causing permanent flooding.** In NFT, a pump failure dries the roots in 15–30 minutes — visible and bad, but quickly spotted. In E&F, a timer or pump stuck in the ON state floods the table continuously. Roots sit submerged in stagnant, oxygen-depleted solution. Root rot begins within 2–4 hours. By the time you notice, the plants look fine from above — the damage is invisible until it is catastrophic.
 
 This guide covers every level of E&F automation — from a $15 smart plug that confirms the pump is actually cycling, to a full ESP32-based sensor network with drain confirmation sensors, flood cycle logging, EC/pH dashboards, and automated dosing — all within the budget-conscious DIY spirit of this project.
@@ -103,8 +107,8 @@ This guide covers every level of E&F automation — from a $15 smart plug that c
   - [Upgrade Decision Flowchart](#upgrade-decision-flowchart)
 - [Summary — What Each Tier Gives You](#summary-what-each-tier-gives-you)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Automate?
 
@@ -180,10 +184,10 @@ WITH TIER 4 (automated dosing + backup relay):
   → You check the dashboard once a day and top up stock bottles weekly
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Automation Tiers Overview
 
@@ -200,10 +204,10 @@ flowchart LR
 
 Each tier builds on the previous. You can pause at any tier and run the system indefinitely from there. Start at Tier 1 for your first season — understand the system behaviour — then add complexity when you're ready.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tier 0 — Manual Baseline
 
@@ -244,10 +248,10 @@ This check takes 30 seconds and is the most important Tier 0
 automation step in the entire E&F guide.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Tier 1 — Off-the-Shelf Smart Devices
 
@@ -348,10 +352,10 @@ For E&F specifically, a camera angled to show the drain hose exit into the reser
 | WiFi camera (optional) | $25 | Visual drain confirmation; pest detection |
 | **Tier 1 total** | **$62–$91** | |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Tier 2 — ESP32 Sensor Node
 
@@ -462,10 +466,10 @@ EVERY 60 SECONDS, THE NODE:
   current readings and a 24-hour chart of all parameters.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier 3 — Multi-Sensor Network + Dashboard
 
@@ -656,10 +660,10 @@ Panel 7: ALERT LOG
   → Timestamped list of all alerts triggered
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Tier 4 — Automated Control
 
@@ -806,10 +810,10 @@ flowchart TD
     style ALERT fill:#3a1a1a,stroke:#aa4a4a,color:#ffaaaa
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Sensor Reference — What to Measure and Why
 
@@ -867,10 +871,10 @@ The ACS712 is an inline current sensor — the pump power wire passes through a 
 
 The FC-37 and similar rain sensors are very basic: a conductive pad that short-circuits slightly when wet. They are not reliable as rainfall quantity sensors, but they are entirely adequate as "is it currently raining?" binary detectors. Cost $2–$3. Protect from direct sun (UV degrades the pad) and replace every 2 seasons.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. ESP32 Hardware Guide
 
@@ -980,10 +984,10 @@ For Tier 4 with relay module and peristaltic pumps:
   Never power 12V actuators from the ESP32's 5V rail.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Wiring Diagrams
 
@@ -1099,10 +1103,10 @@ flowchart LR
     style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Firmware and Software
 
@@ -1272,12 +1276,12 @@ const int FLOAT_PIN_T2 = 19;
 
 void checkDrainConfirmation() {
   if (flood_end_ms == 0) return;  // no flood has occurred yet
-  
+
   unsigned long elapsed = millis() - flood_end_ms;
-  
+
   bool t1_flooded = (digitalRead(FLOAT_PIN_T1) == LOW);  // LOW = submerged
   bool t2_flooded = (digitalRead(FLOAT_PIN_T2) == LOW);
-  
+
   if (elapsed > DRAIN_TIMEOUT) {
     if (t1_flooded) {
       sendAlert("DRAIN ALERT: Table 1 not drained 45 min after flood end. "
@@ -1299,9 +1303,9 @@ void checkDrainConfirmation() {
 void checkStuckOn() {
   static unsigned long pump_on_start = 0;
   const unsigned long MAX_FLOOD_MS = 35UL * 60UL * 1000UL;  // 35 min
-  
+
   bool pump_on = (analogRead(ACS712_PIN) > CURRENT_THRESHOLD);
-  
+
   if (pump_on && pump_on_start == 0) {
     pump_on_start = millis();  // pump just turned on
   } else if (!pump_on) {
@@ -1321,7 +1325,7 @@ void checkStuckOn() {
 void postToInfluxDB(float sol_temp, float air_temp, float humidity,
                     float res_level, float pump_amps,
                     bool t1_flooded, bool t2_flooded, int flood_count) {
-  
+
   String body = "solution_temp,system=ef-1 value=" + String(sol_temp) + "\n"
               + "air_temp,system=ef-1 value=" + String(air_temp) + "\n"
               + "humidity,system=ef-1 value=" + String(humidity) + "\n"
@@ -1330,17 +1334,17 @@ void postToInfluxDB(float sol_temp, float air_temp, float humidity,
               + "table1_flooded,system=ef-1 value=" + String(t1_flooded ? 1 : 0) + "\n"
               + "table2_flooded,system=ef-1 value=" + String(t2_flooded ? 1 : 0) + "\n"
               + "flood_count_today,system=ef-1 value=" + String(flood_count);
-  
+
   // POST to: https://cloud2.influxdata.com/api/v2/write?org=YOUR_ORG&bucket=hydroponics
   // Header: Authorization: Token YOUR_TOKEN
   // Header: Content-Type: text/plain
 }
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Data Storage and Dashboards
 
@@ -1419,10 +1423,10 @@ After one full month of continuous logging, you will be able to read:
 - **EC between reservoir changes:** If EC is drifting up faster than before, media salt accumulation may be beginning — schedule a flush cycle
 - **Flood count consistency:** If the occasional flood cycle is being missed (fog in the data, not a complete outage), the timer may be on the edge of failure — replace it
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Alerts and Notifications
 
@@ -1539,10 +1543,10 @@ Reservoir: 58% (consumed ~8L today)
 Rain: no events
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 14. Using Your Data — Pattern Recognition
 
@@ -1789,10 +1793,10 @@ Add a time-series panel for `vpd` alongside flood count:
 
 This lets you correlate VPD spikes with EC rise (evaporation-driven concentration), drain confirmation failures (fast uptake on hot days), and flood count sufficiency — all from the same dashboard.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 15. Weatherproofing and Power
 
@@ -1884,10 +1888,10 @@ FLOAT SWITCH INSTALLATION — WATERPROOFING:
 **Solar power note for E&F:**
 A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery runs an ESP32 sensor node indefinitely in most climates. Using `esp_sleep_enable_timer_wakeup()` to deep-sleep between 60-second readings reduces average current to ~5–10 mA, extending battery life to weeks without sun. Note: the backup timer relay (Tier 4) cannot use deep sleep — the ESP32 must be awake to fire the relay on schedule.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 16. Automation BOM by Tier
 
@@ -1959,10 +1963,10 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 | Tier 3 | $95–$155 | $165–$249 |
 | Tier 4 | $69–$95 | $234–$344 |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 17. Common Pitfalls
 
@@ -1976,7 +1980,7 @@ CORRECT FLOAT SWITCH PLACEMENT:
   Height: 1–2 cm ABOVE the top of the LECA bed surface
   NOT at table floor level (below LECA) — always submerged during flood
   NOT at overflow standpipe height (water level never exceeds this in normal operation)
-  
+
   Verify placement:
   1. Run a test flood cycle.
   2. At flood peak (pump running, table flooded to overflow):
@@ -2269,10 +2273,10 @@ sensor:
 
 Even with ADS1115, always use a sliding window average in the dosing decision logic. The ESPHome Tier 4 dosing lambdas already do this (they check `id(ph_sensor).state` which is the filtered value). Additionally, enforce a minimum inter-dose interval of 15 minutes regardless of pH reading — this prevents a single noisy spike from triggering back-to-back doses.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 18. Upgrade Path — From Tier 1 to Tier 4
 
@@ -2362,10 +2366,10 @@ flowchart TD
     Q5 -->|YES| Q6
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Summary — What Each Tier Gives You
 
@@ -2392,7 +2396,9 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

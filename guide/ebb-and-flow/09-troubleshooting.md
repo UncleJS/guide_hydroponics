@@ -1,6 +1,10 @@
 # Guide 09 — Troubleshooting
 ## Symptom → Cause → Fix Decision Trees
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -37,8 +41,8 @@
   - [D5: Multiple Plants Affected vs. One Plant](#d5-multiple-plants-affected-vs-one-plant)
 - [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -55,10 +59,10 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
 The most common E&F error is misdiagnosing a flood cycle problem as a nutrient deficiency. If the flood/drain cycle is wrong, nutrients cannot reach the roots regardless of solution quality.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION A: Water and Solution Problems
 
@@ -296,10 +300,10 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
          (e.g., Hydroguard/Bacillus amyloliquefaciens) to colonise the biofilm sites.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION B: Plant Problems
 
@@ -565,10 +569,10 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
           Boron: tiny amounts (0.1–0.3 mg/L) in complete nutrient formulas.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION C: System and Equipment Problems
 
@@ -801,10 +805,10 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
     to prevent root ingress
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION D: Multiple Simultaneous Symptoms
 
@@ -907,10 +911,10 @@ Refer to: **C2** — timer/pump failure.
     preventing solution from reaching the root zone
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION E: Master Decision Flowchart
 
@@ -970,11 +974,11 @@ flowchart TD
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/10-climate-management.md`](10-climate-management.md) — Temperature, heat, frost, wind, rain, and seasonal management for outdoor Ebb & Flow*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,6 +1,10 @@
 # Guide 05 — Growing Media
 ## Clay Pebbles, Coco Coir, Rockwool, Perlite, and Germination
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -42,8 +46,8 @@
   - [Assessment Before Reuse](#assessment-before-reuse)
 - [13. Quick Reference: Media Selection Guide](#13-quick-reference-media-selection-guide)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Ebb & Flow Needs Substantial Media
 
@@ -101,10 +105,10 @@ flowchart LR
 
 > **The media is a long-term investment.** Clay pebbles last many years with proper sterilisation. The upfront media cost is paid back across multiple growing seasons.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Clay Pebbles (LECA) — The Primary E&F Media
 
@@ -157,10 +161,10 @@ The speed of LECA's drainage is its most important property for E&F. Media that 
 | Weight (dry) | ~300–500 g per litre |
 | Salt accumulation | Yes — accumulates over time; requires periodic flush |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Clay Pebble Preparation — Critical Step
 
@@ -233,10 +237,10 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
 
 > **There is no shortcut here.** One hour of preparation saves days of troubleshooting.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Media Depth in Flood Tables
 
@@ -292,10 +296,10 @@ Deeper media holds more moisture between floods — but it also takes longer to 
 
 > **Rule of thumb:** For every extra 50mm of media depth, add 5 minutes to your flood duration to ensure the full media column is wetted before the pump stops. Deeper media also retains moisture longer — you may be able to reduce flood frequency by one cycle per day when moving from 10cm to 15cm depth.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Coco Coir Use in Ebb & Flow
 
@@ -351,10 +355,10 @@ If you are using any coco in your flood table media mix (e.g., coco chips blende
 | 80% LECA / 20% coco chips | 3× per day | 2–3× per day |
 | 100% coco chips | Not recommended for active E&F | 2× per day if used |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rockwool Cubes for Germination and Seedlings
 
@@ -423,10 +427,10 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
     around the tray become damaged during transplanting
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Perlite — Limited Use in E&F Flood Tables
 
@@ -452,10 +456,10 @@ Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~8
 
 **Perlite in Zone C grow bags:** Perlite is excellent in the coco/perlite/vermiculite mix for Zone C root vegetable grow bags. The recommended mix is 60% coco / 30% perlite / 10% vermiculite — perlite provides drainage and prevents the coco from compacting around the developing root vegetables.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Vermiculite — Zone C Grow Bags Only
 
@@ -473,10 +477,10 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 **In Zone C grow bags:** Vermiculite at 10% in the coco/perlite blend helps prevent dry pockets forming around root vegetables. The moisture retention is beneficial in a hand-irrigated grow bag context where you want the media to hold water between manual watering sessions.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. What NOT to Use in Flood Tables
 
@@ -496,10 +500,10 @@ This section covers media types that are inappropriate for Zone A flood tables s
 
 > **The overflow fitting test:** Before adding any new media to your flood tables, place a handful in a bucket of water and observe what happens. If particles disperse or the material floats freely, it should not go in your flood tables.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Germination Methods: Side-by-Side Comparison
 
@@ -552,10 +556,10 @@ For robust, fast-germinating crops (herbs, kale, mint), seeds can be germinated 
   some losses are acceptable.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Transitioning Seedlings into Flood Tables
 
@@ -624,10 +628,10 @@ The timing of the first flood after transplant is important. Seedlings need time
 | Courgettes | 100mm | 12–15cm below pot base | Very vigorous — need maximum depth |
 | Strawberries | 75mm | 8–12cm below pot base | Lateral spreading roots |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Media Reuse and Sterilisation
 
@@ -713,10 +717,10 @@ Before refilling flood tables with previously used LECA:
 | Visible residue | Clean surface | White salt crust — repeat water rinse |
 | Drain fitting test | Rinse water flows freely through drain | Slow drain — clean drain fittings before refilling |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Quick Reference: Media Selection Guide
 
@@ -731,11 +735,11 @@ Before refilling flood tables with previously used LECA:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

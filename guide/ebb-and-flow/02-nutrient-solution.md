@@ -1,6 +1,10 @@
 # Guide 02 — Nutrient Solution
 ## EC, pH, Macros, Micros, Mixing, and Schedules
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -40,8 +44,8 @@
 - [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
   - [Reservoir Volume and E&F Flood Cycling](#reservoir-volume-and-ef-flood-cycling)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Nutrients Matter in Ebb & Flow Hydroponics
 
@@ -55,10 +59,10 @@ Ebb & Flow adds a layer of complexity not found in NFT or DWC: **the media itsel
 
 **The practical consequence:** You must manage both reservoir chemistry AND media chemistry — not just the reservoir alone. This guide covers both.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. The 17 Essential Plant Nutrients
 
@@ -96,10 +100,10 @@ Plants require 17 elements to complete their life cycle:
 
 > **Key insight:** In E&F systems, salt accumulation in clay pebbles can lock out micronutrients even when reservoir concentrations are correct. If you see micronutrient symptoms despite correct reservoir pH and EC, schedule a media flush (see Section 10).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. NPK at Each Growth Stage
 
@@ -118,10 +122,10 @@ flowchart TD
 
 **E&F note on mixed tables:** If your flood table contains both leafy greens (EC 1.0–1.4 mS/cm) and fruiting crops (EC 2.5–4.0 mS/cm), you have an EC conflict. The standard solution is to dedicate separate tables to different crop categories — leafy greens on Table 1, fruiting crops on Table 2 — allowing independent flood schedules and EC management.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. EC — Electrical Conductivity in E&F Systems
 
@@ -169,10 +173,10 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 
 > **Mixed table note:** When running a flood table with multiple crop types at different stages, set EC to the **lower end** of the most sensitive crop's range. For a lettuce/herb table, target 1.0–1.4 mS/cm. For a dedicated fruiting table, run the fruiting EC for the dominant crop.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. pH — Management in Media vs Solution
 
@@ -222,10 +226,10 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 **Optimal window: pH 5.8–6.3 maximises simultaneous availability of all nutrients.**
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Two-Part vs Three-Part vs One-Part Nutrients
 
@@ -238,10 +242,10 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 **Recommendation for this E&F system:** Masterblend trio for cost and precision, or GH Flora Series for liquid convenience. Either gives excellent results. Avoid all-in-one products for fruiting crops — you cannot adjust the N:P:K ratio to shift from vegetative to fruiting phase.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Masterblend Trio — Mixing Recipe for E&F
 
@@ -297,10 +301,10 @@ This is the most cost-effective professional nutrient system available. The mixi
 
 > **Always verify with your EC meter.** These are starting points — your source water EC and media mineral leaching both affect the final reading.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. General Hydroponics Flora Series Schedule
 
@@ -319,10 +323,10 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 > Always add FloraMicro first when mixing multiple components. The flush week (plain water only) in the final week before harvest reduces residual salts in the media and plant tissue — more important in E&F than in NFT because of salt accumulation in clay pebbles.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Nutrient Solution Temperature
 
@@ -353,10 +357,10 @@ flowchart LR
 
 **Temperature management strategies:** Shade and insulate the reservoir exterior. Keep the lid on tightly. Paint the reservoir white or wrap with reflective insulation. If summer ambient temperatures regularly exceed 30°C, consider a small aquarium chiller.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Reservoir Top-Up vs Full Change — E&F Specifics
 
@@ -416,10 +420,10 @@ This is the most important nutrient management issue specific to Ebb & Flow that
   Recommended schedule: Full change every 7 days; media flush every 3–4 weeks.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Visual Nutrient Deficiency and Toxicity Guide
 
@@ -462,10 +466,10 @@ flowchart TD
 | General salt burn | Brown tips/edges, wilting despite wet roots | Most common E&F toxicity — flush media |
 | Manganese excess | Brown spots, interveinal chlorosis | pH too low; keep above 5.5 |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Organic Hydroponics in E&F — Advantages and Challenges
 
@@ -493,10 +497,10 @@ Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F s
 
 **Key organic practice for E&F:** After establishing an organic cycle, add an **air stone to the reservoir** — aeration keeps the microbial population aerobic. Without it, anaerobic bacteria will outcompete beneficials within days in a warm outdoor reservoir.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Water Volume Calculator Reference
 
@@ -542,11 +546,11 @@ The 100L reservoir in this system is sized for the two 1.2m × 0.6m flood tables
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/03-water-quality.md`](03-water-quality.md) — Sources, testing, treatment, and management*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,6 +1,10 @@
 # Guide 09 — Troubleshooting
 ## Symptom → Cause → Fix Decision Trees
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -36,8 +40,8 @@
   - [D5: Rapid Onset (Problem Appeared Overnight or Within Hours)](#d5-rapid-onset-problem-appeared-overnight-or-within-hours)
 - [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -51,10 +55,10 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 3. **Temperature** — root zone temperature
 4. **Pest or disease** — only after ruling out chemistry
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION A: Water and Solution Problems
 
@@ -218,10 +222,10 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
   FIX: If plants are healthy and EC/pH are fine, yellow tint from nutrients is harmless.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION B: Plant Problems
 
@@ -260,13 +264,13 @@ flowchart TD
 ```
   BROWN TIPS ON YOUNG LEAVES (esp. lettuce, kale):
   → Calcium deficiency / tip burn
-  
+
   Most common cause: NOT a lack of calcium in solution.
   Usually caused by:
   1. Low humidity + high transpiration → Ca cannot move fast enough to leaf edges
   2. Poor airflow → humid pockets create uneven Ca uptake
   3. EC too high → osmotic stress reduces water/Ca movement
-  
+
   FIX:
   - Ensure adequate airflow around plants (no stagnant air pockets)
   - Check EC is not above target
@@ -281,7 +285,7 @@ flowchart TD
   CRISPY BROWN EVERYWHERE (multiple plants simultaneously):
   → Nutrient burn — EC too high
   FIX: Measure EC. If above 3.0 for greens: dilute with plain water or change reservoir.
-  
+
   SUNSCALD (bleached/white patches on upper leaf surfaces):
   → Direct sun exposure exceeding plant tolerance
   FIX: Deploy 40% shade cloth, especially in summer.
@@ -468,10 +472,10 @@ flowchart TD
   5. Use lower-mineral source water (RO or rainwater reduces scaling)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION C: System and Equipment Problems
 
@@ -614,10 +618,10 @@ flowchart TD
        Allow 24h cure time before putting into service.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION D: Multiple Simultaneous Symptoms
 
@@ -738,10 +742,10 @@ flowchart TD
   someone topped up with the wrong water, timer malfunction.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## SECTION E: Master Decision Flowchart
 
@@ -782,11 +786,11 @@ flowchart TD
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/10-climate-management.md`](10-climate-management.md) — Heat, cold, wind, rain, and seasonal strategy*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

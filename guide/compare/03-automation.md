@@ -1,6 +1,10 @@
 # Comparison Guide 03 — Automation: NFT vs Ebb & Flow
 ## How sensor priorities, failure modes, and automation architecture differ between the two systems
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -32,7 +36,7 @@
 - [6. Wiring and Relay Control](#6-wiring-and-relay-control)
   - [Controlling Pumps from a Microcontroller](#controlling-pumps-from-a-microcontroller)
   - [Safety Rules for Mains Relay Circuits](#safety-rules-for-mains-relay-circuits)
-  - [ESP32 Wiring Diagram: Combined NFT + E&F System](#esp32-wiring-diagram-combined-nft--ef-system)
+  - [ESP32 Wiring Diagram: Combined NFT + E&F System](#esp32-wiring-diagram-combined-nft-ef-system)
 - [7. Alert Logic Comparison](#7-alert-logic-comparison)
   - [NFT Alert Conditions](#nft-alert-conditions)
   - [E&F Alert Conditions](#ef-alert-conditions)
@@ -43,18 +47,16 @@
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ## Introduction
 
 Both NFT and Ebb & Flow benefit from automation, but what they need automated — and why — is fundamentally different. NFT is a continuously running system where the greatest risk is pump stoppage; detecting that the pump has failed is the single most valuable automation task. E&F is a timed system where the greatest risk is **a timer that fails ON** — a pump that runs continuously instead of cycling, flooding the table permanently and causing root rot within 2–4 hours.
 
 This guide maps the automation priorities, sensor types, wiring patterns, and alert logic for each system, and then shows how to build a unified controller for a two-system grow.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. What Automation Is Solving in Each System
 
@@ -103,10 +105,10 @@ The pattern: **drain confirmation is everything** in E&F. Knowing that the table
 
 **Do not swap these priorities between systems.** A grower who installs only a temperature sensor and pH logger on an E&F system has missed the most critical sensor. A grower who installs drain confirmation logic on NFT has also missed the most critical sensor (flow at the return).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Essential Monitoring (Both Systems)
 
@@ -142,10 +144,10 @@ Automated EC and pH monitoring requires submersible probes in the reservoir. Opt
 - Action on trigger: alert only (automated top-up is Full Tier; valve failure risk)
 - Alternative: ultrasonic distance sensor (HC-SR04) for continuous level reading rather than binary alert
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. NFT-Specific Automation
 
@@ -213,10 +215,10 @@ From highest to lowest value-for-money:
 8. **Automated top-up valve** → refills from a header tank when reservoir is low (Full Tier)
 9. **Automated pH dosing** → peristaltic pump + pH up/down reservoir (Full Tier)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. E&F-Specific Automation
 
@@ -310,10 +312,10 @@ From highest to lowest value-for-money:
 9. **Second float switch in table** → set at overflow level; double-confirmation of flooding ($5)
 10. **Automated pH/EC dosing** → Full Tier only
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shared Automation Architecture
 
@@ -389,10 +391,10 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - Test all automations in manual override mode before enabling autonomous operation
 - Physical manual overrides (isolating valves, manual switches) are mandatory alongside all automated systems
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Wiring and Relay Control
 
@@ -445,10 +447,10 @@ graph TD
   G6 -->|one-wire| S4[DS18B20<br/>in reservoir]
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Alert Logic Comparison
 
@@ -490,10 +492,10 @@ graph TD
 | Power cut restored | Log timestamp; check all sensors on resume | Pumps and timers may need manual restart after power cut |
 | Sensor read error | Alert: sensor offline | Distinguish hardware fault from genuine limit breach |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Dashboard Design for a Two-System Setup
 
@@ -525,10 +527,10 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 - Acknowledge button for non-critical alerts
 - History log of past alerts
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Automation Decision Guide
 
@@ -564,11 +566,11 @@ This configuration, running ESPHome and Home Assistant, gives you 24/7 monitorin
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [Comparison Guide 04 — Cost and ROI: NFT vs Ebb & Flow](04-cost.md) — build costs, running costs, yield value, and payback period for each system*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

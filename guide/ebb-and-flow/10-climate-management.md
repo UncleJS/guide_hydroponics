@@ -1,6 +1,10 @@
 # Guide 10 — Climate Management for Outdoor Ebb & Flow
 ## Temperature, Heat, Frost, Wind, Rain, and Seasons
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -36,8 +40,8 @@
   - [Frost Warning Protocol (<3°C forecast)](#frost-warning-protocol-3c-forecast)
   - [Storm Protocol (Heavy Rain + Wind)](#storm-protocol-heavy-rain-wind)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Climate Matters Differently in Ebb & Flow
 
@@ -67,10 +71,10 @@ Key differences for climate management:
 
 These differences mean that an E&F grower in the same backyard as an NFT grower faces significantly more climate management challenges during rain events and heatwaves, but benefits from better thermal buffering during brief cold snaps.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Temperature — The Critical Variable
 
@@ -133,10 +137,10 @@ A 100L reservoir positioned below or beside the flood tables has a distinctive t
 - More exposed to direct sun if not shaded — can heat faster in summer
 - Wrap with reflective bubble wrap insulation or build a shade box if using this placement
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Managing Heat — Summer Strategies
 
@@ -214,10 +218,10 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
   (oxygen access) rather than prolonged immersion.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Managing Cold — Frost Protection
 
@@ -282,10 +286,10 @@ A 100L reservoir is very difficult to freeze. At 0°C ambient air temperature, i
   Insulate exposed pipes or drain them if prolonged freezing is forecast.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Wind — The Often-Overlooked Factor
 
@@ -330,10 +334,10 @@ Wind has a disproportionately large impact on outdoor Ebb & Flow compared to NFT
 
 **Important:** A windbreak on the prevailing wind side (typically southwest or west in the UK) should be positioned 3–5× its own height away from the tables. Closer than this creates turbulence that can be worse than no windbreak.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rain — A Unique Challenge for Open Flood Tables
 
@@ -394,10 +398,10 @@ Install permanent covers over roughly 60% of the table surface (particularly ove
 
 After a heavy rain event, the tables may already be at or beyond flood depth from rain alone. Skip the next 1–2 scheduled flood cycles to allow normal drain. If the timer is not aware of rain events, manually override the next flood cycle after heavy rain (>10 mm in 1h).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Seasonal Calendar — Outdoor Ebb & Flow (Temperate)
 
@@ -497,10 +501,10 @@ After a heavy rain event, the tables may already be at or beyond flood depth fro
       (no outdoor system needed; just the shelf + LED)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Flood Cycle Frequency by Season and Temperature
 
@@ -526,10 +530,10 @@ This table gives recommended flood cycle frequency based on ambient temperature.
 **Minimum dry time between flood cycles:**
 The LECA must have at least 4–6 hours of air-dry time in every 24-hour period to maintain adequate root zone oxygenation. Four floods per day means roughly 4–5 hours between floods. This is the practical maximum for most situations. More than 4 floods per day creates near-continuous wet conditions and dramatically increases Pythium risk.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. EC and pH Management by Season
 
@@ -567,10 +571,10 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
           change when you transition to autumn crops.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Emergency Action Plans
 
@@ -668,11 +672,11 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/11-build-guide.md`](11-build-guide.md) — Complete step-by-step build instructions for the outdoor Ebb & Flow system*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

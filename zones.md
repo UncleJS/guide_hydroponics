@@ -1,13 +1,49 @@
 # Zone Layout & Spatial Design
 ## Outdoor Hybrid Hydroponics Station
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Full Site Layout Map (Top-Down View)](#full-site-layout-map-top-down-view)
+- [Dimensions & Clearances](#dimensions-clearances)
+- [Zone A — NFT Channel Array (Detailed)](#zone-a-nft-channel-array-detailed)
+  - [Frame Side-View Diagram](#frame-side-view-diagram)
+  - [Channel Spacing (Front-View Cross Section)](#channel-spacing-front-view-cross-section)
+  - [Net Pot Hole Layout Per Channel](#net-pot-hole-layout-per-channel)
+  - [Reservoir Placement](#reservoir-placement)
+  - [Plumbing Route](#plumbing-route)
+- [Zone B — Microgreens Tray Station (Detailed)](#zone-b-microgreens-tray-station-detailed)
+  - [Shelf Structure](#shelf-structure)
+  - [Tray Configuration](#tray-configuration)
+  - [Microgreens Protocol Summary](#microgreens-protocol-summary)
+- [Zone C — Root Vegetable Grow Bags (Detailed)](#zone-c-root-vegetable-grow-bags-detailed)
+  - [Bag Layout](#bag-layout)
+  - [Bag Sizes and Depths](#bag-sizes-and-depths)
+  - [Media Mix for Grow Bags](#media-mix-for-grow-bags)
+  - [Fertigation Schedule (Zone C)](#fertigation-schedule-zone-c)
+- [Shade Cloth & Environmental Controls](#shade-cloth-environmental-controls)
+  - [Shade Cloth Positioning](#shade-cloth-positioning)
+  - [Frost Fleece Deployment](#frost-fleece-deployment)
+  - [Wind Break](#wind-break)
+- [Maintenance Access Map](#maintenance-access-map)
+- [Utility Requirements](#utility-requirements)
+
+---
+
 
 ## Overview
 
 The hybrid growing station is designed to occupy a **backyard footprint of approximately 4m × 3m** (12m²). This is enough for the full three-zone system with clearance for maintenance access on all sides and a comfortable working aisle.
 
 The station is oriented with the **long axis running east–west** so that the south-facing side of the channels receives maximum sun exposure in the Northern Hemisphere. Adjust to north-facing if you are in the Southern Hemisphere.
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
@@ -51,6 +87,8 @@ flowchart TD
 > **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
 > **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Dimensions & Clearances
@@ -66,6 +104,8 @@ flowchart TD
 | Wind break clearance | 0.3m | From fence/wall to system |
 
 **Minimum workable footprint:** 3.5m × 2.5m if space is tight — compress Zone B/C side by side under a shelf.
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
@@ -164,6 +204,8 @@ flowchart TD
     RETURN --> RES2
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Zone B — Microgreens Tray Station (Detailed)
@@ -212,6 +254,8 @@ block-beta
 6. **Water:** Mist surface 2× daily during blackout, bottom-water after uncovering
 7. **Harvest:** Cut at soil level when first true leaves appear (7–14 days depending on variety)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Zone C — Root Vegetable Grow Bags (Detailed)
@@ -257,6 +301,8 @@ block-beta
 
 **Method:** Mix nutrient solution in a watering can. Water until runoff drains from bag bottom (20% runoff recommended to prevent salt buildup).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Shade Cloth & Environmental Controls
@@ -278,11 +324,11 @@ flowchart TD
 
 ```
   Autumn / cold nights (below 5°C):
-  
+
   Drape horticultural fleece (30–50g/m²) over entire zone.
   Anchor edges with clips or stones.
   Remove during warm sunny days — fleece traps heat and humidity.
-  
+
   Do NOT leave fleece on during heavy rain — weight can damage plants.
 ```
 
@@ -292,6 +338,8 @@ flowchart TD
 - Leave south and west open for sunlight and gentle air movement
 - Secure all channels and the reservoir to the frame with cable ties or straps in high-wind conditions
 - Taller plants (tomatoes, peppers) need individual staking/trellis regardless
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
@@ -310,6 +358,8 @@ flowchart TD
     NORTH --> NFT --> RES_ACCESS --> ZB_ACCESS --> ZC_ACCESS --> BENCH_ACCESS --> SOUTH
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Utility Requirements
@@ -325,7 +375,9 @@ flowchart TD
 
 *See [`guide/nft/11-build-guide.md`](guide/nft/11-build-guide.md) for NFT construction instructions*
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

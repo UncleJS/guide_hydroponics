@@ -1,0 +1,39 @@
+.env
+.env.*
+.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local editor and OS files
+.DS_Store
+.vscode/
+
+# Credentials, secrets, and local config
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*secret*
+*secrets*
+*credential*
+*credentials*
+*password*
+*passwd*
+*auth*
+
+config/*.local.*
+config/*secret*
+config/*credential*
+config/*password*
+config/*auth*

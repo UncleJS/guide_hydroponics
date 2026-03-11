@@ -1,6 +1,10 @@
 # Comparison Guide 02 — Crops: NFT vs Ebb & Flow
 ## Which plants thrive in each system, why, and how to plan a mixed-system grow
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -14,7 +18,7 @@
   - [Excellent in NFT](#excellent-in-nft)
   - [Marginal in NFT](#marginal-in-nft)
   - [Not Suitable for NFT](#not-suitable-for-nft)
-- [3. Ebb & Flow Crop Library](#3-ebb--flow-crop-library)
+- [3. Ebb & Flow Crop Library](#3-ebb-flow-crop-library)
   - [Excellent in E&F](#excellent-in-ef)
   - [Marginal in E&F](#marginal-in-ef)
   - [Not Suitable for E&F](#not-suitable-for-ef)
@@ -38,18 +42,16 @@
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ## Introduction
 
 Crop choice is one of the starkest differences between NFT and Ebb & Flow. Both systems can grow most leafy greens, herbs, and fruiting crops to some degree, but each excels in a different category. NFT is the superior tool for high-turnover leafy crops and compact herbs. E&F opens the door to fruiting crops — cucumbers, courgettes, aubergine, and large-root tomatoes — that NFT physically cannot support.
 
 This guide covers which crops belong in which system, why, how to plan year-round production across both, and how to avoid the most common crop selection mistakes.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why System Design Determines Crop Choice
 
@@ -85,10 +87,10 @@ Leafy crops grow fast and need consistent, high-nitrogen nutrition throughout th
 
 Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): high nitrogen during vegetative growth, reduced nitrogen and increased potassium and calcium from flower set through fruit swelling, and a final flush. The intermittent flood cycle in E&F allows the grower to change the nutrient profile on a schedule that decouples nicely from the plant's root uptake — change the reservoir, and the new profile gradually reaches the roots over the next 3–4 flood cycles.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. NFT Crop Library
 
@@ -171,10 +173,10 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 | Beans (climbing) | Structural load too high for channel mounting; roots fill channel rapidly |
 | Brassicas (full head — cabbage, broccoli) | 10–14 week cycle with large root mass; channel blocking from week 6 |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Ebb & Flow Crop Library
 
@@ -247,10 +249,10 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 | Watercress | Requires continuous flowing water; standing flood and drain is not suitable |
 | Very slow brassicas (cabbage, swede) | Long season ties up large table area; poor ROI |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Side-by-Side Crop Comparison Table
 
@@ -276,10 +278,10 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 | Sweet pepper | ★★☆☆☆ | ★★★★★ | E&F | Root volume and cycle length suit E&F |
 | Chilli pepper | ★★★☆☆ | ★★★★☆ | E&F (mild preference) | Both work; E&F yields more per plant |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Yield Estimates and Cycle Times
 
@@ -324,10 +326,10 @@ The following estimates are for a 3-zone outdoor system in a temperate climate (
 | Sweet pepper | Late April | 14–16 weeks | October | 20–40 fruits |
 | Chilli | Late April | 12–14 weeks | October | 50–200 pods (variety-dependent) |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Succession Planning
 
@@ -381,10 +383,10 @@ Running NFT and E&F in parallel gives you year-round production of leafy crops A
 
 This gives 52 weeks of lettuce, herbs, and spinach from NFT, plus 20+ weeks of high-value tomatoes, cucumbers, and courgettes from E&F. This is the highest-productivity configuration of the two-system setup described in this repository.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Spacing and Plant Density
 
@@ -416,10 +418,10 @@ This gives 52 weeks of lettuce, herbs, and spinach from NFT, plus 20+ weeks of h
 | Pak choi | 6 | 20 cm spacing |
 | Herbs (mixed) | 4–6 | 20–25 cm spacing depending on variety |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Transplanting and Root Transition
 
@@ -451,10 +453,10 @@ If you need to transfer (e.g., system fault repair), handle as follows:
 - Replant quickly; run extra flood cycles (E&F) or confirm flow is established (NFT) before leaving unattended
 - Expect a 3–7 day recovery period with slowed growth
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Crop-Specific Problem Hotspots
 
@@ -474,10 +476,10 @@ If you need to transfer (e.g., system fault repair), handle as follows:
 | Spinach | NFT | Bolting | Heat; day length; grow in spring and autumn; avoid July/August unless shaded |
 | Mint | NFT | Spreading roots blocking channels | Use large net pot (100 mm); check channel flow monthly; remove and divide annually |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Decision Guide: Which System for Which Crop?
 
@@ -506,11 +508,11 @@ graph TD
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [Comparison Guide 03 — Automation: NFT vs Ebb & Flow](03-automation.md) — how sensor requirements, failure modes, and automation priorities differ between the two systems*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,5 +1,9 @@
 # Guide 12 — Budget, Sourcing, and ROI
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 This guide provides an itemised bill of materials (BOM) for all three build tiers, sourcing guidance, running cost estimates, and a realistic return-on-investment (ROI) calculation based on expected yields versus supermarket prices.
 
 ---
@@ -47,10 +51,6 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
   - [9.4 Full Annual Running Cost Summary](#94-full-annual-running-cost-summary)
 - [10. Yield Estimates and ROI](#10-yield-estimates-and-roi)
   - [10.1 Zone A — NFT Expected Yields](#101-zone-a-nft-expected-yields)
-    - [Lettuce (Channel 1, 11 sites, ~230mm spacing)](#lettuce-channel-1-11-sites-230mm-spacing)
-    - [Herbs (Channel 3, 11 sites)](#herbs-channel-3-11-sites)
-    - [Cherry Tomatoes (Channel 4, 3–4 plants)](#cherry-tomatoes-channel-4-34-plants)
-    - [Strawberries (Channel 4, 4–6 plants)](#strawberries-channel-4-46-plants)
   - [10.2 Zone B — Microgreens Yield](#102-zone-b-microgreens-yield)
   - [10.3 Zone C — Root Veg Yield](#103-zone-c-root-veg-yield)
   - [10.4 Total Annual Yield Value](#104-total-annual-yield-value)
@@ -61,8 +61,8 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
   - [11.4 Non-Financial Value](#114-non-financial-value)
 - [Quick Reference — Budget at a Glance](#quick-reference-budget-at-a-glance)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Build Tier Overview
 
@@ -90,10 +90,10 @@ TIER 3 — OPTIMISED ($350–$500)
 
 Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices are based on typical 2024–2025 retail prices; check current pricing at purchase time.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Zone A — NFT System BOM
 
@@ -231,10 +231,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 > **Note:** Tier 1 comes in above the stated $100–$180 range for Zone A alone. The range applies to a single-zone minimal setup. The full 3-zone system has more components. See Section 6 for how to reach the target ranges by splitting the build phases.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Zone B — Microgreens Station BOM
 
@@ -252,10 +252,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 | **Microgreens seeds assortment (100g each × 3 varieties)** | $12 | $18 | $25 |
 | **Zone B TOTAL** | **$89** | **$140** | **$203** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Zone C — Root Veg Grow Bags BOM
 
@@ -270,10 +270,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 | **Root veg seed assortment** | $8 | $12 | $18 |
 | **Zone C TOTAL** | **$57** | **$81** | **$110** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Consumables and Ongoing Supplies
 
@@ -299,10 +299,10 @@ These are not one-time costs but will recur each growing season (or more frequen
 
 **Average ongoing cost: ~$175–$200 per full season.**
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier Totals Summary
 
@@ -330,10 +330,10 @@ flowchart TD
 
 This phased approach lets you start with a functional system at ~$200 and expand as you gain confidence and see results.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Where to Buy
 
@@ -412,10 +412,10 @@ WHAT TO BUY LOCALLY (hardware store)
 
 **Cheapest route for UK growers:** Masterblend from Amazon UK or Hydroponics UK; Calcium Nitrate from a local garden or farm supply; Epsom Salt from Wilko or Aldi (5 kg health/bath salt, food grade, same compound).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Cost-Saving Strategies
 
@@ -477,10 +477,10 @@ Clay pebbles (LECA) can be reused indefinitely if properly cleaned. After each c
 
 Rockwool cubes are single-use (they degrade and can harbour pathogens). Switch to Rapid Rooter or coco plugs (both biodegradable) for slightly easier disposal.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Running Costs
 
@@ -547,10 +547,10 @@ At 36 changes per season (every ~7 days for 9 months):
 
 **Realistic mid-range annual running cost: ~$200–$250.**
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Yield Estimates and ROI
 
@@ -659,10 +659,10 @@ Beetroot (2 bags, ~16 plants):
 
 > **Important caveat:** These are supermarket retail equivalent values — the money you save on your grocery bill, not money you earn. Not all this produce can be consumed by one household. Microgreens in particular will exceed typical household consumption unless you sell or donate surplus.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Payback Period Analysis
 
@@ -725,10 +725,10 @@ The ROI analysis only captures direct grocery savings. The full value of the sys
 - **Mental health:** Growing food is consistently linked to stress reduction and wellbeing in research literature
 - **Carbon footprint:** Eliminating packaging, transport, and refrigeration chain for your own fresh produce
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Budget at a Glance
 
@@ -753,11 +753,11 @@ xychart-beta
 > This completes the core guide series. For a full system overview and build timeline, see [PLAN.md](../PLAN.md).
 
 
-[↑ Back to TOC](#table-of-contents)
-
 > **Next:** [Guide 13 — Automation and Data Logging →](./13-automation.md) — budget-friendly sensor networks, ESP32 builds, dashboards, and automated pH/EC dosing from $15 to $300.
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

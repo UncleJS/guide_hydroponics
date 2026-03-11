@@ -1,6 +1,10 @@
 # Guide 12 — Budget and Sourcing
 ## Bill of Materials, Costs, Where to Buy, and ROI
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -8,8 +12,6 @@
 - [1. Build Tier Overview](#1-build-tier-overview)
 - [2. Zone A — Flood Table System BOM](#2-zone-a-flood-table-system-bom)
   - [2.1 Flood Tables](#21-flood-tables)
-    - [2.1A — Bought Ready-Made Flood Tables (Option A)](#21a-bought-ready-made-flood-tables-option-a)
-    - [2.1B — DIY Timber + Pond Liner Tables (Option B)](#21b-diy-timber-pond-liner-tables-option-b)
   - [2.2 Bulkhead Fittings and Overflow System](#22-bulkhead-fittings-and-overflow-system)
   - [2.3 Reservoir](#23-reservoir)
   - [2.4 Pump and Aeration](#24-pump-and-aeration)
@@ -51,9 +53,6 @@
   - [9.5 Full Annual Running Cost Summary](#95-full-annual-running-cost-summary)
 - [10. Yield Estimates and ROI](#10-yield-estimates-and-roi)
   - [10.1 Zone A — E&F Flood Table Expected Yields](#101-zone-a-ef-flood-table-expected-yields)
-    - [Table 1 — Leafy Greens and Herbs (lettuce, herbs, spinach, kale)](#table-1-leafy-greens-and-herbs-lettuce-herbs-spinach-kale)
-    - [Table 2 — Fruiting Crops (tomatoes, peppers, cucumbers, strawberries)](#table-2-fruiting-crops-tomatoes-peppers-cucumbers-strawberries)
-    - [Zone A Yield Summary](#zone-a-yield-summary)
   - [10.2 Zone B — Microgreens Yield](#102-zone-b-microgreens-yield)
   - [10.3 Zone C — Root Veg Yield](#103-zone-c-root-veg-yield)
   - [10.4 Total Annual Yield Value](#104-total-annual-yield-value)
@@ -65,8 +64,8 @@
   - [11.5 Non-Financial Value](#115-non-financial-value)
 - [Quick Reference — Budget at a Glance](#quick-reference-budget-at-a-glance)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Build Tier Overview
 
@@ -98,10 +97,10 @@ Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices
 
 > **E&F vs. NFT cost drivers:** The key cost differences in Ebb & Flow versus NFT are: (1) flood tables instead of PVC channels — whether bought or DIY; (2) bulkhead fittings (4 total, more robust than NFT drain barbs); (3) larger pump (800–1200 L/h vs. 600–800 L/h); (4) larger reservoir (100 L vs. 80 L); (5) significantly more LECA (40–50 L total vs. ~10 L for NFT); and (6) the digital timer is mandatory, not optional — a power cut resetting an E&F timer is a root-rot event within hours.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Zone A — Flood Table System BOM
 
@@ -266,10 +265,10 @@ Using Option B (DIY tables) for Tier 1 and Option A (bought tables) for Tier 2 a
 
 > **Note:** The stated $150–$600 range applies to phased builds and single-zone starts. See Section 6 for how to reach the target ranges by phasing. A Zone A-only Tier 1 build using a repurposed reservoir and all-DIY tables can reach ~$200–$250.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Zone B — Microgreens Station BOM
 
@@ -289,10 +288,10 @@ This zone is identical to the NFT system Zone B — the microgreens station has 
 | **Microgreens seeds assortment (100g each × 3 varieties)** | $12 | $18 | $25 |
 | **Zone B TOTAL** | **$89** | **$140** | **$203** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Zone C — Root Veg Grow Bags BOM
 
@@ -310,10 +309,10 @@ The E&F system uses larger grow bags than the NFT guide specifies — 3× 20L ba
 | **Root veg seed assortment** | $8 | $12 | $18 |
 | **Zone C TOTAL** | **$65** | **$91** | **$123** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Consumables and Ongoing Supplies
 
@@ -341,10 +340,10 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 > **E&F consumable note:** LECA is reusable indefinitely with proper cleaning (bleach soak, triple rinse, sun dry). Unlike rockwool in NFT channels, LECA in E&F tables does not compact or degrade significantly. The ~$5–$10 annual top-up is for replacement of pebbles that crack or are lost during cleaning — not a full replacement. This makes the E&F growing media cost lower over time than NFT rockwool cubes despite the higher initial LECA investment.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier Totals Summary
 
@@ -404,10 +403,10 @@ TIER 3 ($400–$600):
   ✓ Aquarium heater for winter reservoir temp management
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Where to Buy
 
@@ -497,10 +496,10 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
 
 **Cheapest route for UK growers:** Masterblend from Amazon UK or Hydroponics UK; Calcium Nitrate from a local garden or farm supply; Epsom Salt from Wilko or Aldi (5 kg health/bath salt, food grade, same compound).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Cost-Saving Strategies
 
@@ -585,10 +584,10 @@ Adjustable standpipes from hydroponics shops cost $8–$15 each. A length of 25m
 
 The E&F specification uses a single pump serving both tables via a T-splitter. An alternative is one pump per table — which adds redundancy but doubles pump cost and electrical connections. At Tier 1 and 2, the single-pump approach with a spare pump on hand (cost ~$20) is more cost-effective than a two-pump baseline setup. The spare pump takes less than 5 minutes to swap in. Keep one spare pump in your shed.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Running Costs
 
@@ -672,10 +671,10 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 
 **Realistic mid-range annual running cost: ~$220–$265.**
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Yield Estimates and ROI
 
@@ -788,10 +787,10 @@ Beetroot (1× 30L deep bag, 10 plants):
 
 > **Important caveat:** These are supermarket retail equivalent values — the money you save on your grocery bill, not money you earn. Microgreens in particular will exceed typical household consumption unless you sell, gift, or donate surplus. The fruiting crop yields from E&F flood tables are meaningfully higher than NFT equivalents due to the larger root zone — this is the primary yield argument for choosing E&F over NFT for tomato and cucumber growers.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Payback Period Analysis
 
@@ -870,10 +869,10 @@ The ROI analysis captures only direct grocery savings. The full value of the E&F
 - **Mental health:** Growing food — especially tending fruiting plants from flower to harvest — is consistently linked to stress reduction in research literature
 - **Carbon footprint:** Eliminating the packaging, transport refrigeration, and food miles associated with supermarket tomatoes and cucumbers
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Budget at a Glance
 
@@ -897,11 +896,11 @@ xychart-beta
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [Guide 13 — Budget-Friendly Automation and Data Logging →](./13-automation.md)*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

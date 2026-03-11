@@ -1,6 +1,10 @@
 # Guide 03 — Water Quality
 ## Sources, Testing, Treatment, and Management
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -41,8 +45,8 @@
 - [13. Full Water Change Protocol](#13-full-water-change-protocol)
   - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Starting Water Quality Matters
 
@@ -58,10 +62,10 @@ Your source water directly affects:
 
 **First step before filling the reservoir for the first time:** Test your source water's EC and pH. This information determines how you mix nutrients, how you manage pH, and whether you need pre-treatment.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. TDS (Total Dissolved Solids) and EC Baseline
 
@@ -113,10 +117,10 @@ Most municipal water suppliers publish annual quality reports. Look for:
 - **pH** — your starting point before nutrient addition
 - **Iron, manganese, copper** — can cause problems at elevated levels
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tap Water: Chlorine, Chloramine, and Hardness
 
@@ -177,10 +181,10 @@ Hard water causes the same problems as in NFT (pH creep, scale, excess Ca/Mg) bu
   Follow with thorough rinsing and standard pH re-conditioning.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Well Water Issues
 
@@ -197,10 +201,10 @@ If you use well water, test it thoroughly before use. Common problems in well wa
 
 **Recommendation:** If using well water, buy a basic water test kit from a hardware store or send a sample to a lab before starting. The $15–$50 cost is trivial compared to losing a season of crops.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Reverse Osmosis (RO) — When It's Worth It
 
@@ -231,10 +235,10 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
 
 For a 100L reservoir requiring weekly full changes, a countertop RO unit with a 10–20L storage tank is sufficient. Fill slowly over 12–24 hours, store in the tank, use for reservoir fill.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rainwater Harvesting
 
@@ -268,10 +272,10 @@ flowchart TD
 
 **Legality note:** Rainwater harvesting is permitted and encouraged in most of Europe, UK, Australia, and Canada. In the US it is now legal in nearly all states (historically restricted in a few western states). Check your local regulations before investing in a large system.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. pH Testing Methods Compared
 
@@ -325,10 +329,10 @@ flowchart TD
   Media pH is frequently 0.2–0.5 higher than reservoir pH in E&F systems.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. EC Meters: Types, Calibration, and Use
 
@@ -369,10 +373,10 @@ This is unique to media-based systems. Your management routine should include bo
   Media EC < Reservoir EC − 0.5 mS/cm:    → Media depleted — check for channelling/dry zones
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. pH Up and pH Down — Safe Handling
 
@@ -425,10 +429,10 @@ This is unique to media-based systems. Your management routine should include bo
   pushing pH back up. This is normal in weeks 1–4 with new media. Adjust and recheck.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Water Temperature Management Outdoors
 
@@ -477,10 +481,10 @@ Maximise this advantage:
   Worth considering if summer temperatures regularly exceed 30°C.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Algae Prevention in E&F Systems
 
@@ -539,10 +543,10 @@ If algae is already established:
   you will need to re-inoculate after treatment (worm tea, Hydroguard).
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Salt Accumulation and Flush Scheduling
 
@@ -575,10 +579,10 @@ The most important water management practice unique to E&F is **monitoring and m
   Trends over weeks tell you whether your flush frequency is adequate.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Full Water Change Protocol
 
@@ -626,11 +630,11 @@ The most important water management practice unique to E&F is **monitoring and m
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/04-lighting.md`](04-lighting.md) — Outdoor light, PAR, DLI, shade management, and seasons*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

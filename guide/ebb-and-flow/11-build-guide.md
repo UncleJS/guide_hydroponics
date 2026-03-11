@@ -1,6 +1,10 @@
 # Guide 11 — Build Guide
 ## Step-by-Step Instructions for the Outdoor Ebb & Flow System
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -63,8 +67,8 @@
   - [Mistake 8 — LECA Not Pre-Rinsed and Pre-Soaked](#mistake-8-leca-not-pre-rinsed-and-pre-soaked)
 - [17. Build Checklist](#17-build-checklist)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. System Overview Recap
 
@@ -111,10 +115,10 @@ flowchart LR
 
 Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Tools Required
 
@@ -151,10 +155,10 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 | Pipe cutters (22–32 mm) | Clean cuts on supply/drain pipes |
 | Wheel (hand truck / trolley) | Moving filled 100L reservoir when maintenance required |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Safety and Prep Notes
 
@@ -173,10 +177,10 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 5. **Tables MUST be perfectly level.** Unlike NFT channels (which need a precise slope), E&F tables must be level to ensure even flood distribution and complete drainage. An unlevel table creates a permanently wet low corner — a Pythium incubator.
 6. **Reservoir must be LOWER than the table drain outlet.** Gravity is the drain mechanism. If the drain port on the table is below reservoir water level, siphon drainage will not occur and the drain will fail.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Step 1 — Site Preparation
 
@@ -234,10 +238,10 @@ block-beta
     dims["Total footprint approx: 1.5m wide × 1.4m deep (tables only)<br/>With access aisles: 2.5m wide × 1.6m deep"]
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Step 2 — Building or Sourcing the Flood Tables
 
@@ -372,10 +376,10 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
   TARGET: ±2 mm across the full 1.2 m table length (0.1° deviation maximum)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Step 3 — Reservoir Setup and Positioning
 
@@ -422,10 +426,10 @@ flowchart TD
 5. **Install pump:**
    Place the submersible pump on the reservoir floor. Route the power cable through the lid cable exit. Connect supply hose to pump outlet. The pump should be fully submerged at all times — mark the minimum safe water level (pump top +5 cm) on the reservoir exterior.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Step 4 — Installing Overflow and Drain Fittings
 
@@ -535,10 +539,10 @@ Each table needs two bulkhead fittings (fill port + overflow/drain port). For 2 
      Use a rubber grommet if the standpipe is loose in the fitting.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Step 5 — Plumbing
 
@@ -631,10 +635,10 @@ The drain is entirely gravity-fed. No pump required — when the flood pump stop
 | Combined drain header | 25 mm | 32 mm | For both tables draining simultaneously |
 | Drain return to reservoir | 25 mm | 32 mm | |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Step 6 — Timer Setup
 
@@ -689,10 +693,10 @@ Before any nutrient solution is involved, test the timer with plain water:
 4. Confirm table drains fully within 30 minutes of pump stopping
 5. After confirming this cycle works: set the actual operational schedule
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Step 7 — System Test (Water Only)
 
@@ -762,10 +766,10 @@ Before any nutrient solution is involved, test the timer with plain water:
 | Drain very slow (>45 min) | Drain hose too small; standpipe partially blocking drain bore | Upgrade to 32mm drain hose; ensure standpipe doesn't block drain fitting exit |
 | Pump noisy / grinding | Running dry; debris in impeller | Ensure fully submerged; clean impeller |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Step 8 — Media Preparation
 
@@ -811,10 +815,10 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 5. Run one test flood cycle to confirm LECA doesn't pile up on one side (the table is level) and drain returns correctly with LECA in place. Observe drain time — add 5 min to plain-table drain time (LECA slows drain slightly due to surface tension).
 6. Confirm overflow standpipe is at the correct height above LECA surface (see Step 4).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Step 9 — First Nutrient Solution Fill
 
@@ -840,10 +844,10 @@ After a successful water test and LECA installation, mix the first nutrient batc
 7. Start pump. Run one complete flood cycle and drain. EC and pH will shift slightly as LECA interacts with new solution — re-test after first flood cycle and adjust again.
 8. Record in logbook: date, EC, pH, reservoir level, nutrient recipe used.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Step 10 — Planting
 
@@ -924,10 +928,10 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
   □ After day 3: gradually increase EC to standard target over 1 week
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 14. Step 11 — Zone B Microgreens Station
 
@@ -971,10 +975,10 @@ block-beta
     end
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 15. Step 12 — Zone C Root Veg Grow Bags
 
@@ -1017,10 +1021,10 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 **Watering:** Check moisture with finger 2 cm into media. If dry: water until slight drainage. If moist: hold off. Target consistent moisture — neither waterlogged nor bone dry.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 16. Common Build Mistakes and How to Avoid Them
 
@@ -1072,10 +1076,10 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 **Prevention:** Rinse LECA until water runs mostly clear (4–6 wash cycles). Soak in pH-adjusted water for 24 hours. Test soak-water pH before using LECA — it should be below 7.0.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 17. Build Checklist
 
@@ -1170,11 +1174,11 @@ Use this as a final sign-off before moving to nutrient operation.
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/12-budget-and-sourcing.md`](12-budget-and-sourcing.md) — Bill of materials, costs, where to buy, and ROI*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

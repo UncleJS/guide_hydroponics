@@ -1,6 +1,10 @@
 # Guide 04 — Lighting
 ## Outdoor Light, PAR, DLI, Shade Management, and Seasons
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -39,8 +43,8 @@
   - [Cost-Benefit Summary](#cost-benefit-summary)
 - [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Language of Plant Light
 
@@ -123,10 +127,10 @@ DLI is the **total quantity of PAR light delivered over an entire day**. It inte
   DLI = 400 × 10 × 0.0036 = 14.4 mol/m²/day → adequate for lettuce
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. DLI Targets by Crop
 
@@ -181,10 +185,10 @@ These are the daily light requirements your plants need for optimal growth. The 
 
 > **Latitude matters:** The table above is calibrated for **50–55°N latitude** (UK, northern Europe, southern Canada). If you are at a **lower latitude** (30–45°N — southern US, Mediterranean, Japan), expect higher DLI year-round and a longer viable outdoor season. If you are at a **higher latitude** (55–65°N — Scandinavia, northern Canada), expect more extreme seasonal swings. Adjust your planting calendar and supplemental lighting plans accordingly.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Minimum Sun Hours Per Crop
 
@@ -206,10 +210,10 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 > **Site selection rule:** Choose a location with **unobstructed southern sky** (Northern Hemisphere) for at least 8 hours. Avoid sites shaded by buildings, walls, or large trees during peak growing hours (10am–4pm). For courgettes and cucumbers grown in E&F flood tables, maximum sun exposure translates directly to yield — these are high-light, high-energy crops.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Siting the System: Sun Mapping
 
@@ -289,10 +293,10 @@ On wide flat tables, tall plants can shade smaller neighbours in a way that does
 
 > **Practical rule:** Orient tall crops (tomatoes, cucumbers) to the north end of the flood table so they do not shade the shorter crops growing to the south. Better still, dedicate Table 2 entirely to fruiting crops and keep Table 1 for leafy greens and herbs.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shade Cloth: Percentages, Timing, and Deployment
 
@@ -359,10 +363,10 @@ Unlike NFT channels (which are structural tubes), flood tables have a flat open 
   - Fruiting crops are in final ripening phase — maximum light improves fruit quality and sugar content
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Heat Stress vs Light Stress: Distinguishing the Two
 
@@ -383,10 +387,10 @@ These can look similar but have different causes and solutions:
 
 > **E&F-specific advantage:** The reservoir sits under the flood tables in this system, which naturally shades it from direct sun and helps maintain lower solution temperatures compared to exposed reservoirs. If your reservoir temperature is still climbing above 22°C, wrap it with insulation foam or a reflective cover.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Photoperiod Sensitivity
 
@@ -420,10 +424,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 **Tomatoes and peppers:** Day-neutral — flower and fruit based on plant maturity and temperature, not photoperiod. No photoperiod concerns.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Seasonal Light Strategy
 
@@ -495,10 +499,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
     to November/December with no supplemental lighting
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Supplemental Lighting for Season Extension
 
@@ -611,10 +615,10 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
 
 > **Budget consideration:** For a $100–$500 budget system, supplemental lighting is an optional upgrade. Focus on getting the outdoor system working perfectly first. The flood tables are well-suited to a cold frame or low tunnel covering in autumn — this extends the season without the cost of artificial lighting.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Microgreens Lighting (Zone B)
 
@@ -665,11 +669,11 @@ The 2-tier shelf for microgreens should be positioned where it receives direct l
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/05-growing-media.md`](05-growing-media.md) — Clay pebbles, coco coir, rockwool, perlite, and germination*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

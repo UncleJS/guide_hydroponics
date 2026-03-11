@@ -1,6 +1,10 @@
 # Guide 04 — Lighting
 ## Outdoor Light, PAR, DLI, Shade Management, and Seasons
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -38,8 +42,8 @@
   - [Cost-Benefit Summary](#cost-benefit-summary)
 - [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Language of Plant Light
 
@@ -121,10 +125,10 @@ DLI is the **total quantity of PAR light delivered over an entire day**. It inte
   DLI = 400 × 10 × 0.0036 = 14.4 mol/m²/day → adequate for lettuce
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. DLI Targets by Crop
 
@@ -165,7 +169,7 @@ These are the daily light requirements your plants need for optimal growth:
   October         10.0h              14–18           6–10
   November         8.5h              8–12            3–6
   December         7.5h              6–10            2–5
-  
+
   KEY CONCLUSIONS:
   - Lettuce and herbs: adequate light April–September
   - Tomatoes/peppers: adequate light May–August (peak season)
@@ -175,10 +179,10 @@ These are the daily light requirements your plants need for optimal growth:
 
 > **Latitude matters:** The table above is calibrated for **50–55°N latitude** (UK, northern Europe, southern Canada). If you are at a **lower latitude** (30–45°N — southern US, Mediterranean, Japan), expect higher DLI year-round and a longer viable outdoor season. If you are at a **higher latitude** (55–65°N — Scandinavia, northern Canada), expect more extreme seasonal swings — very long summer days but significantly less winter light. Adjust your planting calendar and supplemental lighting plans accordingly.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Minimum Sun Hours Per Crop
 
@@ -197,10 +201,10 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 > **Site selection rule:** Choose a location with **unobstructed southern sky** (Northern Hemisphere) for at least 8 hours. Avoid sites shaded by buildings, walls, or large trees during peak growing hours (10am–4pm).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Siting the System: Sun Mapping
 
@@ -235,10 +239,10 @@ If your site is in shadow at 12pm due to a building or tall fence, you either ne
 
 **Height rule of thumb:** A wall or fence at a distance D from your system will cast a shadow with a length of approximately **D × (1/tan(sun altitude angle))**. At summer noon in the UK (~60°N), sun altitude is ~55°; shadow length = D × 0.7. At winter noon, it is ~10°; shadow length = D × 5.7 (this is why winter indoor growing requires much more space from walls).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shade Cloth: Percentages, Timing, and Deployment
 
@@ -287,10 +291,10 @@ Install 4 posts at the corners of Zone A. Stretch 40% shade cloth over the top, 
   - Night temperatures drop below 15°C (plants need all the DLI they can get)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Heat Stress vs Light Stress: Distinguishing the Two
 
@@ -308,10 +312,10 @@ These can look similar but have different causes and solutions:
 
 **Test:** Check your reservoir water temperature. If it's above 24°C, heat is the primary stressor. Deploy shade AND insulate the reservoir.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Photoperiod Sensitivity
 
@@ -339,10 +343,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 **Tomatoes and peppers:** Day-neutral — flower and fruit based on plant maturity and temperature, not photoperiod. No photoperiod concerns.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Seasonal Light Strategy
 
@@ -395,10 +399,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
   - Consider: a simple cold frame can extend lettuce production to November/December
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Supplemental Lighting for Season Extension
 
@@ -506,10 +510,10 @@ If you want to extend your growing season beyond September outdoors, supplementa
 
 > **Budget consideration:** For a $100–$500 budget system, supplemental lighting is an optional upgrade. Focus on getting the outdoor system working perfectly first.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Microgreens Lighting (Zone B)
 
@@ -528,7 +532,7 @@ Microgreens have different light needs from mature crops:
   Chlorophyll develops, cotyledons expand and green up.
   Outdoor: Place in partial shade first, then full light.
   Target DLI: 10–15 mol/m²/day
-  
+
   Phase 3 — Growth to harvest (days 7–14):
   Full outdoor light (40% shade in summer to prevent heat stress on tender seedlings)
   Harvest when first true leaves appear.
@@ -537,11 +541,11 @@ Microgreens have different light needs from mature crops:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/05-growing-media.md`](05-growing-media.md) — Net pots, clay pebbles, rockwool, coco, and germination*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

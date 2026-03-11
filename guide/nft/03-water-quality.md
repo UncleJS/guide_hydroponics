@@ -1,6 +1,10 @@
 # Guide 03 — Water Quality
 ## Sources, Testing, Treatment, and Management
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -50,8 +54,8 @@
 - [13. Full Water Change Protocol](#13-full-water-change-protocol)
   - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Starting Water Quality Matters
 
@@ -64,10 +68,10 @@ In hydroponics, water is the delivery vehicle for every nutrient your plants wil
 
 **First step before mixing any nutrients:** Test your source water's EC and pH. This tells you your baseline and informs how much you need to adjust.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. TDS (Total Dissolved Solids) and EC Baseline
 
@@ -114,10 +118,10 @@ Most municipal water suppliers publish annual water quality reports online. Look
 - **pH** — your starting point
 - **Iron, manganese, copper** — can cause problems at high levels
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tap Water: Chlorine, Chloramine, and Hardness
 
@@ -182,10 +186,10 @@ Hard water contains excess calcium and magnesium carbonate (bicarbonates). Probl
   Most precise control but adds cost. See section 5.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Well Water Issues
 
@@ -202,10 +206,10 @@ If you use well water, test it thoroughly before use. Common problems:
 
 **Recommendation:** If using well water, buy a basic water test kit from a hardware store or send a sample to a lab before starting. This costs $15–$50 and can save you a season of problems.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Reverse Osmosis (RO) — When It's Worth It
 
@@ -243,10 +247,10 @@ A countertop or under-sink RO unit with a storage tank (10–20L) is sufficient 
 - Add nutrients from scratch (EC starts at ~0.0)
 - No need to worry about baseline minerals interfering
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rainwater Harvesting
 
@@ -287,10 +291,10 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 - If collected from a roof, filter through a fine mesh before use
 - Mix with tap water if you run low during dry periods
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. pH Testing Methods Compared
 
@@ -298,10 +302,10 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 
 ```
   HOW IT WORKS: Add indicator drops to a water sample; colour matches pH chart.
-  
+
   Pros:  Cheap ($5–$10), no calibration, no batteries, works forever
   Cons:  Subjective colour matching, ±0.2–0.5 accuracy, only tests point samples
-  
+
   Best for: Backup verification, no electricity environments
 ```
 
@@ -309,11 +313,11 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 
 ```
   HOW IT WORKS: Dip strip into solution; compare colour to chart.
-  
+
   Pros:  Cheap ($5–$15 for 100 strips), no calibration
   Cons:  ±0.5–1.0 accuracy, affected by nutrients staining the strip
          Especially inaccurate in nutrient solution (colour masking)
-  
+
   Best for: Emergency backup only. NOT recommended for regular use in hydroponics.
 ```
 
@@ -321,15 +325,15 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 
 ```
   HOW IT WORKS: Glass electrode measures H⁺ ion concentration electronically.
-  
+
   Pros:  ±0.01–0.05 accuracy when calibrated, fast, easy to read
   Cons:  Requires calibration with buffer solution, electrode degrades over time,
          must store probe in storage solution (not water)
-  
+
   Budget options:  Vivosun, Dr.meter (~$12–$20) — acceptable accuracy
   Mid-range:       Apera PH20, BlueLab (~$35–$60) — excellent accuracy and build quality
   Professional:    Hanna HI98100+ (~$80+) — lab grade
-  
+
   Recommendation: Apera PH20 for this budget system — reliable, auto-calibrating.
 ```
 
@@ -355,10 +359,10 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
   Replace electrode: every 12–18 months (or when calibration drifts >0.3 pH)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. EC Meters: Types, Calibration, and Use
 
@@ -392,10 +396,10 @@ EC meters use a calibration solution with a known conductivity (commonly 1.413 m
 
 EC readings change with temperature (warm water = higher EC reading for same concentration). Quality meters include **Automatic Temperature Compensation (ATC)**. Always check that your meter has ATC before buying.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. pH Up and pH Down — Safe Handling
 
@@ -405,16 +409,16 @@ Most commonly: **Phosphoric acid (H₃PO₄)** — sold as pH Down or pH Minus
 
 ```
   Concentration: Typically 25–81% solution (dilute before contact with skin)
-  
+
   Pros:  Provides a small phosphorus supplement as a bonus
   Cons:  Can contribute excess P at high doses; corrosive
-  
+
   Safe use:
   - Wear gloves and eye protection
   - Always add to WATER, never water to acid
   - Start with small doses: 1ml per 4L, stir, measure, repeat
   - Rinse skin immediately if contact occurs
-  
+
   Other pH down options:
   - Citric acid: natural, safe, used by some organic growers
   - Nitric acid: faster acting but more hazardous — not recommended for beginners
@@ -427,17 +431,17 @@ Most commonly: **Potassium hydroxide (KOH)** — sold as pH Up or pH Plus
 
 ```
   Concentration: Typically 1–25% solution
-  
+
   Pros:  Adds a small K (potassium) supplement
   Cons:  Can contribute excess K at high doses; caustic
-  
+
   Safe use:
   - Wear gloves and eye protection
   - Very caustic — corrosive to skin and eyes
   - Add small drops only: 1ml per 4L, stir, measure, repeat
   - Store upright in a cool, dark place
   - Rinse skin immediately if contact occurs
-  
+
   Alternative: Sodium bicarbonate (baking soda) — gentle, cheap, but adds Na which
   can accumulate and stress plants. Acceptable for emergency use only.
 ```
@@ -453,15 +457,15 @@ Most commonly: **Potassium hydroxide (KOH)** — sold as pH Up or pH Plus
   4. If pH < 5.5: add pH Up 1ml at a time, stir, wait 30 seconds, remeasure
   5. Repeat until target achieved
   6. Final check after 5 minutes (pH can drift slightly after initial adjustment)
-  
+
   COMMON MISTAKE: Over-adjusting (pH swinging past target). Go slowly.
   COMMON MISTAKE: Adjusting before nutrients are mixed (nutrients change pH significantly).
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Water Temperature Management Outdoors
 
@@ -479,33 +483,33 @@ An 80L reservoir in direct sun on a hot summer day can reach 28–35°C — a te
   STRATEGY 1 — SHADE (Free, most effective):
   Position reservoir UNDER the NFT frame in the shade of the channels.
   Or wrap with shade cloth.
-  
+
   STRATEGY 2 — INSULATION ($5–$20):
   Wrap reservoir in:
   - Reflective bubble wrap insulation (best — reflects + insulates)
   - Foam camping mat glued to exterior
   - Bury partially in the ground (1/3 depth underground = effective thermal mass)
-  
+
   STRATEGY 3 — WHITE/REFLECTIVE PAINT (Free if you have paint):
   Paint exterior of reservoir white or silver.
   Reflects radiant heat — can reduce water temp 2–4°C vs black container.
-  
+
   STRATEGY 4 — FROZEN BOTTLES (Free, temporary):
   Fill 500ml–1L plastic bottles with water, freeze.
   Drop into reservoir on hot days.
   Works well for short-term temperature spikes.
   Replace daily in peak summer.
-  
+
   STRATEGY 5 — AQUARIUM CHILLER ($50–$200):
   Most effective, most expensive.
   Inline chiller maintains water at set temperature.
   Worth considering if summer temps regularly exceed 30°C.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Algae Prevention
 
@@ -529,7 +533,7 @@ Algae needs two things: **light** and **nutrients**. Your reservoir and channels
   [ ] Wrap the reservoir in black plastic film or paint it black/dark green
   [ ] Remove any transparent or translucent components from nutrient contact
   [ ] Clean reservoir and channels on the schedule (see guide/08)
-  
+
   If algae appears despite prevention:
   [ ] Do a full system clean and reservoir change
   [ ] Check for light leaks — seal all light entry points
@@ -545,7 +549,7 @@ If algae is already present:
 
   Use: 3% food-grade H₂O₂ (available at pharmacies)
   Dose: 2–3ml per litre of reservoir volume
-  
+
   Process:
   1. Remove all plants from affected channels first
   2. Add H₂O₂ to reservoir at 2ml/L
@@ -553,15 +557,15 @@ If algae is already present:
   4. Drain and rinse thoroughly with plain water
   5. Refill with fresh nutrient solution
   6. Replant
-  
+
   Note: H₂O₂ kills algae AND beneficial microbes AND can stress plant roots.
   Always remove plants before treatment and rinse completely after.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Reservoir Size Calculations
 
@@ -571,22 +575,22 @@ If algae is already present:
   STRICT MINIMUM: 3L per plant site
   PRACTICAL MINIMUM: 5L per plant site (with daily monitoring)
   COMFORTABLE: 10L per plant site (weekly monitoring is sufficient)
-  
+
   Our system (43 sites, 80L reservoir):
   80L ÷ 43 sites = 1.9L per site ← below strict minimum
-  
+
   This is manageable ONLY with:
   - Daily EC/pH measurement and adjustment
   - Top-up with pH-corrected water every 1–2 days
   - Full reservoir change every 7 days maximum
-  
+
   If you want more relaxed management: upgrade to 120–150L reservoir.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Full Water Change Protocol
 
@@ -624,11 +628,11 @@ If algae is already present:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/04-lighting.md`](04-lighting.md) — Outdoor light, DLI targets, shade cloth, and seasons*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

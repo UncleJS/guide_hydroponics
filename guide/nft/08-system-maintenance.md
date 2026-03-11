@@ -1,6 +1,10 @@
 # Guide 08 — System Maintenance
 ## Daily, Weekly, Monthly, and Seasonal Schedules
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -32,8 +36,8 @@
   - [Weekly Summary Entry](#weekly-summary-entry)
 - [8. Early Warning Signs Checklist](#8-early-warning-signs-checklist)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Maintenance Discipline Matters
 
@@ -47,10 +51,10 @@ A hydroponics system is a living, dynamic environment. Unlike soil gardening whe
 
 Consistency is more important than intensity. Spending 10 minutes every day is far more effective than 3 hours once a week.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Daily Tasks (10–20 minutes)
 
@@ -115,10 +119,10 @@ On hot days, the reservoir can drop significantly through evaporation and plant 
   See Guide 03 for full water source analysis.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Twice-Weekly Tasks (15–20 minutes)
 
@@ -171,10 +175,10 @@ While you can assess plant health daily with visual inspection, accurate EC and 
                         pH-adjusted plain water to dilute
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Weekly Tasks (30–60 minutes)
 
@@ -199,7 +203,7 @@ Same as above but with a more thorough approach — also check solution colour, 
   - Pale tan, thin: OK — may need higher EC or better oxygenation
   - Brown tips, slight mushy: Early Pythium — reduce temp, add Hydroguard
   - Brown, mushy, foul smell: Active Pythium — see guide/07 treatment
-  
+
   Replace net pots immediately after inspection.
 ```
 
@@ -250,18 +254,18 @@ Same as above but with a more thorough approach — also check solution colour, 
       - Herbs: snip as needed (pinch basil, cut chives and parsley)
       - Tomatoes/strawberries: pick ripe fruit
       - Root veg: check if ready (pull a test radish/carrot)
-      
+
   [ ] Identify vacant net pot sites (harvested full plants)
-  
+
   [ ] Check germination tray — are new seedlings ready to transplant?
       Transplant ready when:
       - 2–3 true leaves visible
       - Roots emerging from base/sides of rockwool cube
-      
+
   [ ] Transplant new seedlings to vacant sites
-  
+
   [ ] Sow new seeds if seedling pipeline is running low
-  
+
   [ ] Check microgreens succession — sow a new tray if the pipeline needs it
 ```
 
@@ -274,10 +278,10 @@ Same as above but with a more thorough approach — also check solution colour, 
   [ ] Stock solution shelf life: dissolved solutions 1–2 weeks; dry salts indefinitely
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Periodic Deep Tasks (2–3 hours per session)
 
@@ -381,10 +385,10 @@ Even with good water management, nutrient salts accumulate, organic matter build
   [ ] Between crops: full media changeout per guide/05 Section 11
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. End-of-Season Tasks (3–6 hours total over 1–2 days)
 
@@ -448,10 +452,10 @@ Even with good water management, nutrient salts accumulate, organic matter build
   Document answers — they are invaluable for planning next season.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Maintenance Logbook Template
 
@@ -514,10 +518,10 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   3. _______________________________________________________
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Early Warning Signs Checklist
 
@@ -549,13 +553,13 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/09-troubleshooting.md`](09-troubleshooting.md) — Symptom → cause → fix decision trees*
 
 > **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for budget-friendly ways to automate monitoring, get phone alerts for pump failures and temperature spikes, and build a dashboard to track pH/EC/temperature trends over time.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

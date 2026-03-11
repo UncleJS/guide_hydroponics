@@ -1,6 +1,10 @@
 # Comparison Guide 04 — Cost and ROI: NFT vs Ebb & Flow
 ## Build costs, running costs, yield value, and payback period for each system
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -8,13 +12,13 @@
 - [Introduction](#introduction)
 - [1. What the Cost Comparison Covers](#1-what-the-cost-comparison-covers)
 - [2. NFT Build Costs](#2-nft-build-costs)
-  - [Tier 1 — Minimal NFT ($120–180)](#tier-1--minimal-nft-120180)
-  - [Tier 2 — Standard NFT ($250–350)](#tier-2--standard-nft-250350)
-  - [Tier 3 — Full 3-Zone NFT ($400–550)](#tier-3--full-3-zone-nft-400550)
-- [3. Ebb & Flow Build Costs](#3-ebb--flow-build-costs)
-  - [Tier 1 — Minimal E&F ($150–220)](#tier-1--minimal-ef-150220)
-  - [Tier 2 — Standard E&F ($300–400)](#tier-2--standard-ef-300400)
-  - [Tier 3 — Full 3-Table E&F ($500–700)](#tier-3--full-3-table-ef-500700)
+  - [Tier 1 — Minimal NFT ($120–180)](#tier-1-minimal-nft-120180)
+  - [Tier 2 — Standard NFT ($250–350)](#tier-2-standard-nft-250350)
+  - [Tier 3 — Full 3-Zone NFT ($400–550)](#tier-3-full-3-zone-nft-400550)
+- [3. Ebb & Flow Build Costs](#3-ebb-flow-build-costs)
+  - [Tier 1 — Minimal E&F ($150–220)](#tier-1-minimal-ef-150220)
+  - [Tier 2 — Standard E&F ($300–400)](#tier-2-standard-ef-300400)
+  - [Tier 3 — Full 3-Table E&F ($500–700)](#tier-3-full-3-table-ef-500700)
 - [4. Running Costs](#4-running-costs)
   - [Electricity](#electricity)
   - [Nutrients](#nutrients)
@@ -39,18 +43,16 @@
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ## Introduction
 
 ROI analysis on a home hydroponic system is complicated by the fact that the primary return is not money saved on groceries — it is access to quality, freshness, and variety that supermarkets cannot provide. A vine-ripened hydroponic tomato picked 30 minutes before eating is not the same product as a £3 supermarket punnet. The cost comparison in this guide is therefore both a financial analysis and a value analysis.
 
 The financial figures used throughout are conservative, based on UK retail prices (2025) for components and produce. Adjust the produce values for your local retail prices — in many urban areas, specialty lettuces, heritage tomatoes, and fresh herbs command considerably higher prices than the figures used here.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. What the Cost Comparison Covers
 
@@ -67,10 +69,10 @@ The financial figures used throughout are conservative, based on UK retail price
 - Structures (greenhouse, polytunnel, pergola) that the system may sit under — these are shared infrastructure
 - Water cost (hydroponic water use is low; <500 L/season for a 3-zone system)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. NFT Build Costs
 
@@ -131,10 +133,10 @@ Three zones, larger channels (125 mm), proper insulated reservoir, Atlas Scienti
 | Proper outdoor enclosure for electronics | 1 | £18 | £18 |
 | **Tier 3 total** | | | **~£440** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Ebb & Flow Build Costs
 
@@ -194,10 +196,10 @@ Three flood tables, Atlas Scientific probes, relay-based pump safety cutoff, ful
 | Outdoor electronics enclosure | 1 | £18 | £18 |
 | **Tier 3 total** | | | **~£578** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Running Costs
 
@@ -268,10 +270,10 @@ NFT uses slightly less nutrients because there is no media salt accumulation req
 
 E&F is significantly cheaper to run annually, primarily due to the huge electricity saving from intermittent pump operation.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Yield Value
 
@@ -346,10 +348,10 @@ This is significantly lower than NFT because:
 | E&F shoulder-season leafy | £100–150 |
 | **Total combined** | **£1,300–1,750** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Payback Period Analysis
 
@@ -388,10 +390,10 @@ E&F payback is slower because fruiting crops, while highly valued by the grower,
 
 **Most honest summary:** NFT pays back quickly and clearly in financial terms. E&F pays back more slowly in financial terms but delivers produce (tomatoes, cucumbers, courgettes) that has a value beyond supermarket pricing.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Cost Comparison Table: NFT vs E&F
 
@@ -409,10 +411,10 @@ E&F payback is slower because fruiting crops, while highly valued by the grower,
 | Maintenance time | Lower | Higher (flush protocol) | NFT |
 | 10-year net value | £9,740 | £2,230 | **NFT** |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Where Each System Saves (and Where It Costs More)
 
@@ -443,10 +445,10 @@ E&F payback is slower because fruiting crops, while highly valued by the grower,
 | Backup pump | Strongly recommended: £15–25 for same model | Same |
 | Backup timer (E&F) | — | Critical to have a spare: £8–18 |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Prioritising Spend: Where Money Has the Most Impact
 
@@ -471,10 +473,10 @@ For growers building on a budget, the following spend hierarchy maximises yield 
 - Premium Atlas Scientific probes before you know your system well: the probes are excellent but regular calibration and comparison against your hand meter is more important in year one than probe accuracy
 - Multiple grow lights for outdoor systems: fix the outdoor environment first (site selection, shade cloth, timing) before spending on artificial lighting
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Decision Guide: System Choice vs Budget
 
@@ -510,7 +512,9 @@ graph TD
 
 *This is the final comparison guide. Return to the [main README](../../README.md) for the full guide library.*
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

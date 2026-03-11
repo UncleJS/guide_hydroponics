@@ -1,6 +1,10 @@
 # Guide 07 — Pests and Disease
 ## Identification, Treatment, IPM, and Prevention
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -29,8 +33,8 @@
   - [Purchased Biological Controls](#purchased-biological-controls)
 - [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor NFT Vulnerability Profile
 
@@ -49,10 +53,10 @@ Growing outdoors exposes your system to the full range of garden pests and disea
 
 **The recirculating water system risk:** Pathogens that enter your reservoir can spread to every plant on the system within hours. A single infected plant can infect all others via the shared nutrient solution. **Early identification and immediate action is critical.**
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Integrated Pest Management (IPM) Framework
 
@@ -82,10 +86,10 @@ flowchart TD
   [ ] Smell the reservoir water (musty = algae or bacteria)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Common Pests
 
@@ -350,10 +354,10 @@ flowchart LR
   PHI for spinosad: 1–3 days
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Common Diseases
 
@@ -393,7 +397,7 @@ flowchart LR
   6. Lower reservoir temperature (shade, insulate, frozen bottles)
   7. Increase aeration (turbulence in return line helps re-oxygenate solution)
   8. Return treated plants to channel
-  
+
   If Pythium is severe:
   9. Remove ALL plants
   10. Full system sterilisation (see guide/08)
@@ -545,10 +549,10 @@ flowchart LR
   6. If using rockwool: ensure it was fully pH-conditioned (alkaline pH promotes damping off)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Pesticide Pre-Harvest Interval (PHI) Reference
 
@@ -569,10 +573,10 @@ PHI is the number of days that must pass between the last application and harves
 
 > **Rule:** When in doubt, do not spray within 3 days of harvest. Wash all produce thoroughly. For anything systemic or unknown, err on the side of caution or discard the plant.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Beneficial Insects: Attracting and Using Them
 
@@ -601,10 +605,10 @@ Available from specialist suppliers (Koppert, Neudorff, BioBest):
 | Steinernema feltiae | Fungus gnats, thrips larvae | Drench media with water suspension |
 | Bacillus amyloliquefaciens | Root pathogens (Pythium) | Add to reservoir (Hydroguard) |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Sterilisation Protocol After Disease Outbreak
 
@@ -636,11 +640,11 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/08-system-maintenance.md`](08-system-maintenance.md) — Daily, weekly, monthly, and seasonal schedules*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,5 +1,9 @@
 # Guide 11 — DIY Build Guide: Full System Construction
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 This guide walks you through building the complete three-zone hydroponic system from scratch — from preparing the site through to planting your first crops. Every step includes dimensions, material specifications, ASCII diagrams, and safety notes.
 
 Estimated total build time: **8–12 hours** spread over 2–3 weekends.
@@ -72,8 +76,8 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
   - [Mistake 10 — Not having a backup plan for pump failure](#mistake-10-not-having-a-backup-plan-for-pump-failure)
 - [16. Build Checklist](#16-build-checklist)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. System Overview Recap
 
@@ -124,10 +128,10 @@ flowchart LR
 - Flow per channel: 1–2 L/min (via adjustable manifold valves)
 - ~40 plant sites in Zone A
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Tools Required
 
@@ -162,10 +166,10 @@ flowchart LR
 | Silicone sealant gun | Extra sealing around bulkheads |
 | Digital angle finder | Setting precise slope on frame |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Safety and Prep Notes
 
@@ -182,10 +186,10 @@ flowchart LR
    - Pressure-treated timber in contact with solution — ❌ (preservative leach)
    - Copper pipe — ❌ (copper toxicity to roots)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Step 1 — Site Preparation and Orientation
 
@@ -276,10 +280,10 @@ block-beta
 
 Mark corners with pegs or chalk. This avoids building the frame and discovering it doesn't fit.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Step 2 — Frame Construction
 
@@ -358,10 +362,10 @@ flowchart TD
 
 **A-frame is better suited to:** Ebb-and-flow or kratky systems, not NFT.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Step 3 — Channel Preparation
 
@@ -450,10 +454,10 @@ To make a simple spray bar:
 3. Insert into the inlet fitting at the channel high end, holes pointing down.
 4. The water fans out across the channel base rather than channelling to one corner.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Step 4 — Reservoir Setup
 
@@ -504,10 +508,10 @@ Two options:
 
 For most DIY builds, the top-fill return is simpler and provides better oxygenation. Use the bulkhead fitting if you want a completely sealed lid with no open ports.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Step 5 — Plumbing
 
@@ -614,10 +618,10 @@ Before testing the full system, inspect every joint:
 - Every bulkhead: silicone both flanges, nut tight
 - Solvent-welded joints: must cure 1 hour at minimum (24 h recommended) before pressure
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Step 6 — Electrical and Timer Setup
 
@@ -664,10 +668,10 @@ An air pump driving one or two air stones in the reservoir dramatically increase
 
 Position air stones at the bottom of the reservoir. Run the airline along the frame to the reservoir, securing with cable ties. Keep the air pump above the reservoir water level (or use a non-return valve) to prevent back-siphoning.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Step 7 — System Test (Water Only)
 
@@ -734,10 +738,10 @@ Step 9: Drain test water
 | Drain backing up | Header slope insufficient; blockage | Re-angle header; clear any debris |
 | Pump noisy/grinding | Running dry; debris in impeller | Ensure submerged; clean impeller |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Step 8 — First Nutrient Solution Fill
 
@@ -768,10 +772,10 @@ See Guide 02 for full Masterblend recipe and dose scaling table. Summary for fir
 
 **Record in your logbook:** Date, EC reading, pH reading, reservoir level, what you added.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Step 9 — Planting
 
@@ -852,10 +856,10 @@ Hour 48:
 □ Adjust EC up to 1.2–1.4 once plants are established
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Step 10 — Zone B Microgreens Station
 
@@ -912,10 +916,10 @@ block-beta
     end
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 14. Step 11 — Zone C Root Veg Grow Bags
 
@@ -980,10 +984,10 @@ block-beta
     note2["Each bag sits in a drip tray to catch runoff<br/>Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]:3
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 15. Common Build Mistakes and How to Avoid Them
 
@@ -1049,10 +1053,10 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 
 **Prevention:** Keep a spare submersible pump in your kit. They are inexpensive (~$10–$20). If you cannot source a spare, at minimum know where you can buy one locally same-day.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 16. Build Checklist
 
@@ -1101,11 +1105,11 @@ GENERAL
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 > **Next:** [Guide 12 — Budget and Sourcing →](./12-budget-and-sourcing.md)
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,6 +1,10 @@
 # Guide 02 — Nutrient Solution
 ## EC, pH, Macros, Micros, Mixing, and Schedules
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -49,8 +53,8 @@
   - [Reservoir Volume Needed](#reservoir-volume-needed)
   - [Solution Volume per Full Mix (80L reservoir)](#solution-volume-per-full-mix-80l-reservoir)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Nutrients Matter in Hydroponics
 
@@ -60,10 +64,10 @@ This is both the power and the responsibility of hydroponics:
 - **Power:** Complete control over what the plant gets, when it gets it, and in what ratios
 - **Responsibility:** Get it wrong and plants suffer immediately — there is no soil to compensate
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. The 17 Essential Plant Nutrients
 
@@ -103,10 +107,10 @@ Plants require 17 elements to complete their life cycle. These are divided into 
 
 > **Key insight:** Micronutrient deficiencies are often caused not by absence from the solution but by **pH locking them out**. This is why pH control is non-negotiable.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. NPK at Each Growth Stage
 
@@ -137,10 +141,10 @@ flowchart TD
     A --> B --> C --> D
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. EC — Electrical Conductivity
 
@@ -152,9 +156,9 @@ Units: **mS/cm** (millisiemens per centimetre) — some meters display as EC, ot
 
 ```
   EC vs TDS CONVERSION (approximate):
-  
+
   1.0 mS/cm ≈ 500–700 ppm TDS (conversion factor varies: 0.5–0.7 depending on meter)
-  
+
   Always work in mS/cm for precision. If your meter only reads ppm, divide by 500 to
   get approximate EC in mS/cm.
 ```
@@ -182,10 +186,10 @@ Units: **mS/cm** (millisiemens per centimetre) — some meters display as EC, ot
 
 > **Mixed channel note:** When running a channel with multiple crop types, set EC to the **lower end** of the most sensitive crop's range. In CH1 (lettuce + herbs), target 1.0–1.4 mS/cm.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. pH — The Key to Nutrient Availability
 
@@ -250,10 +254,10 @@ pH naturally drifts over time in a hydroponic system. Understanding the directio
 
 Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.5.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Two-Part vs Three-Part vs One-Part Nutrients
 
@@ -277,10 +281,10 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 - **Pros:** Extremely cost-effective (a few dollars per growing season), professional-grade results, widely used by commercial growers
 - **Cons:** Dry salts, requires accurate weighing (digital scale needed), no pH buffering built in
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Masterblend Trio — Mixing Recipe
 
@@ -304,7 +308,7 @@ This is the most cost-effective nutrient system available. Used by professional 
   3. Epsom Salt:          1.2g per 4L (0.3g per litre)
 
   MIXING ORDER (critical — always in this sequence):
-  
+
   Step 1: Fill reservoir/container with 50% of your target water volume
   Step 2: Add Calcium Nitrate, stir until dissolved
   Step 3: Add remaining water (to dilute Ca before adding sulphate/phosphate)
@@ -312,7 +316,7 @@ This is the most cost-effective nutrient system available. Used by professional 
   Step 5: Add MasterBlend, stir until dissolved
   Step 6: Adjust pH to 5.8–6.2
   Step 7: Measure EC — should read ~1.4–1.6 mS/cm
-  
+
   ⚠ NEVER mix Calcium Nitrate and MasterBlend directly — they will precipitate
     (form insoluble solids). Always dissolve in water separately.
 ```
@@ -329,10 +333,10 @@ This is the most cost-effective nutrient system available. Used by professional 
 
 > **Always verify with your EC meter.** These are starting points — your source water EC affects the final reading.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. General Hydroponics Flora Series Schedule
 
@@ -352,10 +356,10 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 > Always add FloraMicro FIRST when mixing multiple components.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Nutrient Solution Temperature
 
@@ -387,10 +391,10 @@ flowchart LR
 
 **Outdoor challenge:** Reservoir water temperature tracks ambient temperature. A black or exposed reservoir in summer can reach 28–32°C — dangerous territory. Solutions: shade the reservoir, insulate it, paint it white, partially bury it, or use an aquarium chiller (see guide/10).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Reservoir Top-Up vs Full Change
 
@@ -418,14 +422,14 @@ flowchart LR
   Trigger 4: Visible discolouration (brown/green/slimy)
   Trigger 5: After any disease outbreak
   Trigger 6: Before introducing new plants to a channel
-  
+
   General rule: Full change every 7–14 days regardless.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Visual Nutrient Deficiency and Toxicity Guide
 
@@ -469,10 +473,10 @@ flowchart TD
 | Manganese excess | Brown spots, chlorosis |
 | General salt burn | Brown leaf tips/edges, wilting despite wet roots |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Organic Hydroponics
 
@@ -528,10 +532,10 @@ Organic hydroponics works best in media-based systems (deep water culture, flood
 
 > **Recommendation for beginners:** Start with Masterblend or GH Flora Series. Once you understand your system and crops, explore organic supplements as additives rather than replacing the mineral base. A practical middle ground is running mineral nutrients in NFT and reserving organic growing for Zone C (grow bags), where the soil-like media supports a healthy microbial ecosystem naturally.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Water Volume Calculator Reference
 
@@ -547,7 +551,7 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
 
   Our system:
   Zone A: ~40 plant sites × 10L minimum = 400L (impractical for a home system)
-  
+
   REDUCED RULE: 5L per site minimum + 30% buffer
   ~40 sites × 5L = 200L — still large for a home setup.
 
@@ -562,7 +566,7 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
 
   The trade-off vs. a larger reservoir is more frequent monitoring —
   but daily checks are already best practice for any home system.
-  
+
   This system uses: 80L reservoir — the designed capacity with daily management.
 ```
 
@@ -582,7 +586,7 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
   For higher-EC fruiting crops, use the dose scaling table above.
 
   Always weigh on a digital scale. Tablespoon/teaspoon estimation is inaccurate.
-  
+
   SHOPPING TIP: 1kg bags of each will last many reservoir fills.
   - 1kg Masterblend: ~20 reservoir fills (80L each)
   - 1kg Calcium Nitrate: ~20 reservoir fills
@@ -592,11 +596,11 @@ This system is designed around an **80 L HDPE food-grade reservoir**. The maths 
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/03-water-quality.md`](03-water-quality.md) — Water sources, testing, and treatment*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

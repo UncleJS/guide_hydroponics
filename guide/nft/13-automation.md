@@ -1,5 +1,9 @@
 # Guide 13 — Budget-Friendly Automation and Data Logging
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 Manual monitoring — the 10-minute daily walk-and-check — works. But it has hard limits: you can't check the system at 3 AM when a frost arrives, you can't spot the moment EC drifts past a threshold while you're at work, and you'll never notice the slow creep of reservoir temperature that precedes a Pythium outbreak unless you happen to check at the right time.
 
 Automation and continuous data logging transform your system from reactive ("the plants look stressed — what happened?") to proactive ("the reservoir hit 24 °C at 2 PM yesterday, I need shade cloth before it happens again today"). This guide covers every level of automation — from a $15 WiFi thermometer to a full ESP32-based sensor network with dashboards, alerts, and automated dosing — all within the budget-conscious, DIY spirit of this project.
@@ -89,8 +93,8 @@ Automation and continuous data logging transform your system from reactive ("the
 - [18. Upgrade Path — From Tier 1 to Tier 4](#18-upgrade-path-from-tier-1-to-tier-4)
 - [Summary — What Each Tier Gives You](#summary-what-each-tier-gives-you)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Automate?
 
@@ -149,10 +153,10 @@ Logging tells you what happened. Automation takes action:
 - **EC drop below target → dose concentrate** automatically (Tier 4)
 - **Frost forecast → turn on reservoir heater** automatically
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Automation Tiers Overview
 
@@ -169,10 +173,10 @@ flowchart LR
 
 Each tier builds on the previous. You never have to skip ahead — start at Tier 1 and upgrade when you're ready.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tier 0 — Manual Baseline
 
@@ -191,10 +195,10 @@ This is your current setup as documented in Guides 08 and 10. It works — but i
 - No historical trends — paper logs are hard to analyse
 - No remote access — you must be physically present
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Tier 1 — Off-the-Shelf Smart Devices
 
@@ -273,10 +277,10 @@ A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at t
 | WiFi camera (optional) | $25 | Visual monitoring, time-lapse |
 | **Tier 1 total** | **$50–$75** | |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Tier 2 — ESP32 Sensor Node
 
@@ -511,10 +515,10 @@ EVERY 60 SECONDS, THE NODE:
   current readings and a simple 24-hour chart.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier 3 — Multi-Sensor Network + Dashboard
 
@@ -629,10 +633,10 @@ flowchart TD
     style HU fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Tier 4 — Automated Control
 
@@ -754,10 +758,10 @@ DOSING SAFETY INTERLOCKS
 9. LOG EVERY DOSE:         Record timestamp, volume, before/after reading
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Sensor Reference — What to Measure and Why
 
@@ -795,10 +799,10 @@ DOSING SAFETY INTERLOCKS
 - They are NOT laboratory-grade but are accurate enough for hydroponic management (±0.1 pH, ±5% EC).
 - Budget alternative: Atlas Scientific probes are more accurate and longer-lasting but cost 3–5× more. Not recommended unless you need lab-grade data.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. ESP32 Hardware Guide
 
@@ -879,10 +883,10 @@ For Tier 4 with relays and peristaltic pumps:
 - Peristaltic pumps: ~200–300 mA each at 12V
 - Separate 12V supply for peristaltic pumps (do NOT power from ESP32)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Wiring Diagrams
 
@@ -956,10 +960,10 @@ flowchart LR
     style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Firmware and Software
 
@@ -1124,10 +1128,10 @@ If you don't want cloud services or internet dependency:
 
 This option provides 100% local operation — no cloud accounts, no subscriptions, no privacy concerns.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Data Storage and Dashboards
 
@@ -1206,10 +1210,10 @@ If you want to keep everything local (no cloud), Home Assistant running on a Ras
 4. The ESP32 appears automatically in Home Assistant
 5. Add sensor entities to your dashboard
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Alerts and Notifications
 
@@ -1295,10 +1299,10 @@ Pump uptime: 100%
 No alerts triggered today.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 14. Using Your Data — Pattern Recognition
 
@@ -1487,10 +1491,10 @@ Create a time-series panel for `vpd` with colour-coded thresholds:
 
 This gives an immediate visual of how many hours per day the crop is under heat or disease stress, and whether adding shade cloth or improving airflow made a measurable difference.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 15. Weatherproofing and Power
 
@@ -1547,10 +1551,10 @@ flowchart TD
 **Solar power option:**
 A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery can run an ESP32 sensor node indefinitely in most climates. The ESP32 can deep-sleep between readings (waking every 60 seconds) to reduce average current to ~5 mA, extending battery life to weeks even without sun.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 16. Automation BOM by Tier
 
@@ -1620,10 +1624,10 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 | Tier 3 | $100–$160 | $150–$235 |
 | Tier 4 | $168–$230 | $218–$305 |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 17. Common Pitfalls
 
@@ -1993,10 +1997,10 @@ sensor:
 
 > **General rule:** If a sensor reads a physically impossible value, the problem is almost always **wiring, connectors, or a dead probe** — not your nutrient solution. Check the hardware before changing anything in your reservoir.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 18. Upgrade Path — From Tier 1 to Tier 4
 
@@ -2043,10 +2047,10 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310
   → But fully customisable, repairable, and you understand every component
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Summary — What Each Tier Gives You
 
@@ -2074,7 +2078,9 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310
 > **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
 > **Back to:** [README — Hydroponics Guide Index](../../README.md)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

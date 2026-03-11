@@ -1,6 +1,10 @@
 # Guide 01 — Ebb & Flow Basics
 ## How Flood-and-Drain Hydroponics Works
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -35,8 +39,8 @@
 - [12. Pros and Cons Summary](#12-pros-and-cons-summary)
 - [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. History and Origin
 
@@ -48,10 +52,10 @@ The home and hobby hydroponic market adopted Ebb & Flow extensively from the 199
 
 **Why this system uses Ebb & Flow for Zone A:** The outdoor grow tables in this system need to handle everything from fast-cycling lettuce to long-season tomatoes and cucumbers. The media volume in each flood table provides structural support for heavy plants, buffers nutrient and pH swings, and accommodates a range of root architectures that an NFT channel simply cannot support.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Core Principle: The Flood-and-Drain Cycle
 
@@ -81,10 +85,10 @@ flowchart TD
 
 **Why flooding from below matters:** Top-down irrigation creates dry zones and uneven wetting. Bottom-up flooding ensures the entire media column is wetted uniformly, from bottom to top, forcing out stale air as the water rises and drawing in fresh oxygen as it drains.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Anatomy of an Ebb & Flow System
 
@@ -129,10 +133,10 @@ flowchart TD
 | **Net pots** | Hold individual plants in media | 50mm (greens/herbs), 75–100mm (fruiting) |
 | **Drain lines** | Return drained solution from table to reservoir | Gravity-fed; no pump needed for drain |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. The Overflow Fitting — The Critical Safety Device
 
@@ -189,10 +193,10 @@ The overflow standpipe height is adjustable — by using a taller or shorter sta
 
 > **Critical rule:** The overflow fitting must always be lower than the table rim by at least 3–5cm. If the overflow fails or gets blocked, the table must not overflow onto the floor — a blocked overflow with a pump running will simply fill to the rim and overflow. Keep the overflow fitting clear of roots and debris.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Flood Frequency and Duration Science
 
@@ -259,10 +263,10 @@ A flood cycle must be long enough to fully wet the media column from bottom to t
 
 **First-season rule:** Start at 3× per day for 15 minutes. Observe media moisture 1 hour after a flood — if it feels completely dry (bone dry), increase frequency. If still saturated (no air space), decrease frequency. Adjust in increments of one flood per day.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Root Zone Dynamics During Flood and Drain
 
@@ -315,10 +319,10 @@ The risk arises when:
 - Slow growth, yellowing starting from lower leaves
 - Foul smell from media between floods (not just after a flood)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Ebb & Flow vs Other Systems Comparison
 
@@ -341,10 +345,10 @@ The risk arises when:
 | **Beginner friendly** | Yes | Moderate | Moderate | Very | Very |
 | **Commercial use** | Very common (greenhouse tomatoes) | Very common (lettuce) | Common | Rare | Rare |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Why Ebb & Flow Suits a Wider Crop Range
 
@@ -385,10 +389,10 @@ Ebb & Flow is not ideal for every scenario:
 - **Very small operations:** The setup cost (trays, fittings, pump, timer, reservoir) is higher than a simple Kratky jar
 - **Minimalist setups:** Media cost and volume is significant — not suited to growers wanting to minimise inputs
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Timer Science: Mechanical vs Digital Timers
 
@@ -439,10 +443,10 @@ For an outdoor system, a single timer failure can destroy an entire crop. Recomm
 3. **Smart plug alternative:** A WiFi smart plug (e.g., Tapo, Kasa) controlled via a phone app allows remote monitoring and manual override — also alerts you if power draw drops unexpectedly
 4. **Physical inspection rule:** Check that the pump is actually running during each flood cycle (at least once per day) — you cannot rely on the timer display alone
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. What Happens During Pump or Timer Failure
 
@@ -502,10 +506,10 @@ This is the more common failure mode — the pump stops and no further floods oc
 - Keep a watering can accessible at all times during the growing season
 - If away from home: a WiFi smart plug on the pump circuit can alert you to power draw anomalies
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Scaling: Adding Tables and Channels
 
@@ -548,10 +552,10 @@ When adding tables, also consider:
 - **Drain capacity:** All tables must drain simultaneously without overwhelming the reservoir capacity
 - **Timer complexity:** Independent timers per table allow stage-specific schedules — worth the small extra cost
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Pros and Cons Summary
 
@@ -577,10 +581,10 @@ When adding tables, also consider:
 | Reservoir management | Shared reservoir means disease can spread; requires clean management |
 | pH/EC harder to isolate | Media buffers changes — good normally, but masks problems if you do not test regularly |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 13. Key Numbers Reference Card
 
@@ -603,11 +607,11 @@ When adding tables, also consider:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/02-nutrient-solution.md`](02-nutrient-solution.md) — EC, pH, macros, micros, mixing, and schedules*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

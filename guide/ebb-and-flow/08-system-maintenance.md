@@ -1,6 +1,10 @@
 # Guide 08 — System Maintenance
 ## Daily, Weekly, Monthly, and Seasonal Schedules
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -35,8 +39,8 @@
   - [Weekly Summary Entry](#weekly-summary-entry)
 - [8. Early Warning Signs Checklist](#8-early-warning-signs-checklist)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Maintenance Discipline Matters
 
@@ -55,10 +59,10 @@ Ebb & Flow also has a major advantage: the entire media bed dries out and re-oxy
 
 Consistency is more important than intensity. Ten minutes every day is far more effective than three hours once a week.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Daily Tasks (10–20 minutes)
 
@@ -137,10 +141,10 @@ On hot days, combined plant transpiration and evaporation from the open table su
   See Guide 03 for water source analysis.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Twice-Weekly Tasks (15–20 minutes)
 
@@ -201,10 +205,10 @@ Accurate EC and pH measurement is critical at least every 2–3 days. In an E&F 
   solution in LECA. Increase top-up frequency before adjusting EC down.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Weekly Tasks (30–60 minutes)
 
@@ -359,10 +363,10 @@ The overflow fitting is unique to E&F and is the single most critical fitting to
   [ ] Stock solution shelf life: dissolved solutions 1–2 weeks; dry salts indefinitely
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Periodic Deep Tasks (2–3 hours per session)
 
@@ -513,10 +517,10 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
   [ ] Between crops: full media changeout per guide/05 recommendations
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. End-of-Season Tasks (3–6 hours total over 1–2 days)
 
@@ -601,10 +605,10 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
   Document answers — they are invaluable for planning the next season.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Maintenance Logbook Template
 
@@ -681,10 +685,10 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   3. _______________________________________________________
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Early Warning Signs Checklist
 
@@ -728,13 +732,13 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/09-troubleshooting.md`](09-troubleshooting.md) — Symptom → cause → fix decision trees for Ebb & Flow*
 
 > **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for budget-friendly ways to automate flood cycle monitoring, get phone alerts for pump failures and timer faults, and build a dashboard to track EC/pH/temperature trends over time.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -1,6 +1,10 @@
 # Guide 05 — Growing Media
 ## Net Pots, Clay Pebbles, Rockwool, Coco Coir, and Germination
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -47,8 +51,8 @@
   - [Coco Coir (Zone C grow bags)](#coco-coir-zone-c-grow-bags)
 - [12. Quick Reference: Media Selection Guide](#12-quick-reference-media-selection-guide)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why NFT Uses Minimal Media
 
@@ -82,10 +86,10 @@ flowchart TD
     end
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Net Pot Sizes
 
@@ -130,10 +134,10 @@ Use a **hole saw drill bit** of the correct size:
 - 50mm net pot: use a 46–48mm hole saw (pot lips hold it in)
 - 75mm net pot: use a 71–73mm hole saw
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Clay Pebbles (LECA — Lightweight Expanded Clay Aggregate)
 
@@ -197,10 +201,10 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
   Life span: Indefinite — clay pebbles last for many years with proper cleaning.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Rockwool (Mineral Wool / Stone Wool)
 
@@ -273,10 +277,10 @@ Rockwool fibres can irritate skin and lungs. Handle dry rockwool with gloves and
 
 Rockwool is not biodegradable and should not go in compost. Bag and place in general waste. Some areas have specialist industrial disposal — check locally.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Rapid Rooter / Jiffy Plugs (Alternative to Rockwool)
 
@@ -296,10 +300,10 @@ Rapid Rooter plugs (by General Hydroponics) and Jiffy peat plugs are pre-formed 
 
 **Rapid Rooter advantage:** No pH conditioning needed — just moisten with pH-adjusted nutrient solution (EC 0.4) and use. Excellent for beginners.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Coco Coir: The Zone C Media
 
@@ -358,10 +362,10 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
   - Vermiculite: improves moisture retention for root veg (prevents dry pockets)
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Perlite
 
@@ -389,10 +393,10 @@ Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~8
 
 New perlite contains fine silica dust — rinse before use or wet it down before handling. Silica dust is a respiratory hazard in large quantities; brief handling outdoors is generally fine.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Vermiculite
 
@@ -413,10 +417,10 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 - **Zone C grow bags:** 10% in coco/perlite blend — helps prevent dry pockets around root veg
 - **Not used in NFT** — too moisture-retentive, not needed when film is continuous
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. What NOT to Use
 
@@ -429,10 +433,10 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 | **Compost** | Contamination risk, introduces pathogens, breaks down and clogs drains | Never use directly in NFT |
 | **Aquarium gravel (decorative)** | May be pH-neutral, but no aeration, no moisture retention — poor media | Only acceptable in emergency |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Germination Methods: Side-by-Side Comparison
 
@@ -460,15 +464,15 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
   6. Place plant in net pot with clay pebbles (no rockwool cube needed — roots are bare)
   7. Lower into NFT channel immediately — do not let roots dry out
   8. Monitor closely for 48 hours — transplant shock is more likely with bare-root plants
-  
+
   NOTE: This is more stressful for plants than using rockwool/rapid rooter from the start.
   Starting in rockwool directly avoids the need for root washing entirely.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Media Reuse and Sterilisation
 
@@ -505,10 +509,10 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
   persistent root rot issues despite clean practices.
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Quick Reference: Media Selection Guide
 
@@ -526,11 +530,11 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

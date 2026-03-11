@@ -1,6 +1,10 @@
 # Guide 07 — Pests and Disease
 ## Identification, Treatment, IPM, and Prevention
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -38,8 +42,8 @@
   - [Complete System Sterilisation — Step by Step](#complete-system-sterilisation-step-by-step)
   - [Post-Outbreak Replanting Rules](#post-outbreak-replanting-rules)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor E&F Vulnerability Profile
 
@@ -77,10 +81,10 @@ In NFT, the channel surface is largely shielded from light. In an E&F flood tabl
 - It can partially block overflow fittings if allowed to grow into drain areas
 - Blue-green algae (cyanobacteria) produces toxins that can harm roots
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Integrated Pest Management (IPM) Framework
 
@@ -144,10 +148,10 @@ IPM action thresholds define when to escalate from monitoring to active control:
 | Pythium | — | One plant showing wilting | Two or more plants wilting |
 | Powdery mildew | <10% leaf area | 10–30% leaf area | >30% leaf area |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Common Pests
 
@@ -410,10 +414,10 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
     commercially available for greenhouse/polytunnel use
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Common Diseases
 
@@ -669,10 +673,10 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
     high EC stresses young seedlings and increases susceptibility
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Pesticide PHI Reference
 
@@ -704,10 +708,10 @@ In a continuously-harvested system (lettuce, herbs, cut-and-come-again crops, ch
 
 > **Always read the label.** PHI can vary by crop and formulation. When in doubt, use the longer PHI or choose a product with a shorter interval.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Beneficial Insects
 
@@ -762,10 +766,10 @@ When natural populations are insufficient or an infestation is established, comm
 
 > **Timing:** Release beneficial insects **early** — before pest populations are high. Beneficials are most effective when there is just enough prey to sustain them. Releasing predatory mites into a severe spider mite outbreak does not produce instant results — the predator population takes 2–3 weeks to build.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Sterilisation Protocol After Disease Outbreak
 
@@ -853,11 +857,11 @@ Scrub the inside of all fittings with a long bottle brush. Consider replacing pl
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/ebb-and-flow/08-system-maintenance.md`](08-system-maintenance.md) — Routine maintenance, cleaning schedules, and seasonal tasks*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

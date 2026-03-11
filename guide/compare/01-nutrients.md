@@ -1,6 +1,10 @@
 # Comparison Guide 01 — Nutrient Management: NFT vs Ebb & Flow
 ## How the two systems handle feeding, EC, pH, salt, and solution changes differently
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -8,7 +12,7 @@
 - [Introduction](#introduction)
 - [1. How Each System Delivers Nutrients](#1-how-each-system-delivers-nutrients)
   - [NFT: Thin Continuous Film](#nft-thin-continuous-film)
-  - [Ebb & Flow: Flood-Drain Cycles](#ebb--flow-flood-drain-cycles)
+  - [Ebb & Flow: Flood-Drain Cycles](#ebb-flow-flood-drain-cycles)
 - [2. EC Management](#2-ec-management)
   - [Target Ranges Side-by-Side](#target-ranges-side-by-side)
   - [The Media EC Problem (E&F Only)](#the-media-ec-problem-ef-only)
@@ -39,18 +43,16 @@
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ## Introduction
 
 Both NFT and Ebb & Flow use the same nutrient chemistry — the 17 essential elements dissolved in water — but they interact with those nutrients in fundamentally different ways. In NFT, roots sit directly in flowing solution; there is no media to absorb, buffer, or accumulate minerals. In Ebb & Flow, every litre of nutrient solution that floods the table and drains back leaves a residue in the LECA. That residue is cumulative.
 
 This guide compares how you manage nutrients in practice across both systems: what you measure, how often, what drifts, what accumulates, and where the failure modes differ.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. How Each System Delivers Nutrients
 
@@ -93,10 +95,10 @@ graph TD
   E -->|next flood dilutes<br/>or compounds salts| C
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. EC Management
 
@@ -148,10 +150,10 @@ Hot weather, high VPD, and large fruiting plants with high transpiration rates a
 4. Compare reservoir EC vs media EC
 5. If media EC > reservoir EC by more than 1.0 mS/cm, flush is overdue
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. pH Management
 
@@ -190,10 +192,10 @@ In E&F, roughly 15–20% of total solution volume is retained in the media at an
 
 For both systems, the target pH range is **5.5–6.5**, with the sweet spot at **5.8–6.2** for most crops.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Salt Accumulation
 
@@ -249,10 +251,10 @@ The only accumulation risk in NFT is:
 
 This is one of the genuine operational simplicity advantages of NFT over E&F.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Nutrient Solution Changes
 
@@ -294,10 +296,10 @@ Old nutrient solution is a mild fertiliser. Options:
 - **Drain to sewer**: legal in most jurisdictions for domestic-scale systems (check local rules). Flush the drain with water after.
 - **Do not** pour undiluted old solution repeatedly onto the same garden patch — salt build-up will damage soil over time.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Nutrient Recipes: Are They Interchangeable?
 
@@ -346,10 +348,10 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 - Lower EC requirements than cucumbers and tomatoes: keep at 1.6–2.0 mS/cm
 - Very high potassium during fruiting: add 0.3 g/L potassium sulphate from first fruit set
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Deficiency and Toxicity Patterns
 
@@ -390,10 +392,10 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 **Overall stunting and dark green, thick leaves:**
 - **In both systems:** Phosphorus excess or pH below 5.2; check pH immediately
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Monitoring Regimen Comparison
 
@@ -409,10 +411,10 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Reservoir clean | With each full change | With each full change | Scrub with dilute hydrogen peroxide |
 | Channel/table clean | Between crop cycles | Between crop cycles | NFT: bleach soak; E&F: bleach + LECA rinse |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Quick-Reference Decision Table
 
@@ -431,11 +433,11 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [Comparison Guide 02 — Crops: NFT vs Ebb & Flow](02-crops.md) — which system suits which plants, yield comparisons, and crop scheduling differences*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

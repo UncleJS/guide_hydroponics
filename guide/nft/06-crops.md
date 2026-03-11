@@ -1,6 +1,10 @@
 # Guide 06 — Crops
 ## Per-Crop Growing Guide for Every Plant in This System
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
@@ -37,8 +41,8 @@
   - [Succession Planting Schedule (CH1 — Lettuce Example)](#succession-planting-schedule-ch1-lettuce-example)
   - [NFT Channel Rotation Between Seasons](#nft-channel-rotation-between-seasons)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -53,10 +57,10 @@ Each crop entry includes:
 
 > **First-season expectations:** Timelines and yields listed below assume a reasonably tuned system with stable EC/pH. In your first season, expect slower growth, more crop losses, and lower yields as you learn your system's behaviour. This is normal — see Guide 12 Section 10 for realistic first-season yield adjustments (typically 40–60% of listed figures).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Zone, Channel & Crop Map
 
@@ -71,10 +75,10 @@ Each crop entry includes:
 
 > **Total NFT plant sites: ~40** (33 in 75 mm channels + 7 in 100 mm channel). All channels are 2.4 m long with a 1:30 slope (80 mm drop). The system runs on an 80 L reservoir with a 600–800 L/h submersible pump delivering 1–2 L/min per channel.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## LEAFY GREENS & HERBS (Zone A — NFT Channels)
 
@@ -373,10 +377,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## FRUITING CROPS (Zone A — CH4, Wide Channel)
 
@@ -460,7 +464,7 @@ flowchart TD
   First flowers:  8–10 weeks from transplant
   First fruit (green): 12–16 weeks from seed
   Ripe coloured fruit:  16–22 weeks from seed
-  
+
   IMPORTANT: Start seeds EARLY — late February / early March indoors — to allow
   enough time for fruit ripening before first autumn frost.
 ```
@@ -501,7 +505,7 @@ flowchart TD
   From bare-root crowns:    First fruit 6–10 weeks
   From runners:             First fruit 4–8 weeks
   From seed:                8–12 months (not recommended — buy crowns or runners)
-  
+
   Everbearing varieties:    Fruit June–October continuously
   June-bearing varieties:   Fruit 4–6 weeks in June/July only (avoid for NFT)
 ```
@@ -518,7 +522,7 @@ flowchart TD
 ```
   Strawberries produce runners — long stolons that produce new baby plants.
   In NFT, these will hang out of the channel and try to root anywhere.
-  
+
   OPTIONS:
   1. Remove runners immediately to direct energy to fruit production (maximises yield)
   2. Root runners in small pots of coco coir — free new plants for next season
@@ -538,10 +542,10 @@ flowchart TD
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## MICROGREENS (Zone B — Tray Station)
 
@@ -649,10 +653,10 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 ---
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## ROOT VEGETABLES (Zone C — Grow Bags)
 
@@ -766,10 +770,10 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 - **Leggy seedlings:** Insufficient light during germination. Move to full light promptly once seeds sprout.
 - **Purple/red stems and wilting:** This is normal beetroot appearance — do not confuse with phosphorus deficiency (which affects the leaves uniformly).
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Crop Rotation and Succession Planning
 
@@ -841,11 +845,11 @@ After a full channel crop completes:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 *Next: [`guide/nft/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, and IPM*
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

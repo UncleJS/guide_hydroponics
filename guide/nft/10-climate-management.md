@@ -1,5 +1,9 @@
 # Guide 10 — Climate Management for Outdoor Hydroponics
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 Managing climate is the single greatest challenge of outdoor hydroponic growing. Unlike a greenhouse or grow tent, an outdoor NFT system is fully exposed to ambient temperature swings, direct sun radiation on the reservoir, wind-driven evaporation, rain dilution, frost risk, and seasonal photoperiod changes. This guide covers every environmental factor in depth — how each affects your plants and nutrient solution, and exactly what to do about it.
 
 ---
@@ -27,18 +31,12 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
   - [5.1 How Cold Damages Hydroponic Plants](#51-how-cold-damages-hydroponic-plants)
   - [5.2 Frost Hardiness by Crop](#52-frost-hardiness-by-crop)
   - [5.3 Protecting the System from Cold](#53-protecting-the-system-from-cold)
-    - [Horticultural Fleece (Frost Cloth)](#horticultural-fleece-frost-cloth)
-    - [Protecting the Reservoir in Cold](#protecting-the-reservoir-in-cold)
-    - [Channel and Pipe Protection](#channel-and-pipe-protection)
   - [5.4 Minimum Operational Temperatures](#54-minimum-operational-temperatures)
   - [5.5 Extended Cold Spells](#55-extended-cold-spells)
 - [6. Wind Management](#6-wind-management)
   - [6.1 How Wind Affects the System](#61-how-wind-affects-the-system)
   - [6.2 Wind Speed Reference](#62-wind-speed-reference)
   - [6.3 Wind Management Strategies](#63-wind-management-strategies)
-    - [Windbreaks](#windbreaks)
-    - [Securing the Structure](#securing-the-structure)
-    - [Managing Wind-Driven EC Rise](#managing-wind-driven-ec-rise)
 - [7. Rain Management](#7-rain-management)
   - [7.1 Rain and Reservoir Dilution](#71-rain-and-reservoir-dilution)
   - [7.2 Rain Management Strategy](#72-rain-management-strategy)
@@ -66,8 +64,8 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 - [12. Quick-Reference Decision Tree](#12-quick-reference-decision-tree)
 - [Summary](#summary)
 
+---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor Climate Challenge
 
@@ -96,10 +94,10 @@ Both environments must stay within acceptable ranges simultaneously. When one go
 | Reservoir dilution (rain EC drop) | <10% per event | >20% drop = re-dose |
 | Daily light integral (DLI) | 12–25 mol/m²/day | <8 (low light stress) |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 2. Temperate Seasonal Calendar
 
@@ -164,10 +162,10 @@ PHASE 4 — WINTER REST (Dec–Feb)
   • Plan next season
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 3. Temperature Effects on the Hydroponic System
 
@@ -236,10 +234,10 @@ Warmer solution accelerates biological activity (algae, bacteria) and degasses C
 - Algae blooms in warm, light-exposed reservoirs cause sharp pH rises (to 8+) during daylight
 - Solution above 28 °C can shift 0.5 pH units per day
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 4. Summer Heat Management
 
@@ -361,10 +359,10 @@ In high temperatures, plants transpire more heavily, uptake water faster than nu
 
 > **Tip:** Tip burn in lettuce is caused by calcium deficiency at the leaf margins — but the root cause is usually heat-driven transpiration outpacing calcium uptake through the xylem. Solution: increase flow rate, lower EC, add shade, ensure good root aeration.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 5. Cold and Frost Management
 
@@ -474,10 +472,10 @@ Extended (>7 days below 5°C): Consider moving containers inside
   to a garage, shed, or under a cold frame until conditions improve
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 6. Wind Management
 
@@ -549,10 +547,10 @@ In sustained windy conditions (Force 4–5), monitor EC more frequently:
 - Top up with plain pH-adjusted water if EC rises >10% above target
 - If away for a weekend in windy weather, lower starting EC by 10–15% as a buffer
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 7. Rain Management
 
@@ -630,10 +628,10 @@ Harvest roof runoff into a covered water butt and use it to top up the reservoir
 > - Asbestos cement roofs
 > - Roofs with moss killer treatments applied in the last 3 months
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 8. Humidity and Airflow
 
@@ -699,10 +697,10 @@ During periods of persistent high humidity (>80% RH), especially in late summer 
 4. **Harvest regularly** — don't let leaves accumulate and decay on the plant
 5. **Apply bicarbonate spray** for powdery mildew prevention: 5 g sodium bicarbonate per litre, spray on leaves in morning. See Guide 07 for full disease management.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 9. Season Extension Techniques
 
@@ -764,10 +762,10 @@ For year-round production of some crops, consider a simple indoor setup during t
 
 A 50W LED panel running 16 h/day ≈ 0.05 kW × 16 h = 0.8 kWh/day ≈ $0.15–$0.20/day electricity.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 10. Putting It Together — Seasonal Action Plans
 
@@ -851,10 +849,10 @@ NOVEMBER:
 □ Maintain, repair, or upgrade equipment
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 11. Climate Monitoring Setup
 
@@ -906,10 +904,10 @@ Actions taken today:
   □ Other: ________________________________
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## 12. Quick-Reference Decision Tree
 
@@ -937,10 +935,10 @@ flowchart TD
     Q4 -->|NO| OK
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-
-[↑ Back to TOC](#table-of-contents)
 
 ## Summary
 
@@ -954,13 +952,13 @@ flowchart TD
 The outdoor environment is unpredictable, but with systematic monitoring, a stocked toolkit (fleece, shade cloth, ice), and a daily 10-minute check routine, a temperate outdoor NFT system can produce continuously for 8–9 months of the year and be a rewarding, low-cost food source.
 
 
-[↑ Back to TOC](#table-of-contents)
-
 > **Next:** [Guide 11 — DIY Build Guide →](./11-build-guide.md)
 
 > **See also:** [Guide 13 — Automation and Data Logging](./13-automation.md) — automate temperature and humidity monitoring with 24/7 alerts, so you never miss a frost event or heatwave spike again.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

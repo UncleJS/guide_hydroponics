@@ -1,26 +1,33 @@
 # NFT System — Overview & Build Plan
 ## Outdoor Nutrient Film Technique | Medium Backyard Scale | DIY Build
 
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ---
 
 ## Table of Contents
 
 - [System Summary](#system-summary)
 - [Zone Design](#zone-design)
-  - [Zone A — NFT Channel Array](#zone-a--nft-channel-array)
-  - [Zone B — Microgreens Station](#zone-b--microgreens-station)
-  - [Zone C — Root Veg Grow Bags](#zone-c--root-veg-grow-bags)
+  - [Zone A — NFT Channel Array](#zone-a-nft-channel-array)
+  - [Zone B — Microgreens Station](#zone-b-microgreens-station)
+  - [Zone C — Root Veg Grow Bags](#zone-c-root-veg-grow-bags)
 - [System Architecture Diagrams](#system-architecture-diagrams)
 - [Component Inventory](#component-inventory)
 - [Seasonal Grow Calendar](#seasonal-grow-calendar)
 - [4-Week Build Timeline](#4-week-build-timeline)
+  - [Week 1 — Procurement & Preparation](#week-1-procurement-preparation)
+  - [Week 2 — Build Frame & Channels](#week-2-build-frame-channels)
+  - [Week 3 — Plumbing, Testing & Zones B/C](#week-3-plumbing-testing-zones-bc)
+  - [Week 4 — Nutrients, Seeds & First Plants](#week-4-nutrients-seeds-first-plants)
 - [Daily Quick-Start Checklist](#daily-quick-start-checklist)
 - [Success Criteria](#success-criteria)
 - [Guide Index](#guide-index)
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## System Summary
 
@@ -34,9 +41,10 @@ A **medium-scale outdoor Nutrient Film Technique (NFT)** system for a temperate 
 
 This hybrid approach delivers maximum crop diversity within a single outdoor footprint while respecting the biological constraints of each crop type.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Zone Design
 
@@ -79,9 +87,10 @@ This hybrid approach delivers maximum crop diversity within a single outdoor foo
 | Watering | Manual fertigation, 1–2× daily |
 | Drainage | Bags on slatted rack or gravel tray |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## System Architecture Diagrams
 
@@ -125,9 +134,10 @@ flowchart TD
     RES --> PUMP
 ```
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Component Inventory
 
@@ -164,9 +174,10 @@ flowchart TD
 | Frost fleece / horticultural fleece | 1 roll | Cold protection |
 | Digital timer (for pump, optional) | 1 | NFT runs near-continuously; timer mostly for overnight off |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Seasonal Grow Calendar
 
@@ -190,9 +201,10 @@ flowchart TD
 - First frost (autumn): typically mid-October – early November
 - Longest day: 21 June — peak light and heat management period
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## 4-Week Build Timeline
 
@@ -229,9 +241,10 @@ flowchart TD
 - [ ] Sow first microgreens trays (Zone B)
 - [ ] Fill and plant root veg grow bags (Zone C)
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Daily Quick-Start Checklist
 
@@ -247,9 +260,10 @@ Once the system is running, use this each morning:
 - [ ] Check Zone C grow bags — water/fertigate as needed
 - [ ] Log any observations, adjustments, or concerns
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Success Criteria
 
@@ -263,9 +277,10 @@ By the end of the first growing season:
 6. pH stable within 5.5–6.5 and EC within crop target ranges for **80%+ of operational days**
 7. Zero catastrophic pump failures as a result of preparation and monitoring
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ## Guide Index
 
@@ -287,7 +302,9 @@ By the end of the first growing season:
 | 12 | [12-budget-and-sourcing.md](12-budget-and-sourcing.md) | BOM, costs, sourcing, ROI |
 | 13 | [13-automation.md](13-automation.md) | Automation, sensors, data logging, dashboards |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

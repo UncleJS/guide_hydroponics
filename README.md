@@ -1,10 +1,26 @@
 # Home Hydroponics — Outdoor Hydroponic Systems Guide
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](README.md)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 
 A complete DIY guide for building and running outdoor hydroponic systems in a temperate backyard. Two full systems are covered — **Nutrient Film Technique (NFT)** and **Ebb & Flow (flood-and-drain)** — each with 13 in-depth guides, from first principles to automation, on a **$150–$600 budget**.
 
 ---
+
+## Table of Contents
+
+- [Choose Your System](#choose-your-system)
+- [Shared Reference Documents](#shared-reference-documents)
+- [NFT Guide Library](#nft-guide-library)
+- [Ebb & Flow Guide Library](#ebb-flow-guide-library)
+- [Cross-System Comparison Guides](#cross-system-comparison-guides)
+- [Quick-Start Paths](#quick-start-paths)
+  - [NFT — new to hydroponics](#nft-new-to-hydroponics)
+  - [Ebb & Flow — want fruiting crops](#ebb-flow-want-fruiting-crops)
+
+---
+
 
 ## Choose Your System
 
@@ -22,6 +38,8 @@ A complete DIY guide for building and running outdoor hydroponic systems in a te
 
 Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow Bags)** designs. Only Zone A differs.
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Shared Reference Documents
@@ -30,6 +48,8 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 |----------|-------------|
 | [`zones.md`](zones.md) | Full zone layout with spatial diagrams, dimensions, plumbing routes, and maintenance access map |
 | [`guide/glossary.md`](guide/glossary.md) | All acronyms, abbreviations, and technical terms used across both guide sets — nutrients, units, electronics, materials, and methods |
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
@@ -54,6 +74,8 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 | 12 | [`guide/nft/12-budget-and-sourcing.md`](guide/nft/12-budget-and-sourcing.md) | Full BOM by tier, where to buy, running costs, yield estimates, and ROI/payback analysis |
 | 13 | [`guide/nft/13-automation.md`](guide/nft/13-automation.md) | From a $15 WiFi thermometer to a full ESP32 sensor network with dashboards and alerts |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Ebb & Flow Guide Library
@@ -77,6 +99,8 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 | 12 | [`guide/ebb-and-flow/12-budget-and-sourcing.md`](guide/ebb-and-flow/12-budget-and-sourcing.md) | BOM across 3 tiers, bulkhead fittings, LECA costs, yield estimates, ROI including fruiting crops |
 | 13 | [`guide/ebb-and-flow/13-automation.md`](guide/ebb-and-flow/13-automation.md) | Drain confirmation sensor (float switch), flood cycle logging, stuck-ON detection, ESP32, dashboards |
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 ## Cross-System Comparison Guides
@@ -89,6 +113,8 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 | 02 | [`guide/compare/02-crops.md`](guide/compare/02-crops.md) | Which crops belong in which system, yield estimates, succession calendars, transplanting, crop-specific problems |
 | 03 | [`guide/compare/03-automation.md`](guide/compare/03-automation.md) | Failure mode hierarchies, sensor priorities, drain confirmation vs flow confirmation, alert logic, two-system dashboard |
 | 04 | [`guide/compare/04-cost.md`](guide/compare/04-cost.md) | Build costs by tier, running costs, yield value, payback periods, where each system saves, spend priorities |
+
+[↑ Back to TOC](#table-of-contents)
 
 ---
 
@@ -117,7 +143,9 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 *Last updated: March 2026*
 
+[↑ Back to TOC](#table-of-contents)
+
 ---
 
 <!-- copyright -->
-*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free to share and adapt for non-commercial purposes with attribution.*
+*Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*
