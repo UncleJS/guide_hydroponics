@@ -8,9 +8,12 @@ Leaves all other content untouched.
 import os
 import re
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+
 GUIDE_DIRS = [
-    "/home/jacos/0_opencode/guide_hydroponics/guide/nft",
-    "/home/jacos/0_opencode/guide_hydroponics/guide/ebb-and-flow",
+    os.path.join(REPO_ROOT, "guide", "nft"),
+    os.path.join(REPO_ROOT, "guide", "ebb-and-flow"),
 ]
 
 def fix_mermaid_newlines(content):

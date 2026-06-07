@@ -11,7 +11,7 @@
 
 - [How to Use This Guide](#how-to-use-this-guide)
 - [Quick Reference — Zone, Table & Crop Map](#quick-reference-zone-table-crop-map)
-- [LEAFY GREENS & HERBS — Zone A, Table 1](#leafy-greens-herbs-zone-a-table-1)
+- [LEAFY GREENS & HERBS — Zone A, Table 3](#leafy-greens-herbs-zone-a-table-3)
   - [Lettuce — Butterhead](#lettuce-butterhead)
   - [Lettuce — Romaine / Cos](#lettuce-romaine-cos)
   - [Lettuce — Loose-Leaf / Cut-and-Come-Again](#lettuce-loose-leaf-cut-and-come-again)
@@ -22,7 +22,7 @@
   - [Mint](#mint)
   - [Chives](#chives)
   - [Parsley](#parsley)
-- [FRUITING CROPS — Zone A, Table 2](#fruiting-crops-zone-a-table-2)
+- [FRUITING CROPS — Zone A, Tables 1 & 2](#fruiting-crops-zone-a-tables-1-2)
   - [Cherry Tomatoes](#cherry-tomatoes)
   - [Peppers — Sweet Bell](#peppers-sweet-bell)
   - [Peppers — Chilli](#peppers-chilli)
@@ -41,8 +41,8 @@
   - [Carrots](#carrots)
   - [Beetroot](#beetroot)
 - [Crop Rotation and Succession Planning](#crop-rotation-and-succession-planning)
-  - [Table 1 — Leafy Greens Rotation Strategy](#table-1-leafy-greens-rotation-strategy)
-  - [Table 2 — Fruiting Crop Rotation and Seasonal Planning](#table-2-fruiting-crop-rotation-and-seasonal-planning)
+  - [Table 3 — Leafy Greens Rotation Strategy](#table-3-leafy-greens-rotation-strategy)
+  - [Tables 1 & 2 — Fruiting Crop Rotation and Seasonal Planning](#tables-1-2-fruiting-crop-rotation-and-seasonal-planning)
   - [LECA Sterilisation Between Heavy Fruiting Crops](#leca-sterilisation-between-heavy-fruiting-crops)
 
 ---
@@ -74,19 +74,19 @@ Each crop entry includes:
 
 | Crop | Zone | Table/Location | EC (mS/cm) | pH | Flood freq/day | Seed-to-harvest |
 |------|------|---------------|-----------|-----|---------------|-----------------|
-| Lettuce (all types) | A | Table 1 | 0.8–1.6 | 5.5–6.5 | 3–4 | 28–45 days |
-| Spinach | A | Table 1 | 1.2–2.0 | 6.0–7.0 | 3–4 | 30–45 days |
-| Kale | A | Table 1 | 1.4–2.0 | 5.5–6.5 | 3–4 | 55–70 days |
-| Basil | A | Table 1 | 1.0–1.6 | 5.5–6.5 | 3–4 | 28–42 days |
-| Cilantro | A | Table 1 | 1.0–1.6 | 6.0–6.8 | 3–4 | 25–35 days |
-| Mint | A | Table 1 | 1.2–1.8 | 5.5–6.5 | 3 | 28–35 days |
-| Chives | A | Table 1 | 1.2–1.8 | 6.0–6.8 | 3 | 30–40 days |
-| Parsley | A | Table 1 | 0.8–1.6 | 5.5–6.5 | 3 | 35–60 days |
-| Cherry tomatoes | A | Table 2 | 2.0–3.5 | 5.5–6.5 | 3–4 | 60–80 days |
+| Lettuce (all types) | A | Table 3 | 0.8–1.6 | 5.5–6.5 | 3–4 | 28–45 days |
+| Spinach | A | Table 3 | 1.2–2.0 | 6.0–7.0 | 3–4 | 30–45 days |
+| Kale | A | Table 3 | 1.4–2.0 | 5.5–6.5 | 3–4 | 55–70 days |
+| Basil | A | Table 3 | 1.0–1.6 | 5.5–6.5 | 3–4 | 28–42 days |
+| Cilantro | A | Table 3 | 1.0–1.6 | 6.0–6.8 | 3–4 | 25–35 days |
+| Mint | A | Table 3 | 1.2–1.8 | 5.5–6.5 | 3 | 28–35 days |
+| Chives | A | Table 3 | 1.2–1.8 | 6.0–6.8 | 3 | 30–40 days |
+| Parsley | A | Table 3 | 0.8–1.6 | 5.5–6.5 | 3 | 35–60 days |
+| Cherry tomatoes | A | Table 1 | 2.0–3.5 | 5.5–6.5 | 3–4 | 60–80 days |
 | Peppers (sweet) | A | Table 2 | 1.8–3.0 | 5.5–6.5 | 3–4 | 70–90 days |
 | Peppers (chilli) | A | Table 2 | 2.0–3.5 | 5.5–6.5 | 3–4 | 65–85 days |
 | Strawberries | A | Table 2 | 1.0–1.8 | 5.5–6.5 | 3 | 60–90 days from plant |
-| Cucumbers | A | Table 2 | 1.8–2.8 | 5.5–6.5 | 3–4 | 50–65 days |
+| Cucumbers | A | Table 1 | 1.8–2.8 | 5.5–6.5 | 3–4 | 50–65 days |
 | Courgettes | A | Table 2 | 1.6–2.4 | 5.5–6.5 | 3–4 | 45–60 days |
 | Aubergine | A | Table 2 | 1.8–3.0 | 5.5–6.5 | 3–4 | 70–90 days |
 | Sunflower shoots | B | Tray station | — (coco) | — | Manual mist | 8–12 days |
@@ -103,7 +103,7 @@ Each crop entry includes:
 ---
 
 
-## LEAFY GREENS & HERBS — Zone A, Table 1
+## LEAFY GREENS & HERBS — Zone A, Table 3
 
 ---
 
@@ -111,7 +111,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.4 mS/cm (seedling) → 1.2–1.6 mS/cm (mature) |
 | **pH range** | 5.5–6.5 (optimal 6.0) |
 | **Flood frequency** | 3× per day (seedling); 3–4× per day (mature, hot weather) |
@@ -134,7 +134,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3–4× per day |
@@ -147,7 +147,7 @@ Each crop entry includes:
 
 **E&F-specific tips:**
 - Romaine grows tall and upright — on a flat flood table, this means less mutual shading than a wider-spreading butterhead
-- Place romaine at the northern edge of Table 1 so it does not shade lower basil or cilantro plants growing to the south
+- Place romaine at the northern edge of Table 3 so it does not shade lower basil or cilantro plants growing to the south
 - Romaine is slightly more drought-tolerant than butterhead — if flood frequency needs to drop (timer issue, hot day with high evaporation), romaine will hold longer without stress
 - In autumn, romaine handles cooler temperatures better than most lettuce — an excellent second-season crop for September–October
 
@@ -157,7 +157,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3× per day |
@@ -180,7 +180,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–2.0 mS/cm |
 | **pH range** | 6.0–7.0 (tolerates slightly higher pH than most leafy greens) |
 | **Flood frequency** | 3–4× per day |
@@ -203,7 +203,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.4–2.0 mS/cm |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3–4× per day |
@@ -217,7 +217,7 @@ Each crop entry includes:
 **E&F-specific tips:**
 - Kale is one of the most productive long-season crops for an E&F flood table — a single plant produces leaves for 3–4 months with regular harvesting
 - In E&F, kale's fibrous root system penetrates deeply through the LECA — use 12–15cm media depth and 75mm net pots for large Tuscan/dinosaur kale varieties
-- Unlike lettuce, kale does not bolt in summer — it can stay on Table 1 through the entire growing season while lettuce is replaced by succession planting around it
+- Unlike lettuce, kale does not bolt in summer — it can stay on Table 3 through the entire growing season while lettuce is replaced by succession planting around it
 - Kale improves in flavour after a light frost — leave late-season plants in until the first frost for the sweetest harvests
 - Space kale carefully: its large canopy spreads 40–60cm and will shade adjacent plants — place at the north or rear of the table
 
@@ -227,7 +227,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.0–1.6 mS/cm |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3–4× per day (basil is thirsty — one of the highest flood-frequency herbs) |
@@ -243,7 +243,7 @@ Each crop entry includes:
 - Do not deploy shade cloth over basil-only sections of the table if temperatures allow — basil wants maximum light and warmth
 - Pinch flower buds as soon as they appear — once basil flowers, leaf production stops and leaves become bitter. In long summer days, check every 2–3 days
 - In E&F, basil's roots penetrate the full LECA media depth — unlike NFT where roots hang in a thin film channel, E&F basil develops a substantial root ball
-- Basil can be chilled below 10°C only briefly — bring Table 1 plants under cover if unexpected cold nights threaten in early spring or autumn
+- Basil can be chilled below 10°C only briefly — bring Table 3 plants under cover if unexpected cold nights threaten in early spring or autumn
 
 ---
 
@@ -251,7 +251,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.0–1.6 mS/cm |
 | **pH range** | 6.0–6.8 |
 | **Flood frequency** | 3× per day |
@@ -275,7 +275,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–1.8 mS/cm |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3× per day (mint is moderately drought-tolerant vs other herbs) |
@@ -290,7 +290,7 @@ Each crop entry includes:
 - Propagate mint from cuttings, not seeds — place 10cm stem cutting with leaves in a glass of water for 5–7 days until roots appear, then transfer to rockwool or directly into a prepared LECA net pot
 - Mint's vigorous spreading habit is contained by the net pot in an E&F table — this is one advantage of E&F over open-bed growing where mint invades neighbouring plants
 - Mint can tolerate more moisture than most herbs — flood frequency can stay at 3× even in cool weather where other herbs might be reduced to 2×
-- One of the most cold-tolerant herbs on Table 1 — can be left in the system until first hard frost (below -3°C); often regrows after light frosts
+- One of the most cold-tolerant herbs on Table 3 — can be left in the system until first hard frost (below -3°C); often regrows after light frosts
 
 ---
 
@@ -298,7 +298,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–1.8 mS/cm |
 | **pH range** | 6.0–6.8 |
 | **Flood frequency** | 3× per day |
@@ -312,7 +312,7 @@ Each crop entry includes:
 **E&F-specific tips:**
 - Chives are one of the most reliable crops in E&F flood tables — they tolerate a wide range of EC and pH conditions and are difficult to kill with over- or under-watering
 - Sow 3–5 seeds per rockwool cube to create a dense clump — chives produce better when grown as a multi-stem bunch rather than single plants
-- Chives can remain on Table 1 for the entire growing season with repeated cutting — one of the few crops that doesn't need replacing until season end
+- Chives can remain on Table 3 for the entire growing season with repeated cutting — one of the few crops that doesn't need replacing until season end
 - They tolerate flooding slightly more than most herbs — a missed drain cycle (pump issue) will not damage chives the way it would basil or cilantro
 
 ---
@@ -321,7 +321,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3× per day |
@@ -343,7 +343,9 @@ Each crop entry includes:
 ---
 
 
-## FRUITING CROPS — Zone A, Table 2
+## FRUITING CROPS — Zone A, Tables 1 & 2
+
+> **Table assignment:** Table 1 carries the long-season vining crops (indeterminate tomatoes, cucumbers); Table 2 carries the medium-season fruiting crops (peppers, aubergine, courgette, strawberries). See Guide 00 for the full zone design.
 
 ---
 
@@ -351,7 +353,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
 | **EC range** | 2.0–2.5 mS/cm (vegetative) → 2.5–3.5 mS/cm (fruiting) |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting, hot weather) |
@@ -364,7 +366,7 @@ Each crop entry includes:
 | **Media depth** | 150mm minimum |
 
 **E&F-specific tips:**
-- Start seeds indoors in late February/March — transplant to Table 2 after last frost (May) when plants are 15–20cm with visible flower buds
+- Start seeds indoors in late February/March — transplant to Table 1 after last frost (May) when plants are 15–20cm with visible flower buds
 - Train to a single stem (cordon/indeterminate varieties): remove all side shoots (suckers) from leaf axils every 3–5 days. Let 2 side shoots develop on determinate varieties
 - Support with a vertical string or bamboo cane anchored to a post above the table — in E&F, the LECA anchors the root ball but the stem needs support above media level
 - High EC during fruiting (2.5–3.5 mS/cm) increases sugar content and flavour — do not dilute EC to 2.0 during fruiting phase
@@ -448,7 +450,7 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
 | **EC range** | 1.8–2.2 mS/cm (vegetative) → 2.0–2.8 mS/cm (fruiting) |
 | **pH range** | 5.5–6.5 |
 | **Flood frequency** | 3–4× per day; up to 5× on the hottest days (cucumbers transpire heavily) |
@@ -687,12 +689,12 @@ Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix
 
 ## Crop Rotation and Succession Planning
 
-### Table 1 — Leafy Greens Rotation Strategy
+### Table 3 — Leafy Greens Rotation Strategy
 
-The key principle for Table 1 is **succession planting** — ensuring the table is never empty and that crops are staggered so you have continuous harvest throughout the season.
+The key principle for Table 3 is **succession planting** — ensuring the table is never empty and that crops are staggered so you have continuous harvest throughout the season.
 
 ```
-  TABLE 1 — SUCCESSION PLANTING CALENDAR:
+  TABLE 3 — SUCCESSION PLANTING CALENDAR:
 
   EARLY SPRING (March–April):
   ─ Plant: Lettuce (mixed types), spinach, parsley, chives
@@ -700,7 +702,7 @@ The key principle for Table 1 is **succession planting** — ensuring the table 
   ─ Kale: plant one or two permanent positions early — will be harvested all season
 
   SPRING (April–May):
-  ─ Transplant first lettuce succession to fill Table 1
+  ─ Transplant first lettuce succession to fill Table 3
   ─ Add basil and cilantro as temperatures warm past 15°C nights
   ─ Begin succession 2 of lettuce every 3 weeks
 
@@ -716,16 +718,16 @@ The key principle for Table 1 is **succession planting** — ensuring the table 
   ─ Continue lettuce succession — autumn lettuce does not bolt
   ─ Kale: peak quality after first light frost
 
-  RULE: When a position on Table 1 becomes vacant:
+  RULE: When a position on Table 3 becomes vacant:
   1. Remove net pot with old plant
   2. Clean LECA in that pot (quick rinse — no need for full sterilisation)
   3. Replant with next succession seedling immediately
   4. Do not leave positions empty for more than 1–2 days
 ```
 
-### Table 2 — Fruiting Crop Rotation and Seasonal Planning
+### Tables 1 & 2 — Fruiting Crop Rotation and Seasonal Planning
 
-Table 2 runs a single long-season crop cycle per year, not succession planting:
+Tables 1 and 2 run a single long-season crop cycle per year, not succession planting:
 
 ```
   TABLE 2 — ANNUAL CROP CYCLE:
@@ -738,11 +740,11 @@ Table 2 runs a single long-season crop cycle per year, not succession planting:
   April (hardening off):
   ─ Begin hardening seedlings outdoors during warm days (minimum 12°C)
   ─ Return indoors at night
-  ─ Do not transplant to Table 2 yet — nights still too cold
+  ─ Do not transplant to the fruiting tables yet — nights still too cold
 
   May (transplant):
   ─ After last frost and once nights are consistently above 15°C
-  ─ Transplant chosen fruiting crops to Table 2
+  ─ Transplant chosen fruiting crops to Tables 1 and 2
   ─ Select ONE primary crop combination:
     Option A: 2–3 cherry tomatoes + 3–4 peppers
     Option B: 2 cucumbers + 4 aubergines
@@ -759,13 +761,13 @@ Table 2 runs a single long-season crop cycle per year, not succession planting:
   ─ Begin LECA sterilisation protocol
 
   October–November:
-  ─ Full Table 2 cleaning and sterilisation
+  ─ Full cleaning and sterilisation of Tables 1 and 2
   ─ Store or prepare for next season
 ```
 
 ### LECA Sterilisation Between Heavy Fruiting Crops
 
-After a season of tomatoes, cucumbers, or courgettes, the LECA in Table 2 accumulates:
+After a season of tomatoes, cucumbers, or courgettes, the LECA in the fruiting tables accumulates:
 - Significant root debris (these crops have large root systems)
 - Salt deposits from high-EC feeding
 - Potential Pythium or Fusarium spores from foliar/root contact

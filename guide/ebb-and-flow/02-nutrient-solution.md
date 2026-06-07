@@ -120,7 +120,7 @@ flowchart TD
     A --> B --> C --> D --> E
 ```
 
-**E&F note on mixed tables:** If your flood table contains both leafy greens (EC 1.0–1.4 mS/cm) and fruiting crops (EC 2.5–4.0 mS/cm), you have an EC conflict. The standard solution is to dedicate separate tables to different crop categories — leafy greens on Table 1, fruiting crops on Table 2 — allowing independent flood schedules and EC management.
+**E&F note on mixed tables:** If your flood table contains both leafy greens (EC 1.0–1.4 mS/cm) and fruiting crops (EC 2.5–4.0 mS/cm), you have an EC conflict. The standard solution is to dedicate separate tables to different crop categories — fruiting crops on Tables 1–2, leafy greens on Table 3 — allowing independent flood schedules and EC management.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -506,38 +506,42 @@ Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F s
 
 ### Reservoir Volume and E&F Flood Cycling
 
-The 100L reservoir in this system is sized for the two 1.2m × 0.6m flood tables. Understanding why this volume matters:
+The 150–200L reservoir in this system is sized for the three 1.2m × 0.6m flood tables. Understanding why this volume matters:
 
 ```
   E&F RESERVOIR SIZING CONSIDERATIONS:
 
   Volume consumed per flood cycle:
-  ─ Table volume: 1.2m × 0.6m × 0.05m (flood depth) = 0.036 m³ = 36L per table
-  ─ Two tables flooded simultaneously: ~72L per flood event
-  ─ Note: not all 72L is consumed — it drains back. BUT the pump must push
-    72L up to the tables before overflow controls level. The reservoir must
-    have MINIMUM 80L to flood both tables without running dry.
+  ─ Flood level: ~2cm below the LECA surface (standpipe at 10cm for a
+    12cm bed). Water fills the void space between pebbles up to that level:
+    Gross volume to 10cm: 1.2 × 0.6 × 0.10 = 72L per table
+    Minus LECA solids (~60% of flooded bed): ~43L
+    Net water out per table at full flood: ~29L
+  ─ Three tables flooded simultaneously: ~85–90L per flood event
+  ─ Note: not all 90L is consumed — it drains back. BUT the pump must push
+    ~90L up to the tables before overflow controls level. The reservoir must
+    hold well over 90L to flood all three tables without running dry.
 
-  100L reservoir buffer analysis:
-  ─ Tables full: ~72L in tables, ~28L remaining in reservoir
-  ─ Pump continues running until timer cuts — safe margin
-  ─ After drain: 100L back in reservoir (minus plant uptake and evaporation)
+  150L fill buffer analysis:
+  ─ Tables full: ~90L in tables, ~60L remaining in reservoir
+  ─ Pump stays submerged and continues running until timer cuts — safe margin
+  ─ After drain: 150L back in reservoir (minus plant uptake and evaporation)
 
   Daily water consumption:
-  ─ Plant transpiration + evaporation: ~2–5L per day in warm weather
-  ─ At 3 floods/day with 2 tables: steady state, same water recycled
+  ─ Plant transpiration + evaporation: ~3–8L per day in warm weather
+  ─ At 3 floods/day with 3 tables: steady state, same water recycled
   ─ Top up reservoir daily with pH-adjusted plain water to replace losses
 
-  MASTERBLEND RECIPE FOR 100L FILL (standard vegetative mix, EC ~1.4–1.6 mS/cm):
+  MASTERBLEND RECIPE FOR 150L FILL (standard vegetative mix, EC ~1.4–1.6 mS/cm):
 
-  Calcium Nitrate:   0.6g/L × 100L = 60g
-  MasterBlend:       0.6g/L × 100L = 60g
-  Epsom Salt:        0.3g/L × 100L = 30g
+  Calcium Nitrate:   0.6g/L × 150L = 90g
+  MasterBlend:       0.6g/L × 150L = 90g
+  Epsom Salt:        0.3g/L × 150L = 45g
 
   For fruiting crops (EC ~2.5 mS/cm):
-  Calcium Nitrate:   0.95g/L × 100L = 95g
-  MasterBlend:       0.95g/L × 100L = 95g
-  Epsom Salt:        0.47g/L × 100L = 47g
+  Calcium Nitrate:   0.95g/L × 150L = 143g
+  MasterBlend:       0.95g/L × 150L = 143g
+  Epsom Salt:        0.47g/L × 150L = 70g
 
   Always verify EC with meter after mixing — before running first flood.
   Weigh all dry nutrients on a digital scale. Volume estimation is inaccurate.

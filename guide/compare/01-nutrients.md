@@ -175,7 +175,7 @@ pH drift is a feature of all recirculating hydroponic systems, but the direction
 
 ### Buffering Behaviour
 
-In NFT, the full reservoir volume acts as the buffer. A 100 L reservoir with 15 L plant-accessible root zone means that a plant-induced pH shift is diluted across the full 100 L. Corrections apply immediately to the full system.
+In NFT, the full reservoir volume acts as the buffer. An 80 L reservoir with 15 L plant-accessible root zone means that a plant-induced pH shift is diluted across the full 80 L. Corrections apply immediately to the full system.
 
 In E&F, roughly 15–20% of total solution volume is retained in the media at any time. When you correct the reservoir pH, the media retains its old pH. The full correction only propagates through the entire system after 2–3 flood cycles. This means:
 

@@ -66,7 +66,7 @@ flowchart LR
 
     subgraph EF["Ebb &amp; Flow SYSTEM — Substantial Media"]
         TABLE["Flood table<br/>(1.2m × 0.6m × 100–150mm deep)"]
-        LECA["20–30L LECA per table<br/>(fills entire table depth)"]
+        LECA["~72–108L LECA per table<br/>(fills entire table depth)"]
         NP2["Multiple net pots<br/>in the media bed"]
         ROOTS["Root mass spreads throughout<br/>media volume between floods"]
         TABLE --> LECA --> NP2 --> ROOTS
@@ -92,15 +92,16 @@ flowchart LR
 
   Media depth 100mm (10cm) — standard leafy greens:
     Volume = 0.72 m² × 0.1m = 0.072 m³ = 72L (bulk volume)
-    Actual LECA needed (accounting for pore space): ~35–45L dry weight
+    LECA needed: ~72L per table (LECA is sold by bulk volume —
+    the bag's litre rating includes the pore space)
 
   Media depth 150mm (15cm) — fruiting crops:
     Volume = 0.72 m² × 0.15m = 0.108 m³ = 108L (bulk volume)
-    Actual LECA needed: ~50–60L dry weight
+    LECA needed: ~108L per table
 
-  Both tables combined (standard depth):
-    ~70–90L of LECA minimum
-    Budget: ~$80–$150 for initial media fill
+  All three tables combined (12cm standard depth):
+    ~260L of LECA (≈ 6× 45–50L bags)
+    Budget: ~$150–$250 for initial media fill
 ```
 
 > **The media is a long-term investment.** Clay pebbles last many years with proper sterilisation. The upfront media cost is paid back across multiple growing seasons.
@@ -251,7 +252,7 @@ Media depth is not a fixed constant — it is determined by the crop you are gro
 ```
   MEDIA DEPTH GUIDE — E&F FLOOD TABLES:
 
-  LEAFY GREENS AND HERBS (Table 1 typical use):
+  LEAFY GREENS AND HERBS (Table 3 typical use):
   ─────────────────────────────────────────────
   Recommended depth:   100mm (10cm)
   Net pot size:        50mm
@@ -259,7 +260,7 @@ Media depth is not a fixed constant — it is determined by the crop you are gro
   - 10cm provides adequate root volume for lettuce, herbs, spinach
   - Roots generally stay within the media volume — no deep penetration needed
   - Allows approx 8 × 50mm net pots per 0.72 m² table (20cm spacing)
-  - Flood to 2–3cm above LECA surface
+  - Flood to ~2cm below the LECA surface (standpipe = media depth −2cm)
 
   FRUITING CROPS — MEDIUM (peppers, strawberries, aubergine):
   ──────────────────────────────────────────────────────────
@@ -269,7 +270,7 @@ Media depth is not a fixed constant — it is determined by the crop you are gro
   - Deeper media accommodates larger root balls
   - Provides better structural support for tall pepper/aubergine plants
   - Allows approx 4–6 plants per table (35–40cm spacing)
-  - Flood to 3–4cm above LECA surface
+  - Flood to ~2cm below the LECA surface
 
   FRUITING CROPS — LARGE (tomatoes, cucumbers, courgettes):
   ─────────────────────────────────────────────────────────
@@ -280,7 +281,7 @@ Media depth is not a fixed constant — it is determined by the crop you are gro
   - Roots will penetrate the full media depth and extend below net pots
   - 4 plants per table maximum (40–50cm spacing — these are large plants)
   - Courgettes: 2 plants per table — extremely vigorous, need space
-  - Flood to 4–5cm above LECA surface
+  - Flood to ~2cm below the LECA surface
   - Consider supplementing with a second flood per day during peak fruiting
 ```
 
@@ -607,7 +608,7 @@ The timing of the first flood after transplant is important. Seedlings need time
 
   Day 2–3:
   ─ Increase to 2 flood cycles per day at standard duration (15 min)
-  ─ Flood level now at normal setting (2–3cm above media surface)
+  ─ Flood level now at normal setting (~2cm below media surface)
   ─ Plants should show signs of new growth — leaf expansion
 
   Day 4–7:

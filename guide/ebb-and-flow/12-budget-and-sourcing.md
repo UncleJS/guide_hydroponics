@@ -28,7 +28,7 @@
   - [Per Season (8–9 month outdoor season)](#per-season-89-month-outdoor-season)
 - [6. Tier Totals Summary](#6-tier-totals-summary)
   - [Full 3-Zone System (All Zones)](#full-3-zone-system-all-zones)
-  - [How to Achieve the $150–$600 Stated Range](#how-to-achieve-the-150600-stated-range)
+  - [Phasing the Build to Spread the Cost](#phasing-the-build-to-spread-the-cost)
   - [What You Get for Each Tier — Snapshot](#what-you-get-for-each-tier-snapshot)
 - [7. Where to Buy](#7-where-to-buy)
   - [7.1 E&F-Specific Items — Where They Differ from NFT](#71-ef-specific-items-where-they-differ-from-nft)
@@ -72,21 +72,21 @@
 Three tiers are defined based on total budget and the trade-offs at each level:
 
 ```
-TIER 1 — BUDGET ($150–$250)
+TIER 1 — BUDGET (~$450–$550 Zone A)
   Philosophy: Get the system running with minimal spend.
               DIY timber flood tables, basic hardware, budget pump.
   Trade-offs: More DIY labour, mechanical timer risk, less precision.
   Best for:   First-time builders happy with weekend workshop projects.
               Growers testing E&F before a bigger investment.
 
-TIER 2 — MID ($250–$400)  ← Recommended
+TIER 2 — MID (~$750–$850 Zone A)  ← Recommended
   Philosophy: Solid, purpose-built components.
               Bought commercial flood trays, digital timer with battery backup,
               quality pump with filter, premium LECA.
   Trade-offs: Higher upfront cost, much faster and more reliable build.
   Best for:   Most growers — the best balance of cost and dependability.
 
-TIER 3 — PREMIUM ($400–$600)
+TIER 3 — PREMIUM (~$1,100–$1,250 Zone A)
   Philosophy: Best-available components for maximum longevity and yield.
               Heavy-duty or FRP flood tables, dual timers, automation-ready.
   Trade-offs: High upfront cost; some items are "nice to have."
@@ -95,7 +95,7 @@ TIER 3 — PREMIUM ($400–$600)
 
 Items are priced in USD with approximate GBP/EUR equivalents in brackets. Prices are based on typical 2024–2025 retail prices; check current pricing at purchase time.
 
-> **E&F vs. NFT cost drivers:** The key cost differences in Ebb & Flow versus NFT are: (1) flood tables instead of PVC channels — whether bought or DIY; (2) bulkhead fittings (4 total, more robust than NFT drain barbs); (3) larger pump (800–1200 L/h vs. 600–800 L/h); (4) larger reservoir (100 L vs. 80 L); (5) significantly more LECA (40–50 L total vs. ~10 L for NFT); and (6) the digital timer is mandatory, not optional — a power cut resetting an E&F timer is a root-rot event within hours.
+> **E&F vs. NFT cost drivers:** The key cost differences in Ebb & Flow versus NFT are: (1) flood tables instead of PVC channels — whether bought or DIY; (2) bulkhead fittings (6 total, more robust than NFT drain barbs); (3) larger pump (800–1200 L/h vs. 600–800 L/h); (4) larger reservoir (150–200 L vs. 80 L); (5) dramatically more LECA (~260 L total vs. ~10 L for NFT) — the single largest cost difference; and (6) the digital timer is mandatory, not optional — a power cut resetting an E&F timer is a root-rot event within hours.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -112,47 +112,47 @@ The flood tables are the largest variable cost item in the E&F system. You can b
 
 | Item | Tier 1 (Budget) | Tier 2 (Mid) | Tier 3 (Premium) |
 |---|---|---|---|
-| **Economy PP flood tray 50×100cm (2×)** | $50 — 2× budget economy tray | — | — |
-| **Mid-range dedicated hydro flood table 60×120cm (2×)** | — | $100 — 2× purpose-built hydro tray | — |
-| **Heavy-duty / FRP commercial flood table 60×120cm (2×)** | — | — | $200 — 2× commercial grade |
-| **Flood table subtotal (Option A)** | **$50** | **$100** | **$200** |
+| **Economy PP flood tray 60×120cm (3×)** | $75 — 3× budget economy tray | — | — |
+| **Mid-range dedicated hydro flood table 60×120cm (3×)** | — | $150 — 3× purpose-built hydro tray | — |
+| **Heavy-duty / FRP commercial flood table 60×120cm (3×)** | — | — | $300 — 3× commercial grade |
+| **Flood table subtotal (Option A)** | **$75** | **$150** | **$300** |
 
 #### 2.1B — DIY Timber + Pond Liner Tables (Option B)
 
 | Item | Tier 1 (Budget) | Tier 2 (Mid) | Tier 3 (Premium) |
 |---|---|---|---|
-| **Timber (150mm × 25mm PAR sides, per table × 2)** | $14 — basic pine | $20 — exterior treated | $30 — smooth hardwood |
-| **Timber (50mm × 50mm base ribs, per table × 2)** | $6 | $8 | $10 |
-| **Plywood base 9mm exterior (per table × 2)** | $16 — basic ply | $22 — good exterior ply | $28 — marine ply |
-| **EPDM pond liner 1.7m × 1.1m (per table × 2)** | $20 — PVC liner, thinner grade | $36 — EPDM 0.75mm (2 pieces) | $48 — EPDM 1.0mm, premium |
-| **Pond liner tape (1 roll)** | $6 | $8 | $10 |
-| **Screws + wood glue** | $5 | $6 | $7 |
+| **Timber (150mm × 25mm PAR sides, per table × 3)** | $21 — basic pine | $30 — exterior treated | $45 — smooth hardwood |
+| **Timber (50mm × 50mm base ribs, per table × 3)** | $9 | $12 | $15 |
+| **Plywood base 9mm exterior (per table × 3)** | $24 — basic ply | $33 — good exterior ply | $42 — marine ply |
+| **EPDM pond liner 1.7m × 1.1m (per table × 3)** | $30 — PVC liner, thinner grade | $54 — EPDM 0.75mm (3 pieces) | $72 — EPDM 1.0mm, premium |
+| **Pond liner tape (2 rolls)** | $12 | $16 | $20 |
+| **Screws + wood glue** | $7 | $8 | $10 |
 | **Water-based timber preservative** | $6 | $10 | $14 |
-| **DIY table subtotal (Option B)** | **$73** | **$110** | **$147** |
+| **DIY table subtotal (Option B)** | **$109** | **$163** | **$218** |
 
-> **Which to choose:** Option B (DIY) saves $27–$53 at all tiers versus Option A for equivalent quality. Option A saves 4–6 hours of workshop time. The BOM below uses Option B costs for Tier 1 (maximum savings) and Option A costs for Tier 2 and 3 (time efficiency). Mix and match to suit your situation.
+> **Which to choose:** With three tables, Option A (bought) is actually cheaper at Tier 1 ($75 vs. $109) and Tier 2 ($150 vs. $163); DIY only wins on price at Tier 3 ($218 vs. $300). DIY still earns its keep for custom sizing and build quality. The BOM below uses Option A costs at all tiers. Mix and match to suit your situation.
 
 ### 2.2 Bulkhead Fittings and Overflow System
 
-Each table requires 2 bulkhead fittings (fill port + overflow/drain port). Total: 4 bulkhead fittings for the full system.
+Each table requires 2 bulkhead fittings (fill port + overflow/drain port). Total: 6 bulkhead fittings for the full system.
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **25mm bulkhead fittings (4× — fill + drain per table)** | $12 — irrigation bulkheads | $16 — dedicated hydro bulkheads | $22 — brass-body or reinforced PP |
-| **EPDM rubber washers/gaskets (4×)** | $4 | $5 | $6 |
-| **Overflow standpipes — 25mm PVC pipe, cut to height (4×)** | $4 — DIY cut from PVC offcut | $6 — pre-cut or purpose-bought standpipes | $10 — adjustable height standpipes |
+| **25mm bulkhead fittings (6× — fill + drain per table)** | $18 — irrigation bulkheads | $24 — dedicated hydro bulkheads | $33 — brass-body or reinforced PP |
+| **EPDM rubber washers/gaskets (6×)** | $6 | $8 | $9 |
+| **Overflow standpipes — 25mm PVC pipe, cut to height (6×)** | $6 — DIY cut from PVC offcut | $9 — pre-cut or purpose-bought standpipes | $15 — adjustable height standpipes |
 | **Silicone sealant (pond-safe, tube)** | $4 | $5 | $6 |
-| **Bulkhead/overflow subtotal** | **$24** | **$32** | **$44** |
+| **Bulkhead/overflow subtotal** | **$34** | **$46** | **$63** |
 
 ### 2.3 Reservoir
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **100L food-grade HDPE container** | $0 — repurposed food barrel | $30 — purpose-bought 100L HDPE bin | $45 — dedicated 100L hydro reservoir |
+| **150–200L food-grade HDPE container** | $0 — repurposed food barrel | $45 — purpose-bought 150–200L HDPE bin | $65 — dedicated 150–200L hydro reservoir |
 | **Reflective foam insulation (reservoir wrap)** | $0 — foil bubble wrap offcut | $10 — Kingspan / foam board cut | $18 — purpose-cut foam box |
 | **Black polythene wrap (light-proofing layer)** | $3 — black bin liner + tape | $4 | $0 — reservoir already opaque |
 | **Lid gasket / foam seal strips** | $3 | $4 | $5 |
-| **Reservoir subtotal** | **$6** | **$48** | **$68** |
+| **Reservoir subtotal** | **$6** | **$63** | **$88** |
 
 ### 2.4 Pump and Aeration
 
@@ -165,22 +165,22 @@ Each table requires 2 bulkhead fittings (fill port + overflow/drain port). Total
 | **Non-return valve (air line)** | $2 | $2 | $3 |
 | **Pump and aeration subtotal** | **$35** | **$53** | **$72** |
 
-> **Why larger pump than NFT?** The E&F pump must fill both 1.2m × 0.6m tables (combined void volume ~12–14 L) within 5–10 minutes of each flood cycle. An NFT pump runs continuously but at low flow; the E&F pump runs in short bursts and must deliver meaningful volume quickly. An 800 L/h pump at 50 cm head delivers ~600 L/h (10 L/min) — enough to fill both tables in under 2 minutes.
+> **Why larger pump than NFT?** The E&F pump must fill all three 1.2m × 0.6m tables (combined flood volume ~85–90 L) within 5–10 minutes of each flood cycle. An NFT pump runs continuously but at low flow; the E&F pump runs in short bursts and must deliver meaningful volume quickly. An 800 L/h pump at 50 cm head delivers ~600 L/h (10 L/min) — enough to flood all three tables in ~9 minutes.
 
 ### 2.5 Plumbing
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **25mm LDPE supply hose (3m)** | $5 | $6 | $7 |
-| **32mm flexible drain hose (3m)** | $6 | $8 | $10 |
-| **25mm T-junction / Y-splitter (supply side)** | $3 — irrigation T | $4 | $5 |
-| **32mm T-junction (drain manifold)** | $3 | $4 | $5 |
-| **25mm inline ball valves (2×, one per table supply)** | $6 — tap valves | $8 — proper ball valves | $12 — quality brass ball valves |
+| **25mm LDPE supply hose (4m)** | $6 | $7 | $8 |
+| **32mm flexible drain hose (4m)** | $8 | $10 | $13 |
+| **25mm T-junctions × 2 (supply manifold)** | $6 — irrigation Ts | $8 | $10 |
+| **32mm T-junctions × 2 (drain manifold)** | $6 | $8 | $10 |
+| **25mm inline ball valves (3×, one per table supply)** | $9 — tap valves | $12 — proper ball valves | $18 — quality brass ball valves |
 | **Barbed hose fittings + reducers (assorted pack)** | $5 | $7 | $9 |
 | **Hose clips (bag of 20)** | $4 | $5 | $6 |
 | **PTFE tape (roll)** | $1 | $1 | $1 |
 | **Cable ties (bag of 100)** | $2 | $3 | $3 |
-| **Plumbing subtotal** | **$35** | **$46** | **$58** |
+| **Plumbing subtotal** | **$47** | **$61** | **$78** |
 
 ### 2.6 Electrical and Timer
 
@@ -211,15 +211,15 @@ The timer is the most critical electrical component in an E&F system. A power cu
 
 ### 2.8 Growing Media (Zone A)
 
-E&F uses significantly more LECA than NFT. Each 1.2m × 0.6m table requires ~20 L of LECA at 12–15 cm depth. Two tables = 40–50 L total. This is the largest per-unit media cost difference between E&F and NFT systems.
+E&F uses dramatically more LECA than NFT. Each 1.2m × 0.6m table requires ~86 L of bulk LECA at 12 cm depth (LECA is sold by bulk volume — the bag rating includes pore space). Three tables = ~260 L total, or six 50L bags. This is the largest per-unit media cost difference between E&F and NFT systems.
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **LECA / clay pebbles (50L bag)** | $25 — budget no-name LECA | $35 — Hydrotops or quality brand | $45 — Canna Aqua Pebbles or premium |
+| **LECA / clay pebbles (6× 50L bags)** | $150 — budget no-name LECA | $210 — Hydrotops or quality brand | $270 — Canna Aqua Pebbles or premium |
 | **Rockwool cubes 25mm (block of 50)** | $6 | $8 | $10 |
 | **50mm net pots (pack of 25)** | $5 | $6 | $7 |
 | **75–100mm net pots (pack of 10)** | $4 | $5 | $6 |
-| **Growing media subtotal** | **$40** | **$54** | **$68** |
+| **Growing media subtotal** | **$165** | **$229** | **$293** |
 
 ### 2.9 Nutrients
 
@@ -236,34 +236,34 @@ E&F uses significantly more LECA than NFT. Each 1.2m × 0.6m table requires ~20 
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **Shade cloth 40–50% (2m × 1.5m)** | $8 | $12 | $16 |
-| **Horticultural fleece 17g/m² (3m × 2m)** | $6 | $8 | $10 |
+| **Shade cloth 40–50% (3m × 2m)** | $12 | $16 | $22 |
+| **Horticultural fleece 17g/m² (4m × 2m)** | $8 | $10 | $13 |
 | **Fleece/shade cloth pegs or clips (bag of 20)** | $3 | $4 | $5 |
 | **Freeze water bottles (DIY — free)** | $0 | $0 | $0 |
 | **Aquarium heater 50W (winter)** | $0 — skip (winterise system) | $0 | $20 |
-| **Climate subtotal** | **$17** | **$24** | **$51** |
+| **Climate subtotal** | **$23** | **$30** | **$60** |
 
 ---
 
 ### Zone A Total (Flood Table System)
 
-Using Option B (DIY tables) for Tier 1 and Option A (bought tables) for Tier 2 and 3:
+Using Option A (bought tables) at all tiers:
 
 | Category | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| Flood tables | $73 (DIY) | $100 (bought) | $200 (commercial) |
-| Bulkheads + overflow | $24 | $32 | $44 |
-| Reservoir | $6 | $48 | $68 |
+| Flood tables | $75 (bought) | $150 (bought) | $300 (commercial) |
+| Bulkheads + overflow | $34 | $46 | $63 |
+| Reservoir | $6 | $63 | $88 |
 | Pump & aeration | $35 | $53 | $72 |
-| Plumbing | $35 | $46 | $58 |
+| Plumbing | $47 | $61 | $78 |
 | Electrical & timer | $37 | $55 | $85 |
 | Monitoring | $35 | $76 | $107 |
-| Growing media | $40 | $54 | $68 |
+| Growing media | $165 | $229 | $293 |
 | Nutrients | $37 | $40 | $44 |
-| Climate | $17 | $24 | $51 |
-| **Zone A TOTAL** | **$339** | **$528** | **$797** |
+| Climate | $23 | $30 | $60 |
+| **Zone A TOTAL** | **$494** | **$803** | **$1,190** |
 
-> **Note:** The stated $150–$600 range applies to phased builds and single-zone starts. See Section 6 for how to reach the target ranges by phasing. A Zone A-only Tier 1 build using a repurposed reservoir and all-DIY tables can reach ~$200–$250.
+> **Note:** LECA for three full tables is the dominant cost at every tier. To start cheaper, build Zone A with **one table first** (one tray, one 50L LECA bag + one extra bag, 2 bulkheads) — roughly $270–$320 at Tier 1 — and add Tables 2 and 3 as budget allows. See Section 6 for phasing.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -322,21 +322,21 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 | Item | Low estimate | Mid estimate | High estimate |
 |---|---|---|---|
-| **MasterBlend 4-18-38 (500g lasts ~3 months at moderate use)** | $30 (2×) | $45 (3×) | $60 (4×) |
-| **Calcium Nitrate (proportional to above)** | $16 | $24 | $32 |
-| **Epsom Salt** | $3 | $6 | $9 |
+| **MasterBlend 4-18-38 (500g lasts ~2 months at moderate use)** | $45 (3×) | $60 (4×) | $90 (6×) |
+| **Calcium Nitrate (proportional to above)** | $24 | $36 | $48 |
+| **Epsom Salt** | $5 | $9 | $14 |
 | **pH Down** | $10 | $15 | $20 |
 | **pH Up** | $6 | $10 | $14 |
 | **Calibration sachets (replace annually)** | $5 | $8 | $10 |
 | **Rockwool/Rapid Rooter plugs (per succession)** | $6/succession × 4 = $24 | Same | Same |
-| **LECA annual recharge (rinse + reuse; buy ~5L replacement)** | $5 | $8 | $10 |
+| **LECA annual recharge (rinse + reuse; buy ~10–15L replacement)** | $8 | $12 | $15 |
 | **Seeds (all zones, per season)** | $20 | $35 | $50 |
 | **Pest/disease treatments (preventive)** | $10 | $20 | $30 |
 | **Microgreens coco coir top-up** | $8 | $12 | $16 |
 | **Root veg slow-release fert top-up** | $6 | $8 | $10 |
-| **Annual consumables TOTAL** | **~$143** | **~$215** | **~$285** |
+| **Annual consumables TOTAL** | **~$171** | **~$249** | **~$341** |
 
-**Average ongoing cost: ~$175–$220 per full season.**
+**Average ongoing cost: ~$210–$260 per full season.**
 
 > **E&F consumable note:** LECA is reusable indefinitely with proper cleaning (bleach soak, triple rinse, sun dry). Unlike rockwool in NFT channels, LECA in E&F tables does not compact or degrade significantly. The ~$5–$10 annual top-up is for replacement of pebbles that crack or are lost during cleaning — not a full replacement. This makes the E&F growing media cost lower over time than NFT rockwool cubes despite the higher initial LECA investment.
 
@@ -351,48 +351,49 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 | Tier | Zone A | Zone B | Zone C | Total Build Cost |
 |---|---|---|---|---|
-| **Tier 1 — Budget** | $339 | $89 | $65 | **$493** |
-| **Tier 2 — Mid** | $528 | $140 | $91 | **$759** |
-| **Tier 3 — Premium** | $797 | $203 | $123 | **$1,123** |
+| **Tier 1 — Budget** | $494 | $89 | $65 | **$648** |
+| **Tier 2 — Mid** | $803 | $140 | $91 | **$1,034** |
+| **Tier 3 — Premium** | $1,190 | $203 | $123 | **$1,516** |
 
-### How to Achieve the $150–$600 Stated Range
+### Phasing the Build to Spread the Cost
 
-The stated budget range is achievable by **phasing the build:**
+The full three-table build cost can be spread across a season by **phasing:**
 
 ```mermaid
 flowchart TD
-    P1["**PHASE 1** — Zone A Only, Tier 1, repurposed reservoir<br/>~$200–$270<br/>DIY timber flood tables, 50L LECA bag, digital timer<br/>System running and producing in 2–3 weekends<br/>No microgreens station or grow bags yet"]
-    P2["**PHASE 2** — Add Zone B (Microgreens), Tier 1<br/>+$89 → Total so far: ~$289–$359"]
-    P3["**PHASE 3** — Add Zone C (Root Veg), Tier 1<br/>+$65 → Full system running: ~$354–$424"]
-    P4["**PHASE 4** — Upgrade individual items as budget allows<br/>Digital timer upgrade (biggest reliability impact)<br/>Better pH/EC meter (biggest yield impact)<br/>Bought flood trays to replace DIY tables over time"]
+    P1["**PHASE 1** — Zone A with ONE flood table, Tier 1, repurposed reservoir<br/>~$270–$320<br/>One flood tray, 2× 50L LECA bags, 2 bulkheads, digital timer<br/>System running and producing in 2–3 weekends"]
+    P2["**PHASE 2** — Add Tables 2 and 3<br/>+$50 trays, +$100 LECA, +$25 fittings/valves → ~$450–$500"]
+    P3["**PHASE 3** — Add Zone B (Microgreens), Tier 1<br/>+$89 → Total so far: ~$540–$590"]
+    P4["**PHASE 4** — Add Zone C (Root Veg), Tier 1<br/>+$65 → Full system running: ~$605–$655"]
+    P5["**PHASE 5** — Upgrade individual items as budget allows<br/>Digital timer upgrade (biggest reliability impact)<br/>Better pH/EC meter (biggest yield impact)<br/>Commercial flood trays to replace economy trays over time"]
 
-    P1 --> P2 --> P3 --> P4
+    P1 --> P2 --> P3 --> P4 --> P5
 ```
 
-This phased approach lets you start with a functional system at ~$200 and expand as confidence and results justify further investment.
+This phased approach lets you start with a functional single-table system at ~$300 and expand as confidence and results justify further investment.
 
 ### What You Get for Each Tier — Snapshot
 
 ```
-TIER 1 ($150–$250 for Zone A start):
-  ✓ Two DIY timber + pond liner flood tables (custom-sized, workshop project)
-  ✓ Repurposed 100L food barrel as reservoir
+TIER 1 (~$494 Zone A):
+  ✓ Three economy flood trays (60×120cm)
+  ✓ Repurposed 150–200L food barrel as reservoir
   ✓ Basic 800 L/h pump
   ✓ Digital timer with battery backup (minimum viable — do not skip)
-  ✓ 50L bag of budget LECA
+  ✓ 6× 50L bags of budget LECA
   ✗ No automation-ready fittings
   ✗ Basic pH/EC monitoring only
 
-TIER 2 ($250–$400):
-  ✓ Two purpose-made commercial flood trays (60×120cm)
-  ✓ Purpose-bought 100L insulated reservoir
+TIER 2 (~$803 Zone A):
+  ✓ Three purpose-made commercial flood trays (60×120cm)
+  ✓ Purpose-bought 150–200L insulated reservoir
   ✓ Quality 1000 L/h pump with pre-filter
   ✓ Dual-program digital timer with battery backup
-  ✓ Premium 50L LECA bag
+  ✓ 6× 50L premium LECA bags
   ✓ Solid mid-range pH/EC monitoring
   ✗ No automation sensors or smart devices yet
 
-TIER 3 ($400–$600):
+TIER 3 (~$1,190 Zone A):
   ✓ Heavy-duty or FRP flood tables (permanent-grade)
   ✓ Dedicated hydroponic reservoir with foam insulation box
   ✓ Adjustable 1200 L/h pump with filter basket
@@ -477,8 +478,8 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
 
 | Item | Where to find | What to check |
 |---|---|---|
-| **100L food-grade barrel** | Facebook Marketplace, Craigslist, farms, breweries | Must be food-grade HDPE (fork-and-cup symbol or #2 HDPE); no chemical previous use; must have a sealable lid |
-| **IBC tote (1000L — for large systems)** | eBay, Gumtree, farm supply | Food-grade only; rinse × 3 before use; can cut down to 100L section |
+| **150–200L food-grade barrel** | Facebook Marketplace, Craigslist, farms, breweries | Must be food-grade HDPE (fork-and-cup symbol or #2 HDPE); no chemical previous use; must have a sealable lid |
+| **IBC tote (1000L — for large systems)** | eBay, Gumtree, farm supply | Food-grade only; rinse × 3 before use; can cut down to a 150–200L section |
 | **Flood tables / growing trays** | eBay, Facebook Marketplace, hydro shop clearance | Inspect for cracks and thin spots before buying; test drain port integrity |
 | **Shelving units (Zone B)** | Facebook Marketplace, charity shops | Metal wire shelving ideal |
 | **Aquarium pumps** | eBay, aquarium clubs | Test in water; impeller wear reduces output |
@@ -505,7 +506,7 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
 
 ### 8.1 DIY Flood Tables vs. Bought — The Real Trade-Off
 
-At Tier 1, DIY timber + pond liner tables cost $73 for both tables versus $50 for two economy bought trays. Wait — bought trays are cheaper at Tier 1? Yes, in this case. The DIY advantage appears at Tier 2 and 3: DIY tables at quality materials cost $110 vs. $100 for mid-range bought trays — roughly equivalent. At Tier 3, DIY with marine ply and 1.0mm EPDM costs $147 versus $200 for commercial-grade trays.
+At Tier 1, DIY timber + pond liner tables cost $109 for all three tables versus $75 for three economy bought trays. Wait — bought trays are cheaper at Tier 1? Yes, in this case. The same holds at Tier 2: DIY at quality materials costs $163 vs. $150 for mid-range bought trays — roughly equivalent. The DIY advantage only appears at Tier 3, where DIY with marine ply and 1.0mm EPDM costs $218 versus $300 for commercial-grade trays.
 
 ```
 WHEN DIY TABLES WIN:
@@ -523,11 +524,10 @@ WHEN BOUGHT TABLES WIN:
 
 ### 8.2 Repurpose Food-Grade Containers as Reservoirs
 
-The 100L reservoir is the second-largest variable cost item. Spending $0 on a repurposed food barrel versus $30–$45 on a purpose-built reservoir saves 6–10% of your total Tier 1 build cost.
+The 150–200L reservoir is one of the larger variable cost items. Spending $0 on a repurposed food barrel versus $45–$65 on a purpose-built reservoir saves ~7–10% of your total Tier 1 build cost.
 
-**Where to find free or cheap food-grade 100L containers:**
-- Restaurants and industrial kitchens (ingredient barrels, 20–120L)
-- Bakeries (shortening and oil containers, 20–40L — need multiple if under 100L)
+**Where to find free or cheap food-grade 150–200L containers:**
+- Restaurants and industrial kitchens (ingredient barrels, 60–200L)
 - Breweries and home-brew clubs (fermentation vessels, often 50–200L)
 - Facebook Marketplace "free" section
 - Farm supply stores (feed mixing containers)
@@ -578,11 +578,11 @@ Buying a 2.27 kg pack instead of a 100g pack reduces nutrient cost by ~80%. Shar
 
 ### 8.5 Standpipe DIY vs. Bought
 
-Adjustable standpipes from hydroponics shops cost $8–$15 each. A length of 25mm PVC conduit from the hardware store costs ~$3 per metre. For four standpipes at two heights, you need less than 1 metre of pipe — total material cost under $3. Use a permanent marker to label height on each standpipe. This is one of the easiest and most effective DIY substitutions in the entire build.
+Adjustable standpipes from hydroponics shops cost $8–$15 each. A length of 25mm PVC conduit from the hardware store costs ~$3 per metre. For six standpipes at ~10 cm each (including spares), you need well under 1 metre of pipe — total material cost under $3. Use a permanent marker to label height on each standpipe. This is one of the easiest and most effective DIY substitutions in the entire build.
 
 ### 8.6 One-Pump vs. Two-Pump Setup
 
-The E&F specification uses a single pump serving both tables via a T-splitter. An alternative is one pump per table — which adds redundancy but doubles pump cost and electrical connections. At Tier 1 and 2, the single-pump approach with a spare pump on hand (cost ~$20) is more cost-effective than a two-pump baseline setup. The spare pump takes less than 5 minutes to swap in. Keep one spare pump in your shed.
+The E&F specification uses a single pump serving all three tables via a supply manifold. An alternative is one pump per table — which adds redundancy but triples pump cost and electrical connections. At Tier 1 and 2, the single-pump approach with a spare pump on hand (cost ~$20) is more cost-effective than a multi-pump baseline setup. The spare pump takes less than 5 minutes to swap in. Keep one spare pump in your shed.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -620,28 +620,28 @@ Tap water at typical rates ($0.003–$0.008/L): **$4–$32/season**. Using harve
 
 ### 9.3 Nutrient Costs (Masterblend Trio)
 
-At the standard mixing rate of 0.6 g/L and 100 L reservoir, changed every 7–10 days:
+At the standard mixing rate of 0.6 g/L and a 150 L reservoir fill, changed every 7–10 days:
 
 ```
 Per reservoir change (standard vegetative EC ~1.4–1.6):
-  Masterblend:     0.6 g/L × 100L = 60g
-  Calcium Nitrate: 60g
-  Epsom Salt:      30g
-  Total:           150g of nutrients per full reservoir change
+  Masterblend:     0.6 g/L × 150L = 90g
+  Calcium Nitrate: 90g
+  Epsom Salt:      45g
+  Total:           225g of nutrients per full reservoir change
 
 At 2.27kg Masterblend pack ($35):
-  Cost per 60g Masterblend = 60 × ($35 ÷ 2270) = $0.93
-  Calcium Nitrate 60g at $15/500g = $1.80
-  Epsom Salt 30g at $5/1000g = $0.15
+  Cost per 90g Masterblend = 90 × ($35 ÷ 2270) = $1.39
+  Calcium Nitrate 90g at $15/500g = $2.70
+  Epsom Salt 45g at $5/1000g = $0.23
   ──────────────────────────────────────────────
-  Total per reservoir fill: ~$2.88
+  Total per reservoir fill: ~$4.32
 
 At 36 changes per season (every ~7 days for 9 months):
-  ~36 × $2.88 = ~$104/season (full reservoir changes)
-  With partial top-ups (more common), actual cost closer to $65–$85
+  ~36 × $4.32 = ~$156/season (full reservoir changes)
+  With partial top-ups (more common), actual cost closer to $95–$125
 ```
 
-**Typical nutrient cost: $65–$105/season** (slightly higher than NFT due to larger reservoir volume).
+**Typical nutrient cost: $95–$155/season** (higher than NFT due to larger reservoir volume).
 
 ### 9.4 LECA Recharge Costs
 
@@ -650,9 +650,9 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 | Item | Annual cost |
 |---|---|
 | Bleach for LECA sterilisation (3L bottle lasts ~4 seasons) | ~$1 |
-| Replacement LECA (5–10L for cracked/lost pebbles) | $5–$10 |
+| Replacement LECA (10–15L for cracked/lost pebbles) | $8–$15 |
 | pH adjustment chemicals for LECA pre-soak | ~$2 |
-| **Annual LECA recharge total** | **~$8–$13** |
+| **Annual LECA recharge total** | **~$11–$18** |
 
 ### 9.5 Full Annual Running Cost Summary
 
@@ -660,16 +660,16 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 |---|---|---|---|
 | Electricity | $35 | $55 | $90 |
 | Water | $4 | $15 | $32 |
-| Nutrients (Masterblend trio) | $65 | $85 | $105 |
+| Nutrients (Masterblend trio) | $95 | $125 | $155 |
 | pH adjustment chemicals | $10 | $20 | $30 |
 | Seeds (all zones) | $20 | $35 | $50 |
-| LECA recharge (annual cleaning + partial replacement) | $8 | $10 | $13 |
+| LECA recharge (annual cleaning + partial replacement) | $11 | $14 | $18 |
 | Microgreens coco top-up | $8 | $12 | $16 |
 | Pest/disease treatments | $5 | $15 | $30 |
 | Misc replacements (hose clip, fitting, fuse) | $5 | $15 | $30 |
-| **Annual running total** | **$160** | **$262** | **$396** |
+| **Annual running total** | **$193** | **$306** | **$451** |
 
-**Realistic mid-range annual running cost: ~$220–$265.**
+**Realistic mid-range annual running cost: ~$260–$310.**
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -684,13 +684,13 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 
 > **First-season adjustment:** If this is your first hydroponic grow, expect to achieve **40–60% of the yields listed below.** The E&F system has additional variables (flood depth tuning, drain confirmation, LECA bed establishment) that take one season to optimise. By your second full season, the system typically out-performs NFT for fruiting crops significantly.
 
-#### Table 1 — Leafy Greens and Herbs (lettuce, herbs, spinach, kale)
+#### Table 3 — Leafy Greens and Herbs (lettuce, herbs, spinach, kale)
 
 ```
 Succession planting: 5 weeks seed-to-harvest (lettuce head)
 Net pots at 25cm spacing on 1.2m × 0.6m table: approx 20–24 sites
 Heads per site per season: 7 harvests (efficiency-adjusted)
-Total heads per season from Table 1: ~20 sites × 6 harvests = 120 heads
+Total heads per season from Table 3: ~20 sites × 6 harvests = 120 heads
 
 If split: 12 lettuce sites + 8 herb sites
   Lettuce yield: 12 sites × 6 harvests = 72 heads × 150–200g = 11–14 kg
@@ -700,7 +700,7 @@ If split: 12 lettuce sites + 8 herb sites
 **Lettuce value:** 72 heads × $3.00 = **$216**
 **Herb value:** ~4 kg basil at $0.10/g = **$400** (if consumed — high per-gram value)
 
-#### Table 2 — Fruiting Crops (tomatoes, peppers, cucumbers, strawberries)
+#### Tables 1 & 2 — Fruiting Crops (tomatoes, peppers, cucumbers, strawberries)
 
 ```
 Cherry tomatoes (indeterminate): 3 plants at 40cm spacing in 75mm net pots
@@ -730,10 +730,10 @@ Strawberries (5 plants in 50–75mm net pots):
 
 | Crop / Area | Yield (kg/season) | Supermarket value |
 |---|---|---|
-| Lettuce (Table 1, 12 sites) | 11–14 kg | $165–$210 |
-| Herbs / basil (Table 1, 8 sites) | ~4 kg cut | $300–$400 |
-| Cherry tomatoes (Table 2) | ~12 kg | $220–$280 |
-| Cucumbers (Table 2) | ~6 kg | $25–$40 |
+| Lettuce (Table 3, 12 sites) | 11–14 kg | $165–$210 |
+| Herbs / basil (Table 3, 8 sites) | ~4 kg cut | $300–$400 |
+| Cherry tomatoes (Table 1) | ~12 kg | $220–$280 |
+| Cucumbers (Table 1) | ~6 kg | $25–$40 |
 | Peppers (Table 2) | ~3.6 kg | $15–$25 |
 | Strawberries (Table 2) | ~2 kg | $20–$30 |
 | **Zone A TOTAL** | **~38–42 kg** | **$745–$985** |
@@ -775,9 +775,9 @@ Beetroot (1× 30L deep bag, 10 plants):
 
 | Zone / Crop | Yield (kg/season) | Value (supermarket price) |
 |---|---|---|
-| Leafy greens (Table 1) | 11–14 kg | $165–$210 |
-| Herbs (Table 1) | ~4 kg cut | $300–$400 |
-| Fruiting crops (Table 2) | ~23–24 kg | $280–$375 |
+| Leafy greens (Table 3) | 11–14 kg | $165–$210 |
+| Herbs (Table 3) | ~4 kg cut | $300–$400 |
+| Fruiting crops (Tables 1–2) | ~23–24 kg | $280–$375 |
 | **Zone A subtotal** | **~38–42 kg** | **$745–$985** |
 | Microgreens (Zone B) | ~20 kg | $600–$800 |
 | Radishes (Zone C) | ~9.5 kg | $85–$110 |
@@ -799,23 +799,23 @@ Beetroot (1× 30L deep bag, 10 plants):
 ```
 TIER 2 FULL BUILD (3 ZONES)
 
-Total build cost:          $759
-Annual running cost:       $262 (mid estimate)
+Total build cost:          $1,034
+Annual running cost:       $306 (mid estimate)
 Annual yield value:        $1,000–$1,500 (conservative household use)
 
-Net value per season:      $1,200 (mid) - $262 (running) = $938/season
-Break-even (payback):      $759 ÷ $938 = ~0.8 seasons
-                           → Paid off within first season (optimistic)
+Net value per season:      $1,200 (mid) - $306 (running) = $894/season
+Break-even (payback):      $1,034 ÷ $894 = ~1.2 seasons
+                           → Paid off early in the second season (optimistic)
 ```
 
 Accounting for the fact that one household cannot consume all of the projected value, using a conservative grocery-saving estimate:
 
 ```
 Conservative household savings: $550/season
-Running cost: $262/season
-Net annual benefit: $288/season
+Running cost: $306/season
+Net annual benefit: $244/season
 
-Payback on $759 build: $759 ÷ $288 = ~2.6 seasons (≈ 3 years)
+Payback on $1,034 build: $1,034 ÷ $244 = ~4.2 seasons (≈ 4 years)
 ```
 
 ### 11.2 Tier 1 — Budget Build Payback
@@ -823,28 +823,28 @@ Payback on $759 build: $759 ÷ $288 = ~2.6 seasons (≈ 3 years)
 ```
 TIER 1 FULL BUILD
 
-Total build cost:          $493
-Annual running cost:       $160 (low estimate)
+Total build cost:          $648
+Annual running cost:       $193 (low estimate)
 Conservative savings:      $450/season
-Net benefit:               $450 - $160 = $290/season
-Payback:                   $493 ÷ $290 = ~1.7 seasons
+Net benefit:               $450 - $193 = $257/season
+Payback:                   $648 ÷ $257 = ~2.5 seasons
 ```
 
 ### 11.3 E&F vs. NFT Payback Comparison
 
-The E&F system costs more to build than an equivalent NFT system (Tier 2: $759 vs. $671 for NFT) but generates higher value from fruiting crops due to the larger root zone. The payback periods are broadly similar:
+The E&F system costs considerably more to build than an equivalent NFT system (Tier 2: $1,034 vs. $671 for NFT) — chiefly the ~260 L of LECA and three flood tables — but generates higher value from fruiting crops due to the larger root zone:
 
 | Metric | E&F Tier 2 | NFT Tier 2 |
 |---|---|---|
-| Build cost | $759 | $671 |
-| Annual running cost | ~$262 | ~$247 |
+| Build cost | $1,034 | $671 |
+| Annual running cost | ~$306 | ~$247 |
 | Conservative savings/season | ~$550 | ~$500 |
-| Net benefit/season | ~$288 | ~$253 |
-| Payback period | ~2.6 seasons | ~2.7 seasons |
+| Net benefit/season | ~$244 | ~$253 |
+| Payback period | ~4.2 seasons | ~2.7 seasons |
 | Fruiting crop yield advantage | **Higher** (larger root zone) | Lower |
 | Leafy green yield | Comparable | Comparable |
 
-E&F is the better choice if your priority is fruiting crops (tomatoes, cucumbers, courgettes). NFT is marginally cheaper and easier to build if leafy greens and herbs are your focus.
+E&F is the better choice if your priority is fruiting crops (tomatoes, cucumbers, courgettes) and you value the deeper root zone and failure tolerance; its payback is longer on a pure grocery-savings basis. NFT is meaningfully cheaper and easier to build if leafy greens and herbs are your focus.
 
 ### 11.4 Payback Summary Chart
 
@@ -852,8 +852,8 @@ E&F is the better choice if your priority is fruiting crops (tomatoes, cucumbers
 xychart-beta
     title "Cumulative Cash Flow — E&F Tier 2, Conservative Savings Scenario"
     x-axis "Year" [0, 1, 2, 3, 4, 5]
-    y-axis "Cumulative Net ($)" -900 --> 700
-    line [-759, -471, -183, 105, 393, 681]
+    y-axis "Cumulative Net ($)" -1200 --> 400
+    line [-1034, -790, -546, -302, -58, 186]
 ```
 
 > Assumes no major equipment replacement in 5 years. Pump may need replacement at year 2–3 (~$25–$40). Pond liner on DIY tables should last 5–10 years with UV protection.
@@ -880,18 +880,18 @@ The ROI analysis captures only direct grocery savings. The full value of the E&F
 xychart-beta
     title "E&F System Build Cost by Tier and Zone"
     x-axis ["Zone A (Flood Tables)", "Zone B (Microgreens)", "Zone C (Root Veg)", "TOTAL BUILD"]
-    y-axis "Cost ($)" 0 --> 1200
-    bar [339, 89, 65, 493]
-    bar [528, 140, 91, 759]
-    bar [797, 203, 123, 1123]
+    y-axis "Cost ($)" 0 --> 1600
+    bar [494, 89, 65, 648]
+    bar [803, 140, 91, 1034]
+    bar [1190, 203, 123, 1516]
 ```
 
 | | Tier 1 Budget | Tier 2 Mid | Tier 3 Premium |
 |---|---|---|---|
-| **Build cost** | ~$493 | ~$759 | ~$1,123 |
-| **Annual running** | ~$160 | ~$262 | ~$396 |
+| **Build cost** | ~$648 | ~$1,034 | ~$1,516 |
+| **Annual running** | ~$193 | ~$306 | ~$451 |
 | **Annual value saved** | ~$550–$900 | ~$800–$1,300 | ~$1,000–$1,600 |
-| **Break-even** | ~1.5–2 yr | ~2–3 yr | ~2.5–3.5 yr |
+| **Break-even** | ~1.8–2.5 yr | ~2–4 yr | ~2.5–5 yr |
 
 ---
 

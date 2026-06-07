@@ -233,8 +233,8 @@ This is a uniquely important E&F maintenance task. Manually observe one complete
   □ Time to reach overflow fitting: typically 5–10 min
   □ Solution should reach overflow height and STOP rising
   □ If still rising above overflow: overflow fitting is BLOCKED → clear it
-  □ Maximum flood depth: solution at overflow level, typically 2–5 cm above
-    media surface (or at base of net pots for deep flood)
+  □ Maximum flood level: solution at overflow height — ~2 cm below the
+    media surface (capillary action wets the top layer)
 
   Step 3 — Flood plateau:
   □ During flood, solution should remain steady at overflow height
@@ -375,7 +375,7 @@ The overflow fitting is unique to E&F and is the single most critical fitting to
 Even with good water management, nutrient salts accumulate, organic matter builds up, and microbial populations shift. A full drain and clean resets the system.
 
 **Frequency depends on reservoir size and water quality:**
-- **100 L reservoir (this system):** Full change every **10–14 days** — our 100 L reservoir is larger than a typical NFT reservoir relative to plant count, giving more buffer. If using hard tap water, change every 7 days.
+- **150–200 L reservoir (this system):** Full change every **10–14 days** — our 150 L fill is larger than a typical NFT reservoir relative to plant count, giving more buffer. If using hard tap water, change every 7 days.
 - **If EC and pH are stable and plants look healthy:** You can extend to 14 days maximum.
 - **After any pest or disease event, or after any root rot discovery:** Change immediately regardless of schedule.
 
@@ -663,7 +663,7 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   Reservoir changed this week: Y / N | Date: _______
   Media flush performed: Y / N | Table(s): ____________
   Flood cycle audit: PASS / ISSUES (describe) ____________
-  Root inspection — both tables: HEALTHY / CONCERNS (describe)
+  Root inspection — all tables: HEALTHY / CONCERNS (describe)
   Salt crust level: NONE / LIGHT / MODERATE / HEAVY
   Overflow fittings checked: Y / N | Clear: Y / N
   Liner inspection: PASS / CONCERNS (describe)
@@ -674,6 +674,7 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   Season snapshot:
   Table 1 — crops: _________________________ | Status: ________
   Table 2 — crops: _________________________ | Status: ________
+  Table 3 — crops: _________________________ | Status: ________
   Zone C bags — crops: ______________________ | Status: ________
 
   Flood schedule this week: ___× per day | Duration: ___ min
@@ -712,7 +713,7 @@ Catch problems before they become crises. Add these to your daily and weekly sca
   ⚠ EC dropping unexpectedly → rain dilution from open tables; check weather
   ⚠ Solution smells musty or foul → root rot developing — immediate reservoir check
   ⚠ Solution has turned green/brown → algae bloom or microbial growth
-  ⚠ Heavy white crust on LECA across both tables → flush overdue, water too hard
+  ⚠ Heavy white crust on LECA across all tables → flush overdue, water too hard
   ⚠ Any dripping from bulkhead fittings → retape and reseal before it worsens
 
   PLANT SIGNALS:

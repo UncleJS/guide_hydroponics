@@ -4,7 +4,7 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-A complete DIY guide for building and running outdoor hydroponic systems in a temperate backyard. Two full systems are covered — **Nutrient Film Technique (NFT)** and **Ebb & Flow (flood-and-drain)** — each with 13 in-depth guides, from first principles to automation, on a **$150–$600 budget**.
+A complete DIY guide for building and running outdoor hydroponic systems in a temperate backyard. Two full systems are covered — **Nutrient Film Technique (NFT)** and **Ebb & Flow (flood-and-drain)** — each with 13 in-depth guides, from first principles to automation, on budgets from **~$150 (single-zone NFT start) to ~$1,200 (full premium Ebb & Flow)**.
 
 ---
 
@@ -33,7 +33,7 @@ A complete DIY guide for building and running outdoor hydroponic systems in a te
 | **Best for** | Leafy greens, herbs, fast succession crops | Leafy greens + fruiting crops (tomatoes, cucumbers, courgettes, peppers) |
 | **Crop range** | Narrow — not for heavy/deep-rooted crops | Wide — handles virtually all non-root crops |
 | **Complexity** | Medium | Medium |
-| **Build cost** | $150–$500 | $200–$600 |
+| **Build cost** | $150–$500 | $250–$750 (Zone A; LECA is the big cost) |
 | **Guide set** | [`guide/nft/`](guide/nft/) | [`guide/ebb-and-flow/`](guide/ebb-and-flow/) |
 
 Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow Bags)** designs. Only Zone A differs.
@@ -80,7 +80,7 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 ## Ebb & Flow Guide Library
 
-> 2 flood tables, timer-controlled cycles, LECA media. Best for fruiting crops alongside leafy greens.
+> 3 flood tables, timer-controlled cycles, LECA media. Best for fruiting crops alongside leafy greens.
 
 | # | File | What It Covers |
 |---|------|----------------|
@@ -141,7 +141,7 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 ---
 
-*Last updated: March 2026*
+*Last updated: June 2026*
 
 [↑ Back to TOC](#table-of-contents)
 

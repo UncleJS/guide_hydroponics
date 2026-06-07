@@ -576,8 +576,8 @@ If algae is already present:
   PRACTICAL MINIMUM: 5L per plant site (with daily monitoring)
   COMFORTABLE: 10L per plant site (weekly monitoring is sufficient)
 
-  Our system (43 sites, 80L reservoir):
-  80L ÷ 43 sites = 1.9L per site ← below strict minimum
+  Our system (40 sites, 80L reservoir):
+  80L ÷ 40 sites = 2.0L per site ← below strict minimum
 
   This is manageable ONLY with:
   - Daily EC/pH measurement and adjustment

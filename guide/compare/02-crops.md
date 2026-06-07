@@ -63,7 +63,7 @@ NFT channels are typically 100–125 mm diameter PVC pipes with 50 mm net pot ho
 - **Plant weight**: the net pot rim bears the plant's weight; heavy plants (>500 g canopy) can dislodge the pot or crack the channel
 - **Plant height**: tall plants growing from a channel create leverage that pulls at the net pot mounting point; indeterminate tomatoes over 1 m tall require external support structures not present in standard NFT builds
 
-Ebb & Flow tables address all three constraints. Plants grow in LECA filling the entire table volume (20–25 L per standard 60×90 cm table). Root systems spread freely through the media. Plant weight is supported by the media itself, not by a fitting. The table can accommodate external bamboo stakes, netting, and cages for tall indeterminate varieties.
+Ebb & Flow tables address all three constraints. Plants grow in LECA filling the entire table volume (~86 L per standard 1.2 m × 0.6 m table at 12 cm depth). Root systems spread freely through the media. Plant weight is supported by the media itself, not by a fitting. The table can accommodate external bamboo stakes, netting, and cages for tall indeterminate varieties.
 
 ### Water Stress Tolerance
 
@@ -190,7 +190,7 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 - Varieties: Gardener's Delight, Sungold, Moneymaker, Alicante, Shirley
 
 **Cucumbers**
-- Very high yield in E&F; one plant per 60×90 cm table is typical
+- Very high yield in E&F; one to two plants per 1.2 m × 0.6 m table is typical
 - Aggressive root system uses all available media volume
 - 5× daily flood at peak summer; never skip a cycle — wilting in 1.5 hours in 28°C+ heat
 - EC: 2.0–2.4 mS/cm; high magnesium requirement
@@ -297,10 +297,10 @@ The following estimates are for a 3-zone outdoor system in a temperate climate (
 | Pak choi | NFT | 25–35 | 200–400 g | 5 per channel |
 | Arugula (cut) | NFT | 21–28 | 100–200 g/cut × 3 | 8 per channel |
 | Kale (baby, cut) | NFT | 28–35 | 150–300 g/cut × 2 | 6 per channel |
-| Butterhead lettuce | E&F | 35–45 | 200–350 g | 6–8 per 60×90 cm table |
+| Butterhead lettuce | E&F | 35–45 | 200–350 g | ~8 per 1.2 m × 0.6 m table |
 | Pak choi | E&F | 30–40 | 200–400 g | 6 per table |
 
-**NFT vs E&F for leafy crops**: NFT channels use ~0.15 m² floor space per 1.2 m length; a 6-channel system gives 0.9 m² planting area. A single E&F table (60×90 cm) gives 0.54 m² but yields slightly fewer plants per m² for most leafy crops due to wider spacing. **NFT produces more leafy crop per unit area**.
+**NFT vs E&F for leafy crops**: NFT channels use ~0.15 m² floor space per 1.2 m length; a 6-channel system gives 0.9 m² planting area. A single E&F table (1.2 m × 0.6 m) gives 0.72 m² but yields fewer plants per m² for most leafy crops due to wider spacing. **NFT produces more leafy crop per unit area**.
 
 ### Herbs
 
@@ -404,7 +404,7 @@ This gives 52 weeks of lettuce, herbs, and spinach from NFT, plus 20+ weeks of h
 | Mint | 80–100 mm | 25 cm |
 | Cherry tomato | 80 mm | 40–50 cm |
 
-**E&F table spacing (per 60×90 cm table):**
+**E&F table spacing (per 1.2 m × 0.6 m table):**
 
 | Crop | Plants per table | Notes |
 |---|---|---|

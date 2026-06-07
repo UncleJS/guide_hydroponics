@@ -280,14 +280,14 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 **Identification:** Tiny (1–2mm) white-winged insects on leaf undersides. When disturbed, they fly up in a cloud. Yellow sticky traps are very effective for monitoring. Larvae (scales) are flat, oval, and semi-transparent — often overlooked.
 
-**E&F context:** Whitefly is a particular problem on tomatoes, peppers, cucumbers, and aubergines in Zone A Table 2. The dense canopy of fruiting crops in a flood table provides shelter.
+**E&F context:** Whitefly is a particular problem on tomatoes, peppers, cucumbers, and aubergines in Zone A Tables 1–2. The dense canopy of fruiting crops in a flood table provides shelter.
 
 **Control:**
 
 ```
   PREVENTION AND MONITORING:
   ─ Yellow sticky traps at canopy height — change when >20 whitefly per trap
-  ─ Inspect leaf undersides on all Table 2 crops weekly
+  ─ Inspect leaf undersides on all fruiting-table (Tables 1–2) crops weekly
 
   CULTURAL:
   ─ Remove heavily infested leaves (bag and dispose — do not compost)
@@ -317,7 +317,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 ```
   PREVENTION:
   ─ Maintain adequate flood frequency in summer (moist LECA moderates humidity)
-  ─ Regularly mist leaf undersides on Table 2 crops during hot spells
+  ─ Regularly mist leaf undersides on fruiting-table crops during hot spells
     (spider mites avoid high humidity)
 
   CULTURAL:
@@ -783,7 +783,7 @@ Not every pest or disease event requires full system sterilisation. Use this dec
   ─ Fusarium confirmed (vascular discolouration) in any plant
   ─ Blue-green algae (cyanobacteria) confirmed in media or reservoir
   ─ Disease persists after targeted treatment for 2+ weeks
-  ─ End of a fruiting crop season (Table 2 — routine sterilisation)
+  ─ End of a fruiting crop season (Tables 1–2 — routine sterilisation)
 
   DOES NOT REQUIRE FULL STERILISATION:
   ─ Aphid, whitefly, or spider mite infestation (above-ground — treat plants)

@@ -13,7 +13,7 @@
 - [2. Temperature — The Critical Variable](#2-temperature-the-critical-variable)
   - [Solution Temperature Targets](#solution-temperature-targets)
   - [How E&F Tables Respond to Temperature Differently from NFT](#how-ef-tables-respond-to-temperature-differently-from-nft)
-  - [Reservoir Thermal Profile — 100L Under-Table](#reservoir-thermal-profile-100l-under-table)
+  - [Reservoir Thermal Profile — 150L Under-Table](#reservoir-thermal-profile-150l-under-table)
 - [3. Managing Heat — Summer Strategies](#3-managing-heat-summer-strategies)
   - [Shade Cloth for Flood Tables](#shade-cloth-for-flood-tables)
   - [Reservoir Cooling Strategies](#reservoir-cooling-strategies)
@@ -21,7 +21,7 @@
 - [4. Managing Cold — Frost Protection](#4-managing-cold-frost-protection)
   - [Frost Risk Assessment](#frost-risk-assessment)
   - [Protection Measures](#protection-measures)
-  - [Reservoir Freeze Risk — 100L Thermal Mass](#reservoir-freeze-risk-100l-thermal-mass)
+  - [Reservoir Freeze Risk — 150L Thermal Mass](#reservoir-freeze-risk-150l-thermal-mass)
 - [5. Wind — The Often-Overlooked Factor](#5-wind-the-often-overlooked-factor)
   - [Wind Effects on Ebb & Flow Specifically](#wind-effects-on-ebb-flow-specifically)
   - [Windbreak Options](#windbreak-options)
@@ -122,14 +122,14 @@ In Ebb & Flow, the LECA bed acts as a significant thermal mass:
   This is a meaningful difference for Pythium risk (critical at >22°C).
 ```
 
-### Reservoir Thermal Profile — 100L Under-Table
+### Reservoir Thermal Profile — 150L Under-Table
 
-A 100L reservoir positioned below or beside the flood tables has a distinctive thermal profile compared to an 80L NFT reservoir positioned at the end of open channels.
+A 150L reservoir fill positioned below or beside the flood tables has a distinctive thermal profile compared to an 80L NFT reservoir positioned at the end of open channels.
 
 **Under-table placement (recommended):**
 - Shaded by table above — up to 4–6°C cooler than ambient on hot days
-- Thermal mass of 100 kg of water is very slow to heat or cool
-- 100L takes approximately 4× longer to change temperature by 1°C compared to 25L
+- Thermal mass of 150 kg of water is very slow to heat or cool
+- 150L takes approximately 6× longer to change temperature by 1°C compared to 25L
 - This is a significant natural advantage in both summer (stays cooler) and winter (stays warmer)
 
 **Beside-table placement:**
@@ -181,7 +181,7 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
      Fill 2–3 large (2L) plastic bottles with water and freeze them.
      Place 1–2 in reservoir when temperature approaches 22°C.
      Each 2L frozen bottle provides ~600 kJ of cooling as it melts.
-     For a 100L reservoir, this typically lowers temp by 2–4°C
+     For a 150L fill, this typically lowers temp by 1.5–3°C
      for 4–6 hours. Rotate bottles: keep 2 in freezer, 1 in reservoir.
      Advantage: zero electricity cost during cooling (just freezer runtime).
 
@@ -262,9 +262,9 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
 - Set heater thermostat to 16°C — it only activates when needed
 - This makes flood cycles an active warming mechanism in cold weather
 
-### Reservoir Freeze Risk — 100L Thermal Mass
+### Reservoir Freeze Risk — 150L Thermal Mass
 
-A 100L reservoir is very difficult to freeze. At 0°C ambient air temperature, it would take many hours (typically 12–24h) to freeze through. This makes the E&F reservoir more frost-resilient than a smaller NFT reservoir.
+A 150L reservoir fill is very difficult to freeze. At 0°C ambient air temperature, it would take many hours (typically 18–30h) to freeze through. This makes the E&F reservoir more frost-resilient than a smaller NFT reservoir.
 
 ```
   FREEZING TIME ESTIMATES FOR RESERVOIR:
@@ -274,11 +274,11 @@ A 100L reservoir is very difficult to freeze. At 0°C ambient air temperature, i
   10 L (small NFT)    ~2–4 hours
   30 L                ~6–10 hours
   80 L (large NFT)    ~16–24 hours
-  100 L (this E&F)    ~20–30 hours
+  150 L (this E&F)    ~30–45 hours
 
-  CONCLUSION: The 100L E&F reservoir provides substantially more thermal
-  inertia against overnight freezing than smaller reservoirs.
-  A single night at -2°C is unlikely to freeze a 100L reservoir
+  CONCLUSION: The 150L E&F reservoir fill provides substantially more
+  thermal inertia against overnight freezing than smaller reservoirs.
+  A single night at -2°C is unlikely to freeze a 150L reservoir
   even without insulation — but ALWAYS use a heater below 0°C to be safe.
 
   NOTE: Flood cycle pipes and fittings are more vulnerable than the
@@ -350,12 +350,13 @@ flowchart TD
     RAIN["Heavy rain event<br/>(25 mm / 24h typical UK summer storm)"]
     RAIN --> T1["Table 1 (1.2m × 0.6m = 0.72 m²)<br/>Collects: 0.72 × 25 = 18 L of rain"]
     RAIN --> T2["Table 2 (1.2m × 0.6m = 0.72 m²)<br/>Collects: 0.72 × 25 = 18 L of rain"]
-    T1 & T2 --> DRAIN["36 L total rainwater<br/>drains back to reservoir via<br/>normal drain fitting"]
-    DRAIN --> DILUTE["100 L reservoir receives 36 L<br/>of essentially zero-EC water<br/>New volume: ~136 L (overflow discarded)<br/>EC diluted by ~36%"]
-    DILUTE --> ECCRASH["EC CRASH: if reservoir was at EC 1.5,<br/>after storm: EC drops to ~0.95<br/>Below target for most crops"]
+    RAIN --> T3["Table 3 (1.2m × 0.6m = 0.72 m²)<br/>Collects: 0.72 × 25 = 18 L of rain"]
+    T1 & T2 & T3 --> DRAIN["54 L total rainwater<br/>drains back to reservoir via<br/>normal drain fitting"]
+    DRAIN --> DILUTE["150 L reservoir fill receives 54 L<br/>of essentially zero-EC water<br/>New volume: ~204 L (overflow discarded)<br/>EC diluted by ~26%"]
+    DILUTE --> ECCRASH["EC CRASH: if reservoir was at EC 1.5,<br/>after storm: EC drops to ~1.1<br/>Below target for most crops"]
 ```
 
-This 36% EC dilution from a single moderate rainstorm is a significant management event. Heavy rain (50 mm) would cause even more severe dilution.
+This ~26% EC dilution from a single moderate rainstorm is a significant management event. Heavy rain (50 mm) would cause even more severe dilution.
 
 ### Rain Management Strategies
 
@@ -624,7 +625,7 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
      - Exposing flooded roots to freezing conditions via cold solution flow
        is more harmful than leaving roots in insulated LECA
      - Set timer to no-flood from midnight to 07:00 on frost nights
-  □ The 100L reservoir thermal mass will typically stay above 10°C
+  □ The 150L reservoir thermal mass will typically stay above 10°C
      through a single -2°C night even without a heater
 
   FROST MORNING:

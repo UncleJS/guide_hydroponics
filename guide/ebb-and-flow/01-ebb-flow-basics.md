@@ -96,40 +96,46 @@ Every Ebb & Flow system — from a single tray on a balcony to a multi-table com
 
 ```mermaid
 flowchart TD
-    RES["RESERVOIR<br/>(100L food-grade, under the tables)"]
+    RES["RESERVOIR<br/>(150–200L food-grade, under the tables)"]
     PUMP["SUBMERSIBLE PUMP<br/>(800–1200 L/h, timer-controlled)"]
     TIMER["TIMER<br/>(controls flood frequency)"]
     FILL["FILL TUBE<br/>(carries solution UP to table — also acts as overflow drain)"]
     OVF["OVERFLOW FITTING<br/>(sets maximum flood height — critical safety device)"]
     T1["FLOOD TABLE 1<br/>(1.2m × 0.6m, net pots in clay pebbles)"]
     T2["FLOOD TABLE 2<br/>(1.2m × 0.6m, net pots in clay pebbles)"]
+    T3["FLOOD TABLE 3<br/>(1.2m × 0.6m, net pots in clay pebbles)"]
     DR1["DRAIN — gravity return<br/>(when pump off, table drains back to reservoir)"]
     DR2["DRAIN — gravity return"]
+    DR3["DRAIN — gravity return"]
 
     TIMER --> PUMP
     RES --> PUMP
     PUMP --> FILL
     FILL --> T1
     FILL --> T2
+    FILL --> T3
     T1 --> OVF
     T2 --> OVF
+    T3 --> OVF
     OVF --> DR1
     OVF --> DR2
+    OVF --> DR3
     DR1 --> RES
     DR2 --> RES
+    DR3 --> RES
 ```
 
 ### Component Descriptions
 
 | Component | Function | Notes |
 |-----------|----------|-------|
-| **Reservoir** | Holds nutrient solution | 100L food-grade, shaded, under flood tables |
+| **Reservoir** | Holds nutrient solution | 150–200L food-grade, shaded, under flood tables |
 | **Submersible pump** | Pumps solution up to flood tables during flood cycle | 800–1200 L/h; must be timer-controlled |
 | **Timer** | Controls flood cycle frequency and duration | Digital preferred; 15-min increments minimum |
 | **Fill tube (inlet fitting)** | Carries solution from pump to table bottom | 19–25mm barbed fitting through table base |
 | **Overflow fitting** | Sets maximum flood depth; allows return to reservoir during flood | Standpipe height = maximum flood level |
 | **Flood tables** | Shallow watertight trays where plants grow | Food-safe plastic or timber-lined pond liner |
-| **Growing media** | Clay pebbles (LECA) primary; holds plants, buffers moisture | 75–100mm depth typical |
+| **Growing media** | Clay pebbles (LECA) primary; holds plants, buffers moisture | 100–150mm depth typical |
 | **Net pots** | Hold individual plants in media | 50mm (greens/herbs), 75–100mm (fruiting) |
 | **Drain lines** | Return drained solution from table to reservoir | Gravity-fed; no pump needed for drain |
 
@@ -153,9 +159,9 @@ The overflow fitting is a standpipe — a vertical tube inserted through the bas
 
     ┌─────────────────────────────────────┐  ← table rim
     │                                     │
+    │   CLAY PEBBLES / MEDIA (surface)    │
     │  ← flood level (set by overflow)    │  ← top of overflow standpipe
-    │  ← ← ← ← ← ← ← ← ← ← ← ← ← ← ←  │
-    │   CLAY PEBBLES / MEDIA              │
+    │     ~2cm BELOW media surface        │     (capillarity wets the top layer)
     │         roots in media              │
     │                                     │
     │  ← ← bottom of table ← ← ← ←      │
@@ -187,9 +193,9 @@ Most Ebb & Flow tables use **two fittings through the table base**, not one:
 | **Fill/inlet fitting** | Solution pumped IN from below | Gravity drain path when pump off |
 | **Overflow fitting** | Sets max flood height; overflow returns to reservoir | Also drains — but primarily sets level |
 
-The overflow standpipe height is adjustable — by using a taller or shorter standpipe, you change your flood depth. For this system:
-- **Leafy greens / herbs:** flood depth 2–3cm above clay pebble surface
-- **Fruiting crops (tomatoes, peppers, cucumbers):** flood depth 3–5cm above clay pebble surface
+The overflow standpipe height is adjustable — by using a taller or shorter standpipe, you change your flood level. For this system:
+- **All crops:** flood to ~2cm below the clay pebble surface (standpipe height = media depth −2cm). Capillary action wets the top layer.
+- **Never flood above the media surface:** floating pebbles, surface algae, and oxygen starvation result — and the water volume required would exceed the reservoir capacity.
 
 > **Critical rule:** The overflow fitting must always be lower than the table rim by at least 3–5cm. If the overflow fails or gets blocked, the table must not overflow onto the floor — a blocked overflow with a pump running will simply fill to the rim and overflow. Keep the overflow fitting clear of roots and debris.
 
@@ -513,42 +519,43 @@ This is the more common failure mode — the pump stops and no further floods oc
 
 ## 11. Scaling: Adding Tables and Channels
 
-The flood table design in this system (2× 1.2m × 0.6m tables sharing one 100L reservoir) is a deliberate starting point, not a fixed limit.
+The flood table design in this system (3× 1.2m × 0.6m tables sharing one 150–200L reservoir) is a deliberate starting point, not a fixed limit.
 
 ```
   SCALING OPTIONS:
 
   Current system:
-  ─ 2 flood tables (1.2m × 0.6m each) = 1.44 m² total grow area
-  ─ 1 × 100L reservoir
+  ─ 3 flood tables (1.2m × 0.6m each) = 2.16 m² total grow area
+  ─ 1 × 150–200L reservoir
   ─ 1 × 800–1200 L/h pump
 
   Scale up Option 1 — Larger reservoir:
-  ─ Upgrade to 150–200L reservoir
-  ─ Same 2 tables — more nutrient buffer, less frequent full changes
+  ─ Upgrade to a 200–300L reservoir
+  ─ Same 3 tables — more nutrient buffer, less frequent full changes
   ─ No pump upgrade needed
 
-  Scale up Option 2 — Add a third table:
+  Scale up Option 2 — Add a fourth table:
   ─ Add 1 × 1.2m × 0.6m table
-  ─ Upgrade reservoir to 150L minimum
+  ─ Upgrade reservoir to 200L minimum (each table draws ~29L per flood)
   ─ Check pump output — may need 1200–1500 L/h pump
   ─ Ensure flood manifold can supply all tables simultaneously
 
-  Scale up Option 3 — Dedicated fruiting table:
-  ─ Separate the current mixed table into:
-    Table A (leafy greens, herbs) — 2–3 floods/day at low EC
-    Table B (tomatoes/peppers) — 3–4 floods/day at high EC
-  ─ Independent timers for each table — allows different flood schedules
-  ─ Both tables still share the reservoir (or separate reservoirs for best control)
+  Scale up Option 3 — Split flood schedules by crop type:
+  ─ Run the tables on independent schedules:
+    Table 3 (leafy greens, herbs) — 2–3 floods/day at low EC
+    Tables 1–2 (tomatoes/peppers/courgettes) — 3–4 floods/day at high EC
+  ─ Independent timers + per-table supply valves allow different schedules
+  ─ All tables still share the reservoir (or separate reservoirs for best control)
 
   Rule of thumb:
   ─ Allow 10L reservoir volume per large plant (tomato/pepper/cucumber)
   ─ Allow 5L reservoir volume per medium plant (lettuce, herbs)
-  ─ Minimum reservoir: 80L for 2 tables at moderate density
+  ─ Minimum reservoir: 150L for 3 tables at moderate density
+    (must also cover ~90L of solution out in the tables at full flood)
 ```
 
 When adding tables, also consider:
-- **Manifold sizing:** A shared 25mm supply line can feed 2 tables; upgrade to 32mm for 3+
+- **Manifold sizing:** A shared 25mm supply line feeds the three tables in this build; upgrade to 32mm for a fourth table or long supply runs
 - **Drain capacity:** All tables must drain simultaneously without overwhelming the reservoir capacity
 - **Timer complexity:** Independent timers per table allow stage-specific schedules — worth the small extra cost
 
@@ -590,15 +597,15 @@ When adding tables, also consider:
 
 | Parameter | Value |
 |-----------|-------|
-| Flood table dimensions (each) | 1.2m × 0.6m |
-| Flood depth | 2–5cm above media surface |
+| Flood table dimensions (each) | 1.2m × 0.6m (3 tables) |
+| Flood level | ~2cm below media surface |
 | Flood duration | 15–30 minutes |
 | Flood frequency | 2–4× per day (varies by media, temp, plant size) |
 | Interval between floods | 4–12 hours (varies) |
 | Pump capacity | 800–1200 L/h submersible |
-| Reservoir size | 100L food-grade |
-| Media depth in table | 75–100mm clay pebbles |
-| Overflow fitting height | = desired flood depth above table floor |
+| Reservoir size | 150–200L food-grade |
+| Media depth in table | 100–150mm clay pebbles |
+| Overflow fitting height | = media depth −2cm above table floor |
 | Net pot sizes | 50mm (greens/herbs), 75–100mm (fruiting crops) |
 | Media pump failure buffer | 8–24 hours (vs 15–30 min for NFT) |
 | Optimal solution temperature | 18–22°C |

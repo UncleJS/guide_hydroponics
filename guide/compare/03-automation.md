@@ -230,7 +230,7 @@ After every flood cycle, the table must drain completely. If the drain port is b
 
 **Installation:**
 1. Choose a float switch rated for the solution temperature range (most plastic float switches work to 40°C — fine for outdoor use)
-2. Mount on the inside wall of the flood table, at a height of 2–3 cm above the table floor (above the LECA layer, not at the base)
+2. Mount on the inside wall of the flood table, at a height of 3–4 cm above the table floor — below the flood waterline but above any residual puddle; keep a small pocket in the LECA clear so the float moves freely
 3. Wire as normally-open: when the table is dry, the switch is open; when flooded, the float rises and closes the circuit
 
 **Logic:**

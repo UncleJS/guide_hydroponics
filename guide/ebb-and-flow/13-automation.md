@@ -334,7 +334,7 @@ Why reservoir temperature matters in E&F:
 ### 4.4 WiFi Camera (Optional)
 
 A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at the system gives you:
-- Visual confirmation that both tables are flooding and draining (you can see the surface change between dry LECA and flooded)
+- Visual confirmation that all three tables are flooding and draining (you can see the surface change between dry LECA and flooded)
 - Remote check of plant health without visiting the system
 - Time-lapse documentation of crop growth
 - Night-vision view for nocturnal pest detection (slugs, snails)
@@ -431,13 +431,18 @@ In NFT, the reservoir level slowly drops over days and weeks as solution is cons
 ```
 RESERVOIR LEVEL ALERT THRESHOLDS (E&F system):
 
-Level > 70%:  GREEN   Normal operation
-Level 50–70%: GREEN   Monitor; top up within 2 days
-Level 30–50%: YELLOW  Top up today — flood quality degrading
-Level < 30%:  RED     ALERT — incomplete floods likely
-Level < 15%:  CRITICAL — pump may draw air; halt flood schedule
+Measure level BETWEEN floods (all solution returned to the reservoir).
+A full flood sends ~90 L out to the three tables, so the between-flood
+level must stay high enough that the pump remains submerged at full flood:
+~90 L out + ~20 L pump submersion = ~110 L of the 150 L fill (~75%).
+
+Level > 90%:  GREEN   Normal operation
+Level 80–90%: GREEN   Monitor; top up within 1–2 days
+Level 75–80%: YELLOW  Top up today — flood margin shrinking
+Level < 75%:  RED     ALERT — incomplete flood / pump exposure likely
+Level < 60%:  CRITICAL — pump will draw air mid-flood; halt flood schedule
               Add "pump dry run protection" in firmware:
-              IF level < 15% → do not activate pump next scheduled cycle
+              IF level < 60% → do not activate pump next scheduled cycle
 ```
 
 ### 5.5 What the Tier 2 Node Does
@@ -457,8 +462,8 @@ EVERY 60 SECONDS, THE NODE:
   IF solution temp < 10°C                ──→ Send cold alert
   IF air temp < 3°C                      ──→ Send frost warning
   IF humidity > 85%                      ──→ Send disease risk alert
-  IF reservoir level < 30%               ──→ Send low-level alert
-  IF reservoir level < 15%               ──→ Send CRITICAL alert
+  IF reservoir level < 75%               ──→ Send low-level alert
+  IF reservoir level < 60%               ──→ Send CRITICAL alert
   IF pump ON > 35 min continuous         ──→ Send CRITICAL: stuck-ON alert
   IF daily flood count < expected        ──→ Send timer warning
 
@@ -487,15 +492,15 @@ Drain failure is the silent killer of E&F systems. A drain confirmation sensor c
 
 ### 6.2 Drain Confirmation Sensor — Float Switch
 
-A float switch is a simple waterproof switch that opens or closes based on whether it is submerged. Mount one in each flood table at a height just above the LECA surface level.
+A float switch is a simple waterproof switch that opens or closes based on whether it is submerged. Mount one in each flood table, low on the table wall — 3–4 cm above the table floor: below the flood waterline (standpipe height) so it reads ON at flood, but above any residual puddle so it reads OFF once the table has drained. Keep a small pocket in the LECA clear so the float moves freely.
 
 ```mermaid
 flowchart TD
     subgraph table["FLOOD TABLE — cross-section view"]
         TOP["─── table wall top ───────────────"]
-        FS["🔵 FLOAT SWITCH<br/>(mounted 2cm above LECA surface)<br/>● Submerged = ON (water present)<br/>● Dry = OFF (drained)"]
         LECA["── LECA bed (12–15cm depth) ─────"]
-        SP["─── STANDPIPE tip (flood limit) ──"]
+        SP["─── STANDPIPE tip (flood limit, ~2cm below LECA surface) ──"]
+        FS["🔵 FLOAT SWITCH<br/>(mounted 3–4cm above table floor)<br/>● Submerged = ON (water present)<br/>● Dry = OFF (drained)"]
         DRAIN["─── table floor / drain port ────"]
     end
     ESP["ESP32<br/>monitors float switch state"]
@@ -512,7 +517,7 @@ flowchart TD
 - Rating: 12V DC or 24V DC (safe for ESP32 circuit)
 - Material: PP or HDPE body (food safe, nutrient solution resistant)
 - Mounting: drill a small hole in the table wall at the target height; feed cable through a waterproof gland; seal around gland with pond-safe silicone
-- Cost: $3–$6 each ($6–$12 for both tables)
+- Cost: $3–$6 each ($9–$18 for three tables)
 
 **Drain confirmation logic:**
 
@@ -520,7 +525,7 @@ flowchart TD
 DRAIN CONFIRMATION ALGORITHM:
 
 Variable: flood_end_time (timestamp when pump turned OFF)
-Variable: table_float[1], table_float[2] (current state of each float switch)
+Variable: table_float[1], table_float[2], table_float[3] (current state of each float switch)
 
 EVERY 60 SECONDS:
   time_since_flood_end = now() - flood_end_time
@@ -535,14 +540,14 @@ EVERY 60 SECONDS:
       → LOG "Table [i] drain confirmed at [timestamp]"
       → Normal operation continues
 
-  IF BOTH tables confirm drain within 30 min: LOG "Full drain cycle OK"
+  IF ALL three tables confirm drain within 30 min: LOG "Full drain cycle OK"
 ```
 
 ### 6.3 Additional Tier 3 Sensors
 
 | Sensor | Measurement | E&F-specific note | Cost |
 |---|---|---|---|
-| Float switch (per table × 2) | Table drain state | The #1 E&F sensor — see above | $3–$6 each |
+| Float switch (per table × 3) | Table drain state | The #1 E&F sensor — see above | $3–$6 each |
 | DFRobot SEN0161-V2 | Solution pH (continuous) | Media EC drift also monitored; see 6.4 | $30–$40 |
 | DFRobot DFR0300 | Solution EC (continuous) | Place in sensor cell after reservoir, pre-tables | $40–$55 |
 | Rain sensor (FC-37 or equivalent) | Rain detected (binary) | Open E&F tables can accumulate rain — triggers EC dilution alert | $2–$4 |
@@ -576,22 +581,27 @@ Inline EC and pH probes are placed in a sensor cell on the reservoir outflow lin
 
 ```mermaid
 flowchart TD
-    RES["Reservoir (100L)"]
+    RES["Reservoir (150–200L)"]
     PUMP["Submersible Pump<br/>800–1200 L/h"]
     CELL["Sensor Cell<br/>(32mm PVC T-piece)<br/>EC probe ●<br/>pH probe ●<br/>Temp probe ●"]
-    SPLIT["T-splitter<br/>(splits to both tables)"]
+    SPLIT["Supply manifold<br/>(splits to all three tables)"]
     T1["Table 1 fill port"]
     T2["Table 2 fill port"]
+    T3["Table 3 fill port"]
     DRAIN1["Table 1 drain"]
     DRAIN2["Table 2 drain"]
+    DRAIN3["Table 3 drain"]
 
     RES --> PUMP --> CELL --> SPLIT
     SPLIT --> T1
     SPLIT --> T2
+    SPLIT --> T3
     T1 -.->|"gravity drain"| RES
     T2 -.->|"gravity drain"| RES
+    T3 -.->|"gravity drain"| RES
     DRAIN1 -.->|"gravity drain"| RES
     DRAIN2 -.->|"gravity drain"| RES
+    DRAIN3 -.->|"gravity drain"| RES
 
     style CELL fill:#1a1a3a,stroke:#4a4a8a,color:#aaaaff
 ```
@@ -639,12 +649,13 @@ Panel 2: RESERVOIR LEVEL (last 7 days)
   → Line chart: 0–100%
   → Daily consumption rate visible
   → Top-up events visible as sudden level increase
-  → Alert line at 30%
+  → Alert line at 75% (between-flood level; see Section 5.4)
 
 Panel 3: DRAIN CONFIRMATION STATUS (last 24h)
   → Per-table green/red indicator
   → Table 1 drain confirmed / not confirmed
   → Table 2 drain confirmed / not confirmed
+  → Table 3 drain confirmed / not confirmed
 
 Panel 4: SOLUTION TEMPERATURE (last 7 days)
   → Line chart with DANGER threshold at 24°C
@@ -726,7 +737,7 @@ E&F pH DOSING SAFETY INTERLOCKS (additions beyond standard rules):
    Dosing against partial-volume readings causes overshooting.
 
 3. MINIMUM RESERVOIR LEVEL for dosing:
-   IF reservoir_level < 30% → halt all dosing
+   IF reservoir_level < 75% → halt all dosing
    Reason: Reservoir volume too small for reliable EC/pH calculations.
    Low volume = large dose effect = easy to overshoot.
 ```
@@ -771,6 +782,7 @@ flowchart TD
         LVL["Level sensor<br/>(reservoir)"]
         FL1["Float switch<br/>(Table 1)"]
         FL2["Float switch<br/>(Table 2)"]
+        FL3["Float switch<br/>(Table 3)"]
         ACS["Current sensor<br/>(pump)"]
     end
 
@@ -778,7 +790,7 @@ flowchart TD
         SAFE{"Safety checks<br/>passed?"}
         FLOOD{"Active flood<br/>cycle?"}
         DRAIN{"All tables<br/>drained?"}
-        LEVEL{"Reservoir<br/>> 30%?"}
+        LEVEL{"Reservoir<br/>> 75%?"}
     end
 
     subgraph actions["ACTIONS"]
@@ -793,17 +805,18 @@ flowchart TD
     LVL --> SAFE
     FL1 --> DRAIN
     FL2 --> DRAIN
+    FL3 --> DRAIN
     ACS --> FLOOD
 
     SAFE -->|YES| FLOOD
     FLOOD -->|NO — pump off| DRAIN
     DRAIN -->|YES — all drained| LEVEL
-    LEVEL -->|YES — >30%| PHDOSE
-    LEVEL -->|YES — >30%| ECDOSE
+    LEVEL -->|YES — >75%| PHDOSE
+    LEVEL -->|YES — >75%| ECDOSE
 
     FLOOD -->|YES — pump on| ALERT
     DRAIN -->|NO — table not drained| ALERT
-    LEVEL -->|NO — <30%| ALERT
+    LEVEL -->|NO — <75%| ALERT
     SAFE -->|NO| ALERT
 
     style SAFE fill:#2a2a1a,stroke:#8a8a4a,color:#ffffaa
@@ -822,7 +835,7 @@ flowchart TD
 | Parameter | Sensor | Interface | Normal range | Alert threshold | Priority |
 |---|---|---|---|---|---|
 | **Table drain state** | Float switch (per table) | Digital GPIO | DRY between floods | SUBMERGED >45 min after flood end | **CRITICAL** |
-| **Reservoir level** | JSN-SR04T waterproof ultrasonic | Trigger + Echo GPIO | 50–100% | <30% WARNING; <15% CRITICAL | **CRITICAL** |
+| **Reservoir level** | JSN-SR04T waterproof ultrasonic | Trigger + Echo GPIO | 80–100% between floods | <75% WARNING; <60% CRITICAL | **CRITICAL** |
 | **Flood cycle count** | ACS712 current sensor (event counting) | Analog ADC | 3–4 events/day | Fewer than expected; or ON >35 min continuous | HIGH |
 | **Pump current** | ACS712 (5A) | Analog ADC | 0.08–0.15A during cycle | 0A during scheduled ON = failure | HIGH |
 | **Solution temperature** | DS18B20 waterproof | OneWire digital | 16–24°C | >24°C WARNING; >28°C CRITICAL; <10°C WARNING | HIGH |
@@ -917,6 +930,7 @@ flowchart LR
 
         G18["GPIO 18"] -->|"Float switch T1<br/>(pull-up to 3V3)"| FS1["Table 1<br/>float switch"]
         G19["GPIO 19"] -->|"Float switch T2<br/>(pull-up to 3V3)"| FS2["Table 2<br/>float switch"]
+        G23["GPIO 23"] -->|"Float switch T3<br/>(pull-up to 3V3)"| FS3["Table 3<br/>float switch"]
 
         G25["GPIO 25"] -->|"Relay 1"| R1["pH pump<br/>(Tier 4)"]
         G26["GPIO 26"] -->|"Relay 2"| R2["EC-A pump<br/>(Tier 4)"]
@@ -937,11 +951,12 @@ Float switches are the simplest sensors in the E&F system. Two wires — signal 
 ```
 FLOAT SWITCH WIRING:
 
-Float switch wire 1 → ESP32 GPIO 18 (Table 1) or GPIO 19 (Table 2)
+Float switch wire 1 → ESP32 GPIO 18 (Table 1), GPIO 19 (Table 2),
+                      or GPIO 23 (Table 3)
 Float switch wire 2 → GND
 
 In firmware (Arduino/ESP-IDF):
-  pinMode(18, INPUT_PULLUP);   // Table 1
+  pinMode(18, INPUT_PULLUP);   // Table 1 (19 = Table 2, 23 = Table 3)
   int table1_state = digitalRead(18);
   // When float submerged: switch closes → pin reads LOW (0)
   // When float dry:       switch open   → pin reads HIGH (1) via pull-up
@@ -950,7 +965,9 @@ In firmware (Arduino/ESP-IDF):
 
 Physical mounting:
   Drill 8–10mm hole in table WALL (not floor) at the desired
-  trigger height (2cm above LECA surface).
+  trigger height (3–4cm above the table floor — well below the flood
+  waterline, but high enough to read DRY once the table has drained;
+  keep a small pocket in the LECA clear so the float moves freely).
   Feed cable through a PG7 cable gland.
   Apply pond-safe silicone around gland exterior.
   Allow 24h cure before testing with water.
@@ -1006,12 +1023,14 @@ flowchart TD
         G34["GPIO 34 ── OUT (ACS712 or SCT-013)"]
         G18["GPIO 18 ── Float switch Table 1 (INPUT_PULLUP)"]
         G19["GPIO 19 ── Float switch Table 2 (INPUT_PULLUP)"]
+        G23["GPIO 23 ── Float switch Table 3 (INPUT_PULLUP)"]
         G2122["GPIO 21 ── SDA (BH1750)<br/>GPIO 22 ── SCL (BH1750)"]
     end
 
-    subgraph float_sw["Float Switch Wiring (both tables)"]
+    subgraph float_sw["Float Switch Wiring (all three tables)"]
         FS1["Table 1 float switch<br/>Wire A → GPIO 18<br/>Wire B → GND"]
         FS2["Table 2 float switch<br/>Wire A → GPIO 19<br/>Wire B → GND"]
+        FS3["Table 3 float switch<br/>Wire A → GPIO 23<br/>Wire B → GND"]
     end
 
     subgraph onewire["DS18B20 OneWire Bus"]
@@ -1244,6 +1263,15 @@ binary_sensor:
     id: table2_float
     name: "Table 2 Flooded"
 
+  # Table 3 float switch
+  - platform: gpio
+    pin:
+      number: GPIO23
+      mode: INPUT_PULLUP
+      inverted: true
+    id: table3_float
+    name: "Table 3 Flooded"
+
   # Pump running detection (from current sensor)
   - platform: template
     name: "Pump Running"
@@ -1273,6 +1301,7 @@ unsigned long flood_end_ms = 0;          // set when pump transitions OFF
 const unsigned long DRAIN_TIMEOUT = 45UL * 60UL * 1000UL;  // 45 min in ms
 const int FLOAT_PIN_T1 = 18;
 const int FLOAT_PIN_T2 = 19;
+const int FLOAT_PIN_T3 = 23;
 
 void checkDrainConfirmation() {
   if (flood_end_ms == 0) return;  // no flood has occurred yet
@@ -1281,6 +1310,7 @@ void checkDrainConfirmation() {
 
   bool t1_flooded = (digitalRead(FLOAT_PIN_T1) == LOW);  // LOW = submerged
   bool t2_flooded = (digitalRead(FLOAT_PIN_T2) == LOW);
+  bool t3_flooded = (digitalRead(FLOAT_PIN_T3) == LOW);
 
   if (elapsed > DRAIN_TIMEOUT) {
     if (t1_flooded) {
@@ -1292,8 +1322,12 @@ void checkDrainConfirmation() {
       sendAlert("DRAIN ALERT: Table 2 not drained 45 min after flood end.");
       pauseNextFloodCycle(2);
     }
-    if (!t1_flooded && !t2_flooded) {
-      logEvent("Drain confirmed — both tables dry at " +
+    if (t3_flooded) {
+      sendAlert("DRAIN ALERT: Table 3 not drained 45 min after flood end.");
+      pauseNextFloodCycle(3);
+    }
+    if (!t1_flooded && !t2_flooded && !t3_flooded) {
+      logEvent("Drain confirmed — all tables dry at " +
                String(elapsed / 60000) + " min post-flood.");
     }
   }
@@ -1324,7 +1358,8 @@ void checkStuckOn() {
 // HTTP POST to InfluxDB Cloud — call after each sensor read cycle
 void postToInfluxDB(float sol_temp, float air_temp, float humidity,
                     float res_level, float pump_amps,
-                    bool t1_flooded, bool t2_flooded, int flood_count) {
+                    bool t1_flooded, bool t2_flooded, bool t3_flooded,
+                    int flood_count) {
 
   String body = "solution_temp,system=ef-1 value=" + String(sol_temp) + "\n"
               + "air_temp,system=ef-1 value=" + String(air_temp) + "\n"
@@ -1333,6 +1368,7 @@ void postToInfluxDB(float sol_temp, float air_temp, float humidity,
               + "pump_current,system=ef-1 value=" + String(pump_amps) + "\n"
               + "table1_flooded,system=ef-1 value=" + String(t1_flooded ? 1 : 0) + "\n"
               + "table2_flooded,system=ef-1 value=" + String(t2_flooded ? 1 : 0) + "\n"
+              + "table3_flooded,system=ef-1 value=" + String(t3_flooded ? 1 : 0) + "\n"
               + "flood_count_today,system=ef-1 value=" + String(flood_count);
 
   // POST to: https://cloud2.influxdata.com/api/v2/write?org=YOUR_ORG&bucket=hydroponics
@@ -1386,9 +1422,9 @@ Step 4: Build E&F dashboard panels
     → Threshold: red if ON >35 min (stuck-ON detection)
 
   Panel 2: DRAIN CONFIRMATION
-    → Stat panels: table1_flooded / table2_flooded (NOW)
+    → Stat panels: table1_flooded / table2_flooded / table3_flooded (NOW)
     → Green if DRY, red if FLOODED
-    → Time series: both states last 24h
+    → Time series: all three states last 24h
 
   Panel 3: RESERVOIR LEVEL
     → Gauge: current level %
@@ -1806,7 +1842,7 @@ This lets you correlate VPD spikes with EC rise (evaporation-driven concentratio
 flowchart TD
     subgraph box["IP65 Junction Box — 150mm × 100mm × 70mm"]
         ESP["ESP32 DevKit<br/>mounted on standoffs or adhesive foam"]
-        CG["Cable glands on BOTTOM face<br/>(water drains away, never pools at gland entry)<br/>──────────────────────────────────────────────<br/>• USB power cable IN<br/>• DS18B20 solution probe cable OUT<br/>• JSN-SR04T cable OUT<br/>• ACS712 pump wire pass-through<br/>• Float switch cables OUT (×2)<br/>• DHT22 cable OUT<br/>• Rain sensor cable OUT"]
+        CG["Cable glands on BOTTOM face<br/>(water drains away, never pools at gland entry)<br/>──────────────────────────────────────────────<br/>• USB power cable IN<br/>• DS18B20 solution probe cable OUT<br/>• JSN-SR04T cable OUT<br/>• ACS712 pump wire pass-through<br/>• Float switch cables OUT (×3)<br/>• DHT22 cable OUT<br/>• Rain sensor cable OUT"]
         SG["Silica gel packet<br/>(replace if saturated — changes colour)"]
         ESP --- CG
         CG --- SG
@@ -1972,14 +2008,18 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 
 ### Pitfall 1 — Float Switch Placed at Wrong Height
 
-**Problem:** Float switch mounted too low (at table floor level, below LECA surface) triggers as SUBMERGED during every flood cycle — because it is submerged by the flood. The drain confirmation logic never fires correctly because the switch was already ON before the flood ended.
+**Problem:** Float switch mounted at the wrong height breaks drain confirmation. Too high (at or above the standpipe tip) and it never submerges — drain confirmation reads OK even when the table is holding water. Too low (right at the table floor) and a small residual puddle keeps it reading SUBMERGED after an otherwise healthy drain — false alerts on every cycle.
 
 **Prevention:**
 ```
 CORRECT FLOAT SWITCH PLACEMENT:
-  Height: 1–2 cm ABOVE the top of the LECA bed surface
-  NOT at table floor level (below LECA) — always submerged during flood
-  NOT at overflow standpipe height (water level never exceeds this in normal operation)
+  Height: 3–4 cm ABOVE the table floor
+  → Below the flood waterline (standpipe tip is at media depth −2 cm,
+    e.g. 10 cm) so the switch reads ON at full flood
+  → Above any residual puddle so the switch reads OFF after drain
+  NOT at or above standpipe height (water level never exceeds this
+  in normal operation — switch would never submerge)
+  NOT flush with the table floor (residual puddle = permanent ON)
 
   Verify placement:
   1. Run a test flood cycle.
@@ -1989,11 +2029,13 @@ CORRECT FLOAT SWITCH PLACEMENT:
      float switch SHOULD be dry = reads OFF.
   4. If float switch never reads OFF during a healthy drain:
      it is placed too low — raise it 2cm and re-test.
+  5. If float switch never reads ON during a flood:
+     it is placed too high — lower it and re-test.
 ```
 
 ### Pitfall 2 — Reservoir Level Sensor False Low During Active Flood
 
-**Problem:** During an active flood cycle, the pump creates significant turbulence in the reservoir as both tables drain simultaneously back into it. The JSN-SR04T ultrasonic level sensor can return false low readings when the water surface is turbulent.
+**Problem:** During an active flood cycle, the pump creates significant turbulence in the reservoir as all three tables drain simultaneously back into it. The JSN-SR04T ultrasonic level sensor can return false low readings when the water surface is turbulent.
 
 **Prevention:**
 - In firmware, discard reservoir level readings taken during active flood cycles (when pump_running == TRUE)

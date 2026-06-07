@@ -233,7 +233,7 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
   You are organic growing in E&F: → RO or rainwater preferred (chloramine harms microbes)
 ```
 
-For a 100L reservoir requiring weekly full changes, a countertop RO unit with a 10–20L storage tank is sufficient. Fill slowly over 12–24 hours, store in the tank, use for reservoir fill.
+For a 150L reservoir fill requiring weekly full changes, a countertop RO unit with a 10–20L storage tank is sufficient. Fill slowly over 24–36 hours, store in the tank, use for reservoir fill.
 
 [↑ Back to TOC](#table-of-contents)
 

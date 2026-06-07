@@ -85,7 +85,6 @@ flowchart TD
 **↓ SOUTH — direction of sunlight · main access aisle (0.6 m)**
 
 > **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
-> **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
 
 [↑ Back to TOC](#table-of-contents)
 

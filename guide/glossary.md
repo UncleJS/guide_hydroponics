@@ -53,6 +53,9 @@ A widely used brand of hydroponic nutrients. Their Flora Series (3-part liquid) 
 **K — Potassium**
 A primary macronutrient (the "K" in NPK). Essential for water regulation, enzyme activation, and fruit quality. Deficiency shows as brown leaf edges (scorching), especially in fruiting crops.
 
+**Media EC vs Reservoir EC**
+Two distinct EC readings in media-based systems like Ebb & Flow. *Reservoir EC* is what your meter reads in the reservoir; *media EC* is the effective concentration in the root zone, which drifts higher as salts accumulate in the LECA between floods. Compare drain-water EC against reservoir EC to detect accumulation — see Guide 02 (E&F) and Compare 01.
+
 **Mg — Magnesium**
 A secondary macronutrient and the central atom in chlorophyll. Deficiency shows as yellowing between the veins (interveinal chlorosis) on older leaves first, often confused with iron deficiency.
 
@@ -129,6 +132,9 @@ A hydroponic method where plant roots are suspended in a constantly aerated, nut
 
 **E&F — Ebb & Flow (Flood-and-Drain)**
 A hydroponic method where a grow table or tray is periodically flooded with nutrient solution from a reservoir below, then drained back by gravity. Plants sit in an inert growing medium (typically LECA). The flood-drain cycle is controlled by a timer. This is one of the two primary systems covered in this guide.
+
+**Flood Cycle**
+One complete flood-and-drain event in an Ebb & Flow system: the pump runs (15–30 minutes), solution rises to the overflow standpipe height (~2 cm below the media surface), the pump stops, and the table drains back to the reservoir by gravity within 30 minutes. Typically scheduled 2–4× per day by timer.
 
 **IPM — Integrated Pest Management**
 A systematic approach to pest and disease control that combines prevention, monitoring, and targeted intervention, using the least disruptive methods first (physical barriers → biological controls → organic treatments → chemical pesticides as a last resort).
@@ -208,6 +214,9 @@ A circuit that converts a continuous analogue voltage signal (such as from a pH 
 **API — Application Programming Interface**
 A defined way for software systems to communicate with each other. In these guides: the Google Sheets API can receive data pushed from an ESP32 over WiFi, enabling cloud-based data logging without a dedicated server.
 
+**Drain Confirmation**
+An Ebb & Flow safety check that verifies each flood table has fully drained after a flood cycle, typically via a float switch mounted low on the table wall. If a table is still holding water 45 minutes after pump-off, the drain is blocked — an alert fires and the next flood cycle is paused. The #1 E&F-specific sensor; see Guide 13 (E&F) and Compare 03.
+
 **ESP32 / ESP8266**
 Low-cost microcontroller boards with built-in WiFi (and Bluetooth on the ESP32) made by Espressif. The primary recommended automation platform in this guide. The ESP32 is the more capable successor with more GPIO pins, faster processor, and built-in Bluetooth.
 
@@ -272,6 +281,9 @@ Building or assembling something without professional help. All systems in this 
 
 **CSV — Comma-Separated Values**
 A simple text file format for storing tabular data (rows and columns separated by commas). Used in automation logging — sensor readings can be saved or exported as a CSV file for analysis in a spreadsheet.
+
+**Pythium**
+A genus of water-mould (oomycete) pathogens that cause root rot — the most serious disease threat in both NFT and Ebb & Flow systems. Infected roots turn brown, slimy, and smell sour. Thrives in warm (>24–26°C), oxygen-poor solution and permanently wet root zones. Prevention: keep solution below 24°C, maintain dissolved oxygen, ensure complete drainage (E&F), and sterilise media between crops. See Guide 07 in both tracks.
 
 **ROI — Return on Investment**
 A measure of the financial return relative to the cost of a project. In the context of these guides: how long it takes for the value of harvested produce to equal the cost of building and running the system.

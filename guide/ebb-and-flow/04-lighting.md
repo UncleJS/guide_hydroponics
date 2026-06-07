@@ -289,9 +289,9 @@ On wide flat tables, tall plants can shade smaller neighbours in a way that does
 | Lettuce + basil | Low | Basil grows taller — place at north end of table |
 | Tomatoes + peppers | Medium | Place tallest (tomatoes) on north side |
 | Cucumbers + courgettes | High | Do not mix on the same table — both are vigorous |
-| Fruiting crops + leafy greens | High | Separate onto different tables — Table 1 vs Table 2 |
+| Fruiting crops + leafy greens | High | Separate onto different tables — Tables 1–2 vs Table 3 |
 
-> **Practical rule:** Orient tall crops (tomatoes, cucumbers) to the north end of the flood table so they do not shade the shorter crops growing to the south. Better still, dedicate Table 2 entirely to fruiting crops and keep Table 1 for leafy greens and herbs.
+> **Practical rule:** Orient tall crops (tomatoes, cucumbers) to the north end of the flood table so they do not shade the shorter crops growing to the south. Better still, dedicate Tables 1 and 2 entirely to fruiting crops and keep Table 3 for leafy greens and herbs.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -453,10 +453,10 @@ Many plants respond to the **length of the dark period** (night length) rather t
   Light: Abundant — often excessive for sensitive crops
   Action:
   - Deploy 40% shade cloth over flood tables from mid-June
-  - Monitor for bolting in leafy greens on Table 1 — harvest promptly
-  - Table 2 (fruiting crops): remove shade cloth on non-peak heat days
+  - Monitor for bolting in leafy greens on Table 3 — harvest promptly
+  - Tables 1–2 (fruiting crops): remove shade cloth on non-peak heat days
     — tomatoes, cucumbers, and courgettes want maximum light
-  - Succession-plant lettuce on Table 1 every 2–3 weeks
+  - Succession-plant lettuce on Table 3 every 2–3 weeks
   - Monitor LECA surface temperature — if hot, increase flood frequency
     (more floods cool the media and replenish moisture)
   - Keep reservoir under the tables — it stays naturally shaded
@@ -473,7 +473,7 @@ Many plants respond to the **length of the dark period** (night length) rather t
   Light: Declining but often excellent quality (lower sun angle, less heat)
   Action:
   - Remove shade cloth completely from September
-  - Plant second crop of lettuce, spinach, herbs on Table 1 (autumn is ideal)
+  - Plant second crop of lettuce, spinach, herbs on Table 3 (autumn is ideal)
   - Harvest final tomatoes/cucumbers/courgettes before first frost
     (courgettes and cucumbers are frost-sensitive — harvest all before night
     temps drop below 5°C)
@@ -495,7 +495,7 @@ Many plants respond to the **length of the dark period** (night length) rather t
   - Store timer, pump, and small components indoors
   - Plan next season's crop rotation (Table 1 vs Table 2 allocation)
   - Order seeds, replacement media, nutrients for next season
-  - Consider: a cold frame over Table 1 can extend lettuce production
+  - Consider: a cold frame over Table 3 can extend lettuce production
     to November/December with no supplemental lighting
 ```
 
@@ -519,7 +519,7 @@ If you want to extend your growing season beyond September outdoors, supplementa
 | Option | Power | Coverage | Cost | Best For |
 |--------|-------|----------|------|---------|
 | LED grow strips | 10–30W | Small shelves | $20–$60 | Microgreens, small herb shelf |
-| T5 fluorescent | 24–54W | 1 flood table zone | $30–$80 | Lettuce on Table 1 under cover |
+| T5 fluorescent | 24–54W | 1 flood table zone | $30–$80 | Lettuce on Table 3 under cover |
 | LED quantum board | 100–200W | Full flood table | $80–$200 | Serious season extension |
 | CMH (ceramic metal halide) | 315W+ | Large area | $150–$300 | Semi-commercial extension |
 
@@ -545,7 +545,8 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
     To deliver 300 μmol/m²/s over 0.72 m²:
     Power needed = (300 × 0.72) / 2.5 ≈ 86 W
     → A single 100 W LED quantum board covers one flood table comfortably.
-    → Two flood tables side-by-side: one 200 W board, or two 100 W boards.
+    → Three flood tables side-by-side: three 100 W boards, or one 200 W
+      board + one 100 W board if two tables share a footprint.
 
   T5 fluorescent (typical efficacy: 1.5 μmol/J):
     Same target: (300 × 0.72) / 1.5 ≈ 144 W

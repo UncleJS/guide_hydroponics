@@ -78,14 +78,17 @@ Before building, confirm the full three-zone system you are constructing:
 
 ```mermaid
 flowchart TB
-    T1["FLOOD TABLE 1 — 1.2m × 0.6m<br/>Crops: lettuce, herbs, leafy greens<br/>50mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-    T2["FLOOD TABLE 2 — 1.2m × 0.6m<br/>Crops: tomatoes, peppers, cucumbers, strawberries<br/>75–100mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-    RES["RESERVOIR — 100L food-grade<br/>Submersible pump + timer<br/>Positioned BELOW or beside tables"]
+    T1["FLOOD TABLE 1 — 1.2m × 0.6m<br/>Crops: indeterminate tomatoes, cucumbers<br/>75–100mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
+    T2["FLOOD TABLE 2 — 1.2m × 0.6m<br/>Crops: peppers, aubergine, courgette<br/>75mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
+    T3["FLOOD TABLE 3 — 1.2m × 0.6m<br/>Crops: lettuce, herbs, leafy greens<br/>50mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
+    RES["RESERVOIR — 150–200L food-grade<br/>Submersible pump + timer<br/>Positioned BELOW or beside tables"]
     TIMER["TIMER<br/>2–4× floods per day<br/>15–30 min per flood"]
     T1 -->|"gravity drain → reservoir"| RES
     T2 -->|"gravity drain → reservoir"| RES
+    T3 -->|"gravity drain → reservoir"| RES
     RES -->|"pump → fill port"| T1
     RES -->|"pump → fill port"| T2
+    RES -->|"pump → fill port"| T3
     TIMER -.- RES
 ```
 
@@ -104,13 +107,13 @@ flowchart LR
 ```
 
 **System specifications:**
-- 2 flood tables: each 1.2 m × 0.6 m (adjustable — see Step 2)
-- Flood depth: 2–5 cm above LECA surface (set by overflow standpipe height)
+- 3 flood tables: each 1.2 m × 0.6 m (adjustable — see Step 2)
+- Flood level: ~2 cm below the LECA surface (set by overflow standpipe height)
 - Flood duration: 15–30 minutes per cycle
 - Flood frequency: 2–4 × per day (timer-controlled)
-- Reservoir: 100 L HDPE food-grade, positioned below or beside tables
-- Pump: 800–1200 L/h submersible (sufficient to flood both tables in 5–10 min)
-- Media: LECA (clay pebbles) — 40 L total for 2 tables at ~15 cm media depth
+- Reservoir: 150–200 L HDPE food-grade, positioned below or beside tables
+- Pump: 800–1200 L/h submersible (sufficient to flood all three tables in 5–10 min)
+- Media: LECA (clay pebbles) — ~260 L total for 3 tables at ~12 cm media depth
 - Net pots: 50 mm for greens/herbs; 75–100 mm for fruiting crops
 
 Estimated total build time: **8–12 hours** spread over 2–3 weekends.
@@ -153,7 +156,7 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 | Cable ties (bag of 100) | Securing hoses, tidying wiring |
 | Heat gun | Bending any PVC pipe if needed |
 | Pipe cutters (22–32 mm) | Clean cuts on supply/drain pipes |
-| Wheel (hand truck / trolley) | Moving filled 100L reservoir when maintenance required |
+| Wheel (hand truck / trolley) | Moving the filled reservoir when maintenance required |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -196,7 +199,7 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
   □ Proximity to power: GFCI/RCD-protected outdoor outlet within 10 m?
     → Extension leads OK if outdoor-rated and kept dry
 
-  □ Proximity to water: Can you fill a 100 L reservoir without a 50 m carry?
+  □ Proximity to water: Can you fill a 150–200 L reservoir without a 50 m carry?
     → Hose access preferred
 
   □ Level ground: Is the ground reasonably flat?
@@ -208,8 +211,9 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
     → Excess solution runoff and overflow must be able to soak away or drain
 
   □ Reservoir clearance below table: If going under-table,
-    is there at least 40–50 cm clear height below table base?
-    → For a 100 L reservoir ~45 cm tall when full, you need this clearance.
+    is there at least 60–70 cm clear height below table base?
+    → For a 150–200 L low-profile reservoir ~50–60 cm tall when full,
+      you need this clearance.
 
   □ Accessibility: Can you reach all net pots comfortably to plant and harvest?
     → Ideal table height above ground: 75–90 cm for standing access
@@ -233,9 +237,9 @@ block-beta
     columns 1
     block:fp["ZONE A FOOTPRINT — top-down view"]
         columns 3
-        access1["← 60cm<br/>access aisle"] tables["TABLE 1    TABLE 2<br/>1.2m×0.6m  1.2m×0.6m<br/><br/>[RESERVOIR BELOW OR TO SIDE]"] access2["60cm →<br/>access aisle"]
+        access1["← 60cm<br/>access aisle"] tables["TABLE 1   TABLE 2   TABLE 3<br/>each 1.2m × 0.6m<br/><br/>[RESERVOIR BELOW OR TO SIDE]"] access2["60cm →<br/>access aisle"]
     end
-    dims["Total footprint approx: 1.5m wide × 1.4m deep (tables only)<br/>With access aisles: 2.5m wide × 1.6m deep"]
+    dims["Total footprint approx: 1.5m wide × 2.2m deep (tables only)<br/>With access aisles: 2.5m wide × 2.4m deep"]
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -389,7 +393,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
 flowchart TD
     subgraph under["OPTION 1 — UNDER TABLE (recommended)"]
         T_u["Flood Table<br/>─────────────────────<br/>   fill port    drain port<br/>        ↑              ↓<br/>  hose from        gravity drain hose<br/>  pump up              ↓<br/>        ←─────────────←"]
-        R_u["RESERVOIR 100L<br/>  (pump inside)<br/>  sits on ground<br/>  BELOW table level<br/>  shaded by table"]
+        R_u["RESERVOIR 150–200L<br/>  (pump inside)<br/>  sits on ground<br/>  BELOW table level<br/>  shaded by table"]
     end
     subgraph beside["OPTION 2 — BESIDE TABLE"]
         T_b["Flood Table<br/>─────────────────────<br/>   fill port    drain port<br/>        ↑              ↓<br/> hose from pump    drain hose runs<br/> (horizontal)      down + across to<br/>                   reservoir beside"]
@@ -405,11 +409,11 @@ flowchart TD
 | Space efficiency | Better — no extra footprint | Worse — adds 60 cm to width |
 | Pump head height | Less (shorter lift to table) | More (pump lifts through longer route) |
 
-**Recommendation:** Under-table for temperature benefits and space efficiency. Build the table support frame tall enough to leave 45–50 cm clearance below the table base.
+**Recommendation:** Under-table for temperature benefits and space efficiency. Build the table support frame tall enough to leave 60–70 cm clearance below the table base.
 
 ### Reservoir Preparation
 
-1. **Choose a food-grade HDPE container.** 100 L capacity. A square footprint (typically 50×50×45 cm) fits neatly under standard table dimensions.
+1. **Choose a food-grade HDPE container.** 150–200 L capacity. A low-profile rectangular footprint (e.g., ~80×60×50 cm) fits under the tables more easily than a tall barrel.
 
 2. **Prepare lid access points:**
    - Pump power cable exit: 12 mm slit (not round hole — allows cable out but resists water ingress)
@@ -456,23 +460,25 @@ flowchart LR
 ```
   OVERFLOW STANDPIPE HEIGHT GUIDE:
 
-  Target flood depth: 2–5 cm above the LECA media surface
-  (not above the table floor — above the top of the LECA bed)
+  Target flood level: ~2 cm BELOW the top of the LECA bed
+  (capillary action wets the top layer; keeping the waterline below
+  the surface stops LECA floating and prevents surface algae)
 
   LECA fill depth in table: typically 12–15 cm
   Table internal depth: 15–20 cm (DIY) or 15 cm (bought table)
 
   STANDPIPE HEIGHT CALCULATION:
-  Standpipe height above table floor = LECA depth + desired flood above LECA
+  Standpipe height above table floor = LECA depth − 2 cm
 
   Examples:
-  LECA depth 12 cm + 3 cm flood above = standpipe 15 cm tall
-  LECA depth 15 cm + 3 cm flood above = standpipe 18 cm tall
+  LECA depth 12 cm − 2 cm = standpipe 10 cm tall
+  LECA depth 15 cm − 2 cm = standpipe 13 cm tall
 
   NOTES:
-  1. Start conservative: set standpipe for 2 cm above LECA surface first.
-     Watch roots over 2 weeks. If roots look dry between floods:
-     increase standpipe height to flood deeper (up to 5 cm).
+  1. Start conservative: set the standpipe ~3 cm below the LECA surface
+     first. Watch roots over 2 weeks. If the upper root zone looks dry
+     between floods: raise the standpipe (to a maximum of 2 cm below
+     the LECA surface).
 
   2. The standpipe must be removable: you should be able to lift it out
      to do media flushes and table cleaning.
@@ -480,13 +486,14 @@ flowchart LR
   3. Label the standpipe height with a permanent marker on the tube
      so you can return to the same setting after cleaning.
 
-  4. Too tall: roots always submerged = anaerobic conditions → root rot
-  5. Too short: roots barely reach flood zone → insufficient hydration
+  4. Too tall (at or above the LECA surface): media fully submerged,
+     LECA floats, surface algae, anaerobic conditions → root rot
+  5. Too short: only the bottom of the bed is wetted → insufficient hydration
 ```
 
 ### Installing Bulkhead Fittings
 
-Each table needs two bulkhead fittings (fill port + overflow/drain port). For 2 tables: 4 bulkhead fittings total.
+Each table needs two bulkhead fittings (fill port + overflow/drain port). For 3 tables: 6 bulkhead fittings total.
 
 ```
   BULKHEAD FITTING INSTALLATION PROCEDURE:
@@ -552,48 +559,58 @@ Each table needs two bulkhead fittings (fill port + overflow/drain port). For 2 
 flowchart TD
     PUMP["Submersible pump<br/>(in reservoir)<br/>800–1200 L/h"]
     TIMER["Timer<br/>(controls pump on/off)"]
-    SPLITTER["T-splitter or Y-junction<br/>(splits pump output<br/>to both tables)"]
+    SPLITTER["Supply manifold<br/>(two T-junctions or a<br/>3-way manifold splits pump<br/>output to all three tables)"]
     T1FP["Table 1<br/>Fill port"]
     T2FP["Table 2<br/>Fill port"]
+    T3FP["Table 3<br/>Fill port"]
     T1OP["Table 1<br/>Overflow/drain port"]
     T2OP["Table 2<br/>Overflow/drain port"]
-    RES["Reservoir<br/>(receives gravity drain<br/>from both tables)"]
+    T3OP["Table 3<br/>Overflow/drain port"]
+    RES["Reservoir<br/>(receives gravity drain<br/>from all three tables)"]
 
     TIMER --> PUMP
     PUMP -->|"25–32mm supply hose"| SPLITTER
     SPLITTER -->|"20–25mm hose"| T1FP
     SPLITTER -->|"20–25mm hose"| T2FP
+    SPLITTER -->|"20–25mm hose"| T3FP
     T1OP -->|"gravity drain<br/>25–32mm hose"| RES
     T2OP -->|"gravity drain<br/>25–32mm hose"| RES
+    T3OP -->|"gravity drain<br/>25–32mm hose"| RES
     RES --> PUMP
 ```
 
 ### Supply Side (Pump to Tables)
 
-The pump pushes solution from the reservoir to both flood tables simultaneously. The pump must be able to fill both tables to overflow within the flood cycle time (typically 5–10 min for a 15–30 min cycle).
+The pump pushes solution from the reservoir to all three flood tables simultaneously. The pump must be able to fill all tables to overflow within the flood cycle time (typically 5–10 min for a 15–30 min cycle).
 
 **Flow rate calculation:**
 
 ```
-  PUMP SIZING FOR 2 TABLES:
+  PUMP SIZING FOR 3 TABLES:
 
   Each table: 1.2m × 0.6m = 0.72 m²
-  LECA fill depth: ~12–15 cm
-  Volume of void space in LECA (approx 40% of bed volume):
-    0.72 × 0.14 × 0.4 = ~4.0 L void per table
-  Flood volume (void + flood above LECA at 3cm):
-    4.0 + (0.72 × 0.03) = ~4.0 + 2.2 = ~6.2 L per table
-  Total for 2 tables: ~12–14 L
+  LECA fill depth: ~12 cm; standpipe (flood level) at 10 cm
+  Water needed to flood one table to standpipe height:
+    Gross volume to 10 cm: 0.72 × 0.10 = 0.072 m³ = 72 L
+    Minus LECA solids in the flooded zone (~60% of bed volume):
+    0.72 × 0.10 × 0.6 = ~43 L
+    Net water per table: 72 − 43 = ~29 L
+  Total for 3 tables: ~85–90 L per flood
 
-  Time to fill (target 5–8 min to flood):
-  Required pump flow rate = 14 L ÷ 6 min = ~2.4 L/min = 144 L/h minimum
+  RESERVOIR CHECK (150 L fill):
+  150 − 90 = ~60 L remains in the reservoir at full flood —
+  the pump stays safely submerged. ✓
+
+  Time to fill (target 5–10 min to flood):
+  Required pump flow rate = 90 L ÷ 10 min = 9 L/min = 540 L/h minimum
 
   HOWEVER: pump also lifts solution (head height).
   For under-table reservoir → table base: ~50 cm head height
   An 800 L/h pump at 50 cm head delivers roughly 600 L/h = 10 L/min
-  This fills both tables in well under 2 minutes — actually faster than needed.
+  This floods all three tables in ~9 minutes — within target.
 
-  CONCLUSION: Any pump rated 800–1200 L/h is more than adequate.
+  CONCLUSION: A pump rated 800–1200 L/h is adequate; choose the
+  1000–1200 L/h end if your lift exceeds 50 cm head.
   Use a ball valve or flow restrictor on the supply line if fill rate is
   too fast (which can cause turbulence that disturbs LECA).
 ```
@@ -601,13 +618,13 @@ The pump pushes solution from the reservoir to both flood tables simultaneously.
 **Supply plumbing assembly:**
 
 1. Connect pump output (typically 25 mm barbed outlet) to a 25 mm hose.
-2. Route hose to a T-junction (25 mm × 25 mm × 25 mm) positioned between the two tables.
-3. From each T-junction branch, run 20 mm hose to the fill port bulkhead fitting on each table.
+2. Route hose to two T-junctions (25 mm × 25 mm × 25 mm) — or a single 3-way manifold — positioned along the run between the three tables.
+3. From each branch, run 20 mm hose to the fill port bulkhead fitting on each table.
 4. Secure all barbed connections with hose clips.
 5. Keep supply hoses as short as possible and route with gentle curves (no tight bends).
 
 **Flow rate balancing:**
-If one table fills much faster than the other (due to hose length differences), add a small in-line ball valve on the faster table's supply branch. Throttle it until both tables fill at roughly equal rates.
+If one table fills much faster than the others (due to hose length differences — the table nearest the pump usually fills first), add a small in-line ball valve on each faster table's supply branch. Throttle until all three tables fill at roughly equal rates.
 
 ### Drain Side (Tables to Reservoir)
 
@@ -615,14 +632,14 @@ The drain is entirely gravity-fed. No pump required — when the flood pump stop
 
 **Critical requirements:**
 - Drain hose must slope continuously downhill from table drain port to reservoir entry — no flat or uphill sections
-- Drain hose must be large enough to empty both tables in <30 minutes
+- Drain hose must be large enough to empty all three tables in <30 minutes
 
 **Assembly:**
 
 1. Connect a 25–32 mm hose to each table overflow/drain bulkhead fitting.
 2. Route each hose down and toward the reservoir, maintaining a continuous downhill slope.
 3. For under-table reservoir: hoses drop almost vertically — very efficient drain.
-4. For beside-table reservoir: hoses route down and across. Use a drain manifold (25mm T-junction) to combine both hoses into a single return before entering the reservoir.
+4. For beside-table reservoir: hoses route down and across. Use drain manifolds (25mm T-junctions) to combine the three hoses into a single return before entering the reservoir.
 5. The return hose end drops into the open reservoir through the fill/inspection port (simplest, good oxygenation from splash) or connects to a bulkhead fitting in the reservoir side wall.
 
 ### Pipe Sizing Reference
@@ -632,7 +649,7 @@ The drain is entirely gravity-fed. No pump required — when the flood pump stop
 | Pump to T-splitter | 20 mm | 25 mm | Match pump outlet size |
 | T-splitter to table fill port | 16 mm | 20 mm | Max 1.5 m hose length |
 | Table overflow/drain port | 20 mm | 25 mm | Larger drains faster |
-| Combined drain header | 25 mm | 32 mm | For both tables draining simultaneously |
+| Combined drain header | 25 mm | 32 mm | For all three tables draining simultaneously |
 | Drain return to reservoir | 25 mm | 32 mm | |
 
 [↑ Back to TOC](#table-of-contents)
@@ -707,24 +724,24 @@ Before any nutrient solution is involved, test the timer with plain water:
 ```
   FULL WATER TEST SEQUENCE
 
-  Step 1: Fill reservoir with plain tap water to operating level (90 L)
+  Step 1: Fill reservoir with plain tap water to operating level (~150 L)
     → Pump must be fully submerged — verify before powering on
 
   Step 2: Power on pump manually (bypass timer — direct plug)
     → Listen: pump should hum quietly, no grinding or air-sucking
-    → Watch both fill ports: water should appear within 30 seconds
+    → Watch all three fill ports: water should appear within 30 seconds
 
-  Step 3: Observe flood rising in both tables
-    → Are both tables flooding at roughly equal rates?
+  Step 3: Observe flood rising in all three tables
+    → Are the tables flooding at roughly equal rates?
     → If one fills much faster: throttle that table's supply valve
 
   Step 4: Watch overflow operation
     → When flood level reaches overflow standpipe top: water should
       exit via drain hose. If level continues rising: standpipe is not
       seated correctly or drain hose is blocked.
-    → Flood depth at overflow: measure with ruler. Should be 2–3 cm
-      above LECA surface (no LECA yet — measure against table floor).
-      Adjust standpipe height if needed.
+    → Flood depth at overflow: measure with ruler against the table
+      floor (no LECA yet). It should match your standpipe height —
+      e.g., 10 cm for a 12 cm LECA bed. Adjust standpipe if needed.
 
   Step 5: Check all joints for leaks for 10 full minutes
     → Fill port bulkhead: inner and outer flange
@@ -780,11 +797,12 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 ```
   LECA PREPARATION PROCEDURE:
 
-  Amount needed for 2 tables (each 1.2m × 0.6m × 12cm deep, 40% void):
-  Volume: 2 × 1.2 × 0.6 × 0.12 = 0.173 m³ = 173 L
-  But LECA is sold by volume in a bag — buy 40 L of LECA
-  (LECA is much less dense than its volume: 40L bag fills ~35L of space)
-  For both tables at 12cm depth: you will need approximately 2× 20L bags = 40L total.
+  Amount needed for 3 tables (each 1.2m × 0.6m, filled 12cm deep):
+  Bed volume per table: 1.2 × 0.6 × 0.12 = 0.0864 m³ = ~86 L
+  Total for 3 tables: ~260 L of LECA
+  LECA is sold by bulk volume — buy 6× 45–50 L bags (~270–300 L total).
+  Bags settle slightly in transit (a 50 L bag fills ~45 L of bed), and
+  spare LECA is always useful for net pots and top-ups.
 
   RINSING STEPS:
 
@@ -813,7 +831,7 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 3. Pour pre-soaked LECA into the table around the net pots. Aim for 12–15 cm deep. Leave ~3 cm clear above LECA to the top of the table walls.
 4. Level the LECA surface — gently rake with fingers to distribute evenly.
 5. Run one test flood cycle to confirm LECA doesn't pile up on one side (the table is level) and drain returns correctly with LECA in place. Observe drain time — add 5 min to plain-table drain time (LECA slows drain slightly due to surface tension).
-6. Confirm overflow standpipe is at the correct height above LECA surface (see Step 4).
+6. Confirm overflow standpipe is at the correct height relative to the LECA surface — top of standpipe ~2 cm below the top of the bed (see Step 4).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -824,18 +842,18 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 
 After a successful water test and LECA installation, mix the first nutrient batch.
 
-**For 100 L reservoir at EC ~1.0–1.4 (conservative first fill for young transplants):**
+**For 150 L reservoir fill at EC ~1.0–1.4 (conservative first fill for young transplants):**
 
-| Component | Amount for 100 L | Rate |
+| Component | Amount for 150 L | Rate |
 |---|---|---|
-| MasterBlend 4-18-38 | 45 g | 0.45 g/L |
-| Calcium Nitrate (Ca(NO₃)₂) | 45 g | 0.45 g/L |
-| Epsom Salt (MgSO₄·7H₂O) | 22.5 g | 0.23 g/L |
+| MasterBlend 4-18-38 | 68 g | 0.45 g/L |
+| Calcium Nitrate (Ca(NO₃)₂) | 68 g | 0.45 g/L |
+| Epsom Salt (MgSO₄·7H₂O) | 34 g | 0.23 g/L |
 
-> **Note:** This is a reduced-strength first fill for seedlings and young transplants. Once plants are established (2–3 weeks), increase to 0.6 g/L each component (60g + 60g + 30g for 100L) for EC ~1.4–1.6.
+> **Note:** This is a reduced-strength first fill for seedlings and young transplants. Once plants are established (2–3 weeks), increase to 0.6 g/L each component (90g + 90g + 45g for 150L) for EC ~1.4–1.6.
 
 **Mixing order (always in this sequence — never mix Stock A and B together in concentrate):**
-1. Fill reservoir with 90 L of pre-pH-adjusted water.
+1. Fill reservoir with 145 L of pre-pH-adjusted water.
 2. In a separate bucket, dissolve Calcium Nitrate in 2 L of water. Stir until clear. Pour into reservoir.
 3. In the same bucket (rinsed), dissolve Masterblend in 2 L of water. Stir until clear. Pour into reservoir.
 4. Add Epsom Salt directly to reservoir and stir.
@@ -1038,13 +1056,13 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 **What happens:** Solution floods table too deeply, completely submerging the LECA and roots. Roots are denied oxygen during the long period roots are submerged. Even if the table eventually drains, the reduced dry time causes progressive root suffocation and Pythium onset.
 
-**Prevention:** Start with a conservative standpipe height (2 cm above LECA). Observe plants for 2 weeks. Increase height slowly only if plants show symptoms of dryness between floods.
+**Prevention:** Start with a conservative standpipe height (~3 cm below the LECA surface). Observe plants for 2 weeks. Raise the standpipe slowly — never above 2 cm below the LECA surface — and only if plants show symptoms of dryness between floods.
 
 ### Mistake 3 — Overflow Standpipe Too Low
 
 **What happens:** Table floods to only 1 cm depth. Only the bottom of the LECA is wetted. Roots in upper LECA layers are never reached by the flood. Plants in net pots sitting high in the LECA receive insufficient moisture — equivalent to under-flooding.
 
-**Prevention:** Verify standpipe height against LECA surface level (not table floor) before first nutrient fill. The standpipe top should be 2–5 cm above the top of the LECA bed.
+**Prevention:** Verify standpipe height against LECA surface level (not table floor) before first nutrient fill. The standpipe top should sit ~2 cm below the top of the LECA bed — capillary action wets the layer above the waterline.
 
 ### Mistake 4 — Drain Too Slow (Drain Pipe Undersized or Running Flat)
 
@@ -1091,7 +1109,7 @@ Use this as a final sign-off before moving to nutrient operation.
   SITE AND STRUCTURE:
   □ Site selected; sunlight and access confirmed
   □ Table support structure built or confirmed level
-  □ Both tables positioned and levelled (spirit level across both axes)
+  □ All three tables positioned and levelled (spirit level across both axes)
   □ Level re-verified after support structure weighted
 
   TABLE FABRICATION (DIY) OR SOURCE (BOUGHT):
@@ -1102,8 +1120,8 @@ Use this as a final sign-off before moving to nutrient operation.
   FITTINGS:
   □ Fill port bulkhead fitted; silicone cured 24h; no weeping
   □ Overflow/drain port bulkhead fitted; silicone cured 24h; no weeping
-  □ Overflow standpipe inserted; height set at LECA depth +2–3 cm
-  □ All 4 bulkhead fittings (2 per table × 2 tables) complete
+  □ Overflow standpipe inserted; height set at LECA depth −2 cm
+  □ All 6 bulkhead fittings (2 per table × 3 tables) complete
 
   RESERVOIR:
   □ Reservoir food-grade; light-proofed (wrapped black + white)
@@ -1114,9 +1132,9 @@ Use this as a final sign-off before moving to nutrient operation.
   □ Minimum pump submersion level marked
 
   PLUMBING:
-  □ Supply hose: pump → T-splitter → both table fill ports
+  □ Supply hose: pump → supply manifold → all three table fill ports
   □ All supply hose connections secured with hose clips
-  □ Drain hoses: both tables → reservoir; continuous downhill slope
+  □ Drain hoses: all three tables → reservoir; continuous downhill slope
   □ Drain hose minimum 25 mm ID; combined drain 32 mm ID
   □ No hose kinks; all barbed connections seated and clipped
 
@@ -1128,7 +1146,7 @@ Use this as a final sign-off before moving to nutrient operation.
 
   WATER TEST:
   □ Reservoir filled with plain water to operating level
-  □ Pump runs and both tables flood (even rate)
+  □ Pump runs and all three tables flood (even rate)
   □ Flood reaches overflow standpipe and holds at correct depth
   □ All joints and bulkheads inspected — no leaks after 10 min
   □ Table drains completely within 30 min of pump off

@@ -72,22 +72,23 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ```
   SYMPTOM: Water level in table is visibly lower than expected during flood.
-  Expected flood depth: 2–5 cm above media surface (or at base of net pots).
+  Expected flood level: ~2 cm below the media surface (at standpipe height).
 
   MOST COMMON CAUSES (in order of likelihood):
 
   1. RESERVOIR TOO LOW — insufficient volume to flood the table
      Sign: Reservoir level is clearly low before flood starts.
      Fix: Top up reservoir immediately. Calculate minimum reservoir level
-          needed to flood both tables. For 2× tables (1.2m × 0.6m each),
-          flooding to 3 cm depth requires ~4 L each = ~8 L minimum reserve
-          above pump submersion depth. Keep reservoir topped to operating level.
+          needed to flood all three tables. For 3× tables (1.2m × 0.6m each),
+          flooding to standpipe height (~10 cm in a 12 cm bed) draws
+          ~29 L each = ~90 L minimum reserve above pump submersion depth.
+          Keep reservoir topped to operating level (~150 L).
 
   2. PUMP TOO WEAK / IMPELLER PARTIALLY BLOCKED
      Sign: Pump sounds strained; flood rises slowly and levels off below target.
      Fix: Remove pump, inspect impeller for calcium or debris.
           Scrub with toothbrush in clean water. Retest flow rate.
-          Target: pump fills both tables within 5–10 min at flood frequency used.
+          Target: pump fills all three tables within 5–10 min at flood frequency used.
 
   3. FILL PORT PARTIALLY CLOGGED
      Sign: Pump runs fine when tested in a bucket, but table fills slowly.
@@ -149,7 +150,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   5. DRAIN PIPE DIAMETER TOO SMALL
      Sign: Drain empties very slowly (water level drops but takes >45 minutes).
-     Fix: Upgrade drain pipe to at least 25 mm ID. For two tables draining
+     Fix: Upgrade drain pipe to at least 25 mm ID. For three tables draining
           simultaneously, use 32 mm ID minimum.
 ```
 
@@ -716,7 +717,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   STEP 1 — CONFIRM IT IS A LINER LEAK (not evaporation or normal loss):
   □ Mark reservoir level at night, check in morning before any flood cycle
   □ If reservoir has dropped >3 L overnight in cool conditions: leak likely
-  □ Inspect ground below both flood tables — is there a damp patch?
+  □ Inspect ground below the flood tables — is there a damp patch?
   □ After removing LECA: look at liner surface for wet spots, staining,
     or visible cracks/pinholes
 
@@ -898,7 +899,7 @@ Refer to: **C2** — timer/pump failure.
   MULTIPLE PLANTS SHOWING SAME SYMPTOMS:
   → System-level cause: flood cycle, EC, pH, temperature, salt crust
   → Start with Section A (water problems) before Section B (plant problems)
-  → If both tables affected equally: reservoir chemistry or pump issue
+  → If all tables affected equally: reservoir chemistry or pump issue
   → If only one table affected: that table's specific drain/overflow fitting
 
   ONE PLANT SHOWING SYMPTOMS, OTHERS HEALTHY:

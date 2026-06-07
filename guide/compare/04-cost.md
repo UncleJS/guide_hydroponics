@@ -16,9 +16,9 @@
   - [Tier 2 — Standard NFT ($250–350)](#tier-2-standard-nft-250350)
   - [Tier 3 — Full 3-Zone NFT ($400–550)](#tier-3-full-3-zone-nft-400550)
 - [3. Ebb & Flow Build Costs](#3-ebb-flow-build-costs)
-  - [Tier 1 — Minimal E&F ($150–220)](#tier-1-minimal-ef-150220)
-  - [Tier 2 — Standard E&F ($300–400)](#tier-2-standard-ef-300400)
-  - [Tier 3 — Full 3-Table E&F ($500–700)](#tier-3-full-3-table-ef-500700)
+  - [Tier 1 — Minimal E&F ($200–250)](#tier-1-minimal-ef-200250)
+  - [Tier 2 — Standard E&F ($400–470)](#tier-2-standard-ef-400470)
+  - [Tier 3 — Full 3-Table E&F ($650–750)](#tier-3-full-3-table-ef-650750)
 - [4. Running Costs](#4-running-costs)
   - [Electricity](#electricity)
   - [Nutrients](#nutrients)
@@ -140,13 +140,13 @@ Three zones, larger channels (125 mm), proper insulated reservoir, Atlas Scienti
 
 ## 3. Ebb & Flow Build Costs
 
-### Tier 1 — Minimal E&F ($150–220)
+### Tier 1 — Minimal E&F ($200–250)
 
-Single flood table (60×90 cm), one grow zone.
+Single flood table (1.2 m × 0.6 m), one grow zone.
 
 | Item | Qty | Unit cost | Total |
 |---|---|---|---|
-| Flood table (HDPE or liner-in-frame, 60×90 cm) | 1 | £45 | £45 |
+| Flood table (HDPE or liner-in-frame, 1.2 m × 0.6 m) | 1 | £45 | £45 |
 | 1.5" bulkhead overflow fitting | 1 | £8 | £8 |
 | 1" bulkhead drain fitting | 1 | £6 | £6 |
 | 1.5" standpipe (overflow height set) | 1 | £4 | £4 |
@@ -155,20 +155,21 @@ Single flood table (60×90 cm), one grow zone.
 | Submersible pump 800 L/h | 1 | £18 | £18 |
 | Mechanical timer (15-min increments) | 1 | £8 | £8 |
 | 100L reservoir | 1 | £14 | £14 |
-| LECA clay pebbles, 25L | 1 | £18 | £18 |
+| LECA clay pebbles (2× 50L bags — ~86L bed at 12 cm) | 2 | £20 | £40 |
 | pH up + pH down (250 mL each) | 2 | £6 | £12 |
 | Flood table support frame (timber) | — | £20 | £20 |
-| **Tier 1 total** | | | **£162** |
+| **Tier 1 total** | | | **£184** |
 
-### Tier 2 — Standard E&F ($300–400)
+### Tier 2 — Standard E&F ($400–470)
 
 Two flood tables, proper digital timer, basic monitoring.
 
 | Item | Qty | Unit cost | Total |
 |---|---|---|---|
-| All Tier 1 items | — | — | £162 |
-| Second flood table (60×90 cm) | 1 | £45 | £45 |
+| All Tier 1 items | — | — | £184 |
+| Second flood table (1.2 m × 0.6 m) | 1 | £45 | £45 |
 | Second table fittings (as above) | — | — | £18 |
+| LECA for second table (2× 50L bags) | 2 | £20 | £40 |
 | Upgrade to digital timer (programmable to 1-min) | 1 | £18 | +£10 |
 | 150L reservoir (shared) | 1 | £22 | +£8 |
 | pH / EC combo meter | 1 | £35 | £35 |
@@ -176,25 +177,26 @@ Two flood tables, proper digital timer, basic monitoring.
 | Float switch in reservoir | 1 | £5 | £5 |
 | ESP8266 + SHT31 | 1 | £12 | £12 |
 | Calibration solution set | 1 | £12 | £12 |
-| **Tier 2 total** | | | **~£312** |
+| **Tier 2 total** | | | **~£374** |
 
-### Tier 3 — Full 3-Table E&F ($500–700)
+### Tier 3 — Full 3-Table E&F ($650–750)
 
-Three flood tables, Atlas Scientific probes, relay-based pump safety cutoff, full logging.
+Three flood tables (the full system in Guides 00 and 11), Atlas Scientific probes, relay-based pump safety cutoff, full logging.
 
 | Item | Qty | Unit cost | Total |
 |---|---|---|---|
-| All Tier 2 items (3 tables) | — | — | £390 |
+| All Tier 2 items | — | — | £374 |
 | Third flood table + fittings | — | £63 | £63 |
+| LECA for third table (2× 50L bags) | 2 | £20 | £40 |
 | Upgrade to Atlas EZO-pH + probe | 1 | £75 | +£40 |
 | Upgrade to Atlas EZO-EC + probe | 1 | £70 | +£35 |
 | ESP32 (replaces ESP8266) | 1 | £10 | +£2 |
 | Float switch in each table (3 total) | 3 | £5 | +£10 |
 | DS18B20 waterproof probe | 1 | £4 | £4 |
 | 5V relay module (pump safety cutoff) | 1 | £8 | £8 |
-| 200L reservoir | 1 | £30 | +£8 |
+| 150–200L reservoir | 1 | £30 | +£8 |
 | Outdoor electronics enclosure | 1 | £18 | £18 |
-| **Tier 3 total** | | | **~£578** |
+| **Tier 3 total** | | | **~£602** |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -369,9 +371,9 @@ NFT has an extremely fast payback because leafy crops and herbs have high retail
 
 | Tier | Build cost | Annual running cost | Annual yield value | Annual net | Payback period |
 |---|---|---|---|---|---|
-| Tier 1 | £162 | £77 | £150 (1 table) | £73 | 27 months |
-| Tier 2 | £312 | £77 | £300 (2 tables) | £223 | 17 months |
-| Tier 3 | £578 | £77 | £350 (3 tables) | £273 | 25 months |
+| Tier 1 | £184 | £77 | £150 (1 table) | £73 | 30 months |
+| Tier 2 | £374 | £77 | £300 (2 tables) | £223 | 20 months |
+| Tier 3 | £602 | £77 | £350 (3 tables) | £273 | 26 months |
 
 E&F payback is slower because fruiting crops, while highly valued by the grower, have a lower market retail price per unit than fresh herbs and salads.
 

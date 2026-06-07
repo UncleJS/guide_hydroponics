@@ -52,11 +52,11 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for a temperate b
 
 | Property | Value |
 |----------|-------|
-| Tables | 3 flood tables (60 × 90 cm each) |
-| Media | LECA clay pebbles, 20–25 L per table, 10–15 cm depth |
-| Flood depth | 3–5 cm (set by overflow standpipe height) |
-| Flood cycle | 3–5× daily (vegetative); 4–6× daily (fruiting, summer) |
-| Flood duration | 20–30 minutes per cycle |
+| Tables | 3 flood tables (1.2 m × 0.6 m each) |
+| Media | LECA clay pebbles, ~75–90 L per table, 10–15 cm depth |
+| Flood level | ~2 cm below the LECA surface (set by overflow standpipe height) |
+| Flood cycle | 2–3× daily (vegetative); 3–4× daily (fruiting, summer) |
+| Flood duration | 15–30 minutes per cycle |
 | Pump | 800–1,200 L/h submersible |
 | Timer | Digital programmable, 1-minute resolution minimum |
 | Reservoir | 150–200 L food-grade container, positioned below table drain level |
@@ -141,17 +141,17 @@ flowchart TD
 
 | Component | Quantity | Notes |
 |-----------|----------|-------|
-| Flood table (60 × 90 cm, HDPE or lined) | 3 | Must be food-safe; check for levelness |
+| Flood table (1.2 m × 0.6 m, HDPE or lined) | 3 | Must be food-safe; check for levelness |
 | 1.5" bulkhead overflow fitting | 3 | One per table; sets max flood depth |
 | 1" bulkhead drain fitting | 3 | One per table; gravity drain-back |
-| 1.5" standpipe (overflow height) | 3 | Cut to desired flood depth (3–5 cm) |
+| 1.5" standpipe (overflow height) | 3 | Cut to LECA depth −2 cm (e.g., 10 cm for a 12 cm bed) |
 | Flood table support frame (timber) | 3 | Level is critical — build with spirit level |
 | 19 mm braided hose | ~4 m | Pump to table flood inlets |
 | 19 mm barb × threaded fittings | 6 | Table inlet connections |
 | Submersible pump (800–1,200 L/h) | 1 | With filter sponge |
 | Digital timer (1-minute resolution) | 1 | Backup mechanical timer: strongly recommended |
 | 150–200 L food-grade reservoir | 1 | Must sit lower than table drain outlets |
-| LECA clay pebbles | 75 L | ~25 L per table; pre-soak 24h before use |
+| LECA clay pebbles | ~250 L | ~75–90 L per table; pre-soak 24h before use |
 | pH meter | 1 | Calibrate monthly |
 | EC/TDS meter | 1 | Calibrate monthly; also use for media EC |
 | pH Up (KOH solution) | 1 bottle | |
@@ -227,7 +227,7 @@ flowchart TD
 - [ ] Set tables on frames; recheck level after setting
 - [ ] Install overflow fittings (1.5" bulkhead) — tighten to finger-tight + quarter turn; do not over-tighten
 - [ ] Install drain fittings (1" bulkhead) — as above
-- [ ] Set standpipe height (3–5 cm above table floor)
+- [ ] Set standpipe height (LECA depth −2 cm above table floor; e.g., 10 cm for a 12 cm bed)
 - [ ] Position reservoir below table drain outlets — confirm gravity drain-back path is clear
 - [ ] Set up Zone B microgreens shelf
 - [ ] Set up Zone C grow bags with media
