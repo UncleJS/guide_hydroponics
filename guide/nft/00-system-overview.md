@@ -198,9 +198,9 @@ Costs for this list are in [Guide 12 — Budget and Sourcing](12-budget-and-sour
 | Rockwool starter cubes | 50 | Germination |
 | Grow bags, 5 US gal (19 L) | 3 | Zone C: two radish, one beetroot |
 | Grow bags, 10 US gal (38 L) | 3 | Zone C: carrots |
-| Coco coir | 2 bricks or loose equivalent | Zones B and C. Zone B depth is 1–1¼ in (2.5–3 cm) |
-| Perlite | 1.3 US gal (5 L) | Zone C media blend |
-| Vermiculite | 0.5 US gal (2 L) | Zone C blend |
+| Coco coir | About 30 US gal (114 L) loose, or bricks to match | Zones B and C. Zone B depth is 1–1¼ in (2.5–3 cm). Zone C alone needs about 27 US gal (102 L) at 60% of bag volume |
+| Perlite | About 13.5 US gal (51 L) | Zone C only, 30% of the bag mix |
+| Vermiculite | About 4.5 US gal (17 L) | Zone C only, 10% of the bag mix |
 | Standard grow trays, 10 in × 20 in (25 cm × 50 cm) | 6 | Zone B microgreens |
 | Microgreen seeds (variety pack) | — | See [Guide 06 — Crops](06-crops.md) |
 | Nutrients (Masterblend trio or GH Flora) | — | See [Guide 02 — Nutrients](02-nutrient-solution.md) |
@@ -208,7 +208,7 @@ Costs for this list are in [Guide 12 — Budget and Sourcing](12-budget-and-sour
 | EC/TDS meter | 1 | Calibrate monthly |
 | pH Up (KOH solution) | 1 bottle | |
 | pH Down (phosphoric acid) | 1 bottle | |
-| Shade cloth 40% | 1 | About 6½ ft × 10 ft (2 m × 3 m). Deploy when afternoon highs hold above 85°F (29°C) |
+| Shade cloth 40% | 1 | About 13 ft × 10 ft (4.0 m × 3.0 m) to cover the site. Deploy when afternoon highs hold above 85°F (29°C) |
 | Frost fleece / horticultural fleece | 1 roll | Cold protection inside the outdoor season |
 | Pump timer | None for the NFT pumps | Both pumps run 24 hours a day. Do not schedule overnight off or 15 minutes on / 45 minutes off |
 

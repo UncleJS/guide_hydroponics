@@ -116,7 +116,7 @@ flowchart TD
     A["SEEDLING (0–2 weeks)<br/>NPK: 1 : 1.5 : 1<br/>EC: 0.5–0.8 mS/cm<br/>Priority: root establishment, minimal foliar growth"]
     B["VEGETATIVE (2–6 weeks for greens; 4–10 weeks for fruiting)<br/>NPK: 3 : 1 : 2<br/>EC: crop-specific (see Section 4)<br/>Priority: canopy development, root zone expansion"]
     C["PRE-FLOWERING / TRANSITION<br/>NPK: 2 : 2 : 2<br/>EC: start increasing for fruiting crops<br/>Priority: strengthening stems, initiating flower sites"]
-    D["FLOWERING / FRUITING (tomatoes, peppers, cucumbers)<br/>NPK: 1 : 2 : 3<br/>EC: 2.5–4.0 mS/cm<br/>Priority: fruit set, fruit development, sugar loading"]
+    D["FLOWERING / FRUITING (tomatoes, peppers, cucumbers)<br/>NPK: 1 : 2 : 3<br/>EC: tomato 2.5–3.5; pepper 2.0–3.0<br/>Priority: fruit set, fruit development, sugar loading"]
     E["LATE FRUIT / RIPENING<br/>NPK: 1 : 1.5 : 4<br/>EC: maintain or increase slightly<br/>Priority: final fruit quality, sugars, cell wall integrity"]
 
     A --> B --> C --> D --> E
@@ -164,9 +164,9 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 | Cilantro/parsley | 0.8–1.0 | 1.2–1.6 | — | 1.8 |
 | Mint | 0.8–1.0 | 1.2–1.6 | — | 2.0 |
 | Kale | 1.0–1.2 | 1.6–2.2 | 2.0–2.5 | 2.8 |
-| Cherry tomatoes | 0.8–1.2 | 2.0–2.8 | 2.8–4.0 | 4.5 |
-| Peppers | 0.8–1.2 | 2.0–2.8 | 2.8–3.8 | 4.2 |
-| Cucumbers | 1.0–1.4 | 2.0–2.5 | 2.5–3.5 | 4.0 |
+| Cherry tomatoes | 0.8–1.2 | 2.0–2.8 | 2.5–3.5 | 3.5 |
+| Peppers | 0.8–1.2 | 2.0–2.8 | 2.0–3.0 | 3.0 |
+| Cucumbers | 1.0–1.4 | 2.0–2.5 | 2.2–2.8 | 2.8 |
 | Courgette/zucchini | 1.0–1.2 | 1.8–2.4 | 2.4–3.2 | 3.8 |
 | Aubergine/eggplant | 1.0–1.4 | 2.0–2.8 | 2.8–3.5 | 4.0 |
 | Strawberries | 0.8–1.0 | 1.2–1.8 | 1.6–2.2 | 2.5 |
@@ -344,8 +344,10 @@ Doses are per US gallon, with the per-litre figure in brackets. Add FloraMicro f
 | Pre-flower / transition | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 1.8–2.4 |
 | Early bloom | 7.6 ml (2 ml/L) | 15.1 ml (4 ml/L) | 11.4 ml (3 ml/L) | 2.0–2.8 |
 | Mid bloom (fruiting crops) | 3.8 ml (1 ml/L) | 18.9 ml (5 ml/L) | 11.4 ml (3 ml/L) | 2.4–3.2 |
-| Late bloom / ripening | 0 | 22.7 ml (6 ml/L) | 11.4 ml (3 ml/L) | 2.8–3.8 |
+| Late bloom / ripening | 0 | 22.7 ml (6 ml/L) | 11.4 ml (3 ml/L) | 2.8–3.8* |
 | Flush (final week) | 0 | 0 | 0 | 0.2–0.4 |
+
+\*GH Flora label schedule. For this design, do not exceed crop caps: tomato fruiting **2.5–3.5**, pepper fruiting **2.0–3.0**. If the bottle schedule would push tomato above 3.5, stop at the crop cap.
 
 > Always add FloraMicro first when mixing multiple components. The flush week (plain water only) in the final week before harvest reduces residual salts in the media and plant tissue — more important in E&F than in NFT because of salt accumulation in clay pebbles.
 

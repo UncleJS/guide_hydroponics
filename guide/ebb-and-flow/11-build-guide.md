@@ -718,7 +718,8 @@ Before any nutrient solution is involved, test the timer with plain water:
       seated correctly or drain hose is blocked.
     → Flood depth at overflow: measure with ruler against the table
       floor (no LECA yet). It should match your standpipe height —
-      e.g., 10 cm for a 12 cm LECA bed. Adjust standpipe if needed.
+      about 4¼ in (11 cm) for a 5 in (13 cm) LECA bed
+      (¾ in / 2 cm below the surface). Adjust standpipe if needed.
 
   Step 5: Check all joints for leaks for 10 full minutes
     → Fill port bulkhead: inner and outer flange
@@ -757,7 +758,7 @@ Before any nutrient solution is involved, test the timer with plain water:
 | Flood level exceeds standpipe height | Standpipe not seated; overflow drain blocked | Reseat standpipe in bulkhead grommet; clear drain |
 | Leak at bulkhead flange | Silicone not cured; lock nut too loose or too tight | Remove, re-silicone, allow 24h; retighten to 3/4 turn past hand-tight |
 | No gravity drain | Drain hose running uphill at some point | Re-route drain hose with continuous downhill slope |
-| Drain very slow (>45 min) | Drain hose too small; standpipe partially blocking drain bore | Upgrade to 32mm drain hose; ensure standpipe doesn't block drain fitting exit |
+| Drain very slow (>45 min) | Drain hose too small; standpipe partially blocking drain bore | Use 1 in (25 mm) drain hose matching the design bulkhead; ensure standpipe doesn't block drain fitting exit |
 | Pump noisy / grinding | Running dry; debris in impeller | Ensure fully submerged; clean impeller |
 
 [↑ Back to TOC](#table-of-contents)
@@ -852,9 +853,9 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
   TRANSPLANT PROCEDURE:
 
   1. Select net pot for the crop:
-     50 mm net pots: lettuce, herbs, spinach, kale, basil, strawberries
-     75 mm net pots: tomatoes, peppers
-     100 mm net pots: cucumbers (large root system)
+     2 in (50 mm) net pots: lettuce, herbs, spinach, kale, basil, strawberries
+     3 in (75 mm) net pots: tomatoes, peppers
+     4 in (100 mm) net pots: cucumbers (large root system)
 
   2. Moisten the seedling plug/cube before handling.
 
@@ -866,10 +867,11 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
      Pack gently — not compressed, but not rattling loose.
      The LECA holds the plug and provides structure.
 
-  5. Lower the filled net pot into the hole in the table.
-     The net pot rim should sit flush with the LECA surface or just above.
-     The base of the net pot should be at the LECA level, NOT hanging
-     in open air (roots need LECA contact for capillary moisture).
+  5. Nest the filled net pot into an open LECA pocket in the bed
+     (no lid holes). Scoop a pocket, set the pot in, and backfill
+     LECA around the rim so the pot rim sits flush with the LECA
+     surface or just above. The base of the net pot must stay in
+     LECA contact — not hanging in open air (roots need capillary moisture).
 
   6. After planting all seedlings, run one flood cycle immediately.
      This wets the LECA fully and brings moisture to all root zones.
@@ -881,16 +883,16 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
 
 | Crop | Net pot spacing | Net pot size | Notes |
 |---|---|---|---|
-| Lettuce (butterhead) | 20–25 cm | 50 mm | Dense spacing OK for cut-and-come |
-| Lettuce (romaine) | 25 cm | 50 mm | Needs more space for full head |
-| Spinach | 15 cm | 50 mm | Can be dense; harvest frequently |
-| Kale | 25 cm | 50 mm | Grows large — allow space |
-| Basil | 20 cm | 50 mm | Pinch flowers to keep productive |
-| Chives / Parsley | 15 cm | 50 mm | Multiple plants per pot acceptable |
-| Cherry tomatoes | 40–60 cm | 75 mm | Tall vertical growth — trellis needed |
-| Peppers | 35–45 cm | 75 mm | Moderate height; trellis helpful |
-| Cucumbers | 45–60 cm | 100 mm | Very vigorous; allow maximum space |
-| Strawberries | 25–30 cm | 50–75 mm | Runners can be trained or removed |
+| Lettuce (butterhead) | 8–10 in (20–25 cm) | 2 in (50 mm) | Dense spacing OK for cut-and-come |
+| Lettuce (romaine) | 10 in (25 cm) | 2 in (50 mm) | Needs more space for full head |
+| Spinach | 6 in (15 cm) | 2 in (50 mm) | Can be dense; harvest frequently |
+| Kale | 10 in (25 cm) | 2 in (50 mm) | Grows large — allow space |
+| Basil | 8 in (20 cm) | 2 in (50 mm) | Pinch flowers to keep productive |
+| Chives / Parsley | 6 in (15 cm) | 2 in (50 mm) | Multiple plants per pot acceptable |
+| Cherry tomatoes | 16–24 in (40–60 cm) | 3 in (75 mm) | Tall vertical growth — trellis needed |
+| Peppers | 14–18 in (35–45 cm) | 3 in (75 mm) | Moderate height; trellis helpful |
+| Cucumbers | 18–24 in (45–60 cm) | 4 in (100 mm) | Very vigorous; allow maximum space |
+| Strawberries | 10–12 in (25–30 cm) | 2–3 in (50–75 mm) | Runners can be trained or removed |
 
 ### First 48 Hours Protocol
 

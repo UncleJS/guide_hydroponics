@@ -136,8 +136,8 @@ Hot weather, high VPD, and large fruiting plants with high transpiration rates a
 
 **Prevention**:
 - Run reservoir EC at the lower end of target ranges, especially in summer
-- Monitor media EC weekly with a probe pushed 5–8 cm deep into the LECA
-- If media EC is >0.8 mS/cm above reservoir EC, flush (see Section 4)
+- Monitor media EC weekly with a probe pushed 2 in (5 cm) deep into the LECA
+- Flush when media EC is **+0.5 mS/cm** or more above reservoir EC. Treat **+1.0 mS/cm** as urgent (see Section 4)
 
 ### How to Test Correctly in Each System
 
@@ -149,10 +149,10 @@ Hot weather, high VPD, and large fruiting plants with high transpiration rates a
 
 **E&F:**
 1. Take reservoir sample as above
-2. Take media sample: push probe 5–8 cm into LECA in the centre of the table, in the root zone (not at the edge)
+2. Take media sample: push probe 2 in (5 cm) into LECA in the centre of the table, in the root zone (not at the edge)
 3. Alternatively, collect runoff from the table's drain port at the end of a flood cycle
 4. Compare reservoir EC vs media EC
-5. If media EC > reservoir EC by more than 1.0 mS/cm, flush is overdue
+5. Flush at **+0.5 mS/cm**. Treat **+1.0 mS/cm** as urgent — flush the same day
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -179,7 +179,7 @@ pH drift is a feature of all recirculating hydroponic systems, but the direction
 
 ### Buffering Behaviour
 
-In NFT, the full reservoir volume acts as the buffer. An 80 L reservoir with 15 L plant-accessible root zone means that a plant-induced pH shift is diluted across the full 80 L. Corrections apply immediately to the full system.
+In NFT, each reservoir is the buffer for its own loop. The greens tank is **20 US gal (76 L)**; the fruiting tank is **10 US gal (38 L)**. A plant-driven pH shift in one loop does not dilute into the other. Correct the tank that drifted.
 
 In E&F, roughly 15–20% of total solution volume is retained in the media at any time. When you correct the reservoir pH, the media retains its old pH. The full correction only propagates through the entire system after 2–3 flood cycles. This means:
 
@@ -266,10 +266,11 @@ This is one of the genuine operational simplicity advantages of NFT over E&F.
 
 | System | Typical reservoir volume | Recommended full change frequency |
 |---|---|---|
-| NFT (3-zone system) | 100–150 L | Every 3–4 weeks, or when EC/pH become unmanageable |
-| E&F (3-zone system) | 150–200 L | Every 2–3 weeks, or after any media flush |
+| NFT greens tank | 20 US gal (76 L) | Every 7 days |
+| NFT fruiting tank (CH4) | 10 US gal (38 L) | Every 5–7 days |
+| Ebb and Flow | 45 US gal (170 L) recommended | Every 10–14 days, or after any media flush |
 
-E&F requires a larger reservoir because solution is stored both in the reservoir and in the media (up to 15–20% of total volume is always in the LECA). The larger reservoir volume also helps buffer the media EC fluctuations described above.
+E&F uses a larger reservoir because solution is stored both in the reservoir and in the media (up to 15–20% of total volume is always in the LECA). The larger volume also helps buffer the media EC fluctuations described above.
 
 The shorter change interval for E&F exists because:
 1. Salt accumulation in media accelerates solution degradation faster
@@ -308,6 +309,10 @@ Old nutrient solution is a mild fertiliser. Options:
 
 
 ## 6. Nutrient Recipes: Are They Interchangeable?
+
+### PPE and Storage
+
+Wear **gloves**, **eye protection**, and a **dust mask** when handling dry salts, phosphoric acid (pH Down), or potassium hydroxide (pH Up). Store nutrient concentrates, acids, and pesticides in a **latched box**, away from children and pets. A garden that is good for children still locks the chemicals.
 
 ### Masterblend in Both Systems
 
@@ -429,7 +434,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | EC too low in reservoir | Add concentrated nutrient mix | Same; media will also be low — do not over-correct |
 | pH too high (>6.5) | Add pH down directly to reservoir | Add pH down to reservoir; wait 3 flood cycles to equilibrate |
 | pH too low (<5.5) | Add pH up directly to reservoir | Add pH up to reservoir; wait 3 flood cycles |
-| Media EC >1.0 mS/cm above reservoir (E&F only) | N/A | Run monthly flush protocol immediately |
+| Media EC ≥0.5 mS/cm above reservoir (E&F only) | N/A | Flush. At +1.0 mS/cm, flush the same day |
 | Blossom end rot on fruit | Rare — check pH and calcium | Increase flood frequency; check media EC; increase calcium nitrate |
 | Iron chlorosis on young leaves | Check pH (is it above 6.5?) | Check reservoir pH and media pH (media pH may differ from reservoir) |
 | Salt crust on media surface (E&F only) | N/A | Flush is overdue; run monthly flush protocol |

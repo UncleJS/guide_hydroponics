@@ -54,7 +54,7 @@ A widely used brand of hydroponic nutrients. Their Flora Series (3-part liquid) 
 A primary macronutrient (the "K" in NPK). Essential for water regulation, enzyme activation, and fruit quality. Deficiency shows as brown leaf edges (scorching), especially in fruiting crops.
 
 **Media EC vs Reservoir EC**
-Two distinct EC readings in media-based systems like Ebb & Flow. *Reservoir EC* is what your meter reads in the reservoir; *media EC* is the effective concentration in the root zone, which drifts higher as salts accumulate in the LECA between floods. Compare drain-water EC against reservoir EC to detect accumulation — see Guide 02 (E&F) and Compare 01.
+Two distinct EC readings in media-based systems like Ebb & Flow. *Reservoir EC* is what your meter reads in the reservoir; *media EC* is the effective concentration in the root zone, which drifts higher as salts accumulate in the LECA between floods. Compare drain-water EC against reservoir EC to detect accumulation — see [Guide 02 — Nutrients (E&F)](ebb-and-flow/02-nutrient-solution.md) and [Compare 01 — Nutrients](compare/01-nutrients.md).
 
 **Mg — Magnesium**
 A secondary macronutrient and the central atom in chlorophyll. Deficiency shows as yellowing between the veins (interveinal chlorosis) on older leaves first, often confused with iron deficiency.
@@ -115,7 +115,7 @@ Channel-level flow. Target NFT flow is 0.26–0.53 US gpm (1–2 L/min) per chan
 The unit for DLI (Daily Light Integral). One mole equals approximately 6 × 10²³ photons. A DLI of 12–17 mol/m²/day is typical for leafy crops.
 
 **mS/cm — Millisiemens per Centimetre**
-The standard unit for measuring EC (electrical conductivity) in hydroponic solutions. A typical leafy green target is 1.0–2.0 mS/cm; fruiting crops often target 2.0–3.5 mS/cm.
+The standard unit for measuring EC (electrical conductivity) in hydroponic solutions. NFT greens target **0.8–1.8 mS/cm**; fruiting crops often target 2.0–3.5 mS/cm (tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0).
 
 **μmol/m²/s — Micromoles per Square Metre per Second**
 The unit for PPFD (Photosynthetic Photon Flux Density) — the number of photons hitting a surface per second. A sunny midsummer day delivers around 1,800–2,000 μmol/m²/s at noon.
@@ -218,7 +218,7 @@ A circuit that converts a continuous analogue voltage signal (such as from a pH 
 A defined way for software systems to communicate with each other. In these guides: the Google Sheets API can receive data pushed from an ESP32 over WiFi, enabling cloud-based data logging without a dedicated server.
 
 **Drain Confirmation**
-An Ebb & Flow safety check that verifies each flood table has fully drained after a flood cycle, typically via a float switch mounted low on the table wall. If a table is still holding water 45 minutes after pump-off, the drain is blocked — an alert fires and the next flood cycle is paused. The #1 E&F-specific sensor; see Guide 13 (E&F) and Compare 03.
+An Ebb & Flow safety check that verifies each flood table has fully drained after a flood cycle, typically via a float switch mounted low on the table wall. If a table is still holding water 45 minutes after pump-off, the drain is blocked — an alert fires and the next flood cycle is paused. The #1 E&F-specific sensor; see [Guide 13 — Automation (E&F)](ebb-and-flow/13-automation.md) and [Compare 03 — Automation](compare/03-automation.md).
 
 **ESP32 / ESP8266**
 Low-cost microcontroller boards with built-in WiFi (and Bluetooth on the ESP32) made by Espressif. The primary recommended automation platform in this guide. The ESP32 is the more capable successor with more GPIO pins, faster processor, and built-in Bluetooth.
@@ -286,7 +286,7 @@ Building or assembling something without professional help. Prices in this guide
 A simple text file format for storing tabular data (rows and columns separated by commas). Used in automation logging — sensor readings can be saved or exported as a CSV file for analysis in a spreadsheet.
 
 **Pythium**
-A water-mould that causes root rot. Infected roots turn brown, slimy, and smell sour. Risk rises when solution stays above 77°F (25°C), oxygen is low, or an Ebb and Flow table never drains. Keep solution at 64–72°F (18–22°C), run NFT pumps 24 hours a day, and fit a drain-confirmation cutoff on Ebb and Flow. See Guide 07 in both tracks.
+A water-mould that causes root rot. Infected roots turn brown, slimy, and smell sour. Risk rises when solution stays above 77°F (25°C), oxygen is low, or an Ebb and Flow table never drains. Keep solution at 64–72°F (18–22°C), run NFT pumps 24 hours a day, and fit a drain-confirmation cutoff on Ebb and Flow. See [Guide 07 — Pests and Disease (NFT)](nft/07-pests-and-disease.md) and [Guide 07 — Pests and Disease (E&F)](ebb-and-flow/07-pests-and-disease.md).
 
 **ROI — Return on Investment**
 A measure of the financial return relative to the cost of a project. In the context of these guides: how long it takes for the value of harvested produce to equal the cost of building and running the system.

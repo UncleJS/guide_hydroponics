@@ -223,14 +223,14 @@ Features:
 GOVEE SENSOR PLACEMENT
 
 Location 1 — Air temperature (ambient):
-  Mount on the frame shaded side, at plant height (~90cm)
+  Mount on the frame shaded side, at plant height (~36 in / 90 cm)
   NOT in direct sun (reads artificially high)
   NOT against reservoir (reads warm)
 
 Location 2 — Near reservoir (optional second unit):
   Mount on the reservoir shade box exterior
   Captures reservoir ambient temperature
-  Alert if box temp exceeds 30°C → reservoir is likely above 24°C
+  Alert if box temp exceeds 86°F (30°C) → reservoir is likely above 77°F (25°C)
 
 For reservoir WATER temperature:
   Use a waterproof Govee probe sensor (H5179 model)
@@ -381,6 +381,8 @@ Float switch    →  GPIO 25 (or any digital GPIO)
                    + 10kΩ pull-up to 3.3V
 GND             →  GND
 ```
+
+> **One YAML sample = one loop.** Duplicate the float switch, flow sensor, and pump-current blocks for the fruiting loop (CH4). The greens return and the fruiting return are separate. Do not treat one sensor as proof that both pumps are moving water.
 
 **ESPHome YAML — float switch in return tank:**
 
@@ -911,7 +913,8 @@ flowchart TD
         OW33["3.3V"] -->|"4.7 kΩ"| OWDATA["DATA → GPIO 4"]
         OWDATA --- P1["DS18B20 probe<br/>(solution)"]
         OWDATA --- P2["DS18B20<br/>(air)"]
-        P1 & P2 --> OWGND["GND"]
+        P1 --> OWGND["GND"]
+        P2 --> OWGND
     end
 ```
 
@@ -1286,8 +1289,8 @@ Duration: 3 minutes
 Action required: Check pump immediately
 
 🟡 HEAT WARNING
-Solution temp: 25.2°C (threshold: 24°C)
-Air temp: 31.4°C
+Solution temp: 77.4°F / 25.2°C (threshold: 77°F / 25°C)
+Air temp: 88.5°F / 31.4°C
 Recommendation: Deploy shade cloth, add ice bottles
 
 🟢 DAILY SUMMARY — Feb 28
@@ -1314,11 +1317,11 @@ Data is only valuable if you use it. Here's how to read your logs and dashboards
 ```
 WHAT TO LOOK FOR IN TEMPERATURE CHARTS
 
-Pattern: Solution temp peaks at 2–3 PM daily, reaching 24°C+
+Pattern: Solution temp peaks at 2–3 PM daily, reaching 77°F (25°C)+
 Meaning: Reservoir is receiving direct afternoon sun
 Action:  Install shade structure or move reservoir to north side of frame
 
-Pattern: Solution temp drops sharply overnight (20°C → 12°C)
+Pattern: Solution temp drops sharply overnight (68°F / 20°C → 54°F / 12°C)
 Meaning: Large diurnal swing — reservoir is poorly insulated
 Action:  Insulate reservoir walls and lid; consider burying reservoir
 
@@ -1394,7 +1397,7 @@ EXAMPLE CORRELATION: Reservoir temp vs. pH drift rate
 If your data shows:
   Day 1: avg solution temp 18°C → pH changed +0.05
   Day 2: avg solution temp 20°C → pH changed +0.08
-  Day 3: avg solution temp 24°C → pH changed +0.18
+  Day 3: avg solution temp 75°F (24°C) → pH changed +0.18
   Day 4: avg solution temp 26°C → pH changed +0.31
 
 Conclusion: Every 2°C rise in solution temp roughly doubles pH drift rate.
@@ -1507,7 +1510,7 @@ The ESP32 and its wiring must be protected from rain, splash, and UV degradation
 
 ```mermaid
 flowchart TD
-    subgraph box["IP65 Junction Box — 150 mm × 100 mm × 70 mm"]
+    subgraph box["IP65 Junction Box — 6 in × 4 in × 2¾ in (150 mm × 100 mm × 70 mm)"]
         ESP["ESP32 DevKit<br/>mounted on standoffs or adhesive"]
         CG["Cable glands on BOTTOM face<br/>(water drains away, never pools at entry)<br/>─────────────────────────<br/>• USB power cable in<br/>• Sensor cables out: DS18B20, DHT22, etc.<br/>• Relay cables out (Tier 4)"]
         SG["Silica gel packet<br/>(absorbs residual moisture)"]

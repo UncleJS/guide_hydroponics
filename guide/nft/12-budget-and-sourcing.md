@@ -257,8 +257,7 @@ Lock the dry salts, the acid, and the hydroxide in a latched box, away from chil
 |---|---|---|---|
 | **Trays, 10 in × 20 in (25 cm × 50 cm), pack of 10 (you use 6)** | $8 (R144) | $12 (R216) | $15 (R270) |
 | **Solid liners, pack of 10** | $6 (R108) | $8 (R144) | $10 (R180) |
-| **Coco coir bricks, 3 × 500 g. Depth in the tray is 1–1¼ in (2.5–3 cm).** | $8 (R144) | $10 (R180) | $12 (R216) |
-| **Perlite, about 1.3 US gal (5 L)** | $5 (R90) | $6 (R108) | $8 (R144) |
+| **Coco coir bricks, 3 × 500 g. Depth in the tray is 1–1¼ in (2.5–3 cm). Zone B is coco only — no perlite.** | $13 (R234) | $16 (R288) | $20 (R360) |
 | **Shelf, 24 in × 20 in (61 cm × 51 cm), two tiers, about 36 in (91 cm) tall** | $15 (R270) secondhand | $25 (R450) new wire | $40 (R720) coated rack |
 | **LED panel, 50–100 W** | $20 (R360) | $40 (R720) | $65 (R1,170) |
 | **Indoor timer for the LED only, 16 h on / 8 h off** | $8 (R144) | $10 (R180) | $12 (R216) |
@@ -280,8 +279,8 @@ Standard trays get pH-adjusted water only, pH 5.8–6.2. No nutrients. Sunflower
 |---|---|---|---|
 | **Bags: two 5 US gal (19 L) radish, one 5 US gal beetroot, three 10 US gal (38 L) carrot** | $8 (R144) | $14 (R252) | $22 (R396) |
 | **Coco coir, 60% of the mix** | $12 (R216) | $15 (R270) | $18 (R324) |
-| **Perlite, 30%** | $10 (R180) | $12 (R216) | $15 (R270) |
-| **Vermiculite, 10%** | $6 (R108) | $8 (R144) | $10 (R180) |
+| **Perlite, 30% — about 13.5 US gal (51 L) for full bags** | $10 (R180) | $12 (R216) | $15 (R270) |
+| **Vermiculite, 10% — about 4.5 US gal (17 L) for full bags** | $6 (R108) | $8 (R144) | $10 (R180) |
 | **Fertiliser. Fertigation EC ceiling is 2.0 mS/cm, including beetroot.** | $8 (R144) | $12 (R216) | $15 (R270) |
 | **Drip saucers, six** | $5 (R90) | $8 (R144) | $12 (R216) |
 | **Seed: radish, beetroot, carrot** | $8 (R144) | $12 (R216) | $18 (R324) |

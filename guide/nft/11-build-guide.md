@@ -534,7 +534,9 @@ flowchart TD
     MAN -->|"1/2 in"| CH1["CH1 inlet"]
     MAN -->|"1/2 in"| CH2["CH2 inlet"]
     MAN -->|"1/2 in"| CH3["CH3 inlet"]
-    CH1 & CH2 & CH3 -->|"3/4–1 in return"| GRET["back to greens tank"]
+    CH1 -->|"3/4–1 in return"| GRET["back to greens tank"]
+    CH2 --> GRET
+    CH3 --> GRET
     FP["Fruiting pump<br/>50–100 US gph, about 8 W<br/>inside 10 US gal tank"]
     FP -->|"own 1/2 in line"| CH4["CH4 inlet"]
     CH4 -->|"own 3/4–1 in return"| FRET["back to fruiting tank"]
@@ -1019,7 +1021,7 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 
 **What happens:** Water rushes through the channel too fast, the film is too deep, air gaps are washed away, roots are submerged rather than misted. Nutrient uptake decreases; root rot risk increases.
 
-**Prevention:** Aim for 1–2 L/min per channel. Measure this at commissioning with a timer and a 1 L container. Adjust manifold valves down until flow is correct. Open the valve slowly — a little goes a long way.
+**Prevention:** Aim for **0.26–0.53 US gpm (1–2 L/min)** per greens channel. Measure at commissioning with a timer and a 1 US qt (about 1 L) container. Adjust manifold valves until flow is correct. Open the valve slowly — a little goes a long way.
 
 ### Mistake 3 — Light leaks into reservoir
 
@@ -1079,23 +1081,26 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 Use this as a final sign-off before moving to nutrient operation.
 
 ```
-ZONE A — NFT SYSTEM
-□ Site selected; orientation confirmed
-□ Frame built; slope verified (1:30 minimum)
-□ All 4 channels cut, deburred, and net pot holes drilled
+ZONE A — NFT SYSTEM (TWO LOOPS)
+□ Site selected; long axis faces south (SA: north)
+□ Frame built; slope verified (3¼ in / 83 mm drop over 8 ft)
+□ All 4 channels cut, deburred, and net pot holes drilled (11 + 11 + 11 + 7)
 □ Inlet fittings and end caps fitted; silicone cured
 □ Drain fittings and end caps fitted; silicone cured
-□ Reservoir prepared: opaque, lid sealed, fill marks drawn
-□ Pump installed in reservoir
-□ Supply manifold built and mounted
+□ Greens reservoir prepared: 20 US gal (76 L), black body, white exterior, lid, fill marks
+□ Fruiting reservoir prepared: 10 US gal (38 L), black body, white exterior, lid, fill marks
+□ Greens pump installed in the 20 US gal tank (160–210 US gph)
+□ Fruiting pump installed in the 10 US gal tank (50–100 US gph)
+□ Greens manifold (1 in) built for CH1–CH3 only — CH4 not teed in
+□ CH4 has its own ½ in supply from the fruiting pump
 □ Supply tubes connected; secured with hose clips
-□ Drain header assembled; slope verified
+□ Two return lines assembled; each loop drains to its own tank; slope verified
 □ All joints inspected; no dry-fitting — all sealed
-□ Water test completed (Step 7); no leaks after 30 min
+□ Water test completed on both loops; no leaks after 30 min
 □ EC and pH meters calibrated
 □ Plugs in a weatherproof box on a GFCI (SA: 30 mA earth-leakage). Both water pumps run 24 hours. No pump cycle timer.
-□ Air pump feeding both tanks
-□ First nutrient batch mixed; EC and pH confirmed
+□ Air stones in both tanks
+□ First greens-tank and first fruiting-tank nutrient batches mixed; EC and pH confirmed for each
 
 ZONE B — MICROGREENS STATION
 □ Shelving unit in place

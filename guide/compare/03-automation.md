@@ -84,7 +84,7 @@ In E&F, the pump runs on a timer. The failure modes, ranked by severity:
 |---|---|---|---|
 | Critical | Timer stuck ON (pump runs continuously) | 2–4 hours root rot | Float switch in table (drain confirmation) |
 | Critical | Flood not draining (blockage at drain port) | 2–4 hours root rot | Float switch in table (drain confirmation) |
-| High | Timer stuck OFF (pump never runs) | 6–12 hours (summer) | Flood cycle counter (expected flood not detected) |
+| High | Timer stuck OFF (pump never runs) | 8–24 hours (moist LECA buffer) | Flood cycle counter (expected flood not detected) |
 | High | Reservoir runs dry | 1–2 floods skipped | Float switch in reservoir |
 | High | pH drift outside 5.5–6.5 | 24–48 hours | pH probe in reservoir |
 | High | EC spike in media | Days to weeks | Media EC measurement |
@@ -124,8 +124,8 @@ The following sensors are high-value in both NFT and E&F.
 **Water / solution temperature:**
 - Sensor: DS18B20 waterproof probe
 - Location: submerged in reservoir
-- Target: 18–22°C
-- Alert: above 26°C (dissolved oxygen drops, Pythium risk rises); below 12°C (nutrient uptake slows severely)
+- Target: 64–72°F (18–22°C)
+- Alert: above 77°F (25°C) (dissolved oxygen drops, Pythium risk rises); below 54°F (12°C) (nutrient uptake slows severely)
 
 ### EC and pH
 
@@ -229,7 +229,7 @@ After every flood cycle, the table must drain completely. If the drain port is b
 
 **Installation:**
 1. Choose a float switch rated for the solution temperature range (most plastic float switches work to 40°C — fine for outdoor use)
-2. Mount on the inside wall of the flood table, at a height of 3–4 cm above the table floor — below the flood waterline but above any residual puddle; keep a small pocket in the LECA clear so the float moves freely
+2. Mount on the inside wall of the flood table, about 1¼–1½ in (3–4 cm) above the table floor — below the flood waterline but above any residual puddle; keep a small pocket in the LECA clear so the float moves freely
 3. Wire as normally-open: when the table is dry, the switch is open; when flooded, the float rises and closes the circuit
 
 **Logic:**
@@ -250,7 +250,7 @@ Expected state at T minutes after pump-OFF:
 
 Ebb and Flow uses a digital timer with 1-minute steps, in a weatherproof box. A mechanical timer is not the outdoor default. Timer failures:
 - **Stuck ON**: pump runs continuously → table permanently flooded → root rot
-- **Stuck OFF**: pump never runs → plants dehydrate → wilting and death within hours in summer
+- **Stuck OFF**: pump never runs → plants dehydrate. Moist LECA still buffers **8–24 hours**; wilt in under 2 hours is not the normal case
 
 **Detection using the drain confirmation float switch:**
 
@@ -430,16 +430,16 @@ Relay module NO/COM contacts in series with pump mains live wire
 graph TD
   subgraph ESP32["ESP32 (single board)"]
     G1[GPIO 4<br/>NFT return float switch]
-    G2[GPIO 5<br/>E&F table float switch]
+    G2[GPIO 5<br/>Ebb and Flow table float switch]
     G3[GPIO 18<br/>Reservoir float switch]
-    G4[GPIO 19<br/>Relay OUT - E&F pump cutoff]
+    G4[GPIO 19<br/>Relay OUT - Ebb and Flow pump cutoff]
     G5[I2C SDA/SCL<br/>SHT31 + Atlas EZO]
     G6[GPIO 22<br/>DS18B20 one-wire]
   end
   G1 -->|digital input<br/>pull-up| F1[NFT return tank<br/>float switch]
-  G2 -->|digital input<br/>pull-up| F2[E&F table<br/>float switch]
+  G2 -->|digital input<br/>pull-up| F2[Ebb and Flow table<br/>float switch]
   G3 -->|digital input<br/>pull-up| F3[Reservoir<br/>float switch]
-  G4 -->|signal| R1[Relay module<br/>mains contacts in series<br/>with E&F pump]
+  G4 -->|signal| R1[Relay module<br/>mains contacts in series<br/>with Ebb and Flow pump]
   G5 -->|I2C bus| S1[SHT31<br/>temp/humidity]
   G5 -->|I2C bus| S2[Atlas EZO-pH<br/>+ probe]
   G5 -->|I2C bus| S3[Atlas EZO-EC<br/>+ probe]
@@ -459,8 +459,8 @@ graph TD
 |---|---|---|
 | Pump failure | Return tank float LOW for >10 min during pump-on hours | Alert: Critical |
 | Reservoir low | Reservoir float LOW | Alert: High — top up required |
-| Water temperature high | DS18B20 > 26°C | Alert: High |
-| Water temperature low | DS18B20 < 12°C | Alert: Medium — nutrient uptake slowing |
+| Water temperature high | DS18B20 > 77°F (25°C) | Alert: High |
+| Water temperature low | DS18B20 < 54°F (12°C) | Alert: Medium — nutrient uptake slowing |
 | Air temperature high | SHT31 > 32°C | Alert: High |
 | Air temperature low | SHT31 < 3°C | Alert: Critical — frost risk |
 | pH high | EZO-pH > 6.8 | Alert: High |
@@ -535,17 +535,17 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 
 ```mermaid
 graph TD
-  A[Starting automation for<br/>NFT, E&F, or both?] --> B{Budget?}
+  A[Starting automation for<br/>NFT, Ebb and Flow, or both?] --> B{Budget?}
   B -->|Under $40| C[Budget Tier<br/>WiFi temp/humidity<br/>+ 1 critical float switch]
   B -->|$80-150| D[Mid Tier<br/>Full monitoring<br/>pH + EC + all float switches]
   B -->|$200+| E[Full Tier<br/>Closed-loop dosing<br/>+ automated safety cutoffs]
   C --> F{Which system?}
   F -->|NFT| G[Add float switch<br/>in return tank<br/>Pump failure alert]
-  F -->|E&F| H[Add float switch<br/>in flood table<br/>Drain confirmation alert]
+  F -->|Ebb and Flow| H[Add float switch<br/>in flood table<br/>Drain confirmation alert]
   F -->|Both| I[Add both float switches<br/>Each on separate GPIO<br/>on same ESP32]
   D --> J[Install Atlas EZO probes<br/>+ all float switches<br/>Home Assistant dashboard]
-  E --> K[Add peristaltic dosing pumps<br/>pH auto-correction<br/>E&F pump relay cutoff]
-  K --> L{E&F pump cutoff?}
+  E --> K[Add peristaltic dosing pumps<br/>pH auto-correction<br/>Ebb and Flow pump relay cutoff]
+  K --> L{Ebb and Flow pump cutoff?}
   L -->|Yes| M[Relay wired fail-safe<br/>Normally-open contact<br/>ESP32 de-energise on crash]
   L -->|No - alerts only| N[Stick with alert-only<br/>respond manually]
 ```

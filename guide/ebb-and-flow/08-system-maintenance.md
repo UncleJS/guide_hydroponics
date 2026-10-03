@@ -176,7 +176,8 @@ Accurate EC and pH measurement is critical at least every 2–3 days. In an E&F 
   8. Compare to targets for your current crop mix:
      - Lettuce/leafy greens: EC 1.0–1.6 mS/cm, pH 5.8–6.2
      - Herbs: EC 1.0–1.6 mS/cm, pH 5.8–6.2
-     - Tomatoes/peppers: EC 2.0–3.5 mS/cm, pH 5.8–6.3
+     - Tomatoes (fruiting): EC 2.5–3.5 mS/cm, pH 5.8–6.2
+     - Peppers (fruiting): EC 2.0–3.0 mS/cm, pH 5.8–6.2
      - Strawberries: EC 1.2–1.8 mS/cm, pH 5.8–6.2
   9. Adjust as needed (see below)
   10. Rinse and dry meters; store pH meter in KCl storage solution

@@ -297,6 +297,11 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 
 This is the most cost-effective nutrient system available. Used by professional growers worldwide.
 
+**PPE and storage (required):**
+- Gloves, eye protection, and a dust mask when you handle dry salts, phosphoric acid (pH Down), or potassium hydroxide (pH Up).
+- Weigh and mix outdoors or in a ventilated spot. Do not breathe the dust.
+- Keep nutrient concentrates, acids, and pesticides in a **latched box**, out of the sun, away from children and pets. A garden that is good for children still locks the chemicals.
+
 ### Components
 
 | Component | Chemical | Analysis |
@@ -320,16 +325,21 @@ Write the dose as **2.4 g/US gal (0.63 g/L)** for Masterblend and for calcium ni
 ```
   MIXING ORDER (critical — always in this sequence):
 
-  Step 1: Fill the reservoir with 50% of the target water volume
+  Mix one tank at a time. Name the tank before you start:
+  greens = 20 US gal (76 L), fruiting = 10 US gal (38 L).
+
+  Step 1: Fill that reservoir with 50% of its target water volume
   Step 2: Add calcium nitrate, stir until dissolved
   Step 3: Add the remaining water (dilute calcium before sulphate and phosphate)
   Step 4: Add Epsom salt, stir until dissolved
   Step 5: Add Masterblend, stir until dissolved
   Step 6: Adjust pH to 5.8–6.2
-  Step 7: Measure EC — the vegetative base should read about 1.4–1.6 mS/cm
+  Step 7: Measure EC — vegetative base about 1.4–1.6 mS/cm on either tank;
+           fruiting targets (2.0–3.5) apply only to the CH4 tank
 
   NEVER mix calcium nitrate and Masterblend as dry salts in the same
   cup. They precipitate. Dissolve each in water, in the order above.
+  NEVER pour a greens mix into the fruiting tank, or the reverse.
 ```
 
 ### Masterblend Dose Scaling
