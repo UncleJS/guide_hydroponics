@@ -37,7 +37,7 @@ A **medium-scale outdoor Nutrient Film Technique (NFT)** system for an inland mi
 |------|--------|-------|
 | **Zone A — NFT Channels** | Two continuous thin-film loops | Lettuce, spinach, kale, basil, cilantro, mint, chives, parsley, strawberries on the greens loop; cherry tomatoes and peppers on their own loop |
 | **Zone B — Microgreens Station** | Tray-based, coco coir media, manual misting | Sunflower, pea shoots, radish, broccoli, amaranth, wheatgrass |
-| **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beetroot |
+| **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beet (beetroot) |
 
 This hybrid approach delivers crop diversity within one outdoor footprint while respecting the biological constraints of each crop type. Zone A is two loops that never share solution: greens (CH1–CH3) and fruiting (CH4).
 
@@ -101,12 +101,12 @@ Both pumps run **24 hours a day**. There is no overnight off, and no 15 minutes 
 
 | Property | Value |
 |----------|-------|
-| Bags | 6 bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beetroot, three 10 US gal (38 L) carrot |
+| Bags | 6 bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beet (beetroot), three 10 US gal (38 L) carrot |
 | Media | 60% coco coir + 30% perlite + 10% vermiculite. No garden soil |
 | Watering | Manual fertigation, 1–2× daily |
-| EC ceiling | 2.0 mS/cm. Beetroot does not get a higher target |
+| EC ceiling | 2.0 mS/cm. Beet (beetroot) does not get a higher target |
 | Drainage | Bags on a slatted rack or gravel tray |
-| Planning yield, one season | Radish 15 lb (6.8 kg), beetroot 8 lb (3.6 kg), carrot 20 lb (9.1 kg) |
+| Planning yield, one season | Radish 15 lb (6.8 kg), beet (beetroot) 8 lb (3.6 kg), carrot 20 lb (9.1 kg) |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -196,7 +196,7 @@ Costs for this list are in [Guide 12 — Budget and Sourcing](12-budget-and-sour
 | 3 in (76 mm) net pots | 10 | CH4 (7 holes plus spares) |
 | Clay pebbles / LECA | 2.6 US gal (10 L) | Net pot fill |
 | Rockwool starter cubes | 50 | Germination |
-| Grow bags, 5 US gal (19 L) | 3 | Zone C: two radish, one beetroot |
+| Grow bags, 5 US gal (19 L) | 3 | Zone C: two radish, one beet (beetroot) |
 | Grow bags, 10 US gal (38 L) | 3 | Zone C: carrots |
 | Coco coir | About 30 US gal (114 L) loose, or bricks to match | Zones B and C. Zone B depth is 1–1¼ in (2.5–3 cm). Zone C alone needs about 27 US gal (102 L) at 60% of bag volume |
 | Perlite | About 13.5 US gal (51 L) | Zone C only, 30% of the bag mix |
@@ -229,12 +229,12 @@ Worked climate: inland mid-USA, about 38°N, USDA 6b–7a. The month in brackets
 | **April (SA: October)** | Last spring frost about April 15 (SA: October 15). Transplant greens and herbs after that date | Lettuce, spinach, basil, cilantro |
 | **April–May (SA: October–November)** | Start tomatoes under shelter and move CH4 out after frost risk passes | Cherry tomatoes, peppers |
 | **May (SA: November)** | Full system operational | All greens, herbs, strawberries on CH3 |
-| **June (SA: December)** | Succession planting. Summer highs 90–100°F (32–38°C). Deploy 40% shade when highs hold above 85°F (29°C) | Radishes, carrots, beetroot in grow bags |
+| **June (SA: December)** | Succession planting. Summer highs 90–100°F (32–38°C). Deploy 40% shade when highs hold above 85°F (29°C) | Radishes, carrots, beet (beetroot) in grow bags |
 | **July (SA: January)** | Peak production and heat management | Heat-tolerant varieties; watch for bolting |
 | **August (SA: February)** | Continue harvests; watch for late-season bolting | Late summer succession |
 | **September (SA: March)** | Shoulder season. Remove shade as highs fall. Harvest root veg as it matures | Root vegetable harvest |
 | **October (SA: April)** | First fall frost about October 20 (SA: April 20). Final tomato and pepper harvest by mid-October (SA: mid-April) | — |
-| **November (SA: May)** | System winterisation, deep clean, storage | — |
+| **November (SA: May)** | System winterization, deep clean, storage | — |
 | **December (SA: June)** | Outdoor NFT stays off. Plan next year | — |
 
 **Key dates to track:**
@@ -251,7 +251,7 @@ Worked climate: inland mid-USA, about 38°N, USDA 6b–7a. The month in brackets
 ## 4-Week Build Timeline
 
 ### Week 1 — Procurement & Preparation
-- [ ] Finalise the bill of materials (see [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md))
+- [ ] Finalize the bill of materials (see [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md))
 - [ ] Order or purchase all components
 - [ ] Select and prepare the 13 ft × 10 ft (4.0 m × 3.0 m) site (clear, level, measure). Long axis faces south (SA: north)
 - [ ] Source timber for the frame: high-end posts 36 in (91 cm), low-end posts 32¾ in (83 cm)
@@ -316,7 +316,7 @@ By the end of the first growing season (mid-April through mid-October; SA: mid-O
 2. Continuous fresh herb supply (cut-and-come-again from CH2)
 3. **4–6 lb (1.8–2.7 kg) of cherry tomatoes per CH4 plant**
 4. **3–4 full microgreens tray harvests** per month from Zone B
-5. At least **one successful root vegetable crop** from Zone C (planning yields for a full set of bags: radish 15 lb / 6.8 kg, beetroot 8 lb / 3.6 kg, carrot 20 lb / 9.1 kg)
+5. At least **one successful root vegetable crop** from Zone C (planning yields for a full set of bags: radish 15 lb / 6.8 kg, beet (beetroot) 8 lb / 3.6 kg, carrot 20 lb / 9.1 kg)
 6. pH inside 5.5–6.5, with the working window 5.8–6.2, and EC inside the crop target for that tank, on **80%+ of operational days**
 7. Zero catastrophic pump failures as a result of preparation and monitoring
 

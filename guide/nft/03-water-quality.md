@@ -55,8 +55,8 @@ Reservoir volumes, temperatures, and prices follow [Design Constants](../design-
 - [13. Full Water Change Protocol](#13-full-water-change-protocol)
   - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Starting Water Quality Matters
 
@@ -69,10 +69,11 @@ In hydroponics, water is the delivery vehicle for every nutrient your plants wil
 
 **First step before mixing any nutrients:** Test your source water's EC and pH. This tells you your baseline and informs how much you need to adjust.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. TDS (Total Dissolved Solids) and EC Baseline
 
@@ -119,10 +120,11 @@ Most municipal water suppliers publish annual water quality reports online. Look
 - **pH** — your starting point
 - **Iron, manganese, copper** — can cause problems at high levels
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tap Water: Chlorine, Chloramine, and Hardness
 
@@ -132,7 +134,7 @@ Most municipal water suppliers publish annual water quality reports online. Look
 |----------|---------------|-------------------|
 | **Used by** | Older water systems, smaller utilities | Most modern municipal systems |
 | **Removal method** | Leave water to stand 24h, or use activated carbon | **CANNOT be removed by standing** |
-| **How to remove** | Aeration, activated carbon, UV | Vitamin C (ascorbic acid), sodium thiosulphate, activated carbon |
+| **How to remove** | Aeration, activated carbon, UV | Vitamin C (ascorbic acid), sodium thiosulfate, activated carbon |
 | **Harm to plants** | Damages roots and beneficial microbes above ~2mg/L | Same, but persists longer |
 | **Detection** | Smell dissipates after standing | No smell change after standing |
 
@@ -146,11 +148,11 @@ Most municipal water suppliers publish annual water quality reports online. Look
 ```
   METHOD 1 — Vitamin C (Ascorbic Acid):
   Add 1 gram of ascorbic acid per 10.6 US gal (40 L) of water.
-  Neutralises chloramine within minutes.
+  Neutralizes chloramine within minutes.
   Slightly lowers pH (small effect, adjust pH after).
   Buy food-grade vitamin C powder — very cheap.
 
-  METHOD 2 — Sodium Thiosulphate:
+  METHOD 2 — Sodium Thiosulfate:
   Standard photography/aquarium dechlorinator.
   Works in seconds.
   Very small dose — follow product instructions.
@@ -175,7 +177,7 @@ Hard water contains excess calcium and magnesium carbonate (bicarbonates). Probl
   If source water Ca is >100mg/L, reduce calcium nitrate dose by 20–30%
   and verify EC/Ca levels with a more detailed water test.
 
-  Strategy 2 — Acidify to neutralise bicarbonates:
+  Strategy 2 — Acidify to neutralize bicarbonates:
   Adding phosphoric acid (pH down) consumes bicarbonate as well as lowering pH.
   Hard water will simply require more pH-down per US gal (3.8 L) — this is normal.
 
@@ -187,10 +189,11 @@ Hard water contains excess calcium and magnesium carbonate (bicarbonates). Probl
   Most precise control but adds cost. See section 5.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Well Water Issues
 
@@ -201,16 +204,17 @@ If you use well water, test it thoroughly before use. Common problems:
 | **High iron (>0.3mg/L)** | Clogs pumps/fittings, causes iron toxicity, brown staining | Sediment filter + iron removal filter; or RO |
 | **High sulfur (rotten egg smell)** | Toxic to roots at high levels; affects pH | Activated carbon + aeration |
 | **High hardness (Ca+Mg)** | pH creep, scale, excess Ca/Mg | Softener or RO |
-| **Bacteria/E.coli** | Dangerous for edible crops | UV sterilisation or chlorination then dechlorination |
+| **Bacteria/E.coli** | Dangerous for edible crops | UV sterilization or chlorination then dechlorination |
 | **Low pH (acidic)** | Rare; corrosive | pH up to correct |
 | **Nitrates (from agriculture)** | Adds to nutrient load unpredictably | Test and adjust nutrient recipe |
 
 **Recommendation:** If using well water, buy a basic water test kit from a hardware store or send a sample to a lab before starting. This costs $15–$50 (R270–R900) and can save you a season of problems.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Reverse Osmosis (RO) — When It's Worth It
 
@@ -248,10 +252,11 @@ A countertop or under-sink RO unit with a storage tank of 2.6–5.3 US gal (10�
 - Add nutrients from scratch (EC starts at ~0.0)
 - No need to worry about baseline minerals interfering
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rainwater Harvesting
 
@@ -292,20 +297,21 @@ In the inland mid-USA worked climate, domestic rainwater collection is generally
 - If collected from a roof, filter through a fine mesh before use
 - Mix with tap water if you run low during dry periods
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. pH Testing Methods Compared
 
 ### pH Drops / Test Kits (Liquid)
 
 ```
-  HOW IT WORKS: Add indicator drops to a water sample; colour matches pH chart.
+  HOW IT WORKS: Add indicator drops to a water sample; color matches pH chart.
 
   Pros:  Cheap, $5–$10 (R90–R180), no calibration, no batteries, works forever
-  Cons:  Subjective colour matching, ±0.2–0.5 accuracy, only tests point samples
+  Cons:  Subjective color matching, ±0.2–0.5 accuracy, only tests point samples
 
   Best for: Backup verification, no electricity environments
 ```
@@ -313,11 +319,11 @@ In the inland mid-USA worked climate, domestic rainwater collection is generally
 ### pH Test Strips
 
 ```
-  HOW IT WORKS: Dip strip into solution; compare colour to chart.
+  HOW IT WORKS: Dip strip into solution; compare color to chart.
 
   Pros:  Cheap, $5–$15 (R90–R270) for 100 strips, no calibration
   Cons:  ±0.5–1.0 accuracy, affected by nutrients staining the strip
-         Especially inaccurate in nutrient solution (colour masking)
+         Especially inaccurate in nutrient solution (color masking)
 
   Best for: Emergency backup only. NOT recommended for regular use in hydroponics.
 ```
@@ -350,9 +356,9 @@ In the inland mid-USA worked climate, domestic rainwater collection is generally
 
   Steps:
   1. Remove electrode from storage cap, rinse with distilled water
-  2. Submerge in pH 7.0 buffer — wait for reading to stabilise — press CAL
+  2. Submerge in pH 7.0 buffer — wait for reading to stabilize — press CAL
   3. Rinse electrode with distilled water
-  4. Submerge in pH 4.0 buffer — wait for reading to stabilise — press CAL
+  4. Submerge in pH 4.0 buffer — wait for reading to stabilize — press CAL
   5. Rinse with distilled water before each measurement
   6. Store electrode in storage solution (KCl), never in distilled water
 
@@ -360,10 +366,11 @@ In the inland mid-USA worked climate, domestic rainwater collection is generally
   Replace electrode: every 12–18 months (or when calibration drifts >0.3 pH)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. EC Meters: Types, Calibration, and Use
 
@@ -374,7 +381,7 @@ In the inland mid-USA worked climate, domestic rainwater collection is generally
 | Basic pen meter (budget) | ±0.1 mS/cm | $10–$20 (R180–R360) | Good enough for home use; single-point calibration |
 | Mid-range digital | ±0.05 mS/cm | $20–$50 (R360–R900) | Better accuracy, temperature compensation |
 | Combination EC/pH | ±0.1 EC, ±0.05 pH | $30–$80 (R540–R1,440) | Convenient but compromises on both |
-| BlueLab Truncheon | ±0.1 mS/cm | $50+ (R900+) | No display, LED colour indicators — durable |
+| BlueLab Truncheon | ±0.1 mS/cm | $50+ (R900+) | No display, LED color indicators — durable |
 | Professional inline | ±0.02 mS/cm | $100+ (R1,800+) | Continuous monitoring, data logging |
 
 ### Calibration
@@ -386,7 +393,7 @@ EC meters use a calibration solution with a known conductivity (commonly 1.413 m
 
   1. Rinse probe with distilled water
   2. Submerge in calibration solution
-  3. Wait for reading to stabilise
+  3. Wait for reading to stabilize
   4. Adjust meter reading to match standard value
   5. Rinse probe with distilled water before use
 
@@ -397,10 +404,11 @@ EC meters use a calibration solution with a known conductivity (commonly 1.413 m
 
 EC readings change with temperature (warm water = higher EC reading for same concentration). Quality meters include **Automatic Temperature Compensation (ATC)**. Always check that your meter has ATC before buying.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. pH Up and pH Down — Safe Handling
 
@@ -463,10 +471,11 @@ Most commonly: **Potassium hydroxide (KOH)** — sold as pH Up or pH Plus
   COMMON MISTAKE: Adjusting before nutrients are mixed (nutrients change pH significantly).
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Water Temperature Management Outdoors
 
@@ -515,17 +524,18 @@ The aim is **64–72°F (18–22°C)** in both tanks.
   keep the solution at or below 77°F (25°C).
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Algae Prevention
 
 Algae is not directly harmful to plants but it:
 - Competes for nutrients
 - Clogs irrigation lines and filters
-- Can harbour pathogens
+- Can harbor pathogens
 - Creates biofilm that coats channels and roots
 - Depletes dissolved oxygen at night (algae respires without light)
 
@@ -546,7 +556,7 @@ Algae needs two things: **light** and **nutrients**. Your reservoir and channels
   If algae appears despite prevention:
   [ ] Do a full system clean and reservoir change
   [ ] Check for light leaks — seal all light entry points
-  [ ] Consider adding a UV steriliser to the return line (overkill for most home systems)
+  [ ] Consider adding a UV sterilizer to the return line (overkill for most home systems)
 ```
 
 ### Hydrogen Peroxide Treatment
@@ -578,10 +588,11 @@ If algae is already present:
   can keep flowing.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Reservoir Size Calculations
 
@@ -613,10 +624,11 @@ If algae is already present:
   volume. Tomato fruiting EC does not belong in the lettuce solution.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Full Water Change Protocol
 
@@ -663,9 +675,11 @@ If algae is already present:
 ---
 
 
+> **Previous:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
+
+
 [↑ Back to TOC](#table-of-contents)
 
-> **Previous:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
 > **Next:** [Guide 04 — Lighting](04-lighting.md)
 
 <!-- copyright -->

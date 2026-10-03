@@ -63,12 +63,12 @@
   - [Mistake 4 — Drain Too Slow (Drain Pipe Undersized or Running Flat)](#mistake-4-drain-too-slow-drain-pipe-undersized-or-running-flat)
   - [Mistake 5 — Reservoir Positioned at Same Height as Table Drain](#mistake-5-reservoir-positioned-at-same-height-as-table-drain)
   - [Mistake 6 — Skipping the Water Test](#mistake-6-skipping-the-water-test)
-  - [Mistake 7 — Using a Mechanical Timer Without Battery Backup](#mistake-7-using-a-mechanical-timer-without-battery-backup)
+  - [Mistake 7 — Using a Mechanical Timer Outdoors](#mistake-7-using-a-mechanical-timer-outdoors)
   - [Mistake 8 — LECA Not Pre-Rinsed and Pre-Soaked](#mistake-8-leca-not-pre-rinsed-and-pre-soaked)
 - [17. Build Checklist](#17-build-checklist)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. System Overview Recap
 
@@ -79,7 +79,7 @@ Before building, confirm the full three-zone system you are constructing:
 ```mermaid
 flowchart TB
     T1["FLOOD TABLE 1 — 4 ft x 2 ft<br/>One tomato or one cucumber<br/>Open LECA bed, 5 in deep<br/>1.5 in overflow and 1 in drain"]
-    T2["FLOOD TABLE 2 — 4 ft x 2 ft<br/>Pepper, aubergine, or courgette<br/>1 or 2 plants in open LECA<br/>1.5 in overflow and 1 in drain"]
+    T2["FLOOD TABLE 2 — 4 ft x 2 ft<br/>Pepper, eggplant (aubergine), or zucchini (courgette)<br/>1 or 2 plants in open LECA<br/>1.5 in overflow and 1 in drain"]
     T3["FLOOD TABLE 3 — 4 ft x 2 ft<br/>Lettuce, herbs, or pak choi<br/>Open LECA bed<br/>1.5 in overflow and 1 in drain"]
     RES["RESERVOIR — 45 US gal (170 L)<br/>Pump 250 US gph, about 35 W<br/>Sits below the drains"]
     TIMER["DIGITAL 1-MINUTE TIMER<br/>in a weatherproof box<br/>3 floods vegetative, 4 fruiting"]
@@ -108,7 +108,7 @@ flowchart LR
 
 **System specifications:**
 - 3 flood tables, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level. Long axis faces south (SA: north).
-- Table 1: one indeterminate tomato or one cucumber. Table 2: pepper, aubergine, or courgette, 1–2 plants. Table 3: lettuce, herbs, pak choi, or a later fruiting crop.
+- Table 1: one indeterminate tomato or one cucumber. Table 2: pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants. Table 3: lettuce, herbs, pak choi, or a later fruiting crop.
 - Media: LECA, 5 in (13 cm) deep. 25 US gal (95 L) per table. Buy 90 US gal (340 L) for the system so rinse loss is covered.
 - Flood level: about ¾ in (2 cm) below the LECA surface, set by the 1½ in (40 mm) overflow standpipe.
 - Drain: a separate 1 in (25 mm) bulkhead on each table. The pump fills through this line and, with no check valve, the table drains back down it when the pump stops.
@@ -120,10 +120,11 @@ flowchart LR
 
 Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Tools Required
 
@@ -159,10 +160,11 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 | Pipe cutters, ¾–1½ in (19–40 mm) | Clean cuts on supply and drain pipe |
 | Wheel (hand truck / trolley) | Moving the filled reservoir when maintenance required |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Safety and Prep Notes
 
@@ -174,17 +176,18 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
    - EPDM pond liner — ✅ (food safe grade)
    - PVC irrigation pipe — ✅
    - EPDM rubber gaskets/grommets — ✅
-   - Galvanised metal in contact with solution — ❌ (zinc toxicity)
+   - Galvanized metal in contact with solution — ❌ (zinc toxicity)
    - Copper fittings or pipe — ❌ (copper toxicity to roots)
    - Timber treated with creosote or oil-based preservatives — ❌ (leaches toxins)
    - Pressure-treated timber in contact with solution — ❌
 5. **Tables MUST be perfectly level.** Unlike NFT channels (which need a precise slope), E&F tables must be level to ensure even flood distribution and complete drainage. An unlevel table creates a permanently wet low corner — a Pythium incubator.
 6. **Reservoir must be LOWER than the table drain outlet.** Gravity is the drain mechanism. If the drain port on the table is below reservoir water level, siphon drainage will not occur and the drain will fail.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Step 1 — Site Preparation
 
@@ -242,10 +245,11 @@ block-beta
     dims["Three tables plus aisle fit the 13 ft x 10 ft (4.0 m x 3.0 m) site"]
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Step 2 — Building or Sourcing the Flood Tables
 
@@ -333,7 +337,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
      not a bunched gather). Each corner fold should be flat and tight.
 
   3. The liner extends up all four sides and over the top edge of the timber.
-     Use stainless steel staples (NOT galvanised) to tack the liner over
+     Use stainless steel staples (NOT galvanized) to tack the liner over
      the top edge of the timber frame. Space staples 4 in (100 mm) apart.
 
   4. Apply pond liner tape over the stapled edge on top of the timber.
@@ -380,10 +384,11 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
   TARGET: within 1/16 in (2 mm) across the 4 ft (1.22 m) length
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Step 3 — Reservoir Setup and Positioning
 
@@ -430,10 +435,11 @@ flowchart TD
 5. **Install pump:**
    Place the submersible pump on the reservoir floor. Route the power cable through the lid. Connect the 1 in supply hose to the pump outlet. The pump stays submerged — mark the minimum waterline 2 in (5 cm) above the pump on the outside of the 45 US gal (170 L) tank.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Step 4 — Installing Overflow and Drain Fittings
 
@@ -538,10 +544,11 @@ Each table needs one 1½ in (40 mm) overflow bulkhead and one 1 in (25 mm) drain
      Use a rubber grommet if the standpipe is loose in the fitting.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Step 5 — Plumbing
 
@@ -637,10 +644,11 @@ When the pump stops, solution returns down the 1 in (25 mm) line by gravity. The
 | Overflow standpipe and its return | 1½ in (40 mm) | One per table. Sets the flood ceiling |
 | Drain / fill return | 1 in (25 mm) | One per table. Empties the bed when the pump stops |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Step 6 — Timer Setup
 
@@ -650,7 +658,7 @@ When the pump stops, solution returns down the 1 in (25 mm) line by gravity. The
 |---|---|---|---|
 | Mechanical pin timer | Cheap, about $5–$10 (R90–R180) | 30-minute pins. Cannot run a 15-minute flood cleanly. A stuck pin holds the pump on | Not the outdoor timer |
 | Digital timer, 1-minute steps | Multiple programs. Battery keeps the schedule through a power cut | About $10–$20 (R180–R360) | This is the outdoor timer. It lives in a weatherproof box |
-| Smart plug | Phone alerts if the pump runs too long | Needs WiFi, and a weatherproof box | Optional monitor. See Guide 13. It does not replace the digital timer |
+| Smart plug | Cuts pump power if the pump runs too long (stuck-ON), then alerts | Needs WiFi, and a weatherproof box | Required Tier 1 cutoff. See Guide 13. It does not replace the digital timer |
 
 **Recommendation:** Digital timer, 1-minute resolution, in a weatherproof box, on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). A mechanical timer is not the outdoor control. A pump stuck ON rots roots in 2–4 hours. The Guide 13 drain float opens the pump relay if the float is still up after the pump should be off.
 
@@ -687,10 +695,11 @@ Before any nutrient solution is involved, test the timer with plain water:
 4. Confirm table drains fully within 30 minutes of pump stopping
 5. After confirming this cycle works: set the actual operational schedule
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Step 7 — System Test (Water Only)
 
@@ -761,10 +770,11 @@ Before any nutrient solution is involved, test the timer with plain water:
 | Drain very slow (>45 min) | Drain hose too small; standpipe partially blocking drain bore | Use 1 in (25 mm) drain hose matching the design bulkhead; ensure standpipe doesn't block drain fitting exit |
 | Pump noisy / grinding | Running dry; debris in impeller | Ensure fully submerged; clean impeller |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Step 8 — Media Preparation
 
@@ -791,7 +801,7 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
   PRE-SOAKING:
   After rinsing, soak LECA in pH-adjusted water for 24 hours:
   Fill bucket with rinsed LECA and add pH-adjusted water (pH 5.5–6.0).
-  This pre-charges the LECA pores with water and begins neutralising
+  This pre-charges the LECA pores with water and begins neutralizing
   the alkaline clay surface.
 
   FINAL CHECK:
@@ -809,10 +819,11 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 5. Run one test flood cycle to confirm LECA doesn't pile up on one side (the table is level) and drain returns correctly with LECA in place. Observe drain time — add 5 min to plain-table drain time (LECA slows drain slightly due to surface tension).
 6. Confirm the 1½ in overflow standpipe sits about ¾ in (2 cm) below the LECA surface (see [Setting Flood Depth with Overflow Height](#setting-flood-depth-with-overflow-height)).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Step 9 — First Nutrient Solution Fill
 
@@ -826,7 +837,7 @@ After a successful water test and LECA installation, mix the first nutrient batc
 | Calcium nitrate | 108 g | 2.4 g/US gal (0.63 g/L) |
 | Epsom salt | 54 g | 1.2 g/US gal (0.32 g/L) |
 
-> **Note:** This is the vegetative base. Raise or lower the whole recipe together when the crop needs a different EC. Keep the ratio. The 2.4 g figure is per US gallon, which is 0.63 g per litre.
+> **Note:** This is the vegetative base. Raise or lower the whole recipe together when the crop needs a different EC. Keep the ratio. The 2.4 g figure is per US gallon, which is 0.63 g per liter.
 
 **Mixing order (always in this sequence — never mix Stock A and B together in concentrate):**
 1. Fill the reservoir with about 43 US gal (163 L) of water already in the pH 5.8–6.2 band. The two mixing buckets bring it to 45 US gal (170 L).
@@ -838,10 +849,11 @@ After a successful water test and LECA installation, mix the first nutrient batc
 7. Start pump. Run one complete flood cycle and drain. EC and pH will shift slightly as LECA interacts with new solution — re-test after first flood cycle and adjust again.
 8. Record in logbook: date, EC, pH, reservoir level, nutrient recipe used.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Step 10 — Planting
 
@@ -861,7 +873,7 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
 
   3. Place the seedling plug in the bottom of the net pot.
      The plug should fit snugly — if too small, add a small handful
-     of rinsed LECA around it to stabilise.
+     of rinsed LECA around it to stabilize.
 
   4. Fill around the plug with rinsed, pre-soaked LECA.
      Pack gently — not compressed, but not rattling loose.
@@ -925,10 +937,11 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
     EC, and shade — do not add an extra flood cycle
   □ After day 3: gradually increase EC to standard target over 1 week
 ```
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 14. Step 11 — Zone B Microgreens Station
 
@@ -970,10 +983,11 @@ block-beta
     end
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 15. Step 12 — Zone C Root Veg Grow Bags
 
@@ -981,7 +995,7 @@ block-beta
 
 | Item | Qty | Notes |
 |---|---|---|
-| Fabric grow bags, 5 US gal (19 L) | 3 | Two for radish, one for beetroot |
+| Fabric grow bags, 5 US gal (19 L) | 3 | Two for radish, one for beet (beetroot) |
 | Fabric grow bags, 10 US gal (38 L) | 3 | Carrot |
 | Coco coir | 60% of the mix by volume | No garden soil |
 | Perlite | 30% by volume | |
@@ -1002,7 +1016,7 @@ block-beta
   Garden soil        none
 ```
 
-A 5 US gal (19 L) bag takes about 3 US gal (11 L) coco, 1½ US gal (6 L) perlite, and ½ US gal (2 L) vermiculite. A 10 US gal (38 L) bag takes double. Fertigation EC stays at or below 2.0 mS/cm. Beetroot does not get a higher target. Moisten dry coco before it goes in the bag. Fill to about 1 in (3 cm) from the top.
+A 5 US gal (19 L) bag takes about 3 US gal (11 L) coco, 1½ US gal (6 L) perlite, and ½ US gal (2 L) vermiculite. A 10 US gal (38 L) bag takes double. Fertigation EC stays at or below 2.0 mS/cm. Beet (beetroot) does not get a higher target. Moisten dry coco before it goes in the bag. Fill to about 1 in (3 cm) from the top.
 
 ### Direct Sowing
 
@@ -1014,10 +1028,11 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 Zone C planning total is 43 lb (20 kg). **Watering:** if the top ¾ in (2 cm) is dry, water until a little drains. Keep fertigation at or below 2.0 mS/cm.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 16. Common Build Mistakes and How to Avoid Them
 
@@ -1069,10 +1084,11 @@ Zone C planning total is 43 lb (20 kg). **Watering:** if the top ¾ in (2 cm) is
 
 **Prevention:** Rinse LECA until water runs mostly clear (4–6 wash cycles). Soak in pH-adjusted water for 24 hours. Test soak-water pH before using LECA — it should be below 7.0.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 17. Build Checklist
 
@@ -1159,7 +1175,7 @@ Use this as a final sign-off before moving to nutrient operation.
   □ Logbook started (date, EC, pH, flood schedule, reservoir level)
   □ Spare pump ordered or sourced
   □ Spare bulkhead fittings (2× per table type) on hand
-  □ Spare overflow standpipes (2×) labelled with correct height
+  □ Spare overflow standpipes (2×) labeled with correct height
   □ Timer battery backup tested
   □ Shade cloth and frost fleece ready to deploy
 ```
@@ -1168,9 +1184,12 @@ Use this as a final sign-off before moving to nutrient operation.
 
 
 > **Previous:** [Guide 10 — Climate Management](./10-climate-management.md)
-> **Next:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
+
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
+
 
 ---
 

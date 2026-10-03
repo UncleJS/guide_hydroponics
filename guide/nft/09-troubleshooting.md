@@ -40,8 +40,8 @@
   - [D5: Rapid Onset (Problem Appeared Overnight or Within Hours)](#d5-rapid-onset-problem-appeared-overnight-or-within-hours)
 - [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -55,10 +55,11 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 3. **Temperature** — root zone temperature
 4. **Pest or disease** — only after ruling out chemistry
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION A: Water and Solution Problems
 
@@ -73,7 +74,7 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
   1. PLANTS CONSUMING ANIONS (normal vegetative growth)
      Plants in heavy vegetative growth preferentially consume NO₃⁻, releasing OH⁻.
-     → This is NORMAL behaviour. Just add pH Down more frequently.
+     → This is NORMAL behavior. Just add pH Down more frequently.
      FIX: Add pH Down 1ml at a time until back in range 5.8–6.2. Expect to repeat daily.
 
   2. HARD TAP WATER / HIGH BICARBONATE
@@ -125,8 +126,8 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
   4. MICROBIAL ACTIVITY (acid-producing bacteria)
      Some bacteria produce organic acids — usually associated with warm, old solution.
-     Sign: pH drop coincides with solution looking cloudy/discoloured.
-     FIX: Full system sterilisation and reservoir change.
+     Sign: pH drop coincides with solution looking cloudy/discolored.
+     FIX: Full system sterilization and reservoir change.
 ```
 
 ---
@@ -154,7 +155,7 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
   3. EVAPORATION RATE HIGH (hot day)
      Water evaporating faster than plants consume it — EC and all nutrients remain,
-     but volume drops. EC per litre RISES (not drops) in this case.
+     but volume drops. EC per liter RISES (not drops) in this case.
      → EC dropping in hot weather means plants ARE eating the nutrients fast.
      FIX: As per point 1 above.
 
@@ -194,7 +195,7 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 ### A5: SOLUTION TURNS BROWN, GREEN, OR SLIMY
 
 ```
-  Discoloured or slimy reservoir/solution
+  Discolored or slimy reservoir/solution
 
   GREEN SOLUTION or GREEN COATING ON WALLS:
   → ALGAE BLOOM in that tank (check greens and CH4 separately)
@@ -202,7 +203,7 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
   1. Identify the light source — seal it (tape, opaque cover)
   2. Paint is a black body with a white exterior. Black blocks light. White reflects heat.
      Do not leave a white-only wall (light enters) or a black-only exterior (it absorbs heat).
-  3. Full change and sterilisation of the affected tank
+  3. Full change and sterilization of the affected tank
   4. Hydrogen peroxide flush: remove plants, or hand-water them, first.
      Do not run a 3% H₂O₂ flush through a live crop. A 1% channel flush is a
      cleaning step on an empty channel, followed by a plain-water rinse.
@@ -222,20 +223,21 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
   5. Add Hydroguard to the new solution in that tank
   6. See [Guide 07 — Pests and Disease](07-pests-and-disease.md) Pythium treatment
 
-  GREY/WHITE CLOUDY SOLUTION:
+  GRAY/WHITE CLOUDY SOLUTION:
   → Microbial bloom — usually from organic matter decomposition
-  FIX: Full reservoir change. Sterilise reservoir. Check for dead plant material.
+  FIX: Full reservoir change. Sterilize reservoir. Check for dead plant material.
 
   YELLOW-TINTED SOLUTION:
-  → Can be normal with iron chelates (DTPA/EDDHA iron sources colour water)
+  → Can be normal with iron chelates (DTPA/EDDHA iron sources color water)
   → Also: some nutrient brands naturally tint the solution
   FIX: If plants are healthy and EC/pH are fine, yellow tint from nutrients is harmless.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION B: Plant Problems
 
@@ -371,7 +373,7 @@ flowchart TD
   - Damaged roots: treat root rot, reduce EC
 
   STEP 7: Seedling quality
-  - Were seeds old? Poor germination = poor early vigour.
+  - Were seeds old? Poor germination = poor early vigor.
   - Were seedlings kept too cold during germination?
 ```
 
@@ -394,14 +396,14 @@ flowchart TD
   - Spinach on the long, hot days of June–August (SA: December–February): expected
 
   WHEN BOLTING STARTS:
-  - Harvest IMMEDIATELY — flavour deteriorates rapidly once bolting begins
+  - Harvest IMMEDIATELY — flavor deteriorates rapidly once bolting begins
   - Lettuce becomes intensely bitter within 2–3 days of bolt stalk appearing
   - Cilantro bolt produces usable coriander seeds — let it bolt and harvest seeds
 
   PREVENTION:
   - Grow heat-tolerant / slow-bolt varieties (Jericho lettuce, Leisure cilantro)
   - Deploy shade cloth (reduces temperature, light intensity)
-  - Grow in spring and autumn rather than through peak summer
+  - Grow in spring and fall rather than through peak summer
   - Succession plant — always have fresh young plants ready to replace bolting ones
 ```
 
@@ -472,7 +474,7 @@ flowchart TD
 ### B8: WHITE CRUSTY DEPOSITS ON CHANNELS OR NET POTS
 
 ```
-  WHITE/GREY CRUST ON CHANNEL SURFACES, FITTINGS, OR NET POT RIMS:
+  WHITE/GRAY CRUST ON CHANNEL SURFACES, FITTINGS, OR NET POT RIMS:
 
   CAUSE: Salt (mineral) buildup. Nutrient salts dissolved in water are left behind when
   water evaporates. Particularly visible at waterline and around net pot holes.
@@ -489,10 +491,11 @@ flowchart TD
   5. Use lower-mineral source water (RO or rainwater reduces scaling)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION C: System and Equipment Problems
 
@@ -651,10 +654,11 @@ flowchart TD
        Allow 24h cure time before putting into service.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION D: Multiple Simultaneous Symptoms
 
@@ -779,10 +783,11 @@ flowchart TD
   someone topped up with the wrong water, timer malfunction.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION E: Master Decision Flowchart
 
@@ -802,11 +807,11 @@ flowchart TD
     pHCheck -->|Correct| CheckEC_B1[Check EC<br/>Identify symptom location<br/>see B1]
     Yellowing -->|NO| Spots
 
-    Spots{Discolouration, spots,<br/>or mould on leaves?}
+    Spots{Discoloration, spots,<br/>or mold on leaves?}
     Spots -->|YES| Pests[See Guide 07<br/>Pests and Disease<br/>identify and treat]
     Spots -->|NO| SolnColor
 
-    SolnColor{Is the solution<br/>discoloured?}
+    SolnColor{Is the solution<br/>discolored?}
     SolnColor -->|YES| AlgaeRot[Green = algae<br/>Brown = root rot<br/>Cloudy = bacteria<br/>see A5]
     SolnColor -->|NO| ECRange
 
@@ -823,11 +828,13 @@ flowchart TD
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 08 — System Maintenance](08-system-maintenance.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 10 — Climate Management](10-climate-management.md)
 
 <!-- copyright -->

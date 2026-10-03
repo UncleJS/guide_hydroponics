@@ -13,7 +13,7 @@
 - [2. Temperature — The Critical Variable](#2-temperature-the-critical-variable)
   - [Solution Temperature Targets](#solution-temperature-targets)
   - [How E&F Tables Respond to Temperature Differently from NFT](#how-ef-tables-respond-to-temperature-differently-from-nft)
-  - [Reservoir Thermal Profile — 45 US gal Under-Table](#reservoir-thermal-profile--45-us-gal-under-table)
+  - [Reservoir Thermal Profile — 45 US gal Under-Table](#reservoir-thermal-profile-45-us-gal-under-table)
 - [3. Managing Heat — Summer Strategies](#3-managing-heat-summer-strategies)
   - [Shade Cloth for Flood Tables](#shade-cloth-for-flood-tables)
   - [Reservoir Cooling Strategies](#reservoir-cooling-strategies)
@@ -21,27 +21,27 @@
 - [4. Managing Cold — Frost Protection](#4-managing-cold-frost-protection)
   - [Frost Risk Assessment](#frost-risk-assessment)
   - [Protection Measures](#protection-measures)
-  - [Reservoir Freeze Risk — 45 US gal Thermal Mass](#reservoir-freeze-risk--45-us-gal-thermal-mass)
+  - [Reservoir Freeze Risk — 45 US gal Thermal Mass](#reservoir-freeze-risk-45-us-gal-thermal-mass)
 - [5. Wind — The Often-Overlooked Factor](#5-wind-the-often-overlooked-factor)
   - [Wind Effects on Ebb & Flow Specifically](#wind-effects-on-ebb-flow-specifically)
   - [Windbreak Options](#windbreak-options)
 - [6. Rain — A Unique Challenge for Open Flood Tables](#6-rain-a-unique-challenge-for-open-flood-tables)
   - [Rain Dilution Mechanisms](#rain-dilution-mechanisms)
   - [Rain Management Strategies](#rain-management-strategies)
-- [7. Seasonal Calendar — Outdoor Ebb & Flow (Temperate)](#7-seasonal-calendar-outdoor-ebb-flow-temperate)
-  - [Spring (March–May)](#spring-marchmay)
-  - [Summer (June–August)](#summer-juneaugust)
-  - [Autumn (September–October)](#autumn-septemberoctober)
-  - [Winter (November–February)](#winter-novemberfebruary)
+- [7. Seasonal Calendar — Inland Mid-USA, about 38°N](#7-seasonal-calendar-inland-mid-usa-about-38n)
+  - [Spring — March through May (SA: September through November)](#spring-march-through-may-sa-september-through-november)
+  - [Summer — June through August (SA: December through February)](#summer-june-through-august-sa-december-through-february)
+  - [Fall — September through October (SA: March through April)](#fall-september-through-october-sa-march-through-april)
+  - [Winter — November through February (SA: May through August)](#winter-november-through-february-sa-may-through-august)
 - [8. Flood Cycle Frequency by Season and Temperature](#8-flood-cycle-frequency-by-season-and-temperature)
 - [9. EC and pH Management by Season](#9-ec-and-ph-management-by-season)
 - [10. Emergency Action Plans](#10-emergency-action-plans)
-  - [Heatwave Protocol (afternoons holding above 85°F / 29°C)](#heatwave-protocol-afternoons-holding-above-85f--29c)
-  - [Frost Warning Protocol (forecast below 37°F / 3°C)](#frost-warning-protocol-forecast-below-37f--3c)
+  - [Heatwave Protocol (afternoons holding above 85°F / 29°C)](#heatwave-protocol-afternoons-holding-above-85f-29c)
+  - [Frost Warning Protocol (forecast below 37°F / 3°C)](#frost-warning-protocol-forecast-below-37f-3c)
   - [Storm Protocol (Heavy Rain + Wind)](#storm-protocol-heavy-rain-wind)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Climate Matters Differently in Ebb & Flow
 
@@ -71,10 +71,11 @@ Key differences for climate management:
 
 These differences mean that an E&F grower in the same backyard as an NFT grower faces significantly more climate management challenges during rain events and heatwaves, but benefits from better thermal buffering during brief cold snaps.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Temperature — The Critical Variable
 
@@ -135,10 +136,11 @@ A 45 US gal (170 L) reservoir (acceptable range 40–50 US gal / 151–189 L) si
 - More exposed to direct sun if not shaded — can heat faster in summer
 - Wrap with reflective bubble wrap insulation or build a shade box if using this placement
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Managing Heat — Summer Strategies
 
@@ -206,10 +208,11 @@ One rule for heat. Fruiting crops already flood 4 times a day, and 4 is the ceil
   may use 4 but never a 5th.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Managing Cold — Frost Protection
 
@@ -279,10 +282,11 @@ A 45 US gal (170 L) fill is slow to freeze compared with a small tank. At 23°F 
   Insulate exposed pipes or drain them if prolonged freezing is forecast.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Wind — The Often-Overlooked Factor
 
@@ -326,10 +330,11 @@ Wind has a disproportionately large impact on outdoor Ebb & Flow compared to NFT
 
 **Wind.** On the central plains the prevailing wind is often from the south or southwest. Put the windbreak on that prevailing-wind side, 3–5 times its own height away from the tables. Closer than that, the screen throws turbulence onto the beds. The site plan also keeps a wind break on the north edge, about 12 in (30 cm) clear of the frame, for the cold north wind. Long-axis of the tables faces south (SA: north).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rain — A Unique Challenge for Open Flood Tables
 
@@ -393,10 +398,11 @@ Install permanent covers over roughly 60% of the table surface (particularly ove
 
 After a heavy rain, the tables may already be at flood depth. Let them drain through the 1 in (25 mm) fittings before the next pump cycle. Skip the next flood if more than ⅜ in (10 mm) fell in an hour. Do not add a flood to "make up" for the skipped one, and do not go to 5 floods the next day.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Seasonal Calendar — Inland Mid-USA, about 38°N
 
@@ -417,12 +423,12 @@ Clear-sky DLI: summer 45–55 mol/m²/day, spring and fall 25–35 mol/m²/day, 
   [ ] Outdoor season starts mid-April (SA: mid-October)
   [ ] After that frost date, set Table 3 with lettuce, herbs, or pak choi
   [ ] Vegetative floods: 3 times a day
-  [ ] Keep the Table 1 vine and Table 2 pepper, aubergine, or courgette
+  [ ] Keep the Table 1 vine and Table 2 pepper, eggplant (aubergine), or zucchini (courgette)
       indoors until nights hold above 54°F (12°C)
 
   MAY (SA: NOVEMBER):
   [ ] Plant Table 1: one indeterminate tomato or one cucumber
-  [ ] Plant Table 2: one or two pepper, aubergine, or courgette plants
+  [ ] Plant Table 2: one or two pepper, eggplant (aubergine), or zucchini (courgette) plants
   [ ] Fruiting floods: 4 times a day. That count is the ceiling
   [ ] Face the long axis south (SA: north)
   [ ] 40% shade only if a warm spell holds afternoons above 85°F (29°C)
@@ -450,7 +456,7 @@ Clear-sky DLI: summer 45–55 mol/m²/day, spring and fall 25–35 mol/m²/day, 
   [ ] Remove bolted lettuce and spent basil
 ```
 
-### Autumn — September through October (SA: March through April)
+### Fall — September through October (SA: March through April)
 
 ```
   SEPTEMBER (SA: MARCH):
@@ -462,7 +468,7 @@ Clear-sky DLI: summer 45–55 mol/m²/day, spring and fall 25–35 mol/m²/day, 
   [ ] Planning first fall frost: October 20 (SA: April 20)
   [ ] Outdoor season closes mid-October (SA: mid-April)
   [ ] Harvest the vine and Table 2 before a hard frost
-  [ ] Winterise after the last harvest (Guide 08)
+  [ ] Winterize after the last harvest (Guide 08)
 ```
 
 ### Winter — November through February (SA: May through August)
@@ -479,10 +485,11 @@ Clear-sky DLI: summer 45–55 mol/m²/day, spring and fall 25–35 mol/m²/day, 
   [ ] Zone B can stay indoors under the LED
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Flood Cycle Frequency by Season and Temperature
 
@@ -505,10 +512,11 @@ This table gives recommended flood cycle frequency based on ambient temperature.
 
 Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a recovery strategy. Dropping from 4 to 2 is not the heat plan. Leafy / vegetative default is 3; heat may go to 4 max; never a 5th. Moist LECA holds a missed flood for 8–24 hours, so one skipped cycle after rain is not an emergency.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. EC and pH Management by Season
 
@@ -522,7 +530,7 @@ Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a
   Peak Summer     1.4–1.8             2.5–3.5           Peak growth; watch EC
                                                          spikes from evaporation
   Late Summer     1.2–1.6             2.0–2.5           Slowing growth
-  Autumn          1.0–1.4             1.4–2.0           Cool weather = lower demand
+  Fall          1.0–1.4             1.4–2.0           Cool weather = lower demand
   ──────────────────────────────────────────────────────────────────────
   NOTE: In hot weather, EC tends to spike upward from evaporation.
   Your management is primarily DILUTION (adding water) rather than raising EC.
@@ -540,16 +548,17 @@ Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a
           - Algae growth in open tables (if light reaches solution) raises pH
           - Check and adjust pH daily in peak summer
 
-  Autumn: pH drift slows as plant activity reduces.
-          Watch for pH crash in late autumn: decaying root material and
+  Fall: pH drift slows as plant activity reduces.
+          Watch for pH crash in late fall: decaying root material and
           dying plant tissue release organic acids. Do a full reservoir
-          change when you transition to autumn crops.
+          change when you transition to fall crops.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Emergency Action Plans
 
@@ -643,9 +652,12 @@ Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a
 
 
 > **Previous:** [Guide 09 — Troubleshooting](./09-troubleshooting.md)
-> **Next:** [Guide 11 — Build Guide](./11-build-guide.md)
+
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Guide 11 — Build Guide](./11-build-guide.md)
+
 
 ---
 

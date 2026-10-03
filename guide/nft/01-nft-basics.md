@@ -37,19 +37,20 @@ Numbers in this guide follow [Design Constants](../design-constants.md). The zon
   - [Cons](#cons)
 - [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
 
----
-
-
-## 1. History and Origin
-
-Nutrient Film Technique was developed by **Dr. Allen Cooper** at the Glasshouse Crops Research Institute in Littlehampton, England, in the late 1960s and early 1970s. Cooper published his findings in the 1970s, revolutionising commercial hydroponics by demonstrating that plants could thrive with their roots exposed to a continuous, very shallow stream of nutrient solution — no solid growing medium required.
-
-The original NFT systems were built with aluminum channels and used relatively crude flow controls, but the core principle has remained essentially unchanged for over 50 years. Today NFT is one of the most widely used hydroponic methods in commercial lettuce and herb production globally, chosen for its simplicity, low water usage, excellent oxygenation, and easy root zone access.
 
 [↑ Back to TOC](#table-of-contents)
 
+## 1. History and Origin
+
+Nutrient Film Technique was developed by **Dr. Allen Cooper** at the Glasshouse Crops Research Institute in Littlehampton, England, in the late 1960s and early 1970s. Cooper published his findings in the 1970s, revolutionizing commercial hydroponics by demonstrating that plants could thrive with their roots exposed to a continuous, very shallow stream of nutrient solution — no solid growing medium required.
+
+The original NFT systems were built with aluminum channels and used relatively crude flow controls, but the core principle has remained essentially unchanged for over 50 years. Today NFT is one of the most widely used hydroponic methods in commercial lettuce and herb production globally, chosen for its simplicity, low water usage, excellent oxygenation, and easy root zone access.
+
+
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Core Principle: The Thin Film
 
@@ -75,10 +76,11 @@ block-beta
 
 **Why this matters:** Roots need both water/nutrients AND oxygen. Submerging roots fully (as in DWC without aeration) risks suffocation. NFT's thin film provides an air-water interface along the channel. An air pump is still recommended in both reservoirs of this build, so the stored solution stays oxygenated between passes through the channels.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Anatomy of an NFT System
 
@@ -128,10 +130,11 @@ flowchart TD
 | **Drain fittings** | Exit at the low end of each channel | Gravity-fed |
 | **Return line** | Carries drained solution back to its own reservoir | ¾–1 in (19–25 mm), gravity only, one return per loop |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Channel Slope: The Critical Variable
 
@@ -160,10 +163,11 @@ flowchart LR
 
 **Practical tip:** Set the slope with a spirit level and shims, then confirm the post heights: 36 in (91 cm) at the inlet and 32¾ in (83 cm) at the drain. The angle is gentle and easy to miss by eye, so measure it.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Flow Rate Science
 
@@ -217,10 +221,11 @@ The greens pump feeds three channels. The fruiting pump feeds CH4 alone.
 
 Turbulence is caused by excessive flow rate, rough channel surfaces, debris in the channel, or kinked inlet tubes. Keep inlets smooth, flow rates controlled, and channels clean.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Root Zone Oxygenation
 
@@ -241,10 +246,11 @@ block-beta
 
 **Why this matters for temperature:** Aim for **64–72°F (18–22°C)**. Above **77°F (25°C)**, dissolved oxygen falls and pythium risk rises. That is the heat action line. At 82°F (28°C), water holds about 7.8 mg/L of dissolved oxygen. At 86°F (30°C), it is about 7.5 mg/L. Shade the reservoirs, keep the black body and white exterior, and act before the solution sits above 77°F (25°C).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. NFT vs Other Systems Comparison
 
@@ -262,10 +268,11 @@ block-beta
 | **Commercial use** | Very common | Common | Less common | Rare | Rare |
 | **Beginner friendly** | Moderate | Moderate | Moderate | Very | Very |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Why NFT Is Ideal for Leafy Crops — and Why It Fails for Root Veg
 
@@ -273,20 +280,21 @@ block-beta
 - Fast-growing, shallow root systems are perfectly served by the thin film
 - High harvest frequency and succession planting work perfectly with the modular channel system
 - The greens loop runs at EC 0.8–1.8 mS/cm, so leafy crops share one simple tank. Lettuce stays at or below 1.8 mS/cm
-- Multiple plants per channel maximise the return on the pump investment
+- Multiple plants per channel maximize the return on the pump investment
 
 ### Poor for root vegetables because:
-- Carrots, radishes, and beetroot develop a **tap root** that must grow downward into a substrate
+- Carrots, radishes, and beet (beetroot) develop a **tap root** that must grow downward into a substrate
 - These channels are only 3 in (76 mm) or 4 in (102 mm) tall — not enough depth for a tap root
 - The thin film doesn't provide the structural support root veg need
 - Root veg need a solid medium to form correct shapes; NFT produces deformed, stunted roots
 
 **Solution:** Use grow bags with the Zone C mix — 60% coco / 30% perlite / 10% vermiculite — for root veg.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Pump Runtime: Continuous vs Timed
 
@@ -317,10 +325,11 @@ It does not, on this system. Both pumps run **24 hours a day**.
 
 Electricity for these small pumps is part of the [Guide 12](12-budget-and-sourcing.md) running-cost notes, at the planning rate of $0.15/kWh (R2.70/kWh). Saving that by cycling the film off is the wrong trade. Dissolved oxygen is handled by the thin film plus an air pump in each reservoir, not by parking the channel dry.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. What Happens During Pump Failure
 
@@ -338,10 +347,11 @@ Electricity for these small pumps is part of the [Guide 12](12-budget-and-sourci
 - Set a phone reminder to visually confirm pump operation every morning
 - Consider a cheap WiFi smart plug — if the pump draws 0W, it sends an alert
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Scaling: Modular Channel Design
 
@@ -369,10 +379,11 @@ If you later add a fifth greens channel, that is a new design, not a tee onto to
 - **Manifold:** this 1 in (25 mm) manifold feeds three channels. A run of more than six greens channels wants a larger main, about 1¼ in (32 mm).
 - **Return pipe:** each loop's ¾–1 in (19–25 mm) return has to carry that loop's combined flow back to its own reservoir.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Pros and Cons Summary
 
@@ -401,10 +412,11 @@ If you later add a fifth greens channel, that is a new design, not a tee onto to
 | Algae risk | Light entering channels grows algae; channels must be opaque |
 | Limited buffering | Small reservoir = fast pH/EC swings |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Key Numbers Reference Card
 
@@ -433,9 +445,11 @@ If you later add a fifth greens channel, that is a new design, not a tee onto to
 ---
 
 
+> **Previous:** [Guide 00 — System Overview](00-system-overview.md)
+
+
 [↑ Back to TOC](#table-of-contents)
 
-> **Previous:** [Guide 00 — System Overview](00-system-overview.md)
 > **Next:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
 
 <!-- copyright -->

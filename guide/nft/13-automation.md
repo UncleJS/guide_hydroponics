@@ -71,7 +71,7 @@ Automation and continuous data logging move you from "the plants look stressed" 
   - [14.2 pH Patterns](#142-ph-patterns)
   - [14.3 EC Patterns](#143-ec-patterns)
   - [14.4 Correlation Analysis](#144-correlation-analysis)
-  - [14.5 VPD — Vapour Pressure Deficit as a Derived Metric](#145-vpd-vapour-pressure-deficit-as-a-derived-metric)
+  - [14.5 VPD — Vapor Pressure Deficit as a Derived Metric](#145-vpd-vapor-pressure-deficit-as-a-derived-metric)
 - [15. Weatherproofing and Power](#15-weatherproofing-and-power)
   - [15.1 Enclosure for ESP32 and Wiring](#151-enclosure-for-esp32-and-wiring)
   - [15.2 Sensor Protection](#152-sensor-protection)
@@ -93,8 +93,8 @@ Automation and continuous data logging move you from "the plants look stressed" 
 - [18. Upgrade Path — From Tier 1 to Tier 4](#18-upgrade-path-from-tier-1-to-tier-4)
 - [Summary — What Each Tier Gives You](#summary-what-each-tier-gives-you)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Automate?
 
@@ -153,10 +153,11 @@ Logging tells you what happened. Automation takes action:
 - **EC below that tank's target → dose that tank.** Greens target is 0.8–1.8 mS/cm. CH4 tomato is 2.5–3.5 mS/cm. CH4 pepper is 2.0–3.0 mS/cm. One EC reading does not describe both tanks.
 - **Frost forecast in April or October → heater or fleece.** Deep winter, 0–15°F (−18 to −9°C), is a drained system, not a heater left outside.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Automation Tiers Overview
 
@@ -173,10 +174,11 @@ flowchart LR
 
 Each tier builds on the previous. You never have to skip ahead — start at Tier 1 and upgrade when you're ready.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tier 0 — Manual Baseline
 
@@ -192,13 +194,14 @@ This is your current setup as documented in Guides 08 and 10. It works — but i
 **Limitations:**
 - 2 readings per day at most
 - No alerts — you discover problems on your next check
-- No historical trends — paper logs are hard to analyse
+- No historical trends — paper logs are hard to analyze
 - No remote access — you must be physically present
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Tier 1 — Off-the-Shelf Smart Devices
 
@@ -277,10 +280,11 @@ A cheap WiFi camera (~$20–$30 (R360–R540), e.g., Wyze Cam, TP-Link Tapo C100
 | WiFi camera (optional) | $25 (R450) | Visual monitoring, time-lapse |
 | **Tier 1 total** | **$50–$75 (R900–R1,350)** | One of each device, including the optional camera. A second water probe and a second plug are the same prices again. |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Tier 2 — ESP32 Sensor Node
 
@@ -358,7 +362,7 @@ There are three ways to confirm flow:
 
 **Option A — Float switch in the return/collection tank (recommended first build)**
 
-Mount a float switch at the low-water mark in the return tank at the base of the NFT channels. When the pump is running, return water fills the tank and keeps the float up. If the pump fails or a channel blocks, the return tank drains within 5–10 minutes and the float drops.
+Mount a float switch at the low-water mark in **each** return path (greens loop and fruiting/CH4 loop). When that loop's pump is running, return water keeps the float up. If that pump fails or a channel blocks, that return drains within 5–10 minutes and the float drops. One float on one return does not cover both tanks.
 
 - **Cost:** $3–$8 (R54–R144)
 - **Wiring:** Single digital input with 10 kΩ pull-up to 3.3V
@@ -370,7 +374,7 @@ Mount a float switch at the low-water mark in the return tank at the base of the
 flowchart LR
     PUMP["Pump (in reservoir)"] -->|"solution"| CHANNELS["NFT Channels"]
     CHANNELS -->|"return drain"| RTANK["Return / Catch Tank"]
-    RTANK -->|"gravity drain"| RES["Main Reservoir"]
+    RTANK -->|"gravity drain"| RES["That loop's reservoir<br/>greens 20 US gal or fruiting 10 US gal"]
     RTANK --- FS["Float Switch<br/>(mounted at low-water mark)<br/>HIGH = flow OK<br/>LOW = alert"]
 ```
 
@@ -462,7 +466,7 @@ binary_sensor:
       - delayed_on: 120s   # only alert if low flow persists for 2 minutes
 ```
 
-> **Calibration note:** YF-S201 pulse factor varies by pressure and temperature. Calibrate by running a known volume (for example 1.3 US gal, which is 5 L) into a bucket and counting pulses. `pulse_factor = pulses_counted / volume_litres`. The YAML above is one return. Copy it for the fruiting return. Keep these GPIO numbers on the first node. Use free pins on the copy. Do not treat one sensor as both loops.
+> **Calibration note:** YF-S201 pulse factor varies by pressure and temperature. Calibrate by running a known volume (for example 1.3 US gal, which is 5 L) into a bucket and counting pulses. `pulse_factor = pulses_counted / volume_liters`. The YAML above is one return. Copy it for the fruiting return. Keep these GPIO numbers on the first node. Use free pins on the copy. Do not treat one sensor as both loops.
 
 ---
 
@@ -517,10 +521,11 @@ EVERY 60 SECONDS, THE NODE:
   current readings and a simple 24-hour chart.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier 3 — Multi-Sensor Network + Dashboard
 
@@ -637,10 +642,11 @@ flowchart TD
     style FEC fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Tier 4 — Automated Control
 
@@ -763,10 +769,11 @@ DOSING SAFETY INTERLOCKS
 9. LOG EVERY DOSE:         Record timestamp, volume, before/after reading
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Sensor Reference — What to Measure and Why
 
@@ -804,10 +811,11 @@ DOSING SAFETY INTERLOCKS
 - They are NOT laboratory-grade but are accurate enough for hydroponic management (±0.1 pH, ±5% EC).
 - Budget alternative: Atlas Scientific probes are more accurate and longer-lasting but cost 3–5× more. Not recommended unless you need lab-grade data.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. ESP32 Hardware Guide
 
@@ -888,10 +896,11 @@ For Tier 4 with relays and peristaltic pumps:
 - Peristaltic pumps: ~200–300 mA each at 12V
 - Separate 12V supply for peristaltic pumps (do NOT power from ESP32)
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Wiring Diagrams
 
@@ -966,10 +975,11 @@ flowchart LR
     style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Firmware and Software
 
@@ -981,7 +991,7 @@ You don't need to write code from scratch. Several open-source firmware projects
 |---|---|---|---|
 | **ESPHome** | Beginner | YAML config, Home Assistant integration, OTA updates | Tier 2–3, if using Home Assistant |
 | **Tasmota** | Beginner | Web-based config, MQTT, rule engine | Tier 1–2, simple setups |
-| **Custom Arduino/PlatformIO** | Intermediate | Full control, any sensor, any logic | Tier 3–4, advanced customisation |
+| **Custom Arduino/PlatformIO** | Intermediate | Full control, any sensor, any logic | Tier 3–4, advanced customization |
 | **MicroPython** | Intermediate | Python on ESP32, rapid prototyping | Quick experiments |
 
 ### 11.2 ESPHome — Recommended for Most Users
@@ -1134,10 +1144,11 @@ If you don't want cloud services or internet dependency:
 
 This option provides 100% local operation — no cloud accounts, no subscriptions, no privacy concerns.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Data Storage and Dashboards
 
@@ -1216,10 +1227,11 @@ If you want to keep everything local (no cloud), Home Assistant running on a Ras
 4. The ESP32 appears automatically in Home Assistant
 5. Add sensor entities to your dashboard
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Alerts and Notifications
 
@@ -1305,10 +1317,11 @@ Pump uptime: 100%
 No alerts triggered today.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 14. Using Your Data — Pattern Recognition
 
@@ -1403,7 +1416,7 @@ If your data shows:
   Day 4: avg solution temp 77°F (25°C) → pH changed +0.31
 
 Conclusion: Every ~4°F (2°C) rise in solution temp roughly doubles pH drift rate.
-Action:     Prioritise temperature control (shade, insulation) over
+Action:     Prioritize temperature control (shade, insulation) over
             pH dosing — treating the cause, not the symptom.
 ```
 
@@ -1411,9 +1424,9 @@ After 4–6 weeks of continuous data, patterns like this become clearly visible 
 
 ---
 
-### 14.5 VPD — Vapour Pressure Deficit as a Derived Metric
+### 14.5 VPD — Vapor Pressure Deficit as a Derived Metric
 
-VPD (Vapour Pressure Deficit) quantifies the "drying power" of the air: how hard the air is pulling moisture from plant leaves. High VPD causes plants to close stomata, reducing CO₂ uptake and slowing growth. Very high VPD causes wilting. Low VPD encourages disease (Botrytis, mildew).
+VPD (Vapor Pressure Deficit) quantifies the "drying power" of the air: how hard the air is pulling moisture from plant leaves. High VPD causes plants to close stomata, reducing CO₂ uptake and slowing growth. Very high VPD causes wilting. Low VPD encourages disease (Botrytis, mildew).
 
 You already log air temperature and humidity with your DHT22/SHT30 — VPD can be calculated from these two values in firmware and logged as a derived sensor.
 
@@ -1450,7 +1463,7 @@ sensor:
     icon: "mdi:water-percent"
     update_interval: 60s
     lambda: |-
-      // Tetens equation for saturation vapour pressure (kPa)
+      // Tetens equation for saturation vapor pressure (kPa)
       // SVP = 0.6108 * exp(17.27 * T / (T + 237.3))
       float T  = id(air_temp).state;
       float RH = id(air_humidity).state;
@@ -1490,17 +1503,18 @@ binary_sensor:
 
 **Grafana panel — VPD over 24 hours:**
 
-Create a time-series panel for `vpd` with colour-coded thresholds:
+Create a time-series panel for `vpd` with color-coded thresholds:
 - Green band: 0.8–1.5 kPa (healthy range)
 - Yellow band: 0.4–0.8 kPa or 1.5–1.8 kPa (caution)
 - Red band: <0.4 kPa or >1.8 kPa (alert zones)
 
 This gives an immediate visual of how many hours per day the crop is under heat or disease stress, and whether adding shade cloth or improving airflow made a measurable difference.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 15. Weatherproofing and Power
 
@@ -1557,10 +1571,11 @@ flowchart TD
 **Solar power option:**
 A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery can run an ESP32 sensor node indefinitely in most climates. The ESP32 can deep-sleep between readings (waking every 60 seconds) to reduce average current to ~5 mA, extending battery life to weeks even without sun.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 16. Automation BOM by Tier
 
@@ -1630,10 +1645,11 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 | Tier 3 | $100–$160 (R1,800–R2,880) | $150–$235 (R2,700–R4,230) |
 | Tier 4 | $168–$230 (R3,024–R4,140) | $218–$305 (R3,924–R5,490) |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 17. Common Pitfalls
 
@@ -1996,17 +2012,18 @@ sensor:
 | **EC reads 0 despite nutrient solution present** | Probe not submerged, probe plates corroded/fouled, or cable break | Clean probe plates with soft brush + vinegar; ensure probe is fully submerged; check cable continuity with a multimeter |
 | **EC reads extremely high (>10 mS/cm)** | Probe plates shorted (mineral deposit bridging them), or calibration lost | Clean probe plates thoroughly; recalibrate with standard solution; if persistent, replace probe |
 | **Temperature reads -127°C** | DS18B20 sensor disconnected or wiring fault (this is the DS18B20 error code) | Check the 3-wire connection (VCC, GND, Data); ensure 4.7 kΩ pull-up resistor is present on Data line; try a different GPIO pin; replace sensor if wiring is confirmed correct |
-| **Temperature reads +85°C constantly** | DS18B20 returning power-on reset value — not being read properly | Firmware is not completing the read cycle; check OneWire library initialisation; ensure adequate delay between requesting temperature and reading it (750 ms for 12-bit) |
+| **Temperature reads +85°C constantly** | DS18B20 returning power-on reset value — not being read properly | Firmware is not completing the read cycle; check OneWire library initialization; ensure adequate delay between requesting temperature and reading it (750 ms for 12-bit) |
 | **Ultrasonic reads max range (e.g., 400 cm)** | No echo received — sensor misaligned, obstructed, or wiring fault | Check sensor is pointing straight down at water surface; ensure no foam or turbulence; verify TRIG and ECHO wires are not swapped; test sensor outside the reservoir to confirm it works |
 | **Ultrasonic reads 0 or near-0** | Echo returning immediately — obstruction directly in front of sensor | Check for objects within 2 cm of sensor face; ensure mounting bracket is not reflecting the signal back |
 | **All sensors reading 0 or NaN simultaneously** | Power supply issue, I2C bus locked up, or ESP32 crash/reboot loop | Check 3.3V and 5V power rails with a multimeter; power-cycle the ESP32; check serial log for crash traces; if I2C, add `Wire.begin()` recovery in firmware |
 
 > **General rule:** If a sensor reads a physically impossible value, the problem is almost always **wiring, connectors, or a dead probe** — not your nutrient solution. Check the hardware before changing anything in your reservoir.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 18. Upgrade Path — From Tier 1 to Tier 4
 
@@ -2017,7 +2034,7 @@ RECOMMENDED UPGRADE TIMELINE
 
 MONTH 1 (FIRST GROW):
   Start with Tier 0 (manual)
-  → Learn the system, understand pH drift, EC behaviour, pump reliability
+  → Learn the system, understand pH drift, EC behavior, pump reliability
   → Record data in paper logbook
 
 MONTH 2:
@@ -2053,10 +2070,11 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310 (R4,500–R5,580)
   → But fully customisable, repairable, and you understand every component
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Summary — What Each Tier Gives You
 
@@ -2081,7 +2099,6 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310 (R4,500–R5,580)
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 

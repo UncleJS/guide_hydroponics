@@ -45,8 +45,8 @@
 - [13. Full Water Change Protocol](#13-full-water-change-protocol)
   - [Step-by-Step Reservoir Change](#step-by-step-reservoir-change)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Starting Water Quality Matters
 
@@ -62,10 +62,11 @@ Your source water directly affects:
 
 **First step before filling the reservoir for the first time:** Test your source water's EC and pH. This information determines how you mix nutrients, how you manage pH, and whether you need pre-treatment.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. TDS (Total Dissolved Solids) and EC Baseline
 
@@ -120,10 +121,11 @@ Most municipal water suppliers publish annual quality reports. Look for:
 - **pH** — your starting point before nutrient addition
 - **Iron, manganese, copper** — can cause problems at elevated levels
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tap Water: Chlorine, Chloramine, and Hardness
 
@@ -133,7 +135,7 @@ Most municipal water suppliers publish annual quality reports. Look for:
 |----------|---------------|-------------------|
 | **Used by** | Older water systems | Most modern municipal systems |
 | **Removal method** | Leave to stand 24h, or activated carbon | **Cannot be removed by standing** |
-| **How to remove** | Aeration, activated carbon, UV | Vitamin C (ascorbic acid), sodium thiosulphate, activated carbon |
+| **How to remove** | Aeration, activated carbon, UV | Vitamin C (ascorbic acid), sodium thiosulfate, activated carbon |
 | **Harm to plants** | Damages roots and microbes above ~2mg/L | Same, but persists longer |
 | **Detection** | Smell dissipates after standing | No smell change after standing |
 
@@ -142,11 +144,11 @@ Most municipal water suppliers publish annual quality reports. Look for:
 **Chloramine removal:**
 ```
   METHOD 1 — Vitamin C (Ascorbic Acid):
-  Add 1 g per 10.6 US gal (40 L). Neutralises chloramine within minutes.
+  Add 1 g per 10.6 US gal (40 L). Neutralizes chloramine within minutes.
   Slightly lowers pH — adjust pH after adding.
   Buy food-grade vitamin C powder — inexpensive.
 
-  METHOD 2 — Sodium Thiosulphate:
+  METHOD 2 — Sodium Thiosulfate:
   Standard aquarium dechlorinator. Works in seconds.
 
   METHOD 3 — Activated Carbon Filter:
@@ -168,7 +170,7 @@ Hard water causes the same problems as in NFT (pH creep, scale, excess Ca/Mg) bu
   If source water Ca > 100 mg/L, reduce Calcium Nitrate dose by 20–30%.
   Verify with a full water test or local water quality report.
 
-  Strategy 2 — Acidify to neutralise bicarbonates:
+  Strategy 2 — Acidify to neutralize bicarbonates:
   Phosphoric acid (pH Down) consumes bicarbonate as well as lowering pH.
   Hard water simply needs more pH Down per US gallon. That is normal.
 
@@ -185,10 +187,11 @@ Hard water causes the same problems as in NFT (pH creep, scale, excess Ca/Mg) bu
   Follow with thorough rinsing and standard pH re-conditioning.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Well Water Issues
 
@@ -199,16 +202,17 @@ If you use well water, test it thoroughly before use. Common problems in well wa
 | **High iron (>0.3mg/L)** | Staining, pump blockage, iron toxicity | Iron deposits in clay pebbles — can clog media permanently | Sediment filter + iron removal; or RO |
 | **High sulfur (rotten egg smell)** | Toxic to roots at high levels | Anaerobic smell masked by flood cycle noise | Activated carbon + aeration |
 | **High hardness (Ca+Mg)** | pH creep, scale | Accelerated media mineral accumulation | Softener or RO; more frequent flushes |
-| **Bacteria / E. coli** | Dangerous for edible crops | Flood cycle spreads pathogens to all plants | UV sterilisation or chlorination then dechlorination |
+| **Bacteria / E. coli** | Dangerous for edible crops | Flood cycle spreads pathogens to all plants | UV sterilization or chlorination then dechlorination |
 | **Nitrates (from agriculture)** | Adds to nutrient load unpredictably | EC baseline higher than expected | Test and adjust nutrient recipe accordingly |
 | **Low pH (acidic)** | Corrosive | Leaches minerals from clay pebbles faster | pH Up to correct; test media EC weekly |
 
 **Recommendation:** If you use well water, buy a basic test kit or send a sample to a lab before the first fill. $15–$50 (R270–R900) is small next to a lost season.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Reverse Osmosis (RO) — When It's Worth It
 
@@ -239,10 +243,11 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
 
 A full change of the 45 US gal (170 L) reservoir every 10–14 days is the schedule. A countertop RO unit with a 3–5 US gal (10–20 L) storage tank can feed that fill if you collect over a day or two. Store it covered, then use it for the reservoir.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Rainwater Harvesting
 
@@ -270,16 +275,17 @@ flowchart TD
 
 **Collection system rules:**
 - Cover the tank — prevents algae, debris, and mosquito breeding
-- Use a first-flush diverter — the first few litres from a roof carry bird droppings and dust; these should not enter your tank
+- Use a first-flush diverter — the first few liters from a roof carry bird droppings and dust; these should not enter your tank
 - Use a fine mesh filter (200 micron) at the tank outlet before adding to your reservoir
 - Test pH and EC when you first start using a new collection system
 
 **Legality note:** This worked example is an inland mid-USA site at about 38°N. Rainwater harvesting is legal in nearly all US states (a few western states restricted it in the past). In South Africa, check the local by-law before you plumb a large tank. Confirm the rule where you live before you buy a big cistern.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. pH Testing Methods Compared
 
@@ -305,7 +311,7 @@ flowchart TD
 
 **pH drops / test kits:** About $5–$10 (R90–R180), no calibration, fine as a backup. Accuracy ±0.2–0.5 — rough checks only.
 
-**pH test strips:** Not recommended for nutrient solution — coloured solution masks colour comparison. ±0.5–1.0 accuracy. Use only as absolute last resort.
+**pH test strips:** Not recommended for nutrient solution — coloured solution masks color comparison. ±0.5–1.0 accuracy. Use only as absolute last resort.
 
 ### Calibrating a pH Meter
 
@@ -319,9 +325,9 @@ flowchart TD
 
   Steps:
   1. Remove electrode from storage cap — rinse with distilled water
-  2. Submerge in pH 7.0 buffer — wait for reading to stabilise — press CAL
+  2. Submerge in pH 7.0 buffer — wait for reading to stabilize — press CAL
   3. Rinse electrode with distilled water
-  4. Submerge in pH 4.0 buffer — wait for reading to stabilise — press CAL
+  4. Submerge in pH 4.0 buffer — wait for reading to stabilize — press CAL
   5. Rinse with distilled water before each measurement
   6. Return to storage solution after use
 
@@ -333,10 +339,11 @@ flowchart TD
   Media pH often reads 0.2–0.5 higher than the reservoir. The working window is still 5.8–6.2.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. EC Meters: Types, Calibration, and Use
 
@@ -378,10 +385,11 @@ This is unique to media-based systems. Your management routine should include bo
   A gap of 0.5–1.0 above the reservoir is not "always normal." It is the flush.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. pH Up and pH Down — Safe Handling
 
@@ -435,10 +443,11 @@ This is unique to media-based systems. Your management routine should include bo
   pushing pH back up. This is normal in weeks 1–4 with new media. Adjust and recheck.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Water Temperature Management Outdoors
 
@@ -446,7 +455,7 @@ This is unique to media-based systems. Your management routine should include bo
 
 An outdoor reservoir in this climate can reach the high 80s °F (about 28–35°C) on a bare tank. Summer afternoon air is 90–100°F (32–38°C). At those solution temperatures:
 - Dissolved oxygen drops sharply (from about 9 mg/L at 68°F / 20°C to under 7 mg/L at 86°F / 30°C)
-- Pythium and other water moulds thrive exponentially
+- Pythium and other water molds thrive exponentially
 - Nutrient uptake by roots becomes impaired
 - Beneficial microbial balance is disrupted
 
@@ -454,7 +463,7 @@ An outdoor reservoir in this climate can reach the high 80s °F (about 28–35°
 
 The E&F reservoir sits **under the flood tables**. The tables shade it. Expect it to run about 5–11°F (3–6°C) cooler than the same tank in full sun. The aim is still **64–72°F (18–22°C)**. Above **77°F (25°C)**, treat dissolved oxygen and pythium as the problem to solve.
 
-Maximise this advantage:
+Maximize this advantage:
 - Ensure the flood tables fully overhang the reservoir on all sides
 - Use a lid on the reservoir (also prevents light entry and algae)
 - Orient tables so the prevailing shade from nearby walls or fences protects the under-table space
@@ -462,7 +471,7 @@ Maximise this advantage:
 ### Management Strategies
 
 ```
-  STRATEGY 1 — MAXIMISE NATURAL SHADE (free):
+  STRATEGY 1 — MAXIMIZE NATURAL SHADE (free):
   As above — use table overhang. Add shade cloth to reservoir sides if gaps exist.
 
   STRATEGY 2 — INSULATION, about $5–$20 (R90–R360):
@@ -487,10 +496,11 @@ Maximise this advantage:
   Consider one if the solution itself stays above 77°F (25°C) through the 90–100°F (32–38°C) afternoons.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Algae Prevention in E&F Systems
 
@@ -550,10 +560,11 @@ If algae is already established:
   you will need to re-inoculate after treatment (worm tea, Hydroguard).
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Salt Accumulation and Flush Scheduling
 
@@ -586,10 +597,11 @@ The most important water management practice unique to E&F is **monitoring and m
   Trends over weeks tell you whether your flush frequency is adequate.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Full Water Change Protocol
 
@@ -617,7 +629,7 @@ The most important water management practice unique to E&F is **monitoring and m
   4.  Wipe interior walls and floor of reservoir with a cloth
       ─ Remove biofilm, algae patches, and mineral deposits
   5.  Add about 0.5–0.8 US gal (2–3 L) of 10% bleach solution, swirl to coat all surfaces
-  6.  Leave 10–15 minutes (sterilisation contact time)
+  6.  Leave 10–15 minutes (sterilization contact time)
   7.  Drain bleach solution completely
   8.  Triple rinse: fill with fresh water, slosh, drain — repeat 3 times
       (No bleach residue must remain — it kills plant roots and beneficial microbes)
@@ -638,11 +650,13 @@ The most important water management practice unique to E&F is **monitoring and m
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 04 — Lighting](04-lighting.md)
 
 <!-- copyright -->

@@ -33,15 +33,15 @@
   - [Meter Calibration](#meter-calibration)
   - [Grow Bag Media Refresh (Zone C)](#grow-bag-media-refresh-zone-c)
 - [6. End-of-Season Tasks (3–6 hours total over 1–2 days)](#6-end-of-season-tasks-36-hours-total-over-12-days)
-  - [End-of-Season Winterisation (after mid-October)](#end-of-season-winterisation-after-mid-october)
+  - [End-of-Season Winterization (after mid-October)](#end-of-season-winterization-after-mid-october)
   - [Season-End Review](#season-end-review)
 - [7. Maintenance Logbook Template](#7-maintenance-logbook-template)
   - [Daily Log Entry Format](#daily-log-entry-format)
   - [Weekly Summary Entry](#weekly-summary-entry)
 - [8. Early Warning Signs Checklist](#8-early-warning-signs-checklist)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Maintenance Discipline Matters
 
@@ -60,10 +60,11 @@ Ebb & Flow also has a major advantage: the entire media bed dries out and re-oxy
 
 Consistency is more important than intensity. Ten minutes every day is far more effective than three hours once a week.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Daily Tasks (10–20 minutes)
 
@@ -95,10 +96,10 @@ Check the system first thing, before the first scheduled flood of the day. This 
       (surface LECA should be dry or barely moist a few hours after the last flood.
        Moist LECA still holds a missed flood for 8–24 hours. Wilt in under 2 hours is not the normal case.)
   [ ] White crust visible on LECA surface? Note for weekly salt check.
-  [ ] Note any unusual spots, mould, or webbing
+  [ ] Note any unusual spots, mold, or webbing
 
   ZONE B — MICROGREENS
-  [ ] Are trays in blackout phase? Check for any mould (white or green fuzzy growth)
+  [ ] Are trays in blackout phase? Check for any mold (white or green fuzzy growth)
   [ ] Are trays in light phase? Check moisture — mist if surface is dry
   [ ] Any trays ready to harvest? (cotyledons open, 2–3 in / 5–8 cm tall)
 
@@ -143,10 +144,11 @@ On hot days, combined plant transpiration and evaporation from the open table su
   See Guide 03 for water source analysis.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Twice-Weekly Tasks (15–20 minutes)
 
@@ -208,16 +210,17 @@ Accurate EC and pH measurement is critical at least every 2–3 days. In an E&F 
   solution in LECA. Increase top-up frequency before adjusting EC down.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Weekly Tasks (30–60 minutes)
 
 ### Full EC/pH Assessment and Adjustment
 
-Same as twice-weekly measurement but with a more thorough check: inspect solution colour (clear = good; green-brown = algae or Pythium), check solution smell (fresh = good; musty/sour = root rot developing), and look at the table surface LECA for salt crust extent.
+Same as twice-weekly measurement but with a more thorough check: inspect solution color (clear = good; green-brown = algae or Pythium), check solution smell (fresh = good; musty/sour = root rot developing), and look at the table surface LECA for salt crust extent.
 
 ### Flood Cycle Verification
 
@@ -283,7 +286,7 @@ Salt buildup in LECA is a defining maintenance issue for Ebb & Flow — it does 
 ```
   WEEKLY SALT CRUST CHECK:
 
-  [ ] Inspect LECA surface in each table — white or grey powdery crust?
+  [ ] Inspect LECA surface in each table — white or gray powdery crust?
   [ ] Check around the sides and corners of the table — salt concentrates here
   [ ] Check net pot rims — visible white mineral ring?
   [ ] If minor crust (fine dusting only): normal — monitor
@@ -292,8 +295,8 @@ Salt buildup in LECA is a defining maintenance issue for Ebb & Flow — it does 
   [ ] Check EC again — if EC is also rising, heavy crust is salt buildup
       from hard water rather than nutrient lockout from over-concentration
 
-  INTERPRETING SALT CRUST COLOUR:
-  White/grey: Calcium, magnesium, or carbonate deposits — water hardness
+  INTERPRETING SALT CRUST COLOR:
+  White/gray: Calcium, magnesium, or carbonate deposits — water hardness
   Orange-brown tinge: Iron precipitation — check pH (keep below 6.5)
   Yellow: Sulfur or iron compounds — check nutrient formula ratio
 ```
@@ -315,7 +318,7 @@ Salt buildup in LECA is a defining maintenance issue for Ebb & Flow — it does 
   on a tray) before a 3% hydrogen-peroxide flush. Do not run that dose through
   a live root zone. Rinse thoroughly with plain water. Replace the plants.
 
-  BIOFILM (grey/clear slimy coating on table surfaces): Normal at low levels.
+  BIOFILM (gray/clear slimy coating on table surfaces): Normal at low levels.
   Excessive biofilm: indicator that reservoir change is overdue.
 ```
 
@@ -386,10 +389,11 @@ The outdoor timer is a digital 1-minute timer inside a weatherproof box. A mecha
   [ ] Stock solution shelf life: dissolved solutions 1–2 weeks; dry salts indefinitely
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Periodic Deep Tasks (2–3 hours per session)
 
@@ -427,7 +431,7 @@ Even with good water management, nutrient salts accumulate, organic matter build
      d. Inspect impeller for calcium deposits — scrub with an old toothbrush
 
   5. Flush fill/return inlet line:
-     a. Pour several litres of clean water into the fill line to clear debris
+     a. Pour several liters of clean water into the fill line to clear debris
      b. Check the line for algae or biofilm inside
 
   6. Inspect all fittings:
@@ -531,9 +535,9 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
 ```
   MONTHLY ZONE C CHECK:
 
-  Bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beetroot,
+  Bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beet (beetroot),
   three 10 US gal (38 L) carrot. Mix is 60% coco, 30% perlite, 10% vermiculite.
-  Fertigation stays at or below 2.0 mS/cm. Beetroot does not get a higher target.
+  Fertigation stays at or below 2.0 mS/cm. Beet (beetroot) does not get a higher target.
   Zone B trays stay at 1–1¼ in (2.5–3 cm) of coco. Standard microgreens get
   pH-adjusted water only. Sunflower and pea may use EC 0.4–0.8 mS/cm.
 
@@ -546,14 +550,15 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
   [ ] Between crops: full media changeout per guide/05 recommendations
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. End-of-Season Tasks (3–6 hours total over 1–2 days)
 
-### End-of-Season Winterisation (after mid-October)
+### End-of-Season Winterization (after mid-October)
 
 ```
   PLANT HARVEST AND REMOVAL:
@@ -566,7 +571,7 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
 
   E&F TABLE BREAKDOWN:
   [ ] Run final flood/drain cycle — table fully drained
-  [ ] Remove all net pots from tables — sterilise and dry, store in sealed bag
+  [ ] Remove all net pots from tables — sterilize and dry, store in sealed bag
   [ ] Remove all LECA from tables:
       → Rinse under running water until water runs clear
       → Soak in 10% bleach solution for 30 min
@@ -580,7 +585,7 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
       screw corrosion; treat exposed timber with water-based preservative
 
   FITTINGS AND PLUMBING:
-  [ ] Remove overflow standpipes — clean, dry, label, store in a labelled bag
+  [ ] Remove overflow standpipes — clean, dry, label, store in a labeled bag
   [ ] Remove bulkhead fittings if possible (or cap with bung) to prevent
       freezing/cracking around the seals
   [ ] Check all rubber gaskets and O-rings — replace any that are cracked
@@ -590,7 +595,7 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
 
   RESERVOIR:
   [ ] Drain reservoir completely
-  [ ] Full reservoir sterilisation (10% bleach wash — triple rinse)
+  [ ] Full reservoir sterilization (10% bleach wash — triple rinse)
   [ ] Remove pump — clean fully, dry, store indoors
   [ ] Remove air stone (if used) — clean and store
   [ ] If reservoir is outdoors and cannot be moved: add a small amount of
@@ -605,7 +610,7 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
   [ ] Compost all root veg media after harvest (used coco can go to garden compost)
   [ ] Clean grow bags — shake out, rinse, dry in sun
   [ ] Store bags flat in a dry place
-  [ ] If reusing media next season: sterilise per guide/05 recommendations
+  [ ] If reusing media next season: sterilize per guide/05 recommendations
 
   SHADE CLOTH AND ACCESSORIES:
   [ ] Clean shade cloth — brush off debris, rinse if dirty, dry before storage
@@ -634,10 +639,11 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
   Document answers — they are invaluable for planning the next season.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Maintenance Logbook Template
 
@@ -715,10 +721,11 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   3. _______________________________________________________
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Early Warning Signs Checklist
 
@@ -755,7 +762,7 @@ Catch problems before they become crises. Add these to your daily and weekly sca
   ⚠ Sticky residue on leaves → aphid honeydew — inspect closely
   ⚠ White powder on leaf surfaces → powdery mildew — remove affected leaves, treat
   ⚠ Small flies around the media → fungus gnats — deploy traps, treat media
-  ⚠ Holes or skeletonised leaves → caterpillars or slugs — inspect at night
+  ⚠ Holes or skeletonized leaves → caterpillars or slugs — inspect at night
   ⚠ Tomato blossom drop → temperature stress or pollination failure — check conditions
 ```
 
@@ -765,9 +772,12 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 > **Tip:** The weekly flood and drain check is the manual version of Guide 13. The automatic version opens the pump relay if the drain float is still up after the pump should be off.
 
 > **Previous:** [Guide 07 — Pests and Disease](./07-pests-and-disease.md)
-> **Next:** [Guide 09 — Troubleshooting](./09-troubleshooting.md)
+
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Guide 09 — Troubleshooting](./09-troubleshooting.md)
+
 
 ---
 

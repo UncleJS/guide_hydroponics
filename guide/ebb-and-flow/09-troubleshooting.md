@@ -41,8 +41,8 @@
   - [D5: Multiple Plants Affected vs. One Plant](#d5-multiple-plants-affected-vs-one-plant)
 - [SECTION E: Master Decision Flowchart](#section-e-master-decision-flowchart)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -59,10 +59,11 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
 The most common E&F error is misdiagnosing a flood cycle problem as a nutrient deficiency. If the flood/drain cycle is wrong, nutrients cannot reach the roots regardless of solution quality.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION A: Water and Solution Problems
 
@@ -166,7 +167,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 ### A3: SALT CRUST BUILDING UP IN LECA
 
 ```
-  SYMPTOM: White or grey powdery/crusty deposits on LECA surface, table walls,
+  SYMPTOM: White or gray powdery/crusty deposits on LECA surface, table walls,
   or around net pots. Can range from light dusting to thick mineral crust.
 
   E&F SPECIFIC CONTEXT:
@@ -290,11 +291,11 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
              LECA above the flood line: this is surface algae, relatively harmless
              but unsightly. A piece of black polythene over LECA between flood
              cycles reduces this.
-         (3) Full reservoir flush + sterilisation (see Guide 08 Section 5)
+         (3) Full reservoir flush + sterilization (see Guide 08 Section 5)
          (4) Long-term: consider covering reservoir exterior with opaque wrap
 
   BROWN: Typically root organic matter or Pythium development
-    Sign: Solution colour has a tan or brown tinge; may also smell musty
+    Sign: Solution color has a tan or brown tinge; may also smell musty
     Cause: Root material breaking down in solution — possible early Pythium
     Fix: Check roots immediately. If roots are white or pale: organic matter
          only — do a full reservoir change and flush. If roots are brown and
@@ -304,15 +305,16 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   SLIMY / THICK CONSISTENCY:
     Sign: Solution feels viscous when handling; coating on reservoir walls
     Cause: Bacterial biofilm in reservoir — solution is overdue for a change
-    Fix: Full drain, sterilise reservoir (10% bleach, triple rinse), refill fresh.
+    Fix: Full drain, sterilize reservoir (10% bleach, triple rinse), refill fresh.
          Increase reservoir change frequency. Consider adding beneficial bacteria
-         (e.g., Hydroguard/Bacillus amyloliquefaciens) to colonise the biofilm sites.
+         (e.g., Hydroguard/Bacillus amyloliquefaciens) to colonize the biofilm sites.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION B: Plant Problems
 
@@ -350,11 +352,11 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   5. Run a half-strength nutrient solution for 1 week to reduce stress
 
   TREATMENT — SEVERE STAGE (most roots brown/black, wilting plants):
-  1. Remove affected plants. Trim all dead root material with sterilised scissors.
+  1. Remove affected plants. Trim all dead root material with sterilized scissors.
   2. Rinse roots in a 0.3% hydrogen-peroxide solution (about 2 tsp / 10 ml of 3%
      peroxide per 1 US qt / 0.95 L) for 30 seconds, then rinse in water.
-  3. Replace table media: remove all LECA, sterilise (see Guide 08 Section 5).
-  4. Full reservoir drain and sterilisation.
+  3. Replace table media: remove all LECA, sterilize (see Guide 08 Section 5).
+  4. Full reservoir drain and sterilization.
   5. Replant on the vegetative schedule of 3 floods a day, shortened, until roots
      are white again. Fruiting returns to 4. Never 5.
   6. Remaining plants in the same table: monitor closely for spread.
@@ -466,7 +468,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   3. HIGH TEMPERATURE + LOW HUMIDITY
      Sign: Tip burn occurs on hot days; lower margins crispy.
-     The "VPD" (vapour pressure deficit) is too high: plants
+     The "VPD" (vapor pressure deficit) is too high: plants
      transpire faster than calcium can be translocated to tips.
      Fix: 40% shade cloth when afternoon highs hold above 85°F (29°C), plus a
           windbreak on the prevailing-wind side. Keep the 4 fruiting floods and
@@ -476,7 +478,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
      Sign: Brown leaf margins, reduced growth; distinctive ammonia-
            sharp smell from solution.
      Fix: Switch to nitrate-dominant formula (Masterblend, GH Maxi series).
-          Do not use urea-based fertilisers in E&F.
+          Do not use urea-based fertilizers in E&F.
 ```
 
 ---
@@ -588,10 +590,11 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
           Do not add a separate boron dose unless a tissue test asks for it.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION C: System and Equipment Problems
 
@@ -706,7 +709,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   2. ALGAE OR BIOFILM NARROWING THE OVERFLOW
      Sign: Slow drain through overflow rather than sudden blockage.
-          Visible green or grey slime inside standpipe.
+          Visible green or gray slime inside standpipe.
      Fix: Remove standpipe. Scrub interior with brush and dilute bleach
           (1:10 bleach:water). Rinse thoroughly. Refit.
           Perform overflow inspection monthly (see Guide 08 Section 4).
@@ -831,10 +834,11 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
     to prevent root ingress
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION D: Multiple Simultaneous Symptoms
 
@@ -937,10 +941,11 @@ Refer to: **C2** — timer/pump failure.
     preventing solution from reaching the root zone
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## SECTION E: Master Decision Flowchart
 
@@ -959,7 +964,7 @@ flowchart TD
     W --> W3["Salt crust in LECA → A3"]
     W --> W4["Reservoir dropping fast → A4, C4"]
     W --> W5["EC spiking / crashing → A5"]
-    W --> W6["Solution discoloured → A6"]
+    W --> W6["Solution discolored → A6"]
 
     P --> P1["Root rot → B1"]
     P --> P2["Wilting, healthy roots → B2"]
@@ -1001,9 +1006,12 @@ flowchart TD
 
 
 > **Previous:** [Guide 08 — System Maintenance](./08-system-maintenance.md)
-> **Next:** [Guide 10 — Climate Management](./10-climate-management.md)
+
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Guide 10 — Climate Management](./10-climate-management.md)
+
 
 ---
 

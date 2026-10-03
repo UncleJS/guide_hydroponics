@@ -30,9 +30,9 @@
   - [Stuck-ON Detection and Auto-Shutoff](#stuck-on-detection-and-auto-shutoff)
   - [E&F Automation Priority Stack](#ef-automation-priority-stack)
 - [5. Shared Automation Architecture](#5-shared-automation-architecture)
-  - [Budget Tier ($15–40): WiFi Monitoring](#budget-tier-1540-wifi-monitoring)
-  - [Mid Tier ($80–150): ESP32 Sensor Network](#mid-tier-80150-esp32-sensor-network)
-  - [Full Tier ($200–400): Closed-Loop Control](#full-tier-200400-closed-loop-control)
+  - [Budget Tier ($15–40 / R270–R720): WiFi Monitoring](#budget-tier-1540-r270r720-wifi-monitoring)
+  - [Mid Tier ($80–150 / R1,440–R2,700): ESP32 Sensor Network](#mid-tier-80150-r1440r2700-esp32-sensor-network)
+  - [Full Tier ($200–400 / R3,600–R7,200): Closed-Loop Control](#full-tier-200400-r3600r7200-closed-loop-control)
 - [6. Wiring and Relay Control](#6-wiring-and-relay-control)
   - [Controlling Pumps from a Microcontroller](#controlling-pumps-from-a-microcontroller)
   - [Safety Rules for Mains Relay Circuits](#safety-rules-for-mains-relay-circuits)
@@ -47,16 +47,19 @@
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## Introduction
 
 Both NFT and Ebb & Flow benefit from automation, but what they need automated — and why — is fundamentally different. NFT is a continuously running system where the greatest risk is pump stoppage; detecting that the pump has failed is the single most valuable automation task. E&F is a timed system where the greatest risk is **a timer that fails ON** — a pump that runs continuously instead of cycling, flooding the table permanently and causing root rot within 2–4 hours.
 
 This guide maps the automation priorities, sensor types, wiring patterns, and alert logic for each system, and then shows how to build a unified controller for a two-system grow.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. What Automation Is Solving in Each System
 
@@ -105,10 +108,11 @@ The pattern: **drain confirmation is everything** in E&F. Knowing that the table
 
 **Do not swap these priorities between systems.** A grower who installs only a temperature sensor and pH logger on an E&F system has missed the most critical sensor. A grower who installs drain confirmation logic on NFT has also missed the most critical sensor (flow at the return).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Essential Monitoring (Both Systems)
 
@@ -116,7 +120,7 @@ The following sensors are high-value in both NFT and E&F.
 
 ### Temperature
 
-**Air temperature and humidity** (measures VPD — Vapour Pressure Deficit):
+**Air temperature and humidity** (measures VPD — Vapor Pressure Deficit):
 - Sensor: DHT22 or SHT31 (SHT31 is more accurate and stable)
 - Location: inside the canopy zone, shaded from direct sun, at canopy height
 - Alert: air temperature above 90°F (32°C) or below 41°F (5°C); relative humidity above 85% (disease risk)
@@ -144,10 +148,11 @@ Automated EC and pH monitoring requires submersible probes in the reservoir. Opt
 - Action on trigger: alert only (automated top-up is Full Tier; valve failure risk)
 - Alternative: ultrasonic distance sensor (HC-SR04) for continuous level reading rather than binary alert
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. NFT-Specific Automation
 
@@ -214,10 +219,11 @@ NFT has two loops. Fit the flow and level sensors on both the 20 US gal (76 L) g
 7. **Automated top-up valve** on each tank (full tier)
 8. **Automated pH dosing** with a peristaltic pump (full tier)
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. E&F-Specific Automation
 
@@ -292,7 +298,7 @@ Stuck-ON cutoff is the primary E&F safety action, not an optional add-on. If the
 
 This requires a normally-open relay in series with the pump mains circuit, controlled by the ESP32.
 
-**Caution**: any relay-based pump cutoff should be designed fail-safe: if the ESP32 loses power or crashes, the relay should **de-energise** (default to pump OFF), not hold the pump ON.
+**Caution**: any relay-based pump cutoff should be designed fail-safe: if the ESP32 loses power or crashes, the relay should **de-energize** (default to pump OFF), not hold the pump ON.
 
 ### E&F Automation Priority Stack
 
@@ -309,16 +315,17 @@ From highest to lowest value-for-money:
 9. **Second float switch in table** → set at overflow level; double-confirmation of flooding ($5 / R90)
 10. **Automated pH/EC dosing** → Full Tier only
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shared Automation Architecture
 
 The following tiers apply equally to both systems. Where sensors or logic differ between systems, they are noted.
 
-### Budget Tier ($15–40): WiFi Monitoring
+### Budget Tier ($15–40 / R270–R720): WiFi Monitoring
 
 **Goal:** Know the temperature and humidity in real time from your phone.
 
@@ -339,7 +346,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 
 **E&F addition:** add a $5 (R90) float switch in the flood table **and** a $6–15 (R108–R270) mains relay that **opens the pump circuit** if the float is still up about 30–45 minutes after pump-off. Alert alone is not the Budget E&F story.
 
-### Mid Tier ($80–150): ESP32 Sensor Network
+### Mid Tier ($80–150 / R1,440–R2,700): ESP32 Sensor Network
 
 **Goal:** Full monitoring of all parameters; E&F stuck-ON cutoff already required; alerting via MQTT/Home Assistant/Telegram.
 
@@ -364,7 +371,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 
 **Combined NFT + E&F:** run two ESP32 boards (one per system); both report to the same Home Assistant instance.
 
-### Full Tier ($200–400): Closed-Loop Control
+### Full Tier ($200–400 / R3,600–R7,200): Closed-Loop Control
 
 **Goal:** Automated pH correction and EC top-up. E&F stuck-ON cutoff is already required from Budget/Mid — Full Tier adds dosing, not the first relay.
 
@@ -388,10 +395,11 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - Test all automations in manual override mode before enabling autonomous operation
 - Physical manual overrides (isolating valves, manual switches) are mandatory alongside all automated systems
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Wiring and Relay Control
 
@@ -450,10 +458,11 @@ graph TD
   G6 -->|one-wire| S4[DS18B20<br/>in each reservoir as needed]
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Alert Logic Comparison
 
@@ -495,10 +504,11 @@ graph TD
 | Power cut restored | Log timestamp; check all sensors on resume | Pumps and timers may need manual restart after power cut |
 | Sensor read error | Alert: sensor offline | Distinguish hardware fault from genuine limit breach |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Dashboard Design for a Two-System Setup
 
@@ -530,26 +540,27 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 - Acknowledge button for non-critical alerts
 - History log of past alerts
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Automation Decision Guide
 
 ```mermaid
 graph TD
   A[Starting automation for<br/>NFT, Ebb and Flow, or both?] --> B{Budget?}
-  B -->|Under $40| C[Budget Tier<br/>WiFi temp/humidity<br/>+ critical floats]
-  B -->|$80-150| D[Mid Tier<br/>Full monitoring<br/>pH + EC + floats + E&F relay]
-  B -->|$200+| E[Full Tier<br/>Closed-loop dosing<br/>cutoff already required]
+  B -->|"Under $40 (R720)"| C[Budget Tier<br/>WiFi temp/humidity<br/>+ critical floats]
+  B -->|"$80-150 (R1440-R2700)"| D[Mid Tier<br/>Full monitoring<br/>pH + EC + floats + E&F relay]
+  B -->|"$200+ (R3600+)"| E[Full Tier<br/>Closed-loop dosing<br/>cutoff already required]
   C --> F{Which system?}
   F -->|NFT| G[Float on greens return<br/>and fruiting return<br/>Pump failure alert per loop]
   F -->|Ebb and Flow| H[Flood-table float<br/>plus pump relay cutoff<br/>Open relay then alert]
   F -->|Both| I[Both NFT returns<br/>E&F float plus relay<br/>Separate GPIO each]
   D --> J[Atlas EZO probes<br/>all floats<br/>E&F relay already fitted]
   E --> K[Add peristaltic dosing<br/>pH and EC auto-correction<br/>Keep E&F fail-safe relay]
-  K --> M[Relay wired fail-safe<br/>Normally-open contact<br/>ESP32 de-energise on crash]
+  K --> M[Relay wired fail-safe<br/>Normally-open contact<br/>ESP32 de-energize on crash]
 ```
 
 **The minimum viable automation for a new grower with both systems:**
@@ -568,9 +579,10 @@ This configuration, running ESPHome and Home Assistant, gives you 24/7 monitorin
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 *Next: [Comparison Guide 04 — Cost and ROI: NFT vs Ebb & Flow](04-cost.md) — build costs, running costs, yield value, and payback period for each system*
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 

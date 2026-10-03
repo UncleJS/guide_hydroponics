@@ -31,15 +31,15 @@
 
 ## System Summary
 
-A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid-USA backyard at about **38°N**, USDA zones **6b–7a**. Hardware cost is in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md). Dimensions, doses, and dates follow [Design constants](../design-constants.md). The spatial layout, including this Ebb and Flow Zone A, is in [zones.md](../../zones.md). The system uses a **three-zone hybrid design** that prioritises fruiting crops alongside fast leafy greens:
+A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid-USA backyard at about **38°N**, USDA zones **6b–7a**. Hardware cost is in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md). Dimensions, doses, and dates follow [Design constants](../design-constants.md). The spatial layout, including this Ebb and Flow Zone A, is in [zones.md](../../zones.md). The system uses a **three-zone hybrid design** that prioritizes fruiting crops alongside fast leafy greens:
 
 | Zone | Method | Crops |
 |------|--------|-------|
-| **Zone A — Flood Tables** | Timed flood-drain cycles, LECA media | Tomatoes, cucumbers, courgettes, aubergine, peppers, lettuce, herbs |
+| **Zone A — Flood Tables** | Timed flood-drain cycles, LECA media | Tomatoes, cucumbers, zucchinis (courgettes), eggplant (aubergine), peppers, lettuce, herbs |
 | **Zone B — Microgreens Station** | Tray-based, coco coir media, manual/wicking | Sunflower, pea shoots, radish, broccoli, amaranth, wheatgrass |
-| **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beetroot |
+| **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beet (beetroot) |
 
-**Critical difference from NFT:** Ebb & Flow uses a timer to control flood cycles. A timer that fails ON (pump runs continuously) will flood roots permanently and cause root rot within 2–4 hours. **A drain confirmation sensor is strongly recommended** before the first crop goes in — see [Guide 13 — Automation](13-automation.md). A missed flood is a different fault: moist LECA buffers **8–24 hours**.
+**Critical difference from NFT:** Ebb & Flow uses a timer to control flood cycles. A timer that fails ON (pump runs continuously) will flood roots permanently and cause root rot within 2–4 hours. **Fit stuck-ON cutoff before the first crop:** a smart plug that cuts pump power on >35 min continuous draw, and preferably three table floats that open the pump relay if a table is still flooded after pump-off — see [Guide 13 — Automation](13-automation.md). Alert alone is not enough. A missed flood is a different fault: moist LECA buffers **8–24 hours**.
 
 **Electrical:** 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). Put the timer and plugs in a weatherproof box.
 
@@ -69,7 +69,7 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid
 
 **Table assignment:**
 - **Table 1** — Indeterminate tomato or cucumber, 1 plant
-- **Table 2** — Pepper, aubergine, or courgette, 1–2 plants
+- **Table 2** — Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants
 - **Table 3** — Lettuce, herbs, pak choi, or a later fruiting crop
 
 ### Zone B — Microgreens Station
@@ -88,10 +88,10 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid
 
 | Property | Value |
 |----------|-------|
-| Bags | 2 × 5 US gal (19 L) radish; 1 × 5 US gal (19 L) beetroot; 3 × 10 US gal (38 L) carrot |
+| Bags | 2 × 5 US gal (19 L) radish; 1 × 5 US gal (19 L) beet (beetroot); 3 × 10 US gal (38 L) carrot |
 | Media | 60% coco coir + 30% perlite + 10% vermiculite. No garden soil |
-| Fertigation EC | Ceiling 2.0 mS/cm. Beetroot does not get a higher target |
-| Planning yield, one season | Radish 15 lb (6.8 kg); beetroot 8 lb (3.6 kg); carrot 20 lb (9.1 kg). Zone C total 43 lb (20 kg) |
+| Fertigation EC | Ceiling 2.0 mS/cm. Beet (beetroot) does not get a higher target |
+| Planning yield, one season | Radish 15 lb (6.8 kg); beet (beetroot) 8 lb (3.6 kg); carrot 20 lb (9.1 kg). Zone C total 43 lb (20 kg) |
 | Watering | Manual fertigation, 1–2× daily |
 | Drainage | Bags on a slatted rack or gravel tray |
 
@@ -111,7 +111,7 @@ flowchart TD
     subgraph ZoneA["ZONE A — EBB AND FLOW TABLES"]
         T1["TABLE 1<br/>1 tomato or cucumber"] --> OF1["Table 1 overflow<br/>1.5 in standpipe"]
         T1 --> DR1["Table 1 drain<br/>1 in"]
-        T2["TABLE 2<br/>1-2 pepper, aubergine, or courgette"] --> OF2["Table 2 overflow<br/>1.5 in standpipe"]
+        T2["TABLE 2<br/>1-2 pepper, eggplant (aubergine), or zucchini (courgette)"] --> OF2["Table 2 overflow<br/>1.5 in standpipe"]
         T2 --> DR2["Table 2 drain<br/>1 in"]
         T3["TABLE 3<br/>Leafy, or a later fruiting crop"] --> OF3["Table 3 overflow<br/>1.5 in standpipe"]
         T3 --> DR3["Table 3 drain<br/>1 in"]
@@ -179,7 +179,7 @@ flowchart TD
 | ESP32 or ESP8266 + SHT31 | 1 set | Temperature monitoring + float switch alerts |
 | Rockwool starter cubes | 30 | Seedling germination |
 | Coco coir plugs | 30 | Alternative to rockwool for transplanting to LECA |
-| Grow bags, 5 US gal (19 L) | 3 | Zone C — two radish, one beetroot |
+| Grow bags, 5 US gal (19 L) | 3 | Zone C — two radish, one beet (beetroot) |
 | Grow bags, 10 US gal (38 L) | 3 | Zone C — carrot |
 | Coco coir | as needed | Zones B and C. Zone B depth is 1–1¼ in (2.5–3 cm) |
 | Perlite | as needed | Zone C media blend, 30% by volume |
@@ -207,12 +207,12 @@ flowchart TD
 | **April (SA: October)** | Outdoor season opens mid-month. Pre-soak LECA at pH 5.8 | Leafy crops (lettuce, pak choi) on Table 3. Harden fruiting transplants |
 | **Late April (SA: late October)** | Transplant after the 15 April last frost (SA: 15 October) | 1 tomato or 1 cucumber on Table 1. Peppers on Table 2 when nights allow |
 | **May (SA: November)** | Full system operational; fruiting crops establishing | Cucumber on Table 1 if that is the Table 1 crop — it wants warmer nights than tomato |
-| **June (SA: December)** | Fruiting crops in vegetative growth. Deploy 40% shade when afternoon highs hold above 85°F (29°C) | Courgette on Table 2 if that is the Table 2 crop. Zone B rolling harvest |
-| **July (SA: January)** | Peak production. Hand-pollinate. A missed flood still has an 8–24 hour LECA buffer | Radish, beetroot, and carrot in the Zone C bags |
+| **June (SA: December)** | Fruiting crops in vegetative growth. Deploy 40% shade when afternoon highs hold above 85°F (29°C) | Zucchini (courgette) on Table 2 if that is the Table 2 crop. Zone B rolling harvest |
+| **July (SA: January)** | Peak production. Hand-pollinate. A missed flood still has an 8–24 hour LECA buffer | Radish, beet (beetroot), and carrot in the Zone C bags |
 | **August (SA: February)** | Fruiting peak. Summer afternoon highs 90–100°F (32–38°C). Monitor media EC weekly | Late succession leafy crops on Table 3 |
-| **September (SA: March)** | Shoulder season. Fruiting slows. Courgette and cucumber finish first | Shoulder leafy crops in any freed table |
+| **September (SA: March)** | Shoulder season. Fruiting slows. Zucchini (courgette) and cucumber finish first | Shoulder leafy crops in any freed table |
 | **October (SA: April)** | First fall frost planning date 20 October (SA: 20 April). Final tomato and pepper harvest. Clear fruiting LECA | Leafy crops until frost. Season closes mid-October (SA: mid-April) |
-| **November (SA: May)** | LECA sterilisation (bleach soak, plants out, then rinse). Table clean. Winterise | — |
+| **November (SA: May)** | LECA sterilization (bleach soak, plants out, then rinse). Table clean. Winterize | — |
 | **December (SA: June)** | Stay shut down through deep winter. Plan next year | — |
 
 **Key dates to track (inland mid-USA, about 38°N, USDA 6b–7a):**
@@ -237,7 +237,7 @@ flowchart TD
 ## 4-Week Build Timeline
 
 ### Week 1 — Procurement & Preparation
-- [ ] Finalise bill of materials (see [Guide 12 — Budget & Sourcing](12-budget-and-sourcing.md))
+- [ ] Finalize bill of materials (see [Guide 12 — Budget & Sourcing](12-budget-and-sourcing.md))
 - [ ] Order/purchase all components — note: LECA needs 24h pre-soak before use
 - [ ] Select and prepare build site — flat ground; reservoir must be positioned lower than table drains
 - [ ] Source timber for flood table support frames
@@ -260,7 +260,7 @@ flowchart TD
 - [ ] Fill reservoir with plain water; run pump manually — check for leaks at all fittings
 - [ ] Test flood: confirm water rises to overflow standpipe height, then stops
 - [ ] Test drain: confirm table fully empties within 15–20 minutes of pump off
-- [ ] Set the digital timer — start with 3 flood cycles per day at 20 minutes. Fruiting crops may later move to 4 floods per day. Do not programme a 5th flood
+- [ ] Set the digital timer — start with 3 flood cycles per day at 20 minutes. Fruiting crops may later move to 4 floods per day. Do not program a 5th flood
 - [ ] Install float switch in each table (drain confirmation) — see [Guide 13 — Automation](13-automation.md)
 - [ ] Install float switch in reservoir (low level alert)
 - [ ] Test timer: observe a full flood cycle start to finish; confirm drain is complete before next cycle
@@ -298,7 +298,7 @@ Once the system is running, use this each morning:
 - [ ] Confirm timer is set and correct — check programmed flood times have not been reset by power cut
 - [ ] Log any observations, adjustments, or concerns
 
-**After a power cut:** timers may reset to 12:00. Check and re-programme the timer before leaving the system unattended.
+**After a power cut:** timers may reset to 12:00. Check and re-program the timer before leaving the system unattended.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -310,11 +310,11 @@ Once the system is running, use this each morning:
 By the end of the first growing season:
 
 1. A harvest from the single Table 1 plant (indeterminate tomato or cucumber) through the mid-April to mid-October season (SA: mid-October to mid-April)
-2. Continuous fruiting from the Table 2 crop (pepper, courgette, or aubergine, 1–2 plants) from July through September (SA: January through March)
+2. Continuous fruiting from the Table 2 crop (pepper, zucchini (courgette), or eggplant (aubergine), 1–2 plants) from July through September (SA: January through March)
 3. **Zero root rot events** caused by a pump stuck ON or a blocked drain — confirmed by the drain-sensor log. Stuck-ON root rot risk is 2–4 hours
 4. Media EC kept to within 0.5 mS/cm of reservoir EC, with an urgent flush if the gap reaches +1.0 mS/cm
 5. At least **3–4 full microgreens tray harvests** per month from Zone B, on plain pH 5.8–6.2 water
-6. A Zone C season in the planning range: radish 15 lb (6.8 kg), beetroot 8 lb (3.6 kg), carrot 20 lb (9.1 kg)
+6. A Zone C season in the planning range: radish 15 lb (6.8 kg), beet (beetroot) 8 lb (3.6 kg), carrot 20 lb (9.1 kg)
 7. pH inside the working window 5.8–6.2 (acceptable band 5.5–6.5) and EC inside the crop target for **80%+ of operational days**
 8. A missed flood detected and corrected inside the 8–24 hour LECA buffer
 
@@ -335,7 +335,7 @@ By the end of the first growing season:
 | 03 | [03-water-quality.md](03-water-quality.md) | Water sources, testing, treatment |
 | 04 | [04-lighting.md](04-lighting.md) | Outdoor light, DLI, shade, seasons |
 | 05 | [05-growing-media.md](05-growing-media.md) | LECA preparation, media depth, germination |
-| 06 | [06-crops.md](06-crops.md) | Per-crop guide including tomatoes, cucumbers, courgettes |
+| 06 | [06-crops.md](06-crops.md) | Per-crop guide including tomatoes, cucumbers, zucchinis (courgettes) |
 | 07 | [07-pests-and-disease.md](07-pests-and-disease.md) | IPM, pests, diseases — E&F specific risks |
 | 08 | [08-system-maintenance.md](08-system-maintenance.md) | Daily/weekly/seasonal schedules |
 | 09 | [09-troubleshooting.md](09-troubleshooting.md) | Symptom → cause → fix; drain and timer failure trees |

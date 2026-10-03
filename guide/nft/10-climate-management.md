@@ -31,12 +31,18 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
   - [5.1 How Cold Damages Hydroponic Plants](#51-how-cold-damages-hydroponic-plants)
   - [5.2 Frost Hardiness by Crop](#52-frost-hardiness-by-crop)
   - [5.3 Protecting the System from Cold](#53-protecting-the-system-from-cold)
+    - [Horticultural Fleece (Frost Cloth)](#horticultural-fleece-frost-cloth)
+    - [Protecting the Reservoir in Cold](#protecting-the-reservoir-in-cold)
+    - [Channel and Pipe Protection](#channel-and-pipe-protection)
   - [5.4 Minimum Operational Temperatures](#54-minimum-operational-temperatures)
   - [5.5 Extended Cold Spells](#55-extended-cold-spells)
 - [6. Wind Management](#6-wind-management)
   - [6.1 How Wind Affects the System](#61-how-wind-affects-the-system)
   - [6.2 Wind Speed Reference](#62-wind-speed-reference)
   - [6.3 Wind Management Strategies](#63-wind-management-strategies)
+    - [Windbreaks](#windbreaks)
+    - [Securing the Structure](#securing-the-structure)
+    - [Managing Wind-Driven EC Rise](#managing-wind-driven-ec-rise)
 - [7. Rain Management](#7-rain-management)
   - [7.1 Rain and Reservoir Dilution](#71-rain-and-reservoir-dilution)
   - [7.2 Rain Management Strategy](#72-rain-management-strategy)
@@ -55,7 +61,7 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 - [10. Putting It Together — Seasonal Action Plans](#10-putting-it-together-seasonal-action-plans)
   - [Spring Startup (April)](#spring-startup-april)
   - [Full Season (May–September)](#full-season-mayseptember)
-  - [Autumn Wind-Down (October)](#autumn-wind-down-october)
+  - [Fall Wind-Down (October)](#fall-wind-down-october)
   - [Winter (December–February)](#winter-decemberfebruary)
 - [11. Climate Monitoring Setup](#11-climate-monitoring-setup)
   - [11.1 Minimum Monitoring Kit](#111-minimum-monitoring-kit)
@@ -64,8 +70,8 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 - [12. Quick-Reference Decision Tree](#12-quick-reference-decision-tree)
 - [Summary](#summary)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor Climate Challenge
 
@@ -96,10 +102,11 @@ Both environments must stay within acceptable ranges simultaneously. When one go
 
 Worked site: inland mid-USA, about 38°N, USDA zones 6b–7a (Kansas City, St. Louis, Louisville, Richmond). Not the Pacific coast at the same latitude. Summer clear-sky DLI of 45–55 mol/m²/day is more light than lettuce wants, which is one reason the shade cloth is 40% once afternoon highs hold above 85°F (29°C).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Seasonal Calendar for This Site
 
@@ -138,7 +145,7 @@ Winter bar is the middle of the 10–15 band. Spring and fall are the middle of 
 | NFT greens, CH3 | Spinach, kale, mint, plus 3–4 strawberries | Leafy crops through the outdoor season | Strawberries are on CH3, not on CH4. |
 | NFT fruiting, CH4 only | Cherry tomato and pepper | After last frost, finish before October 20 (SA: April 20) | Own 10 US gal (38 L) tank. Tomato EC 2.5–3.5, pepper EC 2.0–3.0. Those numbers never go in the greens tank. |
 | Zone B microgreens | 6 trays | Indoors, year-round | Shelf can stay covered. Cold only slows a tray left outside. |
-| Zone C bags | Radish, beetroot, carrot | Outdoor season | 5 US gal and 10 US gal bags. Fertigation EC ceiling 2.0 mS/cm. |
+| Zone C bags | Radish, beet (beetroot), carrot | Outdoor season | 5 US gal and 10 US gal bags. Fertigation EC ceiling 2.0 mS/cm. |
 
 ### Season phases
 
@@ -172,10 +179,11 @@ PHASE 4 — WINTER REST (December–February; SA: June–August)
   • Clean fittings, plan the next April (SA: October) start
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Temperature Effects on the Hydroponic System
 
@@ -247,10 +255,11 @@ Warmer solution accelerates biological activity (algae, bacteria) and degasses C
 - Solution above 82°F (28°C) can shift 0.5 pH units in a day
 - Read pH in each tank. A drift in the greens tank does not describe the CH4 tank.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Summer Heat Management
 
@@ -374,16 +383,17 @@ In high temperatures, plants transpire more heavily, uptake water faster than nu
 | Basil | CH2 | 68–86°F (20–30°C) | Wilts in the afternoon, often recovers at night |
 | Cherry tomato | CH4 only | 68–82°F (20–28°C) | Blossom drop above 90°F (32°C) |
 | Pepper | CH4 only | 72–82°F (22–28°C) | Blossom drop, sunscald |
-| Strawberry | CH3, 3–4 sites | 64–77°F (18–25°C) | Soft fruit, mould above about 86°F (30°C) |
+| Strawberry | CH3, 3–4 sites | 64–77°F (18–25°C) | Soft fruit, mold above about 86°F (30°C) |
 | Mint | CH3 | 64–82°F (18–28°C) | Wilting |
 | Radish | Zone C, 5 US gal bags | 50–64°F (10–18°C) | Woody, pungent roots above about 75°F (24°C) |
 
 > **Tip:** Tip burn in lettuce is caused by calcium deficiency at the leaf margins — but the root cause is usually heat-driven transpiration outpacing calcium uptake through the xylem. Solution: increase flow rate, lower EC, add shade, ensure good root aeration.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Cold and Frost Management
 
@@ -496,10 +506,11 @@ More than 7 days below 41°F (5°C), or any forecast into 0–15°F
 Do not run unprotected NFT through December–February (SA: June–August).
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Wind Management
 
@@ -571,10 +582,11 @@ In sustained windy conditions (Force 4–5), monitor EC more frequently:
 - Top up with plain pH-adjusted water if EC rises >10% above target
 - If away for a weekend in windy weather, lower starting EC by 10–15% as a buffer
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Rain Management
 
@@ -597,7 +609,7 @@ Also:
 
 ### 7.2 Rain Management Strategy
 
-**Primary defence — cover your reservoir completely:**
+**Primary defense — cover your reservoir completely:**
 
 ```mermaid
 flowchart TD
@@ -623,7 +635,7 @@ flowchart TD
     end
 ```
 
-**Secondary defence — overflow/drainage:**
+**Secondary defense — overflow/drainage:**
 
 If rain does enter, fit an overflow ¾–1¼ in (2–3 cm) below the max fill line on each tank so extra water leaves to the ground.
 
@@ -640,7 +652,7 @@ POST-RAIN CHECKLIST
 □ Check supply and drain hoses for displacement
 □ Check timer/electrics for water ingress
 □ Check plant foliage for disease signs (wet foliage + warm = Botrytis risk)
-□ If strawberry fruiting — inspect for grey mould (Botrytis cinerea)
+□ If strawberry fruiting — inspect for gray mold (Botrytis cinerea)
 ```
 
 ### 7.4 Benefiting from Rain
@@ -657,10 +669,11 @@ Harvest roof runoff into a covered barrel and use it to top up or to mix a fresh
 > - Asbestos cement roofs
 > - Roofs with moss killer treatments applied in the last 3 months
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Humidity and Airflow
 
@@ -670,7 +683,7 @@ Humidity directly affects:
 
 **Transpiration rate:** Low humidity (dry air) causes plants to transpire rapidly, pulling nutrients up via the xylem. This is good for nutrient delivery but increases demand on the root zone. Very low humidity (<30% RH) causes wilting even when roots have adequate water.
 
-**Disease pressure:** High humidity (>80% RH) creates conditions for fungal diseases — powdery mildew, Botrytis (grey mould), and damping off. Outdoor systems in autumn are especially at risk when day/night temperature swings cause condensation.
+**Disease pressure:** High humidity (>80% RH) creates conditions for fungal diseases — powdery mildew, Botrytis (gray mold), and damping off. Outdoor systems in fall are especially at risk when day/night temperature swings cause condensation.
 
 **Fruit quality:** High humidity during fruit ripening (strawberries, tomatoes) significantly increases Botrytis and cracking risk.
 
@@ -682,7 +695,7 @@ Humidity directly affects:
 | Basil | 50–70% | Powdery mildew | Wilting, leaf drop |
 | Tomatoes (flowering) | 40–70% | Blossom drop, Botrytis | Poor fruit set |
 | Tomatoes (fruiting) | 50–70% | Botrytis, cracking | Leathery skin |
-| Strawberries | 50–70% | Grey mould on fruit | Fruit dehydration |
+| Strawberries | 50–70% | Gray mold on fruit | Fruit dehydration |
 | Microgreens | 60–80% | Damping off | Tip drying |
 
 ### 8.3 Improving Airflow Around the System
@@ -718,7 +731,7 @@ flowchart LR
 
 ### 8.4 Managing High Humidity Events
 
-During periods of persistent high humidity (>80% RH), especially in late summer and autumn:
+During periods of persistent high humidity (>80% RH), especially in late summer and fall:
 
 1. **Increase plant spacing** where possible — thin out crowded channels
 2. **Remove any yellowing or damaged leaves immediately** — they are Botrytis infection points
@@ -726,10 +739,11 @@ During periods of persistent high humidity (>80% RH), especially in late summer 
 4. **Harvest regularly** — don't let leaves accumulate and decay on the plant
 5. **Bicarbonate spray** for powdery mildew: 19 g/US gal (5 g/L) of sodium bicarbonate, on leaves in the morning. See [Guide 07 — Pests and Disease](07-pests-and-disease.md). Fruiting foliage in this NFT build is tomato and pepper on CH4. Strawberries are on CH3.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Season Extension Techniques
 
@@ -759,7 +773,7 @@ A polytunnel (hoop tunnel) provides significant season extension and weather pro
 ```mermaid
 block-beta
     columns 1
-    film["Polythene film (200 micron UV-stabilised)<br/>arched over hoops"]
+    film["Polythene film (200 micron UV-stabilized)<br/>arched over hoops"]
     interior["[ch]         [ch]         [ch]   ← NFT channels"]
     ground["Ground<br/>(hoops: 1 in (25 mm) poly pipe or conduit, about 6½ ft (2 m) long)"]
 ```
@@ -791,10 +805,11 @@ For year-round production of some crops, consider a simple indoor setup during t
 
 A 50 W LED panel running 16 h/day uses 0.8 kWh/day. At $0.15/kWh (R2.70/kWh) that is $0.12/day (R2.16/day).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Putting It Together — Seasonal Action Plans
 
@@ -855,7 +870,7 @@ SEPTEMBER (SA: MARCH):
 □ Plan the October 20 (SA: April 20) frost. Fruiting plants come out before it.
 ```
 
-### Autumn Wind-Down (October)
+### Fall Wind-Down (October)
 
 SA: April.
 
@@ -890,10 +905,11 @@ SA: June–August.
 □ CH1 lettuce, CH2 herbs, CH3 spinach/kale/mint plus 3–4 strawberries, CH4 tomato and pepper
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Climate Monitoring Setup
 
@@ -945,10 +961,11 @@ Actions:
   □ Fleece    □ 40% shade    □ Ice bottles, which tank: _______
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Quick-Reference Decision Tree
 
@@ -976,10 +993,11 @@ flowchart TD
     Q4 -->|NO| OK
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Summary
 
@@ -992,11 +1010,14 @@ flowchart TD
 
 Outdoor production at this site is the mid-April through mid-October window (SA: mid-October through mid-April), about six months. Fleece covers a frost night at either end. It does not extend NFT through deep winter.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 > **Previous:** [Guide 09 — Troubleshooting](09-troubleshooting.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 11 — Build Guide](11-build-guide.md)
 
 <!-- copyright -->

@@ -4,7 +4,7 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-This guide provides an itemised bill of materials (BOM) for all three build tiers, sourcing guidance, running cost estimates, and a realistic return-on-investment (ROI) calculation based on expected yields versus supermarket prices.
+This guide provides an itemized bill of materials (BOM) for all three build tiers, sourcing guidance, running cost estimates, and a realistic return-on-investment (ROI) calculation based on expected yields versus supermarket prices.
 
 ---
 
@@ -34,7 +34,7 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
   - [7.1 Online — General](#71-online-general)
   - [7.2 Online — Hydroponics Specialist](#72-online-hydroponics-specialist)
   - [7.3 Local — Hardware / DIY Stores](#73-local-hardware-diy-stores)
-  - [7.4 Local — Garden Centres and Plant Nurseries](#74-local-garden-centres-and-plant-nurseries)
+  - [7.4 Local — Garden Centers and Plant Nurseries](#74-local-garden-centers-and-plant-nurseries)
   - [7.5 Buying Used / Secondhand](#75-buying-used-secondhand)
   - [7.6 Nutrients — Sourcing the Masterblend Trio](#76-nutrients-sourcing-the-masterblend-trio)
 - [8. Cost-Saving Strategies](#8-cost-saving-strategies)
@@ -51,6 +51,11 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
   - [9.4 Full Annual Running Cost Summary](#94-full-annual-running-cost-summary)
 - [10. Yield Estimates and ROI](#10-yield-estimates-and-roi)
   - [10.1 Zone A — NFT Expected Yields](#101-zone-a-nft-expected-yields)
+    - [Lettuce (Channel 1, 11 sites, 9 in / 229 mm spacing)](#lettuce-channel-1-11-sites-9-in-229-mm-spacing)
+    - [Herbs (Channel 2, 11 sites)](#herbs-channel-2-11-sites)
+    - [Leafy greens on Channel 3](#leafy-greens-on-channel-3)
+    - [Strawberries (Channel 3, 3–4 of the 11 sites)](#strawberries-channel-3-34-of-the-11-sites)
+    - [Cherry tomatoes and peppers (Channel 4 only)](#cherry-tomatoes-and-peppers-channel-4-only)
   - [10.2 Zone B — Microgreens Yield](#102-zone-b-microgreens-yield)
   - [10.3 Zone C — Root Veg Yield](#103-zone-c-root-veg-yield)
   - [10.4 Total Annual Yield Value](#104-total-annual-yield-value)
@@ -61,8 +66,8 @@ This guide provides an itemised bill of materials (BOM) for all three build tier
   - [11.4 Non-Financial Value](#114-non-financial-value)
 - [Quick Reference — Budget at a Glance](#quick-reference-budget-at-a-glance)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Build Tier Overview
 
@@ -76,14 +81,14 @@ Copy these totals. Later guides should use the same figures.
 |---|---|---|
 | **Tier 1 — Lean** | **$322 (R5,796)** | **$468 (R8,424)** |
 | **Tier 2 — Standard** | **$548 (R9,864)** | **$769 (R13,842)** |
-| **Tier 3 — Optimised** | **$767 (R13,806)** | **$1,080 (R19,440)** |
+| **Tier 3 — Optimized** | **$767 (R13,806)** | **$1,080 (R19,440)** |
 
 Zone A includes the second reservoir, the second pump, and the second airline. Zone B is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C is $57 / $81 / $110 (R1,026 / R1,458 / R1,980).
 
 ```
 TIER 1 — LEAN — full system $468 (R8,424)
   Philosophy: Get both loops running with scavenged tanks and basic parts.
-  Trade-offs: More labour, a cheap meter, less insulation.
+  Trade-offs: More labor, a cheap meter, less insulation.
   Best for:   A first build, if you accept the shopping time.
 
 TIER 2 — STANDARD — full system $769 (R13,842)  ← Recommended
@@ -91,7 +96,7 @@ TIER 2 — STANDARD — full system $769 (R13,842)  ← Recommended
   Trade-offs: Higher upfront cost, a faster build.
   Best for:   Most growers.
 
-TIER 3 — OPTIMISED — full system $1,080 (R19,440)
+TIER 3 — OPTIMIZED — full system $1,080 (R19,440)
   Philosophy: Better meter, logger, heater for shoulder nights, thicker bags.
   Trade-offs: Some of this is comfort, not yield.
   Best for:   A second season, or a setup you do not want to tinker with weekly.
@@ -99,16 +104,17 @@ TIER 3 — OPTIMISED — full system $1,080 (R19,440)
 
 Line items below are the sums behind those totals. Check shelf prices when you buy. The rate does not move with the shop.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Zone A — NFT System BOM
 
 ### 2.1 Frame
 
-| Item | Tier 1 (Lean) | Tier 2 (Standard) | Tier 3 (Optimised) |
+| Item | Tier 1 (Lean) | Tier 2 (Standard) | Tier 3 (Optimized) |
 |---|---|---|---|
 | **Posts, 2×2 in: two at 36 in (91 cm), two at 32.75 in (83 cm), plus braces** | $8 (R144) — untreated pine | $12 (R216) — exterior grade | $18 (R324) — pre-painted |
 | **Rails, two at 8 ft (2.44 m)** | $6 (R108) — offcuts | $10 (R180) — cut to length | $14 (R252) — hardwood |
@@ -208,7 +214,7 @@ Black body, white exterior, on both tanks. Do not buy "black paint only" and sto
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **Masterblend 4-18-38 (500 g). Dose is 2.4 g/US gal (0.63 g/L), not a per-litre guess.** | $15 (R270) | $15 (R270) | $15 (R270) |
+| **Masterblend 4-18-38 (500 g). Dose is 2.4 g/US gal (0.63 g/L), not a per-liter guess.** | $15 (R270) | $15 (R270) | $15 (R270) |
 | **Calcium nitrate (500 g)** | $8 (R144) | $8 (R144) | $8 (R144) |
 | **Epsom salt, food grade (500 g)** | $3 (R54) | $3 (R54) | $3 (R54) |
 | **pH Down, phosphoric acid, about 8 US fl oz (250 mL)** | $6 (R108) | $8 (R144) | $10 (R180) |
@@ -246,10 +252,11 @@ Handle dry salts, phosphoric acid, and potassium hydroxide with gloves, eye prot
 | Climate | $29 (R522) | $44 (R792) | $84 (R1,512) |
 | **Zone A total** | **$322 (R5,796)** | **$548 (R9,864)** | **$767 (R13,806)** |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Zone B — Microgreens Station BOM
 
@@ -268,30 +275,32 @@ Handle dry salts, phosphoric acid, and potassium hydroxide with gloves, eye prot
 
 Standard trays get pH-adjusted water only, pH 5.8–6.2. No nutrients. Sunflower and pea shoots may use EC 0.4–0.8 mS/cm if the grow runs long.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Zone C — Root Veg Grow Bags BOM
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **Bags: two 5 US gal (19 L) radish, one 5 US gal beetroot, three 10 US gal (38 L) carrot** | $8 (R144) | $14 (R252) | $22 (R396) |
+| **Bags: two 5 US gal (19 L) radish, one 5 US gal beet (beetroot), three 10 US gal (38 L) carrot** | $8 (R144) | $14 (R252) | $22 (R396) |
 | **Coco coir, 60% of the mix** | $12 (R216) | $15 (R270) | $18 (R324) |
 | **Perlite, 30% — about 13.5 US gal (51 L) for full bags** | $10 (R180) | $12 (R216) | $15 (R270) |
 | **Vermiculite, 10% — about 4.5 US gal (17 L) for full bags** | $6 (R108) | $8 (R144) | $10 (R180) |
-| **Fertiliser. Fertigation EC ceiling is 2.0 mS/cm, including beetroot.** | $8 (R144) | $12 (R216) | $15 (R270) |
+| **Fertilizer. Fertigation EC ceiling is 2.0 mS/cm, including beet (beetroot).** | $8 (R144) | $12 (R216) | $15 (R270) |
 | **Drip saucers, six** | $5 (R90) | $8 (R144) | $12 (R216) |
-| **Seed: radish, beetroot, carrot** | $8 (R144) | $12 (R216) | $18 (R324) |
+| **Seed: radish, beet (beetroot), carrot** | $8 (R144) | $12 (R216) | $18 (R324) |
 | **Zone C total** | **$57 (R1,026)** | **$81 (R1,458)** | **$110 (R1,980)** |
 
-No garden soil. One season, planning yields are in section 10.3: radish 15 lb (6.8 kg), beetroot 8 lb (3.6 kg), carrot 20 lb (9.1 kg), total 43 lb (20 kg), about $80–$110 (R1,440–R1,980).
+No garden soil. One season, planning yields are in section 10.3: radish 15 lb (6.8 kg), beet (beetroot) 8 lb (3.6 kg), carrot 20 lb (9.1 kg), total 43 lb (20 kg), about $80–$110 (R1,440–R1,980).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Consumables and Ongoing Supplies
 
@@ -312,15 +321,16 @@ These are not one-time costs but will recur each growing season (or more frequen
 | **Seed, all zones** | $20 (R360) | $35 (R630) | $50 (R900) |
 | **Pest and disease treatments** | $10 (R180) | $20 (R360) | $30 (R540) |
 | **Microgreens coco top-up** | $8 (R144) | $12 (R216) | $16 (R288) |
-| **Zone C fertiliser top-up** | $6 (R108) | $8 (R144) | $10 (R180) |
+| **Zone C fertilizer top-up** | $6 (R108) | $8 (R144) | $10 (R180) |
 | **Season consumables** | **$143 (R2,574)** | **$212 (R3,816)** | **$280 (R5,040)** |
 
 Outdoor season is mid-April through mid-October (SA: mid-October through mid-April), about six months. A mid figure is about $175–$200 (R3,150–R3,600) if you land between the low and mid columns. The salts, acid, and any pesticide stay in a latched box.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier Totals Summary
 
@@ -330,7 +340,7 @@ Copy-block. These are the figures to reuse.
 |---|---|---|
 | **Tier 1 — Lean** | **$322 (R5,796)** | **$468 (R8,424)** |
 | **Tier 2 — Standard** | **$548 (R9,864)** | **$769 (R13,842)** |
-| **Tier 3 — Optimised** | **$767 (R13,806)** | **$1,080 (R19,440)** |
+| **Tier 3 — Optimized** | **$767 (R13,806)** | **$1,080 (R19,440)** |
 
 ### Full 3-Zone System (All Zones)
 
@@ -338,7 +348,7 @@ Copy-block. These are the figures to reuse.
 |---|---|---|---|---|
 | **Tier 1 — Lean** | $322 (R5,796) | $89 (R1,602) | $57 (R1,026) | **$468 (R8,424)** |
 | **Tier 2 — Standard** | $548 (R9,864) | $140 (R2,520) | $81 (R1,458) | **$769 (R13,842)** |
-| **Tier 3 — Optimised** | $767 (R13,806) | $203 (R3,654) | $110 (R1,980) | **$1,080 (R19,440)** |
+| **Tier 3 — Optimized** | $767 (R13,806) | $203 (R3,654) | $110 (R1,980) | **$1,080 (R19,440)** |
 
 Rate: $1 = R18, frozen 3 October 2026. 322 × 18 = 5,796. 468 × 18 = 8,424. 548 × 18 = 9,864. 769 × 18 = 13,842. 767 × 18 = 13,806. 1,080 × 18 = 19,440.
 
@@ -358,10 +368,11 @@ flowchart TD
 
 Phase 2 total: 322 + 89 = 411, and 411 × 18 = 7,398. Phase 3 adds 57 to reach 468.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Where to Buy
 
@@ -403,16 +414,16 @@ WHAT TO BUY LOCALLY (hardware store)
   warehouse for the tube and fittings, and a hydro shop for the salts and pots.
 ```
 
-### 7.4 Local — Garden Centres and Plant Nurseries
+### 7.4 Local — Garden Centers and Plant Nurseries
 
-| Item | Why garden centre | Notes |
+| Item | Why garden center | Notes |
 |---|---|---|
 | Seeds (lettuce, herbs, tomatoes) | Wider variety selection | Buy F1 hybrid for predictable performance |
 | Seedling trays | Cheaper than online | Often multi-packs |
 | Horticultural fleece | Often on-shelf | 17 g/m² or 30 g/m² |
 | Shade cloth | Seasonal stock | 40–50% shade is most versatile |
 | Epsom Salt | Cheaper than hydro shops | Sold as "garden Epsom" in bulk bags |
-| Fertilisers (slow-release) | Branded options available | Osmocote is widely stocked |
+| Fertilizers (slow-release) | Branded options available | Osmocote is widely stocked |
 
 ### 7.5 Buying Used / Secondhand
 
@@ -431,15 +442,16 @@ WHAT TO BUY LOCALLY (hardware store)
 |---|---|---|
 | **Masterblend, direct or via a US hydro shop** | USA | A 5 lb (2.27 kg) bag at about $28–$40 (R504–R720) covers more than one season on this two-tank system |
 | **Amazon or a farm supply** | USA | 500 g or 1 kg bags for a trial |
-| **Pool or fertiliser supply** | USA or South Africa | Calcium nitrate is often a bulk fertiliser |
+| **Pool or fertilizer supply** | USA or South Africa | Calcium nitrate is often a bulk fertilizer |
 | **Brewing or pharmacy suppliers** | Either country | Food-grade Epsom salt, 2–10 lb (1–5 kg) |
 
 **Practical route:** Masterblend and calcium nitrate from a hydro or farm supplier. Epsom salt from a grocery or pharmacy if the label is magnesium sulfate and food grade. Prices above use $1 = R18.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Cost-Saving Strategies
 
@@ -474,7 +486,7 @@ The per-gram cost of Masterblend drops sharply as pack size increases:
 | 2.2 lb (1 kg) | $22 (R396) | $0.022/g |
 | 5 lb (2.27 kg) | $35 (R630) | $0.015/g |
 
-Buying a 2.27 kg pack instead of a 100g pack reduces nutrient cost by ~80%. Share bulk orders with a friend or neighbour if you cannot use 2.27 kg in one season.
+Buying a 2.27 kg pack instead of a 100g pack reduces nutrient cost by ~80%. Share bulk orders with a friend or neighbor if you cannot use 2.27 kg in one season.
 
 ### 8.4 Make Your Own pH Buffers
 
@@ -499,12 +511,13 @@ Clay pebbles (LECA) can be reused indefinitely if properly cleaned. After each c
 5. Allow to dry in sun.
 6. Reuse.
 
-Rockwool cubes are single-use (they degrade and can harbour pathogens). Switch to Rapid Rooter or coco plugs (both biodegradable) for slightly easier disposal.
+Rockwool cubes are single-use (they degrade and can harbor pathogens). Switch to Rapid Rooter or coco plugs (both biodegradable) for slightly easier disposal.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Running Costs
 
@@ -575,10 +588,11 @@ spend less than a full change.
 
 A realistic middle is about **$200–$250 (R3,600–R4,500)** for the outdoor season plus a year of Zone B lights.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Yield Estimates and ROI
 
@@ -586,7 +600,7 @@ A realistic middle is about **$200–$250 (R3,600–R4,500)** for the outdoor se
 
 Yield estimates are based on moderately experienced management of the system. Actual yields will vary with genetics, season length, and growing conditions.
 
-> **First-season adjustment:** If this is your first hydroponic grow, expect to achieve **40–60% of the yields listed below**. Transplant losses, pH/EC learning curve, pest surprises, and setup optimisation all reduce first-season output. This is normal. By your second full season, with a tuned system and practiced routine, you should approach the figures shown. Do not judge the system's viability on first-season results alone.
+> **First-season adjustment:** If this is your first hydroponic grow, expect to achieve **40–60% of the yields listed below**. Transplant losses, pH/EC learning curve, pest surprises, and setup optimization all reduce first-season output. This is normal. By your second full season, with a tuned system and practiced routine, you should approach the figures shown. Do not judge the system's viability on first-season results alone.
 
 #### Lettuce (Channel 1, 11 sites, 9 in / 229 mm spacing)
 
@@ -668,7 +682,7 @@ Zone C total:                         43 lb (20 kg)
 Value:                                about $80–$110 (R1,440–R1,980)
 ```
 
-Fertigation EC stays at or below 2.0 mS/cm. Beetroot does not get a higher target.
+Fertigation EC stays at or below 2.0 mS/cm. Beet (beetroot) does not get a higher target.
 
 ### 10.4 Total Annual Yield Value
 
@@ -682,16 +696,17 @@ Fertigation EC stays at or below 2.0 mS/cm. Beetroot does not get a higher targe
 | **Zone A subtotal** | | **$625–$1,050 (R11,250–R18,900)** |
 | Microgreens, Zone B | up to about 44 lb (20 kg) if you run trays all year | $600–$800 (R10,800–R14,400) |
 | Radish | 15 lb (6.8 kg) | included below |
-| Beetroot | 8 lb (3.6 kg) | included below |
+| Beet (beetroot) | 8 lb (3.6 kg) | included below |
 | Carrot | 20 lb (9.1 kg) | included below |
 | **Zone C total** | **43 lb (20 kg)** | **$80–$110 (R1,440–R1,980)** |
 
 > **Important caveat:** These are supermarket retail equivalent values — the money you save on your grocery bill, not money you earn. Not all this produce can be consumed by one household. Microgreens in particular will exceed typical household consumption unless you sell or donate surplus.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Payback Period Analysis
 
@@ -748,10 +763,11 @@ The ROI analysis only captures direct grocery savings. The full value of the sys
 - **Mental health:** Growing food is consistently linked to stress reduction and wellbeing in research literature
 - **Carbon footprint:** Eliminating packaging, transport, and refrigeration chain for your own fresh produce
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Budget at a Glance
 
@@ -765,7 +781,7 @@ xychart-beta
     bar [767, 203, 110, 1080]
 ```
 
-| | Tier 1 Lean | Tier 2 Standard | Tier 3 Optimised |
+| | Tier 1 Lean | Tier 2 Standard | Tier 3 Optimized |
 |---|---|---|---|
 | **Zone A** | $322 (R5,796) | $548 (R9,864) | $767 (R13,806) |
 | **Full three-zone** | $468 (R8,424) | $769 (R13,842) | $1,080 (R19,440) |
@@ -776,11 +792,14 @@ xychart-beta
 
 The constants behind these prices, including the exchange rate and the Zone C yields, are in [design constants](../design-constants.md). The guide index is the [README](../../README.md).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 > **Previous:** [Guide 11 — Build Guide](11-build-guide.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 13 — Automation](13-automation.md)
 
 <!-- copyright -->

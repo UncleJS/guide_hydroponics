@@ -19,7 +19,7 @@ Prices are US dollars with South African rand in brackets, at a planning rate of
 - [Cross-System Comparison Guides](#cross-system-comparison-guides)
 - [Quick-Start Paths](#quick-start-paths)
   - [NFT — new to hydroponics](#nft-new-to-hydroponics)
-  - [Ebb and Flow — want fruiting crops](#ebb-and-flow--want-fruiting-crops)
+  - [Ebb and Flow — want fruiting crops](#ebb-and-flow-want-fruiting-crops)
 
 ---
 
@@ -33,9 +33,9 @@ Prices are US dollars with South African rand in brackets, at a planning rate of
 | **Media** | Clay pebbles in net pots only | 5 in (13 cm) of LECA, 25 US gal (95 L) per table |
 | **Power failure** | High — roots dry in 15–30 minutes in warm weather | Moderate — moist LECA buffers 8–24 hours |
 | **Timer failure** | Not used for the pumps | **High** — a pump stuck ON rots roots in 2–4 hours |
-| **Best for** | Lettuce, herbs, spinach, kale, plus cherry tomato and pepper on CH4 | Those crops, plus cucumber, courgette, and aubergine |
-| **Crop limit** | No cucumber, courgette, aubergine, or root crops in the channels | No root crops in the tables. Carrots, radish, and beet stay in Zone C |
-| **Build cost** | Full three-zone Lean / Standard / Optimised **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$711 / $1,115 / $1,624** (R12,798 / R20,070 / R29,232). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
+| **Best for** | Lettuce, herbs, spinach, kale, plus cherry tomato and pepper on CH4 | Those crops, plus cucumber, zucchini (courgette), and eggplant (aubergine) |
+| **Crop limit** | No cucumber, zucchini (courgette), eggplant (aubergine), or root crops in the channels | No root crops in the tables. Carrots, radish, and beet stay in Zone C |
+| **Build cost** | Full three-zone Lean / Standard / Optimized **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$711 / $1,115 / $1,624** (R12,798 / R20,070 / R29,232). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
 | **Guide set** | [`guide/nft/`](guide/nft/) | [`guide/ebb-and-flow/`](guide/ebb-and-flow/) |
 
 Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow bags)**. Only Zone A changes. The yard map for both is [`zones.md`](zones.md). Mains power is a **120 V outdoor GFCI** (SA: **230 V**, **30 mA earth-leakage**).
@@ -69,7 +69,7 @@ Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow ba
 | 04 | [`guide/nft/04-lighting.md`](guide/nft/04-lighting.md) | PAR, DLI, sun mapping, shade cloth, seasonal strategy, supplemental lighting |
 | 05 | [`guide/nft/05-growing-media.md`](guide/nft/05-growing-media.md) | Net pots, clay pebbles, rockwool, coco coir, germination methods, media reuse |
 | 06 | [`guide/nft/06-crops.md`](guide/nft/06-crops.md) | Per-crop growing guide for every plant in the system, plus succession planning |
-| 07 | [`guide/nft/07-pests-and-disease.md`](guide/nft/07-pests-and-disease.md) | IPM framework, pest and disease ID, beneficial insects, PHI reference, sterilisation |
+| 07 | [`guide/nft/07-pests-and-disease.md`](guide/nft/07-pests-and-disease.md) | IPM framework, pest and disease ID, beneficial insects, PHI reference, sterilization |
 | 08 | [`guide/nft/08-system-maintenance.md`](guide/nft/08-system-maintenance.md) | Daily, twice-weekly, weekly, and seasonal maintenance schedules and logbook template |
 | 09 | [`guide/nft/09-troubleshooting.md`](guide/nft/09-troubleshooting.md) | Symptom → cause → fix decision trees for water, plant, equipment, and combined problems |
 | 10 | [`guide/nft/10-climate-management.md`](guide/nft/10-climate-management.md) | Heat, frost, wind, rain, humidity — seasonal action plans and climate monitoring setup |
@@ -92,8 +92,8 @@ Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow ba
 | 02 | [`guide/ebb-and-flow/02-nutrient-solution.md`](guide/ebb-and-flow/02-nutrient-solution.md) | Nutrients, EC, pH — with E&F media interaction, salt accumulation, and media flush protocol |
 | 03 | [`guide/ebb-and-flow/03-water-quality.md`](guide/ebb-and-flow/03-water-quality.md) | Water sources, testing, treatment — with LECA salt buildup monitoring and flush schedules |
 | 04 | [`guide/ebb-and-flow/04-lighting.md`](guide/ebb-and-flow/04-lighting.md) | PAR, DLI, shade cloth — with flood table-specific light distribution and canopy spacing |
-| 05 | [`guide/ebb-and-flow/05-growing-media.md`](guide/ebb-and-flow/05-growing-media.md) | Clay pebbles (LECA) preparation, media depth, coco coir, germination, media reuse/sterilisation |
-| 06 | [`guide/ebb-and-flow/06-crops.md`](guide/ebb-and-flow/06-crops.md) | Per-crop guide including cucumbers, courgettes, and aubergine not possible in NFT |
+| 05 | [`guide/ebb-and-flow/05-growing-media.md`](guide/ebb-and-flow/05-growing-media.md) | Clay pebbles (LECA) preparation, media depth, coco coir, germination, media reuse/sterilization |
+| 06 | [`guide/ebb-and-flow/06-crops.md`](guide/ebb-and-flow/06-crops.md) | Per-crop guide including cucumbers, zucchinis (courgettes), and eggplant (aubergine) not possible in NFT |
 | 07 | [`guide/ebb-and-flow/07-pests-and-disease.md`](guide/ebb-and-flow/07-pests-and-disease.md) | IPM, pests, diseases — with E&F risks: fungus gnats, Pythium from over-flooding, algae in LECA |
 | 08 | [`guide/ebb-and-flow/08-system-maintenance.md`](guide/ebb-and-flow/08-system-maintenance.md) | Daily/weekly/seasonal schedules — flood cycle verification, salt crust, overflow fitting checks |
 | 09 | [`guide/ebb-and-flow/09-troubleshooting.md`](guide/ebb-and-flow/09-troubleshooting.md) | Decision trees for flood/drain problems, timer failure, root rot, salt lockout, liner leaks |
@@ -140,7 +140,7 @@ Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow ba
 4. **[Ebb and Flow Guide 05 — Media](guide/ebb-and-flow/05-growing-media.md)** — LECA preparation (do this before the first flood)
 5. **[Ebb and Flow Guide 11 — Build](guide/ebb-and-flow/11-build-guide.md)** — construct the system
 6. **[Ebb and Flow Guide 02 — Nutrients](guide/ebb-and-flow/02-nutrient-solution.md)** — mix and manage solution with media
-7. **[Ebb and Flow Guide 06 — Crops](guide/ebb-and-flow/06-crops.md)** — tomatoes, cucumbers, courgettes, and the rest
+7. **[Ebb and Flow Guide 06 — Crops](guide/ebb-and-flow/06-crops.md)** — tomatoes, cucumbers, zucchinis (courgettes), and the rest
 8. **[Ebb and Flow Guide 08 — Maintenance](guide/ebb-and-flow/08-system-maintenance.md)** — flood-cycle checks and salt
 9. **[Ebb and Flow Guide 13 — Automation](guide/ebb-and-flow/13-automation.md)** — the drain-confirmation cutoff
 

@@ -18,8 +18,8 @@
   - [The Rinse and Pre-Soak Protocol](#the-rinse-and-pre-soak-protocol)
   - [What Happens If You Skip This](#what-happens-if-you-skip-this)
 - [4. Media Depth in Flood Tables](#4-media-depth-in-flood-tables)
-  - [Standard Depths by Crop](#standard-depths-by-crop)
-  - [How Depth Affects Flood Frequency](#how-depth-affects-flood-frequency)
+  - [Depth and Planting in This Build](#depth-and-planting-in-this-build)
+  - [How This Depth Fills](#how-this-depth-fills)
 - [5. Coco Coir Use in Ebb & Flow](#5-coco-coir-use-in-ebb-flow)
   - [Where Coco Coir Works in E&F](#where-coco-coir-works-in-ef)
   - [Where Coco Coir Does NOT Work in E&F](#where-coco-coir-does-not-work-in-ef)
@@ -40,14 +40,14 @@
   - [From Rockwool Cube to LECA Net Pot](#from-rockwool-cube-to-leca-net-pot)
   - [First Flood After Transplant](#first-flood-after-transplant)
   - [Depth Requirements by Crop](#depth-requirements-by-crop)
-- [12. Media Reuse and Sterilisation](#12-media-reuse-and-sterilisation)
+- [12. Media Reuse and Sterilization](#12-media-reuse-and-sterilization)
   - [Salt Accumulation in E&F vs NFT](#salt-accumulation-in-ef-vs-nft)
-  - [Full Sterilisation Protocol](#full-sterilisation-protocol)
+  - [Full Sterilization Protocol](#full-sterilization-protocol)
   - [Assessment Before Reuse](#assessment-before-reuse)
 - [13. Quick Reference: Media Selection Guide](#13-quick-reference-media-selection-guide)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Ebb & Flow Needs Substantial Media
 
@@ -97,19 +97,20 @@ flowchart LR
 
   The bag rating is bulk volume, pore space included.
   There is no separate "leafy depth" and "fruiting depth" in this build.
-  Table 1 (one tomato or one cucumber), Table 2 (1–2 pepper, aubergine,
-  or courgette), and Table 3 (leafy, or a later fruiting crop) all use
+  Table 1 (one tomato or one cucumber), Table 2 (1–2 pepper, eggplant (aubergine),
+  or zucchini (courgette)), and Table 3 (leafy, or a later fruiting crop) all use
   the same 5 in bed.
 
   Hardware cost, including media, is in Guide 12.
 ```
 
-> **The media is a long-term investment.** Clay pebbles last many years with proper sterilisation. The purchase is 90 US gal (340 L) up front, then the same LECA comes back each season.
+> **The media is a long-term investment.** Clay pebbles last many years with proper sterilization. The purchase is 90 US gal (340 L) up front, then the same LECA comes back each season.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Clay Pebbles (LECA) — The Primary E&F Media
 
@@ -119,10 +120,10 @@ LECA stands for **Lightweight Expanded Clay Aggregate**. It is kiln-fired clay t
 
 ### Why LECA Is Ideal for Ebb & Flow
 
-LECA's behaviour during the flood-and-drain cycle is nearly perfect for E&F:
+LECA's behavior during the flood-and-drain cycle is nearly perfect for E&F:
 
 ```
-  LECA BEHAVIOUR DURING THE FLOOD/DRAIN CYCLE:
+  LECA BEHAVIOR DURING THE FLOOD/DRAIN CYCLE:
 
   FLOOD PHASE (pump on, 15–20 minutes):
   ─ Water rises through LECA column from below
@@ -152,7 +153,7 @@ The speed of LECA's drainage is its most important property for E&F. Media that 
 |----------|-------|
 | pH (raw) | ~7.0–8.0 (alkaline surface — must be pre-treated) |
 | pH (after preparation) | ~6.5–7.0 |
-| Reusable | Yes — indefinite lifespan with correct sterilisation |
+| Reusable | Yes — indefinite lifespan with correct sterilization |
 | Drainage speed | Excellent — free drainage within 5 minutes |
 | Water retention | Moderate (internal pores hold moisture; surface dries) |
 | Root aeration | Excellent — air gaps between pebbles |
@@ -162,10 +163,11 @@ The speed of LECA's drainage is its most important property for E&F. Media that 
 | Weight (dry) | About 2.5–4.2 lb per US gal (300–500 g/L) |
 | Salt accumulation | Yes — accumulates over time; requires periodic flush |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Clay Pebble Preparation — Critical Step
 
@@ -240,10 +242,11 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
 
 > **There is no shortcut here.** One hour of preparation saves days of troubleshooting.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Media Depth in Flood Tables
 
@@ -266,9 +269,9 @@ This build uses **one depth on every table: 5 in (13 cm)**. Table 1 is not the l
   Floods:              3× per day vegetative, 4× per day fruiting
                        4× is the ceiling
 
-  TABLE 2 — pepper, aubergine, or courgette, 1–2 plants
+  TABLE 2 — pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants
   Net pot:             3–4 in (75–100 mm)
-  Same depth, same flood ceiling. A courgette is one of those 1–2 plants,
+  Same depth, same flood ceiling. A zucchini (courgette) is one of those 1–2 plants,
   not a reason to deepen the bed or add a 5th flood.
 
   TABLE 3 — lettuce, herbs, pak choi, or a later fruiting crop
@@ -290,10 +293,11 @@ The pump is 250 US gph (950 L/h), about 35 W. Pore space in LECA is about 40%, s
 
 > **Do not vary the depth to change the flood count.** Vegetative crops get 3 floods a day. Fruiting crops get 4. In a heatwave at 90–100°F (32–38°C), keep 4 floods, shorten them if needed, and use 40% shade. A deeper bed is a different system. This one is 5 in (13 cm).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Coco Coir Use in Ebb & Flow
 
@@ -325,12 +329,12 @@ Coco coir should **not** be used to fill the main flood table volume in an activ
   ─ Chronically wet root zone → Pythium risk, oxygen deficit
 
   Problem 2 — Drain clogging:
-  ─ Fine coco fibres wash out of the media during flood cycles
+  ─ Fine coco fibers wash out of the media during flood cycles
   ─ Fine particles accumulate in drain fittings over time
   ─ Partially blocked drains create standing water → anaerobic conditions
 
   Problem 3 — Compaction over time:
-  ─ Coco fibres mat together after repeated wetting/drying cycles
+  ─ Coco fibers mat together after repeated wetting/drying cycles
   ─ Compacted coco has reduced air porosity
   ─ Root penetration becomes difficult — plants become pot-bound in the mat
 
@@ -349,14 +353,15 @@ If you are using any coco in your flood table media mix (e.g., coco chips blende
 | 80% LECA / 20% coarse coco chips | Not the design. If you experiment, stay at 3×. Do not add a 5th flood |
 | 100% coco, fine or chip | Do not use it as the flood-table fill |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Rockwool Cubes for Germination and Seedlings
 
-Rockwool is manufactured from volcanic basalt rock, spun into fibres at very high temperatures. Despite being designed for building insulation, it was adapted for horticulture and remains one of the most reliable germination media for hydroponic systems including E&F.
+Rockwool is manufactured from volcanic basalt rock, spun into fibers at very high temperatures. Despite being designed for building insulation, it was adapted for horticulture and remains one of the most reliable germination media for hydroponic systems including E&F.
 
 ### Rockwool Properties
 
@@ -421,10 +426,11 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
     around the tray become damaged during transplanting
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Perlite — Limited Use in E&F Flood Tables
 
@@ -450,10 +456,11 @@ Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~8
 
 **Perlite in Zone C grow bags:** Perlite is excellent in the coco/perlite/vermiculite mix for Zone C root vegetable grow bags. The recommended mix is 60% coco / 30% perlite / 10% vermiculite — perlite provides drainage and prevents the coco from compacting around the developing root vegetables.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Vermiculite — Zone C Grow Bags Only
 
@@ -471,10 +478,11 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 **In Zone C grow bags:** Vermiculite at 10% in the coco/perlite blend helps prevent dry pockets forming around root vegetables. The moisture retention is beneficial in a hand-irrigated grow bag context where you want the media to hold water between manual watering sessions.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. What NOT to Use in Flood Tables
 
@@ -483,7 +491,7 @@ This section covers media types that are inappropriate for Zone A flood tables s
 | Media | Problem in flood tables | Verdict |
 |-------|------------------------|---------|
 | **Garden/potting soil** | Fine particles enter flood water, clog pump and drain fittings; introduces fungal pathogens and weed seeds; compacts when saturated | Never use |
-| **Fine coco coir (standard)** | Fine fibres wash into drain water, block overflow fittings; retains too much moisture for flood frequency needed | Never as primary media |
+| **Fine coco coir (standard)** | Fine fibers wash into drain water, block overflow fittings; retains too much moisture for flood frequency needed | Never as primary media |
 | **Peat moss** | Extremely fine particles, pH 3.5–4.5, decomposes unevenly, floats initially — will block overflow fittings | Never use |
 | **Sand** | Heavy, compacts when wet, creates anaerobic zones, no nutrient holding | Avoid |
 | **Perlite (loose in table)** | Floats during flood — migrates to and blocks overflow fitting | Do not use loose in table |
@@ -494,10 +502,11 @@ This section covers media types that are inappropriate for Zone A flood tables s
 
 > **The overflow fitting test:** Before adding any new media to your flood tables, place a handful in a bucket of water and observe what happens. If particles disperse or the material floats freely, it should not go in your flood tables.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Germination Methods: Side-by-Side Comparison
 
@@ -549,10 +558,11 @@ For robust, fast-germinating crops (herbs, kale, mint), seeds can be germinated 
   some losses are acceptable.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Transitioning Seedlings into Flood Tables
 
@@ -611,15 +621,16 @@ The bed is 5 in (13 cm) on every table. Roots use that depth. Do not specify a d
 | Lettuce, herbs, pak choi | Table 3 | 2 in (50 mm) | Roots spread through the 5 in bed |
 | Kale, spinach | Table 3 | 2 in (50 mm); 3 in (75 mm) for a large kale | Same bed depth |
 | Tomato or cucumber | Table 1, 1 plant | 3–4 in (75–100 mm) | One plant. Same 5 in bed |
-| Pepper, aubergine, or courgette | Table 2, 1–2 plants | 3–4 in (75–100 mm) | Same 5 in bed |
+| Pepper, eggplant (aubergine), or zucchini (courgette) | Table 2, 1–2 plants | 3–4 in (75–100 mm) | Same 5 in bed |
 | Strawberries | Table 3, later fruiting crop | 3 in (75 mm) | Replaces the leafy crop for that run. Crown stays above the flood |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
-## 12. Media Reuse and Sterilisation
+[↑ Back to TOC](#table-of-contents)
+
+## 12. Media Reuse and Sterilization
 
 ### Salt Accumulation in E&F vs NFT
 
@@ -637,12 +648,12 @@ Signs of salt accumulation:
 
 **Preventive flushing:** Every 2–3 weeks during the growing season, run one flood cycle with plain pH-adjusted water (no nutrients). This dissolves surface salt deposits and carries them to the reservoir, where they can be managed through a partial water change.
 
-### Full Sterilisation Protocol
+### Full Sterilization Protocol
 
-After removing a crop — especially after a heavy fruiting crop like tomatoes or cucumbers — full media sterilisation is required before replanting.
+After removing a crop — especially after a heavy fruiting crop like tomatoes or cucumbers — full media sterilization is required before replanting.
 
 ```
-  E&F CLAY PEBBLE STERILISATION PROTOCOL:
+  E&F CLAY PEBBLE STERILIZATION PROTOCOL:
 
   Step 1 — Remove all plants and root debris:
   ─ Pull plants from net pots
@@ -683,10 +694,10 @@ After removing a crop — especially after a heavy fruiting crop like tomatoes o
   Step 7 — Dry and inspect before storage:
   ─ Spread LECA in sunlight for 1–2 hours minimum (UV kills remaining pathogens)
   ─ Inspect pebbles: discard any that are cracked, significantly degraded,
-    or have permanent discolouration (brown staining that won't rinse off)
+    or have permanent discoloration (brown staining that won't rinse off)
   ─ Store dry in a sealed bag or bucket
 
-  Note: Properly sterilised LECA can be reused indefinitely — it is one of
+  Note: Properly sterilized LECA can be reused indefinitely — it is one of
   the most cost-effective aspects of an E&F system over time.
 ```
 
@@ -696,37 +707,40 @@ Before refilling flood tables with previously used LECA:
 
 | Check | Pass | Fail — action |
 |-------|------|----------------|
-| Colour | Reddish-brown (normal) to grey | Black (anaerobic residue) — extra bleach soak |
-| Smell | Neutral / slightly earthy | Sour or sulphurous — anaerobic contamination, discard batch |
+| Color | Reddish-brown (normal) to gray | Black (anaerobic residue) — extra bleach soak |
+| Smell | Neutral / slightly earthy | Sour or sulfurous — anaerobic contamination, discard batch |
 | pH of soak water | 6.0–7.0 | Above 7.5 — repeat pH conditioning soak |
 | Structural integrity | Round, firm pebbles | Crumbling or significantly degraded — replace |
 | Visible residue | Clean surface | White salt crust — repeat water rinse |
 | Drain fitting test | Rinse water flows freely through drain | Slow drain — clean drain fittings before refilling |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Quick Reference: Media Selection Guide
 
 | Zone | Location | Primary media | Secondary media | Notes |
 |------|----------|---------------|-----------------|-------|
 | Zone A — Table 1 | One indeterminate tomato or one cucumber | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pot. 3× vegetative, 4× fruiting |
-| Zone A — Table 2 | Pepper, aubergine, or courgette, 1–2 plants | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pots. Same flood ceiling |
+| Zone A — Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pots. Same flood ceiling |
 | Zone A — Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool cubes | 2 in (50 mm) net pots for leafy crops. 3× per day |
 | Zone B | 6 trays, 10 in × 20 in (25 cm × 50 cm), two-tier shelf | Coco, 1–1¼ in (2.5–3 cm) | None | Plain water, pH 5.8–6.2. Optional EC 0.4–0.8 only for sunflower and pea |
-| Zone C | 2 × 5 US gal radish, 1 × 5 US gal beet, 3 × 10 US gal carrot | 60% coco + 30% perlite + 10% vermiculite | None | Fertigation EC ceiling 2.0 mS/cm. Beetroot does not go higher |
+| Zone C | 2 × 5 US gal radish, 1 × 5 US gal beet, 3 × 10 US gal carrot | 60% coco + 30% perlite + 10% vermiculite | None | Fertigation EC ceiling 2.0 mS/cm. Beet (beetroot) does not go higher |
 | Propagation | Germination tray | Rockwool cubes or Rapid Rooter plugs | — | Condition rockwool at pH 5.8 |
 
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 04 — Lighting](04-lighting.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 06 — Crops](06-crops.md)
 
 <!-- copyright -->

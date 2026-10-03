@@ -95,14 +95,14 @@ Each lid needs two holes: the pump cord, and the return pipe. An air stone in ea
 
 ```mermaid
 flowchart LR
-  greensRes["Greens 20 gal"] --> greensPump["160 to 210 gph"] --> manifold["1 in manifold"]
+  greensRes["Greens 20 US gal"] --> greensPump["160 to 210 US gph"] --> manifold["1 in manifold"]
   manifold --> ch1["CH1"]
   manifold --> ch2["CH2"]
   manifold --> ch3["CH3"]
   ch1 --> greensRes
   ch2 --> greensRes
   ch3 --> greensRes
-  fruitRes["Fruit 10 gal"] --> fruitPump["50 to 100 gph"] --> ch4["CH4"]
+  fruitRes["Fruit 10 US gal"] --> fruitPump["50 to 100 US gph"] --> ch4["CH4"]
   ch4 --> fruitRes
 ```
 
@@ -123,8 +123,8 @@ Three tables, each **4 ft × 2 ft (1.22 m × 0.61 m)**, built dead level. A **3/
 | Table | Crop | Plants |
 |-------|------|--------|
 | Table 1 | Indeterminate tomato or cucumber | 1 |
-| Table 2 | Pepper, aubergine, or courgette | 1–2 |
-| Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop | Several |
+| Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette) | 1–2 |
+| Table 3 | Lettuce, herbs, pak choi, strawberries, or a later fruiting crop | Several |
 
 ### Media and flood
 
@@ -151,9 +151,9 @@ Four floods is the ceiling. A fifth flood keeps the root zone too wet. In a 90�
 
 ```mermaid
 flowchart TD
-  res["Reservoir 45 gal under tables"] --> pump["Pump 250 gph"]
+  res["Reservoir 45 US gal under tables"] --> pump["Pump 250 US gph"]
   pump --> t1["Table 1 fruiting vine"]
-  pump --> t2["Table 2 pepper or courgette"]
+  pump --> t2["Table 2 pepper or zucchini (courgette)"]
   pump --> t3["Table 3 leafy"]
   t1 --> overflow["1.5 in overflow sets flood height"]
   t2 --> overflow
@@ -209,7 +209,7 @@ Six bags on a pallet or gravel so they cannot stand in water. Two rows of three.
 | Bags | Size | Crop | Root depth to allow |
 |------|------|------|---------------------|
 | 2 | 5 US gal (19 L) | Radish | 8–10 in (20–25 cm) |
-| 1 | 5 US gal (19 L) | Beetroot | 8–10 in (20–25 cm) |
+| 1 | 5 US gal (19 L) | Beet (beetroot) | 8–10 in (20–25 cm) |
 | 3 | 10 US gal (38 L) | Carrot | 12–16 in (30–41 cm) |
 
 Media by volume: **60% coco, 30% perlite, 10% vermiculite**. No garden soil. For a 5 US gal (19 L) bag that is about **3 US gal (11 L)** coco, **1.5 US gal (6 L)** perlite, and **0.5 US gal (2 L)** vermiculite. Double those scoops for a 10 US gal bag.
@@ -220,9 +220,9 @@ Media by volume: **60% coco, 30% perlite, 10% vermiculite**. No garden soil. For
 | Vegetative | Twice a day | 1.2–1.6 mS/cm | 6.0–6.5 |
 | Root fill | Twice a day | 1.6–2.0 mS/cm | 6.0–6.5 |
 
-Water until about 20% of the volume runs out the bottom. The EC ceiling is **2.0 mS/cm** for every Zone C crop, including beetroot.
+Water until about 20% of the volume runs out the bottom. The EC ceiling is **2.0 mS/cm** for every Zone C crop, including beet (beetroot).
 
-One-season planning yields, used by both budget guides: radish **15 lb (6.8 kg)**, beetroot **8 lb (3.6 kg)**, carrot **20 lb (9.1 kg)**.
+One-season planning yields, used by both budget guides: radish **15 lb (6.8 kg)**, beet (beetroot) **8 lb (3.6 kg)**, carrot **20 lb (9.1 kg)**.
 
 [↑ Back to TOC](#table-of-contents)
 

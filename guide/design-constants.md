@@ -36,7 +36,7 @@ USA value first. South African equivalent in brackets.
 | Kind | Form | Example |
 |------|------|---------|
 | Length, area, volume, temperature, flow | Imperial, then metric | `8 ft (2.44 m)`, `20 US gal (76 L)`, `70°F (21°C)`, `160 US gph (600 L/h)` |
-| Mass dose | Per US gallon, then per litre | `2.4 g/US gal (0.63 g/L)` |
+| Mass dose | Per US gallon, then per liter | `2.4 g/US gal (0.63 g/L)` |
 | Money | Dollars, then rand | `$25 (R450)` |
 | Calendar | US month, then South African month six months later | mid-April (SA: mid-October) |
 | EC, pH, DLI | No conversion | `1.4–1.6 mS/cm` |
@@ -149,8 +149,8 @@ Two reservoirs. CH1–CH3 never share solution with CH4.
 |------|-------|
 | Tables | 3, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level |
 | Table 1 | Indeterminate tomato or cucumber, 1 plant |
-| Table 2 | Pepper, aubergine, or courgette, 1–2 plants |
-| Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop |
+| Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants |
+| Table 3 | Lettuce, herbs, pak choi, strawberries, or a later fruiting crop |
 | Media | LECA, 5 in (13 cm) deep |
 | LECA per table | 25 US gal (95 L) |
 | LECA for 3 tables | 75 US gal (284 L). Buy 90 US gal (340 L) to cover rinse loss |
@@ -192,19 +192,19 @@ These blocks are identical in the NFT set and the Ebb and Flow set.
 | Bag | Count | Crop |
 |-----|-------|------|
 | 5 US gal (19 L) | 2 | Radish |
-| 5 US gal (19 L) | 1 | Beetroot |
+| 5 US gal (19 L) | 1 | Beet (beetroot) |
 | 10 US gal (38 L) | 3 | Carrot |
 
 Media, by volume: 60% coco, 30% perlite, 10% vermiculite. No garden soil.
 
-Fertigation EC ceiling is **2.0 mS/cm**. Beetroot does not get a higher target.
+Fertigation EC ceiling is **2.0 mS/cm**. Beet (beetroot) does not get a higher target.
 
 One season, planning yields, used by both budget guides:
 
 | Crop | Yield |
 |------|-------|
 | Radish | 15 lb (6.8 kg) |
-| Beetroot | 8 lb (3.6 kg) |
+| Beet (beetroot) | 8 lb (3.6 kg) |
 | Carrot | 20 lb (9.1 kg) |
 | Zone C total | 43 lb (20 kg), about $80–$110 (R1,440–R1,980) |
 

@@ -19,12 +19,13 @@ Channels, EC, bags, and yields follow [Design Constants](../design-constants.md)
   - [BASIL (Sweet / Thai / Purple)](#basil-sweet-thai-purple)
   - [CILANTRO](#cilantro)
   - [MINT](#mint)
-  - [STRAWBERRIES](#strawberries)
   - [CHIVES](#chives)
   - [PARSLEY (Flat-Leaf / Curly)](#parsley-flat-leaf-curly)
 - [FRUITING CROPS (Zone A — CH4 Only)](#fruiting-crops-zone-a-ch4-only)
   - [CHERRY TOMATOES](#cherry-tomatoes)
-  - [PEPPERS (Sweet Bell / Chilli)](#peppers-sweet-bell-chilli)
+  - [PEPPERS (Sweet Bell / Chili)](#peppers-sweet-bell-chili)
+- [STRAWBERRIES (Zone A — CH3, Greens Tank)](#strawberries-zone-a-ch3-greens-tank)
+  - [STRAWBERRIES](#strawberries)
 - [MICROGREENS (Zone B — Tray Station)](#microgreens-zone-b-tray-station)
   - [MICROGREENS — General Protocol](#microgreens-general-protocol)
   - [Equipment & Supplies](#equipment-supplies)
@@ -36,14 +37,14 @@ Channels, EC, bags, and yields follow [Design Constants](../design-constants.md)
 - [ROOT VEGETABLES (Zone C — Grow Bags)](#root-vegetables-zone-c-grow-bags)
   - [RADISHES](#radishes)
   - [CARROTS](#carrots)
-  - [BEETROOT](#beetroot)
+  - [BEET (beetroot)](#beet-beetroot)
 - [Crop Rotation and Succession Planning](#crop-rotation-and-succession-planning)
   - [Zone C — Root Vegetable Succession Planting](#zone-c-root-vegetable-succession-planting)
   - [Succession Planting Schedule (CH1 — Lettuce Example)](#succession-planting-schedule-ch1-lettuce-example)
   - [NFT Channel Rotation Between Seasons](#nft-channel-rotation-between-seasons)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## How to Use This Guide
 
@@ -58,10 +59,11 @@ Each crop entry includes:
 
 > **First-season expectations:** Timelines and yields below assume a tuned system with stable EC and pH. In the first season, expect slower growth, more losses, and lower yields while you learn the two loops. See [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md) for first-season yield adjustments, typically 40–60% of the planning figures.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Zone, Channel & Crop Map
 
@@ -72,14 +74,15 @@ Each crop entry includes:
 | **A — greens** | CH3 | 3 in (76 mm) square, 8 ft (2.44 m) | Spinach, kale, mint, and strawberries in 3–4 sites | 2 in (51 mm) | 11 at 9 in (229 mm) |
 | **A — fruiting** | CH4 | 4 in (102 mm) square, 8 ft (2.44 m) | Cherry tomato and pepper only | 3 in (76 mm) | 7 holes at 12 in (305 mm) |
 | **B — trays** | — | 6 trays, 10 in × 20 in (25 cm × 50 cm) | Microgreens | — | Coco 1–1¼ in (2.5–3 cm) |
-| **C — bags** | — | Two 5 US gal radish, one 5 US gal beet, three 10 US gal carrot | Radish, beetroot, carrot | — | EC ceiling 2.0 mS/cm |
+| **C — bags** | — | Two 5 US gal radish, one 5 US gal beet, three 10 US gal carrot | Radish, beet (beetroot), carrot | — | EC ceiling 2.0 mS/cm |
 
 > **Total NFT sites: 40** (33 on CH1–CH3 plus 7 holes on CH4). Slope is 1:30, a 3¼ in (83 mm) drop. Posts are 36 in (91 cm) at the inlet and 32¾ in (83 cm) at the drain. The greens loop has its own 20 US gal (76 L) reservoir and a 160–210 US gph (600–800 L/h) pump, 24 hours a day, EC 0.8–1.8 mS/cm, changed every 7 days. CH4 has its own 10 US gal (38 L) reservoir and a 50–100 US gph (200–400 L/h) pump, 24 hours a day, and is not teed into the 1 in (25 mm) greens manifold. Tomato fruiting EC is 2.5–3.5 mS/cm and pepper fruiting EC is 2.0–3.0 mS/cm, in that tank only, changed every 5–7 days. Planning yield is 4–6 lb (1.8–2.7 kg) of cherry tomatoes per CH4 plant. Both reservoirs are a black body with a white exterior, and an air pump is recommended in each.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## LEAFY GREENS & HERBS (Zone A — NFT Channels)
 
@@ -185,12 +188,12 @@ Each crop entry includes:
 
 **Varieties:** Dwarf Blue Curled (compact, ideal for NFT), Cavolo Nero (black Tuscan kale), Red Russian (sweet)
 
-**Harvest:** Always cut outer leaves first — the growing centre continues to produce. Each plant can produce for 3–4 months with regular harvesting.
+**Harvest:** Always cut outer leaves first — the growing center continues to produce. Each plant can produce for 3–4 months with regular harvesting.
 
 **Season:** Through the outdoor season, mid-April to mid-October (SA: mid-October to mid-April). Kale **tastes sweeter after a light frost**. The outdoor NFT frame is not run through December–February (SA: June–August).
 
 **Common problems:**
-- **Aphids:** Kale is a favourite target. Check leaf undersides. See [Guide 07 — Pests and Disease](07-pests-and-disease.md).
+- **Aphids:** Kale is a favorite target. Check leaf undersides. See [Guide 07 — Pests and Disease](07-pests-and-disease.md).
 - **Caterpillars (cabbage white butterfly):** Kale is a brassica. Net the channel or use Bt, as described in [Guide 07 — Pests and Disease](07-pests-and-disease.md).
 
 ---
@@ -216,9 +219,9 @@ Each crop entry includes:
 
 **Spacing:** 9 in (229 mm), one of the 11 CH2 sites
 
-**Varieties:** Genovese (classic Italian, best for pesto), Thai (robust, anise flavour), Purple Ruffles (ornamental and culinary), Lemon Basil
+**Varieties:** Genovese (classic Italian, best for pesto), Thai (robust, anise flavor), Purple Ruffles (ornamental and culinary), Lemon Basil
 
-**Harvest:** Pinch growing tips above a leaf node (where two new branches will emerge). This encourages bushy growth and delays flowering. Never let basil flower — once flowering starts, leaf production slows and flavour declines.
+**Harvest:** Pinch growing tips above a leaf node (where two new branches will emerge). This encourages bushy growth and delays flowering. Never let basil flower — once flowering starts, leaf production slows and flavor declines.
 
 ```mermaid
 flowchart TD
@@ -274,7 +277,7 @@ flowchart TD
 **Uses for bolted plants:** When cilantro bolts, it produces seed sold as coriander. Let one or two plants finish and harvest the dried seed heads.
 
 **Common problems:**
-- **Bolting very quickly:** This is normal behaviour — plant fewer per channel at once and succession sow every 2–3 weeks instead.
+- **Bolting very quickly:** This is normal behavior — plant fewer per channel at once and succession sow every 2–3 weeks instead.
 - **Slow germination:** See note on seed crushing above.
 
 ---
@@ -297,7 +300,7 @@ flowchart TD
   Harvest:        3–4 weeks from established plant, then continuous
 ```
 
-**Spacing:** 9 in (229 mm) on CH3. Mint roots hard, so give it a site with a neighbour you can spare.
+**Spacing:** 9 in (229 mm) on CH3. Mint roots hard, so give it a site with a neighbor you can spare.
 
 **Propagation from cuttings (preferred method):**
 ```
@@ -368,7 +371,7 @@ flowchart TD
 
 **Germination tip:** Soak seeds in warm water for 24 hours before sowing. Pre-germinating in a damp paper towel (then transfer to rockwool when radicle emerges) dramatically speeds up germination.
 
-**Varieties:** Italian Flat Leaf (stronger flavour), Curled Moss (decorative, milder)
+**Varieties:** Italian Flat Leaf (stronger flavor), Curled Moss (decorative, milder)
 
 **Harvest:** Cut outer stems at base. Central growth continues. Plant produces for 5–6 months.
 
@@ -378,10 +381,11 @@ flowchart TD
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## FRUITING CROPS (Zone A — CH4 Only)
 
@@ -415,7 +419,7 @@ Cherry tomato and pepper share this channel only if you accept one EC. Tomato fr
 
 **Spacing:** Holes are 12 in (305 mm), seven of them. Plant 4–5 indeterminate cherries and skip holes so the vines have room. Compact determinate plants can use all 7 holes.
 
-**Varieties for outdoor NFT:** Tumbling Tom (bush/determinate — no staking needed), Sungold (indeterminate, exceptional flavour), Sweet Million, Black Cherry
+**Varieties for outdoor NFT:** Tumbling Tom (bush/determinate — no staking needed), Sungold (indeterminate, exceptional flavor), Sweet Million, Black Cherry
 
 **Indeterminate vs Determinate:**
 - **Indeterminate:** Grow continuously up a cane/trellis until killed by frost. Higher total yield. Need support.
@@ -445,14 +449,14 @@ flowchart TD
 
 **Common problems:**
 - **Blossom drop:** Flowers fall without fruit. Triggers include nights under 59°F (15°C), days over 90°F (32°C), low humidity, and poor pollination. Hand-pollinate and manage temperature. Shade at 40% when highs hold above 85°F (29°C).
-- **Blossom end rot:** Dark, sunken scar at fruit base — calcium deficiency caused by pH fluctuation or inconsistent watering. Stabilise EC and pH.
-- **Leaf curl:** Normal in heat (defence response). Concerning if accompanied by yellowing.
+- **Blossom end rot:** Dark, sunken scar at fruit base — calcium deficiency caused by pH fluctuation or inconsistent watering. Stabilize EC and pH.
+- **Leaf curl:** Normal in heat (defense response). Concerning if accompanied by yellowing.
 - **Yellowing lower leaves:** Natural (remove regularly) — or nutrient deficiency if severe and spreading upward.
 - **Splitting fruit:** Inconsistent watering/EC — solution temperature and EC spikes crack fruit. Maintain consistency.
 
 ---
 
-### PEPPERS (Sweet Bell / Chilli)
+### PEPPERS (Sweet Bell / Chili)
 
 **Zone:** CH4 | **Net Pot:** 3 in (76 mm) | **System:** NFT, own reservoir
 
@@ -482,7 +486,7 @@ flowchart TD
 **Varieties:**
 - **Sweet bell:** Californian Wonder, Lamuyo, Lipstick — large fruit, slow to ripen
 - **Mini sweet:** Baby Bell mix — smaller fruit, faster production
-- **Chilli:** Cayenne (fast, prolific), Jalapeño (compact, reliable), Anaheim
+- **Chili:** Cayenne (fast, prolific), Jalapeño (compact, reliable), Anaheim
 
 **Support:** Less demanding than tomatoes but still benefit from a central stake when laden with fruit.
 
@@ -490,11 +494,14 @@ flowchart TD
 
 **Common problems:**
 - **Flower drop:** Peppers drop flowers when nights fall below 59°F (15°C). Fleece the plants. Do not turn the pump off.
-- **Slow growth:** Peppers are naturally slower than tomatoes. Do not over-fertilise trying to speed them up — this causes vegetative lush growth at expense of fruiting.
+- **Slow growth:** Peppers are naturally slower than tomatoes. Do not over-fertilize trying to speed them up — this causes vegetative lush growth at expense of fruiting.
 - **Thin walls (small fruit):** Usually insufficient light or below-optimal temperature. Ensure 8+ hours full sun.
 - **Blossom end rot:** Same as tomatoes — calcium deficiency, pH instability.
 
 ---
+
+
+[↑ Back to TOC](#table-of-contents)
 
 ## STRAWBERRIES (Zone A — CH3, Greens Tank)
 
@@ -523,10 +530,10 @@ Strawberries are not a CH4 crop. Put them in **3–4 of the 11 sites on CH3**, i
   June-bearing varieties:   One short crop. A poor fit for a CH3 site
 ```
 
-**Recommended variety:** **Everbearing/day-neutral** — Albion, Seascape, Evie 2, Flamenco. These produce fruit regardless of day length, giving continuous harvest through summer and autumn.
+**Recommended variety:** **Everbearing/day-neutral** — Albion, Seascape, Evie 2, Flamenco. These produce fruit regardless of day length, giving continuous harvest through summer and fall.
 
 **Planting method:**
-- Source **bare-root crowns** or **runners** from a garden centre or online in spring
+- Source **bare-root crowns** or **runners** from a garden center or online in spring
 - No need to germinate from seed
 - Set the crown in a 2 in (51 mm) net pot with clay pebbles. Roots hang into the CH3 film
 - The crown (growing tip) must remain ABOVE the water level — never submerge it
@@ -537,7 +544,7 @@ Strawberries are not a CH4 crop. Put them in **3–4 of the 11 sites on CH3**, i
   In NFT, these will hang out of the channel and try to root anywhere.
 
   OPTIONS:
-  1. Remove runners immediately to direct energy to fruit production (maximises yield)
+  1. Remove runners immediately to direct energy to fruit production (maximizes yield)
   2. Root runners in small pots of coco coir — free new plants for next season
   3. Do not let runners root back into the NFT channel or they will clog it
 ```
@@ -548,7 +555,7 @@ Strawberries are not a CH4 crop. Put them in **3–4 of the 11 sites on CH3**, i
 - Sweetness comes from consistent EC and light, not from borrowing the tomato tank
 
 **Common problems:**
-- **Grey mould (Botrytis):** Most common strawberry disease — grey fuzzy mould on fruit and leaves. Caused by high humidity and poor airflow. Remove infected fruit and leaves immediately, improve spacing and ventilation.
+- **Gray mold (Botrytis):** Most common strawberry disease — gray fuzzy mold on fruit and leaves. Caused by high humidity and poor airflow. Remove infected fruit and leaves immediately, improve spacing and ventilation.
 - **Crown rot:** Pythium/Phytophthora — caused by crown being submerged in water. Ensure crown is above the film level.
 - **Slugs and snails:** Outdoor strawberries are prime targets. Copper tape around frame legs or iron phosphate bait.
 - **Aphids:** Common on flower stems. Insecticidal soap spray.
@@ -556,10 +563,11 @@ Strawberries are not a CH4 crop. Put them in **3–4 of the 11 sites on CH3**, i
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## MICROGREENS (Zone B — Tray Station)
 
@@ -587,12 +595,12 @@ Microgreens are harvested at the seedling stage (7–14 days) when cotyledons ar
 ```
 
 **Media:** Coco coir, 1–1¼ in (2.5–3 cm) deep in a 10 in × 20 in (25 cm × 50 cm) tray
-**Watering:** Bottom watering once the crop is growing (overhead water sits on the leaves and invites mould). Mist twice a day while the surface is the part that dries.
+**Watering:** Bottom watering once the crop is growing (overhead water sits on the leaves and invites mold). Mist twice a day while the surface is the part that dries.
 **No nutrient solution for the standard crops.** Seed reserves cover a 7–14 day cycle. Use plain water adjusted to pH 5.8–6.2. Sunflower and pea may take EC 0.4–0.8 mS/cm if the tray runs long. Radish, broccoli, amaranth, and wheatgrass stay on water.
 
 ### Individual Crop Profiles
 
-| Crop | Soak Seeds | Germination | Light Days | Harvest Day | Flavour | Seed Density |
+| Crop | Soak Seeds | Germination | Light Days | Harvest Day | Flavor | Seed Density |
 |------|-----------|------------|-----------|-------------|---------|-------------|
 | **Sunflower shoots** | 4–8h | 1–2 days | 5–7 days | 10–14 days | Nutty, crunchy | 8.8 oz (250 g)/tray. Optional EC 0.4–0.8 |
 | **Pea shoots** | 4–8h | 1–2 days | 4–6 days | 8–12 days | Sweet, fresh | 7.1 oz (200 g)/tray. Optional EC 0.4–0.8 |
@@ -658,19 +666,20 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 | Problem | Cause | Fix |
 |---------|-------|-----|
-| **White fuzzy mould on surface** | Too much moisture + poor airflow during blackout phase | Reduce misting frequency; ensure humidity dome is cracked slightly for airflow; spray with dilute hydrogen peroxide (3%, 1:10 with water) if mould appears |
+| **White fuzzy mold on surface** | Too much moisture + poor airflow during blackout phase | Reduce misting frequency; ensure humidity dome is cracked slightly for airflow; spray with dilute hydrogen peroxide (3%, 1:10 with water) if mold appears |
 | **Leggy, pale, stretched seedlings** | Blackout phase too long, or insufficient light after uncovering | Move to light promptly after 3–4 days; if growing indoors, use a grow light 6–8 in (15–20 cm) above the trays |
 | **Uneven germination (patchy tray)** | Uneven seed distribution, dry spots, or old seed | Spread seeds evenly by hand; ensure media is uniformly moist before sowing; test seed viability — old seeds germinate poorly |
 | **Seeds rotting instead of germinating** | Waterlogged media, especially with large seeds (sunflower, pea) | Use drain trays to prevent standing water; pre-soak large seeds but do not submerge media; ensure good drainage |
-| **Bitter or strong off-flavour** | Harvested too late (true leaves well developed) or heat stress | Harvest when cotyledons are fully open and true leaves are still under ⅜ in (1 cm). Keep trays under 77°F (25°C) |
+| **Bitter or strong off-flavor** | Harvested too late (true leaves well developed) or heat stress | Harvest when cotyledons are fully open and true leaves are still under ⅜ in (1 cm). Keep trays under 77°F (25°C) |
 | **Slimy stems at base** | Bacterial growth from bottom watering standing too long | Do not leave trays sitting in water for more than 30 minutes; ensure trays drain fully |
 
 ---
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## ROOT VEGETABLES (Zone C — Grow Bags)
 
@@ -756,13 +765,13 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 ---
 
-### BEETROOT
+### BEET (beetroot)
 
 **Zone:** C | **Container:** one 5 US gal (19 L) grow bag | **System:** 60% coco / 30% perlite / 10% vermiculite
 
 | Parameter | Value |
 |-----------|-------|
-| EC | 1.4–2.0 mS/cm. Ceiling 2.0. Beetroot does not get a higher target |
+| EC | 1.4–2.0 mS/cm. Ceiling 2.0. Beet (beetroot) does not get a higher target |
 | pH | Working window 5.8–6.2 (acceptable 5.5–6.5) |
 | Air Temperature | 59–77°F (15–25°C) |
 | Light (DLI) | 15–20 mol/m²/day |
@@ -779,18 +788,19 @@ After harvest, remove spent root mat from tray, compost, clean tray, and resow.
 
 **Varieties:** Boltardy (bolt-resistant, ideal for outdoor), Detroit Dark Red (classic), Chioggia (candy-stripe interior, Italian heirloom)
 
-**Seed note:** What looks like one beetroot seed is actually a cluster of 2–4 seeds. Each cluster will produce 2–4 seedlings — thin to one per cluster.
+**Seed note:** What looks like one beet (beetroot) seed is actually a cluster of 2–4 seeds. Each cluster will produce 2–4 seedlings — thin to one per cluster.
 
 **Harvest:** Pull from about 2 in (5 cm) across up to about 3 in (8 cm). Roots and leaves are both edible. Planning yield is 8 lb (3.6 kg).
 
 **Common problems:**
 - **Leggy seedlings:** Insufficient light during germination. Move to full light promptly once seeds sprout.
-- **Purple/red stems and wilting:** This is normal beetroot appearance — do not confuse with phosphorus deficiency (which affects the leaves uniformly).
+- **Purple/red stems and wilting:** This is normal beet (beetroot) appearance — do not confuse with phosphorus deficiency (which affects the leaves uniformly).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Crop Rotation and Succession Planning
 
@@ -821,7 +831,7 @@ Root vegetables in grow bags benefit from staggered sowing to maintain a continu
     Late-sown carrots can be left in bags and harvested through early winter
     if protected with fleece.
 
-  BEETROOT (55–70 day crop — plan 2–3 successions):
+  BEET / BEETROOT (55–70 day crop — plan 2–3 successions):
     Sow second batch when first batch is 3–4 weeks old.
       Batch 1: Sow Week 1 → harvest Week 8–10
       Batch 2: Sow Week 4 → harvest Week 12–14
@@ -859,7 +869,7 @@ Root vegetables in grow bags benefit from staggered sowing to maintain a continu
 
 After a full channel crop completes:
 1. Remove all plants and net pots
-2. Flush and sterilise the channel ([Guide 08 — System Maintenance](08-system-maintenance.md)). Plants are already out. If you use bleach or peroxide, do not set new plants back until the rinse is done. A stopped channel dries roots in 15–30 minutes.
+2. Flush and sterilize the channel ([Guide 08 — System Maintenance](08-system-maintenance.md)). Plants are already out. If you use bleach or peroxide, do not set new plants back until the rinse is done. A stopped channel dries roots in 15–30 minutes.
 3. Clean and re-pH clay pebbles
 4. Fresh rockwool cubes for next crop
 5. Start new seedlings in parallel (always have seedlings ready to transplant when a site opens)
@@ -867,9 +877,11 @@ After a full channel crop completes:
 ---
 
 
+> **Previous:** [Guide 05 — Growing Media](05-growing-media.md)
+
+
 [↑ Back to TOC](#table-of-contents)
 
-> **Previous:** [Guide 05 — Growing Media](05-growing-media.md)
 > **Next:** [Guide 07 — Pests and Disease](07-pests-and-disease.md)
 
 <!-- copyright -->

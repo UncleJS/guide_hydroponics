@@ -38,7 +38,7 @@ Doses, EC targets, and reservoir volumes follow [Design Constants](../design-con
 - [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
   - [Mix Ratios (per US gallon)](#mix-ratios-per-us-gallon)
 - [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
-  - [Aim: 64–72°F (18–22°C)](#solution-temperature-aim)
+  - [Solution temperature aim](#solution-temperature-aim)
 - [10. Reservoir Top-Up vs Full Change](#10-reservoir-top-up-vs-full-change)
   - [Two Operations — Very Different Purposes](#two-operations-very-different-purposes)
 - [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
@@ -54,8 +54,8 @@ Doses, EC targets, and reservoir volumes follow [Design Constants](../design-con
   - [Reservoir Volume Needed](#reservoir-volume-needed)
   - [Solution Volume per Full Mix](#solution-volume-per-full-mix)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Nutrients Matter in Hydroponics
 
@@ -65,10 +65,11 @@ This is both the power and the responsibility of hydroponics:
 - **Power:** Complete control over what the plant gets, when it gets it, and in what ratios
 - **Responsibility:** Get it wrong and plants suffer immediately — there is no soil to compensate
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. The 17 Essential Plant Nutrients
 
@@ -89,7 +90,7 @@ Hydroponic lists sometimes call a longer mineral set "the 17" by adding silicon 
 | Nutrient | Symbol | Primary Role | Deficiency Signs |
 |----------|--------|-------------|-----------------|
 | **Calcium** | Ca | Cell wall strength, root development | Tip burn (necrosis of young leaf margins), blossom end rot in tomatoes |
-| **Magnesium** | Mg | Chlorophyll centre, enzyme cofactor | Interveinal chlorosis (yellowing between veins on older leaves) |
+| **Magnesium** | Mg | Chlorophyll center, enzyme cofactor | Interveinal chlorosis (yellowing between veins on older leaves) |
 | **Sulfur** | S | Amino acid synthesis, enzyme function | Uniform yellowing of young leaves (similar to N but starts young) |
 
 ### Micronutrients (needed in trace quantities — but still essential)
@@ -99,7 +100,7 @@ Hydroponic lists sometimes call a longer mineral set "the 17" by adding silicon 
 | **Iron** | Fe | Chlorophyll synthesis | Interveinal chlorosis on young leaves (yellow with green veins) |
 | **Manganese** | Mn | Photosynthesis, enzyme activation | Similar to Fe — interveinal chlorosis, brown spots |
 | **Zinc** | Zn | Enzyme function, hormone synthesis | Small leaves, short internodes, distorted growth |
-| **Copper** | Cu | Enzyme function, photosynthesis | Wilting of young leaves, bluish-green discolouration |
+| **Copper** | Cu | Enzyme function, photosynthesis | Wilting of young leaves, bluish-green discoloration |
 | **Boron** | B | Cell wall formation, pollen viability | Distorted, thick, brittle young leaves; poor fruit set |
 | **Molybdenum** | Mo | Nitrogen fixation, enzyme function | Cupped/cupping leaves, marginal scorch |
 | **Chlorine** | Cl | Osmosis, photosynthesis | Wilting, bronzing of leaves |
@@ -109,10 +110,11 @@ Silicon is beneficial, not one of the 17, and it is not in the Masterblend dose 
 
 > **Key insight:** Micronutrient deficiencies are often caused not by absence from the solution but by **pH locking them out**. This is why pH control is non-negotiable.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. NPK at Each Growth Stage
 
@@ -143,10 +145,11 @@ flowchart TD
     A --> B --> C --> D
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. EC — Electrical Conductivity
 
@@ -154,7 +157,7 @@ flowchart TD
 
 EC (electrical conductivity) measures the **total dissolved salt concentration** in the nutrient solution. Pure water conducts virtually no electricity. As you dissolve nutrients (salts) in water, conductivity increases proportionally.
 
-Units: **mS/cm** (millisiemens per centimetre) — some meters display as EC, others as TDS (total dissolved solids) in ppm.
+Units: **mS/cm** (millisiemens per centimeter) — some meters display as EC, others as TDS (total dissolved solids) in ppm.
 
 ```
   EC vs TDS CONVERSION (approximate):
@@ -192,12 +195,13 @@ CH1–CH3 share the 20 US gal (76 L) greens tank, so that tank stays in **0.8–
 
 Tomato fruiting **2.5–3.5 mS/cm** and pepper fruiting **2.0–3.0 mS/cm** apply only in the 10 US gal (38 L) CH4 tank. If tomato and pepper share that tank, hold **2.5–3.0 mS/cm**, which sits inside both fruiting bands. Do not put those numbers in the greens tank.
 
-Zone C fertigation ceiling is **2.0 mS/cm**. Beetroot does not get a higher target.
+Zone C fertigation ceiling is **2.0 mS/cm**. Beet (beetroot) does not get a higher target.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. pH — The Key to Nutrient Availability
 
@@ -261,10 +265,11 @@ pH naturally drifts over time in a hydroponic system. Understanding the directio
 
 Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.5.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Two-Part vs Three-Part vs One-Part Nutrients
 
@@ -284,14 +289,15 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 - **Cons:** Three bottles to manage, requires following a schedule
 
 ### The Masterblend Trio (Budget Champion)
-- **Components:** MasterBlend 4-18-38 + Calcium Nitrate (15.5-0-0) + Magnesium Sulphate (Epsom Salt)
+- **Components:** MasterBlend 4-18-38 + Calcium Nitrate (15.5-0-0) + Magnesium Sulfate (Epsom Salt)
 - **Pros:** Extremely cost-effective for a season of reservoir fills, professional-grade results, widely used by commercial growers. Price the salts in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md) in US dollars with rand in brackets
 - **Cons:** Dry salts, requires accurate weighing (digital scale needed), no pH buffering built in
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Masterblend Trio — Mixing Recipe
 
@@ -308,13 +314,13 @@ This is the most cost-effective nutrient system available. Used by professional 
 |-----------|----------|----------|
 | MasterBlend 4-18-38 | Potassium nitrate + trace mix | N-P-K + complete micronutrients |
 | Calcium Nitrate | Ca(NO₃)₂ | 15.5-0-0 + 19% Ca |
-| Magnesium Sulphate | MgSO₄ (Epsom Salt) | 10% Mg, 13% S |
+| Magnesium Sulfate | MgSO₄ (Epsom Salt) | 10% Mg, 13% S |
 
 ### Standard Mixing Recipe (per 1 US gal)
 
 Per **1 US gal (3.8 L)**, vegetative base, EC about **1.4–1.6 mS/cm**:
 
-| Salt | Per 1 US gal | Per litre |
+| Salt | Per 1 US gal | Per liter |
 |------|----------------|-----------|
 | Masterblend 4-18-38 | 2.4 g | 0.63 g/L |
 | Calcium nitrate | 2.4 g | 0.63 g/L |
@@ -330,7 +336,7 @@ Write the dose as **2.4 g/US gal (0.63 g/L)** for Masterblend and for calcium ni
 
   Step 1: Fill that reservoir with 50% of its target water volume
   Step 2: Add calcium nitrate, stir until dissolved
-  Step 3: Add the remaining water (dilute calcium before sulphate and phosphate)
+  Step 3: Add the remaining water (dilute calcium before sulfate and phosphate)
   Step 4: Add Epsom salt, stir until dissolved
   Step 5: Add Masterblend, stir until dissolved
   Step 6: Adjust pH to 5.8–6.2
@@ -344,7 +350,7 @@ Write the dose as **2.4 g/US gal (0.63 g/L)** for Masterblend and for calcium ni
 
 ### Masterblend Dose Scaling
 
-Scale the **whole** recipe. The grams below are per 1 US gal (3.8 L). The litre column is the same dose divided by 3.8, not a second recipe.
+Scale the **whole** recipe. The grams below are per 1 US gal (3.8 L). The liter column is the same dose divided by 3.8, not a second recipe.
 
 | Target EC | Masterblend | Calcium nitrate | Epsom salt |
 |-----------|-------------|-----------------|------------|
@@ -360,10 +366,11 @@ Rows are proportional to the vegetative base: 2.4 g Masterblend per 1 US gal at 
 
 > **Always verify with your EC meter.** Source-water EC sits underneath these doses. If the meter is already at target, do not add the next step of salts.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. General Hydroponics Flora Series Schedule
 
@@ -371,7 +378,7 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 ### Mix Ratios (per US gallon)
 
-Millilitres per 1 US gal (3.8 L). The figure in brackets is the same dose per litre. EC is mS/cm. On this system, stop the greens tank at 1.8 mS/cm. Bloom rows above that are for the CH4 tank only, and they still have to land inside tomato fruiting 2.5–3.5 or pepper fruiting 2.0–3.0. Do not run the late-bloom row past those ceilings.
+Milliliters per 1 US gal (3.8 L). The figure in brackets is the same dose per liter. EC is mS/cm. On this system, stop the greens tank at 1.8 mS/cm. Bloom rows above that are for the CH4 tank only, and they still have to land inside tomato fruiting 2.5–3.5 or pepper fruiting 2.0–3.0. Do not run the late-bloom row past those ceilings.
 
 | Stage | FloraGro | FloraBloom | FloraMicro | EC Target |
 |-------|----------|-----------|-----------|---------|
@@ -385,10 +392,11 @@ Millilitres per 1 US gal (3.8 L). The figure in brackets is the same dose per li
 
 > Always add FloraMicro first when mixing multiple components.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Nutrient Solution Temperature
 
@@ -422,10 +430,11 @@ flowchart LR
 
 **Outdoor challenge:** Reservoir temperature tracks the air. Summer afternoon highs in the worked climate are 90–100°F (32–38°C), June–August (SA: December–February). An unshaded dark tank can climb well past 77°F (25°C). Both reservoirs are a **black body with a white exterior**, shaded, ideally under the frame. Insulation, a partial bury, or an aquarium chiller are the next steps if shade and the white exterior cannot hold the aim of 64–72°F (18–22°C). See [Guide 10 — Climate Management](10-climate-management.md). Deploy 40% shade cloth when afternoon highs hold above 85°F (29°C).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Reservoir Top-Up vs Full Change
 
@@ -460,10 +469,11 @@ flowchart LR
   - Before a new crop goes into that loop
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Visual Nutrient Deficiency and Toxicity Guide
 
@@ -507,10 +517,11 @@ flowchart TD
 | Manganese excess | Brown spots, chlorosis |
 | General salt burn | Brown leaf tips/edges, wilting despite wet roots |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Organic Hydroponics
 
@@ -560,19 +571,20 @@ It is possible to grow hydroponically with organic nutrient sources, though it i
 
 ### Why Organic Is Harder in NFT Specifically
 
-Organic hydroponics works best in media-based systems (deep water culture, flood-and-drain with expanded clay) where beneficial microbes colonise surfaces. In NFT, the thin film of flowing solution creates specific challenges:
+Organic hydroponics works best in media-based systems (deep water culture, flood-and-drain with expanded clay) where beneficial microbes colonize surfaces. In NFT, the thin film of flowing solution creates specific challenges:
 
 - **Clogging:** Organic particles and biofilm accumulate in narrow NFT channels, especially the 3 in (76 mm) greens channels. Expect to flush channels with plain water on the greens-tank change (every 7 days). Plants come out or get hand-watered first if the flush includes peroxide or bleach, because roots dry in 15–30 minutes.
 - **Inconsistent EC:** Standard EC meters measure ionic conductivity — organic nutrients are partially non-ionic, so readings understate actual nutrient content. You must rely more on plant appearance than meter readings.
-- **Microbial balance:** The constant flow and thin film make it harder to establish a stable beneficial microbial community compared to a deep reservoir with media surfaces. Biofilm can go anaerobic in dead spots, producing hydrogen sulphide (rotten egg smell).
+- **Microbial balance:** The constant flow and thin film make it harder to establish a stable beneficial microbial community compared to a deep reservoir with media surfaces. Biofilm can go anaerobic in dead spots, producing hydrogen sulfide (rotten egg smell).
 - **Reservoir hygiene:** Organic reservoirs need aeration (air stone running 24/7) to keep the microbial population aerobic. Without aeration, pathogenic anaerobes outcompete beneficial microbes within days.
 
 > **Recommendation for beginners:** Start with Masterblend or GH Flora Series. Once you understand your system and crops, explore organic supplements as additives rather than replacing the mineral base. A practical middle ground is running mineral nutrients in NFT and reserving organic growing for Zone C (grow bags), where the soil-like media supports a healthy microbial ecosystem naturally.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Water Volume Calculator Reference
 
@@ -652,9 +664,11 @@ Weigh salts on a digital scale. A tablespoon estimate is not accurate enough.
 ---
 
 
+> **Previous:** [Guide 01 — NFT Basics](01-nft-basics.md)
+
+
 [↑ Back to TOC](#table-of-contents)
 
-> **Previous:** [Guide 01 — NFT Basics](01-nft-basics.md)
 > **Next:** [Guide 03 — Water Quality](03-water-quality.md)
 
 <!-- copyright -->

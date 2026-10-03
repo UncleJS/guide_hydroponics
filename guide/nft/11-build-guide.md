@@ -76,8 +76,8 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
   - [Mistake 10 — Not having a backup plan for pump failure](#mistake-10-not-having-a-backup-plan-for-pump-failure)
 - [16. Build Checklist](#16-build-checklist)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. System Overview Recap
 
@@ -132,10 +132,11 @@ flowchart LR
 - Frame footprint about 9 ft × 4 ft (2.7 m × 1.2 m), including both tanks at the low end
 - Site: 13 ft × 10 ft (4.0 m × 3.0 m). Working aisle 24 in (61 cm) on the south side. Wind break on the north edge, about 12 in (30 cm) clear of the frame.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Tools Required
 
@@ -170,10 +171,11 @@ flowchart LR
 | Silicone sealant gun | Extra sealing around bulkheads |
 | Digital angle finder | Setting precise slope on frame |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Safety and Prep Notes
 
@@ -185,15 +187,16 @@ flowchart LR
    - HDPE (High-Density Polyethylene) or LDPE containers — ✅
    - Polypropylene fittings — ✅
    - PVC irrigation pipe — ✅
-   - PVC conduit (grey, unplasticised) — ✅
-   - Galvanised metal in contact with solution — ❌ (zinc toxicity)
+   - PVC conduit (gray, unplasticized) — ✅
+   - Galvanized metal in contact with solution — ❌ (zinc toxicity)
    - Pressure-treated timber in contact with solution — ❌ (preservative leach)
    - Copper pipe — ❌ (copper toxicity to roots)
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Step 1 — Site Preparation and Orientation
 
@@ -280,10 +283,11 @@ block-beta
 
 Mark corners with pegs or chalk. This avoids building the frame and discovering it doesn't fit.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Step 2 — Frame Construction
 
@@ -360,10 +364,11 @@ flowchart TD
 
 Leave the diagram as a warning. Build the bench in section 5.1.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Step 3 — Channel Preparation
 
@@ -397,7 +402,7 @@ block-beta
         columns 11
         buf1["←2 in<br/>edge"] H1["○<br/>hole 1"] sp1["←9 in→"] H2["○<br/>hole 2"] sp2["←9 in→"] H3["○<br/>hole 3"] sp3["←9 in→"] H4["○<br/>hole 4"] dots["..."] HN["○<br/>hole 11"] buf2["2 in→<br/>edge"]
     end
-    calc["CH1–CH3: 11 holes on an 8 ft channel<br/>About 2 in (51 mm) clear of each end<br/>9 in (229 mm) centre to centre<br/>CH4: 7 holes at 12 in (305 mm), 3 in pots"]
+    calc["CH1–CH3: 11 holes on an 8 ft channel<br/>About 2 in (51 mm) clear of each end<br/>9 in (229 mm) center to center<br/>CH4: 7 holes at 12 in (305 mm), 3 in pots"]
 ```
 
 **Hole size:**
@@ -405,7 +410,7 @@ block-beta
 - 3 in (76 mm) hole saw and 3 in net pots for CH4 (7 pots)
 
 **Drilling procedure:**
-1. Mark hole centres with a ruler and permanent marker.
+1. Mark hole centers with a ruler and permanent marker.
 2. Create a small dimple with a punch or nail at each mark (prevents drill bit wandering).
 3. Drill with the correct hole saw at slow speed — let the saw do the work, don't force.
 4. Remove the cut disc (the "knockout") — it often stays inside the channel; shake it out.
@@ -415,7 +420,7 @@ block-beta
 
 **High end (inlet):**
 - Fit a PVC square end cap (same size as channel). Push firmly to seat.
-- Drill a hole about ½ in (13 mm) in the top-centre of the end cap.
+- Drill a hole about ½ in (13 mm) in the top-center of the end cap.
 - Insert a ½ in (13 mm) barbed elbow. That is the inlet size on every channel, including CH4.
 - Seal around the fitting with silicone sealant. Allow 24 h to cure.
 
@@ -452,10 +457,11 @@ To make a simple spray bar:
 3. Insert into the inlet fitting at the channel high end, holes pointing down.
 4. The water fans out across the channel base rather than channelling to one corner.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Step 4 — Reservoir Setup
 
@@ -476,7 +482,7 @@ An IBC tote is hundreds of gallons. It is the wrong size for either loop.
 
 **Do NOT use:**
 - Any container that previously held chemicals, paint, or non-food substances
-- Metal containers (zinc, aluminium, galvanised steel — all toxic to roots)
+- Metal containers (zinc, aluminum, galvanized steel — all toxic to roots)
 - Thin-walled containers that bow when full. 20 US gal (76 L) of solution weighs about 167 lb (76 kg). The 10 US gal tank weighs about 84 lb (38 kg).
 
 ### 7.2 Preparing the Reservoir
@@ -516,10 +522,11 @@ Two options:
 
 For most DIY builds, the top-fill return is simpler and provides better oxygenation. Use the bulkhead fitting if you want a completely sealed lid with no open ports.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Step 5 — Plumbing
 
@@ -632,10 +639,11 @@ Before testing the full system, inspect every joint:
 - Every bulkhead: silicone both flanges, nut tight
 - Solvent-welded joints: must cure 1 hour at minimum (24 h recommended) before pressure
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Step 6 — Electrical and Timer Setup
 
@@ -645,7 +653,7 @@ Water and electricity are a dangerous combination. Treat all outdoor electrical 
 
 **Non-negotiable rules:**
 1. **Use an outdoor GFCI.** If the socket is not protected, fit a GFCI adaptor. About $10–$20 (R180–R360). In South Africa the equivalent protection is a 30 mA earth-leakage breaker on 230 V.
-2. **Use outdoor-rated extension leads.** These are UV-stabilised and have weatherproof socket covers.
+2. **Use outdoor-rated extension leads.** These are UV-stabilized and have weatherproof socket covers.
 3. **Keep all plugs and connectors elevated** — never let them sit in puddles. Use cable hooks to keep them off the ground and away from the reservoir.
 4. **Never modify plugs or run bare wire outdoors.** Use proper waterproof cable connectors or weatherproof junction boxes.
 5. **Do not plug in anything when wet** — hands, connections, or the outlet.
@@ -680,10 +688,11 @@ An air pump with a stone in each reservoir raises dissolved oxygen, which matter
 
 Two stones, one in each tank. Do not bubble only the greens tank and leave CH4 flat.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Step 7 — System Test (Water Only)
 
@@ -752,10 +761,11 @@ Step 9: Drain test water
 | Drain backing up | Header slope insufficient; blockage | Re-angle header; clear any debris |
 | Pump noisy/grinding | Running dry; debris in impeller | Ensure submerged; clean impeller |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Step 8 — First Nutrient Solution Fill
 
@@ -767,13 +777,13 @@ After a successful water test, prepare the first nutrient batch.
 
 See [Guide 02 — Nutrient Solution](02-nutrient-solution.md) for the full scaling notes. The base recipe, per **1 US gal (3.8 L)**, at about EC 1.4–1.6, is:
 
-| Component | Per 1 US gal | Per litre |
+| Component | Per 1 US gal | Per liter |
 |---|---|---|
 | Masterblend 4-18-38 | 2.4 g/US gal | 0.63 g/L |
 | Calcium nitrate | 2.4 g/US gal | 0.63 g/L |
 | Epsom salt | 1.2 g/US gal | 0.32 g/L |
 
-The per-litre figure in that table is 0.63 g/L, which is the same dose as 2.4 g per US gallon. Do not scale the recipe as if 2.4 g belonged in each litre.
+The per-liter figure in that table is 0.63 g/L, which is the same dose as 2.4 g per US gallon. Do not scale the recipe as if 2.4 g belonged in each liter.
 
 **Greens tank, 20 US gal (76 L), base fill:** 48 g Masterblend, 48 g calcium nitrate, 24 g Epsom salt. Then raise or lower the **whole** recipe until EC sits in **0.8–1.8 mS/cm**. Lettuce stays at or below 1.8. A first fill for seedlings can be the low end of that band. Do not change the ratio.
 
@@ -790,10 +800,11 @@ The per-litre figure in that table is 0.63 g/L, which is the same dose as 2.4 g 
 
 **Record in your logbook:** Date, EC reading, pH reading, reservoir level, what you added.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Step 9 — Planting
 
@@ -804,7 +815,7 @@ Seedlings should be ready to transplant when they have 2–3 true leaves and a w
 **From rockwool cubes:**
 1. Moisten the cube before transplanting.
 2. Place the cube in a 2 in (51 mm) net pot for CH1–CH3, or a 3 in (76 mm) pot for CH4.
-3. Fill around the cube with a small amount of clay pebbles (LECA) to stabilise.
+3. Fill around the cube with a small amount of clay pebbles (LECA) to stabilize.
 4. Lower the net pot into the channel hole.
 5. Ensure the bottom of the rockwool cube is level with or slightly below the base of the channel interior (roots should reach the film without hanging too far).
 
@@ -872,10 +883,11 @@ Hour 48:
 □ Move greens EC up within 0.8–1.8 once plants are established. CH4 fruiting EC waits until that tank is actually fruiting.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Step 10 — Zone B Microgreens Station
 
@@ -932,10 +944,11 @@ block-beta
     end
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 14. Step 11 — Zone C Root Veg Grow Bags
 
@@ -943,12 +956,12 @@ block-beta
 
 | Item | Qty | Notes |
 |---|---|---|
-| Fabric bags, 5 US gal (19 L) | 3 | Two radish, one beetroot |
+| Fabric bags, 5 US gal (19 L) | 3 | Two radish, one beet (beetroot) |
 | Fabric bags, 10 US gal (38 L) | 3 | Carrot |
 | Coco coir | Enough for 60% of about 45 US gal (170 L) of mix | No garden soil |
 | Perlite | 30% of the mix | |
 | Vermiculite | 10% of the mix | |
-| Organic slow-release fertiliser | 1 | E.g., Osmocote; or use liquid feeds |
+| Organic slow-release fertilizer | 1 | E.g., Osmocote; or use liquid feeds |
 | Saucers / drip trays | 6–8 | Prevents soil run-off |
 | Watering can | 1 | Fine rose for gentle watering |
 
@@ -966,9 +979,9 @@ ZONE C MIX — same ratio in every bag
   Vermiculite      10%       0.5 US gal (2 L)      1.0 US gal (4 L)
   ──────────────────────────────────────────────────────────────
 
-Six bags: 2 × 5 US gal radish, 1 × 5 US gal beetroot, 3 × 10 US gal carrot.
+Six bags: 2 × 5 US gal radish, 1 × 5 US gal beet (beetroot), 3 × 10 US gal carrot.
 About 45 US gal (170 L) of mix in total.
-Fertigation EC ceiling is 2.0 mS/cm. Beetroot does not get a higher target.
+Fertigation EC ceiling is 2.0 mS/cm. Beet (beetroot) does not get a higher target.
 No garden soil.
 ```
 
@@ -1004,10 +1017,11 @@ block-beta
     note2["Each bag sits in a drip tray to catch runoff<br/>Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]:3
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 15. Common Build Mistakes and How to Avoid Them
 
@@ -1039,7 +1053,7 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 
 ### Mistake 5 — Skipping the water test
 
-**What happens:** System is filled with nutrient solution, pump turned on — and there's a leak at a bulkhead fitting. Nutrient solution drains across the ground (or into the reservoir of a neighbour). Expensive nutrients wasted; time lost replanting.
+**What happens:** System is filled with nutrient solution, pump turned on — and there's a leak at a bulkhead fitting. Nutrient solution drains across the ground (or into the reservoir of a neighbor). Expensive nutrients wasted; time lost replanting.
 
 **Prevention:** Always run Step 7 first. Plain water reveals all leaks before they cost anything. Run for 30 minutes minimum.
 
@@ -1073,10 +1087,11 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 
 **Prevention:** Keep a spare greens pump (160–210 US gph, about 15 W) and a spare fruiting pump (50–100 US gph, about 8 W). A basic spare is about $10–$20 (R180–R360). Hand-water the stopped loop every 15–30 minutes until the replacement is in. Do not wait hours.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 16. Build Checklist
 
@@ -1128,11 +1143,13 @@ GENERAL
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 10 — Climate Management](10-climate-management.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md)
 
 <!-- copyright -->

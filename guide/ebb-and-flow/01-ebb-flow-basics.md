@@ -28,7 +28,7 @@
   - [Strengths for Heavier Crops](#strengths-for-heavier-crops)
   - [Limitations](#limitations)
 - [9. Timer Science: Mechanical vs Digital Timers](#9-timer-science-mechanical-vs-digital-timers)
-  - [Mechanical (Analogue) Timers](#mechanical-analogue-timers)
+  - [Mechanical (Analog) Timers](#mechanical-analog-timers)
   - [Digital Timers](#digital-timers)
   - [Redundancy Strategy](#redundancy-strategy)
 - [10. What Happens During Pump or Timer Failure](#10-what-happens-during-pump-or-timer-failure)
@@ -39,12 +39,12 @@
 - [12. Pros and Cons Summary](#12-pros-and-cons-summary)
 - [13. Key Numbers Reference Card](#13-key-numbers-reference-card)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. History and Origin
 
-Ebb & Flow — also called flood-and-drain — is one of the oldest formalised hydroponic methods, with roots that pre-date modern hydroponics science. Flood irrigation itself goes back to ancient Egypt and Mesopotamia, where controlled inundation of grow beds was the foundation of agriculture. The hydroponic interpretation emerged alongside other technique-based growing systems in the 1970s and 1980s, developed in parallel with NFT and DWC as commercial greenhouse operators sought methods suited to heavier, more varied crops.
+Ebb & Flow — also called flood-and-drain — is one of the oldest formalized hydroponic methods, with roots that pre-date modern hydroponics science. Flood irrigation itself goes back to ancient Egypt and Mesopotamia, where controlled inundation of grow beds was the foundation of agriculture. The hydroponic interpretation emerged alongside other technique-based growing systems in the 1970s and 1980s, developed in parallel with NFT and DWC as commercial greenhouse operators sought methods suited to heavier, more varied crops.
 
 Unlike NFT, which was developed by a single researcher (Dr. Allen Cooper) and published with precision, Ebb & Flow evolved empirically across commercial greenhouse operations in the Netherlands, Germany, and North America. Dutch growers in particular refined the technique during the 1980s for tomato, pepper, and cucumber production in rockwool slabs — a commercial application that remains dominant in high-end greenhouse production today.
 
@@ -52,10 +52,11 @@ The home and hobby hydroponic market adopted Ebb & Flow extensively from the 199
 
 **Why this system uses Ebb & Flow for Zone A:** The outdoor grow tables in this system need to handle everything from fast-cycling lettuce to long-season tomatoes and cucumbers. The media volume in each flood table provides structural support for heavy plants, buffers nutrient and pH swings, and accommodates a range of root architectures that an NFT channel simply cannot support.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Core Principle: The Flood-and-Drain Cycle
 
@@ -85,10 +86,11 @@ flowchart TD
 
 **Why flooding from below matters:** Top-down irrigation creates dry zones and uneven wetting. Bottom-up flooding ensures the entire media column is wetted uniformly, from bottom to top, forcing out stale air as the water rises and drawing in fresh oxygen as it drains.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Anatomy of an Ebb & Flow System
 
@@ -100,7 +102,7 @@ flowchart TD
     PUMP["SUBMERSIBLE PUMP<br/>250 US gph, timer-controlled"]
     TIMER["DIGITAL TIMER<br/>1-minute resolution, weatherproof"]
     T1["TABLE 1<br/>4 ft x 2 ft<br/>1 tomato or cucumber"]
-    T2["TABLE 2<br/>4 ft x 2 ft<br/>1-2 pepper, aubergine, or courgette"]
+    T2["TABLE 2<br/>4 ft x 2 ft<br/>1-2 pepper, eggplant (aubergine), or zucchini (courgette)"]
     T3["TABLE 3<br/>4 ft x 2 ft<br/>leafy, or a later fruiting crop"]
     OF1["TABLE 1 OVERFLOW<br/>1.5 in standpipe"]
     OF2["TABLE 2 OVERFLOW<br/>1.5 in standpipe"]
@@ -142,10 +144,11 @@ flowchart TD
 | **Net pots** | Hold individual plants in the media | 2 in (50 mm) for greens and herbs; 3–4 in (75–100 mm) for fruiting crops |
 | **Drain** | Returns solution when the pump is off | 1 in (25 mm) bulkhead, one per table. Gravity. No drain pump |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. The Overflow Fitting — The Critical Safety Device
 
@@ -203,10 +206,11 @@ The overflow standpipe height is adjustable — a taller or shorter standpipe ch
 
 > **Critical rule:** The design flood is the level about ¾ in (2 cm) below the media surface. It is not a 3–5 cm deep flood. Keep the top of each standpipe at least 1¼–2 in (3–5 cm) below the table rim so a blocked overflow still has freeboard before water spills on the floor. Keep each overflow clear of roots and debris. Each table has its own 1½ in (40 mm) overflow and its own 1 in (25 mm) drain.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Flood Frequency and Duration Science
 
@@ -275,10 +279,11 @@ A flood cycle must be long enough to fully wet the media column from bottom to t
 
 **First-season rule:** Start at 3 floods per day for 15–20 minutes. One hour after a flood, the LECA should be moist inside the pebbles, not bone dry and not still full of free water. Fruiting crops may move to 4 floods per day. That is the last step. If a heatwave at 90–100°F (32–38°C) still stresses plants at 4 floods, shorten the duration and put on 40% shade.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Root Zone Dynamics During Flood and Drain
 
@@ -326,15 +331,16 @@ The risk arises when:
 - **Reservoir temperature is high**, above 77°F (25°C): less dissolved oxygen in the flood solution. The aim is 64–72°F (18–22°C)
 
 **Signs of chronic oxygen deficiency:**
-- Roots turning brown (not the slimy Pythium brown — a dry, caramelised brown)
+- Roots turning brown (not the slimy Pythium brown — a dry, caramelized brown)
 - Wilting despite adequate flood cycles
 - Slow growth, yellowing starting from lower leaves
 - Foul smell from media between floods (not just after a flood)
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Ebb & Flow vs Other Systems Comparison
 
@@ -357,10 +363,11 @@ The risk arises when:
 | **Beginner friendly** | Yes | Moderate | Moderate | Very | Very |
 | **Commercial use** | Very common (greenhouse tomatoes) | Very common (lettuce) | Common | Rare | Rare |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Why Ebb & Flow Suits a Wider Crop Range
 
@@ -368,7 +375,7 @@ The risk arises when:
 
 Ebb & Flow's primary advantage over NFT is its suitability for **fruiting and structurally heavy crops**:
 
-**Tomatoes, peppers, cucumbers, courgettes:**
+**Tomatoes, peppers, cucumbers, zucchinis (courgettes):**
 - These plants develop root balls 8–16 in (20–40 cm) across at maturity
 - They need structural support in the root zone — LECA provides this; an NFT channel does not
 - High transpiration means high water demand — the 5 in (13 cm) bed buffers the gap between floods
@@ -389,7 +396,7 @@ Ebb & Flow's primary advantage over NFT is its suitability for **fruiting and st
   ─ Media per table: 25 US gal (95 L). Table 1 holds 1 plant. Table 2 holds 1–2
   ─ Support: LECA holds the root ball
   ─ Moisture buffer: moist LECA holds 8–24 hours after a missed flood
-  ─ Crop fit: a full-size tomato or cucumber on Table 1; pepper, aubergine, or courgette on Table 2
+  ─ Crop fit: a full-size tomato or cucumber on Table 1; pepper, eggplant (aubergine), or zucchini (courgette) on Table 2
 ```
 
 **Lettuce and herbs also grow well** — E&F is not only for fruiting crops. Leafy crops in clay pebbles grow at least as fast as in NFT, with the added advantage that pump failure does not immediately endanger them (media holds moisture for hours, not minutes).
@@ -399,18 +406,19 @@ Ebb & Flow's primary advantage over NFT is its suitability for **fruiting and st
 Ebb & Flow is not ideal for every scenario:
 - **Root vegetables:** Roots need to grow into deep, uniform media without obstruction from fittings — grow bags (Zone C) remain the better choice
 - **Very small operations:** The setup cost (trays, fittings, pump, timer, reservoir) is higher than a simple Kratky jar
-- **Minimalist setups:** Media cost and volume is significant — not suited to growers wanting to minimise inputs
+- **Minimalist setups:** Media cost and volume is significant — not suited to growers wanting to minimize inputs
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Timer Science: Mechanical vs Digital Timers
 
 The timer is not an accessory in Ebb & Flow — it **is** the system's brain. A timer failure is equivalent to a pump failure in NFT. Understanding timer types and their failure modes is essential.
 
-### Mechanical (Analogue) Timers
+### Mechanical (Analog) Timers
 
 ```
   MECHANICAL TIMER CHARACTERISTICS:
@@ -451,14 +459,15 @@ The timer is not an accessory in Ebb & Flow — it **is** the system's brain. A 
 For an outdoor system, a single timer failure can destroy an entire crop. Recommended protections:
 
 1. **Log your timer settings:** Write down the flood schedule (start times, duration) — if the timer resets due to power cut, you can reprogram immediately
-2. **Battery backup timer:** Some digital timers have a small battery that holds the programme during brief power outages — worth the small extra cost
+2. **Battery backup timer:** Some digital timers have a small battery that holds the program during brief power outages — worth the small extra cost
 3. **Smart plug alternative:** A WiFi smart plug (e.g., Tapo, Kasa) controlled via a phone app allows remote monitoring and manual override — also alerts you if power draw drops unexpectedly
 4. **Physical inspection rule:** Check that the pump is actually running during each flood cycle (at least once per day) — you cannot rely on the timer display alone
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. What Happens During Pump or Timer Failure
 
@@ -466,7 +475,7 @@ Ebb & Flow has two distinct failure modes, each with different consequences and 
 
 ### Failure Mode A — Pump Stuck ON (Flood Won't Drain)
 
-This occurs if the timer fails in the ON position, the timer programme is corrupted, or the pump is wired directly without a timer.
+This occurs if the timer fails in the ON position, the timer program is corrupted, or the pump is wired directly without a timer.
 
 ```
   PUMP STUCK ON — TIMELINE:
@@ -476,7 +485,7 @@ This occurs if the timer fails in the ON position, the timer programme is corrup
   30–60 min:  Roots stay submerged. Dissolved oxygen in the solution falls.
   2–4 hours:  Root rot risk. This is the action window. Wilting can show even
               though the roots are in water, because the problem is oxygen, not drought.
-  After 4 h:  Pythium colonises the stressed root zone. Recovery gets unlikely.
+  After 4 h:  Pythium colonizes the stressed root zone. Recovery gets unlikely.
 
   A drain-confirmation float that opens the pump relay when the table is still
   up after the pump should be off is the primary safety device. A second timer
@@ -519,10 +528,11 @@ This is the more common failure mode — the pump stops and no further floods oc
 - Keep a watering can accessible at all times during the growing season
 - If away from home: a WiFi smart plug on the pump circuit can alert you to power draw anomalies
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Scaling: Adding Tables and Channels
 
@@ -568,10 +578,11 @@ When you add hardware, also check:
 - **Drains:** each table keeps its own 1 in (25 mm) drain and its own 1½ in (40 mm) overflow. They must all be able to return without the reservoir overflowing
 - **Timers:** a second digital timer is reasonable. A mechanical timer is still not the outdoor default
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Pros and Cons Summary
 
@@ -583,7 +594,7 @@ When you add hardware, also check:
 | Simple mechanics | Timer + pump — nothing complex or fragile in the flood/drain mechanism |
 | Good oxygenation | Drain phase actively re-oxygenates root zone each cycle |
 | Outdoor temp tolerance | Media depth insulates root zone from rapid temperature swings |
-| Reusable media | Clay pebbles last for years with proper sterilisation |
+| Reusable media | Clay pebbles last for years with proper sterilization |
 | Easy root inspection | Lift net pot to check roots at any time |
 
 | Disadvantage | Detail |
@@ -597,10 +608,11 @@ When you add hardware, also check:
 | Reservoir management | Shared reservoir means disease can spread; requires clean management |
 | pH/EC harder to isolate | Media buffers changes — good normally, but masks problems if you do not test regularly |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Key Numbers Reference Card
 
@@ -608,7 +620,7 @@ When you add hardware, also check:
 |-----------|-------|
 | Flood tables | 3, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level |
 | Table 1 | Indeterminate tomato or cucumber, 1 plant |
-| Table 2 | Pepper, aubergine, or courgette, 1–2 plants |
+| Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants |
 | Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop |
 | Flood level | About ¾ in (2 cm) below the LECA surface |
 | Flood duration | 15–30 minutes. Shorten in a heatwave; do not add a 5th flood |
@@ -630,11 +642,13 @@ When you add hardware, also check:
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 00 — System Overview](00-system-overview.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
 
 <!-- copyright -->

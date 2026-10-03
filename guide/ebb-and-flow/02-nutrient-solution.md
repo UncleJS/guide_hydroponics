@@ -46,8 +46,8 @@
 - [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
   - [Reservoir Volume and E&F Flood Cycling](#reservoir-volume-and-ef-flood-cycling)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Nutrients Matter in Ebb & Flow Hydroponics
 
@@ -61,10 +61,11 @@ Ebb & Flow adds a layer of complexity not found in NFT or DWC: **the media itsel
 
 **The practical consequence:** You must manage both reservoir chemistry AND media chemistry — not just the reservoir alone. This guide covers both.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. The 17 Essential Plant Nutrients
 
@@ -83,7 +84,7 @@ Plants require 17 elements to complete their life cycle:
 | Nutrient | Symbol | Primary Role | Deficiency Signs |
 |----------|--------|-------------|-----------------|
 | **Calcium** | Ca | Cell wall strength, root development | Tip burn, blossom end rot in tomatoes/peppers |
-| **Magnesium** | Mg | Chlorophyll centre, enzyme cofactor | Interveinal chlorosis on older leaves |
+| **Magnesium** | Mg | Chlorophyll center, enzyme cofactor | Interveinal chlorosis on older leaves |
 | **Sulfur** | S | Amino acid synthesis, enzyme function | Uniform yellowing of young leaves |
 
 ### Micronutrients (needed in trace quantities — but still essential)
@@ -93,7 +94,7 @@ Plants require 17 elements to complete their life cycle:
 | **Iron** | Fe | Chlorophyll synthesis | Interveinal chlorosis on young leaves (yellow with green veins) |
 | **Manganese** | Mn | Photosynthesis, enzyme activation | Similar to Fe — interveinal chlorosis, brown spots |
 | **Zinc** | Zn | Enzyme function, hormone synthesis | Small leaves, short internodes, distorted growth |
-| **Copper** | Cu | Enzyme function, photosynthesis | Wilting of young leaves, bluish-green discolouration |
+| **Copper** | Cu | Enzyme function, photosynthesis | Wilting of young leaves, bluish-green discoloration |
 | **Boron** | B | Cell wall formation, pollen viability | Distorted, brittle young leaves; poor fruit set |
 | **Molybdenum** | Mo | Nitrogen metabolism, enzyme function | Cupped/cupping leaves, marginal scorch |
 | **Chlorine** | Cl | Osmosis, photosynthesis | Wilting, bronzing of leaves |
@@ -102,10 +103,11 @@ Plants require 17 elements to complete their life cycle:
 
 > **Key insight:** In E&F systems, salt accumulation in clay pebbles can lock out micronutrients even when reservoir concentrations are correct. If you see micronutrient symptoms despite correct reservoir pH and EC, schedule a media flush (see Section 10).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. NPK at Each Growth Stage
 
@@ -122,18 +124,19 @@ flowchart TD
     A --> B --> C --> D --> E
 ```
 
-**E&F note on shared solution:** Table 1 is one indeterminate tomato or one cucumber. Table 2 is pepper, aubergine, or courgette, 1–2 plants. Table 3 is leafy greens or a later fruiting crop. All three tables share the 45 US gal (170 L) reservoir, so they share one EC. Separate tables let you pick crops that can live on that one number. They do not give you two ECs. When Tables 1 and 2 are fruiting, run the fruiting target and either keep Table 3 leafy crops at the high end of their range or switch Table 3 to a later fruiting crop. Flood counts can still differ: 3× per day vegetative, 4× per day fruiting, and 4× is the ceiling.
+**E&F note on shared solution:** Table 1 is one indeterminate tomato or one cucumber. Table 2 is pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants. Table 3 is leafy greens or a later fruiting crop. All three tables share the 45 US gal (170 L) reservoir, so they share one EC. Separate tables let you pick crops that can live on that one number. They do not give you two ECs. When Tables 1 and 2 are fruiting, run the fruiting target and either keep Table 3 leafy crops at the high end of their range or switch Table 3 to a later fruiting crop. Flood counts can still differ: 3× per day vegetative, 4× per day fruiting, and 4× is the ceiling.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. EC — Electrical Conductivity in E&F Systems
 
 ### What EC Measures
 
-EC (electrical conductivity) measures the total dissolved salt concentration in the nutrient solution. Units: **mS/cm** (millisiemens per centimetre).
+EC (electrical conductivity) measures the total dissolved salt concentration in the nutrient solution. Units: **mS/cm** (millisiemens per centimeter).
 
 ```
   EC vs TDS CONVERSION (approximate):
@@ -167,19 +170,20 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 | Cherry tomatoes | 0.8–1.2 | 2.0–2.8 | 2.5–3.5 | 3.5 |
 | Peppers | 0.8–1.2 | 2.0–2.8 | 2.0–3.0 | 3.0 |
 | Cucumbers | 1.0–1.4 | 2.0–2.5 | 2.2–2.8 | 2.8 |
-| Courgette/zucchini | 1.0–1.2 | 1.8–2.4 | 1.8–2.4 | 2.4 |
-| Aubergine/eggplant | 1.0–1.4 | 2.0–2.8 | 2.0–3.0 | 3.0 |
+| Zucchini (courgette) | 1.0–1.2 | 1.8–2.4 | 1.8–2.4 | 2.4 |
+| Eggplant (aubergine) | 1.0–1.4 | 2.0–2.8 | 2.0–3.0 | 3.0 |
 | Strawberries | 0.8–1.0 | 1.2–1.8 | 1.6–2.2 | 2.5 |
 | Radishes (bags) | 0.8–1.0 | 1.2–1.6 | 1.4–1.8 | 2.0 |
 | Beetroot (bags) | 0.8–1.0 | 1.2–1.6 | 1.4–2.0 | 2.0 |
 | Carrots (bags) | 0.6–0.8 | 1.0–1.4 | 1.4–1.8 | 2.0 |
 
-> **Shared-reservoir note:** Zone C fertigation stops at 2.0 mS/cm. Beetroot does not get a higher target. On the flood tables, one reservoir means one EC. A lettuce and herb season on Table 3, with Tables 1 and 2 not yet fruiting, sits around 1.0–1.6 mS/cm. Once Table 1 is fruiting, the tank moves to that crop's fruiting EC.
+> **Shared-reservoir note:** Zone C fertigation stops at 2.0 mS/cm. Beet (beetroot) does not get a higher target. On the flood tables, one reservoir means one EC. A lettuce and herb season on Table 3, with Tables 1 and 2 not yet fruiting, sits around 1.0–1.6 mS/cm. Once Table 1 is fruiting, the tank moves to that crop's fruiting EC.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. pH — Management in Media vs Solution
 
@@ -198,7 +202,7 @@ Even with prepared pebbles, some pH rise will occur during early use:
 
   Week 1–2 (new pebbles):   pH creep of +0.3–0.8 per day — may need daily adjustment
   Week 3–4:                 pH creep of +0.2–0.4 per day — normal ongoing drift
-  Month 2+:                 Surface alkalinity stabilises — pH creep reduces
+  Month 2+:                 Surface alkalinity stabilizes — pH creep reduces
                             Ongoing pH management is standard for any system
 
   Response: Check pH daily. Adjust with pH Down as needed.
@@ -229,10 +233,11 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 **Working window: pH 5.8–6.2.** That is the band this system is mixed to. The wider acceptable band is 5.5–6.5.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Two-Part vs Three-Part vs One-Part Nutrients
 
@@ -245,14 +250,15 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 **Recommendation for this E&F system:** Masterblend trio for cost and precision, or GH Flora Series for liquid convenience. Either gives excellent results. Avoid all-in-one products for fruiting crops — you cannot adjust the N:P:K ratio to shift from vegetative to fruiting phase.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 7. Masterblend Trio — Mixing Recipe for E&F
 
-This is the lowest-cost professional nutrient system in these guides. The ratio is the same one used for the NFT reservoirs. Only the target EC and the tank volume change. Doses below are **per US gallon**, then the same dose per litre in brackets. The base figure of 2.4 g belongs with one US gallon. The matching per-litre amount is 0.63 g.
+This is the lowest-cost professional nutrient system in these guides. The ratio is the same one used for the NFT reservoirs. Only the target EC and the tank volume change. Doses below are **per US gallon**, then the same dose per liter in brackets. The base figure of 2.4 g belongs with one US gallon. The matching per-liter amount is 0.63 g.
 
 ### Personal Protective Equipment and Storage
 
@@ -272,7 +278,7 @@ Keep the box shut between mixing sessions. Weigh salts on a digital scale. Do no
 |-----------|----------|----------|
 | MasterBlend 4-18-38 | Potassium nitrate + trace elements | N-P-K + complete micronutrients |
 | Calcium Nitrate | Ca(NO₃)₂ | 15.5-0-0 + 19% Ca |
-| Magnesium Sulphate | MgSO₄ (Epsom Salt) | 10% Mg, 13% S |
+| Magnesium Sulfate | MgSO₄ (Epsom Salt) | 10% Mg, 13% S |
 
 ### Standard Mixing Recipe (per US gallon)
 
@@ -287,7 +293,7 @@ Per **1 US gal (3.8 L)**, vegetative, EC about 1.4–1.6 mS/cm:
 
   Step 1: Fill the reservoir with about half the target water volume
   Step 2: Dissolve calcium nitrate completely
-  Step 3: Add the rest of the water (dilute the calcium before sulphate and phosphate)
+  Step 3: Add the rest of the water (dilute the calcium before sulfate and phosphate)
   Step 4: Dissolve Epsom salt
   Step 5: Dissolve Masterblend
   Step 6: Adjust pH to 5.8–6.2
@@ -312,7 +318,7 @@ Per **1 US gal (3.8 L)**, vegetative, EC about 1.4–1.6 mS/cm:
 
 Keep the 2 : 2 : 1 ratio (Masterblend : calcium nitrate : Epsom). Raise or lower the **whole** recipe to hit the crop EC. Do not change the ratio to chase one element unless you are in a deficiency correction.
 
-Doses are per 1 US gal (3.8 L). The gram-per-litre figure is the same dose, not a different recipe.
+Doses are per 1 US gal (3.8 L). The gram-per-liter figure is the same dose, not a different recipe.
 
 | Target EC | Masterblend | Calcium nitrate | Epsom salt |
 |-----------|-------------|-----------------|------------|
@@ -323,18 +329,19 @@ Doses are per 1 US gal (3.8 L). The gram-per-litre figure is the same dose, not 
 | 2.5 mS/cm (early fruit) | 4.0 g (1.06 g/L) | 4.0 g (1.06 g/L) | 2.0 g (0.53 g/L) |
 | 3.5 mS/cm (peak fruit) | 5.6 g (1.48 g/L) | 5.6 g (1.48 g/L) | 2.8 g (0.74 g/L) |
 
-> **Verify with the EC meter.** Source-water EC and new LECA both move the reading. Zone C fertigation still stops at 2.0 mS/cm. The 3.5 mS/cm row is for a fruiting flood table, not for beetroot.
+> **Verify with the EC meter.** Source-water EC and new LECA both move the reading. Zone C fertigation still stops at 2.0 mS/cm. The 3.5 mS/cm row is for a fruiting flood table, not for beet (beetroot).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. General Hydroponics Flora Series Schedule
 
 For those preferring a liquid system. This is the most documented nutrient schedule in hobby hydroponics.
 
-Doses are per US gallon, with the per-litre figure in brackets. Add FloraMicro first.
+Doses are per US gallon, with the per-liter figure in brackets. Add FloraMicro first.
 
 | Stage | FloraGro | FloraBloom | FloraMicro | EC Target |
 |-------|----------|-----------|-----------|---------|
@@ -351,10 +358,11 @@ Doses are per US gallon, with the per-litre figure in brackets. Add FloraMicro f
 
 > Always add FloraMicro first when mixing multiple components. The flush week (plain water only) in the final week before harvest reduces residual salts in the media and plant tissue — more important in E&F than in NFT because of salt accumulation in clay pebbles.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Nutrient Solution Temperature
 
@@ -385,10 +393,11 @@ flowchart LR
 
 **Temperature management:** Shade and insulate the reservoir. Keep the lid on. Paint the outside white or wrap it in reflective insulation. If the solution itself holds above 77°F (25°C), treat that as the action line: more shade, insulation, and a small aquarium chiller if afternoons stay at 90–100°F (32–38°C). Flood count stays at 4 on fruiting tables. Shorten the flood if you need to. Do not add a 5th.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Reservoir Top-Up vs Full Change — E&F Specifics
 
@@ -453,7 +462,7 @@ This is the most important nutrient management issue specific to Ebb & Flow that
   Trigger 2: pH swings >0.5 per day with mature media (signs of imbalance)
   Trigger 3: Solution older than 10–14 days
   Trigger 4: The solution smells, or roots slime
-  Trigger 5: Visible discolouration (brown, green, slimy)
+  Trigger 5: Visible discoloration (brown, green, slimy)
   Trigger 6: After any disease outbreak
   Trigger 7: Before introducing new seedlings to a table
 
@@ -463,10 +472,11 @@ This is the most important nutrient management issue specific to Ebb & Flow that
   that ignores the probe.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Visual Nutrient Deficiency and Toxicity Guide
 
@@ -509,22 +519,23 @@ flowchart TD
 | General salt burn | Brown tips/edges, wilting despite wet roots | Most common E&F toxicity — flush media |
 | Manganese excess | Brown spots, interveinal chlorosis | pH too low; keep above 5.5 |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Organic Hydroponics in E&F — Advantages and Challenges
 
 ### Why E&F Suits Organic Better Than NFT
 
-Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F systems with deep clay pebble or coco media have large surface areas that support thriving beneficial microbial communities:
+Unlike NFT's thin film (minimal media surface for microbial colonization), E&F systems with deep clay pebble or coco media have large surface areas that support thriving beneficial microbial communities:
 
 | Aspect | NFT | E&F (clay pebbles) |
 |--------|-----|---------------------|
 | Media surface area for microbes | Minimal | Large — excellent microbial habitat |
 | Organic particle clogging risk | High (narrow channels) | Low (open media, large pore spaces) |
-| Microbial stability | Poor — flow washes microbes | Good — stable colonisation on clay |
+| Microbial stability | Poor — flow washes microbes | Good — stable colonization on clay |
 | EC meter accuracy | Unreliable with organics | Same issue — but visual plant observation helps |
 | Biofilm management | Difficult | Manageable with monthly flush |
 
@@ -540,10 +551,11 @@ Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F s
 
 **Key organic practice for E&F:** After establishing an organic cycle, add an **air stone to the reservoir** — aeration keeps the microbial population aerobic. Without it, anaerobic bacteria will outcompete beneficials within days in a warm outdoor reservoir.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Water Volume Calculator Reference
 
@@ -587,11 +599,13 @@ The reservoir is **45 US gal (170 L)**, acceptable range **40–50 US gal (151�
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 01 — Ebb and Flow Basics](01-ebb-flow-basics.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 03 — Water Quality](03-water-quality.md)
 
 <!-- copyright -->

@@ -28,7 +28,7 @@
   - [Pythium (Root Rot)](#pythium-root-rot)
   - [Fusarium Wilt](#fusarium-wilt)
   - [Powdery Mildew](#powdery-mildew)
-  - [Botrytis (Grey Mould)](#botrytis-grey-mould)
+  - [Botrytis (Gray Mold)](#botrytis-gray-mold)
   - [Algae on LECA Surface](#algae-on-leca-surface)
   - [Damping Off](#damping-off)
 - [5. Pesticide PHI Reference](#5-pesticide-phi-reference)
@@ -37,13 +37,13 @@
 - [6. Beneficial Insects](#6-beneficial-insects)
   - [Encouraging Beneficials Outdoors](#encouraging-beneficials-outdoors)
   - [Purchased Beneficial Insects](#purchased-beneficial-insects)
-- [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
-  - [When Full Sterilisation Is Required](#when-full-sterilisation-is-required)
-  - [Complete System Sterilisation — Step by Step](#complete-system-sterilisation-step-by-step)
+- [7. Sterilization Protocol After Disease Outbreak](#7-sterilization-protocol-after-disease-outbreak)
+  - [When Full Sterilization Is Required](#when-full-sterilization-is-required)
+  - [Complete System Sterilization — Step by Step](#complete-system-sterilization-step-by-step)
   - [Post-Outbreak Replanting Rules](#post-outbreak-replanting-rules)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor E&F Vulnerability Profile
 
@@ -61,7 +61,7 @@ Every hydroponic system has a characteristic risk profile — the combination of
 | **Whitefly** | High | High | Especially on fruiting crops |
 | **Spider mites** | High (dry heat) | Medium-High | LECA media slightly higher humidity than NFT |
 | **Botrytis** | Medium | Medium | Dense canopy in flood tables increases risk |
-| **Powdery mildew** | Medium | **Higher** (courgettes, cucumbers) | Wide canopy crops in E&F create humid microclimate |
+| **Powdery mildew** | Medium | **Higher** (zucchinis (courgettes), cucumbers) | Wide canopy crops in E&F create humid microclimate |
 | **Fusarium** | Medium | Medium | Root zone conditions similar once media is established |
 | **Damping off (seedlings)** | Medium | Medium | Same germination media risks |
 | **Slugs/snails** | Low (elevated channels) | **Medium** | Tables closer to ground level — easier slug access |
@@ -81,14 +81,15 @@ In NFT, the channel surface is largely shielded from light. In an E&F flood tabl
 - It can partially block overflow fittings if allowed to grow into drain areas
 - Blue-green algae (cyanobacteria) produces toxins that can harm roots
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 2. Integrated Pest Management (IPM) Framework
 
-IPM is a systematic approach that prioritises prevention, monitoring, and targeted intervention over routine pesticide application. It is the correct management philosophy for a food-growing system where you will be eating the produce.
+IPM is a systematic approach that prioritizes prevention, monitoring, and targeted intervention over routine pesticide application. It is the correct management philosophy for a food-growing system where you will be eating the produce.
 
 ### The IPM Hierarchy
 
@@ -110,7 +111,7 @@ flowchart TD
 
 | Frequency | Action |
 |-----------|--------|
-| **Daily** | Visual check of all plants for wilting, discolouration, unusual growth; check flood cycle running correctly |
+| **Daily** | Visual check of all plants for wilting, discoloration, unusual growth; check flood cycle running correctly |
 | **Every 2–3 days** | Check undersides of leaves on fruiting crops (spider mites, whitefly eggs); check LECA surface for fungus gnats |
 | **Weekly** | Check sticky yellow traps; inspect roots of any struggling plants; check drain fittings for partial blockage |
 | **Every 2 weeks** | Check overflow fittings for algae accumulation; assess media surface algae levels |
@@ -126,11 +127,11 @@ flowchart TD
   Position: One at each end of the table — captures insects entering from either direction
 
   What to look for:
-  ─ Fungus gnats: tiny black flies (2–3mm), legs dangling when flying
+  ─ Fungus gnats: tiny black flies 1/16–1/8 in (2–3 mm), legs dangling when flying
     High numbers on traps = active infestation in media
-  ─ Whitefly: tiny white-winged insects (1–2mm)
+  ─ Whitefly: tiny white-winged insects (1/25–1/16 in / 1–2 mm)
   ─ Aphids: winged forms caught on trap = infestation nearby
-  ─ Thrips: tiny torpedo-shaped insects (1–1.5mm)
+  ─ Thrips: tiny torpedo-shaped insects (1/25–1/16 in / 1–1.5 mm)
 
   Change traps every 2–3 weeks or when >50 insects per trap
 ```
@@ -142,16 +143,17 @@ IPM action thresholds define when to escalate from monitoring to active control:
 | Pest/Disease | Low (monitor) | Medium (cultural/biological action) | High (chemical action warranted) |
 |-------------|---------------|-------------------------------------|----------------------------------|
 | Fungus gnats | <5/trap/week | 5–20/trap/week | >20/trap/week or larvae visible in media |
-| Aphids | 1–5 per plant | Colonies forming on 2+ plants | >50% of plants colonised |
-| Whitefly | <5 adults per plant | Sticky honeydew on leaves | Dense populations, sooty mould forming |
+| Aphids | 1–5 per plant | Colonies forming on 2+ plants | >50% of plants colonized |
+| Whitefly | <5 adults per plant | Sticky honeydew on leaves | Dense populations, sooty mold forming |
 | Spider mites | Occasional stippling | Webbing visible | Heavy webbing, >30% leaf damage |
 | Pythium | — | One plant showing wilting | Two or more plants wilting |
 | Powdery mildew | <10% leaf area | 10–30% leaf area | >30% leaf area |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Common Pests
 
@@ -161,7 +163,7 @@ IPM action thresholds define when to escalate from monitoring to active control:
 
 **Identification:**
 
-Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm long with dark grey/black bodies, long legs, and clear wings held flat over the body when at rest. Adult flies are relatively harmless — they are annoying and can spread disease between plants when they walk on roots. The **larvae** are the problem.
+Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 1/16–1/8 in (2–3 mm) long with dark gray/black bodies, long legs, and clear wings held flat over the body when at rest. Adult flies are relatively harmless — they are annoying and can spread disease between plants when they walk on roots. The **larvae** are the problem.
 
 ```
   FUNGUS GNAT LIFE CYCLE IN E&F FLOOD TABLES:
@@ -212,7 +214,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
     Not harmful to plants, beneficial insects, or humans
     Reapply every 7–10 days for 3–4 weeks to break the cycle
   ─ Beneficial nematodes (Steinernema feltiae):
-    Apply as media drench — nematodes parasitise larvae in the media
+    Apply as media drench — nematodes parasitize larvae in the media
     Effective at media temperatures above 57°F (14°C)
     Single application can suppress population for 4–6 weeks
 
@@ -233,15 +235,15 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 - Adult flies visible hovering over media or running on media surface
 - Sticky traps showing >5 gnats per trap per week
 - Seedlings wilting or dying at media surface for no apparent reason
-- Roots of affected plants show damaged tips or brown discolouration near the media surface
+- Roots of affected plants show damaged tips or brown discoloration near the media surface
 
 ---
 
 ### Aphids
 
-**Identification:** 1–3mm pear-shaped insects in green, black, grey, or brown. Found in colonies on growing tips, undersides of young leaves, and flower buds. Produce sticky honeydew.
+**Identification:** 1/25–1/8 in (1–3 mm) pear-shaped insects in green, black, gray, or brown. Found in colonies on growing tips, undersides of young leaves, and flower buds. Produce sticky honeydew.
 
-**E&F context:** Aphids colonise above-ground plant tissue and are not directly affected by the flood system. All outdoor crops are at risk. Fruiting crops on Table 2 (particularly peppers and aubergines) are especially attractive.
+**E&F context:** Aphids colonize above-ground plant tissue and are not directly affected by the flood system. All outdoor crops are at risk. Fruiting crops on Table 2 (particularly peppers and eggplants (aubergines)) are especially attractive.
 
 **Control:**
 
@@ -278,9 +280,9 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 ### Whitefly
 
-**Identification:** Tiny (1–2mm) white-winged insects on leaf undersides. When disturbed, they fly up in a cloud. Yellow sticky traps are very effective for monitoring. Larvae (scales) are flat, oval, and semi-transparent — often overlooked.
+**Identification:** Tiny (1/25–1/16 in / 1–2 mm) white-winged insects on leaf undersides. When disturbed, they fly up in a cloud. Yellow sticky traps are very effective for monitoring. Larvae (scales) are flat, oval, and semi-transparent — often overlooked.
 
-**E&F context:** Whitefly is a particular problem on tomatoes, peppers, cucumbers, and aubergines in Zone A Tables 1–2. The dense canopy of fruiting crops in a flood table provides shelter.
+**E&F context:** Whitefly is a particular problem on tomatoes, peppers, cucumbers, and eggplants (aubergines) in Zone A Tables 1–2. The dense canopy of fruiting crops in a flood table provides shelter.
 
 **Control:**
 
@@ -295,7 +297,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
   BIOLOGICAL:
   ─ Parasitic wasp Encarsia formosa: commercially available sachets;
-    parasitises whitefly scales; effective when deployed early
+    parasitizes whitefly scales; effective when deployed early
   ─ Lacewings, ladybirds: also consume whitefly
 
   CHEMICAL:
@@ -308,9 +310,9 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 ### Spider Mites
 
-**Identification:** Tiny (0.4–0.5mm) arachnids — not insects. Appear as fine speckling on upper leaf surface (chlorophyll removed at feeding sites). Webbing between leaves in severe infestations. Found on undersides of leaves.
+**Identification:** Tiny (1/64–1/50 in / 0.4–0.5 mm) arachnids — not insects. Appear as fine speckling on upper leaf surface (chlorophyll removed at feeding sites). Webbing between leaves in severe infestations. Found on undersides of leaves.
 
-**E&F context:** Spider mites thrive in hot, dry conditions. The slightly higher humidity around E&F flood tables (due to periodic flooding) provides some natural suppression. Most risk during hot dry periods in July–August (SA: January–February), particularly on the Table 1 tomato or cucumber and on Table 2 aubergine.
+**E&F context:** Spider mites thrive in hot, dry conditions. The slightly higher humidity around E&F flood tables (due to periodic flooding) provides some natural suppression. Most risk during hot dry periods in July–August (SA: January–February), particularly on the Table 1 tomato or cucumber and on Table 2 eggplant (aubergine).
 
 **Control:**
 
@@ -341,7 +343,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 ### Thrips
 
-**Identification:** Tiny (1–1.5mm) torpedo-shaped insects in yellow, brown, or black. Cause silver streaking and stippling on leaves; distort growing tips. Caught on yellow and blue sticky traps.
+**Identification:** Tiny (1/25–1/16 in / 1–1.5 mm) torpedo-shaped insects in yellow, brown, or black. Cause silver streaking and stippling on leaves; distort growing tips. Caught on yellow and blue sticky traps.
 
 **Control:**
 
@@ -414,10 +416,11 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
     commercially available for greenhouse/polytunnel use
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Common Diseases
 
@@ -425,7 +428,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 ### Pythium (Root Rot)
 
-**What it is:** *Pythium* is an oomycete (water mould) that attacks roots in warm, wet, low-oxygen conditions. It produces zoospores that swim through water to find stressed roots. In E&F systems, it is the most dangerous disease because it spreads through the flood water to the entire table in a single cycle.
+**What it is:** *Pythium* is an oomycete (water mold) that attacks roots in warm, wet, low-oxygen conditions. It produces zoospores that swim through water to find stressed roots. In E&F systems, it is the most dangerous disease because it spreads through the flood water to the entire table in a single cycle.
 
 **E&F-specific risk factors:**
 
@@ -481,11 +484,11 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
        Kills Pythium zoospores in the water column
        Wait 24 hours before returning to normal nutrient solution
      ─ Or: Trichoderma-based biocontrol product (RootShield, Plant Doctor)
-       Apply as drench according to label — Trichoderma colonises roots
+       Apply as drench according to label — Trichoderma colonizes roots
        and outcompetes Pythium
   4. Inspect drain and overflow fittings — clean and unblock
   5. Monitor closely for 7–10 days — if spread continues, consider
-     full table sterilisation (Section 7)
+     full table sterilization (Section 7)
 
   PREVENTION MEASURES:
   ─ Hold solution temperature at 64–72°F (18–22°C). Act when it rises above 77°F (25°C)
@@ -507,32 +510,32 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 **Symptoms:**
 - Yellowing of lower leaves progressing upward
 - Wilting on one side of the plant first (vascular blockage is often asymmetric)
-- If you cut the stem near the base: brown/orange discolouration of vascular tissue (distinct from healthy white/green)
+- If you cut the stem near the base: brown/orange discoloration of vascular tissue (distinct from healthy white/green)
 - Eventual plant death
 
 **E&F-specific notes:**
 
 In E&F, Fusarium can enter via:
-- Infected propagation media (e.g., contaminated coco coir or old unsterilised LECA)
+- Infected propagation media (e.g., contaminated coco coir or old unsterilized LECA)
 - Infected transplants brought in from soil
-- Previous season's crop residue if sterilisation was incomplete
+- Previous season's crop residue if sterilization was incomplete
 
 **Control:**
 
 ```
   RESPONSE:
   1. Remove infected plant and net pot immediately — bag and dispose
-  2. Do NOT return the LECA from that pot to the table without sterilisation
+  2. Do NOT return the LECA from that pot to the table without sterilization
   3. Disinfect the empty net pot position with 10% bleach solution
   4. Fusarium-resistant varieties: where available, use resistant tomato/pepper
-     varieties (labelled 'F' in seed catalogues)
+     varieties (labeled 'F' in seed catalogues)
 
   PREVENTION:
-  ─ Full LECA sterilisation between fruiting crop seasons (see Section 7)
+  ─ Full LECA sterilization between fruiting crop seasons (see Section 7)
   ─ Do not import plants from unknown sources into the system
   ─ Maintain optimal EC and pH — stressed plants are more susceptible
   ─ Trichoderma-based biocontrol products (applied preventively) reduce
-    Fusarium colonisation of roots
+    Fusarium colonization of roots
 ```
 
 ---
@@ -543,7 +546,7 @@ In E&F, Fusarium can enter via:
 
 **E&F-specific risk:**
 
-Courgettes and cucumbers grown in E&F flood tables are particularly susceptible:
+Zucchini (courgette) and cucumbers grown in E&F flood tables are particularly susceptible:
 - Large horizontal leaf canopy on flood tables creates humid microclimates between leaves and the media surface
 - High-density planting on a flat table (vs vertical-growing NFT) increases leaf-to-leaf contact
 
@@ -556,9 +559,9 @@ Courgettes and cucumbers grown in E&F flood tables are particularly susceptible:
 
 ```
   PREVENTION:
-  ─ Space plants adequately — do not crowd cucumbers or courgettes
-  ─ Orient plants to maximise airflow through the canopy
-  ─ Remove dense lower leaves on courgettes to improve air circulation
+  ─ Space plants adequately — do not crowd cucumbers or zucchinis (courgettes)
+  ─ Orient plants to maximize airflow through the canopy
+  ─ Remove dense lower leaves on zucchinis (courgettes) to improve air circulation
   ─ Avoid overhead irrigation (use flood table, not sprinklers)
 
   EARLY TREATMENT (white patches on <10% of leaf area):
@@ -575,19 +578,19 @@ Courgettes and cucumbers grown in E&F flood tables are particularly susceptible:
   ─ Bicarbonate sprays continue in rotation with sulfur
 
   RESISTANT VARIETIES:
-  ─ Select powdery mildew resistant (PMR) cucumber and courgette varieties
+  ─ Select powdery mildew resistant (PMR) cucumber and zucchini (courgette) varieties
     for summer planting — this is the most effective long-term solution
 ```
 
 ---
 
-### Botrytis (Grey Mould)
+### Botrytis (Gray Mold)
 
-**What it is:** *Botrytis cinerea* is a common fungal disease that causes grey fluffy mould on flowers, fruits, stems, and leaves. It requires high humidity and cool temperatures to sporulate — most active in autumn or when outdoor temperature drops.
+**What it is:** *Botrytis cinerea* is a common fungal disease that causes gray fluffy mold on flowers, fruits, stems, and leaves. It requires high humidity and cool temperatures to sporulate — most active in fall or when outdoor temperature drops.
 
 **Symptoms:**
-- Grey fuzzy mould on flowers, damaged stems, or ripening fruits
-- Brown lesions that quickly develop grey sporulating covering
+- Gray fuzzy mold on flowers, damaged stems, or ripening fruits
+- Brown lesions that quickly develop gray sporulating covering
 - Spreads rapidly in dense humid canopies
 
 **Control:**
@@ -621,7 +624,7 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
 |------|-----------|------|
 | Green algae | Bright green mat on LECA surface | Low direct harm; feeds fungus gnats; blocks light to media |
 | Blue-green algae (cyanobacteria) | Blue-green slime, strong smell | Produces toxins; more harmful to roots and reservoir |
-| Brown algae (diatoms) | Brown film on LECA and table surfaces | Low harm; indicates early algae colonisation |
+| Brown algae (diatoms) | Brown film on LECA and table surfaces | Low harm; indicates early algae colonization |
 
 **Prevention:**
 
@@ -632,7 +635,7 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
      ─ Cover LECA surface between net pots with black weed fabric or silage wrap
      ─ Cut holes for net pots — cover all exposed media surface
      ─ Black cover also prevents fungus gnat egg-laying (dual benefit)
-     ─ Aluminium foil (dull side up) works as a reflective alternative
+     ─ Aluminum foil (dull side up) works as a reflective alternative
        that keeps media cool while blocking light
 
   2. OVERFLOW FITTING MAINTENANCE:
@@ -659,7 +662,7 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
   ─ Scrub overflow fitting and drain area with 10% bleach solution
   ─ Rinse thoroughly before next flood cycle
   ─ Apply black cover to entire table surface
-  ─ Consider partial LECA sterilisation if blue-green algae is persistent
+  ─ Consider partial LECA sterilization if blue-green algae is persistent
 ```
 
 ---
@@ -681,10 +684,11 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
     high EC stresses young seedlings and increases susceptibility
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Pesticide PHI Reference
 
@@ -718,10 +722,11 @@ In a continuously-harvested system (lettuce, herbs, cut-and-come-again crops, ch
 
 Last-resort pesticides are for a crop that would otherwise be lost. On food plants, wait out the full pre-harvest interval before you pick. Neonicotinoids and other systemic products harm pollinators, so keep them off open flowers and off plants that bees are working. Nutrient concentrates, acids, and every pesticide in this guide stay in a latched box, away from children and pets.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Beneficial Insects
 
@@ -776,26 +781,27 @@ When natural populations are insufficient or an infestation is established, comm
 
 > **Timing:** Release beneficial insects **early** — before pest populations are high. Beneficials are most effective when there is just enough prey to sustain them. Releasing predatory mites into a severe spider mite outbreak does not produce instant results — the predator population takes 2–3 weeks to build.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
-## 7. Sterilisation Protocol After Disease Outbreak
+[↑ Back to TOC](#table-of-contents)
 
-### When Full Sterilisation Is Required
+## 7. Sterilization Protocol After Disease Outbreak
 
-Not every pest or disease event requires full system sterilisation. Use this decision guide:
+### When Full Sterilization Is Required
+
+Not every pest or disease event requires full system sterilization. Use this decision guide:
 
 ```
-  REQUIRES FULL STERILISATION:
+  REQUIRES FULL STERILIZATION:
   ─ Pythium confirmed in 2+ plants on the same table
-  ─ Fusarium confirmed (vascular discolouration) in any plant
+  ─ Fusarium confirmed (vascular discoloration) in any plant
   ─ Blue-green algae (cyanobacteria) confirmed in media or reservoir
   ─ Disease persists after targeted treatment for 2+ weeks
-  ─ End of a fruiting crop season (Tables 1–2 — routine sterilisation)
+  ─ End of a fruiting crop season (Tables 1–2 — routine sterilization)
 
-  DOES NOT REQUIRE FULL STERILISATION:
+  DOES NOT REQUIRE FULL STERILIZATION:
   ─ Aphid, whitefly, or spider mite infestation (above-ground — treat plants)
   ─ Fungus gnat infestation (treat with Bti/nematodes, cover media — no table teardown)
   ─ Powdery mildew (foliar — treat plants, improve airflow)
@@ -803,22 +809,22 @@ Not every pest or disease event requires full system sterilisation. Use this dec
   ─ Minor green algae on LECA surface (cover with black fabric)
 ```
 
-### Complete System Sterilisation — Step by Step
+### Complete System Sterilization — Step by Step
 
 ```mermaid
 flowchart TD
-    A["DECISION: Full sterilisation required"]
+    A["DECISION: Full sterilization required"]
     B["Step 1 — Remove all plants<br/>Pull all net pots; bag diseased material<br/>Dispose — do not compost"]
     C["Step 2 — Drain reservoir completely<br/>Pump all solution to drain (do not reuse diseased solution)"]
-    D["Step 3 — Remove all LECA from flood table<br/>Scoop into buckets; note — LECA is sterilised separately"]
+    D["Step 3 — Remove all LECA from flood table<br/>Scoop into buckets; note — LECA is sterilized separately"]
     E["Step 4 — Disassemble overflow and drain fittings<br/>Unscrew standpipes and fittings<br/>These are primary disease vectors — must be cleaned individually"]
     F["Step 5 — Scrub flood table<br/>Wash inside with warm soapy water<br/>Apply 10% bleach solution — let sit 15 minutes<br/>Rinse × 3 with clean water"]
-    G["Step 6 — Sterilise fittings<br/>Soak overflow and drain fittings in 10% bleach for 30 min<br/>Scrub all internal surfaces with bottle brush<br/>Rinse × 3"]
-    H["Step 7 — Sterilise reservoir<br/>Empty and scrub interior with 10% bleach<br/>Pay attention to reservoir lid, pump inlet, and corners<br/>Rinse × 5 — bleach in reservoir will re-enter system on next flood"]
-    I["Step 8 — Sterilise LECA<br/>Follow full protocol (Guide 05 Section 12):<br/>10% bleach soak 30–60 min<br/>Triple rinse<br/>pH 5.5 re-conditioning soak 12–24h"]
-    J["Step 9 — Sterilise pump<br/>Submerge pump in 5% bleach solution for 30 min<br/>Run briefly in clean water to flush internal passages<br/>Inspect impeller for root debris"]
+    G["Step 6 — Sterilize fittings<br/>Soak overflow and drain fittings in 10% bleach for 30 min<br/>Scrub all internal surfaces with bottle brush<br/>Rinse × 3"]
+    H["Step 7 — Sterilize reservoir<br/>Empty and scrub interior with 10% bleach<br/>Pay attention to reservoir lid, pump inlet, and corners<br/>Rinse × 5 — bleach in reservoir will re-enter system on next flood"]
+    I["Step 8 — Sterilize LECA<br/>Follow full protocol (Guide 05 Section 12):<br/>10% bleach soak 30–60 min<br/>Triple rinse<br/>pH 5.5 re-conditioning soak 12–24h"]
+    J["Step 9 — Sterilize pump<br/>Submerge pump in 5% bleach solution for 30 min<br/>Run briefly in clean water to flush internal passages<br/>Inspect impeller for root debris"]
     K["Step 10 — Dry and inspect all components<br/>Allow 24–48 hours drying time<br/>Inspect fittings for cracks, wear, or embedded biofilm<br/>Replace any fittings that cannot be fully cleaned"]
-    L["Step 11 — Rebuild system<br/>Reassemble fittings<br/>Refill with sterilised LECA<br/>Fill reservoir with fresh water — check pH and EC before planting"]
+    L["Step 11 — Rebuild system<br/>Reassemble fittings<br/>Refill with sterilized LECA<br/>Fill reservoir with fresh water — check pH and EC before planting"]
     M["Step 12 — Wait 24 hours before replanting<br/>Run 2–3 flush flood cycles with plain pH-adjusted water<br/>Confirm drain is functioning correctly<br/>Plant new transplants only — do not reuse plants from outbreak"]
 
     A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L --> M
@@ -829,16 +835,16 @@ flowchart TD
 The overflow standpipe is in constant contact with the flood solution and is the last point of contact before solution returns to the reservoir. In a disease outbreak:
 - Pythium zoospores accumulate on the standpipe inner surface
 - Biofilm (bacterial + fungal) builds up inside the fitting
-- An incompletely cleaned fitting will reintroduce disease to the reservoir immediately on the first post-sterilisation flood
+- An incompletely cleaned fitting will reintroduce disease to the reservoir immediately on the first post-sterilization flood
 
 Scrub the inside of all fittings with a long bottle brush. Consider replacing plastic standpipes entirely after a severe Pythium outbreak — they are inexpensive and the biofilm risk inside a plastic tube is difficult to fully eliminate.
 
 ### Post-Outbreak Replanting Rules
 
 ```
-  RULES FOR REPLANTING AFTER STERILISATION:
+  RULES FOR REPLANTING AFTER STERILIZATION:
 
-  1. Wait at least 24 hours after completing sterilisation
+  1. Wait at least 24 hours after completing sterilization
      before introducing any new plants
 
   2. Run 2–3 flush flood cycles with plain pH 6.0 water
@@ -870,9 +876,12 @@ Scrub the inside of all fittings with a long bottle brush. Consider replacing pl
 
 
 > **Previous:** [Guide 06 — Crops](./06-crops.md)
-> **Next:** [Guide 08 — System Maintenance](./08-system-maintenance.md)
+
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Guide 08 — System Maintenance](./08-system-maintenance.md)
+
 
 ---
 

@@ -46,7 +46,7 @@ This guide covers every level of E&F automation — from a $15 (R270) smart plug
 - [7. Tier 4 — Automated Control](#7-tier-4-automated-control)
   - [Cost: $150–$300 | Skill: Intermediate electronics, basic plumbing | Time: 12–18 hours](#cost-150300-skill-intermediate-electronics-basic-plumbing-time-1218-hours)
   - [7.1 What Tier 4 Automates](#71-what-tier-4-automates)
-  - [7.2 Stuck-ON Cutoff — the Primary Safety Action](#72-stuck-on-cutoff--the-primary-safety-action)
+  - [7.2 Stuck-ON Cutoff — the Primary Safety Action](#72-stuck-on-cutoff-the-primary-safety-action)
   - [7.3 Automated pH Dosing — E&F Adaptation](#73-automated-ph-dosing-ef-adaptation)
   - [7.4 Automated EC Dosing in E&F — Media Salt Accumulation](#74-automated-ec-dosing-in-ef-media-salt-accumulation)
   - [7.5 Automated Dosing Full Flow](#75-automated-dosing-full-flow)
@@ -82,7 +82,7 @@ This guide covers every level of E&F automation — from a $15 (R270) smart plug
   - [14.3 EC Rising Between Full Reservoir Changes](#143-ec-rising-between-full-reservoir-changes)
   - [14.4 Drain Confirmation Failures — Pattern Analysis](#144-drain-confirmation-failures-pattern-analysis)
   - [14.5 Flood Count Inconsistencies](#145-flood-count-inconsistencies)
-  - [14.6 VPD — Vapour Pressure Deficit and Flood Frequency](#146-vpd-vapour-pressure-deficit-and-flood-frequency)
+  - [14.6 VPD — Vapor Pressure Deficit and Flood Frequency](#146-vpd-vapor-pressure-deficit-and-flood-frequency)
 - [15. Weatherproofing and Power](#15-weatherproofing-and-power)
   - [15.1 Enclosure for ESP32 and Wiring](#151-enclosure-for-esp32-and-wiring)
   - [15.2 Timer Weatherproofing — The #1 Field Failure](#152-timer-weatherproofing-the-1-field-failure)
@@ -102,15 +102,15 @@ This guide covers every level of E&F automation — from a $15 (R270) smart plug
   - [Pitfall 5 — Skip Calibration on Inline pH/EC Probes](#pitfall-5-skip-calibration-on-inline-phec-probes)
   - [Pitfall 6 — Ignoring Drain EC vs. Reservoir EC Drift](#pitfall-6-ignoring-drain-ec-vs-reservoir-ec-drift)
   - [Pitfall 7 — Alert Fatigue from Turbulence False Positives](#pitfall-7-alert-fatigue-from-turbulence-false-positives)
-  - [Pitfall 8 — A Stuck-OFF Restart Fighting the Stuck-ON Cutoff](#pitfall-8--a-stuck-off-restart-fighting-the-stuck-on-cutoff)
+  - [Pitfall 8 — A Stuck-OFF Restart Fighting the Stuck-ON Cutoff](#pitfall-8-a-stuck-off-restart-fighting-the-stuck-on-cutoff)
   - [Pitfall 9 — WiFi Outage Creates a Silent Monitoring Blackout](#pitfall-9-wifi-outage-creates-a-silent-monitoring-blackout)
   - [Pitfall 10 — Analog Sensor Noise Causing False Dosing Triggers](#pitfall-10-analog-sensor-noise-causing-false-dosing-triggers)
 - [18. Upgrade Path — From Tier 1 to Tier 4](#18-upgrade-path-from-tier-1-to-tier-4)
   - [Upgrade Decision Flowchart](#upgrade-decision-flowchart)
 - [Summary — What Each Tier Gives You](#summary-what-each-tier-gives-you)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Automate?
 
@@ -189,10 +189,11 @@ WITH TIER 4 (dosing upgrade):
   → You check the dashboard once a day and top up stock bottles weekly
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Automation Tiers Overview
 
@@ -207,12 +208,13 @@ flowchart LR
     T0 --> T1 --> T2 --> T3 --> T4
 ```
 
-Each tier builds on the previous. You can pause at any tier and run the system indefinitely from there. Start at Tier 1 for your first season — understand the system behaviour — then add complexity when you're ready.
+Each tier builds on the previous. You can pause at any tier and run the system indefinitely from there. Start at Tier 1 for your first season — understand the system behavior — then add complexity when you're ready.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Tier 0 — Manual Baseline
 
@@ -253,10 +255,11 @@ This check takes 30 seconds and is the most important Tier 0
 automation step in the entire E&F guide.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Tier 1 — Off-the-Shelf Smart Devices
 
@@ -302,14 +305,14 @@ ALERT / CUTOFF CONDITIONS:
 
 ### 4.2 Battery-Backup Digital Timer (Upgrade if Needed)
 
-If your current timer does not have battery backup, this is the first $10–$16 you spend on automation. See Guide 12, Section 2.6 for the full argument. No additional setup — simply replace the existing timer with one that retains its programme through a power cut.
+If your current timer does not have battery backup, this is the first $10–$16 you spend on automation. See Guide 12, Section 2.6 for the full argument. No additional setup — simply replace the existing timer with one that retains its program through a power cut.
 
 **Test procedure:**
-1. Programme your flood schedule.
+1. Program your flood schedule.
 2. Unplug the timer from the wall for 30 seconds.
 3. Re-plug.
-4. Confirm the programme is unchanged.
-5. If the programme reverted to factory defaults: the timer does not have true battery backup — replace it.
+4. Confirm the program is unchanged.
+5. If the program reverted to factory defaults: the timer does not have true battery backup — replace it.
 
 ### 4.3 WiFi Temperature and Humidity Logger
 
@@ -360,10 +363,11 @@ For E&F specifically, a camera angled to show the drain hose exit into the reser
 | WiFi camera (optional) | $25 | Visual drain confirmation; pest detection |
 | **Tier 1 total** | **$62–$91** | |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Tier 2 — ESP32 Sensor Node
 
@@ -483,10 +487,11 @@ EVERY 60 SECONDS, THE NODE:
   current readings and a 24-hour chart of all parameters.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier 3 — Multi-Sensor Network + Dashboard
 
@@ -617,7 +622,7 @@ flowchart TD
     style CELL fill:#1a1a3a,stroke:#4a4a8a,color:#aaaaff
 ```
 
-> **E&F probe monitoring note:** In E&F systems, EC and pH data is most useful between flood cycles — when the solution in the reservoir has stabilised after the previous flood return. During an active flood (pump running), turbulence and root zone interaction can cause short-term EC and pH fluctuations. Your firmware should flag active-flood periods and either discard those readings or display them separately from the stable reservoir readings.
+> **E&F probe monitoring note:** In E&F systems, EC and pH data is most useful between flood cycles — when the solution in the reservoir has stabilized after the previous flood return. During an active flood (pump running), turbulence and root zone interaction can cause short-term EC and pH fluctuations. Your firmware should flag active-flood periods and either discard those readings or display them separately from the stable reservoir readings.
 
 ### 6.6 Dashboard — Grafana + InfluxDB
 
@@ -682,10 +687,11 @@ Panel 7: ALERT LOG
   → Timestamped list of all alerts triggered
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Tier 4 — Automated Control
 
@@ -740,7 +746,7 @@ E&F pH DOSING SAFETY INTERLOCKS (additions beyond standard rules):
 1. NEVER dose during an active flood cycle:
    IF flood_active == TRUE → hold all dosing
    Reason: Solution turbulence during flooding causes inaccurate pH reads.
-   Wait until flood ends and reservoir has restabilised (5 min post-flood).
+   Wait until flood ends and reservoir has restabilized (5 min post-flood).
 
 2. CHECK DRAIN CONFIRMATION before dosing:
    IF table_float[ANY] == SUBMERGED (table not drained) → hold dosing
@@ -835,10 +841,11 @@ flowchart TD
     style ALERT fill:#3a1a1a,stroke:#aa4a4a,color:#ffaaaa
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Sensor Reference — What to Measure and Why
 
@@ -854,7 +861,7 @@ flowchart TD
 | **Air temperature** | DS18B20 or DHT22 | Digital GPIO | 50–86°F (10–30°C) | <37°F (3°C) frost WARNING | HIGH |
 | **Air humidity** | DHT22 / SHT30 | Digital GPIO | 40–80% | >85% for >6h = disease risk | MEDIUM |
 | **Solution pH** | DFRobot SEN0161-V2 | Analog ADC | 5.5–6.5 | <5.3 or >6.8 | MEDIUM |
-| **Solution EC** | DFRobot DFR0300 | Analog ADC | Active crop band: leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0; courgette max 2.4; aubergine max 3.0 | Outside that crop's band; also check drain EC vs reservoir EC monthly | MEDIUM |
+| **Solution EC** | DFRobot DFR0300 | Analog ADC | Active crop band: leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0; zucchini (courgette) max 2.4; eggplant (aubergine) max 3.0 | Outside that crop's band; also check drain EC vs reservoir EC monthly | MEDIUM |
 | **Rain event** | FC-37 rain sensor | Digital GPIO | Dry | Rain detected → trigger EC check reminder | MEDIUM |
 | **Light level** | BH1750 | I2C (SDA/SCL) | Varies by season | Sudden drop = cloud cover / shade cloth needed | LOW |
 | **Grow bag moisture (Zone C)** | Capacitive soil sensor | Analog ADC | 40–70% | <30% = water needed | LOW |
@@ -886,7 +893,7 @@ E&F PRIORITY ORDER:
 
 Both can be used as drain confirmation sensors. Float switches are cheaper ($3–$6) and simpler to wire. Ultrasonic sensors ($5–$10) provide continuous water level data within the table rather than a binary wet/dry state.
 
-For most growers: use a float switch. It is entirely sufficient for drain confirmation. If you also want to know how deep the flood is reaching (useful for standpipe height optimisation), use a JSN-SR04T mounted in the table wall pointing down at the LECA surface.
+For most growers: use a float switch. It is entirely sufficient for drain confirmation. If you also want to know how deep the flood is reaching (useful for standpipe height optimization), use a JSN-SR04T mounted in the table wall pointing down at the LECA surface.
 
 **Current sensor — ACS712 vs. SCT-013:**
 
@@ -896,10 +903,11 @@ The ACS712 is an inline current sensor — the pump power wire passes through a 
 
 The FC-37 and similar rain sensors are very basic: a conductive pad that short-circuits slightly when wet. They are not reliable as rainfall quantity sensors, but they are entirely adequate as "is it currently raining?" binary detectors. Cost $2–$3. Protect from direct sun (UV degrades the pad) and replace every 2 seasons.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. ESP32 Hardware Guide
 
@@ -1013,10 +1021,11 @@ For Tier 4 with relay module and peristaltic pumps:
   Never power 12V actuators from the ESP32's 5V rail.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Wiring Diagrams
 
@@ -1134,10 +1143,11 @@ flowchart LR
     style note fill:#2a1a1a,stroke:#8a4a4a,color:#ffaaaa
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Firmware and Software
 
@@ -1389,10 +1399,11 @@ void postToInfluxDB(float sol_temp, float air_temp, float humidity,
 }
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Data Storage and Dashboards
 
@@ -1471,10 +1482,11 @@ After one full month of continuous logging, you will be able to read:
 - **EC between reservoir changes:** If EC is drifting up faster than before, media salt accumulation may be beginning — schedule a flush cycle
 - **Flood count consistency:** If the occasional flood cycle is being missed (fog in the data, not a complete outage), the timer may be on the edge of failure — replace it
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 13. Alerts and Notifications
 
@@ -1507,7 +1519,7 @@ E&F ALERT PRIORITIES
 
   • Flood count today < expected
     → Timer or pump may be failing; roots receiving fewer floods than needed
-    → Action: Check timer programme; verify pump function
+    → Action: Check timer program; verify pump function
 
   • Reservoir level < 30%
     → Incomplete floods possible; top up today
@@ -1515,7 +1527,7 @@ E&F ALERT PRIORITIES
 
   • EC outside the active crop band
     → Leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0;
-      courgette max 2.4; aubergine max 3.0. A ±30% drift warning is secondary
+      zucchini (courgette) max 2.4; eggplant (aubergine) max 3.0. A ±30% drift warning is secondary
       and must not excuse exceeding that crop's ceiling
     → Action: Test and adjust reservoir; check for rain dilution
 
@@ -1593,10 +1605,11 @@ Reservoir: 58% (consumed ~2.1 US gal / 8 L today)
 Rain: no events
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 14. Using Your Data — Pattern Recognition
 
@@ -1717,7 +1730,7 @@ ACTION: Re-route Table 2 drain hose with continuous downhill slope.
 PATTERN: Flood count shows 2 floods on a day when 3 were scheduled
 
 ONE-OFF EVENT: Power cut (check your smart plug energy log for a gap).
-  → Timer retained programme (battery backup confirmed)
+  → Timer retained program (battery backup confirmed)
   → Normal; no action needed unless it becomes regular
 
 RECURRING PATTERN: 3rd flood regularly missing on hot afternoons
@@ -1734,7 +1747,7 @@ CHECK:
 PATTERN: Flood count = 0 for a whole day
 
 CRITICAL — immediate investigation:
-  - Timer failure (battery dead? programme corrupted?)
+  - Timer failure (battery dead? program corrupted?)
   - Pump failure (impeller seized, capacitor failed)
   - 120 V outdoor GFCI tripped (SA: 230 V, 30 mA earth-leakage). Water may have reached the electrics.
   - Power outage lasted longer than timer battery backup
@@ -1744,9 +1757,9 @@ CRITICAL — immediate investigation:
 
 ---
 
-### 14.6 VPD — Vapour Pressure Deficit and Flood Frequency
+### 14.6 VPD — Vapor Pressure Deficit and Flood Frequency
 
-VPD (Vapour Pressure Deficit) quantifies how hard the air is pulling moisture from plant leaves. In E&F, VPD is directly relevant to **flood frequency decisions**: high VPD means plants are transpiring rapidly, which can lead to salt accumulation in the LECA between floods. Low VPD means slow transpiration and potentially waterlogged media if flood frequency is too high.
+VPD (Vapor Pressure Deficit) quantifies how hard the air is pulling moisture from plant leaves. In E&F, VPD is directly relevant to **flood frequency decisions**: high VPD means plants are transpiring rapidly, which can lead to salt accumulation in the LECA between floods. Low VPD means slow transpiration and potentially waterlogged media if flood frequency is too high.
 
 **Target VPD range:**
 | Growth stage | Target VPD |
@@ -1845,10 +1858,11 @@ Add a time-series panel for `vpd` alongside flood count:
 
 This lets you correlate VPD spikes with EC rise (evaporation-driven concentration), drain confirmation failures (fast uptake on hot days), and flood count sufficiency — all from the same dashboard.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 15. Weatherproofing and Power
 
@@ -1859,7 +1873,7 @@ flowchart TD
     subgraph box["IP65 Junction Box — 150mm × 100mm × 70mm"]
         ESP["ESP32 DevKit<br/>mounted on standoffs or adhesive foam"]
         CG["Cable glands on BOTTOM face<br/>(water drains away, never pools at gland entry)<br/>──────────────────────────────────────────────<br/>• USB power cable IN<br/>• DS18B20 solution probe cable OUT<br/>• JSN-SR04T cable OUT<br/>• ACS712 pump wire pass-through<br/>• Float switch cables OUT (×3)<br/>• DHT22 cable OUT<br/>• Rain sensor cable OUT"]
-        SG["Silica gel packet<br/>(replace if saturated — changes colour)"]
+        SG["Silica gel packet<br/>(replace if saturated — changes color)"]
         ESP --- CG
         CG --- SG
     end
@@ -1874,7 +1888,7 @@ flowchart TD
 
 ### 15.2 Timer Weatherproofing — The #1 Field Failure
 
-Timer failure in rain is the most common catastrophic failure mode reported by E&F growers. Water ingress into the timer erases the programme or shorts the relay, leaving the pump in a random state (usually OFF, occasionally stuck ON).
+Timer failure in rain is the most common catastrophic failure mode reported by E&F growers. Water ingress into the timer erases the program or shorts the relay, leaving the pump in a random state (usually OFF, occasionally stuck ON).
 
 ```
 TIMER WEATHERPROOFING RULES:
@@ -1940,10 +1954,11 @@ FLOAT SWITCH INSTALLATION — WATERPROOFING:
 **Solar power note for E&F:**
 A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery runs an ESP32 sensor node indefinitely in most climates. Using `esp_sleep_enable_timer_wakeup()` to deep-sleep between 60-second readings reduces average current to ~5–10 mA, extending battery life to weeks without sun. Note: the backup timer relay (Tier 4) cannot use deep sleep — the ESP32 must be awake to fire the relay on schedule.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 16. Automation BOM by Tier
 
@@ -2016,10 +2031,11 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 | Tier 3 | $95–$155 | $177–$261 |
 | Tier 4 | $69–$95 | $246–$356 |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 17. Common Pitfalls
 
@@ -2334,10 +2350,11 @@ sensor:
 
 Even with ADS1115, always use a sliding window average in the dosing decision logic. The ESPHome Tier 4 dosing lambdas already do this (they check `id(ph_sensor).state` which is the filtered value). Additionally, enforce a minimum inter-dose interval of 15 minutes regardless of pH reading — this prevents a single noisy spike from triggering back-to-back doses.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 18. Upgrade Path — From Tier 1 to Tier 4
 
@@ -2427,10 +2444,11 @@ flowchart TD
     Q5 -->|YES| Q6
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Summary — What Each Tier Gives You
 
@@ -2460,7 +2478,6 @@ flowchart TD
 
 > **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 

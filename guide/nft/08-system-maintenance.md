@@ -29,15 +29,15 @@
   - [Meter Calibration](#meter-calibration)
   - [Grow Bag Media Refresh (Zone C)](#grow-bag-media-refresh-zone-c)
 - [6. End-of-Season Tasks (3–6 hours total over 1–2 days)](#6-end-of-season-tasks-36-hours-total-over-12-days)
-  - [Late October Winterisation Checklist](#late-october-winterisation-checklist)
+  - [Late October Winterization Checklist](#late-october-winterization-checklist)
   - [Season-End Review](#season-end-review)
 - [7. Maintenance Logbook Template](#7-maintenance-logbook-template)
   - [Daily Log Entry Format](#daily-log-entry-format)
   - [Weekly Summary Entry](#weekly-summary-entry)
 - [8. Early Warning Signs Checklist](#8-early-warning-signs-checklist)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why Maintenance Discipline Matters
 
@@ -46,15 +46,16 @@ A hydroponics system is a living, dynamic environment. Unlike soil gardening whe
 - **pH can drift** outside the 5.5–6.5 window in 24–48 hours, locking out nutrients
 - **EC can spike** from evaporation, causing osmotic stress and tip burn
 - **Pump blockages** can dry out roots in 15–30 minutes in warm weather. That is the action time. Both pumps run 24 hours a day.
-- **Biofilm and algae** can colonise channels and tubes in 3–5 days if ignored
+- **Biofilm and algae** can colonize channels and tubes in 3–5 days if ignored
 - **Pests and disease** can spread through the entire system before you notice
 
 Consistency is more important than intensity. Spending 10 minutes every day is far more effective than 3 hours once a week.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Daily Tasks (10–20 minutes)
 
@@ -74,11 +75,11 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
   PLANT HEALTH
   [ ] Walk each channel — look for wilting, yellowing, or collapsed plants
   [ ] Check undersides of 3–4 leaves per channel for pests (aphids, mites, whitefly)
-  [ ] Note any unusual spots, mould, or webbing
+  [ ] Note any unusual spots, mold, or webbing
   [ ] Look for slug/snail slime trails on frame or channels
 
   ZONE B — MICROGREENS
-  [ ] Are trays in blackout phase? Check for any mould (white or green fuzzy growth)
+  [ ] Are trays in blackout phase? Check for any mold (white or green fuzzy growth)
   [ ] Are trays in light phase? Check moisture — mist if surface is dry
   [ ] Any trays ready to harvest? (cotyledons open, about 2–3 in (5–8 cm) tall)
   [ ] Mist twice a day. Standard trays get pH-adjusted water only (pH 5.8–6.2), no nutrients.
@@ -86,8 +87,8 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
 
   ZONE C — GROW BAGS
   [ ] Check media surface moisture — water if the top ¾–1¼ in (2–3 cm) is dry
-  [ ] Bags are 5 US gal (19 L) for radish and beetroot, and 10 US gal (38 L) for carrot.
-      Fertigation EC ceiling is 2.0 mS/cm. Beetroot does not get a higher target.
+  [ ] Bags are 5 US gal (19 L) for radish and beet (beetroot), and 10 US gal (38 L) for carrot.
+      Fertigation EC ceiling is 2.0 mS/cm. Beet (beetroot) does not get a higher target.
   [ ] Check for any pest damage on root veg leaves
 
   LOG
@@ -128,16 +129,17 @@ On hot days, either reservoir can drop through evaporation and plant transpirati
   See [Guide 03 — Water Quality](03-water-quality.md) for source-water analysis.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Twice-Weekly Tasks (15–20 minutes)
 
 ### EC and pH Measurement
 
-While you can assess plant health daily with visual inspection, accurate EC and pH measurement is critical at least every 2–3 days (ideally daily in the first few weeks until you understand your system's behaviour).
+While you can assess plant health daily with visual inspection, accurate EC and pH measurement is critical at least every 2–3 days (ideally daily in the first few weeks until you understand your system's behavior).
 
 ```
   EC AND pH TESTING PROTOCOL:
@@ -186,16 +188,17 @@ While you can assess plant health daily with visual inspection, accurate EC and 
   Do not "correct" the greens tank toward the CH4 fruiting numbers.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Weekly Tasks (30–60 minutes)
 
 ### Full EC/pH Assessment and Adjustment
 
-Same as above but with a more thorough approach — also check solution colour, smell, and look at individual channels for signs of salt buildup.
+Same as above but with a more thorough approach — also check solution color, smell, and look at individual channels for signs of salt buildup.
 
 ### Root Zone Inspection
 
@@ -235,7 +238,7 @@ Same as above but with a more thorough approach — also check solution colour, 
   Do not run that flush through a live root zone. Roots dry in 15–30 minutes
   in warm weather, so do not leave plants in a stopped channel while you flush.
 
-  BIOFILM (grey/clear slimy coating on surfaces): Normal at low levels.
+  BIOFILM (gray/clear slimy coating on surfaces): Normal at low levels.
   Excessive biofilm: indicator that reservoir change is overdue.
 ```
 
@@ -274,7 +277,7 @@ Same as above but with a more thorough approach — also check solution colour, 
       - CH2 herbs: snip as needed (pinch basil, cut chives, cilantro, and parsley)
       - CH3: cut spinach, kale, or mint; pick strawberries from the 3–4 strawberry sites
       - CH4 only: pick ripe cherry tomatoes or peppers
-      - Zone C: pull a test radish, beetroot, or carrot
+      - Zone C: pull a test radish, beet (beetroot), or carrot
 
   [ ] Identify vacant net pot sites (harvested full plants)
 
@@ -299,10 +302,11 @@ Same as above but with a more thorough approach — also check solution colour, 
   [ ] Stock solution shelf life: dissolved solutions 1–2 weeks; dry salts indefinitely
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Periodic Deep Tasks (2–3 hours per session)
 
@@ -421,26 +425,27 @@ These intervals match [Guide 02 — Nutrient Solution](02-nutrient-solution.md) 
 ```
   MONTHLY ZONE C CHECK:
 
-  [ ] Six bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beetroot,
+  [ ] Six bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beet (beetroot),
       three 10 US gal (38 L) carrot
   [ ] Media is 60% coco, 30% perlite, 10% vermiculite. No garden soil.
   [ ] Check bags for compaction — media should stay loose and airy
   [ ] If compacted: aerate by pressing fingers through the media gently
   [ ] Check for fungus gnat larvae (tiny white worms at the surface)
   [ ] Flush bags: water until about 20% runs out the bottom (pulls excess salt)
-  [ ] Fertigation EC stays at or below 2.0 mS/cm, including beetroot
+  [ ] Fertigation EC stays at or below 2.0 mS/cm, including beet (beetroot)
   [ ] Runoff should flow freely. If it pools, elevate the bag.
   [ ] Between crops: full media change per [Guide 05 — Growing Media](05-growing-media.md)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. End-of-Season Tasks (3–6 hours total over 1–2 days)
 
-### Late October Winterisation Checklist
+### Late October Winterization Checklist
 
 Worked climate: inland mid-USA, about 38°N, USDA zones 6b–7a. Planning frost dates are April 15 (SA: October 15) and October 20 (SA: April 20). The outdoor season is mid-April through mid-October (SA: mid-October through mid-April). Do not run unprotected NFT through December–February (SA: June–August), when lows in this band are 0–15°F (−18 to −9°C).
 
@@ -457,8 +462,8 @@ Worked climate: inland mid-USA, about 38°N, USDA zones 6b–7a. Planning frost 
   [ ] Drain BOTH reservoirs. Plants are out first. Roots dry in 15–30 minutes.
   [ ] Bleach wash each tank (10% bleach, triple rinse). Do not soak a live crop.
   [ ] Remove both water pumps and the air pump — clean, dry, store indoors
-  [ ] Remove all net pots — 33 of 2 in (51 mm) and 7 of 3 in (76 mm). Sterilise and bag them.
-  [ ] Remove clay pebbles — sterilise, dry, store in a sealed bag
+  [ ] Remove all net pots — 33 of 2 in (51 mm) and 7 of 3 in (76 mm). Sterilize and bag them.
+  [ ] Remove clay pebbles — sterilize, dry, store in a sealed bag
   [ ] Flush all channels with plain water
   [ ] Inspect channels for UV damage. Replace any cracked channel.
 
@@ -476,7 +481,7 @@ Worked climate: inland mid-USA, about 38°N, USDA zones 6b–7a. Planning frost 
   [ ] Compost all root veg media after harvest (used coco can go to garden compost)
   [ ] Clean grow bags — shake out, rinse, dry in sun
   [ ] Store bags flat in a dry place
-  [ ] If reusing media next season: sterilise per [Guide 05 — Growing Media](05-growing-media.md)
+  [ ] If reusing media next season: sterilize per [Guide 05 — Growing Media](05-growing-media.md)
 
   SHADE CLOTH AND ACCESSORIES:
   [ ] Clean shade cloth — brush off debris, rinse if dirty, dry before storage
@@ -501,10 +506,11 @@ Worked climate: inland mid-USA, about 38°N, USDA zones 6b–7a. Planning frost 
   Document answers — they are invaluable for planning next season.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Maintenance Logbook Template
 
@@ -562,7 +568,7 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   CH2 (herbs: basil, cilantro, parsley, chives) — varieties: _______________
   CH3 (spinach/kale/mint, plus 3–4 strawberries) — status: ________________
   CH4 (cherry tomato and pepper only) — flowers: Y/N | Fruit: Y/N
-  Zone C — radish, beetroot, carrot — status: ____________
+  Zone C — radish, beet (beetroot), carrot — status: ____________
 
   Next week priorities:
   1. _______________________________________________________
@@ -570,10 +576,11 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   3. _______________________________________________________
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Early Warning Signs Checklist
 
@@ -599,7 +606,7 @@ Catch problems before they become crises. Add these to your daily and weekly sca
   ⚠ Sticky residue on leaves or surrounds → aphid honeydew — inspect closely
   ⚠ White powder on leaf surfaces → powdery mildew — remove affected leaves, treat
   ⚠ Small flies around the media/channels → fungus gnats — deploy traps, treat media
-  ⚠ Holes or skeletonised leaves → caterpillars or slugs — inspect at night
+  ⚠ Holes or skeletonized leaves → caterpillars or slugs — inspect at night
   ⚠ Tomato blossom drop → temperature stress or pollination failure — check conditions
 ```
 
@@ -608,11 +615,14 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 
 > **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for a sensor path from a low-cost logger up to a full network. This system has two EC targets and two pumps, both running 24 hours.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 > **Previous:** [Guide 07 — Pests and Disease](07-pests-and-disease.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 09 — Troubleshooting](09-troubleshooting.md)
 
 <!-- copyright -->

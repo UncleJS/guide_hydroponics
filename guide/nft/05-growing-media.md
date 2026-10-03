@@ -20,7 +20,7 @@ Pot sizes, bag volumes, and coco depth follow [Design Constants](../design-const
   - [Properties](#properties)
   - [Preparation Before First Use](#preparation-before-first-use)
   - [How to Use in NFT](#how-to-use-in-nft)
-  - [Reuse and Sterilisation](#reuse-and-sterilisation)
+  - [Reuse and Sterilization](#reuse-and-sterilization)
 - [4. Rockwool (Mineral Wool / Stone Wool)](#4-rockwool-mineral-wool-stone-wool)
   - [What It Is](#what-it-is)
   - [Properties](#properties)
@@ -46,14 +46,14 @@ Pot sizes, bag volumes, and coco depth follow [Design Constants](../design-const
 - [9. What NOT to Use](#9-what-not-to-use)
 - [10. Germination Methods: Side-by-Side Comparison](#10-germination-methods-side-by-side-comparison)
   - [Transplanting from Soil to NFT (If You Start in Soil)](#transplanting-from-soil-to-nft-if-you-start-in-soil)
-- [11. Media Reuse and Sterilisation](#11-media-reuse-and-sterilisation)
+- [11. Media Reuse and Sterilization](#11-media-reuse-and-sterilization)
   - [Clay Pebbles (Multi-season reuse)](#clay-pebbles-multi-season-reuse)
   - [Rockwool Cubes](#rockwool-cubes)
   - [Coco Coir (Zone C grow bags)](#coco-coir-zone-c-grow-bags)
 - [12. Quick Reference: Media Selection Guide](#12-quick-reference-media-selection-guide)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why NFT Uses Minimal Media
 
@@ -87,10 +87,11 @@ flowchart TD
     end
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Net Pot Sizes
 
@@ -137,10 +138,11 @@ Use a **hole saw** that lets the lip sit on the channel:
 
 CH1–CH3 get 11 holes at 9 in (229 mm), about 2 in (51 mm) clear of each end, on an 8 ft (2.44 m) channel. CH4 gets 7 holes at 12 in (305 mm). Strawberries use 3–4 of the CH3 holes and the same 2 in (51 mm) pots. They do not move to the 3 in pots.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Clay Pebbles (LECA — Lightweight Expanded Clay Aggregate)
 
@@ -153,7 +155,7 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
 | Property | Value |
 |----------|-------|
 | pH neutral | Yes (~7.0, but rinse before use) |
-| Reusable | Yes — sterilise between crops |
+| Reusable | Yes — sterilize between crops |
 | Drainage | Excellent |
 | Water retention | Moderate (surface wicking, not absorption) |
 | Root aeration | Excellent — air pockets between pebbles |
@@ -171,7 +173,7 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
   2. Rinse thoroughly under running water until water runs clear
      (removes clay dust and fine particles)
   3. Soak in pH-adjusted water (pH 5.5–6.0) for 12–24 hours
-     (neutralises alkaline surface residue)
+     (neutralizes alkaline surface residue)
   4. Rinse again with clean water
   5. Ready to use
 
@@ -186,11 +188,11 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
 ### How to Use in NFT
 
 - Fill net pot 1/3 with clay pebbles
-- Place rockwool/rapid rooter seedling plug in the centre
+- Place rockwool/rapid rooter seedling plug in the center
 - Fill remaining space around the plug with more clay pebbles
 - Do NOT compact or press down — light filling only
 
-### Reuse and Sterilisation
+### Reuse and Sterilization
 
 ```
   BETWEEN CROPS:
@@ -204,16 +206,17 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
   Life span: Indefinite — clay pebbles last for many years with proper cleaning.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Rockwool (Mineral Wool / Stone Wool)
 
 ### What It Is
 
-Rockwool is manufactured from volcanic basalt rock and chalk, spun into fibres at very high temperatures and formed into blocks or cubes. It was originally developed as building insulation but was adapted for horticulture in the 1960s–70s (coincidentally around the same time as NFT).
+Rockwool is manufactured from volcanic basalt rock and chalk, spun into fibers at very high temperatures and formed into blocks or cubes. It was originally developed as building insulation but was adapted for horticulture in the 1960s–70s (coincidentally around the same time as NFT).
 
 ### Properties
 
@@ -274,16 +277,17 @@ Raw rockwool has a pH of ~7.5–8.0 due to the calcium and limestone in its comp
 
 ### Health and Safety Note
 
-Rockwool fibres can irritate skin and lungs. Handle dry rockwool with gloves and avoid breaking cubes in a way that creates fibre dust. Once moistened, fibre release is minimal.
+Rockwool fibers can irritate skin and lungs. Handle dry rockwool with gloves and avoid breaking cubes in a way that creates fiber dust. Once moistened, fiber release is minimal.
 
 ### Disposal
 
 Rockwool is not biodegradable and should not go in compost. Bag and place in general waste. Some areas have specialist industrial disposal — check locally.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Rapid Rooter / Jiffy Plugs (Alternative to Rockwool)
 
@@ -303,14 +307,15 @@ Rapid Rooter plugs (by General Hydroponics) and Jiffy peat plugs are pre-formed 
 
 **Rapid Rooter advantage:** No pH conditioning needed — just moisten with pH-adjusted nutrient solution (EC 0.4) and use. Excellent for beginners.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 6. Coco Coir: The Zone C Media
 
-Coco coir (coconut husk fibre) is the primary media for Zone C grow bags (root vegetables). It is not used in NFT channels — it would clog drains and retain too much moisture.
+Coco coir (coconut husk fiber) is the primary media for Zone C grow bags (root vegetables). It is not used in NFT channels — it would clog drains and retain too much moisture.
 
 ### Properties
 
@@ -320,7 +325,7 @@ Coco coir (coconut husk fibre) is the primary media for Zone C grow bags (root v
 | Water retention | High — holds 8–9× its weight in water |
 | Air porosity | Good when blended with perlite (30–50% blend) |
 | Nutrient content | Very low — essentially inert (must add all nutrients) |
-| Reusability | Good — sterilise and reuse 2–3 times |
+| Reusability | Good — sterilize and reuse 2–3 times |
 | Eco-friendly | Yes — by-product of coconut industry |
 | Cation exchange capacity | High — buffers nutrients well |
 
@@ -347,7 +352,7 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
   6. The coco CEC is now saturated with Ca and Mg — it will no longer strip these
      from your nutrient solution
 
-  OR: Use pre-buffered coco coir (labelled as "buffered" or "pH and EC adjusted")
+  OR: Use pre-buffered coco coir (labeled as "buffered" or "pH and EC adjusted")
 ```
 
 ### Media Mix for Zone C Grow Bags
@@ -356,7 +361,7 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
   RECOMMENDED MIX (by volume): 60% coco, 30% perlite, 10% vermiculite.
   No garden soil.
 
-  Per 5 US gal (19 L) bag — two of these are radish, one is beetroot:
+  Per 5 US gal (19 L) bag — two of these are radish, one is beet (beetroot):
 
   3.0 US gal (11.4 L) buffered coco coir (60%)
   1.5 US gal (5.7 L) perlite (30%)
@@ -376,13 +381,14 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
 
   Fertigation EC ceiling for every bag is 2.0 mS/cm. Beetroot does
   not get a higher target. One-season planning yields: radish 15 lb
-  (6.8 kg), beetroot 8 lb (3.6 kg), carrot 20 lb (9.1 kg).
+  (6.8 kg), beet (beetroot) 8 lb (3.6 kg), carrot 20 lb (9.1 kg).
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Perlite
 
@@ -410,10 +416,11 @@ Perlite is expanded volcanic glass (amorphous silica) heated to about 1,600°F (
 
 New perlite contains fine silica dust — rinse before use or wet it down before handling. Silica dust is a respiratory hazard in large quantities; brief handling outdoors is generally fine.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Vermiculite
 
@@ -434,10 +441,11 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 - **Zone C grow bags:** 10% vermiculite in the 60/30/10 coco/perlite/vermiculite mix — helps prevent dry pockets around root veg
 - **Not used in NFT** — too moisture-retentive, not needed when film is continuous
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. What NOT to Use
 
@@ -450,10 +458,11 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 | **Compost** | Contamination risk, introduces pathogens, breaks down and clogs drains | Never use directly in NFT |
 | **Aquarium gravel (decorative)** | May be pH-neutral, but no aeration, no moisture retention — poor media | Only acceptable in emergency |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Germination Methods: Side-by-Side Comparison
 
@@ -486,12 +495,13 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
   Starting in rockwool directly avoids the need for root washing entirely.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
-## 11. Media Reuse and Sterilisation
+[↑ Back to TOC](#table-of-contents)
+
+## 11. Media Reuse and Sterilization
 
 ### Clay Pebbles (Multi-season reuse)
 
@@ -509,7 +519,7 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 ### Rockwool Cubes
 
 - Small starter cubes: Generally single use — cost is minimal and reuse risk (pathogen retention) is not worth it
-- Larger grow blocks: Can be sterilised with 10% bleach (30 min soak), triple rinsed, re-pH conditioned, and reused once
+- Larger grow blocks: Can be sterilized with 10% bleach (30 min soak), triple rinsed, re-pH conditioned, and reused once
 
 ### Coco Coir (Zone C grow bags)
 
@@ -526,10 +536,11 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
   persistent root rot issues despite clean practices.
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 12. Quick Reference: Media Selection Guide
 
@@ -541,16 +552,18 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 | Zone A — CH4 (cherry tomato or pepper, 7 holes) | 4 in (102 mm) NFT channel, own reservoir | Clay pebbles + rockwool cube | 3 in (76 mm) |
 | Zone B (microgreens, 6 trays) | 10 in × 20 in (25 cm × 50 cm) tray | Coco coir, 1–1¼ in (2.5–3 cm). Water at pH 5.8–6.2 | None |
 | Zone C radish | Two 5 US gal (19 L) bags | 60% coco + 30% perlite + 10% vermiculite | None |
-| Zone C beetroot | One 5 US gal (19 L) bag | Same mix. EC ceiling 2.0 mS/cm | None |
+| Zone C beet (beetroot) | One 5 US gal (19 L) bag | Same mix. EC ceiling 2.0 mS/cm | None |
 | Zone C carrot | Three 10 US gal (38 L) bags | Same mix. EC ceiling 2.0 mS/cm | None |
 | Propagation | Germination tray | Rockwool cubes or Rapid Rooter plugs | None |
 
 ---
 
 
+> **Previous:** [Guide 04 — Lighting](04-lighting.md)
+
+
 [↑ Back to TOC](#table-of-contents)
 
-> **Previous:** [Guide 04 — Lighting](04-lighting.md)
 > **Next:** [Guide 06 — Crops](06-crops.md)
 
 <!-- copyright -->

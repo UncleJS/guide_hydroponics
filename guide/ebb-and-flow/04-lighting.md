@@ -17,7 +17,7 @@
   - [Seasonal DLI at the Worked Site](#seasonal-dli-at-the-worked-site)
 - [3. Minimum Sun Hours Per Crop](#3-minimum-sun-hours-per-crop)
 - [4. Siting the System: Sun Mapping](#4-siting-the-system-sun-mapping)
-  - [Southern Exposure (Northern Hemisphere)](#southern-exposure-northern-hemisphere)
+  - [South Facing (SA: North Facing)](#south-facing-sa-north-facing)
   - [Obstruction Mapping](#obstruction-mapping)
   - [Flood Table Geometry and Light Distribution](#flood-table-geometry-and-light-distribution)
 - [5. Shade Cloth: Percentages, Timing, and Deployment](#5-shade-cloth-percentages-timing-and-deployment)
@@ -32,7 +32,7 @@
 - [8. Seasonal Light Strategy](#8-seasonal-light-strategy)
   - [Spring (March–May) — Establishment Phase](#spring-marchmay-establishment-phase)
   - [Summer (June–August) — Peak Production, Heat Management](#summer-juneaugust-peak-production-heat-management)
-  - [Autumn (September–October) — Second Season](#autumn-septemberoctober-second-season)
+  - [Fall (September–October) — Second Season](#fall-septemberoctober-second-season)
   - [Winter (November–February) — Shutdown / Planning](#winter-novemberfebruary-shutdown-planning)
 - [9. Supplemental Lighting for Season Extension](#9-supplemental-lighting-for-season-extension)
   - [When It Makes Sense](#when-it-makes-sense)
@@ -43,8 +43,8 @@
   - [Cost-Benefit Summary](#cost-benefit-summary)
 - [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Language of Plant Light
 
@@ -72,7 +72,7 @@ block-beta
   space:1
 ```
 
-| Wavelength range | Colour band | Notes |
+| Wavelength range | Color band | Notes |
 |---|---|---|
 | Below 400nm | Ultraviolet | Minor photosynthetic role; can stress plants |
 | 400–700nm | **PAR range** | Photosynthetically active radiation |
@@ -86,7 +86,7 @@ block-beta
 
 PPFD measures the **intensity of PAR light** hitting a surface at a given moment. It tells you how much photosynthetically useful light is arriving per second.
 
-- **Units:** μmol/m²/s (micromoles of photons per square metre per second)
+- **Units:** μmol/m²/s (micromoles of photons per square meter per second)
 - **What it measures:** Instantaneous light intensity at a specific point
 
 ```
@@ -102,7 +102,7 @@ PPFD measures the **intensity of PAR light** hitting a surface at a given moment
   Light saturation point (max useful):
     Lettuce/herbs:          ~400–600 μmol/m²/s
     Tomatoes/peppers:       ~800–1,200 μmol/m²/s
-    Cucumbers/courgettes:   ~700–1,000 μmol/m²/s
+    Cucumbers/zucchinis (courgettes):   ~700–1,000 μmol/m²/s
     Strawberries:           ~600–1,000 μmol/m²/s
 ```
 
@@ -112,7 +112,7 @@ PPFD measures the **intensity of PAR light** hitting a surface at a given moment
 
 DLI is the **total quantity of PAR light delivered over an entire day**. It integrates PPFD over time — how many photons the plant receives across a full day. This is the most practically useful metric for crop planning.
 
-- **Units:** mol/m²/day (moles of photons per square metre per day)
+- **Units:** mol/m²/day (moles of photons per square meter per day)
 - **Why it matters:** You can have high PPFD but few hours of daylight (low DLI), or moderate PPFD across many hours (adequate DLI)
 
 ```
@@ -127,14 +127,15 @@ DLI is the **total quantity of PAR light delivered over an entire day**. It inte
   DLI = 400 × 10 × 0.0036 = 14.4 mol/m²/day → adequate for lettuce
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 2. DLI Targets by Crop
 
-These are the daily light requirements your plants need for optimal growth. The E&F system supports a broader crop range than NFT, including cucumbers, courgettes, and aubergines, which have higher DLI needs.
+These are the daily light requirements your plants need for optimal growth. The E&F system supports a broader crop range than NFT, including cucumbers, zucchinis (courgettes), and eggplants (aubergines), which have higher DLI needs.
 
 | Crop | Minimum DLI | Optimal DLI | Max Usable DLI |
 |------|-------------|-------------|----------------|
@@ -146,10 +147,10 @@ These are the daily light requirements your plants need for optimal growth. The 
 | Parsley | 8 | 12–16 | 18 |
 | Kale | 10 | 15–20 | 25 |
 | Cherry tomatoes | 20 | 25–35 | 40 |
-| Peppers (sweet/chilli) | 20 | 25–35 | 40 |
+| Peppers (sweet/chili) | 20 | 25–35 | 40 |
 | Cucumbers | 20 | 25–35 | 40 |
-| Courgettes/Zucchini | 18 | 22–32 | 38 |
-| Aubergine/Eggplant | 18 | 22–30 | 38 |
+| Zucchini (courgette) | 18 | 22–32 | 38 |
+| Eggplant (aubergine) | 18 | 22–30 | 38 |
 | Strawberries | 15 | 20–30 | 35 |
 | Radishes (bags) | 10 | 15–20 | 25 |
 | Carrots (bags) | 10 | 15–20 | 25 |
@@ -178,7 +179,7 @@ The worked climate is inland mid-USA, about **38°N**, USDA zones **6b–7a** (K
   WHAT THAT MEANS FOR CROPS:
   - Lettuce and herbs: useful light from the April opening through October
     (SA: October through April)
-  - Table 1 tomato or cucumber, and Table 2 pepper, aubergine, or courgette:
+  - Table 1 tomato or cucumber, and Table 2 pepper, eggplant (aubergine), or zucchini (courgette):
     the summer band (45–55) covers their optimal DLI. Shoulder light
     (25–35) is enough to establish and to finish
   - Do not run the outdoor tables through December–February
@@ -186,10 +187,11 @@ The worked climate is inland mid-USA, about **38°N**, USDA zones **6b–7a** (K
     DLI is 10–15, and the nights are far below fruiting temperatures
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Minimum Sun Hours Per Crop
 
@@ -204,17 +206,18 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 | Tomatoes | 8+ hours full sun — critical |
 | Peppers | 8+ hours full sun — critical |
 | Cucumbers | 8+ hours full sun — critical |
-| Courgettes/Zucchini | 8+ hours full sun — very productive with maximum light |
-| Aubergine/Eggplant | 8+ hours full sun — needs heat and light to fruit well |
+| Zucchini (courgette) | 8+ hours full sun — very productive with maximum light |
+| Eggplant (aubergine) | 8+ hours full sun — needs heat and light to fruit well |
 | Strawberries | 6–8 hours |
 | Radishes/carrots | 6–8 hours |
 
-> **Site selection rule:** Face the long axis **south** (SA: **north**). You want an unobstructed sky on that side for at least 8 hours. Avoid shade from buildings, walls, or large trees between 10am and 4pm. Table 1 (one tomato or one cucumber) and Table 2 (pepper, aubergine, or courgette) turn that light into yield.
+> **Site selection rule:** Face the long axis **south** (SA: **north**). You want an unobstructed sky on that side for at least 8 hours. Avoid shade from buildings, walls, or large trees between 10am and 4pm. Table 1 (one tomato or one cucumber) and Table 2 (pepper, eggplant (aubergine), or zucchini (courgette)) turn that light into yield.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Siting the System: Sun Mapping
 
@@ -283,22 +286,23 @@ The flood tables in this system, each 4 ft × 2 ft (1.22 m × 0.61 m) and perfec
 
 **Spacing to prevent mutual shading in flood tables:**
 
-On wide flat tables, tall plants can shade smaller neighbours in a way that does not occur in single-file NFT channels.
+On wide flat tables, tall plants can shade smaller neighbors in a way that does not occur in single-file NFT channels.
 
 | Crop combination on same table | Shading risk | Recommendation |
 |-------------------------------|--------------|----------------|
 | Lettuce + lettuce | Low on Table 3 | About 8–10 in (20–25 cm) is enough |
 | Lettuce + basil | Low | Put the taller basil at the north end (SA: south end) |
 | Tomato + pepper | High | Do not share a table. Tomato is the Table 1 plant. Pepper is Table 2 |
-| Cucumber + courgette | High | Cucumber is Table 1. Courgette is Table 2. One crop family per table |
+| Cucumber + zucchini (courgette) | High | Cucumber is Table 1. Zucchini (courgette) is Table 2. One crop family per table |
 | Fruiting + leafy | High | Leafy crops stay on Table 3, or Table 3 becomes a later fruiting crop |
 
-> **Practical rule:** Table 1 is the tall crop (one indeterminate tomato or one cucumber). Put that table on the north side of the group (SA: south side) so it does not shade Table 3. Table 2 is pepper, aubergine, or courgette, 1–2 plants. Table 3 is lettuce, herbs, pak choi, or a later fruiting crop.
+> **Practical rule:** Table 1 is the tall crop (one indeterminate tomato or one cucumber). Put that table on the north side of the group (SA: south side) so it does not shade Table 3. Table 2 is pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants. Table 3 is lettuce, herbs, pak choi, or a later fruiting crop.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shade Cloth: Percentages, Timing, and Deployment
 
@@ -306,13 +310,13 @@ On wide flat tables, tall plants can shade smaller neighbours in a way that does
 
 On a sunny July day, PPFD at noon can reach 1,800–2,000 μmol/m²/s. The light saturation point of lettuce is ~400–600 μmol/m²/s. The excess 1,200–1,400 μmol/m²/s is absorbed as heat — raising leaf temperature, accelerating transpiration (water loss), stressing plants, and triggering bolting (premature flowering) in leafy crops.
 
-Shade cloth reduces PPFD to a level that maximises photosynthesis without heat stress. In E&F flood tables, heat stress is compounded by the fact that the clay pebble media surface has a large exposed area — LECA heats up quickly in direct summer sun, warming the root zone from above.
+Shade cloth reduces PPFD to a level that maximizes photosynthesis without heat stress. In E&F flood tables, heat stress is compounded by the fact that the clay pebble media surface has a large exposed area — LECA heats up quickly in direct summer sun, warming the root zone from above.
 
 ### Shade Cloth Percentages
 
 | Shade Level | PPFD Reduction | Recommended Use |
 |-------------|---------------|-----------------|
-| 30% | Reduces PPFD by ~30% | Light shade, spring/autumn, mild summers |
+| 30% | Reduces PPFD by ~30% | Light shade, spring/fall, mild summers |
 | 40% | Reduces PPFD by ~40% | Standard summer use — good all-around choice |
 | 50% | Reduces PPFD by ~50% | Hot climates, afternoon shade for greens |
 | 70% | Reduces PPFD by ~70% | Seedlings, sensitive plants — too dark for most crops |
@@ -365,13 +369,14 @@ Unlike NFT channels (which are structural tubes), flood tables have a flat open 
   - Afternoon highs no longer hold above 85°F (29°C). In this climate that
     is after August (SA: after February), into the shoulder
   - Fruit is in the last ripening stretch and nights have cooled. Light
-    then does more for flavour than shade does for heat
+    then does more for flavor than shade does for heat
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Heat Stress vs Light Stress: Distinguishing the Two
 
@@ -392,10 +397,11 @@ These can look similar but have different causes and solutions:
 
 > **E&F advantage:** The reservoir sits under the tables, so it is already shaded. If the solution still climbs past 77°F (25°C), wrap the tank. Shade cloth does not replace that, and it does not change the flood ceiling.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Photoperiod Sensitivity
 
@@ -405,34 +411,35 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 | Category | What Triggers It | Crops |
 |----------|-----------------|-------|
-| **Short-day plants** | Flower when nights are LONG (late summer/autumn) | Strawberries (June-bearing), some basil varieties |
+| **Short-day plants** | Flower when nights are LONG (late summer/fall) | Strawberries (June-bearing), some basil varieties |
 | **Long-day plants** | Flower when nights are SHORT (summer) | Spinach, lettuce, cilantro, dill |
-| **Day-neutral plants** | Flower regardless of day length | Cherry tomatoes, most peppers, mint, kale, cucumbers, courgettes, aubergine |
+| **Day-neutral plants** | Flower regardless of day length | Cherry tomatoes, most peppers, mint, kale, cucumbers, zucchinis (courgettes), eggplant (aubergine) |
 
 ### Implications for Your System
 
 **Lettuce, spinach, cilantro (long-day plants):**
 - In midsummer (June–July), the long days actively trigger bolting in these crops
 - Shade cloth helps slightly by reducing perceived light intensity, but does not shorten the photoperiod
-- **Solution:** Plant in early spring and autumn — avoid trying to grow them through July
+- **Solution:** Plant in early spring and fall — avoid trying to grow them through July
 - Heat-tolerant/slow-bolt varieties exist — worth seeking out for the summer slot
 
 **Strawberries:**
 - **Everbearing/day-neutral varieties** (Albion, Seascape, Evie) — produce fruit regardless of day length — **best for E&F flood tables**
-- **June-bearing varieties** — produce one crop in June/July triggered by short-day conditions of the previous autumn — not ideal for continuous production
+- **June-bearing varieties** — produce one crop in June/July triggered by short-day conditions of the previous fall — not ideal for continuous production
 - If you grow strawberries, they are a later fruiting crop on Table 3, not a second crop beside the pepper on Table 2. Pull runners so they do not root into the LECA beside the crown
 
-**Cucumbers, courgettes, aubergine (day-neutral):**
+**Cucumbers, zucchinis (courgettes), eggplant (aubergine) (day-neutral):**
 - These crops are not photoperiod-sensitive — they flower and fruit based on temperature and plant maturity
 - All three are vigorous growers; their primary limitation in a temperate climate is temperature, not photoperiod
-- Cucumber (Table 1) and courgette (Table 2) produce from the warm part of the mid-April to mid-October season (SA: mid-October to mid-April) and stop at frost
+- Cucumber (Table 1) and zucchini (courgette) (Table 2) produce from the warm part of the mid-April to mid-October season (SA: mid-October to mid-April) and stop at frost
 
 **Tomatoes and peppers:** Day-neutral — flower and fruit based on plant maturity and temperature, not photoperiod. No photoperiod concerns.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Seasonal Light Strategy
 
@@ -451,9 +458,9 @@ Many plants respond to the **length of the dark period** (night length) rather t
   - Fleece the LECA on a late frost night
   - Table 1: one indeterminate tomato, or one cucumber. Tomato can go out
     after 15 April. Cucumber prefers warmer nights, often May (SA: November)
-  - Table 2: pepper, aubergine, or courgette, 1–2 plants, after nights settle
-  - Do not put the tomato on Table 2. Table 2 is the pepper / aubergine /
-    courgette table
+  - Table 2: pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants, after nights settle
+  - Do not put the tomato on Table 2. Table 2 is the pepper / eggplant (aubergine) /
+    zucchini (courgette) table
   - The 5 in (13 cm) LECA bed buffers a cool night better than bare NFT roots
 ```
 
@@ -474,12 +481,12 @@ Many plants respond to the **length of the dark period** (night length) rather t
   - If the LECA surface is hot, the answer is shade and solution temperature
     (aim 64–72°F / 18–22°C; act above 77°F / 25°C), not a 5th flood
   - The reservoir stays under the tables
-  - Table 1 cucumber, or Table 2 courgette: harvest every 2–3 days
+  - Table 1 cucumber, or Table 2 zucchini (courgette): harvest every 2–3 days
   - Check each table's own overflow and drain weekly. Algae in the standpipe
     raises the flood level
 ```
 
-### Autumn (September–October) — Second Season
+### Fall (September–October) — Second Season
 
 ```
   Light: back in the 25–35 mol/m²/day shoulder band. Lower sun, less heat
@@ -489,8 +496,8 @@ Many plants respond to the **length of the dark period** (night length) rather t
   Action:
   - Remove 40% shade once afternoon highs no longer hold above 85°F (29°C)
   - A second leafy planting on Table 3 suits this light
-  - Clear Table 1 (tomato or cucumber) and Table 2 (pepper, aubergine, or
-    courgette) before the 20 October frost. Cucumber and courgette are
+  - Clear Table 1 (tomato or cucumber) and Table 2 (pepper, eggplant (aubergine), or
+    zucchini (courgette)) before the 20 October frost. Cucumber and zucchini (courgette) are
     finished once nights fall below 41°F (5°C)
   - A pepper can be lifted, washed, and potted to come indoors. The table
     itself does not overwinter outdoors
@@ -509,20 +516,21 @@ Many plants respond to the **length of the dark period** (night length) rather t
   Action:
   - The outdoor season is already closed. Do not try to hold fruiting crops
   - Drain the 45 US gal (170 L) reservoir. Clean the reservoir and the pump
-  - Sterilise LECA (Guide 05). Plants out before any bleach soak
+  - Sterilize LECA (Guide 05). Plants out before any bleach soak
   - Clean each table's overflow and drain. They are not a shared fitting
   - Store the digital timer, pump, and meters indoors
   - Next year, Table 1 is again one tomato or one cucumber. Table 2 is
-    again pepper, aubergine, or courgette, 1–2 plants
+    again pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants
   - Order seed and nutrients. Prices are in Guide 12
   - A cold frame on Table 3 might stretch lettuce into November
     (SA: May). It will not carry the table through a 0°F (−18°C) night
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Supplemental Lighting for Season Extension
 
@@ -581,7 +589,7 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
 
   NOTE: Each flood table is 2 ft (0.61 m) wide. An NFT channel is about 3–4 in (76–102 mm).
   Choose lights with a wide beam angle or use multiple units to avoid
-  bright centre / dark edge uneven distribution on wide tables.
+  bright center / dark edge uneven distribution on wide tables.
 ```
 
 ### Photoperiod Recommendations
@@ -635,12 +643,13 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
     mid-April through mid-October (SA: mid-October through mid-April).
 ```
 
-> **Cost:** Hardware prices for the whole system are in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md). Supplemental light is an optional extra, not part of the outdoor build. A cold frame or low tunnel over Table 3 in autumn extends lettuce without a lamp. Planning exchange rate: $1 = R18, frozen 3 October 2026. Worked electricity price: $0.15/kWh (R2.70/kWh).
+> **Cost:** Hardware prices for the whole system are in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md). Supplemental light is an optional extra, not part of the outdoor build. A cold frame or low tunnel over Table 3 in fall extends lettuce without a lamp. Planning exchange rate: $1 = R18, frozen 3 October 2026. Worked electricity price: $0.15/kWh (R2.70/kWh).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Microgreens Lighting (Zone B)
 
@@ -668,7 +677,7 @@ Microgreens have different light needs from mature crops. Zone B is a 24 in × 2
 
 **Positioning Zone B relative to flood tables:**
 
-The 2-tier shelf for microgreens should be positioned where it receives direct light without being shaded by the flood tables or taller crops growing on them. In summer, the lower tier of the shelf may receive less light than the upper tier — rotate trays between tiers every 2–3 days to equalise exposure.
+The 2-tier shelf for microgreens should be positioned where it receives direct light without being shaded by the flood tables or taller crops growing on them. In summer, the lower tier of the shelf may receive less light than the upper tier — rotate trays between tiers every 2–3 days to equalize exposure.
 
 ```
   ZONE B SHELF LIGHT CONSIDERATIONS:
@@ -677,7 +686,7 @@ The 2-tier shelf for microgreens should be positioned where it receives direct l
     (SA: directly south). The Table 1 tomato or cucumber is the tall plant
     and will shade the lower shelf
   - East or west placement relative to the flood tables is preferable
-  - In autumn/winter, the shelf can be moved under artificial lights or
+  - In fall/winter, the shelf can be moved under artificial lights or
     onto a windowsill for season extension — microgreens work well indoors
   - In summer, when highs hold above 85°F (29°C), the same 40% cloth
     used on Zone A is enough for these trays. Dappled tree shade also works
@@ -691,11 +700,13 @@ The 2-tier shelf for microgreens should be positioned where it receives direct l
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 03 — Water Quality](03-water-quality.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 05 — Growing Media](05-growing-media.md)
 
 <!-- copyright -->

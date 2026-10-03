@@ -19,7 +19,7 @@
   - [How to Test Correctly in Each System](#how-to-test-correctly-in-each-system)
 - [3. pH Management](#3-ph-management)
   - [Drift Patterns and Causes](#drift-patterns-and-causes)
-  - [Buffering Behaviour](#buffering-behaviour)
+  - [Buffering Behavior](#buffering-behavior)
   - [Correction Frequency](#correction-frequency)
 - [4. Salt Accumulation](#4-salt-accumulation)
   - [Why E&F Accumulates Salts Faster](#why-ef-accumulates-salts-faster)
@@ -43,16 +43,19 @@
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## Introduction
 
-Both NFT and Ebb & Flow use the same nutrient chemistry — the 17 essential elements dissolved in water — but they interact with those nutrients in fundamentally different ways. In NFT, roots sit directly in flowing solution; there is no media to absorb, buffer, or accumulate minerals. In Ebb & Flow, every litre of nutrient solution that floods the table and drains back leaves a residue in the LECA. That residue is cumulative.
+Both NFT and Ebb & Flow use the same nutrient chemistry — the 17 essential elements dissolved in water — but they interact with those nutrients in fundamentally different ways. In NFT, roots sit directly in flowing solution; there is no media to absorb, buffer, or accumulate minerals. In Ebb & Flow, every liter of nutrient solution that floods the table and drains back leaves a residue in the LECA. That residue is cumulative.
 
 This guide compares how you manage nutrients in practice across both systems: what you measure, how often, what drifts, what accumulates, and where the failure modes differ.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. How Each System Delivers Nutrients
 
@@ -98,10 +101,11 @@ graph TD
   E -->|next flood dilutes<br/>or compounds salts| C
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. EC Management
 
@@ -149,15 +153,16 @@ Hot weather, high VPD, and large fruiting plants with high transpiration rates a
 
 **E&F:**
 1. Take reservoir sample as above
-2. Take media sample: push probe 2 in (5 cm) into LECA in the centre of the table, in the root zone (not at the edge)
+2. Take media sample: push probe 2 in (5 cm) into LECA in the center of the table, in the root zone (not at the edge)
 3. Alternatively, collect runoff from the table's drain port at the end of a flood cycle
 4. Compare reservoir EC vs media EC
 5. Flush at **+0.5 mS/cm**. Treat **+1.0 mS/cm** as urgent — flush the same day
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. pH Management
 
@@ -177,14 +182,14 @@ pH drift is a feature of all recirculating hydroponic systems, but the direction
 - Drift in the reservoir may appear slower than NFT because not all solution is in the reservoir — some is retained in the media
 - After a flush (when media solution returns to reservoir), you may see a pH spike or drop depending on what had accumulated in the media
 
-### Buffering Behaviour
+### Buffering Behavior
 
 In NFT, each reservoir is the buffer for its own loop. The greens tank is **20 US gal (76 L)**; the fruiting tank is **10 US gal (38 L)**. A plant-driven pH shift in one loop does not dilute into the other. Correct the tank that drifted.
 
 In E&F, roughly 15–20% of total solution volume is retained in the media at any time. When you correct the reservoir pH, the media retains its old pH. The full correction only propagates through the entire system after 2–3 flood cycles. This means:
 
 - Do not over-correct expecting immediate results — wait for the next 2–3 flood cycles
-- If pH is 6.2 in the reservoir and you want 5.8, adding pH down for 5.8 may create a dip to 5.5 in the reservoir once the media slowly homogenises
+- If pH is 6.2 in the reservoir and you want 5.8, adding pH down for 5.8 may create a dip to 5.5 in the reservoir once the media slowly homogenizes
 - Make gradual corrections of 0.2–0.3 units; test again after 3–4 flood cycles
 
 ### Correction Frequency
@@ -196,10 +201,11 @@ In E&F, roughly 15–20% of total solution volume is retained in the media at an
 
 For both systems, the target pH range is **5.5–6.5**, with the sweet spot at **5.8–6.2** for most crops.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Salt Accumulation
 
@@ -255,10 +261,11 @@ The only accumulation risk in NFT is:
 
 This is one of the genuine operational simplicity advantages of NFT over E&F.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Nutrient Solution Changes
 
@@ -275,7 +282,7 @@ E&F uses a larger reservoir because solution is stored both in the reservoir and
 The longer change interval for E&F (10–14 days vs NFT 5–7 / 7 days) exists because:
 1. The 45 US gal (170 L) tank plus media-held solution buffers concentration swings longer than the smaller NFT tanks
 2. Media flush events still return salty water to the reservoir, so change sooner after a flush even inside the 10–14 day window
-3. Fruiting crops (tomatoes, cucumbers, courgettes) common in E&F still consume nutrients unevenly — watch EC drift, but do not treat E&F as the shorter-interval system
+3. Fruiting crops (tomatoes, cucumbers, zucchinis (courgettes)) common in E&F still consume nutrients unevenly — watch EC drift, but do not treat E&F as the shorter-interval system
 
 ### Top-Up vs Full Change
 
@@ -293,20 +300,21 @@ Do not always top up at full-strength EC, and do not always top up with plain wa
 - pH correction is consuming more acid/alkali than usual (indicates buffering capacity is exhausted)
 - Solution has been running for more than the scheduled interval
 - Algae or biological contamination is visible
-- After a pest or disease event (sterilise reservoir, tubing, and pump before refilling)
+- After a pest or disease event (sterilize reservoir, tubing, and pump before refilling)
 
 ### Disposing of Old Solution
 
-Old nutrient solution is a mild fertiliser. Options:
+Old nutrient solution is a mild fertilizer. Options:
 - **Garden irrigation**: dilute 1:3 with plain water and use on non-edible garden beds or lawns. Do not use on edible root vegetables.
 - **Compost accelerant**: nutrient-rich liquid speeds decomposition in compost heaps
 - **Drain to sewer**: legal in most jurisdictions for domestic-scale systems (check local rules). Flush the drain with water after.
 - **Do not** pour undiluted old solution repeatedly onto the same garden patch — salt build-up will damage soil over time.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Nutrient Recipes: Are They Interchangeable?
 
@@ -322,7 +330,7 @@ The Masterblend 4-18-38 three-part formula works in both systems at the same bas
 - Calcium nitrate: **2.4 g (0.63 g/L)**
 - Epsom salt: **1.2 g (0.32 g/L)**
 
-That is the usual “2.4 grams per gallon” recipe. It is not 2.4 grams per litre. Per litre, that dose is about a four-times overdose. In typical tap water this base lands near EC 1.4–1.6 mS/cm, which suits vegetative greens.
+That is the usual “2.4 grams per gallon” recipe. It is not 2.4 grams per liter. Per liter, that dose is about a four-times overdose. In typical tap water this base lands near EC 1.4–1.6 mS/cm, which suits vegetative greens.
 
 **Adjustments for Ebb and Flow:**
 - The same gram-per-gallon recipe is the starting point. Hold reservoir EC on the crop target, and flush the LECA when media EC runs more than 0.5 mS/cm above the reservoir.
@@ -343,25 +351,26 @@ Calcium and magnesium requirements differ slightly:
 
 ### Adjusting for Fruiting Crops (E&F)
 
-E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aubergine, large tomato varieties). These crops have specific nutrient requirements at different growth stages:
+E&F supports fruiting crops that NFT cannot sustain (cucumbers, zucchinis (courgettes), eggplant (aubergine), large tomato varieties). These crops have specific nutrient requirements at different growth stages:
 
 **Tomatoes — fruiting stage (Ebb and Flow Table 1, or NFT CH4):**
-- Scale the whole recipe until reservoir EC is 2.5–3.5 mS/cm. Do not chase that EC by dumping 2.4 g into each litre.
-- If you need a nudge at fruit swell: drop Masterblend slightly, add about 1.5 g potassium sulphate per US gal (0.4 g/L), and raise calcium nitrate by about 1.5 g per US gal (0.4 g/L). Recheck EC after every addition.
+- Scale the whole recipe until reservoir EC is 2.5–3.5 mS/cm. Do not chase that EC by dumping 2.4 g into each liter.
+- If you need a nudge at fruit swell: drop Masterblend slightly, add about 1.5 g potassium sulfate per US gal (0.4 g/L), and raise calcium nitrate by about 1.5 g per US gal (0.4 g/L). Recheck EC after every addition.
 
 **Cucumbers — fruiting stage (Table 1, Ebb and Flow only):**
 - Higher magnesium: Epsom can go to about 1.6 g per US gal (0.42 g/L) if older leaves yellow between the veins and EC is otherwise on target
 - Reservoir EC 2.2–2.8 mS/cm in peak fruiting
 - Sensitive to sodium. Use lower-EC water if tap EC is already high
 
-**Courgettes (Table 2):**
+**Zucchini (courgette) (Table 2):**
 - Reservoir EC 1.8–2.4 mS/cm
-- From first fruit set, add about 1.1 g potassium sulphate per US gal (0.3 g/L) if fruit set is weak and EC is in range
+- From first fruit set, add about 1.1 g potassium sulfate per US gal (0.3 g/L) if fruit set is weak and EC is in range
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Deficiency and Toxicity Patterns
 
@@ -373,7 +382,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Iron | Interveinal chlorosis on young leaves (yellow between green veins) | pH above 6.5 locks out iron; iron precipitates at high pH |
 | Magnesium | Interveinal chlorosis on older leaves | Low magnesium in recipe; pH outside range; calcium antagonism |
 | Calcium | Tip burn on lettuce; blossom end rot on tomato (rare in NFT) | pH below 5.5; low transpiration; high ammonium competing with calcium |
-| Phosphorus | Purple/red colouring on undersides of leaves and stems | pH below 5.5; cold root zone; solution too old |
+| Phosphorus | Purple/red coloring on undersides of leaves and stems | pH below 5.5; cold root zone; solution too old |
 
 **NFT-specific note:** Iron deficiency is the most common micronutrient problem in NFT because the solution pH can creep up quickly (as described in Section 3). Iron becomes nearly insoluble above pH 6.8. A pH spike to 7.0+ even for a few days can trigger iron chlorosis.
 
@@ -402,10 +411,11 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 **Overall stunting and dark green, thick leaves:**
 - **In both systems:** Phosphorus excess or pH below 5.2; check pH immediately
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Monitoring Regimen Comparison
 
@@ -421,10 +431,11 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Reservoir clean | With each full change | With each full change | Scrub with dilute hydrogen peroxide |
 | Channel/table clean | Between crop cycles | Between crop cycles | NFT: bleach soak; E&F: bleach + LECA rinse |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Quick-Reference Decision Table
 
@@ -443,9 +454,10 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 *Next: [Comparison Guide 02 — Crops: NFT vs Ebb & Flow](02-crops.md) — which system suits which plants, yield comparisons, and crop scheduling differences*
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 

@@ -32,7 +32,7 @@ The worked climate, DLI bands, and shade rule follow [Design Constants](../desig
 - [8. Seasonal Light Strategy](#8-seasonal-light-strategy)
   - [Spring (March–May; SA: September–November) — Establishment](#spring-marchmay-sa-septembernovember-establishment)
   - [Summer (June–August; SA: December–February) — Peak Light and Heat](#summer-juneaugust-sa-decemberfebruary-peak-light-and-heat)
-  - [Autumn (September–October; SA: March–April) — Second Season](#autumn-septemberoctober-sa-marchapril-second-season)
+  - [Fall (September–October; SA: March–April) — Second Season](#fall-septemberoctober-sa-marchapril-second-season)
   - [Winter (November–February; SA: May–August) — Shutdown](#winter-novemberfebruary-sa-mayaugust-shutdown)
 - [9. Supplemental Lighting for Season Extension](#9-supplemental-lighting-for-season-extension)
   - [When It Makes Sense](#when-it-makes-sense)
@@ -43,8 +43,8 @@ The worked climate, DLI bands, and shade rule follow [Design Constants](../desig
   - [Cost-Benefit Summary](#cost-benefit-summary)
 - [10. Microgreens Lighting (Zone B)](#10-microgreens-lighting-zone-b)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Language of Plant Light
 
@@ -72,7 +72,7 @@ block-beta
   space:1
 ```
 
-| Wavelength range | Colour band | Notes |
+| Wavelength range | Color band | Notes |
 |---|---|---|
 | Below 400nm | Ultraviolet | Minor photosynthetic role; can stress plants |
 | 400–700nm | **PAR range** | Photosynthetically active radiation |
@@ -86,7 +86,7 @@ block-beta
 
 PPFD measures the **intensity of PAR light** hitting a surface at a given moment. It tells you how much photosynthetically useful light is arriving per second.
 
-- **Units:** μmol/m²/s (micromoles of photons per square metre per second)
+- **Units:** μmol/m²/s (micromoles of photons per square meter per second)
 - **What it measures:** Instantaneous light intensity at a specific point
 
 ```
@@ -111,7 +111,7 @@ PPFD measures the **intensity of PAR light** hitting a surface at a given moment
 
 DLI is the **total quantity of PAR light delivered over an entire day**. It integrates PPFD over time — how many photons the plant receives across a full day. This is the most practically useful metric for crop planning.
 
-- **Units:** mol/m²/day (moles of photons per square metre per day)
+- **Units:** mol/m²/day (moles of photons per square meter per day)
 - **Why it matters:** You can have high PPFD but few hours of daylight (low DLI), or moderate PPFD across many hours (adequate DLI)
 
 ```
@@ -126,10 +126,11 @@ DLI is the **total quantity of PAR light delivered over an entire day**. It inte
   DLI = 400 × 10 × 0.0036 = 14.4 mol/m²/day → adequate for lettuce
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. DLI Targets by Crop
 
@@ -186,10 +187,11 @@ Day length at about 38°N is roughly 9.5 hours in December and about 14.8 hours 
 
 The month in brackets is a six-month shift so a southern-hemisphere reader can use the same season. It is not a second climate dataset. Summer afternoon highs are 90–100°F (32–38°C). Last spring frost, for planning, is April 15 (SA: October 15). First fall frost is October 20 (SA: April 20).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Minimum Sun Hours Per Crop
 
@@ -208,10 +210,11 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 > **Site selection rule:** The worked build faces **south (SA: north)** and wants unobstructed sky in that direction for at least 8 hours. The site is 13 ft × 10 ft (4.0 m × 3.0 m). Avoid shade from buildings, walls, or large trees between 10am and 4pm. The wind break sits on the north edge (SA: the south edge), about 12 in (30 cm) clear of the frame.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Siting the System: Sun Mapping
 
@@ -252,10 +255,11 @@ If your site is in shadow at 12pm due to a building or tall fence, you either ne
 
 In South Africa, mirror the diagram: the low winter sun is to the north, so the wall you measure is on the north side of a north-facing bed.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Shade Cloth: Percentages, Timing, and Deployment
 
@@ -263,13 +267,13 @@ In South Africa, mirror the diagram: the low winter sun is to the north, so the 
 
 On a sunny July day, PPFD at noon can reach 1,800–2,000 μmol/m²/s. The light saturation point of lettuce is ~400–600 μmol/m²/s. The excess 1,200–1,400 μmol/m²/s is absorbed as heat — raising leaf temperature, accelerating transpiration (water loss), stressing plants, and triggering bolting (premature flowering) in leafy crops.
 
-Shade cloth reduces PPFD to a level that maximises photosynthesis without heat stress.
+Shade cloth reduces PPFD to a level that maximizes photosynthesis without heat stress.
 
 ### Shade Cloth Percentages
 
 | Shade Level | PPFD Reduction | Recommended Use |
 |-------------|---------------|-----------------|
-| 30% | Reduces PPFD by ~30% | Light shade, spring/autumn, mild summers |
+| 30% | Reduces PPFD by ~30% | Light shade, spring/fall, mild summers |
 | 40% | Reduces PPFD by ~40% | Standard summer use — good all-around choice |
 | 50% | Reduces PPFD by ~50% | Hot climates, afternoon shade for greens |
 | 70% | Reduces PPFD by ~70% | Seedlings, sensitive plants — too dark for most crops |
@@ -308,10 +312,11 @@ Install 4 posts at the corners of Zone A, about 4 ft (1.2 m) tall, which is tall
     need the full clear-sky DLI of the shoulder season (25–35)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Heat Stress vs Light Stress: Distinguishing the Two
 
@@ -329,10 +334,11 @@ These can look similar but have different causes and solutions:
 
 **Test:** Check both reservoir temperatures. If either is above **77°F (25°C)**, heat is the primary stressor. Deploy 40% shade if highs are above 85°F (29°C), and keep the black body / white exterior finish in the shade. The aim is 64–72°F (18–22°C).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Photoperiod Sensitivity
 
@@ -342,7 +348,7 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 | Category | What Triggers It | Crops |
 |----------|-----------------|-------|
-| **Short-day plants** | Flower when nights are LONG (late summer/autumn) | Strawberries, some basil varieties, Cannabis |
+| **Short-day plants** | Flower when nights are LONG (late summer/fall) | Strawberries, some basil varieties, Cannabis |
 | **Long-day plants** | Flower when nights are SHORT (summer) | Spinach, lettuce, cilantro, dill |
 | **Day-neutral plants** | Flower regardless of day length | Cherry tomatoes, most peppers, mint, kale |
 
@@ -361,10 +367,11 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 **Tomatoes and peppers:** Day-neutral. They flower from maturity and temperature, on CH4 only, in their own tank. No photoperiod trick is required.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Seasonal Light Strategy
 
@@ -401,7 +408,7 @@ Many plants respond to the **length of the dark period** (night length) rather t
     Do not raise them to a tomato EC
 ```
 
-### Autumn (September–October; SA: March–April) — Second Season
+### Fall (September–October; SA: March–April) — Second Season
 
 ```
   Light: back in the spring/fall band, 25–35 mol/m²/day, with less heat
@@ -427,15 +434,16 @@ Many plants respond to the **length of the dark period** (night length) rather t
     (SA: April 20), not deep winter
   - Do not run outdoor NFT through December–February
     (SA: June–August)
-  - Winterise the frame. See [Guide 10 — Climate Management](10-climate-management.md)
+  - Winterize the frame. See [Guide 10 — Climate Management](10-climate-management.md)
   - Clean and store pumps, nets, and meters
   - Plan the next mid-April start (SA: mid-October)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Supplemental Lighting for Season Extension
 
@@ -549,10 +557,11 @@ Outdoor NFT stops for December–February (SA: June–August). Supplemental ligh
 
 > **Budget:** Supplemental lighting is an optional add-on. Price it in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md) in US dollars with rand in brackets. Get the outdoor two-loop system running through a full mid-April to mid-October season first (SA: mid-October to mid-April).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Microgreens Lighting (Zone B)
 
@@ -584,9 +593,11 @@ Microgreens have different light needs from mature crops:
 ---
 
 
+> **Previous:** [Guide 03 — Water Quality](03-water-quality.md)
+
+
 [↑ Back to TOC](#table-of-contents)
 
-> **Previous:** [Guide 03 — Water Quality](03-water-quality.md)
 > **Next:** [Guide 05 — Growing Media](05-growing-media.md)
 
 <!-- copyright -->

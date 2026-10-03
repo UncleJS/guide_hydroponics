@@ -24,13 +24,16 @@ Numbers match [design-constants.md](../design-constants.md). Worked climate: inl
 
 ---
 
-## Introduction
-
-NFT is the better tool for high-turnover leafy crops and compact herbs. Ebb and Flow opens cucumber, courgette, aubergine, and full-size vine tomatoes. Cherry tomato and pepper can sit on either the NFT **CH4 fruiting tank** or an Ebb and Flow table. Zone B (microgreens) and Zone C (grow bags) are the same in both builds.
-
 [↑ Back to TOC](#table-of-contents)
 
+## Introduction
+
+NFT is the better tool for high-turnover leafy crops and compact herbs. Ebb and Flow opens cucumber, zucchini (courgette), eggplant (aubergine), and full-size vine tomatoes. Cherry tomato and pepper can sit on either the NFT **CH4 fruiting tank** or an Ebb and Flow table. Zone B (microgreens) and Zone C (grow bags) are the same in both builds.
+
+
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Why system design sets the crop list
 
@@ -54,9 +57,10 @@ Ebb and Flow floods **3 times a day** in vegetative growth and **4 times a day**
 
 Leafy crops want steady nitrogen. Continuous NFT flow on the greens loop suits that. Fruiting crops want higher EC and more potassium and calcium later. On NFT that means the CH4 tank. On Ebb and Flow that means raising the shared tank toward the fruiting crop and keeping Table 3 on leafy crops only when the tank is still in a leafy band, or accepting a compromise EC when fruiting starts.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. NFT crop library
 
@@ -82,11 +86,12 @@ Change the fruiting tank every **5–7 days**. Planning yield: **4–6 lb (1.8�
 
 ### Not in the NFT channels
 
-Cucumber, courgette, aubergine, beef/vine tomato that needs a deep bed, potatoes, and all true root vegetables. Carrots, radish, and beetroot go in **Zone C grow bags**, not in channels.
+Cucumber, zucchini (courgette), eggplant (aubergine), beef/vine tomato that needs a deep bed, potatoes, and all true root vegetables. Carrots, radish, and beet (beetroot) go in **Zone C grow bags**, not in channels.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Ebb and Flow crop library
 
@@ -95,7 +100,7 @@ Cucumber, courgette, aubergine, beef/vine tomato that needs a deep bed, potatoes
 | Table | Crop | Plants | Floods |
 |-------|------|--------|--------|
 | Table 1 | Indeterminate tomato **or** cucumber | 1 | 3× veg → 4× fruiting |
-| Table 2 | Pepper, aubergine, or courgette | 1–2 | 3× → 4× |
+| Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette) | 1–2 | 3× → 4× |
 | Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop (strawberries here) | Several | 3× (4× only if fruiting) |
 
 Flood duration **15–30 minutes**. Do not add a fifth flood. In heat above **85°F (29°C)**, keep 4 floods and add **40% shade**.
@@ -108,10 +113,10 @@ Reservoir EC fruiting **2.5–3.5 mS/cm**. Flush LECA if media EC is more than *
 **Cucumber (Table 1)**  
 One plant per table. Reservoir EC about **2.2–2.8 mS/cm**. Train vertically.
 
-**Courgette (Table 2)**  
+**Zucchini (courgette) (Table 2)**  
 One plant. EC about **1.8–2.4 mS/cm**. Canopy spills past the table edge.
 
-**Aubergine (Table 2)**  
+**Eggplant (aubergine) (Table 2)**  
 1–2 plants. Warm nights; EC about **2.0–2.4 mS/cm**.
 
 **Pepper (Table 2 or NFT CH4)**  
@@ -127,9 +132,10 @@ Work, but NFT denser for the same footprint. Keep floods at 3× unless the share
 
 Root vegetables (Zone C bags), potatoes, watercress (needs continuous flow — use NFT if you grow it).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Side-by-side
 
@@ -142,13 +148,14 @@ Root vegetables (Zone C bags), potatoes, watercress (needs continuous flow — u
 | Cherry tomato | CH4 tank | Table 1 | Either |
 | Pepper | CH4 tank | Table 2 | Either |
 | Beef / vine tomato | No | Table 1 | Ebb and Flow |
-| Cucumber, courgette, aubergine | No | Tables 1–2 | Ebb and Flow |
+| Cucumber, zucchini (courgette), eggplant (aubergine) | No | Tables 1–2 | Ebb and Flow |
 | Radish, carrot, beet | Zone C bags | Zone C bags | Zone C (same either system) |
 | Microgreens | Zone B | Zone B | Zone B (same) |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Yield estimates
 
@@ -170,8 +177,8 @@ Planning figures for inland mid-USA, about 38°N, summer clear-sky DLI about **4
 | Cherry tomato | NFT CH4 or Ebb and Flow Table 1 | **4–6 lb (1.8–2.7 kg)** per plant |
 | Pepper | NFT CH4 or Table 2 | 20–40 fruits per plant (variety) |
 | Cucumber | Table 1 | 8–15 fruits |
-| Courgette | Table 2 | 15–30 fruits |
-| Aubergine | Table 2 | 6–10 fruits |
+| Zucchini (courgette) | Table 2 | 15–30 fruits |
+| Eggplant (aubergine) | Table 2 | 6–10 fruits |
 
 ### Zone B and Zone C (identical in both builds)
 
@@ -180,9 +187,10 @@ Planning figures for inland mid-USA, about 38°N, summer clear-sky DLI about **4
 | Zone B microgreens | Many 7–14 day trays; pH 5.8–6.2 water only (sunflower and pea may use EC 0.4–0.8) |
 | Zone C | Radish **15 lb (6.8 kg)**, beet **8 lb (3.6 kg)**, carrot **20 lb (9.1 kg)** — bags two 5 US gal radish, one 5 US gal beet, three 10 US gal carrot |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Succession planning
 
@@ -207,8 +215,8 @@ Zone B trays run whenever frost is not on the shelf. Zone C bags follow the same
 | Month | Table 1 | Table 2 | Table 3 |
 |-------|---------|---------|---------|
 | January–February | Off / indoor seed | Off / indoor seed | Off |
-| March | Indoor tomato or cucumber | Indoor pepper / aubergine | Indoor leafy starts |
-| Late April | Transplant fruiting vine | Transplant pepper / courgette | Lettuce / herbs / strawberry |
+| March | Indoor tomato or cucumber | Indoor pepper / eggplant (aubergine) | Indoor leafy starts |
+| Late April | Transplant fruiting vine | Transplant pepper / zucchini (courgette) | Lettuce / herbs / strawberry |
 | May–August | Fruiting, 4 floods, 40% shade in heat | Fruiting, 4 floods | Leafy at 3 floods, or a late fruiting crop |
 | September–October | Late fruit, then clear | Late fruit, then clear | Cool leafy |
 | November–December | Clean LECA, store | Clean | Clean |
@@ -217,12 +225,13 @@ Zone B trays run whenever frost is not on the shelf. Zone C bags follow the same
 
 - NFT greens loop: all leafy and herbs, year-round density in season  
 - NFT CH4 or Ebb and Flow Tables 1–2: cherry tomato and pepper  
-- Ebb and Flow only: cucumber, courgette, aubergine  
+- Ebb and Flow only: cucumber, zucchini (courgette), eggplant (aubergine)  
 - Zone B and Zone C: always the shared designs  
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Spacing
 
@@ -240,15 +249,16 @@ Zone B trays run whenever frost is not on the shelf. Zone C bags follow the same
 | Crop | Plants | Notes |
 |------|--------|-------|
 | Tomato or cucumber | 1 | Table 1 |
-| Pepper, aubergine, courgette | 1–2 | Table 2 |
+| Pepper, eggplant (aubergine), zucchini (courgette) | 1–2 | Table 2 |
 | Lettuce / herbs | 6–8 leafy or a herb mix | Table 3 |
 | Strawberry | several | Table 3; crowns above flood |
 
 LECA depth stays **5 in (13 cm)** for every table. Do not thin the bed to 1–1½ in for Mediterranean herbs; lengthen the dry interval instead (stay at 3 floods, not 5).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Transplanting
 
@@ -270,9 +280,10 @@ LECA depth stays **5 in (13 cm)** for every table. Do not thin the bed to 1–1�
 
 Moving established plants between NFT and Ebb and Flow is a last resort. Expect a 3–7 day stall.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Problem hotspots
 
@@ -287,16 +298,17 @@ Moving established plants between NFT and Ebb and Flow is a last resort. Expect 
 | Pepper | Either | Slow set | Night temps; fruiting EC 2.0–3.0 |
 | Mint | NFT | Roots blocking CH3 | Large net pot; inspect return monthly |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Decision guide
 
 ```mermaid
 flowchart TD
   want["What do you want to grow?"] --> fruit{"Fruiting crop?"}
-  fruit -->|Cucumber courgette aubergine| efOnly["Ebb and Flow Tables 1 to 2"]
+  fruit -->|Cucumber zucchini (courgette) eggplant (aubergine)| efOnly["Ebb and Flow Tables 1 to 2"]
   fruit -->|Tomato or pepper| eitherFruit["Ebb and Flow table or NFT CH4 tank"]
   fruit -->|No| leafy{"Highest leafy density?"}
   leafy -->|Yes| nftGreens["NFT CH1 to CH3"]
@@ -310,21 +322,22 @@ flowchart TD
   fix --> go
 ```
 
-1. **Cucumber, courgette, aubergine** → Ebb and Flow only.  
+1. **Cucumber, zucchini (courgette), eggplant (aubergine)** → Ebb and Flow only.  
 2. **Tomato and pepper** → Ebb and Flow table, or NFT CH4 (10 US gal / 38 L). Never the greens tank.  
 3. **Lettuce, spinach, herbs** → NFT CH1–CH3 for density.  
 4. **Strawberry** → NFT CH3 or Ebb and Flow Table 3. Not CH4.  
 5. **Radish, carrot, beet** → Zone C bags (same both systems).  
 6. **Microgreens** → Zone B (same both systems).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 > **Previous:** [Comparison Guide 01 — Nutrients](01-nutrients.md)
-> **Next:** [Comparison Guide 03 — Automation](03-automation.md)
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Comparison Guide 03 — Automation](03-automation.md)
+
 
 ---
 

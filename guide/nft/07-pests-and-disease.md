@@ -23,7 +23,7 @@
 - [4. Common Diseases](#4-common-diseases)
   - [PYTHIUM ROOT ROT](#pythium-root-rot)
   - [POWDERY MILDEW](#powdery-mildew)
-  - [BOTRYTIS (GREY MOULD)](#botrytis-grey-mould)
+  - [BOTRYTIS (GRAY MOLD)](#botrytis-gray-mold)
   - [FUSARIUM WILT](#fusarium-wilt)
   - [DOWNY MILDEW](#downy-mildew)
   - [DAMPING OFF](#damping-off)
@@ -31,10 +31,10 @@
 - [6. Beneficial Insects: Attracting and Using Them](#6-beneficial-insects-attracting-and-using-them)
   - [Naturally Occurring Beneficials (Attract to Your Garden)](#naturally-occurring-beneficials-attract-to-your-garden)
   - [Purchased Biological Controls](#purchased-biological-controls)
-- [7. Sterilisation Protocol After Disease Outbreak](#7-sterilisation-protocol-after-disease-outbreak)
+- [7. Sterilization Protocol After Disease Outbreak](#7-sterilization-protocol-after-disease-outbreak)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. The Outdoor NFT Vulnerability Profile
 
@@ -53,14 +53,15 @@ Growing outdoors exposes your system to the full range of garden pests and disea
 
 **The recirculating water system risk:** This NFT build has two loops that never share solution. CH1–CH3 share the 20 US gal (76 L) greens reservoir. CH4 has its own 10 US gal (38 L) fruiting reservoir and its own pump, and it is not teed into the greens manifold. A pathogen that enters one tank can reach every plant on that loop within hours. It does not automatically enter the other loop, unless tools, hands, or splash carry it across. **Early identification and immediate action on the affected loop is critical.**
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 2. Integrated Pest Management (IPM) Framework
 
-IPM is a systematic, evidence-based approach to pest management that prioritises prevention, monitoring, and targeted intervention — minimising chemical use while maximising effectiveness.
+IPM is a systematic, evidence-based approach to pest management that prioritizes prevention, monitoring, and targeted intervention — minimizing chemical use while maximizing effectiveness.
 
 ```mermaid
 flowchart TD
@@ -86,10 +87,11 @@ flowchart TD
   [ ] Smell the reservoir water (musty = algae or bacteria)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Common Pests
 
@@ -98,14 +100,14 @@ flowchart TD
 ### APHIDS
 
 **Identification:**
-- Tiny (1–3mm) soft-bodied insects — green, black, white, or pink depending on species
+- Tiny (1/25–1/8 in / 1–3 mm) soft-bodied insects — green, black, white, or pink depending on species
 - Found in clusters on growing tips, undersides of leaves, and stems
 - Leaves may curl, yellow, or become sticky (from aphid honeydew excretion)
-- Sticky black "sooty mould" may develop on honeydew residue
+- Sticky black "sooty mold" may develop on honeydew residue
 
 ```mermaid
 flowchart LR
-    A["● ● ● ● ●<br/>cluster of aphids<br/>~1–2mm actual size"]
+    A["● ● ● ● ●<br/>cluster of aphids<br/>~1/25–1/16 in (1–2 mm) actual size"]
     B["pear-shaped body<br/>two cornicles (tail tubes) on back<br/>six legs · soft body · easily squished"]
     A --> B
 ```
@@ -114,7 +116,7 @@ flowchart LR
 
 **Damage:**
 - Suck plant sap — weakens growth
-- Excrete honeydew — attracts sooty mould, attracts ants (who farm aphids)
+- Excrete honeydew — attracts sooty mold, attracts ants (who farm aphids)
 - Can transmit plant viruses
 
 **Treatment escalation:**
@@ -157,13 +159,13 @@ flowchart LR
 ### FUNGUS GNATS (Bradysia spp.)
 
 **Identification:**
-- Tiny black flies (2–3mm) flying around media and soil
-- Larvae (white, 5mm, black head) live in moist media and damage roots
+- Tiny black flies 1/16–1/8 in (2–3 mm) flying around media and soil
+- Larvae (white, 3/16 in / 5 mm, black head) live in moist media and damage roots
 - Plants may show unexplained wilting and yellowing despite good nutrient solution
 
 **Damage:**
 - Larvae chew through roots — creates entry points for root pathogens
-- In NFT the channel itself is not vulnerable (no media) but net pot clay pebbles and rockwool cubes can harbour larvae in the moist media zone
+- In NFT the channel itself is not vulnerable (no media) but net pot clay pebbles and rockwool cubes can harbor larvae in the moist media zone
 
 **Treatment:**
 ```
@@ -186,7 +188,7 @@ flowchart LR
 
   Level 4 — Beneficial nematodes (Steinernema feltiae):
   ● Microscopic worms applied as soil/media drench
-  ● Actively seek and parasitise fungus gnat larvae
+  ● Actively seek and parasitize fungus gnat larvae
   ● Available from biological control suppliers — apply to moist media
   ● Requires consistent moisture to stay viable
 
@@ -201,7 +203,7 @@ flowchart LR
 ### SPIDER MITES (Tetranychus urticae)
 
 **Identification:**
-- Tiny (0.5mm) eight-legged mites — not insects
+- Tiny (1/50 in / 0.5 mm) eight-legged mites — not insects
 - Found on undersides of leaves — look for fine webbing and tiny moving dots
 - Leaves develop stippled/bronze appearance (thousands of feeding puncture marks)
 - In severe infestations, leaves look bleached and papery
@@ -240,11 +242,11 @@ flowchart LR
 ### WHITEFLIES
 
 **Identification:**
-- Tiny (1–2mm) white-winged insects that fly up in a cloud when disturbed
+- Tiny (1/25–1/16 in / 1–2 mm) white-winged insects that fly up in a cloud when disturbed
 - Eggs and nymphs on leaf undersides (look like tiny white ovals/scales)
-- Honeydew excretion (sticky residue), sooty mould
+- Honeydew excretion (sticky residue), sooty mold
 
-**Damage:** Sap-sucking; weakens plants; transmits viruses; sooty mould reduces photosynthesis.
+**Damage:** Sap-sucking; weakens plants; transmits viruses; sooty mold reduces photosynthesis.
 
 **Treatment:**
 ```
@@ -260,7 +262,7 @@ flowchart LR
   ● Can also use silver-painted timber around the zone base
 
   Level 4 — Encarsia formosa (parasitic wasp):
-  ● Parasitises whitefly nymphs — one of the most effective biocontrols
+  ● Parasitizes whitefly nymphs — one of the most effective biocontrols
   ● Available from biological suppliers — release when first adults spotted
 
   Level 5 — Pyrethrin:
@@ -297,7 +299,7 @@ flowchart LR
   Level 4 — Iron phosphate bait (Ferroxx, Sluggo):
   ● Safe for use around pets, wildlife, and edible crops
   ● Pellets are consumed by slugs/snails — they stop feeding and die
-  ● Iron phosphate breaks down into fertiliser in the soil — ecologically benign
+  ● Iron phosphate breaks down into fertilizer in the soil — ecologically benign
   ● Do NOT use metaldehyde slug pellets — toxic to hedgehogs, birds, and pets
 
   Level 5 — Beer trap:
@@ -324,7 +326,7 @@ flowchart LR
   ● Pick caterpillars by hand and relocate away from system or destroy
 
   Level 2 — Fine netting / row cover:
-  ● 0.5mm or finer mesh netting draped over channels prevents butterflies
+  ● 1/50 in (0.5 mm) or finer mesh netting draped over channels prevents butterflies
     from laying eggs on plants
   ● Ensures 100% prevention if deployed consistently
 
@@ -341,7 +343,7 @@ flowchart LR
 ### THRIPS
 
 **Identification:**
-- 1–2mm slender, yellow/brown/black insects
+- 1/25–1/16 in (1–2 mm) slender, yellow/brown/black insects
 - Silvery streaks and stippling on leaves (feeding damage)
 - Tiny dark droppings visible on damaged leaves
 - Distorted young leaves (damage during bud stage)
@@ -354,10 +356,11 @@ flowchart LR
   PHI for spinosad: 1–3 days
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 4. Common Diseases
 
@@ -368,18 +371,18 @@ flowchart LR
 **The #1 hydroponic disease threat.**
 
 **Identification:**
-- Roots turn brown/grey, slimy, and produce a foul smell
+- Roots turn brown/gray, slimy, and produce a foul smell
 - Healthy roots: white, firm, slightly fuzzy
 - Pythium-infected roots: brown, mushy, may fall apart when touched
 - Plant symptoms: yellowing, wilting, stunted growth despite good solution
 
 ```mermaid
 flowchart LR
-    H["HEALTHY ROOTS<br/>Colour: White<br/>Texture: Firm, fine white hairs<br/>Smell: Neutral"]
-    P["PYTHIUM-INFECTED ROOTS<br/>Colour: Brown / grey<br/>Texture: Slimy, mushy, falls apart<br/>Smell: Foul — sewer / rotten odour in reservoir"]
+    H["HEALTHY ROOTS<br/>Color: White<br/>Texture: Firm, fine white hairs<br/>Smell: Neutral"]
+    P["PYTHIUM-INFECTED ROOTS<br/>Color: Brown / gray<br/>Texture: Slimy, mushy, falls apart<br/>Smell: Foul — sewer / rotten odour in reservoir"]
 ```
 
-**Cause:** Pythium is an oomycete (water mould) that thrives in:
+**Cause:** Pythium is an oomycete (water mold) that thrives in:
 - Solution temperatures above 77°F (25°C)
 - Low dissolved oxygen in solution
 - High organic matter in the reservoir
@@ -411,11 +414,11 @@ flowchart LR
 
   If Pythium is severe:
   10. Remove ALL plants from the affected loop and hand-water them
-  11. Full sterilisation of that loop (see [Guide 08 — System Maintenance](08-system-maintenance.md))
+  11. Full sterilization of that loop (see [Guide 08 — System Maintenance](08-system-maintenance.md))
   12. Restart with fresh solution
 
   Preventive ongoing measure: Hydroguard (Bacillus amyloliquefaciens) added to
-  the reservoir you just cleaned — beneficial bacteria colonise roots and
+  the reservoir you just cleaned — beneficial bacteria colonize roots and
   outcompete Pythium.
   Dose: 0.26 US fl oz/US gal (2 mL/L), add at each fill of that reservoir.
 ```
@@ -427,7 +430,7 @@ flowchart LR
 ### POWDERY MILDEW
 
 **Identification:**
-- White/grey powdery coating on upper leaf surfaces
+- White/gray powdery coating on upper leaf surfaces
 - Starts as small patches, spreads to cover leaves
 - Affected leaves eventually yellow and die
 - Distinct from downy mildew (which appears on UNDERSIDES)
@@ -457,20 +460,20 @@ flowchart LR
   ● As per insect treatment — also anti-fungal properties
   ● Apply to all surfaces every 5–7 days
 
-  Level 5 — Sulphur-based fungicide:
+  Level 5 — Sulfur-based fungicide:
   ● Most effective for severe infections
   ● PHI: 1–14 days depending on product — check label
-  ● Do NOT use sulphur on plants when air temperature is above 90°F (32°C) — it can burn leaves
+  ● Do NOT use sulfur on plants when air temperature is above 90°F (32°C) — it can burn leaves
 ```
 
 **Prevention:** Space plants well, ensure good airflow, avoid overhead watering. Grow resistant varieties where available.
 
 ---
 
-### BOTRYTIS (GREY MOULD)
+### BOTRYTIS (GRAY MOLD)
 
 **Identification:**
-- Grey-brown fuzzy mould on leaves, stems, and fruit
+- Gray-brown fuzzy mold on leaves, stems, and fruit
 - Most often on strawberries, which sit in 3–4 sites on CH3 in this build, and on tomatoes on CH4
 - Affected tissue becomes water-soaked then collapses
 - Spores are spread by air movement and water splashing
@@ -499,7 +502,7 @@ flowchart LR
 
 **Identification:**
 - Wilting of one side or part of a plant despite adequate water
-- Brown discolouration of stem tissue when cut — brown ring inside stem
+- Brown discoloration of stem tissue when cut — brown ring inside stem
 - Eventually kills the plant
 - Cannot be treated — prevention only
 
@@ -508,9 +511,9 @@ flowchart LR
 **Management:**
 ```
   1. Remove infected plant IMMEDIATELY — no treatment is effective
-  2. Drain and sterilise the affected loop (see [Guide 08 — System Maintenance](08-system-maintenance.md)). Do not pour the CH4 tank into the greens tank, or the reverse.
+  2. Drain and sterilize the affected loop (see [Guide 08 — System Maintenance](08-system-maintenance.md)). Do not pour the CH4 tank into the greens tank, or the reverse.
   3. Change nutrient solution
-  4. Inspect and sterilise net pots and clay pebbles from adjacent sites
+  4. Inspect and sterilize net pots and clay pebbles from adjacent sites
   5. Monitor remaining plants closely for 2 weeks
 
   Prevention:
@@ -518,7 +521,7 @@ flowchart LR
   - Never reuse media from a plant that died unexpectedly
   - Maintain good reservoir hygiene
   - Some varieties have Fusarium resistance (look for "F" in variety code,
-    e.g. tomatoes labelled "VFN" = Verticillium, Fusarium, Nematode resistant)
+    e.g. tomatoes labeled "VFN" = Verticillium, Fusarium, Nematode resistant)
 ```
 
 ---
@@ -527,7 +530,7 @@ flowchart LR
 
 **Identification:**
 - Yellow patches on upper leaf surface
-- Grey-purple downy growth on UNDERSIDES of leaves (key distinction from powdery mildew)
+- Gray-purple downy growth on UNDERSIDES of leaves (key distinction from powdery mildew)
 - Leaves eventually turn brown and die
 
 **Affected crops:** Lettuce, basil, brassicas, strawberries
@@ -561,10 +564,11 @@ flowchart LR
   6. If using rockwool: ensure it was fully pH-conditioned (alkaline pH promotes damping off)
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Pesticide Pre-Harvest Interval (PHI) Reference
 
@@ -579,16 +583,17 @@ PHI is the number of days that must pass between the last application and harves
 | Spinosad | 1–3 days | Check product label |
 | Copper fungicide | 1–14 days | Highly variable by product |
 | Potassium bicarbonate | 0 days | Safe to harvest same day |
-| Sulphur fungicide | 1–14 days | Check product label |
+| Sulfur fungicide | 1–14 days | Check product label |
 | Synthetic pyrethroids | 1–7 days | Check product label |
 | Systemic insecticides | 7–21+ days | Do NOT use on edible crops without extensive research |
 
 > **Rule:** When in doubt, do not spray within 3 days of harvest. Wash all produce thoroughly. For anything systemic or unknown, err on the side of caution or discard the plant.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Beneficial Insects: Attracting and Using Them
 
@@ -617,24 +622,25 @@ Available from specialist suppliers (Koppert, Neudorff, BioBest):
 | Steinernema feltiae | Fungus gnats, thrips larvae | Drench media with water suspension |
 | Bacillus amyloliquefaciens | Root pathogens (Pythium) | Add to reservoir (Hydroguard) |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
-## 7. Sterilisation Protocol After Disease Outbreak
+[↑ Back to TOC](#table-of-contents)
 
-When a significant pest outbreak or disease (especially Pythium, Fusarium, or severe mould) is detected:
+## 7. Sterilization Protocol After Disease Outbreak
+
+When a significant pest outbreak or disease (especially Pythium, Fusarium, or severe mold) is detected:
 
 ```
-  FULL SYSTEM STERILISATION PROCEDURE:
+  FULL SYSTEM STERILIZATION PROCEDURE:
 
   PPE: gloves, eye protection, and work clothes before you mix bleach.
   Work outdoors or with airflow. Keep bleach away from children and pets.
 
   1. Remove all plants from the infected loop. Hand-water them on a tray.
      NFT roots dry in 15–30 minutes in warm weather. Do not leave plants in a
-     stopped channel during a bleach soak. Sterilise one loop at a time so the
+     stopped channel during a bleach soak. Sterilize one loop at a time so the
      other loop can keep flowing.
   2. Photograph the issue for future reference/diagnosis
   3. Dispose of infected plant material in a sealed bag — not compost, not open air
@@ -645,7 +651,7 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
   7. Flush empty channels with 10% bleach — leave 15 minutes, then flush with clean water × 3.
      Do not send bleach through a channel that still holds plants.
   8. Rinse all components thoroughly (triple rinse minimum)
-  9. Air dry all components in sunlight (UV assists sterilisation)
+  9. Air dry all components in sunlight (UV assists sterilization)
   10. Re-pH condition clay pebbles (see [Guide 05 — Growing Media](05-growing-media.md))
   11. Use fresh rockwool cubes for replanting (do not reuse)
   12. Refill that reservoir with fresh nutrient solution. Greens EC 0.8–1.8 mS/cm.
@@ -660,11 +666,13 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 ---
 
 
-[↑ Back to TOC](#table-of-contents)
-
 ---
 
 > **Previous:** [Guide 06 — Crops](06-crops.md)
+
+
+[↑ Back to TOC](#table-of-contents)
+
 > **Next:** [Guide 08 — System Maintenance](08-system-maintenance.md)
 
 <!-- copyright -->

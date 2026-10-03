@@ -12,6 +12,8 @@
 - [1. Build Tier Overview](#1-build-tier-overview)
 - [2. Zone A — Flood Table System BOM](#2-zone-a-flood-table-system-bom)
   - [2.1 Flood Tables](#21-flood-tables)
+    - [2.1A — Bought Ready-Made Flood Tables (Option A)](#21a-bought-ready-made-flood-tables-option-a)
+    - [2.1B — DIY Timber + Pond Liner Tables (Option B)](#21b-diy-timber-pond-liner-tables-option-b)
   - [2.2 Bulkhead Fittings and Overflow System](#22-bulkhead-fittings-and-overflow-system)
   - [2.3 Reservoir](#23-reservoir)
   - [2.4 Pump and Aeration](#24-pump-and-aeration)
@@ -35,7 +37,7 @@
   - [7.2 Online — General](#72-online-general)
   - [7.3 Online — Hydroponics Specialist](#73-online-hydroponics-specialist)
   - [7.4 Local — Hardware and DIY Stores](#74-local-hardware-and-diy-stores)
-  - [7.5 Local — Garden Centres and Pond Suppliers](#75-local-garden-centres-and-pond-suppliers)
+  - [7.5 Local — Garden Centers and Pond Suppliers](#75-local-garden-centers-and-pond-suppliers)
   - [7.6 Buying Used and Secondhand](#76-buying-used-and-secondhand)
   - [7.7 Nutrients — Sourcing the Masterblend Trio](#77-nutrients-sourcing-the-masterblend-trio)
 - [8. Cost-Saving Strategies](#8-cost-saving-strategies)
@@ -53,6 +55,10 @@
   - [9.5 Full Annual Running Cost Summary](#95-full-annual-running-cost-summary)
 - [10. Yield Estimates and ROI](#10-yield-estimates-and-roi)
   - [10.1 Zone A — E&F Flood Table Expected Yields](#101-zone-a-ef-flood-table-expected-yields)
+    - [Table 3 — leafy greens and herbs](#table-3-leafy-greens-and-herbs)
+    - [Table 1 — one vine](#table-1-one-vine)
+    - [Table 2 — one or two fruiting plants](#table-2-one-or-two-fruiting-plants)
+    - [Zone A yield summary](#zone-a-yield-summary)
   - [10.2 Zone B — Microgreens Yield](#102-zone-b-microgreens-yield)
   - [10.3 Zone C — Root Veg Yield](#103-zone-c-root-veg-yield)
   - [10.4 Total Annual Yield Value](#104-total-annual-yield-value)
@@ -64,8 +70,8 @@
   - [11.5 Non-Financial Value](#115-non-financial-value)
 - [Quick Reference — Budget at a Glance](#quick-reference-budget-at-a-glance)
 
----
 
+[↑ Back to TOC](#table-of-contents)
 
 ## 1. Build Tier Overview
 
@@ -98,10 +104,11 @@ PREMIUM — $1,259 Zone A (R22,662), $1,624 for all three zones (R29,232)
 
 > **What actually moves the price:** 90 US gal (340 L) of LECA, then the three 4 ft × 2 ft tables, then the 45 US gal (170 L) reservoir and the 250 US gph (950 L/h) pump at about 35 W. Each table takes a 1½ in (40 mm) overflow and a 1 in (25 mm) drain. The digital timer is in the budget tier already. A stuck-ON pump rots roots in 2–4 hours, so the timer is not the place to save money.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 2. Zone A — Flood Table System BOM
 
@@ -124,8 +131,8 @@ The flood tables are the largest variable cost item in the E&F system. You can b
 |---|---|---|---|
 | **Timber (6 in × 1 in / 150 mm × 25 mm PAR sides, per table × 3)** | $21 — basic pine | $30 — exterior treated | $45 — smooth hardwood |
 | **Timber (2 in × 2 in / 50 mm × 50 mm base ribs, per table × 3)** | $9 | $12 | $15 |
-| **Plywood base 9mm exterior (per table × 3)** | $24 — basic ply | $33 — good exterior ply | $42 — marine ply |
-| **EPDM pond liner 5.6 ft × 3.6 ft (1.7 m × 1.1 m, per table × 3)** | $30 — PVC liner, thinner grade | $54 — EPDM 0.75mm (3 pieces) | $72 — EPDM 1.0mm, premium |
+| **Plywood base ⅜ in (9 mm) exterior (per table × 3)** | $24 — basic ply | $33 — good exterior ply | $42 — marine ply |
+| **EPDM pond liner 5.6 ft × 3.6 ft (1.7 m × 1.1 m, per table × 3)** | $30 — PVC liner, thinner grade | $54 — EPDM 1/32 in (0.75 mm) (3 pieces) | $72 — EPDM 0.04 in (1.0 mm), premium |
 | **Pond liner tape (2 rolls)** | $12 | $16 | $20 |
 | **Screws + wood glue** | $7 | $8 | $10 |
 | **Water-based timber preservative** | $6 | $10 | $14 |
@@ -242,7 +249,7 @@ LECA is the largest line in the build. Each 4 ft × 2 ft table, 5 in (13 cm) dee
 | **Horticultural fleece 0.5 oz/yd² / 17 g/m² (13 ft × 6.5 ft / 4 m × 2 m)** | $8 | $10 | $13 |
 | **Fleece/shade cloth pegs or clips (bag of 20)** | $3 | $4 | $5 |
 | **Freeze water bottles (DIY — free)** | $0 | $0 | $0 |
-| **Aquarium heater 50W (winter)** | $0 — skip (winterise system) | $0 | $20 |
+| **Aquarium heater 50W (winter)** | $0 — skip (winterize system) | $0 | $20 |
 | **Climate subtotal** | **$23** | **$30** | **$60** |
 
 ---
@@ -267,10 +274,11 @@ Using Option A (bought tables) at all tiers:
 
 > **Note:** LECA, at 90 US gal (340 L), is the dominant line. One table first is **25 US gal (95 L)** of LECA (the full 5 in / 13 cm bed) plus one tray, one 1½ in overflow, and one 1 in drain. That is a start, not the system in the total above.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 3. Zone B — Microgreens Station BOM
 
@@ -290,14 +298,15 @@ This zone is identical to the NFT system Zone B — the microgreens station has 
 | **Microgreens seeds assortment (100g each × 3 varieties)** | $12 | $18 | $25 |
 | **Zone B total** | **$89 (R1,602)** | **$140 (R2,520)** | **$203 (R3,654)** |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
 
+[↑ Back to TOC](#table-of-contents)
+
 ## 4. Zone C — Root Veg Grow Bags BOM
 
-Same bags in either guide set. Two 5 US gal (19 L) bags for radish, one 5 US gal (19 L) bag for beetroot, three 10 US gal (38 L) bags for carrot. Media by volume is 60% coco, 30% perlite, 10% vermiculite. No garden soil. Fertigation stays at or below 2.0 mS/cm. Beetroot does not get a higher target.
+Same bags in either guide set. Two 5 US gal (19 L) bags for radish, one 5 US gal (19 L) bag for beet (beetroot), three 10 US gal (38 L) bags for carrot. Media by volume is 60% coco, 30% perlite, 10% vermiculite. No garden soil. Fertigation stays at or below 2.0 mS/cm. Beet (beetroot) does not get a higher target.
 
 | Item | Budget | Mid | Premium |
 |---|---|---|---|
@@ -306,15 +315,16 @@ Same bags in either guide set. Two 5 US gal (19 L) bags for radish, one 5 US gal
 | **Coco coir, about 60% of the bag volume** | $22 | $28 | $36 |
 | **Perlite, about 30%** | $16 | $20 | $24 |
 | **Vermiculite, about 10%** | $10 | $12 | $16 |
-| **Fertiliser for fertigation at or below 2.0 mS/cm** | $8 | $12 | $15 |
+| **Fertilizer for fertigation at or below 2.0 mS/cm** | $8 | $12 | $15 |
 | **Drip saucers (6×)** | $6 | $9 | $13 |
 | **Radish, beet, and carrot seed** | $8 | $12 | $18 |
 | **Zone C total** | **$94 (R1,692)** | **$123 (R2,214)** | **$162 (R2,916)** |
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 5. Consumables and Ongoing Supplies
 
@@ -342,10 +352,11 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 > **E&F consumable note:** LECA is reusable indefinitely with proper cleaning (bleach soak, triple rinse, sun dry). Unlike rockwool in NFT channels, LECA in E&F tables does not compact or degrade significantly. The ~$5–$10 annual top-up is for replacement of pebbles that crack or are lost during cleaning — not a full replacement. This makes the E&F growing media cost lower over time than NFT rockwool cubes despite the higher initial LECA investment.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 6. Tier Totals Summary
 
@@ -400,13 +411,14 @@ PREMIUM — $1,259 Zone A (R22,662):
   ✓ Digital timer, plus a spare digital timer
   ✓ 90 US gal of premium LECA
   ✓ Combo pH/EC meter
-  ✓ Room to add the Guide 13 drain-float cutoff
+  ✓ Guide 13 stuck-ON cutoff already assumed (smart-plug cut and/or float+relay) — required safety, not a Premium add-on
 ```
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 7. Where to Buy
 
@@ -418,8 +430,8 @@ The following items are specific to E&F and less commonly stocked at general har
 |---|---|---|
 | **Flood trays, 4 ft × 2 ft (1.22 m × 0.61 m)** | Hydroponics specialist; Amazon | Internal depth has to clear 5 in (13 cm) of LECA plus about 1 in (2.5 cm) of wall |
 | **1½ in (40 mm) overflow and 1 in (25 mm) drain bulkheads** | Hydroponics or irrigation supplier | Buy both sizes. A box of identical 1 in fittings does not include the overflow |
-| **Pond liner (EPDM)** | Garden centre; pond supply specialist; online | Specify EPDM (rubber, flexible, fish-safe). PVC liners are cheaper but stiffer and less durable. Buy slightly larger than calculated — cutting down is easy, piecing short is hard. |
-| **LECA, enough to make 90 US gal (340 L)** | Hydroponics specialist; Amazon; garden centre | Bags are often sold as 50 L (about 13 US gal). Seven of those cover 90 US gal with a little spare. Avoid no-name dust |
+| **Pond liner (EPDM)** | Garden center; pond supply specialist; online | Specify EPDM (rubber, flexible, fish-safe). PVC liners are cheaper but stiffer and less durable. Buy slightly larger than calculated — cutting down is easy, piecing short is hard. |
+| **LECA, enough to make 90 US gal (340 L)** | Hydroponics specialist; Amazon; garden center | Bags are often sold as about 13 US gal (50 L). Seven of those cover 90 US gal with a little spare. Avoid no-name dust |
 | **Digital timer with battery backup** | Amazon; hardware store; hydroponics specialist | Look specifically for "battery backup" or "battery reserve" in the product description. Not all digital timers retain settings after a power cut — this is the most important timer spec for E&F. |
 | **1½ in (40 mm) overflow standpipes** | Cut from 1½ in PVC, or buy adjustable standpipes | Cut to 4¼ in (11 cm) so the lip sits about ¾ in (2 cm) below a 5 in LECA bed. A 3 ft (0.9 m) stick is enough for three standpipes and a spare, about $3 (R54) |
 
@@ -459,7 +471,7 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
   Stores: Home Depot or Lowe's. In South Africa, the builders' merchant that stocks PVC and pond liner.
 ```
 
-### 7.5 Local — Garden Centres and Pond Suppliers
+### 7.5 Local — Garden Centers and Pond Suppliers
 
 | Item | Why source locally | Notes |
 |---|---|---|
@@ -468,7 +480,7 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
 | Shade cloth | Often on the shelf in summer | This system uses 40% |
 | Horticultural fleece | Seasonally available | 17 g/m² standard; 30 g/m² for frost protection |
 | Epsom Salt | Cheaper than hydro shops as "garden Epsom" | Same compound; available in bulk bags |
-| Slow-release fertiliser | Branded options in stock | Osmocote widely available |
+| Slow-release fertilizer | Branded options in stock | Osmocote widely available |
 
 ### 7.6 Buying Used and Secondhand
 
@@ -487,22 +499,23 @@ WHAT TO BUY LOCALLY (hardware / DIY store)
 |---|---|---|
 | **MasterBlend directly** | USA (ships internationally) | 2.27 kg bags ($28–$40 USD) last 1–2 seasons for small system |
 | **Amazon** | Global | Small 500g or 1 kg bags suitable for trials |
-| **Farm or hydro shop** | USA, and the SA equivalent | Calcium nitrate as a straight fertiliser. Masterblend from the hydro shop or by mail |
-| **Local pool/chemical supply** | Regional | Calcium Nitrate available as bulk fertiliser chemical |
+| **Farm or hydro shop** | USA, and the SA equivalent | Calcium nitrate as a straight fertilizer. Masterblend from the hydro shop or by mail |
+| **Local pool/chemical supply** | Regional | Calcium Nitrate available as bulk fertilizer chemical |
 | **Brewing supply shops** | Local/online | Epsom Salt in bulk (1–5 kg), food/pharma grade |
 
 **Cheapest route:** Masterblend by mail or from a hydro shop, calcium nitrate from a farm supplier, Epsom salt as food-grade magnesium sulfate from a grocery or pharmacy. The vegetative dose is 2.4 g + 2.4 g + 1.2 g per US gallon (0.63 / 0.63 / 0.32 g/L).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 8. Cost-Saving Strategies
 
 ### 8.1 DIY Flood Tables vs. Bought — The Real Trade-Off
 
-At Tier 1, DIY timber + pond liner tables cost $109 for all three tables versus $75 for three economy bought trays. Wait — bought trays are cheaper at Tier 1? Yes, in this case. The same holds at Tier 2: DIY at quality materials costs $163 vs. $150 for mid-range bought trays — roughly equivalent. The DIY advantage only appears at Tier 3, where DIY with marine ply and 1.0mm EPDM costs $218 versus $300 for commercial-grade trays.
+At Tier 1, DIY timber + pond liner tables cost $109 for all three tables versus $75 for three economy bought trays. Wait — bought trays are cheaper at Tier 1? Yes, in this case. The same holds at Tier 2: DIY at quality materials costs $163 vs. $150 for mid-range bought trays — roughly equivalent. The DIY advantage only appears at Tier 3, where DIY with marine ply and 0.04 in (1.0 mm) EPDM costs $218 versus $300 for commercial-grade trays.
 
 ```
 WHEN DIY TABLES WIN:
@@ -548,10 +561,10 @@ Cleaning:
    This kills any pathogens, including Pythium, Fusarium, and bacteria.
 6. Drain bleach solution.
 7. Rinse thoroughly × 3 with clean water (no bleach smell remaining).
-8. Soak in pH-adjusted water (pH 5.5–6.0) for 12–24h to neutralise
+8. Soak in pH-adjusted water (pH 5.5–6.0) for 12–24h to neutralize
    any residual alkalinity from dried nutrient salts on LECA surface.
 9. Drain and spread LECA on a clean surface in direct sun.
-   UV exposure is an additional sterilisation step.
+   UV exposure is an additional sterilization step.
 10. Store dry in sealed bags until next season.
 
 Cost of this procedure: ~$0.50 (bleach) per full cycle
@@ -580,10 +593,11 @@ Adjustable 1½ in standpipes from a hydro shop cost about $8–$15 (R144–R270)
 
 The E&F specification uses a single pump serving all three tables via a supply manifold. An alternative is one pump per table — which adds redundancy but triples pump cost and electrical connections. At Tier 1 and 2, the single-pump approach with a spare pump on hand (cost ~$20) is more cost-effective than a multi-pump baseline setup. The spare pump takes less than 5 minutes to swap in. Keep one spare pump in your shed.
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 9. Running Costs
 
@@ -608,7 +622,7 @@ The pump runs 3 floods a day on vegetative crops and 4 on fruiting crops, 15–3
 | Spring and fall | 1–2 US gal (4–8 L)/day | Every few days | about 300–600 US gal (1,100–2,300 L) |
 | Summer peak | 3–5 US gal (11–19 L)/day | Daily | about 600–1,000 US gal (2,300–3,800 L) |
 
-At a few tenths of a cent per litre, tap water is about **$4–$32 (R72–R576)** for the season. Rainwater is $0 (R0) if you already catch it.
+At a few tenths of a cent per liter, tap water is about **$4–$32 (R72–R576)** for the season. Rainwater is $0 (R0) if you already catch it.
 
 ### 9.3 Nutrient Costs (Masterblend Trio)
 
@@ -641,7 +655,7 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 
 | Item | Annual cost |
 |---|---|
-| Bleach for LECA sterilisation (3L bottle lasts ~4 seasons) | ~$1 |
+| Bleach for LECA sterilization (3L bottle lasts ~4 seasons) | ~$1 |
 | Replacement LECA, about 3–4 US gal (11–15 L) of cracked or lost pebbles | $8–$15 (R144–R270) |
 | pH adjustment chemicals for LECA pre-soak | ~$2 |
 | **Annual LECA recharge total** | **~$11–$18** |
@@ -663,16 +677,17 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 
 **Planning running cost for a full outdoor season: about $286 (R5,148) in the middle of that range.**
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 10. Yield Estimates and ROI
 
 ### 10.1 Zone A — E&F Flood Table Expected Yields
 
-> **One plant owns Table 1.** That table is a single indeterminate tomato or a single cucumber in 5 in (13 cm) of LECA. Table 2 is one or two pepper, aubergine, or courgette plants. Table 3 is lettuce, herbs, or pak choi. The root zone is the whole bed, which is why one vine is the plan.
+> **One plant owns Table 1.** That table is a single indeterminate tomato or a single cucumber in 5 in (13 cm) of LECA. Table 2 is one or two pepper, eggplant (aubergine), or zucchini (courgette) plants. Table 3 is lettuce, herbs, or pak choi. The root zone is the whole bed, which is why one vine is the plan.
 
 > **First season:** expect about 40–60% of the weights below while you learn the overflow height and the drain.
 
@@ -703,7 +718,7 @@ The budget uses the tomato, because that is the crop that justifies the bed.
 #### Table 2 — one or two fruiting plants
 
 ```
-One or two peppers, or one aubergine, or one courgette.
+One or two peppers, or one eggplant (aubergine), or one zucchini (courgette).
 Planning weight: about 4–8 lb (1.8–3.6 kg)
 Value: about $15–$40 (R270–R720)
 ```
@@ -715,7 +730,7 @@ Value: about $15–$40 (R270–R720)
 | Lettuce, Table 3 | about 15 lb (6.8 kg) | $60–$90 (R1,080–R1,620) |
 | Herbs, Table 3 | about 4 lb (1.8 kg) cut | $80–$120 (R1,440–R2,160) |
 | Tomato, Table 1 (one plant) | 10–15 lb (4.5–6.8 kg) | $80–$150 (R1,440–R2,700) |
-| Pepper, aubergine, or courgette, Table 2 | 4–8 lb (1.8–3.6 kg) | $15–$40 (R270–R720) |
+| Pepper, eggplant (aubergine), or zucchini (courgette), Table 2 | 4–8 lb (1.8–3.6 kg) | $15–$40 (R270–R720) |
 | **Zone A** | **about 33–42 lb (15–19 kg)** | **about $235–$400 (R4,230–R7,200)** |
 
 ### 10.2 Zone B — Microgreens Yield
@@ -751,17 +766,18 @@ Grocery value:                        about $80–$110 (R1,440–R1,980)
 | **Zone A** | **about 33–42 lb (15–19 kg)** | **about $235–$400 (R4,230–R7,200)** |
 | Zone B microgreens | about 44 lb (20 kg) if you run the trays hard | $150–$250 (R2,700–R4,500) at a household price, not a punnet price |
 | Radish | 15 lb (6.8 kg) | included below |
-| Beetroot | 8 lb (3.6 kg) | included below |
+| Beet (beetroot) | 8 lb (3.6 kg) | included below |
 | Carrot | 20 lb (9.1 kg) | included below |
 | **Zone C** | **43 lb (20 kg)** | **about $80–$110 (R1,440–R1,980)** |
 | **All three zones** | | **about $465–$760 (R8,370–R13,680) of groceries** |
 
 > **These are grocery prices you did not pay.** They are not sales. A household will not eat every microgreen tray. Zone C is the number to remember: 43 lb (20 kg), about $80–$110 (R1,440–R1,980).
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## 11. Payback Period Analysis
 
@@ -821,17 +837,18 @@ xychart-beta
 
 The ROI analysis captures only direct grocery savings. The full value of the E&F system also includes:
 
-- **Food quality:** Flood-table-grown tomatoes and cucumbers are harvested at peak ripeness, with significantly better flavour and nutrition than supermarket equivalents picked unripe
+- **Food quality:** Flood-table-grown tomatoes and cucumbers are harvested at peak ripeness, with significantly better flavor and nutrition than supermarket equivalents picked unripe
 - **Food security:** Year-round production of herbs and microgreens; seasonal glut of fruiting crops that can be preserved
-- **Skill development:** E&F systems teach root zone management, flood cycle optimisation, and drain-system troubleshooting — transferable skills
+- **Skill development:** E&F systems teach root zone management, flood cycle optimization, and drain-system troubleshooting — transferable skills
 - **Educational value:** The flood and drain is easy to watch, and children can follow a plant from seed to harvest. Nutrient concentrates, acids, and pesticides stay in a latched box, away from children and pets.
 - **Mental health:** Growing food — especially tending fruiting plants from flower to harvest — is consistently linked to stress reduction in research literature
 - **Carbon footprint:** Eliminating the packaging, transport refrigeration, and food miles associated with supermarket tomatoes and cucumbers
 
-[↑ Back to TOC](#table-of-contents)
 
 ---
 
+
+[↑ Back to TOC](#table-of-contents)
 
 ## Quick Reference — Budget at a Glance
 
@@ -857,9 +874,12 @@ xychart-beta
 
 
 > **Previous:** [Guide 11 — Build Guide](./11-build-guide.md)
-> **Next:** [Guide 13 — Automation](./13-automation.md)
+
 
 [↑ Back to TOC](#table-of-contents)
+
+> **Next:** [Guide 13 — Automation](./13-automation.md)
+
 
 ---
 
