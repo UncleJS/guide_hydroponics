@@ -62,7 +62,7 @@ Four channels, **two reservoirs**. CH1–CH3 share the greens tank. CH4 has its 
 ```mermaid
 flowchart LR
   highEnd["High end inlet posts 36 in"] --> channels["Four channels 8 ft"]
-  channels --> lowEnd["Low end drain posts 32.75 in"]
+  channels --> lowEnd["Low end drain posts 32¾ in"]
 ```
 
 The drop is **3¼ in (83 mm)** over **8 ft (2.44 m)**, a **1:30** slope. Channels sit on cross-supports at each end. Do not use a steeper A-frame. A slope near 1:15 drains too fast and leaves dry roots.

@@ -32,10 +32,10 @@ Prices are US dollars with South African rand in brackets, at a planning rate of
 | **Reservoirs** | Greens 20 US gal (76 L) for CH1–CH3. Fruiting 10 US gal (38 L) for CH4 only | 45 US gal (170 L) under the tables |
 | **Media** | Clay pebbles in net pots only | 5 in (13 cm) of LECA, 25 US gal (95 L) per table |
 | **Power failure** | High — roots dry in 15–30 minutes in warm weather | Moderate — moist LECA buffers 8–24 hours |
-| **Timer failure** | Not used for the pumps | **High** — a pump stuck ON rots roots in 2–4 hours |
+| **Timer failure** | Not used for the pumps | **High** — a pump stuck ON rots roots in 2–4 hours. **Required:** stuck-ON cutoff from Tier 1/2 (smart-plug cut and/or float × 3 + relay) — see [E&F Guide 13](guide/ebb-and-flow/13-automation.md) |
 | **Best for** | Lettuce, herbs, spinach, kale, plus cherry tomato and pepper on CH4 | Those crops, plus cucumber, zucchini (courgette), and eggplant (aubergine) |
 | **Crop limit** | No cucumber, zucchini (courgette), eggplant (aubergine), or root crops in the channels | No root crops in the tables. Carrots, radish, and beet stay in Zone C |
-| **Build cost** | Full three-zone Lean / Standard / Optimized **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$711 / $1,115 / $1,624** (R12,798 / R20,070 / R29,232). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
+| **Build cost** | Full three-zone Lean / Standard / Optimized **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$726 / $1,130 / $1,639** (R13,068 / R20,340 / R29,502). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
 | **Guide set** | [`guide/nft/`](guide/nft/) | [`guide/ebb-and-flow/`](guide/ebb-and-flow/) |
 
 Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow bags)**. Only Zone A changes. The yard map for both is [`zones.md`](zones.md). Mains power is a **120 V outdoor GFCI** (SA: **230 V**, **30 mA earth-leakage**).
@@ -100,7 +100,7 @@ Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow ba
 | 10 | [`guide/ebb-and-flow/10-climate-management.md`](guide/ebb-and-flow/10-climate-management.md) | Heat, frost, wind, rain — open table rain dilution, thermal mass differences, seasonal plans |
 | 11 | [`guide/ebb-and-flow/11-build-guide.md`](guide/ebb-and-flow/11-build-guide.md) | Full DIY build — level tables, two-fitting system, reservoir positioning, timer setup, all 3 zones |
 | 12 | [`guide/ebb-and-flow/12-budget-and-sourcing.md`](guide/ebb-and-flow/12-budget-and-sourcing.md) | BOM across 3 tiers, bulkhead fittings, LECA costs, yield estimates, ROI including fruiting crops |
-| 13 | [`guide/ebb-and-flow/13-automation.md`](guide/ebb-and-flow/13-automation.md) | Drain confirmation sensor (float switch), flood cycle logging, stuck-ON detection, ESP32, dashboards |
+| 13 | [`guide/ebb-and-flow/13-automation.md`](guide/ebb-and-flow/13-automation.md) | Stuck-ON cutoff (smart plug + float × 3 / relay), flood logging, ESP32, dashboards |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -142,7 +142,7 @@ Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow ba
 6. **[Ebb and Flow Guide 02 — Nutrients](guide/ebb-and-flow/02-nutrient-solution.md)** — mix and manage solution with media
 7. **[Ebb and Flow Guide 06 — Crops](guide/ebb-and-flow/06-crops.md)** — tomatoes, cucumbers, zucchinis (courgettes), and the rest
 8. **[Ebb and Flow Guide 08 — Maintenance](guide/ebb-and-flow/08-system-maintenance.md)** — flood-cycle checks and salt
-9. **[Ebb and Flow Guide 13 — Automation](guide/ebb-and-flow/13-automation.md)** — the drain-confirmation cutoff
+9. **[Ebb and Flow Guide 13 — Automation](guide/ebb-and-flow/13-automation.md)** — required stuck-ON cutoff (smart-plug cut and/or float × 3 + relay)
 
 ---
 

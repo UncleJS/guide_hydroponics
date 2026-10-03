@@ -30,9 +30,9 @@
   - [Stuck-ON Detection and Auto-Shutoff](#stuck-on-detection-and-auto-shutoff)
   - [E&F Automation Priority Stack](#ef-automation-priority-stack)
 - [5. Shared Automation Architecture](#5-shared-automation-architecture)
-  - [Budget Tier ($15–40 / R270–R720): WiFi Monitoring](#budget-tier-1540-r270r720-wifi-monitoring)
-  - [Mid Tier ($80–150 / R1,440–R2,700): ESP32 Sensor Network](#mid-tier-80150-r1440r2700-esp32-sensor-network)
-  - [Full Tier ($200–400 / R3,600–R7,200): Closed-Loop Control](#full-tier-200400-r3600r7200-closed-loop-control)
+  - [Budget Tier ($15–60 / R270–R1,080): Guide 13 Tier 1](#budget-tier-1560-r270r1080-guide-13-tier-1)
+  - [Mid Tier ($40–160 / R720–R2,880): Guide 13 Tier 2–3](#mid-tier-40160-r720r2880-guide-13-tier-23)
+  - [Full Tier ($150–300 / R2,700–R5,400): Guide 13 Tier 4](#full-tier-150300-r2700r5400-guide-13-tier-4)
 - [6. Wiring and Relay Control](#6-wiring-and-relay-control)
   - [Controlling Pumps from a Microcontroller](#controlling-pumps-from-a-microcontroller)
   - [Safety Rules for Mains Relay Circuits](#safety-rules-for-mains-relay-circuits)
@@ -85,8 +85,8 @@ In E&F, the pump runs on a timer. The failure modes, ranked by severity:
 
 | Severity | Failure | Time to damage | Detectable by |
 |---|---|---|---|
-| Critical | Timer stuck ON (pump runs continuously) | 2–4 hours root rot | Float switch in table (drain confirmation) |
-| Critical | Flood not draining (blockage at drain port) | 2–4 hours root rot | Float switch in table (drain confirmation) |
+| Critical | Timer stuck ON (pump runs continuously) | 2–4 hours root rot | Smart-plug cut (Tier 1) and/or float × 3 + pump relay (Tier 2) |
+| Critical | Flood not draining (blockage at drain port) | 2–4 hours root rot | Float × 3 (one per table) + open pump relay |
 | High | Timer stuck OFF (pump never runs) | 8–24 hours (moist LECA buffer) | Flood cycle counter (expected flood not detected) |
 | High | Reservoir runs dry | 1–2 floods skipped | Float switch in reservoir |
 | High | pH drift outside 5.5–6.5 | 24–48 hours | pH probe in reservoir |
@@ -100,7 +100,7 @@ The pattern: **drain confirmation is everything** in E&F. Knowing that the table
 
 | Priority | NFT sensor | E&F sensor |
 |---|---|---|
-| #1 | Flow confirmation (return pipe) | Drain confirmation (table float switch) |
+| #1 | Flow confirmation (return pipe) | Stuck-ON cutoff (smart plug and/or float × 3 + relay) |
 | #2 | Reservoir level | Flood cycle counter / timer health |
 | #3 | pH / EC | pH / EC |
 | #4 | Water temperature | Reservoir level |
@@ -291,12 +291,12 @@ This log provides:
 
 ### Stuck-ON Detection and Auto-Shutoff
 
-Stuck-ON cutoff is the primary E&F safety action, not an optional add-on. If the float switch remains CLOSED about 30–45 minutes after pump-off, the microcontroller must:
+Stuck-ON cutoff is the primary E&F safety action, not an optional add-on. Guide 13 Tier 1: a smart plug cuts pump power on >35 min continuous draw. Guide 13 Tier 2: if **any** of the three table float switches remains CLOSED about 30–45 minutes after pump-off, the microcontroller must:
 1. Open the pump relay (cut power, overriding the timer)
 2. Send an alert
 3. Lock out further floods until the operator acknowledges and resets
 
-This requires a normally-open relay in series with the pump mains circuit, controlled by the ESP32.
+This requires a normally-open relay in series with the pump mains circuit, controlled by the ESP32, plus one float per table.
 
 **Caution**: any relay-based pump cutoff should be designed fail-safe: if the ESP32 loses power or crashes, the relay should **de-energize** (default to pump OFF), not hold the pump ON.
 
@@ -304,16 +304,15 @@ This requires a normally-open relay in series with the pump mains circuit, contr
 
 From highest to lowest value-for-money:
 
-1. **Float switch in flood table** → drain confirmation + timer failure detection ($5 / R90)
-2. **Relay for pump cutoff** → open the pump relay if the float is still up after pump-off ($6–15 / R108–R270). Required with the float — not a Full Tier luxury
+1. **Smart plug on the pump** → Guide 13 Tier 1 stuck-ON cut on >35 min continuous draw ($15 / R270). Required in the build BOM
+2. **Float × 3 (one per table) + pump cutoff relay** → Guide 13 Tier 2: open the pump relay if any float is still up after pump-off ($32–$45 / R576–R810). Not a Full Tier luxury
 3. **DS18B20 in reservoir** → water temperature alert ($3 / R54)
 4. **DHT22/SHT31 at canopy** → air temperature and humidity ($4–8 / R72–R144)
 5. **Float switch in reservoir** → low water level alert ($5 / R90)
-6. **Flood cycle logger** → timestamp every flood/drain event (software only, uses float switch data)
+6. **Flood cycle logger** → timestamp every flood/drain event (software; uses the three table floats)
 7. **pH probe in reservoir** → pH monitoring ($20–80 / R360–R1,440)
 8. **EC probe in reservoir** → EC monitoring ($20–80 / R360–R1,440)
-9. **Second float switch in table** → set at overflow level; double-confirmation of flooding ($5 / R90)
-10. **Automated pH/EC dosing** → Full Tier only
+9. **Automated pH/EC dosing** → Guide 13 Tier 4 / Full Tier only — cutoff already present
 
 
 ---
@@ -325,9 +324,9 @@ From highest to lowest value-for-money:
 
 The following tiers apply equally to both systems. Where sensors or logic differ between systems, they are noted.
 
-### Budget Tier ($15–40 / R270–R720): WiFi Monitoring
+### Budget Tier ($15–60 / R270–R1,080): Guide 13 Tier 1
 
-**Goal:** Know the temperature and humidity in real time from your phone.
+**Goal:** Phone-visible climate plus the first automatic safety action. Maps to Guide 13 Tier 1 bands (~$15–$60).
 
 **Hardware:**
 - 1× ESP8266 (D1 Mini) or ESP32 — $4–8 (R72–R144)
@@ -344,11 +343,11 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 
 **NFT addition:** add a $5 (R90) float switch on **each** return (greens loop and fruiting/CH4 loop) — pump-failure alerting per tank. Dual NFT is two loops; one float on one return is not enough.
 
-**E&F addition:** add a $5 (R90) float switch in the flood table **and** a $6–15 (R108–R270) mains relay that **opens the pump circuit** if the float is still up about 30–45 minutes after pump-off. Alert alone is not the Budget E&F story.
+**E&F addition (required):** a **smart plug on the pump** (~$15 / R270) that **cuts power** on >35 min continuous draw, then alerts. Alert alone is not the Budget E&F story. This is already in the E&F Guide 12 electrical BOM.
 
-### Mid Tier ($80–150 / R1,440–R2,700): ESP32 Sensor Network
+### Mid Tier ($40–160 / R720–R2,880): Guide 13 Tier 2–3
 
-**Goal:** Full monitoring of all parameters; E&F stuck-ON cutoff already required; alerting via MQTT/Home Assistant/Telegram.
+**Goal:** Full monitoring; E&F stuck-ON cutoff via float × 3 + pump relay (Guide 13 Tier 2, ~$40–$90 hardware before probes). Probes push the band toward Guide 13 Tier 3 (~$80–$160).
 
 **Hardware (per system):**
 - 1× ESP32 development board — $8–12 (R144–R216)
@@ -357,7 +356,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - 1× Atlas Scientific EZO-pH circuit + probe — $60–80 (R1,080–R1,440) (or DFRobot analog pH probe — $20 / R360)
 - 1× Atlas Scientific EZO-EC circuit + probe — $55–75 (R990–R1,350) (or DFRobot analog EC probe — $20 / R360)
 - NFT: float switches for **both** returns (greens + fruiting) plus each reservoir
-- E&F: flood-table float **plus** pump cutoff relay (required); reservoir float
+- E&F: **float × 3** (one per table) **plus** pump cutoff relay (required); reservoir float. Keep the Tier 1 smart plug as a second path
 - Junction box, DIN rail, waterproof connectors
 
 **Software:** ESPHome + Home Assistant (free, self-hosted on a Raspberry Pi or similar)
@@ -367,18 +366,18 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - Threshold alerts delivered via Telegram or email
 - Historical data for trend analysis (identifying gradual EC drift, deteriorating pump performance)
 - NFT: pump failure alert within 5 minutes on the loop that stopped
-- E&F: if drain confirmation does not clear within about 30–45 minutes after pump-off, **open the pump relay**, then alert; also missed-flood alert
+- E&F: if **any** table float is still up after pump-off, **open the pump relay**, then alert; also missed-flood alert
 
 **Combined NFT + E&F:** run two ESP32 boards (one per system); both report to the same Home Assistant instance.
 
-### Full Tier ($200–400 / R3,600–R7,200): Closed-Loop Control
+### Full Tier ($150–300 / R2,700–R5,400): Guide 13 Tier 4
 
-**Goal:** Automated pH correction and EC top-up. E&F stuck-ON cutoff is already required from Budget/Mid — Full Tier adds dosing, not the first relay.
+**Goal:** Automated pH correction and EC top-up. Maps to Guide 13 Tier 4. E&F stuck-ON cutoff is already required from Budget/Mid — Full Tier adds dosing, not the first cutoff.
 
 **Additional hardware:**
 - 2× peristaltic dosing pumps (pH up and pH down) — $15–25 (R270–R450) each
 - 1× peristaltic dosing pump (nutrient concentrate) — $15–25 (R270–R450)
-- Extra mains relay modules for dosing pumps — $8–15 (R144–R270) each (E&F stuck-ON cutoff relay is already in Budget/Mid)
+- Extra mains relay modules for dosing pumps — $8–15 (R144–R270) each (E&F stuck-ON cutoff relay is already in Mid)
 - Food-grade silicone tubing
 - Calibrated dosing reservoirs for pH up, pH down, nutrient concentrate
 
@@ -387,7 +386,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 **What you get:**
 - pH maintained within ±0.2 units of target automatically
 - EC maintained by automated nutrient top-up when level drops below target
-- E&F stuck-ON cutoff remains required (open pump relay about 30–45 minutes after failed drain) — dosing does not replace it
+- E&F stuck-ON cutoff remains required (smart plug and/or float × 3 → open pump relay) — dosing does not replace it
 - Detailed automated logging with anomaly detection
 
 **Cautions at Full Tier:**
@@ -437,7 +436,9 @@ graph TD
   subgraph ESP32["ESP32 (single board)"]
     G1[GPIO 4<br/>NFT greens return float]
     G1b[GPIO 16<br/>NFT fruiting return float]
-    G2[GPIO 5<br/>Ebb and Flow table float]
+    G2a[GPIO 5<br/>Ebb and Flow Table 1 float]
+    G2b[GPIO 25<br/>Ebb and Flow Table 2 float]
+    G2c[GPIO 26<br/>Ebb and Flow Table 3 float]
     G3[GPIO 18<br/>NFT greens reservoir float]
     G3b[GPIO 17<br/>NFT fruiting reservoir float]
     G3c[GPIO 23<br/>Ebb and Flow reservoir float]
@@ -447,7 +448,9 @@ graph TD
   end
   G1 -->|digital input<br/>pull-up| F1[NFT greens return<br/>float switch]
   G1b -->|digital input<br/>pull-up| F1b[NFT fruiting return<br/>float switch]
-  G2 -->|digital input<br/>pull-up| F2[Ebb and Flow table<br/>float switch]
+  G2a -->|digital input<br/>pull-up| F2a[Ebb and Flow Table 1<br/>float switch]
+  G2b -->|digital input<br/>pull-up| F2b[Ebb and Flow Table 2<br/>float switch]
+  G2c -->|digital input<br/>pull-up| F2c[Ebb and Flow Table 3<br/>float switch]
   G3 -->|digital input<br/>pull-up| F3[NFT greens reservoir<br/>float switch]
   G3b -->|digital input<br/>pull-up| F3b[NFT fruiting reservoir<br/>float switch]
   G3c -->|digital input<br/>pull-up| F3c[Ebb and Flow reservoir<br/>float switch]
@@ -485,9 +488,9 @@ graph TD
 
 | Condition | Trigger | Action |
 |---|---|---|
-| Drain failure | Table float CLOSED about 30–45 min after pump-off | Critical: open pump relay, then alert |
-| Missed flood | Table float never CLOSED during expected flood window | Alert: High |
-| Timer stuck ON | Table float CLOSED continuously outside a flood window | Critical: open pump relay, then alert |
+| Drain failure | Any table float CLOSED about 30–45 min after pump-off | Critical: open pump relay, then alert |
+| Missed flood | That table's float never CLOSED during expected flood window | Alert: High |
+| Timer stuck ON | Any table float CLOSED continuously outside a flood window, or smart-plug >35 min draw | Critical: cut power / open relay, then alert |
 | Reservoir low | Reservoir float LOW | Alert: High — top up required |
 | Water temperature high | DS18B20 > 77°F (25°C) | Alert: High |
 | Water temperature low | DS18B20 < 54°F (12°C) | Alert: Medium |
@@ -551,13 +554,13 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 ```mermaid
 graph TD
   A[Starting automation for<br/>NFT, Ebb and Flow, or both?] --> B{Budget?}
-  B -->|"Under $40 (R720)"| C[Budget Tier<br/>WiFi temp/humidity<br/>+ critical floats]
-  B -->|"$80-150 (R1440-R2700)"| D[Mid Tier<br/>Full monitoring<br/>pH + EC + floats + E&F relay]
-  B -->|"$200+ (R3600+)"| E[Full Tier<br/>Closed-loop dosing<br/>cutoff already required]
+  B -->|"Under $60 (R1080)"| C[Budget Tier 1<br/>WiFi temp/humidity<br/>+ E&F smart-plug cut]
+  B -->|"$40-160 (R720-R2880)"| D[Mid Tier 2-3<br/>Full monitoring<br/>E&F float x3 + relay]
+  B -->|"$150-300 (R2700-R5400)"| E[Full Tier 4<br/>Closed-loop dosing<br/>cutoff already required]
   C --> F{Which system?}
   F -->|NFT| G[Float on greens return<br/>and fruiting return<br/>Pump failure alert per loop]
-  F -->|Ebb and Flow| H[Flood-table float<br/>plus pump relay cutoff<br/>Open relay then alert]
-  F -->|Both| I[Both NFT returns<br/>E&F float plus relay<br/>Separate GPIO each]
+  F -->|Ebb and Flow| H[Smart-plug cutoff<br/>then float x3 + relay<br/>Cut power then alert]
+  F -->|Both| I[Both NFT returns<br/>E&F smart plug plus<br/>float x3 and relay]
   D --> J[Atlas EZO probes<br/>all floats<br/>E&F relay already fitted]
   E --> K[Add peristaltic dosing<br/>pH and EC auto-correction<br/>Keep E&F fail-safe relay]
   K --> M[Relay wired fail-safe<br/>Normally-open contact<br/>ESP32 de-energize on crash]
@@ -568,10 +571,9 @@ graph TD
 - 1× SHT31
 - 1× DS18B20
 - 2× float switches on the NFT returns (greens loop + fruiting/CH4 loop)
-- 1× float switch in the E&F flood table
-- 1× mains relay for E&F stuck-ON cutoff (opens the pump circuit on failed drain)
+- E&F: smart plug on the pump (Guide 13 Tier 1) **and** float × 3 + mains relay (Guide 13 Tier 2)
 - Float switches in each reservoir (NFT greens, NFT fruiting, E&F)
-- Total hardware cost: about $40–55 (R720–R990) once the E&F relay and dual NFT returns are included
+- Total hardware cost: about $55–90 (R990–R1,620) once dual NFT returns, the smart plug, three table floats, and the relay are included
 - Covers pump-stop on each NFT loop and stuck-ON cutoff on E&F — alert alone is not enough for E&F
 
 This configuration, running ESPHome and Home Assistant, gives you 24/7 monitoring with phone alerts **and** E&F pump cutoff for less than the cost of replacing one batch of tomato plants lost to an undetected timer stuck ON.

@@ -108,7 +108,7 @@ flowchart LR
 
 **System specifications:**
 - 3 flood tables, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level. Long axis faces south (SA: north).
-- Table 1: one indeterminate tomato or one cucumber. Table 2: pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants. Table 3: lettuce, herbs, pak choi, or a later fruiting crop.
+- Table 1: one indeterminate tomato or one cucumber. Table 2: pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants. Table 3: lettuce, herbs, pak choi, strawberries, or a later fruiting crop.
 - Media: LECA, 5 in (13 cm) deep. 25 US gal (95 L) per table. Buy 90 US gal (340 L) for the system so rinse loss is covered.
 - Flood level: about ¾ in (2 cm) below the LECA surface, set by the 1½ in (40 mm) overflow standpipe.
 - Drain: a separate 1 in (25 mm) bulkhead on each table. The pump fills through this line and, with no check valve, the table drains back down it when the pump stops.
@@ -259,7 +259,7 @@ The flood table is the heart of the E&F system. You have two options: buy a purp
 
 **What to look for:**
 - Food-grade polypropylene or ABS plastic construction
-- Pre-drilled or moulded fill port and drain port positions
+- Pre-drilled or molded fill port and drain port positions
 - Raised border to contain flood water (at least 4 in (10 cm) deep internal dimension)
 - Flat, level base (check with a spirit level in-store if possible)
 - Size: 4 ft × 2 ft (1.22 m × 0.61 m). That is the table in this build.
@@ -427,7 +427,7 @@ flowchart TD
    - Air pump tube entry (optional): ⅜ in (8 mm) hole
 
 3. **Light-proof the reservoir:**
-   Wrap exterior with black polythene sheet, then a layer of white reflective bubble wrap insulation over the top. Black inner layer blocks light (prevents algae); white outer layer reflects solar heat (keeps solution cool). Secure with tape or cable ties.
+   Wrap exterior with black polyethylene sheet, then a layer of white reflective bubble wrap insulation over the top. Black inner layer blocks light (prevents algae); white outer layer reflects solar heat (keeps solution cool). Secure with tape or cable ties.
 
 4. **Mark fill levels:**
    With the reservoir in position and filled to operating level (leave about 4 in (10 cm) from top), mark the external wall with permanent marker at the waterline. Add about 2.5 US gal (10 L) increment marks going down. This lets you track daily consumption at a glance.

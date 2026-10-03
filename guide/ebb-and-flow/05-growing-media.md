@@ -159,7 +159,7 @@ The speed of LECA's drainage is its most important property for E&F. Media that 
 | Root aeration | Excellent — air gaps between pebbles |
 | Structural support | Very good — heavy plants stable in LECA |
 | Cost | About $6–$11 per US gal (R108–R198). Confirm the current price in Guide 12 |
-| Typical size | 4–16mm diameter balls |
+| Typical size | ⅛–⅝ in (4–16 mm) diameter balls |
 | Weight (dry) | About 2.5–4.2 lb per US gal (300–500 g/L) |
 | Salt accumulation | Yes — accumulates over time; requires periodic flush |
 
@@ -402,9 +402,9 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
   SEED TO TRANSPLANT-READY SEEDLING:
 
   Day 1:
-  ─ Use conditioned 25mm or 36mm rockwool cubes
+  ─ Use conditioned 1 in (25 mm) or 1½ in (36 mm) rockwool cubes
   ─ Place 1–2 seeds per cube (1 for large seeds, 2 for small — thin later)
-  ─ Depth: large seeds 5mm deep, small seeds 2–3mm, surface seeds = surface
+  ─ Depth: large seeds ¼ in (5 mm) deep, small seeds 1/16–⅛ in (2–3 mm), surface seeds = surface
   ─ Place cubes in a tray with about ⅜ in (1 cm) of pH 5.8 water (EC 0.4 mS/cm)
   ─ Cover tray with plastic wrap or humidity dome
   ─ Temperature: 68–77°F (20–25°C) for most crops (see Guide 06 for per-crop temps)
@@ -684,7 +684,7 @@ After removing a crop — especially after a heavy fruiting crop like tomatoes o
     kills beneficial soil organisms)
   ─ Rinse LECA with clean water × 3
   ─ Between rinses: squeeze and agitate to release bleach from internal pores
-  ─ Final rinse water should have no bleach odour
+  ─ Final rinse water should have no bleach odor
 
   Step 6 — pH re-conditioning soak:
   ─ Soak in pH 5.8 water for 12–24 hours (bleach raises surface pH)

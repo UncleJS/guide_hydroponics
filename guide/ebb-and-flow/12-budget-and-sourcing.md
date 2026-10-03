@@ -81,24 +81,24 @@ LECA is the cost driver. The three tables need 75 US gal (284 L) of pebbles at 5
 
 | Tier | Zone A | Full three-zone (A + B + C) |
 |---|---|---|
-| **Budget** | **$528 (R9,504)** | **$711 (R12,798)** |
-| **Mid** | **$852 (R15,336)** | **$1,115 (R20,070)** |
-| **Premium** | **$1,259 (R22,662)** | **$1,624 (R29,232)** |
+| **Budget** | **$543 (R9,774)** | **$726 (R13,068)** |
+| **Mid** | **$867 (R15,606)** | **$1,130 (R20,340)** |
+| **Premium** | **$1,274 (R22,932)** | **$1,639 (R29,502)** |
 
 Zone B is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C is $94 / $123 / $162 (R1,692 / R2,214 / R2,916). The line-item tables below add up to these totals. Bought flood trays are used for the Zone A total. DIY timber tables are listed as an option and are not in the total.
 
 ```
-BUDGET — $528 Zone A (R9,504), $711 for all three zones (R12,798)
+BUDGET — $543 Zone A (R9,774), $726 for all three zones (R13,068)
   Economy trays, repurposed 45 US gal tank, 250 US gph pump,
-  digital 1-minute timer in a weatherproof box, 90 US gal of budget LECA.
+  digital 1-minute timer in a weatherproof box, smart-plug cutoff, 90 US gal of budget LECA.
 
-MID — $852 Zone A (R15,336), $1,115 for all three zones (R20,070)
+MID — $867 Zone A (R15,606), $1,130 for all three zones (R20,340)
   Purpose-built trays, bought reservoir, the same pump class with a pre-filter,
-  the same digital timer, better LECA. This is the build most people should price.
+  the same digital timer, smart-plug cutoff, better LECA. This is the build most people should price.
 
-PREMIUM — $1,259 Zone A (R22,662), $1,624 for all three zones (R29,232)
+PREMIUM — $1,274 Zone A (R22,932), $1,639 for all three zones (R29,502)
   Commercial trays, insulated reservoir, combo meter, premium LECA.
-  The timer is still the digital 1-minute unit in a weatherproof box.
+  The timer is still the digital 1-minute unit in a weatherproof box; smart-plug cutoff stays required.
   A mechanical timer is not an upgrade.
 ```
 
@@ -159,7 +159,7 @@ Each table has two different fittings. The overflow is 1½ in (40 mm), with a st
 |---|---|---|---|
 | **45 US gal (170 L) food-grade HDPE, range 40–50 US gal (151–189 L)** | $0 — repurposed food barrel | $45 — purpose-bought bin | $65 — dedicated hydro reservoir |
 | **Reflective foam insulation (reservoir wrap)** | $0 — foil bubble wrap offcut | $10 — Kingspan / foam board cut | $18 — purpose-cut foam box |
-| **Black polythene wrap (light-proofing layer)** | $3 — black bin liner + tape | $4 | $0 — reservoir already opaque |
+| **Black polyethylene wrap (light-proofing layer)** | $3 — black bin liner + tape | $4 | $0 — reservoir already opaque |
 | **Lid gasket / foam seal strips** | $3 | $4 | $5 |
 | **Reservoir subtotal** | **$6** | **$63** | **$88** |
 
@@ -200,11 +200,12 @@ The timer is the most critical electrical component in an E&F system. A power cu
 | **Outdoor extension lead (33 ft / 10 m, IP44)** | $12 | $18 | $25 |
 | **Digital timer with battery backup (primary)** | $10 — basic digital, battery backup | $16 — dual-program digital timer | $22 — commercial-grade 7-day digital |
 | **Second digital timer** | $0 — one digital timer is the control | $0 | $8 — a spare digital timer, not a mechanical one |
+| **Smart plug on the pump (stuck-ON cutoff)** | $15 — cuts power if pump runs >35 min, then alerts | $15 — same required cutoff | $15 — same required cutoff |
 | **120 V outdoor GFCI adaptor (SA: 230 V, 30 mA earth-leakage)** | $10 | $12 | $15 |
 | **Weatherproof enclosure for timer** | $5 — waterproof box, basic | $9 — IP65 rated enclosure | $15 — lockable IP65 enclosure |
-| **Electrical subtotal** | **$37** | **$55** | **$85** |
+| **Electrical subtotal** | **$52 (R936)** | **$70 (R1,260)** | **$100 (R1,800)** |
 
-> **Timer note:** Every tier uses a digital 1-minute timer in a weatherproof box, on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). A mechanical pin timer is not the outdoor recommendation at any tier. The $10–$16 (R180–R288) digital timer is already in the Budget electrical line. Guide 13's drain float, which opens the pump relay if the float is still up after the pump should be off, is the safety device. A second timer that only restarts a stopped pump is not that device.
+> **Timer and cutoff note:** Every tier uses a digital 1-minute timer in a weatherproof box, on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). A mechanical pin timer is not the outdoor recommendation at any tier. The smart plug on the pump is **required** stuck-ON cutoff at every build tier (Guide 13 Tier 1): cut power on >35 min continuous draw, then alert. Guide 13 Tier 2 adds three table floats that open a pump relay if a table is still flooded after pump-off. A second timer that only restarts a stopped pump is not the safety device.
 
 ### 2.7 Monitoring and Testing
 
@@ -265,12 +266,12 @@ Using Option A (bought tables) at all tiers:
 | Reservoir, 45 US gal | $6 (R108) | $63 (R1,134) | $88 (R1,584) |
 | Pump, 250 US gph, and aeration | $35 (R630) | $53 (R954) | $72 (R1,296) |
 | Plumbing | $47 (R846) | $61 (R1,098) | $78 (R1,404) |
-| Electrical and digital timer | $37 (R666) | $55 (R990) | $85 (R1,530) |
+| Electrical, digital timer, and smart-plug cutoff | $52 (R936) | $70 (R1,260) | $100 (R1,800) |
 | Monitoring | $35 (R630) | $76 (R1,368) | $107 (R1,926) |
 | Growing media, including 90 US gal LECA | $185 (R3,330) | $259 (R4,662) | $338 (R6,084) |
 | Nutrients | $37 (R666) | $40 (R720) | $44 (R792) |
 | Climate, including 40% shade | $23 (R414) | $30 (R540) | $60 (R1,080) |
-| **Zone A total** | **$528 (R9,504)** | **$852 (R15,336)** | **$1,259 (R22,662)** |
+| **Zone A total** | **$543 (R9,774)** | **$867 (R15,606)** | **$1,274 (R22,932)** |
 
 > **Note:** LECA, at 90 US gal (340 L), is the dominant line. One table first is **25 US gal (95 L)** of LECA (the full 5 in / 13 cm bed) plus one tray, one 1½ in overflow, and one 1 in drain. That is a start, not the system in the total above.
 
@@ -364,9 +365,9 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 | Tier | Zone A | Zone B | Zone C | Total build |
 |---|---|---|---|---|
-| **Budget** | $528 (R9,504) | $89 (R1,602) | $94 (R1,692) | **$711 (R12,798)** |
-| **Mid** | $852 (R15,336) | $140 (R2,520) | $123 (R2,214) | **$1,115 (R20,070)** |
-| **Premium** | $1,259 (R22,662) | $203 (R3,654) | $162 (R2,916) | **$1,624 (R29,232)** |
+| **Budget** | $543 (R9,774) | $89 (R1,602) | $94 (R1,692) | **$726 (R13,068)** |
+| **Mid** | $867 (R15,606) | $140 (R2,520) | $123 (R2,214) | **$1,130 (R20,340)** |
+| **Premium** | $1,274 (R22,932) | $203 (R3,654) | $162 (R2,916) | **$1,639 (R29,502)** |
 
 ### Phasing the Build to Spread the Cost
 
@@ -377,41 +378,43 @@ flowchart TD
     P1["PHASE 1 — one table, Budget parts<br/>One tray, 25 US gal of LECA,<br/>one 1.5 in overflow, one 1 in drain,<br/>digital timer already included"]
     P2["PHASE 2 — Tables 2 and 3<br/>Two more trays, the rest of the 90 US gal of LECA,<br/>two more overflows and two more drains"]
     P3["PHASE 3 — Zone B<br/>plus $89 (R1,602)"]
-    P4["PHASE 4 — Zone C<br/>plus $94 (R1,692)<br/>Full Budget system $711 (R12,798)"]
+    P4["PHASE 4 — Zone C<br/>plus $94 (R1,692)<br/>Full Budget system $726 (R13,068)"]
     P5["PHASE 5 — better meter or trays when you want them<br/>The digital timer is already in Phase 1"]
 
     P1 --> P2 --> P3 --> P4 --> P5
 ```
 
-Phasing spreads the same Budget bill. The finished three-zone Budget total is still $711 (R12,798). The digital timer is in the first phase.
+Phasing spreads the same Budget bill. The finished three-zone Budget total is still $726 (R13,068). The digital timer is in the first phase.
 
 ### What You Get for Each Tier — Snapshot
 
 ```
-BUDGET — $528 Zone A (R9,504):
+BUDGET — $543 Zone A (R9,774):
   ✓ Three economy trays, 4 ft × 2 ft
   ✓ Repurposed 45 US gal (170 L) barrel
   ✓ 250 US gph pump, about 35 W
   ✓ Digital 1-minute timer in a weatherproof box
+  ✓ Smart plug on the pump — required stuck-ON cutoff
   ✓ 90 US gal (340 L) of budget LECA
   ✓ 1½ in overflow and 1 in drain on each table
 
-MID — $852 Zone A (R15,336):
+MID — $867 Zone A (R15,606):
   ✓ Three purpose-built trays
   ✓ Bought 45 US gal reservoir with insulation
   ✓ 250 US gph pump with a pre-filter
   ✓ The same class of digital timer
+  ✓ Smart plug on the pump — required stuck-ON cutoff
   ✓ 90 US gal of better LECA
   ✓ Mid-range pH and EC pens
 
-PREMIUM — $1,259 Zone A (R22,662):
+PREMIUM — $1,274 Zone A (R22,932):
   ✓ Commercial trays
   ✓ Dedicated reservoir and a foam box
   ✓ Adjustable pump in the 200–300 US gph band
   ✓ Digital timer, plus a spare digital timer
+  ✓ Smart plug on the pump — required stuck-ON cutoff (Guide 13 Tier 2 float+relay is next)
   ✓ 90 US gal of premium LECA
   ✓ Combo pH/EC meter
-  ✓ Guide 13 stuck-ON cutoff already assumed (smart-plug cut and/or float+relay) — required safety, not a Premium add-on
 ```
 
 
@@ -687,7 +690,7 @@ The E&F system has one ongoing cost the NFT system does not: annual LECA cleanin
 
 ### 10.1 Zone A — E&F Flood Table Expected Yields
 
-> **One plant owns Table 1.** That table is a single indeterminate tomato or a single cucumber in 5 in (13 cm) of LECA. Table 2 is one or two pepper, eggplant (aubergine), or zucchini (courgette) plants. Table 3 is lettuce, herbs, or pak choi. The root zone is the whole bed, which is why one vine is the plan.
+> **One plant owns Table 1.** That table is a single indeterminate tomato or a single cucumber in 5 in (13 cm) of LECA. Table 2 is one or two pepper, eggplant (aubergine), or zucchini (courgette) plants. Table 3 is lettuce, herbs, pak choi, or strawberries. The root zone is the whole bed, which is why one vine is the plan.
 
 > **First season:** expect about 40–60% of the weights below while you learn the overflow height and the drain.
 
@@ -786,12 +789,12 @@ Grocery value:                        about $80–$110 (R1,440–R1,980)
 ```
 MID BUILD, ALL THREE ZONES
 
-Build:                     $1,115 (R20,070)
+Build:                     $1,130 (R20,340)
 Running cost, mid:         $286 (R5,148)
 Grocery value, mid-range:  about $600 (R10,800) if the household eats most of it
 
 Optimistic net:            $600 − $286 = $314 (R5,652) a season
-Payback:                   $1,115 / $314 ≈ 3.6 seasons
+Payback:                   $1,130 / $314 ≈ 3.6 seasons
 ```
 
 A household that eats less of the microgreens and herbs:
@@ -800,7 +803,7 @@ A household that eats less of the microgreens and herbs:
 Conservative groceries:    $400 (R7,200)
 Running cost:              $286 (R5,148)
 Net:                       $114 (R2,052) a season
-Payback on $1,115:         about 10 seasons
+Payback on $1,130:         about 10 seasons
 ```
 
 The honest range is several seasons to about a decade, depending on how much of the harvest replaces a shop trip. LECA, bought once at 90 US gal (340 L), is most of the build and then mostly a cleaning job.
@@ -810,11 +813,11 @@ The honest range is several seasons to about a decade, depending on how much of 
 ```
 BUDGET BUILD, ALL THREE ZONES
 
-Build:                     $711 (R12,798)
+Build:                     $726 (R13,068)
 Running cost, low:         $173 (R3,114)
 Conservative groceries:    $400 (R7,200)
 Net:                       $227 (R4,086) a season
-Payback:                   $711 / $227 ≈ 3 seasons
+Payback:                   $726 / $227 ≈ 3 seasons
 ```
 
 ### 11.3 E&F vs. NFT Payback Comparison
@@ -831,7 +834,7 @@ xychart-beta
     line [-1115, -1001, -887, -773, -659, -545]
 ```
 
-> The line uses the conservative net of $114 (R2,052) a year on a $1,115 (R20,070) Mid build, so year 5 is still negative. The optimistic net of $314 (R5,652) would cross zero in year 4. A replacement pump is about $25–$40 (R450–R720). Nutrient concentrates, acids, and pesticides stay in a latched box.
+> The line uses the conservative net of $114 (R2,052) a year on a $1,130 (R20,340) Mid build, so year 5 is still negative. The optimistic net of $314 (R5,652) would cross zero in year 4. A replacement pump is about $25–$40 (R450–R720). Nutrient concentrates, acids, and pesticides stay in a latched box.
 
 ### 11.5 Non-Financial Value
 
@@ -864,8 +867,8 @@ xychart-beta
 
 | | Budget | Mid | Premium |
 |---|---|---|---|
-| **Build** | $711 (R12,798) | $1,115 (R20,070) | $1,624 (R29,232) |
-| **Zone A only** | $528 (R9,504) | $852 (R15,336) | $1,259 (R22,662) |
+| **Build** | $726 (R13,068) | $1,130 (R20,340) | $1,639 (R29,502) |
+| **Zone A only** | $543 (R9,774) | $867 (R15,606) | $1,274 (R22,932) |
 | **Season running** | $173 (R3,114) | $286 (R5,148) | $426 (R7,668) |
 | **Zone C groceries** | $80–$110 (R1,440–R1,980) | same harvest | same harvest |
 | **Break-even, conservative** | about 3 seasons | several seasons to about 10 | longer, because the build is higher |

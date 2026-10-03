@@ -289,7 +289,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
     Fix: (1) Check reservoir cover — any light leaks? Seal them.
          (2) Check table — if tables are open to sky and algae is growing in
              LECA above the flood line: this is surface algae, relatively harmless
-             but unsightly. A piece of black polythene over LECA between flood
+             but unsightly. A piece of black polyethylene over LECA between flood
              cycles reduces this.
          (3) Full reservoir flush + sterilization (see Guide 08 Section 5)
          (4) Long-term: consider covering reservoir exterior with opaque wrap

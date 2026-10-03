@@ -474,7 +474,7 @@ flowchart TD
   Seedling ready: 4–6 weeks
   First flowers:  8–10 weeks from transplant
   First fruit (green): 12–16 weeks from seed
-  Ripe coloured fruit:  16–22 weeks from seed
+  Ripe colored fruit:  16–22 weeks from seed
 
   IMPORTANT: Start seeds indoors in late February or early March
   (SA: late August or early September) so fruit can ripen before the

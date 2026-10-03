@@ -246,7 +246,7 @@ One rule for heat. Fruiting crops already flood 4 times a day, and 4 is the ceil
 - Multiple layers: each additional layer adds about 2°F (1°C) of protection
 
 **Cloche and cover frames:**
-- Polycarbonate or polythene covers over the table on a hoop frame
+- Polycarbonate or polyethylene covers over the table on a hoop frame
 - Provides 7–14°F (4–8°C) of protection compared with a single fleece layer
 - Keeps rain out (secondary benefit — see Section 6)
 - Can be ventilated during mild days by lifting one end
@@ -370,13 +370,13 @@ This is enough for a normal summer in this inland band, which has a handful of h
 
 **Strategy 2: Simple sloped rain deflectors**
 
-Fit a simple polythene sheet on a slight slope over each table, positioned to deflect rain away from the table surface while allowing the plants to access natural light from the sides.
+Fit a simple polyethylene sheet on a slight slope over each table, positioned to deflect rain away from the table surface while allowing the plants to access natural light from the sides.
 
 ```
   SLOPED DEFLECTOR DESIGN:
 
   Frame: Two hoops of ¾ in (20 mm) pipe over the table
-  Sheet: Clear polythene about 6 mil (150 µm) draped over the hoops
+  Sheet: Clear polyethylene about 6 mil (150 µm) draped over the hoops
   Slope: about 15° so rain runs off to one side
   Clearance: Leave a 6–8 in (15–20 cm) gap at each end for airflow and light
 
@@ -384,7 +384,7 @@ Fit a simple polythene sheet on a slight slope over each table, positioned to de
   Table 1 is one indeterminate tomato or one cucumber. A vine that tall
   needs a trellis and its own cover. A table-wide sheet will not clear it.
 
-  CLEAR vs OPAQUE POLYTHENE:
+  CLEAR vs OPAQUE POLYETHYLENE:
   Clear: allows most light through; risk of greenhouse effect in sun
   Opaque white: diffuses light; cooler; better for leafy greens
   Use clear for fruiting crops (need maximum light); white for greens.

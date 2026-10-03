@@ -147,7 +147,7 @@ This build uses **1:30**: a **3¼ in (83 mm)** drop over each **8 ft (2.44 m)** 
 ```mermaid
 flowchart LR
     subgraph s1["1:30 slope — this build"]
-        IN1["INLET high end<br/>posts 36 in"] -->|"8 ft channel"| OUT1["DRAIN low end<br/>posts 32.75 in<br/>drop 3.25 in"]
+        IN1["INLET high end<br/>posts 36 in"] -->|"8 ft channel"| OUT1["DRAIN low end<br/>posts 32¾ in<br/>drop 3¼ in"]
     end
 ```
 

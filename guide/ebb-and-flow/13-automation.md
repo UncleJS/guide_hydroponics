@@ -436,7 +436,8 @@ ALERTS:
   IF counter at 18:00 < 2 → fewer floods than expected today
      → ALERT: "Flood count low — only N floods by 18:00 (expected 3)"
   IF pump ON for >35 min without OFF event → stuck ON
-     → CRITICAL ALERT: "Pump running >35 min — possible timer failure"
+     → CUT PUMP POWER (smart plug / open relay), then CRITICAL ALERT:
+       "Pump running >35 min — cutoff engaged; check timer"
 ```
 
 ### 5.4 Reservoir Level Sensor — Why It Is Critical in E&F
@@ -480,7 +481,7 @@ EVERY 60 SECONDS, THE NODE:
   IF humidity > 85%                      ──→ Send disease risk alert
   IF reservoir level < 75%               ──→ Send low-level alert
   IF reservoir level < 60%               ──→ Send CRITICAL alert
-  IF pump ON > 35 min continuous         ──→ Send CRITICAL: stuck-ON alert
+  IF pump ON > 35 min continuous         ──→ Open pump relay (cut power), then CRITICAL alert
   IF daily flood count < expected        ──→ Send timer warning
 
   Also serves a local web page at http://hydro-node.local showing
@@ -1325,6 +1326,12 @@ const int FLOAT_PIN_T1 = 18;
 const int FLOAT_PIN_T2 = 19;
 const int FLOAT_PIN_T3 = 23;
 
+const int PUMP_RELAY_PIN = 27;  // opens pump circuit when driven HIGH (optocoupled)
+
+void openPumpRelay() {
+  digitalWrite(PUMP_RELAY_PIN, HIGH);  // stuck-ON cutoff — cut pump power
+}
+
 void checkDrainConfirmation() {
   if (flood_end_ms == 0) return;  // no flood has occurred yet
 
@@ -1335,20 +1342,14 @@ void checkDrainConfirmation() {
   bool t3_flooded = (digitalRead(FLOAT_PIN_T3) == LOW);
 
   if (elapsed > DRAIN_TIMEOUT) {
-    if (t1_flooded) {
-      sendAlert("DRAIN ALERT: Table 1 not drained 45 min after flood end. "
-                "Check standpipe, drain hose, and drain fitting.");
-      pauseNextFloodCycle(1);  // prevent next flood on table 1
-    }
-    if (t2_flooded) {
-      sendAlert("DRAIN ALERT: Table 2 not drained 45 min after flood end.");
-      pauseNextFloodCycle(2);
-    }
-    if (t3_flooded) {
-      sendAlert("DRAIN ALERT: Table 3 not drained 45 min after flood end.");
-      pauseNextFloodCycle(3);
-    }
-    if (!t1_flooded && !t2_flooded && !t3_flooded) {
+    if (t1_flooded || t2_flooded || t3_flooded) {
+      openPumpRelay();  // primary safety: cut pump power now
+      sendCriticalAlert("STUCK-ON CUTOFF: float still up after pump-off. "
+                        "Pump relay opened. Check standpipe, drain hose, and fittings.");
+      if (t1_flooded) pauseNextFloodCycle(1);
+      if (t2_flooded) pauseNextFloodCycle(2);
+      if (t3_flooded) pauseNextFloodCycle(3);
+    } else {
       logEvent("Drain confirmed — all tables dry at " +
                String(elapsed / 60000) + " min post-flood.");
     }
@@ -1367,9 +1368,9 @@ void checkStuckOn() {
   } else if (!pump_on) {
     pump_on_start = 0;         // pump off — reset
   } else if (pump_on && (millis() - pump_on_start > MAX_FLOOD_MS)) {
-    sendCriticalAlert("CRITICAL: Pump has been running for >35 min. "
-                      "Possible timer failure. Table may be permanently flooded. "
-                      "Check system immediately.");
+    openPumpRelay();  // cut power first — alert second
+    sendCriticalAlert("CRITICAL: Pump running >35 min. Cutoff engaged. "
+                      "Possible timer failure. Inspect tables immediately.");
   }
 }
 ```
@@ -2046,9 +2047,10 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 **Prevention:**
 ```
 CORRECT FLOAT SWITCH PLACEMENT:
-  Height: 3–4 cm ABOVE the table floor
-  → Below the flood waterline (standpipe tip is at media depth −2 cm,
-    e.g. 10 cm) so the switch reads ON at full flood
+  Height: 1¼–1½ in (3–4 cm) ABOVE the table floor
+  → Below the flood waterline (standpipe tip is about ¾ in / 2 cm
+    below the LECA surface; e.g. 5 in / 13 cm bed → tip near 4¼ in / 11 cm)
+    so the switch reads ON at full flood
   → Above any residual puddle so the switch reads OFF after drain
   NOT at or above standpipe height (water level never exceeds this
   in normal operation — switch would never submerge)
@@ -2097,7 +2099,7 @@ if (millis() - flood_end_ms > 300000) {  // 5 min post-flood
 **Problem:** Flood duration set too long on the timer. Instead of 20-minute floods, the timer is set to 2 hours (a common error when setting an unfamiliar digital timer). The table fills to overflow within 5 minutes and then runs overflow for the remaining 115 minutes — overflowing, splashing, and potentially running the reservoir empty.
 
 **Prevention:**
-- The ACS712 current sensor + stuck-ON alert (Tier 2) catches this within 35 minutes
+- The ACS712 current sensor + stuck-ON cutoff (Tier 2: open the pump relay) stops the flood within 35 minutes, then alerts
 - After every timer change, always physically observe the first flood cycle from start to overflow to confirm the duration is correct
 - Set the timer duration to: [time to reach overflow + 5 minutes buffer], not longer
 
@@ -2130,13 +2132,13 @@ The primary action is still: if the drain float is still up after the pump shoul
 2. The pump current sensor confirms 0A draw (primary timer did not fire), AND
 3. The ESP32 has waited a 5-minute grace period for the primary to respond.
 
-If both primary and backup are trying to turn on the pump simultaneously — that is fine, both closing means pump definitely runs. The conflict to avoid is: backup holds pump ON after primary timer has turned it OFF (sticking the pump in ON state). The stuck-ON alert catches this regardless: any run > 35 min triggers a critical alert.
+If both primary and backup are trying to turn on the pump simultaneously — that is fine, both closing means pump definitely runs. The conflict to avoid is: backup holds pump ON after primary timer has turned it OFF (sticking the pump in ON state). The stuck-ON cutoff catches this regardless: any run > 35 min opens the pump relay, then sends a critical alert.
 
 ---
 
 ### Pitfall 9 — WiFi Outage Creates a Silent Monitoring Blackout
 
-**Problem:** The ESP32 loses WiFi connection. Data stops flowing. No alerts are sent — including no stuck-ON alert if the pump fails open while the node is offline. Because you've been receiving alerts, silence feels like "nothing to report." But silence could mean the node is offline and the pump has been running for 6 hours.
+**Problem:** The ESP32 loses WiFi connection. Data stops flowing. No alerts are sent — and if the Tier 2 relay path is offline, you also lose the float-based stuck-ON cutoff. Tier 1 smart-plug cutoff still runs locally on the outlet. Silence can still mean the node is down while a flood continues.
 
 This is especially dangerous in E&F because the stuck-ON failure (the most catastrophic mode) produces no unusual sound or visual sign. Continuous flooding looks exactly like a normal flood cycle until you physically walk over.
 

@@ -528,7 +528,7 @@ In E&F, Fusarium can enter via:
   2. Do NOT return the LECA from that pot to the table without sterilization
   3. Disinfect the empty net pot position with 10% bleach solution
   4. Fusarium-resistant varieties: where available, use resistant tomato/pepper
-     varieties (labeled 'F' in seed catalogues)
+     varieties (labeled 'F' in seed catalogs)
 
   PREVENTION:
   ─ Full LECA sterilization between fruiting crop seasons (see Section 7)
@@ -866,7 +866,7 @@ Scrub the inside of all fittings with a long bottle brush. Consider replacing pl
   5. Monitor closely for the first 2 weeks:
      ─ Daily root inspection (lift net pots and check)
      ─ Confirm drain completion after each flood cycle.
-       If you have the Guide 13 drain float, confirm it opens the pump relay
+       Confirm Guide 13 stuck-ON cutoff: smart-plug cut and/or float × 3 opens the pump relay
        when the float is still up after the pump should be off.
      ─ Keep the vegetative schedule of 3 floods a day and shorten each flood
        for the first week. Do not add a fifth flood.

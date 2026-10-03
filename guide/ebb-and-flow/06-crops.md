@@ -292,7 +292,7 @@ Each crop entry includes:
 - Propagate mint from cuttings, not seeds — place a 4 in (10 cm) stem cutting with leaves in a glass of water for 5–7 days until roots appear, then transfer to rockwool or directly into a prepared LECA net pot
 - Mint's vigorous spreading habit is contained by the net pot in an E&F table — this is one advantage of E&F over open-bed growing where mint invades neighbouring plants
 - Mint can stay on the vegetative schedule of 3 floods a day in cool weather. Do not drop a fruiting table from 4 floods to 2 to match an herb
-- One of the most cold-tolerant herbs on Table 3 — can be left in the system until first hard frost (below -3°C); often regrows after light frosts
+- One of the most cold-tolerant herbs on Table 3 — can be left in the system until first hard frost (below 27°F / −3°C); often regrows after light frosts
 
 ---
 
@@ -364,7 +364,7 @@ Each crop entry includes:
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 60–80 days from transplant |
 | **Spacing** | One plant on the 4 ft × 2 ft (1.22 m × 0.61 m) table |
-| **Harvest method** | Individual fruits or whole trusses when fully coloured |
+| **Harvest method** | Individual fruits or whole trusses when fully colored |
 | **Net pot** | 3–4 in (75–100 mm) |
 | **Media depth** | 5 in (13 cm), same as the other tables |
 
@@ -437,7 +437,7 @@ Each crop entry includes:
 | **Light (DLI)** | Minimum 15; optimal 20–30 mol/m²/day |
 | **Seed-to-harvest** | 60–90 days from plug/transplant (grow from established plugs, not seeds) |
 | **Spacing** | 10–12 in (25–30 cm). They replace the leafy crop on Table 3 for that run |
-| **Harvest method** | Pick when fully coloured (red over 80% of the surface); leave about ¼ in (5 mm) of stem |
+| **Harvest method** | Pick when fully colored (red over 80% of the surface); leave about ¼ in (5 mm) of stem |
 | **Net pot** | 3 in (75 mm) |
 
 **E&F-specific tips:**

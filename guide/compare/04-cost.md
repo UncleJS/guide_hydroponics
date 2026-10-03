@@ -84,9 +84,9 @@ Copied from [Ebb and Flow Guide 12](../ebb-and-flow/12-budget-and-sourcing.md):
 
 | Tier | Zone A | Full three zones (A + B + C) |
 |------|--------|------------------------------|
-| **Budget** | **$528 (R9,504)** | **$711 (R12,798)** |
-| **Mid** | **$852 (R15,336)** | **$1,115 (R20,070)** |
-| **Premium** | **$1,259 (R22,662)** | **$1,624 (R29,232)** |
+| **Budget** | **$543 (R9,774)** | **$726 (R13,068)** |
+| **Mid** | **$867 (R15,606)** | **$1,130 (R20,340)** |
+| **Premium** | **$1,274 (R22,932)** | **$1,639 (R29,502)** |
 
 Zone B alone is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C alone is $94 / $123 / $162 (R1,692 / R2,214 / R2,916).
 
@@ -140,14 +140,16 @@ Ebb and Flow spends a little more because media flushes send solution to waste a
 | Probe electrode (amortized) | $8 (R144) | $8 (R144) |
 | **About** | **$35–$50 (R630–R900)** | **$40–$60 (R720–R1,080)** |
 
-### Season running total (order of magnitude)
+### Season running total (Guide 12 mid estimates)
 
-| System | Electricity | Nutrients | Consumables | **About** |
-|--------|-------------|-----------|-------------|-----------|
-| NFT | $15 (R270) | $30 (R540) | $40 (R720) | **$85 (R1,530)** |
-| Ebb and Flow | $1.30 (R23) | $40 (R720) | $50 (R900) | **$90 (R1,620)** |
+Guide 12 wins on these figures. Do not invent a cheaper second track.
 
-Electricity is not the deciding cost. LECA and the second NFT loop are the capital differences.
+| System | Mid season running (Guide 12) | Notes |
+|--------|-------------------------------|-------|
+| NFT Tier 2 Standard | **$247 (R4,446)** | Electricity, nutrients, water, consumables, Zone B lights — [NFT Guide 12 §9.4](../nft/12-budget-and-sourcing.md) |
+| Ebb and Flow Mid | **$286 (R5,148)** | Same scope — [E&F Guide 12 §9.5](../ebb-and-flow/12-budget-and-sourcing.md) |
+
+Electricity alone is small ($15–$80 / R270–R1,440 depending on Zone B LED hours). Nutrients and consumables dominate the season total. LECA and the second NFT loop are the capital differences.
 
 
 ---
@@ -189,14 +191,14 @@ Ebb and Flow wins on cucumber, zucchini (courgette), and eggplant (aubergine). N
 
 ## 6. Payback
 
-Using Mid-tier three-zone capital and the midpoints of the yield and running-cost bands:
+Using Mid-tier three-zone capital and Guide 12 Mid running / payback stories:
 
-| System | Build | Running | Net value mid | Rough seasons to pay back |
-|--------|-------|---------|---------------|---------------------------|
-| NFT Tier 2 Standard | **$769 (R13,842)** | $85 (R1,530) | about $600 (R10,800) | about 1.5 seasons |
-| Ebb and Flow Mid | **$1,115 (R20,070)** | $90 (R1,620) | about $400 (R7,200) | about 3 seasons |
+| System | Build | Running (Guide 12 mid) | Guide 12 payback story |
+|--------|-------|------------------------|------------------------|
+| NFT Tier 2 Standard | **$769 (R13,842)** | **$247 (R4,446)** | Conservative grocery offset ~$500 → net ~$253 → **~3.0 seasons** |
+| Ebb and Flow Mid | **$1,130 (R20,340)** | **$286 (R5,148)** | Optimistic net ~$314 → **~3.6 seasons**; conservative net ~$114 → **~10 seasons** |
 
-First season yield is often 40–60% of a mature year while you learn. Treat payback as a planning story, not a guarantee.
+First season yield is often 40–60% of a mature year while you learn. Treat payback as a planning story, not a guarantee. Full arithmetic lives in each Guide 12.
 
 
 ---
@@ -207,10 +209,10 @@ First season yield is often 40–60% of a mature year while you learn. Treat pay
 
 | Item | NFT | Ebb and Flow |
 |------|-----|--------------|
-| Mid / Standard three-zone capital | **$769 (R13,842)** | **$1,115 (R20,070)** |
+| Mid / Standard three-zone capital | **$769 (R13,842)** | **$1,130 (R20,340)** |
 | Biggest cost | second pump/tank, meters, frame | LECA, 90 US gal (340 L) |
 | Pump hours | 24 h × 2 pumps | about 1.3 h/day |
-| Season electricity | about $15 (R270) | about $1.30 (R23) |
+| Season running (Guide 12 mid) | **$247 (R4,446)** | **$286 (R5,148)** |
 | Fruiting crops | cherry tomato and pepper on CH4 only | tomato, pepper, cucumber, zucchini (courgette), eggplant (aubergine) |
 | Failure that kills a crop | pump stop, 15–30 minutes | timer stuck ON, 2–4 hours |
 
@@ -264,7 +266,7 @@ flowchart TD
 |-----------|-------|
 | About $468 (R8,424) | NFT Tier 1 Lean, full three zones |
 | About $769 (R13,842) | NFT Tier 2 Standard (recommended) |
-| Cucumber, zucchini (courgette), eggplant (aubergine) | Ebb and Flow Mid, $1,115 (R20,070) |
+| Cucumber, zucchini (courgette), eggplant (aubergine) | Ebb and Flow Mid, $1,130 (R20,340) |
 | Both systems | NFT Standard plus Ebb and Flow Budget Zone A when the budget allows |
 
 

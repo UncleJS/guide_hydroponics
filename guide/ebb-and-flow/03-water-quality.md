@@ -311,7 +311,7 @@ flowchart TD
 
 **pH drops / test kits:** About $5–$10 (R90–R180), no calibration, fine as a backup. Accuracy ±0.2–0.5 — rough checks only.
 
-**pH test strips:** Not recommended for nutrient solution — coloured solution masks color comparison. ±0.5–1.0 accuracy. Use only as absolute last resort.
+**pH test strips:** Not recommended for nutrient solution — colored solution masks color comparison. ±0.5–1.0 accuracy. Use only as absolute last resort.
 
 ### Calibrating a pH Meter
 
@@ -615,7 +615,7 @@ The most important water management practice unique to E&F is **monitoring and m
   WHAT YOU NEED:
   ─ Siphon hose or small submersible utility pump
   ─ Bucket for old solution disposal
-  ─ Scrub brush / sponge / microfibre cloth
+  ─ Scrub brush / sponge / microfiber cloth
   ─ 10% bleach solution (1 part bleach : 9 parts water)
   ─ Fresh water supply (tap, RO, or rainwater)
   ─ Nutrient concentrates and pH adjustment chemicals

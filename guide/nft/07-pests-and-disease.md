@@ -379,7 +379,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     H["HEALTHY ROOTS<br/>Color: White<br/>Texture: Firm, fine white hairs<br/>Smell: Neutral"]
-    P["PYTHIUM-INFECTED ROOTS<br/>Color: Brown / gray<br/>Texture: Slimy, mushy, falls apart<br/>Smell: Foul — sewer / rotten odour in reservoir"]
+    P["PYTHIUM-INFECTED ROOTS<br/>Color: Brown / gray<br/>Texture: Slimy, mushy, falls apart<br/>Smell: Foul — sewer / rotten odor in reservoir"]
 ```
 
 **Cause:** Pythium is an oomycete (water mold) that thrives in:
@@ -478,7 +478,7 @@ flowchart LR
 - Affected tissue becomes water-soaked then collapses
 - Spores are spread by air movement and water splashing
 
-**Cause:** Botrytis cinerea is an opportunistic fungal pathogen that infects damaged, dying, or overcrowded plant tissue. Favoured by:
+**Cause:** Botrytis cinerea is an opportunistic fungal pathogen that infects damaged, dying, or overcrowded plant tissue. Favored by:
 - High humidity (above 80%)
 - Still, poorly ventilated air
 - Dense planting

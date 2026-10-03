@@ -425,7 +425,7 @@ flowchart LR
     K["Chives on CH2: hardy to about 5°F (−15°C)"]
 ```
 
-> Light frost is about 30°F (−1°C). Planning dates for this site are April 15 (SA: October 15) and October 20 (SA: April 20). Those are shoulder frosts. They are not a licence to run NFT at 0–15°F (−18 to −9°C).
+> Light frost is about 30°F (−1°C). Planning dates for this site are April 15 (SA: October 15) and October 20 (SA: April 20). Those are shoulder frosts. They are not a license to run NFT at 0–15°F (−18 to −9°C).
 
 ### 5.3 Protecting the System from Cold
 
@@ -597,7 +597,8 @@ Rain into an open tank dilutes that tank only. The greens tank and the CH4 tank 
 Worked example, greens tank at EC 1.4 mS/cm. You lose 2.6 US gal (10 L) of solution and 2.6 US gal (10 L) of rain at EC 0.0 falls in. The tank holds 20 US gal (76 L):
 
 ```
-New EC = (66 L × 1.4 + 10 L × 0.0) / 76 L = 1.22
+New EC = (17.4 US gal × 1.4 + 2.6 US gal × 0.0) / 20 US gal = 1.22
+       (= (66 L × 1.4 + 10 L × 0.0) / 76 L)
 ```
 
 That is still inside 0.8–1.8. A downpour that adds 5–8 US gal (20–30 L) to the greens tank, or half that to the 10 US gal (38 L) fruiting tank, can drop EC below the target for that crop. Tomato fruiting EC is 2.5–3.5 mS/cm and pepper fruiting EC is 2.0–3.0 mS/cm, only in the 10 US gal (38 L) tank.
@@ -773,7 +774,7 @@ A polytunnel (hoop tunnel) provides significant season extension and weather pro
 ```mermaid
 block-beta
     columns 1
-    film["Polythene film (200 micron UV-stabilized)<br/>arched over hoops"]
+    film["Polyethylene film (200 micron UV-stabilized)<br/>arched over hoops"]
     interior["[ch]         [ch]         [ch]   ← NFT channels"]
     ground["Ground<br/>(hoops: 1 in (25 mm) poly pipe or conduit, about 6½ ft (2 m) long)"]
 ```

@@ -302,10 +302,10 @@ block-beta
     columns 4
     rails["CHANNEL RAILS<br/>2× timber rails<br/>channels rest on these"]:4
     space:4
-    LEG1["leg<br/>36 in<br/>high end"] space:2 LEG4["leg<br/>32.75 in<br/>low end<br/>1:30 slope"]
+    LEG1["leg<br/>36 in<br/>high end"] space:2 LEG4["leg<br/>32¾ in<br/>low end<br/>1:30 slope"]
     space:4
     ground["─────────────────── ground ───────────────────"]:4
-    note["Posts: 2×2 in nominal, 36 in and 32.75 in<br/>Rails: 8 ft, channels rest on these<br/>Cross-braces about every 24 in (61 cm)"]
+    note["Posts: 2×2 in nominal, 36 in and 32¾ in<br/>Rails: 8 ft, channels rest on these<br/>Cross-braces about every 24 in (61 cm)"]
 ```
 
 **Timber cut list (Zone A bench):**
@@ -313,7 +313,7 @@ block-beta
 | Piece | Qty | Section | Length | Notes |
 |---|---|---|---|---|
 | Post, high end | 2 | 2×2 in (45×45 mm) | 36 in (91 cm) | Inlet end |
-| Post, low end | 2 | 2×2 in (45×45 mm) | 32.75 in (83 cm) | 36 − 3.25 = 32.75. This is the 1:30 drop. |
+| Post, low end | 2 | 2×2 in (45×45 mm) | 32¾ in (83 cm) | 36 − 3¼ = 32¾. This is the 1:30 drop. |
 | Channel rail | 2 | 1×3 in (25×75 mm) | 8 ft (2.44 m) | Full channel length |
 | Cross-brace, top | 3 | 2×2 in (45×45 mm) | 55 in (140 cm) | Joins the two rails. Frame is about 4 ft (1.2 m) wide. |
 | Cross-brace, lower | 3 | 2×2 in (45×45 mm) | 55 in (140 cm) | Mid-height |
@@ -321,7 +321,7 @@ block-beta
 
 **Assembly order:**
 1. Cut all timber to length. Sand any rough edges.
-2. On a flat surface, assemble one side frame: high post, low post, one 8 ft rail, and braces. Use 3 in (75 mm) screws and exterior wood glue. The low post is the 32.75 in piece.
+2. On a flat surface, assemble one side frame: high post, low post, one 8 ft rail, and braces. Use 3 in (75 mm) screws and exterior wood glue. The low post is the 32¾ in piece.
 3. Repeat for the other side frame.
 4. Stand both side frames up, connect them with the remaining cross-braces.
 5. Check for square using a tape measure diagonally (both diagonals should be equal).
@@ -332,12 +332,12 @@ block-beta
 SLOPE CALCULATION
   Slope: 1:30 (1 in of drop per 30 in of run)
   Channel length: 8 ft = 96 in
-  Total drop: 96 ÷ 30 = 3.2 in, built as 3.25 in (83 mm)
+  Total drop: 96 ÷ 30 = 3.2 in, built as 3¼ in (83 mm)
 
   High-end post: 36 in (91 cm)
-  Low-end post:  36 − 3.25 = 32.75 in (83 cm)
+  Low-end post:  36 − 3.25 = 32¾ in (83 cm)
   ─────────────────────────────────
-  Difference:    3.25 in (83 mm)
+  Difference:    3¼ in (83 mm)
 ```
 
 > **Important:** Cut the low-end posts shorter. Check the drop with a tape before you drill the channels. 3¼ in (83 mm) over 8 ft (2.44 m) is the whole slope. Do not eyeball a steeper pitch.
@@ -897,8 +897,7 @@ Hour 48:
 |---|---|---|
 | Trays, 10 in × 20 in (25 cm × 50 cm) | 6 | The design count. A pack of 10 covers breakage. |
 | Solid tray liners | 6 | One under each tray |
-| Coco coir brick (500g) | 2–3 | Expands to ~8–10 L; enough for several fills |
-| Perlite | 1–2 L | Optional; mix 10% into coco |
+| Coco coir brick (500 g) | 2–3 | Expands to about 2.1–2.6 US gal (8–10 L); enough for several fills. Zone B is coco only — no perlite |
 | Microgreens seeds | Assorted | Sunflower, radish, pea shoots, broccoli |
 | Shelf | 1 | 24 in × 20 in (61 cm × 51 cm), two tiers, about 36 in (91 cm) tall |
 | LED grow panel (50–100 W) | 1 | Full spectrum, 10–12 in (25–30 cm) above the trays. Timer: 16 h on / 8 h off. This timer is not for the NFT pumps. |
@@ -909,9 +908,9 @@ Hour 48:
 ### 13.2 Coco Coir Preparation
 
 1. Place coco brick in a large bowl or bucket.
-2. Add 5–6 L of water. The brick expands over 5–10 minutes. Break apart with hands.
+2. Add about 1.3–1.6 US gal (5–6 L) of water. The brick expands over 5–10 minutes. Break apart with hands.
 3. Target consistency: moist enough to clump when squeezed, but no water drips out.
-4. Mix in perlite if using (10% by volume).
+4. Do not add perlite. Zone B trays are coco only.
 
 ### 13.3 Filling and Seeding Trays
 
@@ -1011,8 +1010,8 @@ Root vegetables do NOT transplant well. Sow seeds directly in the grow bags.
 block-beta
     columns 3
     block:layout["ZONE C LAYOUT — top-down"]:3
-        BR1["5 gal<br/>Radish"] BR2["5 gal<br/>Radish"] BB["5 gal<br/>Beetroot"]
-        BC1["10 gal<br/>Carrot"] BC2["10 gal<br/>Carrot"] BC3["10 gal<br/>Carrot"]
+        BR1["5 US gal<br/>Radish"] BR2["5 US gal<br/>Radish"] BB["5 US gal<br/>Beet"]
+        BC1["10 US gal<br/>Carrot"] BC2["10 US gal<br/>Carrot"] BC3["10 US gal<br/>Carrot"]
     end
     note2["Each bag sits in a drip tray to catch runoff<br/>Keep bags on a permeable surface (gravel, wooden slats) — not sealed concrete"]:3
 ```

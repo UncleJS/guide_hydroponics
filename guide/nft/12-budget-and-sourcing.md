@@ -116,7 +116,7 @@ Line items below are the sums behind those totals. Check shelf prices when you b
 
 | Item | Tier 1 (Lean) | Tier 2 (Standard) | Tier 3 (Optimized) |
 |---|---|---|---|
-| **Posts, 2×2 in: two at 36 in (91 cm), two at 32.75 in (83 cm), plus braces** | $8 (R144) — untreated pine | $12 (R216) — exterior grade | $18 (R324) — pre-painted |
+| **Posts, 2×2 in: two at 36 in (91 cm), two at 32¾ in (83 cm), plus braces** | $8 (R144) — untreated pine | $12 (R216) — exterior grade | $18 (R324) — pre-painted |
 | **Rails, two at 8 ft (2.44 m)** | $6 (R108) — offcuts | $10 (R180) — cut to length | $14 (R252) — hardwood |
 | **Screws, 3 in (75 mm), box of 50** | $4 (R72) | $5 (R90) | $6 (R108) |
 | **Wood glue** | $3 (R54) | $3 (R54) | $3 (R54) |

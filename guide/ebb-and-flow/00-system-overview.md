@@ -70,7 +70,7 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid
 **Table assignment:**
 - **Table 1** — Indeterminate tomato or cucumber, 1 plant
 - **Table 2** — Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants
-- **Table 3** — Lettuce, herbs, pak choi, or a later fruiting crop
+- **Table 3** — Lettuce, herbs, pak choi, strawberries, or a later fruiting crop
 
 ### Zone B — Microgreens Station
 
@@ -113,7 +113,7 @@ flowchart TD
         T1 --> DR1["Table 1 drain<br/>1 in"]
         T2["TABLE 2<br/>1-2 pepper, eggplant (aubergine), or zucchini (courgette)"] --> OF2["Table 2 overflow<br/>1.5 in standpipe"]
         T2 --> DR2["Table 2 drain<br/>1 in"]
-        T3["TABLE 3<br/>Leafy, or a later fruiting crop"] --> OF3["Table 3 overflow<br/>1.5 in standpipe"]
+        T3["TABLE 3<br/>Leafy, strawberries, or later fruiting"] --> OF3["Table 3 overflow<br/>1.5 in standpipe"]
         T3 --> DR3["Table 3 drain<br/>1 in"]
         OF1 --> RES["RESERVOIR<br/>45 US gal"]
         DR1 --> RES

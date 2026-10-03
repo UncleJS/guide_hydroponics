@@ -103,7 +103,7 @@ flowchart TD
     TIMER["DIGITAL TIMER<br/>1-minute resolution, weatherproof"]
     T1["TABLE 1<br/>4 ft x 2 ft<br/>1 tomato or cucumber"]
     T2["TABLE 2<br/>4 ft x 2 ft<br/>1-2 pepper, eggplant (aubergine), or zucchini (courgette)"]
-    T3["TABLE 3<br/>4 ft x 2 ft<br/>leafy, or a later fruiting crop"]
+    T3["TABLE 3<br/>4 ft x 2 ft<br/>leafy, strawberries, or later fruiting"]
     OF1["TABLE 1 OVERFLOW<br/>1.5 in standpipe"]
     OF2["TABLE 2 OVERFLOW<br/>1.5 in standpipe"]
     OF3["TABLE 3 OVERFLOW<br/>1.5 in standpipe"]
@@ -621,7 +621,7 @@ When you add hardware, also check:
 | Flood tables | 3, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level |
 | Table 1 | Indeterminate tomato or cucumber, 1 plant |
 | Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants |
-| Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop |
+| Table 3 | Lettuce, herbs, pak choi, strawberries, or a later fruiting crop |
 | Flood level | About ¾ in (2 cm) below the LECA surface |
 | Flood duration | 15–30 minutes. Shorten in a heatwave; do not add a 5th flood |
 | Vegetative floods | 3× per day |

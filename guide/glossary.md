@@ -134,7 +134,7 @@ The percentage of moisture in the air relative to the maximum it could hold at t
 A hydroponic method where plant roots are suspended in a constantly aerated, nutrient-rich reservoir. Referenced in comparison tables as a contrast to NFT and Ebb & Flow.
 
 **E&F — Ebb & Flow (Flood-and-Drain)**
-A hydroponic method where a grow table or tray is periodically flooded with nutrient solution from a reservoir below, then drained back by gravity. Plants sit in an inert growing medium (typically LECA). The flood-drain cycle is controlled by a timer. This is one of the two primary systems covered in this guide.
+A hydroponic method where a grow table or tray is periodically flooded with nutrient solution from a reservoir below, then drained back by gravity. Plants sit in an inert growing medium (typically LECA). The flood-drain cycle is controlled by a timer. This guide’s Ebb and Flow Zone A uses **three** 4 ft × 2 ft tables and a single **45 US gal (170 L)** reservoir (acceptable range 40–50 US gal). Stuck-ON cutoff is required safety. This is one of the two primary systems covered in this guide.
 
 **Flood Cycle**
 One complete flood-and-drain event: the pump runs 15–30 minutes, solution stops about 3/4 in (2 cm) below the LECA surface, the pump stops, and the table drains back by gravity. Vegetative crops are flooded 3 times a day. Fruiting crops 4 times a day. Four is the ceiling.
