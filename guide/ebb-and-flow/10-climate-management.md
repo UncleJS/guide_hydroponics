@@ -189,12 +189,12 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
 
 ### Flood Cycle Adjustments for Heat
 
-One rule for heat. Fruiting crops already flood 4 times a day, and 4 is the ceiling. A heatwave keeps those 4 floods. Shorten each one if you need to. Put 40% shade cloth on when afternoon highs hold above 85°F (29°C). Never schedule a fifth flood. Never use a drop to 2 floods as the heat plan.
+One rule for heat. Fruiting crops already flood 4 times a day, and 4 is the ceiling. Leafy / vegetative default is 3; heat may go to 4 max. A heatwave keeps fruiting at 4 floods. Shorten each one if you need to. Put 40% shade cloth on when afternoon highs hold above 85°F (29°C). Never schedule a fifth flood. Never use a drop to 2 floods as the heat plan.
 
 ```
   FLOODS WHEN THE AIR IS HOT:
 
-  Vegetative crops:   3 floods a day
+  Leafy / vegetative: 3 floods a day default; up to 4 in heat; never a 5th
   Fruiting crops:     4 floods a day, including during a heatwave
   Heatwave example:   06:00 (15 min), 10:00 (15 min),
                       16:00 (15 min), 20:00 (15 min)
@@ -202,7 +202,8 @@ One rule for heat. Fruiting crops already flood 4 times a day, and 4 is the ceil
   Skip the 12:00–14:00 window. Solution that is already near 72°F (22°C)
   should not be pushed through sun-heated LECA at the hottest hour.
   If solution temperature crosses 77°F (25°C), that is the action line:
-  shade, ice bottles, and shorter floods. The flood count stays at 4.
+  shade, ice bottles, and shorter floods. Fruiting stays at 4; leafy heat
+  may use 4 but never a 5th.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -431,7 +432,7 @@ Clear-sky DLI: summer 45–55 mol/m²/day, spring and fall 25–35 mol/m²/day, 
 
 ```
   JUNE (SA: DECEMBER):
-  [ ] Fruiting tables stay at 4 floods. Leafy Table 3 can stay at 3
+  [ ] Fruiting tables stay at 4 floods. Leafy Table 3 defaults to 3; heat may go to 4 max, never a 5th
   [ ] Clear-sky DLI is 45–55 mol/m²/day. Watch for tip burn on lettuce
   [ ] Afternoon highs start toward 90°F (32°C). Have 40% cloth ready
   [ ] Change the 45 US gal (170 L) reservoir every 10–14 days
@@ -495,13 +496,14 @@ This table gives recommended flood cycle frequency based on ambient temperature.
   Winter shutdown                     0            Beds empty
   Vegetative (Table 3, young plants)  3            15–30 min
   Fruiting (Table 1 and Table 2)      4            15–30 min
+  Heatwave, leafy / vegetative        3–4          4 is the max; never a 5th
   Heatwave, fruiting                  4            Shorter, 15 min
   Heatwave extras                     40% shade when afternoons hold above 85°F (29°C)
-  Solution above 77°F (25°C)          Still 4      Cool the reservoir. Do not add a 5th
+  Solution above 77°F (25°C)          Still ≤4     Cool the reservoir. Do not add a 5th
   After heavy rain                    Skip one     Resume the same count the next day
 ```
 
-Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a recovery strategy. Dropping from 4 to 2 is not the heat plan. Vegetative crops stay at 3. Moist LECA holds a missed flood for 8–24 hours, so one skipped cycle after rain is not an emergency.
+Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a recovery strategy. Dropping from 4 to 2 is not the heat plan. Leafy / vegetative default is 3; heat may go to 4 max; never a 5th. Moist LECA holds a missed flood for 8–24 hours, so one skipped cycle after rain is not an emergency.
 
 [↑ Back to TOC](#table-of-contents)
 

@@ -4,7 +4,7 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-Managing climate is the single greatest challenge of outdoor hydroponic growing. Unlike a greenhouse or grow tent, an outdoor NFT system is fully exposed to ambient temperature swings, direct sun radiation on the reservoir, wind-driven evaporation, rain dilution, frost risk, and seasonal photoperiod changes. This guide covers every environmental factor in depth — how each affects your plants and nutrient solution, and exactly what to do about it.
+Managing climate is the single greatest challenge of outdoor hydroponic growing. Unlike a greenhouse or grow tent, an outdoor NFT system is fully exposed to ambient temperature swings, direct sun on **both reservoirs**, wind-driven evaporation, rain dilution, frost risk, and seasonal photoperiod changes. This guide covers every environmental factor in depth — how each affects your plants and nutrient solution, and exactly what to do about it.
 
 ---
 

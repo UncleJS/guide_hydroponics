@@ -64,7 +64,7 @@ flowchart LR
         NP --> RW --> CH
     end
 
-    subgraph EF["Ebb &amp; Flow SYSTEM — Substantial Media"]
+    subgraph EF["Ebb and Flow SYSTEM — Substantial Media"]
         TABLE["Flood table<br/>4 ft x 2 ft, LECA 5 in deep"]
         LECA["25 US gal LECA per table<br/>75 US gal in three tables"]
         NP2["Multiple net pots<br/>in the media bed"]

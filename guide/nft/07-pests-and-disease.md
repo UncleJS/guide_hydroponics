@@ -629,6 +629,9 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 ```
   FULL SYSTEM STERILISATION PROCEDURE:
 
+  PPE: gloves, eye protection, and work clothes before you mix bleach.
+  Work outdoors or with airflow. Keep bleach away from children and pets.
+
   1. Remove all plants from the infected loop. Hand-water them on a tray.
      NFT roots dry in 15–30 minutes in warm weather. Do not leave plants in a
      stopped channel during a bleach soak. Sterilise one loop at a time so the

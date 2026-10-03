@@ -143,7 +143,7 @@ One complete flood-and-drain event: the pump runs 15–30 minutes, solution stop
 A systematic approach to pest and disease control that combines prevention, monitoring, and targeted intervention, using the least disruptive methods first (physical barriers → biological controls → organic treatments → chemical pesticides as a last resort).
 
 **NFT — Nutrient Film Technique**
-A hydroponic method where a continuous thin film of nutrient solution flows along the bottom of slightly sloped channels, bathing the roots of plants held in net pots. Plants are supported without solid growing media in the root zone. This is one of the two primary systems covered in this guide.
+A hydroponic method where a continuous thin film of nutrient solution flows along the bottom of slightly sloped channels, bathing the roots of plants held in net pots with a little clay pebble. This build uses two loops that never share solution: a greens tank **20 US gal (76 L)** for CH1–CH3, and a fruiting tank **10 US gal (38 L)** for CH4 only. CH4 is not teed into the greens manifold. Both pumps run 24 hours a day. This is one of the two primary systems covered in this guide.
 
 **RDWC — Recirculating Deep Water Culture**
 A variant of DWC where the nutrient solution is circulated between multiple buckets or containers. Mentioned in these guides in the context of organic hydroponic compatibility.

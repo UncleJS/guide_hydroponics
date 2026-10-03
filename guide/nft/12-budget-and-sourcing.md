@@ -200,7 +200,7 @@ Black body, white exterior, on both tanks. Do not buy "black paint only" and sto
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **Clay pebbles / LECA, about 1–2.5 US gal (5–10 L)** | $8 (R144) | $10 (R180) | $12 (R216) |
+| **Clay pebbles / LECA, about 2.6 US gal (10 L)** | $8 (R144) | $10 (R180) | $12 (R216) |
 | **Rockwool cubes, 1 in (25 mm), block of 50** | $6 (R108) | $8 (R144) | $10 (R180) |
 | **Growing media subtotal** | **$14 (R252)** | **$18 (R324)** | **$22 (R396)** |
 
@@ -215,7 +215,7 @@ Black body, white exterior, on both tanks. Do not buy "black paint only" and sto
 | **pH Up, potassium hydroxide, about 8 US fl oz (250 mL)** | $5 (R90) | $6 (R108) | $8 (R144) |
 | **Nutrients subtotal** | **$37 (R666)** | **$40 (R720)** | **$44 (R792)** |
 
-Lock the dry salts, the acid, and the hydroxide in a latched box, away from children and pets. A garden that is good for children still keeps the chemicals locked.
+Handle dry salts, phosphoric acid, and potassium hydroxide with gloves, eye protection, and a dust mask. Lock the dry salts, the acid, and the hydroxide in a latched box, away from children and pets. A garden that is good for children still keeps the chemicals locked.
 
 ### 2.10 Climate / Protection
 
@@ -389,7 +389,7 @@ For structural materials, PVC pipe, and plumbing fittings, local hardware stores
 
 ```
 WHAT TO BUY LOCALLY (hardware store)
-  ✓ PVC downpipe (75mm, 100mm) — ask the plumbing aisle
+  ✓ PVC downpipe 3 in (75 mm) and 4 in (100 mm) — ask the plumbing aisle
   ✓ PVC end caps and fittings
   ✓ Timber for frame
   ✓ Screws, wood glue, silicone sealant
@@ -617,7 +617,7 @@ Planning value for Channel 2 herbs: $200–$400 (R3,600–R7,200)
 
 #### Leafy greens on Channel 3
 
-Spinach, kale, and mint share CH3 with strawberries. Plan **6–10 kg, which is 13–22 lb**, worth about **$60–$120 (R1,080–R2,160)**, before the strawberry fruit below.
+Spinach, kale, and mint share CH3 with strawberries. Plan **13–22 lb (6–10 kg)**, worth about **$60–$120 (R1,080–R2,160)**, before the strawberry fruit below.
 
 #### Strawberries (Channel 3, 3–4 of the 11 sites)
 

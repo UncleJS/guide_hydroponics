@@ -281,7 +281,7 @@ block-beta
 - The thin film doesn't provide the structural support root veg need
 - Root veg need a solid medium to form correct shapes; NFT produces deformed, stunted roots
 
-**Solution:** Use grow bags with deep coco/perlite mix for root veg (Zone C in this system).
+**Solution:** Use grow bags with the Zone C mix — 60% coco / 30% perlite / 10% vermiculite — for root veg.
 
 [↑ Back to TOC](#table-of-contents)
 

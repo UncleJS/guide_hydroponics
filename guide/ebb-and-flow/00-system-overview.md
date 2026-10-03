@@ -37,7 +37,7 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid
 |------|--------|-------|
 | **Zone A — Flood Tables** | Timed flood-drain cycles, LECA media | Tomatoes, cucumbers, courgettes, aubergine, peppers, lettuce, herbs |
 | **Zone B — Microgreens Station** | Tray-based, coco coir media, manual/wicking | Sunflower, pea shoots, radish, broccoli, amaranth, wheatgrass |
-| **Zone C — Root Veg Grow Bags** | Passive grow bags, coco/perlite media, manual fertigation | Radishes, carrots, beetroot |
+| **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beetroot |
 
 **Critical difference from NFT:** Ebb & Flow uses a timer to control flood cycles. A timer that fails ON (pump runs continuously) will flood roots permanently and cause root rot within 2–4 hours. **A drain confirmation sensor is strongly recommended** before the first crop goes in — see [Guide 13 — Automation](13-automation.md). A missed flood is a different fault: moist LECA buffers **8–24 hours**.
 

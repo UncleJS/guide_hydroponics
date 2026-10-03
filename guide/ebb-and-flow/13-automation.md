@@ -126,7 +126,7 @@ flowchart TD
         M1 -.->|"14 hours unobserved"| M2
     end
 
-    subgraph actual["WHAT ACTUALLY HAPPENED — Ebb &amp; Flow Flood Cycle"]
+    subgraph actual["WHAT ACTUALLY HAPPENED — Ebb and Flow Flood Cycle"]
         T1["07:00 — Flood ON<br/>Table floods normally"]
         T2["07:20 — Flood OFF<br/>Table drains normally"]
         T3["12:00 — Flood ON<br/>Table floods normally"]
@@ -1744,17 +1744,19 @@ VPD (Vapour Pressure Deficit) quantifies how hard the air is pulling moisture fr
 | Seedling / cutting | 0.4–0.8 kPa |
 | Vegetative growth | 0.8–1.2 kPa |
 | Fruiting / flowering | 1.0–1.5 kPa |
-| Above 1.8 kPa | Wilting risk — increase flood frequency temporarily |
-| Below 0.4 kPa | Disease risk — reduce flood frequency; improve ventilation |
+| Above 1.8 kPa | Wilting risk — deploy 40% shade; keep floods at the 4× ceiling; shorten flood duration if the tank is warming |
+| Below 0.4 kPa | Disease risk — reduce floods toward 3×; improve ventilation |
 
 **Flood frequency adjustment guide based on VPD:**
 
+Four floods per day is the ceiling. High VPD is a shade and duration problem, not a reason to add a fifth flood.
+
 | VPD (kPa) | Typical air temp | Recommended floods/day |
 |---|---|---|
-| < 0.6 | < 18°C | 2–3 |
-| 0.6–1.0 | 18–22°C | 3–4 |
-| 1.0–1.4 | 22–26°C | 4–5 |
-| > 1.4 | > 26°C | 5–6 (or add shading) |
+| < 0.6 | below 64°F (18°C) | 2–3 |
+| 0.6–1.0 | 64–72°F (18–22°C) | 3 |
+| 1.0–1.4 | 72–79°F (22–26°C) | 3–4 (fruiting at 4) |
+| > 1.4 | above 79°F (26°C) | Stay at 4× max; add 40% shade; shorten floods if solution approaches 77°F (25°C) |
 
 **ESPHome YAML — VPD as a derived sensor:**
 
@@ -1794,14 +1796,14 @@ sensor:
 # VPD alerts
 binary_sensor:
   - platform: template
-    name: "VPD High — Increase Flood Frequency"
+    name: "VPD High — Deploy Shade"
     device_class: problem
     lambda: |-
       return id(vpd).state > 1.4;
     filters:
       - delayed_on: 20min
     on_press:
-      - logger.log: "VPD > 1.4 kPa — consider adding a flood cycle today"
+      - logger.log: "VPD > 1.4 kPa — keep floods at 4 max; deploy 40 percent shade; do not add a 5th flood"
 
   - platform: template
     name: "VPD Very High — Wilting Risk"
@@ -1811,7 +1813,7 @@ binary_sensor:
     filters:
       - delayed_on: 10min
     on_press:
-      - logger.log: "ALERT: VPD > 1.8 kPa — wilting risk; add shade cloth"
+      - logger.log: "ALERT: VPD > 1.8 kPa — shade cloth now; shorten floods; never exceed 4 floods per day"
 
   - platform: template
     name: "VPD Low — Disease Risk"
@@ -2393,11 +2395,11 @@ flowchart TD
     Q3{"Do you know if each<br/>table drained completely<br/>after the last flood?"}
     Q4{"Do you see EC/pH<br/>continuously on<br/>a dashboard?"}
     Q5{"Does EC/pH adjust<br/>itself automatically?"}
-    Q6["🎉 Tier 4 — fully automated<br/>Ebb &amp; Flow system. Enjoy!"]
+    Q6["🎉 Tier 4 — fully automated<br/>Ebb and Flow system. Enjoy!"]
 
     A1["Add Tier 1:<br/>Smart plug on pump<br/>→ flood cycle visibility<br/>+ stuck-ON protection"]
     A2["Add Tier 2:<br/>ESP32 + JSN-SR04T<br/>→ reservoir level sensor<br/>+ flood cycle counter"]
-    A3["Add Tier 2:<br/>Float switches per table<br/>→ drain confirmation<br/>(most important Ebb &amp; Flow sensor)"]
+    A3["Add Tier 2:<br/>Float switches per table<br/>→ drain confirmation<br/>(most important Ebb and Flow sensor)"]
     A4["Add Tier 3:<br/>EC/pH probes + Grafana<br/>→ continuous water quality"]
     A5["Add Tier 4:<br/>Peristaltic pumps + relays<br/>→ automated dosing"]
 

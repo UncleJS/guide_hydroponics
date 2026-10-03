@@ -265,7 +265,7 @@ Using Option A (bought tables) at all tiers:
 | Climate, including 40% shade | $23 (R414) | $30 (R540) | $60 (R1,080) |
 | **Zone A total** | **$528 (R9,504)** | **$852 (R15,336)** | **$1,259 (R22,662)** |
 
-> **Note:** LECA, at 90 US gal (340 L), is the dominant line. One table first is about 30 US gal (114 L) of LECA plus one tray, one 1½ in overflow, and one 1 in drain. That is a start, not the system in the total above.
+> **Note:** LECA, at 90 US gal (340 L), is the dominant line. One table first is **25 US gal (95 L)** of LECA (the full 5 in / 13 cm bed) plus one tray, one 1½ in overflow, and one 1 in drain. That is a start, not the system in the total above.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -363,7 +363,7 @@ The full three-table build cost can be spread across a season by **phasing:**
 
 ```mermaid
 flowchart TD
-    P1["PHASE 1 — one table, Budget parts<br/>One tray, about 30 US gal of LECA,<br/>one 1.5 in overflow, one 1 in drain,<br/>digital timer already included"]
+    P1["PHASE 1 — one table, Budget parts<br/>One tray, 25 US gal of LECA,<br/>one 1.5 in overflow, one 1 in drain,<br/>digital timer already included"]
     P2["PHASE 2 — Tables 2 and 3<br/>Two more trays, the rest of the 90 US gal of LECA,<br/>two more overflows and two more drains"]
     P3["PHASE 3 — Zone B<br/>plus $89 (R1,602)"]
     P4["PHASE 4 — Zone C<br/>plus $94 (R1,692)<br/>Full Budget system $711 (R12,798)"]

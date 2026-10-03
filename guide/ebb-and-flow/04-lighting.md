@@ -329,7 +329,7 @@ block-beta
   columns 1
   cloth["40% shade cloth<br/>stretched over 4 corner posts, 4-5 ft (1.2-1.5 m) tall"]
   gap["16-24 in (40-60 cm) air gap<br/>clearance above the tallest canopy"]
-  tables["Ebb &amp; Flow Flood Tables — Zone A<br/>(flat, wide horizontal surface)"]
+  tables["Ebb and Flow Flood Tables — Zone A<br/>(flat, wide horizontal surface)"]
   res["RESERVOIR — shaded by tables<br/>(no separate shading needed)"]
 ```
 

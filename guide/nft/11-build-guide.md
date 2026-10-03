@@ -763,6 +763,8 @@ After a successful water test, prepare the first nutrient batch.
 
 ### 11.1 Mixing the Nutrient Solution
 
+**PPE:** gloves, eye protection, and a dust mask when you handle dry Masterblend, calcium nitrate, Epsom salt, phosphoric acid (pH Down), or potassium hydroxide (pH Up). Mix outdoors or with airflow. Keep concentrates in a latched box away from children and pets.
+
 See [Guide 02 — Nutrient Solution](02-nutrient-solution.md) for the full scaling notes. The base recipe, per **1 US gal (3.8 L)**, at about EC 1.4–1.6, is:
 
 | Component | Per 1 US gal | Per litre |

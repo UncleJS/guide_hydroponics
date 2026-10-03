@@ -325,6 +325,9 @@ These intervals match [Guide 02 — Nutrient Solution](02-nutrient-solution.md) 
   15–30 minutes in warm weather. Hand-water those plants, or lift them onto
   a tray, before a bleach soak. Do not leave them in a stopped channel.
 
+  PPE before bleach: gloves and eye protection. Mix outdoors or with airflow.
+  Keep bleach away from children and pets.
+
   1. Drain that tank
      - Siphon to a bucket or drain
      - Diluted solution can water a garden or lawn. Do not pour one tank into the other.

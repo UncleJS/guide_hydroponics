@@ -509,7 +509,7 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 **Environment panel (middle row):**
 - Air temperature and humidity (shared outdoor sensor or per-zone)
 - Water temperature (per system)
-- VPD calculated value (high VPD = increase flood frequency in E&F)
+- VPD calculated value (high VPD on Ebb and Flow = deploy 40% shade and keep floods at the 4× ceiling; never add a 5th flood)
 
 **Chemistry panel (bottom row):**
 - EC (per system reservoir)

@@ -110,13 +110,13 @@ flowchart TD
         M1 -.->|"14 hours unobserved"| M2
     end
 
-    subgraph actual["WHAT ACTUALLY HAPPENED — Reservoir Temp"]
-        T1["18°C<br/>00:00"]
-        T2["20°C<br/>06:00"]
-        T3["22°C<br/>10:00"]
-        T4["26°C — DANGER<br/>14:00"]
-        T5["22°C<br/>18:00"]
-        T6["18°C<br/>22:00"]
+    subgraph actual["WHAT ACTUALLY HAPPENED — Greens tank temp"]
+        T1["64°F 18°C<br/>00:00"]
+        T2["68°F 20°C<br/>06:00"]
+        T3["72°F 22°C<br/>10:00"]
+        T4["77°F 25°C DANGER<br/>14:00"]
+        T5["72°F 22°C<br/>18:00"]
+        T6["64°F 18°C<br/>22:00"]
         T1 --> T2 --> T3 --> T4 --> T5 --> T6
     end
 
@@ -128,8 +128,8 @@ flowchart TD
     style actual fill:#1a2e1a,stroke:#4a8a4a,color:#ccc
 ```
 
-The dangerous 26°C spike at 2 PM was invisible to both manual checks.
-Continuous logging would have caught it AND alerted you.
+The dangerous **77°F (25°C)** spike at 2 PM in the greens tank was invisible to both manual checks.
+Continuous logging would have caught it AND alerted you. The fruiting tank needs the same alert line.
 
 ### 1.2 What Data Logging Gives You
 
@@ -137,7 +137,7 @@ Continuous logging would have caught it AND alerted you.
 |---|---|
 | **Early warning** | pH drifting 0.1/day → act before it reaches 7.0 |
 | **Pattern recognition** | Reservoir always peaks at 2 PM → install shade before it matters |
-| **Root cause analysis** | Wilting at 4 PM? Check logs — EC spiked to 3.2 at noon from evaporation |
+| **Root cause analysis** | Wilting at 4 PM? Check logs — the **CH4 fruiting tank** EC spiked to 3.2 at noon from evaporation (greens tank ceiling is 1.8) |
 | **Season learning** | Compare July 2026 to July 2027 — was shade cloth timing better? |
 | **Remote monitoring** | Check your system from work via phone dashboard |
 | **Night-time coverage** | Frost at 4 AM? Get an alert, deploy fleece or heater remotely |
@@ -611,28 +611,30 @@ flowchart LR
 - Grafana Cloud free tier: 3 dashboards, 10,000 series — more than enough
 - No hardware to maintain, accessible from any device with a browser
 
-**What the dashboard shows:**
+**What the dashboard shows (both loops):**
 
 ```mermaid
 flowchart TD
     subgraph dashboard["HYDROPONICS DASHBOARD — Last updated: now"]
-        ST["Sol. Temp<br/>20.3°C ✅"]
-        AT["Air Temp<br/>22.1°C ✅"]
-        PH["pH<br/>5.94 ✅"]
-        EC["EC<br/>1.42 ✅"]
-        HU["Humidity<br/>68% ✅"]
-        WL["Water Level<br/>72%"]
-        PS["Pump Status<br/>RUNNING"]
-        TC["SOLUTION TEMP — Last 7 Days<br/>Line chart: 16–26°C range<br/>Mon→Sun · DANGER line at 26°C"]
-        PC["pH HISTORY — Last 7 Days<br/>Line chart: 5.0–7.0 range<br/>Mon→Sun · stable ~6.0 throughout"]
-        LC["RESERVOIR LEVEL — Last 7 Days<br/>Bar chart: 0–100%<br/>Mon→Sun · topped up mid-week"]
+        AT["Air Temp<br/>72°F 22°C"]
+        HU["Humidity<br/>68%"]
+        GST["Greens temp<br/>69°F 20.5°C"]
+        GEC["Greens EC<br/>1.42"]
+        GPH["Greens pH<br/>5.94"]
+        GWL["Greens level<br/>72%"]
+        GPS["Greens pump<br/>RUNNING"]
+        FST["Fruiting temp<br/>70°F 21°C"]
+        FEC["Fruiting EC<br/>2.80"]
+        FPH["Fruiting pH<br/>5.90"]
+        FWL["Fruiting level<br/>65%"]
+        FPS["Fruiting pump<br/>RUNNING"]
+        TC["SOLUTION TEMP — Last 7 Days<br/>Both tanks · DANGER line at 77°F 25°C"]
     end
 
-    style ST fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
-    style AT fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
-    style PH fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
-    style EC fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
-    style HU fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style GST fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style GEC fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style FST fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
+    style FEC fill:#1a3a1a,stroke:#2a6a2a,color:#aaffaa
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -1398,7 +1400,7 @@ If your data shows:
   Day 1: avg solution temp 18°C → pH changed +0.05
   Day 2: avg solution temp 20°C → pH changed +0.08
   Day 3: avg solution temp 75°F (24°C) → pH changed +0.18
-  Day 4: avg solution temp 26°C → pH changed +0.31
+  Day 4: avg solution temp 77°F (25°C) → pH changed +0.31
 
 Conclusion: Every 2°C rise in solution temp roughly doubles pH drift rate.
 Action:     Prioritise temperature control (shade, insulation) over

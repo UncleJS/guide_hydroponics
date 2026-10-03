@@ -114,17 +114,17 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.4 mS/cm (seedling) → 1.2–1.6 mS/cm (mature) |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3× per day (seedling); 3–4× per day (mature, hot weather) |
-| **Temperature** | Day 18–24°C / Night 12–18°C |
+| **Flood frequency** | 3× per day (vegetative default); up to 4× in heat; never a 5th |
+| **Temperature** | Day 64–75°F (18–24°C) / Night 54–64°F (12–18°C) |
 | **Light (DLI)** | Minimum 8; optimal 12–17 mol/m²/day |
-| **Seed-to-harvest** | 35–45 days (faster in warm conditions; slower below 15°C) |
+| **Seed-to-harvest** | 35–45 days (faster in warm conditions; slower below 59°F / 15°C) |
 | **Spacing** | 8–10 in (20–25 cm) on centre. Table 3 can hold a leafy planting; do not treat it as the tomato table |
 | **Harvest method** | Cut at base with clean knife; whole head or outer leaves |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Butterhead lettuce forms a compact head that sits at media level in a flood table — unlike NFT where the head can sometimes hang below channel level and become wet, E&F positioning is ideal for head formation
-- In summer, the wide flat table surface means plants get even light distribution — butterhead can be spaced slightly tighter than other lettuce types (20cm) without mutual shading if heads are harvested before they become large
+- In summer, the wide flat table surface means plants get even light distribution — butterhead can be spaced slightly tighter than other lettuce types (8 in / 20 cm) without mutual shading if heads are harvested before they become large
 - Tip burn (brown leaf edges) is the most common problem — linked to calcium deficiency under heat stress. In E&F, ensure flood frequency is adequate on hot days: 4 floods per day keeps calcium moving through the plant
 - LECA surface can reflect heat upward in summer — a 40% shade cloth over the table reduces both direct and reflected heat load on lettuce heads
 
@@ -137,13 +137,13 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 16–24°C / Night 10–18°C |
+| **Flood frequency** | 3× per day (vegetative default); up to 4× in heat; never a 5th |
+| **Temperature** | Day 61–75°F (16–24°C) / Night 50–64°F (10–18°C) |
 | **Light (DLI)** | Optimal 12–17 mol/m²/day |
 | **Seed-to-harvest** | 40–55 days (romaine takes longer than butterhead) |
-| **Spacing** | 25–30cm on centre; taller and more upright than butterhead |
+| **Spacing** | 10–12 in (25–30 cm) on centre; taller and more upright than butterhead |
 | **Harvest method** | Cut outer leaves from 20 days onward; full head cut at 40–55 days |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Romaine grows tall and upright — on a flat flood table, this means less mutual shading than a wider-spreading butterhead
@@ -160,13 +160,13 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3× per day |
-| **Temperature** | Day 16–24°C / Night 10–18°C |
+| **Flood frequency** | 3× per day (vegetative default); up to 4× in heat; never a 5th |
+| **Temperature** | Day 61–75°F (16–24°C) / Night 50–64°F (10–18°C) |
 | **Light (DLI)** | Minimum 8; optimal 12–17 mol/m²/day |
 | **Seed-to-harvest** | 28–35 days to first cut; continues producing for 4–6 weeks |
-| **Spacing** | 20cm on centre — tighter spacing fine with cut-and-come-again |
+| **Spacing** | 8 in (20 cm) on centre — tighter spacing fine with cut-and-come-again |
 | **Harvest method** | Cut outer leaves 2–3cm above media surface — do not cut growing tip |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Loose-leaf is the best choice for high-frequency succession planting — short cycle, high yield per table position
@@ -183,13 +183,13 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–2.0 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5). Spinach tolerates a drift toward the top of that band |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 15–20°C / Night 8–15°C (cool-season crop) |
+| **Flood frequency** | 3× per day (vegetative default); up to 4× in heat; never a 5th |
+| **Temperature** | Day 59–68°F (15–20°C) / Night 46–59°F (8–15°C) (cool-season crop) |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 30–45 days |
-| **Spacing** | 20–25cm on centre |
+| **Spacing** | 8–10 in (20–25 cm) on centre |
 | **Harvest method** | Outer leaves or full cut; does not regrow as readily as lettuce after full cut |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Spinach germinates poorly above 25°C — start seeds indoors in early spring or late summer for the best results
@@ -206,20 +206,20 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.4–2.0 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 15–25°C / Night 8–18°C (frost tolerant — handles light frost) |
+| **Flood frequency** | 3× per day (vegetative default); up to 4× in heat; never a 5th |
+| **Temperature** | Day 59–77°F (15–25°C) / Night 46–64°F (8–18°C) (frost tolerant — handles light frost) |
 | **Light (DLI)** | Minimum 10; optimal 15–20 mol/m²/day |
 | **Seed-to-harvest** | 55–70 days (slower than lettuce — worth it for repeated harvesting) |
-| **Spacing** | 30–35cm on centre; large plant — 4–6 per table |
+| **Spacing** | 12–14 in (30–35 cm) on centre; large plant — 4–6 per table |
 | **Harvest method** | Remove outer/lower leaves; central growing tip kept — continuous harvest for months |
-| **Net pot** | 50mm (75mm for large varieties like Nero di Toscana) |
+| **Net pot** | 2 in (51 mm) (3 in / 76 mm for large varieties like Nero di Toscana) |
 
 **E&F-specific tips:**
 - Kale is one of the most productive long-season crops for an E&F flood table — a single plant produces leaves for 3–4 months with regular harvesting
 - Kale roots run through the 5 in (13 cm) LECA. Use a 3 in (75 mm) net pot for a large Tuscan variety. The bed depth does not change between tables
 - Unlike lettuce, kale does not bolt in summer — it can stay on Table 3 through the entire growing season while lettuce is replaced by succession planting around it
 - Kale improves in flavour after a light frost — leave late-season plants in until the first frost for the sweetest harvests
-- Space kale carefully: its large canopy spreads 40–60cm and will shade adjacent plants — place at the north or rear of the table
+- Space kale carefully: its large canopy spreads 16–24 in (40–60 cm) and will shade adjacent plants — place at the north or rear of the table
 
 ---
 
@@ -230,13 +230,13 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.0–1.6 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day (basil is thirsty — one of the highest flood-frequency herbs) |
-| **Temperature** | Day 22–28°C / Night 15–20°C (tropical origin — cold-sensitive) |
+| **Flood frequency** | 3× default; up to 4× in heat (never a 5th); basil is thirsty — one of the highest flood-frequency herbs |
+| **Temperature** | Day 72–82°F (22–28°C) / Night 59–68°F (15–20°C) (tropical origin — cold-sensitive) |
 | **Light (DLI)** | Minimum 12; optimal 15–20 mol/m²/day |
 | **Seed-to-harvest** | 28–42 days |
-| **Spacing** | 20–25cm on centre |
+| **Spacing** | 8–10 in (20–25 cm) on centre |
 | **Harvest method** | Pinch growing tip 2–3 nodes down; encourages bushy growth; never strip all leaves |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Basil is heat-loving — it thrives on the warm LECA surface in summer. Unlike lettuce which suffers from media surface heat, basil benefits from it
@@ -255,12 +255,12 @@ Each crop entry includes:
 | **EC range** | 1.0–1.6 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
-| **Temperature** | Day 17–24°C / Night 10–18°C |
+| **Temperature** | Day 63–75°F (17–24°C) / Night 50–64°F (10–18°C) |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 25–35 days to first harvest (leaf coriander) |
-| **Spacing** | 15–20cm on centre; small plant |
+| **Spacing** | 6–8 in (15–20 cm) on centre; small plant |
 | **Harvest method** | Outer stems; do not cut central growing tip until end of crop |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Cilantro bolts extremely quickly in warm temperatures and long days — plan for a short crop cycle: 3–4 weeks before bolting in June/July
@@ -279,15 +279,15 @@ Each crop entry includes:
 | **EC range** | 1.2–1.8 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day (mint is moderately drought-tolerant vs other herbs) |
-| **Temperature** | Day 16–24°C / Night 10–18°C |
+| **Temperature** | Day 61–75°F (16–24°C) / Night 50–64°F (10–18°C) |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 28–35 days from cutting/transplant (mint is propagated from cuttings, not seed) |
-| **Spacing** | 20–25cm on centre; stolons spread but are contained by net pot |
+| **Spacing** | 8–10 in (20–25 cm) on centre; stolons spread but are contained by net pot |
 | **Harvest method** | Cut stems 5–7cm above media surface; regrows vigorously |
-| **Net pot** | 50mm (75mm preferred — mint's root system is vigorous) |
+| **Net pot** | 2 in (51 mm) (3 in / 76 mm preferred — mint's root system is vigorous) |
 
 **E&F-specific tips:**
-- Propagate mint from cuttings, not seeds — place 10cm stem cutting with leaves in a glass of water for 5–7 days until roots appear, then transfer to rockwool or directly into a prepared LECA net pot
+- Propagate mint from cuttings, not seeds — place a 4 in (10 cm) stem cutting with leaves in a glass of water for 5–7 days until roots appear, then transfer to rockwool or directly into a prepared LECA net pot
 - Mint's vigorous spreading habit is contained by the net pot in an E&F table — this is one advantage of E&F over open-bed growing where mint invades neighbouring plants
 - Mint can stay on the vegetative schedule of 3 floods a day in cool weather. Do not drop a fruiting table from 4 floods to 2 to match an herb
 - One of the most cold-tolerant herbs on Table 3 — can be left in the system until first hard frost (below -3°C); often regrows after light frosts
@@ -302,12 +302,12 @@ Each crop entry includes:
 | **EC range** | 1.2–1.8 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
-| **Temperature** | Day 15–24°C / Night 8–18°C |
+| **Temperature** | Day 59–75°F (15–24°C) / Night 46–64°F (8–18°C) |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 30–40 days from transplant; continuous harvest for the season |
-| **Spacing** | 15–20cm on centre |
+| **Spacing** | 6–8 in (15–20 cm) on centre |
 | **Harvest method** | Snip to 2–5cm above media surface with scissors — regrows repeatedly |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Chives are one of the most reliable crops in E&F flood tables — they tolerate a wide range of EC and pH conditions and are difficult to kill with over- or under-watering
@@ -325,12 +325,12 @@ Each crop entry includes:
 | **EC range** | 0.8–1.6 mS/cm |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
-| **Temperature** | Day 15–24°C / Night 8–18°C |
+| **Temperature** | Day 59–75°F (15–24°C) / Night 46–64°F (8–18°C) |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 35–60 days (parsley is slow-germinating — 14–21 days to germination) |
-| **Spacing** | 20–25cm on centre |
+| **Spacing** | 8–10 in (20–25 cm) on centre |
 | **Harvest method** | Cut outer stems at base; central stems regrow; one plant lasts a whole season |
-| **Net pot** | 50mm |
+| **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
 - Parsley seed is notoriously slow to germinate — pre-soak in warm water for 24 hours before sowing; expect 14–21 days to germination at 18–22°C
@@ -357,7 +357,7 @@ Each crop entry includes:
 | **EC range** | 2.0–2.5 mS/cm (vegetative) → 2.5–3.5 mS/cm (fruiting) |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting, hot weather) |
-| **Temperature** | Day 20–28°C / Night 15–20°C |
+| **Temperature** | Day 68–82°F (20–28°C) / Night 59–68°F (15–20°C) |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 60–80 days from transplant |
 | **Spacing** | One plant on the 4 ft × 2 ft (1.22 m × 0.61 m) table |
@@ -382,8 +382,8 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
 | **EC range** | 1.8–2.2 mS/cm (vegetative) → 2.5–3.0 mS/cm (fruiting) |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 22–28°C / Night 16–20°C (warmth-demanding) |
+| **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting) |
+| **Temperature** | Day 72–82°F (22–28°C) / Night 61–68°F (16–20°C) (warmth-demanding) |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 70–90 days from transplant (green to red adds 3–4 weeks) |
 | **Spacing** | 1–2 plants on Table 2 |
@@ -394,7 +394,7 @@ Each crop entry includes:
 **E&F-specific tips:**
 - Do not transplant peppers to Table 2 until nights stay above 59°F (15°C). In this 38°N climate that is often late May (SA: late November), after the 15 April last-frost date (SA: 15 October)
 - At season end, peppers can be overwintered indoors as potted plants — remove from net pot, wash roots, pot in soil, and bring inside before first frost. This skips the germination/seedling stage for next year
-- Blossom drop is common in temperatures above 30°C or below 15°C — shade cloth deployment is important for peppers during heat waves
+- Blossom drop is common in temperatures above 86°F (30°C) or below 59°F (15°C) — shade cloth deployment is important for peppers during heat waves
 - Sweet peppers can be harvested green (smaller, earlier) or left to colour red/orange/yellow (sweeter, more nutritious, but requires 3–4 extra weeks)
 
 ---
@@ -406,13 +406,13 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table. 1–2 plants |
 | **EC range** | 2.0–2.5 mS/cm (vegetative) → 2.5–3.0 mS/cm (fruiting). Do not push chilli above 3.0 |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 22–30°C / Night 16–20°C |
+| **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting) |
+| **Temperature** | Day 72–86°F (22–30°C) / Night 61–68°F (16–20°C) |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 65–85 days from transplant |
 | **Spacing** | 1–2 plants on Table 2. Do not add plants to "fill" the 4 ft × 2 ft table |
 | **Harvest method** | Cut with clean scissors; leaving the calyx intact extends shelf life |
-| **Net pot** | 75mm |
+| **Net pot** | 3 in (76 mm) |
 
 **E&F-specific tips:**
 - Chilli peppers generally produce more fruits per plant than sweet peppers and need slightly less space
@@ -479,8 +479,8 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
 | **EC range** | 1.6–2.0 mS/cm (vegetative) → 2.0–2.4 mS/cm (fruiting) |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 20–28°C / Night 14–20°C |
+| **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting) |
+| **Temperature** | Day 68–82°F (20–28°C) / Night 57–68°F (14–20°C) |
 | **Light (DLI)** | Minimum 18; optimal 22–32 mol/m²/day |
 | **Seed-to-harvest** | 45–60 days from transplant |
 | **Spacing** | 1–2 plants on Table 2. Two plants fill the 4 ft × 2 ft table |
@@ -504,8 +504,8 @@ Each crop entry includes:
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
 | **EC range** | 1.8–2.5 mS/cm (vegetative) → 2.5–3.0 mS/cm (fruiting) |
 | **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
-| **Flood frequency** | 3–4× per day |
-| **Temperature** | Day 22–30°C / Night 18–22°C (heat-demanding — most warmth-requiring crop in the system) |
+| **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting) |
+| **Temperature** | Day 72–86°F (22–30°C) / Night 64–72°F (18–22°C) (heat-demanding — most warmth-requiring crop in the system) |
 | **Light (DLI)** | Minimum 18; optimal 22–30 mol/m²/day |
 | **Seed-to-harvest** | 70–90 days from transplant |
 | **Spacing** | 1–2 plants on Table 2 |
@@ -542,7 +542,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **pH range** | 5.8–6.2 |
 | **Media** | Coco, 1–1¼ in (2.5–3 cm) |
 | **Seed density** | ~30–40g seeds per 10 in × 20 in (25 cm × 50 cm) tray (dense sowing) |
-| **Temperature** | 18–24°C |
+| **Temperature** | 64–75°F (18–24°C) |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 8–12 days |
 | **Harvest method** | Cut at media surface with sharp scissors |
@@ -560,7 +560,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **pH range** | 5.8–6.2 |
 | **Media** | Coco, 1–1¼ in (2.5–3 cm) |
 | **Seed density** | ~15–20g seeds per 10 in × 20 in (25 cm × 50 cm) tray |
-| **Temperature** | 16–22°C |
+| **Temperature** | 61–72°F (16–22°C) |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 6–10 days (fastest microgreen in the system) |
 | **Harvest method** | Cut 1–2cm above media surface |
@@ -578,7 +578,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **pH range** | 5.8–6.2 |
 | **Media** | Coco, 1–1¼ in (2.5–3 cm) |
 | **Seed density** | ~60–80g peas per 10 in × 20 in (25 cm × 50 cm) tray (shoulder-to-shoulder sowing) |
-| **Temperature** | 15–22°C |
+| **Temperature** | 59–72°F (15–22°C) |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 8–12 days |
 | **Harvest method** | Cut tendrils and young leaves when 8–12cm tall |
@@ -596,7 +596,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **pH range** | 5.8–6.2 |
 | **Media** | Coco, 1–1¼ in (2.5–3 cm) |
 | **Seed density** | ~8–12g seeds per 10 in × 20 in (25 cm × 50 cm) tray (tiny seeds — do not over-sow) |
-| **Temperature** | 16–22°C |
+| **Temperature** | 61–72°F (16–22°C) |
 | **Light (DLI)** | 12–18 mol/m²/day |
 | **Seed-to-harvest** | 7–10 days |
 | **Harvest method** | Cut at media surface when cotyledons are fully open |
@@ -614,7 +614,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **pH range** | 5.8–6.2 |
 | **Media** | Coco, 1–1¼ in (2.5–3 cm) |
 | **Seed density** | ~40–50g wheat berries per 10 in × 20 in (25 cm × 50 cm) tray |
-| **Temperature** | 16–22°C |
+| **Temperature** | 61–72°F (16–22°C) |
 | **Light (DLI)** | 10–18 mol/m²/day |
 | **Seed-to-harvest** | 7–10 days (first cut); regrows for a second cut |
 | **Harvest method** | Cut 1–2cm above media surface; allow to regrow for second harvest |

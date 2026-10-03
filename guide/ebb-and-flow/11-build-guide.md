@@ -256,7 +256,7 @@ The flood table is the heart of the E&F system. You have two options: buy a purp
 **What to look for:**
 - Food-grade polypropylene or ABS plastic construction
 - Pre-drilled or moulded fill port and drain port positions
-- Raised border to contain flood water (at least 10 cm deep internal dimension)
+- Raised border to contain flood water (at least 4 in (10 cm) deep internal dimension)
 - Flat, level base (check with a spirit level in-store if possible)
 - Size: 4 ft × 2 ft (1.22 m × 0.61 m). That is the table in this build.
 
@@ -296,19 +296,19 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
   1. Cut timber to length. Sand all edges.
 
   2. Assemble the box frame:
-     → Two long sides (1,200mm) + two short sides (600mm)
-     → Use 75mm wood screws at each corner (2 screws per corner)
+     → Two long sides (48 in / 1,200 mm) + two short sides (24 in / 600 mm)
+     → Use 3 in (75 mm) wood screws at each corner (2 screws per corner)
      → Apply PVA wood glue at every joint before screwing
      → Check frame is square: measure both diagonals — must be equal
 
   3. Attach base support ribs:
-     → Three 50×50mm cross-supports at 400mm spacing
+     → Three 2 in × 2 in (50 × 50 mm) cross-supports at 16 in (400 mm) spacing
      → Screw from outside long face into rib ends
      → Ribs must be flush with or slightly below the bottom edge of frame
 
   4. Fit plywood base:
-     → Lay 9mm ply on the support ribs
-     → Screw or nail ply to ribs at 150mm spacing (prevents bow when flooded)
+     → Lay ⅜ in (9 mm) ply on the support ribs
+     → Screw or nail ply to ribs at 6 in (150 mm) spacing (prevents bow when flooded)
      → Check with spirit level — ply must be flat
 
   5. Treat exterior timber:
@@ -323,10 +323,10 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
 ```
   LINER INSTALLATION:
 
-  1. Measure and cut liner: table internal width + 2× (depth + 10cm overlap)
-     Example: 1200mm × 600mm table, 150mm deep:
+  1. Measure and cut liner: table internal width + 2× (depth + 4 in / 10 cm overlap)
+     Example: 48 in × 24 in (1200 × 600 mm) table, 6 in (150 mm) deep:
      Liner size: (1200 + 2×(150+100)) = 1,700 mm × (600 + 2×(150+100)) = 1,100 mm
-     Cut: 1,700 mm × 1,100 mm
+     Cut: about 67 in × 43 in (1,700 × 1,100 mm)
 
   2. Lay liner centrally in the table box, pressing it into the base corners.
      Take care to fold corners neatly (like wrapping a present — diagonal fold,
@@ -334,7 +334,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
 
   3. The liner extends up all four sides and over the top edge of the timber.
      Use stainless steel staples (NOT galvanised) to tack the liner over
-     the top edge of the timber frame. Space staples 100mm apart.
+     the top edge of the timber frame. Space staples 4 in (100 mm) apart.
 
   4. Apply pond liner tape over the stapled edge on top of the timber.
      This protects the liner edge from UV and prevents it lifting.
@@ -406,26 +406,26 @@ flowchart TD
 | Gravity drain | Excellent — straight down | Good — needs careful routing |
 | Temperature stability | Better — shaded by table | Worse — in open air |
 | Maintenance access | Harder — crawl under | Easy — stand beside |
-| Space efficiency | Better — no extra footprint | Worse — adds 60 cm to width |
+| Space efficiency | Better — no extra footprint | Worse — adds about 2 ft (60 cm) to width |
 | Pump head height | Less (shorter lift to table) | More (pump lifts through longer route) |
 
-**Recommendation:** Under-table for temperature benefits and space efficiency. Build the table support frame tall enough to leave 60–70 cm clearance below the table base.
+**Recommendation:** Under-table for temperature benefits and space efficiency. Build the table support frame tall enough to leave 24–28 in (60–70 cm) clearance below the table base.
 
 ### Reservoir Preparation
 
 1. **Choose a food-grade HDPE container** of 45 US gal (170 L), in the range 40–50 US gal (151–189 L). A low rectangular tank, about 32 in × 24 in × 20 in (81 cm × 61 cm × 51 cm), fits under the tables more easily than a tall barrel.
 
 2. **Prepare lid access points:**
-   - Pump power cable exit: 12 mm slit (not round hole — allows cable out but resists water ingress)
-   - Supply pipe outlet: 20 mm hole for pump output hose going to table fill ports
-   - Fill/inspection port: 150 mm circular hole with a loose-fitting cap for EC/pH sampling, top-ups, and cleaning without removing the full lid
-   - Air pump tube entry (optional): 8 mm hole
+   - Pump power cable exit: ½ in (12 mm) slit (not round hole — allows cable out but resists water ingress)
+   - Supply pipe outlet: ¾ in (20 mm) hole for pump output hose going to table fill ports
+   - Fill/inspection port: 6 in (150 mm) circular hole with a loose-fitting cap for EC/pH sampling, top-ups, and cleaning without removing the full lid
+   - Air pump tube entry (optional): ⅜ in (8 mm) hole
 
 3. **Light-proof the reservoir:**
    Wrap exterior with black polythene sheet, then a layer of white reflective bubble wrap insulation over the top. Black inner layer blocks light (prevents algae); white outer layer reflects solar heat (keeps solution cool). Secure with tape or cable ties.
 
 4. **Mark fill levels:**
-   With the reservoir in position and filled to operating level (leave 10 cm from top), mark the external wall with permanent marker at the waterline. Add 10 L increment marks going down. This lets you track daily consumption at a glance.
+   With the reservoir in position and filled to operating level (leave about 4 in (10 cm) from top), mark the external wall with permanent marker at the waterline. Add 10 L increment marks going down. This lets you track daily consumption at a glance.
 
 5. **Install pump:**
    Place the submersible pump on the reservoir floor. Route the power cable through the lid. Connect the 1 in supply hose to the pump outlet. The pump stays submerged — mark the minimum waterline 2 in (5 cm) above the pump on the outside of the 45 US gal (170 L) tank.
@@ -959,7 +959,7 @@ This zone is identical to the NFT system Zone B and is not affected by the E&F s
 ```mermaid
 block-beta
     columns 3
-    LED["LED panel 50–100W — 25 cm above trays"]:3
+    LED["LED panel 50–100W — 10–12 in (25–30 cm) above trays"]:3
     block:tier1["TIER 1 — GROWTH STAGE (3–7 days under light)"]:3
         T1A["tray<br/>light growth"] T1B["tray<br/>light growth"] T1C["tray<br/>light growth"]
     end

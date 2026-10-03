@@ -328,7 +328,7 @@ Coco coir (coconut husk fibre) is the primary media for Zone C grow bags (root v
 
 - **Compressed blocks:** Expand when wetted (~5L block expands to ~60–70L). Very cost-effective.
 - **Loose bagged coco:** Ready to use, convenient, and more expensive per US gal than a compressed block.
-- **Coco perlite pre-mixed:** Some brands sell 70/30 coco/perlite — convenient for grow bags.
+- **Coco perlite pre-mixed:** Some brands sell 70/30 coco/perlite. For Zone C in this build, still add vermiculite so the bag ends at **60% coco / 30% perlite / 10% vermiculite**. Do not use 70/30 alone as the grow-bag recipe.
 - **Buffered coco:** Pre-treated with calcium/magnesium to prevent CEC issues. Worth the slight extra cost.
 
 ### Cal-Mag Warning
@@ -431,7 +431,7 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 
 ### Uses in This System
 
-- **Zone C grow bags:** 10% in coco/perlite blend — helps prevent dry pockets around root veg
+- **Zone C grow bags:** 10% vermiculite in the 60/30/10 coco/perlite/vermiculite mix — helps prevent dry pockets around root veg
 - **Not used in NFT** — too moisture-retentive, not needed when film is continuous
 
 [↑ Back to TOC](#table-of-contents)

@@ -37,7 +37,7 @@ A **medium-scale outdoor Nutrient Film Technique (NFT)** system for an inland mi
 |------|--------|-------|
 | **Zone A — NFT Channels** | Two continuous thin-film loops | Lettuce, spinach, kale, basil, cilantro, mint, chives, parsley, strawberries on the greens loop; cherry tomatoes and peppers on their own loop |
 | **Zone B — Microgreens Station** | Tray-based, coco coir media, manual misting | Sunflower, pea shoots, radish, broccoli, amaranth, wheatgrass |
-| **Zone C — Root Veg Grow Bags** | Passive grow bags, coco/perlite media, manual fertigation | Radishes, carrots, beetroot |
+| **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beetroot |
 
 This hybrid approach delivers crop diversity within one outdoor footprint while respecting the biological constraints of each crop type. Zone A is two loops that never share solution: greens (CH1–CH3) and fruiting (CH4).
 
@@ -185,7 +185,7 @@ Costs for this list are in [Guide 12 — Budget and Sourcing](12-budget-and-sour
 | Inlet fittings | 4 | ½ in (13 mm). Three on the greens manifold, one on the CH4 supply |
 | Greens submersible pump | 1 | 160–210 US gph (600–800 L/h), about 15 W, with filter sponge. Runs 24 hours a day |
 | Fruiting submersible pump | 1 | 50–100 US gph (200–400 L/h), about 8 W. Own loop, 24 hours a day |
-| Air pump with air stone | 2 | One recommended in each reservoir |
+| Air pump with two air stones | 1 | One pump, two airlines, one stone in each reservoir |
 | PVC manifold pipe, 1 in (25 mm) | About 3 ft (0.9 m) | High end, CH1–CH3 only. Do not tee CH4 into this pipe |
 | Irrigation tubing, ½ in (13 mm) | About 13 ft (4 m) | Each pump to its inlets |
 | Return pipe, ¾–1 in (19–25 mm) | About 6 ft (1.8 m) | Each loop returns to its own reservoir |
