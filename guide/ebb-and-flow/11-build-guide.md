@@ -425,7 +425,7 @@ flowchart TD
    Wrap exterior with black polythene sheet, then a layer of white reflective bubble wrap insulation over the top. Black inner layer blocks light (prevents algae); white outer layer reflects solar heat (keeps solution cool). Secure with tape or cable ties.
 
 4. **Mark fill levels:**
-   With the reservoir in position and filled to operating level (leave about 4 in (10 cm) from top), mark the external wall with permanent marker at the waterline. Add 10 L increment marks going down. This lets you track daily consumption at a glance.
+   With the reservoir in position and filled to operating level (leave about 4 in (10 cm) from top), mark the external wall with permanent marker at the waterline. Add about 2.5 US gal (10 L) increment marks going down. This lets you track daily consumption at a glance.
 
 5. **Install pump:**
    Place the submersible pump on the reservoir floor. Route the power cable through the lid. Connect the 1 in supply hose to the pump outlet. The pump stays submerged — mark the minimum waterline 2 in (5 cm) above the pump on the outside of the 45 US gal (170 L) tank.
@@ -830,8 +830,8 @@ After a successful water test and LECA installation, mix the first nutrient batc
 
 **Mixing order (always in this sequence — never mix Stock A and B together in concentrate):**
 1. Fill the reservoir with about 43 US gal (163 L) of water already in the pH 5.8–6.2 band. The two mixing buckets bring it to 45 US gal (170 L).
-2. In a separate bucket, dissolve Calcium Nitrate in 2 L of water. Stir until clear. Pour into reservoir.
-3. In the same bucket (rinsed), dissolve Masterblend in 2 L of water. Stir until clear. Pour into reservoir.
+2. In a separate bucket, dissolve Calcium Nitrate in about ½ US gal (2 L) of water. Stir until clear. Pour into reservoir.
+3. In the same bucket (rinsed), dissolve Masterblend in about ½ US gal (2 L) of water. Stir until clear. Pour into reservoir.
 4. Add Epsom Salt directly to reservoir and stir.
 5. Measure EC. The vegetative base should land near 1.4–1.6 mS/cm. Adjust the whole recipe up or down if it does not.
 6. Measure pH — adjust to 5.8–6.0 with pH Down or pH Up.

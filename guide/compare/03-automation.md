@@ -157,11 +157,11 @@ The highest-value sensor in NFT is confirmation that solution is flowing through
 
 **Implementation options:**
 
-**Option A — Float switch in return tank:**
-Mount a float switch in the return/collection tank at the base of the channels. If the pump is running, water constantly returns; if the pump stops, the return tank level drops below the float switch trigger point within 5–10 minutes.
-- Cost: $3–8 (R54–R144) (float switch)
-- Pin: one digital input on ESP32 or microcontroller
-- Alert trigger: float switch signals LOW when it should be HIGH (pump is supposed to be running but return tank is empty)
+**Option A — Float switch on each return:**
+Mount a float switch in the return/collection path of **each** NFT loop (greens and fruiting/CH4). Dual NFT is two loops. If a pump is running, water constantly returns on that loop; if that pump stops, that return level drops below the float trigger within 5–10 minutes.
+- Cost: $3–8 (R54–R144) per float switch — budget for **two**
+- Pins: one digital input per loop on the ESP32
+- Alert trigger: float switch signals LOW when it should be HIGH (that loop's pump should be running but its return is empty)
 
 **Option B — Flow sensor on return pipe:**
 A Hall-effect flow sensor (YF-S201 or similar) on the return pipe gives a pulse count proportional to flow rate.
@@ -174,7 +174,7 @@ A non-invasive AC current clamp (SCT-013) on the pump mains lead detects whether
 - Cost: $8–15 (R144–R270)
 - Does not confirm water is actually flowing (pump could be running but no water — air lock), but catches most failure modes
 
-**Recommended for a first build:** Option A (float switch in return tank). It is the cheapest, simplest to wire, and catches the most critical failure (pump stopped or pipe blocked).
+**Recommended for a first build:** Option A (float switch on **each** return). It is the cheapest, simplest to wire, and catches the most critical failure (pump stopped or pipe blocked) on both the greens and fruiting loops.
 
 ### Pump Health Monitoring
 
@@ -228,7 +228,7 @@ After every flood cycle, the table must drain completely. If the drain port is b
 **The drain confirmation sensor** is a float switch mounted in the table itself, positioned to detect whether the table is drained between flood cycles.
 
 **Installation:**
-1. Choose a float switch rated for the solution temperature range (most plastic float switches work to 40°C — fine for outdoor use)
+1. Choose a float switch rated for the solution temperature range (most plastic float switches work to 104°F / 40°C — fine for outdoor use)
 2. Mount on the inside wall of the flood table, about 1¼–1½ in (3–4 cm) above the table floor — below the flood waterline but above any residual puddle; keep a small pocket in the LECA clear so the float moves freely
 3. Wire as normally-open: when the table is dry, the switch is open; when flooded, the float rises and closes the circuit
 
@@ -427,21 +427,27 @@ Relay module NO/COM contacts in series with pump mains live wire
 ```mermaid
 graph TD
   subgraph ESP32["ESP32 (single board)"]
-    G1[GPIO 4<br/>NFT return float switch]
-    G2[GPIO 5<br/>Ebb and Flow table float switch]
-    G3[GPIO 18<br/>Reservoir float switch]
+    G1[GPIO 4<br/>NFT greens return float]
+    G1b[GPIO 16<br/>NFT fruiting return float]
+    G2[GPIO 5<br/>Ebb and Flow table float]
+    G3[GPIO 18<br/>NFT greens reservoir float]
+    G3b[GPIO 17<br/>NFT fruiting reservoir float]
+    G3c[GPIO 23<br/>Ebb and Flow reservoir float]
     G4[GPIO 19<br/>Relay OUT - Ebb and Flow pump cutoff]
     G5[I2C SDA/SCL<br/>SHT31 + Atlas EZO]
     G6[GPIO 22<br/>DS18B20 one-wire]
   end
-  G1 -->|digital input<br/>pull-up| F1[NFT return tank<br/>float switch]
+  G1 -->|digital input<br/>pull-up| F1[NFT greens return<br/>float switch]
+  G1b -->|digital input<br/>pull-up| F1b[NFT fruiting return<br/>float switch]
   G2 -->|digital input<br/>pull-up| F2[Ebb and Flow table<br/>float switch]
-  G3 -->|digital input<br/>pull-up| F3[Reservoir<br/>float switch]
+  G3 -->|digital input<br/>pull-up| F3[NFT greens reservoir<br/>float switch]
+  G3b -->|digital input<br/>pull-up| F3b[NFT fruiting reservoir<br/>float switch]
+  G3c -->|digital input<br/>pull-up| F3c[Ebb and Flow reservoir<br/>float switch]
   G4 -->|signal| R1[Relay module<br/>mains contacts in series<br/>with Ebb and Flow pump]
   G5 -->|I2C bus| S1[SHT31<br/>temp/humidity]
   G5 -->|I2C bus| S2[Atlas EZO-pH<br/>+ probe]
   G5 -->|I2C bus| S3[Atlas EZO-EC<br/>+ probe]
-  G6 -->|one-wire| S4[DS18B20<br/>in reservoir]
+  G6 -->|one-wire| S4[DS18B20<br/>in each reservoir as needed]
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -455,8 +461,8 @@ graph TD
 
 | Condition | Trigger | Action |
 |---|---|---|
-| Pump failure | Return tank float LOW for >10 min during pump-on hours | Alert: Critical |
-| Reservoir low | Reservoir float LOW | Alert: High — top up required |
+| Pump failure | Either NFT return float LOW for >10 min while that loop's 24h pump should be running | Alert: Critical |
+| Reservoir low | Either NFT reservoir float LOW | Alert: High — top up that tank |
 | Water temperature high | DS18B20 > 77°F (25°C) | Alert: High |
 | Water temperature low | DS18B20 < 54°F (12°C) | Alert: Medium — nutrient uptake slowing |
 | Air temperature high | SHT31 > 90°F (32°C) | Alert: High |

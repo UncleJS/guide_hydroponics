@@ -90,7 +90,7 @@ This guide covers every level of E&F automation — from a $15 (R270) smart plug
   - [15.4 Power Options](#154-power-options)
 - [16. Automation BOM by Tier](#16-automation-bom-by-tier)
   - [Tier 1 — Off-the-Shelf ($62–$91)](#tier-1-off-the-shelf-6291)
-  - [Tier 2 — ESP32 Sensor Node ($48–$65)](#tier-2-esp32-sensor-node-4865)
+  - [Tier 2 — ESP32 Sensor Node ($60–$80)](#tier-2-esp32-sensor-node-6080)
   - [Tier 3 — Full Monitoring ($95–$155, adds to Tier 2)](#tier-3-full-monitoring-95155-adds-to-tier-2)
   - [Tier 4 — Automated Control ($155–$235, adds to Tier 3)](#tier-4-automated-control-155235-adds-to-tier-3)
   - [Combined Tier Totals](#combined-tier-totals)
@@ -167,23 +167,25 @@ MANUAL ONLY:
 
 WITH TIER 1 (smart plug + WiFi thermometer):
   → You know if the pump cycled every time it should have
+  → On stuck-ON (>35 min continuous draw), the smart plug CUTS pump power, then alerts
   → You get frost and heat alerts at 3 AM
-  → You react when damage is beginning, not after it has happened
+  → Notification-only is not enough — roots rot in 2–4 hours
 
-WITH TIER 2 (ESP32 + reservoir level + flood counter):
-  → You know if each flood cycle is completing
-  → You know reservoir level in real time
-  → You see 24/7 temperature data with trends
+WITH TIER 2 (ESP32 + three table floats + pump cutoff relay):
+  → One drain-confirmation float per table (three tables)
+  → If any float is still up after pump-off, the controller opens the pump relay
+  → You know reservoir level and flood cycles in real time
+  → Stuck-ON cutoff is required here — not a Tier 4 luxury
 
-WITH TIER 3 (+ drain confirmation sensor + EC/pH):
-  → You know if each table DRAINED after each flood
+WITH TIER 3 (+ EC/pH + dashboard):
   → You know EC and pH continuously
-  → You catch drain blockages within 45 minutes — before Pythium establishes
+  → Same stuck-ON cutoff as Tier 2 (float still up → open the pump relay)
+  → You catch nutrient drift and rain dilution on the dashboard
 
-WITH TIER 4 (dosing, plus the stuck-ON cutoff):
-  → If the drain float is still up after the pump should be off, the controller opens the pump relay
-  → A backup timer that only recovers a stuck-OFF pump is secondary
+WITH TIER 4 (dosing upgrade):
   → EC and pH can dose automatically, outside an active flood
+  → Stuck-ON cutoff is already present from Tier 2 — dosing does not add it
+  → A backup timer that only recovers a stuck-OFF pump is secondary
   → You check the dashboard once a day and top up stock bottles weekly
 ```
 
@@ -197,10 +199,10 @@ WITH TIER 4 (dosing, plus the stuck-ON cutoff):
 ```mermaid
 flowchart LR
     T0["**Tier 0**<br/>Manual only<br/><br/>Cost: $0<br/>─────────<br/>Manual pH/EC pen<br/>Manual temp check<br/>Paper logbook<br/><br/>Skill: None"]
-    T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60<br/>─────────<br/>Smart plug on pump<br/>(flood cycle alert)<br/>WiFi thermometer<br/>Battery-backup timer<br/>Phone alerts<br/><br/>Skill: None"]
-    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80<br/>─────────<br/>Reservoir level sensor<br/>DS18B20 solution temp<br/>Flood cycle counter<br/>Pump current monitor<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
-    T3["**Tier 3**<br/>Multi-sensor network<br/>+ dashboard<br/><br/>Cost: $80–$160<br/>─────────<br/>All Tier 2 +<br/>Table drain confirm<br/>(float switch per table)<br/>EC/pH monitoring<br/>Rain sensor<br/>Grafana dashboard<br/>Historical trends<br/><br/>Skill: Moderate<br/>electronics"]
-    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150 to $300<br/>─────────<br/>All Tier 3 plus<br/>Stuck-ON cutoff:<br/>float still up, open<br/>the pump relay<br/>Dosing<br/>Stuck-OFF restart<br/>is secondary<br/><br/>Skill: Intermediate<br/>electronics, plumbing"]
+    T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60<br/>─────────<br/>Smart plug on pump<br/>cuts power on stuck-ON<br/>WiFi thermometer<br/>Battery-backup timer<br/>Phone alerts<br/><br/>Skill: None"]
+    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $40–$90<br/>─────────<br/>Float × 3 + pump relay<br/>Stuck-ON cutoff<br/>Reservoir level sensor<br/>DS18B20 solution temp<br/>Flood cycle counter<br/>WiFi data upload<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
+    T3["**Tier 3**<br/>Multi-sensor network<br/>+ dashboard<br/><br/>Cost: $80–$160<br/>─────────<br/>All Tier 2 +<br/>EC/pH monitoring<br/>Rain sensor<br/>Grafana dashboard<br/>Historical trends<br/>Cutoff already required<br/><br/>Skill: Moderate<br/>electronics"]
+    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150 to $300<br/>─────────<br/>All Tier 3 plus<br/>Dosing pumps<br/>Stuck-ON cutoff<br/>already present<br/>Stuck-OFF restart<br/>is secondary<br/><br/>Skill: Intermediate<br/>electronics, plumbing"]
 
     T0 --> T1 --> T2 --> T3 --> T4
 ```
@@ -278,22 +280,25 @@ Watts:  0W     25W→0W 0W     25W→0W 0W     25W→0W 0W
          |    flood          flood         flood
          |   cycle 1        cycle 2       cycle 3
 
-ALERT CONDITIONS:
+ALERT / CUTOFF CONDITIONS:
 1. Pump ON for >35 min continuously → timer may have failed (stuck ON)
    → This is the #1 E&F silent killer: permanent flooding
+   → Action: smart plug CUTS pump power, then sends the alert
 2. Expected cycle did not occur (0W at scheduled ON time for >5 min)
-   → Pump failure, timer failure, or power cut
+   → Pump failure, timer failure, or power cut → alert
 3. Power draw 50% below normal during cycle
-   → Pump impeller wear or filter blocked — output reduced
+   → Pump impeller wear or filter blocked — output reduced → alert
 ```
 
 **Setup:**
 - Plug the smart plug into the 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage breaker)
 - Plug pump into the smart plug (not the timer — the timer connects to the smart plug, and the smart plug connects to the pump, so the smart plug sees the actual pump cycling)
-- Set alert: if consumption stays >5W for >35 consecutive minutes → send notification
+- Choose a smart plug that can **turn the outlet off** by automation (Tapo / Shelly), not one that only sends a push notification
+- Set automation: if consumption stays >5W for >35 consecutive minutes → **cut power to the pump**, then notify
 
 > **Wiring order: GFCI outlet → Timer → Smart plug → Pump**
-> This way: the timer controls when the pump can receive power (as designed), AND the smart plug monitors whether the pump is actually drawing current during those windows. If the timer malfunctions and the pump runs continuously, the smart plug sees >35 min of continuous draw and alerts you.
+> This way: the timer controls when the pump can receive power (as designed), AND the smart plug monitors whether the pump is actually drawing current during those windows. If the timer malfunctions and the pump runs continuously, the smart plug sees >35 min of continuous draw, **opens the circuit**, and then alerts you. A text with the pump still running is not the Tier 1 safety story.
+
 
 ### 4.2 Battery-Backup Digital Timer (Upgrade if Needed)
 
@@ -385,19 +390,22 @@ VERDICT: ESP32 is the best fit for E&F sensor nodes.
 
 ### 5.2 E&F-Specific Tier 2 Sensor Additions
 
-The Tier 2 sensor set for E&F differs from NFT in two critical ways:
-1. **Reservoir level sensor** is promoted to highest priority (empty reservoir = no flood = root desiccation without warning)
-2. **Flood cycle counter** confirms the timer is actually firing — something NFT does not need because the NFT pump runs continuously
+The Tier 2 sensor set for E&F differs from NFT in three critical ways:
+1. **Three drain-confirmation floats** (one per table) plus a **pump cutoff relay** — if any float is still up after pump-off, open the pump relay. This is the stuck-ON cutoff. It is required at Tier 2, not deferred to dosing.
+2. **Reservoir level sensor** is high priority (empty reservoir = no flood = root desiccation without warning)
+3. **Flood cycle counter** confirms the timer is actually firing — something NFT does not need because the NFT pump runs continuously
 
-| Sensor | Measurement | E&F priority | Cost |
+| Sensor / actuator | Measurement / action | E&F priority | Cost |
 |---|---|---|---|
+| Float switch × 3 | Drain confirmation per table | **CRITICAL** | $12 (R216) |
+| Pump cutoff relay | Opens pump circuit on stuck-ON / failed drain | **CRITICAL** | $8 (R144) |
 | DS18B20 waterproof probe | Solution temperature | HIGH | $2–$4 |
 | JSN-SR04T waterproof ultrasonic | Reservoir water level | **CRITICAL** | $3–$6 |
 | ACS712 / SCT-013 current sensor | Pump current draw (flood cycle confirmation) | HIGH | $3–$6 |
 | DHT22 / SHT30 | Air humidity + temperature | MEDIUM | $3–$6 |
 | LDR photoresistor | Light level (relative) | LOW | $0.50 |
 
-**Total sensor cost: ~$12–$23**
+**Total sensor + cutoff cost: ~$32–$45 (R576–R810)**
 
 ### 5.3 Flood Cycle Counter Logic
 
@@ -689,7 +697,7 @@ Panel 7: ALERT LOG
 |---|---|---|---|
 | **pH auto-dosing** | Peristaltic pump dispenses pH Down/Up when pH drifts | Peristaltic pump + relay + pH probe | $25–$40 |
 | **EC auto-dosing** | Peristaltic pump dispenses nutrient concentrate when EC drops | Peristaltic pump + relay + EC probe | $25–$40 |
-| **Stuck-ON cutoff** | If the drain float is still up after the pump should be off, open the pump relay | Float input plus the pump relay | $10–$15 (R180–R270) |
+| **Stuck-ON cutoff** | Already required from Tier 2: float still up after pump-off → open the pump relay. Tier 4 does not add this | Float × 3 plus the pump relay (Tier 2 BOM) | already in Tier 2 |
 | **Stuck-OFF restart** | Secondary. If a scheduled flood never starts, a second path can start the pump | Second relay. Not the safety device | included above |
 | **Remote pump control** | Manually fire a flood cycle from phone | Smart plug with API / ESP32 relay | $0 (existing smart plug) |
 | **Cooling fan** | Fan blows across reservoir surface when temp > 77°F (25°C) | 12V fan + relay module | $8–$12 (R144–R216) |
@@ -994,7 +1002,7 @@ BH1750                      1               3.3V
 DFRobot pH board            5               5V
 DFRobot EC board            5               5V
 Rain sensor FC-37           <1              3.3V
-Float switch × 2            <0.1 each       3.3V (via pull-up)
+Float switch × 3            <0.1 each       3.3V (via pull-up)
 ───────────────────────────────────────────────────────
 Total:                      ~125–210 mA at 5V
 
@@ -1950,7 +1958,7 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 | WiFi camera (optional) | $25 |
 | **Tier 1 total** | **$62–$91** |
 
-### Tier 2 — ESP32 Sensor Node ($48–$65)
+### Tier 2 — ESP32 Sensor Node ($60–$80)
 
 | Item | Cost |
 |---|---|
@@ -1959,15 +1967,16 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 | DHT22 module (air temp + humidity) | $4 |
 | JSN-SR04T waterproof ultrasonic (reservoir level) | $5 |
 | ACS712 5A current sensor (pump current / flood cycle) | $4 |
-| Float switch × 2 (drain confirmation, one per table) | $8 |
+| Float switch × 3 (drain confirmation, one per table) | $12 (R216) |
+| Pump cutoff relay module (5V, optocoupled; opens pump circuit on stuck-ON) | $8 (R144) |
 | BH1750 light sensor | $3 |
 | 4.7kΩ + 10kΩ resistors (assorted pack) | $2 |
 | Dupont jumper wires (40-pack) | $3 |
 | Breadboard or proto board | $3 |
-| IP65 junction box (150 × 100 × 70mm) | $6 |
+| IP65 junction box (6 in × 4 in × 2.75 in / 150 × 100 × 70 mm) | $6 |
 | PG7 cable glands (10-pack, for box and float switches) | $3 |
-| USB charger 5V / 1A + 2m micro-USB cable | $8 |
-| **Tier 2 total** | **$58** |
+| USB charger 5V / 1A + 6.5 ft / 2 m micro-USB cable | $8 |
+| **Tier 2 total** | **$70 (R1,260)** |
 
 ### Tier 3 — Full Monitoring ($95–$155, adds to Tier 2)
 
@@ -1988,12 +1997,12 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 
 | Item | Add to Tier 3 cost |
 |---|---|
-| 4-channel relay module (5V, optocoupled) | $5 |
+| Extra relay channels for dosing (5V, optocoupled) — stuck-ON cutoff relay is already in Tier 2 | $5 (R90) |
 | 12V DC peristaltic pump × 3 (pH Down, Stock A, Stock B) | $30 |
 | 12V / 2A power supply (for peristaltic pumps) | $8 |
-| Silicone dosing tube (2m per pump × 3) | $6 |
+| Silicone dosing tube (6.5 ft / 2 m per pump × 3) | $6 |
 | Non-return valves (3×, one per dosing line) | $5 |
-| Stock solution bottles (3× 1L opaque HDPE) | $5 |
+| Stock solution bottles (3× 1 US qt / 1 L opaque HDPE) | $5 |
 | Physical kill switch (inline toggle — disables all relays) | $4 |
 | 12V cooling fan 80mm (optional — reservoir cooling) | $6 |
 | **Tier 4 total (Tier 3 + additions)** | **~$234** |
@@ -2003,9 +2012,9 @@ A 5W solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo batter
 | Tier | Standalone cost | Cumulative (building up from Tier 1) |
 |---|---|---|
 | Tier 1 | $62–$91 | $62–$91 |
-| Tier 2 | $58 | $120–$149 |
-| Tier 3 | $95–$155 | $165–$249 |
-| Tier 4 | $69–$95 | $234–$344 |
+| Tier 2 | $70 (R1,260) | $132–$161 |
+| Tier 3 | $95–$155 | $177–$261 |
+| Tier 4 | $69–$95 | $246–$356 |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -2441,11 +2450,11 @@ flowchart TD
 | Historical data | Paper log | App (20 days) | 30+ days | 30+ days | 30+ days |
 | Automated pH dosing | ❌ | ❌ | ❌ | ❌ | ✅ |
 | Automated EC dosing | ❌ | ❌ | ❌ | ❌ | ✅ |
-| Stuck-ON cutoff (open the pump relay) | ❌ | Alert only | Alert only | Float can trip it | ✅ relay opens |
+| Stuck-ON cutoff (open the pump circuit) | ❌ | Smart plug cuts power | Float × 3 trips relay | Same cutoff | Same cutoff; dosing adds nothing |
 | Stuck-OFF restart | ❌ | ❌ | ❌ | ❌ | Secondary |
 | Daily time required | 10–15 min | 5–10 min | 5 min | 3–5 min | 1–2 min |
 
-> A stuck-ON pump rots roots in 2–4 hours. The safety action is: if the drain float is still up after the pump should be off, open the pump relay. A smart plug that texts you is the Budget version of noticing. The float that opens the relay is the version that acts. A backup timer that only recovers a stuck-OFF pump is secondary. If you spend $60 (R1,080), spend it on a smart plug that can drop the pump. If you spend more, add the float and wire it to open that relay.
+> A stuck-ON pump rots roots in 2–4 hours. The safety action is to **cut pump power**. Tier 1: a smart plug that turns the outlet off on >35 min continuous draw, then alerts. Tier 2+: three table floats; if any float is still up after pump-off, open the pump relay, then alert. Texting alone is never enough once you have automation. A backup timer that only recovers a stuck-OFF pump is secondary. Dosing (Tier 4) does not introduce the cutoff — it was already required.
 
 ---
 

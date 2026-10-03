@@ -243,7 +243,7 @@ Each crop entry includes:
 - Do not deploy shade cloth over basil-only sections of the table if temperatures allow — basil wants maximum light and warmth
 - Pinch flower buds as soon as they appear — once basil flowers, leaf production stops and leaves become bitter. In long summer days, check every 2–3 days
 - In E&F, basil's roots penetrate the full LECA media depth — unlike NFT where roots hang in a thin film channel, E&F basil develops a substantial root ball
-- Basil can be chilled below 10°C only briefly — bring Table 3 plants under cover if unexpected cold nights threaten in early spring or autumn
+- Basil can be chilled below 50°F (10°C) only briefly — bring Table 3 plants under cover if unexpected cold nights threaten in early spring or autumn
 
 ---
 
@@ -716,7 +716,7 @@ The key principle for Table 3 is **succession planting** — ensuring the table 
 
   SPRING (April–May):
   ─ Transplant first lettuce succession to fill Table 3
-  ─ Add basil and cilantro as temperatures warm past 15°C nights
+  ─ Add basil and cilantro as temperatures warm past 59°F (15°C) nights
   ─ Begin succession 2 of lettuce every 3 weeks
 
   SUMMER (June–July):
@@ -726,7 +726,7 @@ The key principle for Table 3 is **succession planting** — ensuring the table 
   ─ Cilantro bolts → replace with new succession
 
   LATE SUMMER / AUTUMN (August–October):
-  ─ Remove most basil (cold-sensitive) as nights drop below 15°C
+  ─ Remove most basil (cold-sensitive) as nights drop below 59°F (15°C)
   ─ Replant spinach for autumn succession
   ─ Continue lettuce succession — autumn lettuce does not bolt
   ─ Kale: peak quality after first light frost
