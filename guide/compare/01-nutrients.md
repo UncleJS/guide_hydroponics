@@ -58,13 +58,15 @@ This guide compares how you manage nutrients in practice across both systems: wh
 
 ### NFT: Thin Continuous Film
 
-In NFT, a pump runs continuously (or on a very short off-cycle at night). A 2–3 mm film of solution flows along the bottom of each PVC channel, roots hang through the film, and the rest of the root mass hangs in moist air above the film — which is where oxygen uptake primarily happens.
+Both NFT pumps run 24 hours a day. There is no overnight off-cycle. A film about 1/16–1/8 in (2–3 mm) deep flows along the bottom of each channel. Roots hang through the film, and the rest of the root mass hangs in moist air, which is where most of the oxygen uptake happens. If a pump stops in warm weather, roots dry in 15–30 minutes.
+
+This design uses two NFT reservoirs. The greens tank (20 US gal / 76 L) feeds CH1–CH3 at EC 0.8–1.8 mS/cm. The fruiting tank (10 US gal / 38 L) feeds CH4 only, so tomato and pepper EC targets never land on the lettuce.
 
 Key delivery characteristics:
 - **Contact is constant** — roots touch solution at all times
-- **Solution moves fast** — typical flow rate 1–2 L/min per channel; root zone is fully refreshed continuously
-- **No media reservoir** — there is no LECA, coco, or rockwool holding solution between flows; what the plant gets is exactly what is in the reservoir
-- **Root zone EC = reservoir EC** — with no media buffer, the concentration seen by the roots is essentially identical to what you measure in the reservoir tank
+- **Solution moves fast** — 0.26–0.53 US gpm (1–2 L/min) per channel
+- **No media reservoir** — net pots hold a little clay pebble, but the root zone is not a flood bed. What the plant gets is what is in its reservoir
+- **Root zone EC = that loop’s reservoir EC** — greens and fruiting are measured separately
 
 Because there is no lag between reservoir and root zone, NFT responds quickly to nutrient changes — both beneficial corrections and mistakes.
 
@@ -77,17 +79,18 @@ graph LR
 
 ### Ebb & Flow: Flood-Drain Cycles
 
-In E&F, the pump floods the entire grow table to a depth of 3–5 cm (or until the overflow fitting triggers), holds for typically 20–30 minutes, then the pump stops and solution drains by gravity back to the reservoir. This cycle repeats 2–6 times per day depending on temperature and crop stage.
+In Ebb and Flow, the pump floods each 4 ft × 2 ft (1.22 m × 0.61 m) table until the overflow standpipe stops the water about 3/4 in (2 cm) below the top of the LECA. The flood holds 15–30 minutes, then the pump stops and the table drains by gravity. Vegetative crops get 3 floods a day. Fruiting crops get 4. Four is the ceiling. A fifth flood keeps the root zone too wet.
+
+Each table holds 25 US gal (95 L) of LECA at a 5 in (13 cm) depth. After drain-back, that LECA still holds enough moisture for 8–24 hours. It is not a 20–25 L bed, and the flood is not a 3–5 cm deep pool on top of the media.
 
 Key delivery characteristics:
-- **Contact is intermittent** — roots access solution only during flood periods
-- **Solution volume is large** — 20–25 L of LECA per table holds 4–6 L of solution after drain-back; this retained moisture sustains the plant between floods
-- **Media acts as a sponge** — LECA absorbs and holds solution; as water evaporates and plants transpire between floods, the nutrient concentration left in the media rises
-- **Media EC ≠ reservoir EC** — this is the central challenge of E&F nutrient management (covered in depth in Section 2)
+- **Contact is intermittent** — roots get a full soak only during the flood
+- **Media acts as a sponge** — as water leaves between floods, salts left in the LECA become more concentrated
+- **Media EC is not reservoir EC** — that is the central Ebb and Flow measurement problem (Section 2)
 
 ```mermaid
 graph TD
-  A[Reservoir<br/>EC / pH set here] -->|pump ON| B[Flood table<br/>solution rises to 3-5 cm]
+  A[Reservoir<br/>EC / pH set here] -->|pump ON| B[Flood table<br/>stops 0.75 in below LECA surface]
   B -->|roots in flood| C[Root zone<br/>absorbs nutrients]
   B -->|pump OFF| D[Drain back<br/>gravity to reservoir]
   D --> A
@@ -104,17 +107,18 @@ graph TD
 
 ### Target Ranges Side-by-Side
 
-| Stage | NFT target EC (mS/cm) | E&F reservoir EC (mS/cm) | E&F media EC (mS/cm) |
+| Stage | NFT greens tank (mS/cm) | NFT CH4 fruiting tank (mS/cm) | Ebb and Flow reservoir (mS/cm) |
 |---|---|---|---|
-| Seedling / transplant | 0.8 – 1.2 | 0.8 – 1.0 | 0.8 – 1.2 |
-| Early vegetative | 1.2 – 1.6 | 1.2 – 1.4 | 1.4 – 1.8 |
-| Full vegetative (leafy crops) | 1.4 – 2.0 | 1.4 – 1.8 | 1.6 – 2.2 |
-| Flowering / fruiting | 1.8 – 2.4 | 1.8 – 2.2 | 2.0 – 2.8 |
-| Late fruiting / final flush | 0.5 – 1.0 | 0.5 – 1.0 | 0.8 – 1.4 |
+| Seedling / transplant | 0.8–1.2 | 1.0–1.4 | 0.8–1.2 |
+| Vegetative leafy | 1.0–1.6 | — | 1.2–1.8 |
+| Tomato or pepper fruiting | Do not use this tank | Tomato 2.5–3.5; pepper 2.0–3.0 | Tomato 2.5–3.5; pepper 2.0–3.0 |
+| Lettuce ceiling | 1.8 | Not in this tank | 1.8 on Table 3 |
 
-**E&F media EC is always higher than reservoir EC** — typically 0.5–1.0 mS/cm above the reservoir reading. This is normal and expected. What matters is that media EC does not climb above ~3.0 mS/cm in vegetative growth or ~3.5 mS/cm in fruiting stages, as above these thresholds nutrient lockout begins.
+CH4 has its own 10 US gal (38 L) reservoir. Do not average a tomato target and a lettuce target into one NFT number.
 
-In NFT, you only need one measurement: the reservoir. In E&F, you need two.
+Media EC in Ebb and Flow runs higher than the reservoir. Flush when the gap exceeds **0.5 mS/cm**. Treat **+1.0 mS/cm** as urgent. A gap of 0.5–1.0 is not “fine.” Keep media EC from climbing past about 3.0 mS/cm in vegetative growth or 3.5 mS/cm in fruiting, where lockout starts.
+
+NFT needs one reading per reservoir (two reservoirs). Ebb and Flow needs the reservoir reading and a media reading.
 
 ### The Media EC Problem (E&F Only)
 
@@ -279,7 +283,9 @@ For both systems, you should distinguish between:
 - **Full change**: emptying the entire reservoir, cleaning it, and refilling with fresh solution — done on schedule or when the solution becomes unmanageable
 
 **Top-up rule (both systems):**
-Prepare top-up solution at the target EC. Do not top up with plain water (which dilutes the solution and upsets the mineral ratio) unless you are specifically trying to lower EC.
+- EC at or above target: add plain water, pH-adjusted to 5.8–6.2.
+- EC below target: add nutrient stock, then recheck EC and pH.
+Do not always top up at full-strength EC, and do not always top up with plain water.
 
 **When a full change is due (either system):**
 - EC has risen despite not adding nutrients (indicates element imbalance — certain minerals accumulating as plants preferentially take up others)
@@ -305,16 +311,17 @@ Old nutrient solution is a mild fertiliser. Options:
 
 ### Masterblend in Both Systems
 
-The Masterblend 4-18-38 three-part formula (Masterblend + calcium nitrate + Epsom salt) works in both systems at the same base ratios:
-- 2.4 g/L Masterblend 4-18-38
-- 2.4 g/L calcium nitrate
-- 1.2 g/L Epsom salt (magnesium sulphate)
+The Masterblend 4-18-38 three-part formula works in both systems at the same base ratio. Per **1 US gal (3.8 L)**:
 
-This produces a reservoir EC of approximately 1.6–1.8 mS/cm in typical tap water, which suits most vegetative stages in both systems.
+- Masterblend 4-18-38: **2.4 g (0.63 g/L)**
+- Calcium nitrate: **2.4 g (0.63 g/L)**
+- Epsom salt: **1.2 g (0.32 g/L)**
 
-**Adjustments for E&F:**
-- Run the reservoir EC 0.2–0.3 mS/cm lower than the NFT target for the same crop/stage. The media will add 0.5–0.8 mS/cm on top; starting lower prevents the media EC from climbing dangerously high.
-- Example: If NFT target for early fruiting is EC 2.0, set E&F reservoir EC to 1.7–1.8
+That is the usual “2.4 grams per gallon” recipe. It is not 2.4 grams per litre. Per litre, that dose is about a four-times overdose. In typical tap water this base lands near EC 1.4–1.6 mS/cm, which suits vegetative greens.
+
+**Adjustments for Ebb and Flow:**
+- The same gram-per-gallon recipe is the starting point. Hold reservoir EC on the crop target, and flush the LECA when media EC runs more than 0.5 mS/cm above the reservoir.
+- Fruiting tomatoes on Table 1 use the same fruiting band as the NFT CH4 tank: reservoir EC 2.5–3.5 mS/cm. They do not sit at 1.8–2.2 while the crop guide says 2.5–3.5.
 
 ### Calcium and Magnesium Needs
 
@@ -327,26 +334,24 @@ Calcium and magnesium requirements differ slightly:
 **E&F:**
 - Calcium demands are higher in fruiting crops (tomatoes, cucumbers, peppers)
 - The intermittent nature of flood-drain means that during dry periods between floods, calcium mobility through the plant slows — making blossom end rot more common, especially in summer when flood intervals may be longer than intended
-- Consider increasing calcium nitrate by 0.3–0.4 g/L above the base recipe during fruit swelling stages
+- During fruit swell, you can raise calcium nitrate by about 1.1–1.5 g per US gal (0.3–0.4 g/L) above the base recipe if blossom end rot shows and pH is already in range
 
 ### Adjusting for Fruiting Crops (E&F)
 
 E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aubergine, large tomato varieties). These crops have specific nutrient requirements at different growth stages:
 
-**Tomatoes — fruiting stage (E&F):**
-- Reduce nitrogen: Masterblend can be dropped from 2.4 to 2.0 g/L
-- Increase potassium: add 0.4 g/L potassium sulphate
-- Increase calcium nitrate to 2.8 g/L
-- Target reservoir EC: 1.8–2.2 mS/cm
+**Tomatoes — fruiting stage (Ebb and Flow Table 1, or NFT CH4):**
+- Scale the whole recipe until reservoir EC is 2.5–3.5 mS/cm. Do not chase that EC by dumping 2.4 g into each litre.
+- If you need a nudge at fruit swell: drop Masterblend slightly, add about 1.5 g potassium sulphate per US gal (0.4 g/L), and raise calcium nitrate by about 1.5 g per US gal (0.4 g/L). Recheck EC after every addition.
 
-**Cucumbers — fruiting stage (E&F):**
-- Higher magnesium requirement: increase Epsom salt to 1.6 g/L
-- Higher overall EC tolerance: can push to 2.2–2.4 mS/cm in peak fruiting
-- Sensitive to sodium — use reverse osmosis or low-sodium water sources if available
+**Cucumbers — fruiting stage (Table 1, Ebb and Flow only):**
+- Higher magnesium: Epsom can go to about 1.6 g per US gal (0.42 g/L) if older leaves yellow between the veins and EC is otherwise on target
+- Reservoir EC 2.2–2.8 mS/cm in peak fruiting
+- Sensitive to sodium. Use lower-EC water if tap EC is already high
 
-**Courgettes (E&F):**
-- Lower EC requirements than cucumbers and tomatoes: keep at 1.6–2.0 mS/cm
-- Very high potassium during fruiting: add 0.3 g/L potassium sulphate from first fruit set
+**Courgettes (Table 2):**
+- Reservoir EC 1.8–2.4 mS/cm
+- From first fruit set, add about 1.1 g potassium sulphate per US gal (0.3 g/L) if fruit set is weak and EC is in range
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -377,7 +382,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Nitrogen | Uniform pale/yellowing | Solution too old; media EC high but nutrient profile depleted |
 | Iron | Young leaf chlorosis | pH drift in media (may not match reservoir pH) |
 
-**E&F-specific note:** Calcium is the most common deficiency in E&F. This is because calcium moves with the transpiration stream — during the period between floods when no water is moving, calcium transport slows. In summer heat with high VPD, the plant may transpire faster than calcium can be delivered even when the reservoir EC and calcium level are correct. Increasing flood frequency (from 3× to 5× daily) during peak summer heat resolves most calcium deficiency issues in E&F.
+**E&F-specific note:** Calcium is the most common deficiency in E&F. This is because calcium moves with the transpiration stream — during the period between floods when no water is moving, calcium transport slows. In summer heat with high VPD, the plant may transpire faster than calcium can be delivered even when the reservoir EC and calcium level are correct. Raise floods from 3× to the **4× daily ceiling**, add 40% shade when afternoons hold above 85°F (29°C), and check media EC. Do not add a fifth flood.
 
 ### Why the Same Symptom Can Mean Different Things
 
@@ -406,7 +411,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Media EC check (E&F only) | — | Weekly | Push probe into LECA root zone |
 | Nutrient top-up | As needed (daily in summer) | As needed (daily in summer) | Top up at target EC |
 | pH correction | As needed | As needed, gradual | E&F: wait 2–3 flood cycles for equilibration |
-| Full solution change | Every 3–4 weeks | Every 2–3 weeks | E&F: also after any media flush event |
+| Full solution change | Greens tank every 7 days; CH4 tank every 5–7 days | Every 10–14 days | Ebb and Flow: also after a media flush returns salty water to the tank |
 | Media flush (E&F only) | — | Monthly | See Section 4 for protocol |
 | Reservoir clean | With each full change | With each full change | Scrub with dilute hydrogen peroxide |
 | Channel/table clean | Between crop cycles | Between crop cycles | NFT: bleach soak; E&F: bleach + LECA rinse |

@@ -4,7 +4,9 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-A complete DIY guide for building and running outdoor hydroponic systems in a temperate backyard. Two full systems are covered — **Nutrient Film Technique (NFT)** and **Ebb & Flow (flood-and-drain)** — each with 13 in-depth guides, from first principles to automation, on budgets from **~$150 (single-zone NFT start) to ~$1,200 (full premium Ebb & Flow)**.
+A complete DIY guide for building and running outdoor hydroponic systems in an inland mid-USA backyard, about **38°N** (USDA zones 6b–7a: Kansas City, St. Louis, Louisville, Richmond). Two full systems are covered — **Nutrient Film Technique (NFT)** and **Ebb and Flow (flood-and-drain)** — each with **14 guides (00–13)**, from first principles to automation.
+
+Prices are US dollars with South African rand in brackets, at a planning rate of **$1 = R18** (3 October 2026). Measurements are imperial first, metric in brackets. Seasonal months are US dates with the South African month six months later in brackets. The number set lives in [`guide/design-constants.md`](guide/design-constants.md). Hardware totals live in each system’s Guide 12.
 
 ---
 
@@ -17,26 +19,26 @@ A complete DIY guide for building and running outdoor hydroponic systems in a te
 - [Cross-System Comparison Guides](#cross-system-comparison-guides)
 - [Quick-Start Paths](#quick-start-paths)
   - [NFT — new to hydroponics](#nft-new-to-hydroponics)
-  - [Ebb & Flow — want fruiting crops](#ebb-flow-want-fruiting-crops)
+  - [Ebb and Flow — want fruiting crops](#ebb-and-flow--want-fruiting-crops)
 
 ---
 
 
 ## Choose Your System
 
-| | NFT — Nutrient Film Technique | Ebb & Flow — Flood & Drain |
+| | NFT — Nutrient Film Technique | Ebb and Flow — Flood and Drain |
 |---|---|---|
-| **How it works** | Thin film of solution flows continuously past bare roots | Table floods periodically, then fully drains back to reservoir |
-| **Media** | Minimal — clay pebbles in net pots only | Substantial — 10–15cm LECA fill in flood tables |
-| **Power failure risk** | High — roots dry in 15–30 min | Moderate — media buffers 8–24h |
-| **Timer failure risk** | Low | **High** — pump stuck ON floods roots in 2–4h |
-| **Best for** | Leafy greens, herbs, fast succession crops | Leafy greens + fruiting crops (tomatoes, cucumbers, courgettes, peppers) |
-| **Crop range** | Narrow — not for heavy/deep-rooted crops | Wide — handles virtually all non-root crops |
-| **Complexity** | Medium | Medium |
-| **Build cost** | $150–$500 | $250–$750 (Zone A; LECA is the big cost) |
+| **How it works** | A thin film runs 24 hours a day. Two pumps, two reservoirs | Tables flood, then drain. One pump on a digital timer |
+| **Reservoirs** | Greens 20 US gal (76 L) for CH1–CH3. Fruiting 10 US gal (38 L) for CH4 only | 45 US gal (170 L) under the tables |
+| **Media** | Clay pebbles in net pots only | 5 in (13 cm) of LECA, 25 US gal (95 L) per table |
+| **Power failure** | High — roots dry in 15–30 minutes in warm weather | Moderate — moist LECA buffers 8–24 hours |
+| **Timer failure** | Not used for the pumps | **High** — a pump stuck ON rots roots in 2–4 hours |
+| **Best for** | Lettuce, herbs, spinach, kale, plus cherry tomato and pepper on CH4 | Those crops, plus cucumber, courgette, and aubergine |
+| **Crop limit** | No cucumber, courgette, aubergine, or root crops in the channels | No root crops in the tables. Carrots, radish, and beet stay in Zone C |
+| **Build cost** | Full three-zone Lean / Standard / Optimised **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$711 / $1,115 / $1,624** (R12,798 / R20,070 / R29,232). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
 | **Guide set** | [`guide/nft/`](guide/nft/) | [`guide/ebb-and-flow/`](guide/ebb-and-flow/) |
 
-Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow Bags)** designs. Only Zone A differs.
+Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow bags)**. Only Zone A changes. The yard map for both is [`zones.md`](zones.md). Mains power is a **120 V outdoor GFCI** (SA: **230 V**, **30 mA earth-leakage**).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -46,8 +48,9 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 | Document | Description |
 |----------|-------------|
-| [`zones.md`](zones.md) | Full zone layout with spatial diagrams, dimensions, plumbing routes, and maintenance access map |
-| [`guide/glossary.md`](guide/glossary.md) | All acronyms, abbreviations, and technical terms used across both guide sets — nutrients, units, electronics, materials, and methods |
+| [`zones.md`](zones.md) | Yard layout for NFT and for Ebb and Flow, plus the shared microgreen and grow-bag zones |
+| [`guide/design-constants.md`](guide/design-constants.md) | The only number set: sizes, doses, flood ceiling, climate, and the dollar/rand rate |
+| [`guide/glossary.md`](guide/glossary.md) | Acronyms and technical terms used across both guide sets |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -55,7 +58,7 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 ## NFT Guide Library
 
-> 4 channels, continuous flow, minimal media. Best for high-turnover leafy greens and herbs.
+> Four 8 ft (2.44 m) channels, two reservoirs, continuous flow. Leafy greens and herbs on CH1–CH3. Cherry tomato and pepper on CH4 only.
 
 | # | File | What It Covers |
 |---|------|----------------|
@@ -80,7 +83,7 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 ## Ebb & Flow Guide Library
 
-> 3 flood tables, timer-controlled cycles, LECA media. Best for fruiting crops alongside leafy greens.
+> Three 4 ft × 2 ft (1.22 m × 0.61 m) tables, 4 floods a day at most, 5 in (13 cm) of LECA. Fruiting crops, including ones NFT cannot hold.
 
 | # | File | What It Covers |
 |---|------|----------------|
@@ -122,26 +125,28 @@ Both systems share the same **Zone B (Microgreens)** and **Zone C (Root Veg Grow
 
 ### NFT — new to hydroponics
 1. **[NFT Guide 00 — System Overview](guide/nft/00-system-overview.md)** — inventory, build timeline, grow calendar
-2. **[`zones.md`](zones.md)** — visualise the space
-3. **[NFT Guide 11 — Build](guide/nft/11-build-guide.md)** — construct the system
-4. **[NFT Guide 01 — Basics](guide/nft/01-nft-basics.md)** — understand how NFT works
-5. **[NFT Guide 02 — Nutrients](guide/nft/02-nutrient-solution.md)** — mix your first solution
-6. **[NFT Guide 06 — Crops](guide/nft/06-crops.md)** — plant selection and care
-7. **[NFT Guide 08 — Maintenance](guide/nft/08-system-maintenance.md)** — keep it running
+2. **[`zones.md`](zones.md)** — the yard, including the two NFT reservoirs
+3. **[`guide/design-constants.md`](guide/design-constants.md)** — sizes and doses
+4. **[NFT Guide 11 — Build](guide/nft/11-build-guide.md)** — construct the system
+5. **[NFT Guide 01 — Basics](guide/nft/01-nft-basics.md)** — understand how NFT works
+6. **[NFT Guide 02 — Nutrients](guide/nft/02-nutrient-solution.md)** — mix your first solution
+7. **[NFT Guide 06 — Crops](guide/nft/06-crops.md)** — plant selection and care
+8. **[NFT Guide 08 — Maintenance](guide/nft/08-system-maintenance.md)** — keep it running
 
-### Ebb & Flow — want fruiting crops
-1. **[E&F Guide 00 — System Overview](guide/ebb-and-flow/00-system-overview.md)** — inventory, build timeline, grow calendar
-2. **[E&F Guide 01 — Basics](guide/ebb-and-flow/01-ebb-flow-basics.md)** — understand flood-drain and timer safety
-3. **[E&F Guide 05 — Media](guide/ebb-and-flow/05-growing-media.md)** — LECA preparation (do this first)
-4. **[E&F Guide 11 — Build](guide/ebb-and-flow/11-build-guide.md)** — construct the system
-5. **[E&F Guide 02 — Nutrients](guide/ebb-and-flow/02-nutrient-solution.md)** — mix and manage solution with media
-6. **[E&F Guide 06 — Crops](guide/ebb-and-flow/06-crops.md)** — full crop guide including tomatoes, cucumbers, courgettes
-7. **[E&F Guide 08 — Maintenance](guide/ebb-and-flow/08-system-maintenance.md)** — flood cycle checks and salt management
-8. **[E&F Guide 13 — Automation](guide/ebb-and-flow/13-automation.md)** — drain confirmation sensor (strongly recommended)
+### Ebb and Flow — want fruiting crops
+1. **[Ebb and Flow Guide 00 — System Overview](guide/ebb-and-flow/00-system-overview.md)** — inventory, build timeline, grow calendar
+2. **[`zones.md`](zones.md)** — the flood-table layout
+3. **[Ebb and Flow Guide 01 — Basics](guide/ebb-and-flow/01-ebb-flow-basics.md)** — flood-drain and timer safety
+4. **[Ebb and Flow Guide 05 — Media](guide/ebb-and-flow/05-growing-media.md)** — LECA preparation (do this before the first flood)
+5. **[Ebb and Flow Guide 11 — Build](guide/ebb-and-flow/11-build-guide.md)** — construct the system
+6. **[Ebb and Flow Guide 02 — Nutrients](guide/ebb-and-flow/02-nutrient-solution.md)** — mix and manage solution with media
+7. **[Ebb and Flow Guide 06 — Crops](guide/ebb-and-flow/06-crops.md)** — tomatoes, cucumbers, courgettes, and the rest
+8. **[Ebb and Flow Guide 08 — Maintenance](guide/ebb-and-flow/08-system-maintenance.md)** — flood-cycle checks and salt
+9. **[Ebb and Flow Guide 13 — Automation](guide/ebb-and-flow/13-automation.md)** — the drain-confirmation cutoff
 
 ---
 
-*Last updated: June 2026*
+*Last updated: October 2026*
 
 [↑ Back to TOC](#table-of-contents)
 

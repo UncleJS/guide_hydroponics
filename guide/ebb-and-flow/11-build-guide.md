@@ -78,11 +78,11 @@ Before building, confirm the full three-zone system you are constructing:
 
 ```mermaid
 flowchart TB
-    T1["FLOOD TABLE 1 — 1.2m × 0.6m<br/>Crops: indeterminate tomatoes, cucumbers<br/>75–100mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-    T2["FLOOD TABLE 2 — 1.2m × 0.6m<br/>Crops: peppers, aubergine, courgette<br/>75mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-    T3["FLOOD TABLE 3 — 1.2m × 0.6m<br/>Crops: lettuce, herbs, leafy greens<br/>50mm net pots in LECA<br/>Fill port ← → Overflow/drain port"]
-    RES["RESERVOIR — 150–200L food-grade<br/>Submersible pump + timer<br/>Positioned BELOW or beside tables"]
-    TIMER["TIMER<br/>2–4× floods per day<br/>15–30 min per flood"]
+    T1["FLOOD TABLE 1 — 4 ft x 2 ft<br/>One tomato or one cucumber<br/>Open LECA bed, 5 in deep<br/>1.5 in overflow and 1 in drain"]
+    T2["FLOOD TABLE 2 — 4 ft x 2 ft<br/>Pepper, aubergine, or courgette<br/>1 or 2 plants in open LECA<br/>1.5 in overflow and 1 in drain"]
+    T3["FLOOD TABLE 3 — 4 ft x 2 ft<br/>Lettuce, herbs, or pak choi<br/>Open LECA bed<br/>1.5 in overflow and 1 in drain"]
+    RES["RESERVOIR — 45 US gal (170 L)<br/>Pump 250 US gph, about 35 W<br/>Sits below the drains"]
+    TIMER["DIGITAL 1-MINUTE TIMER<br/>in a weatherproof box<br/>3 floods vegetative, 4 fruiting"]
     T1 -->|"gravity drain → reservoir"| RES
     T2 -->|"gravity drain → reservoir"| RES
     T3 -->|"gravity drain → reservoir"| RES
@@ -107,14 +107,16 @@ flowchart LR
 ```
 
 **System specifications:**
-- 3 flood tables: each 1.2 m × 0.6 m (adjustable — see Step 2)
-- Flood level: ~2 cm below the LECA surface (set by overflow standpipe height)
-- Flood duration: 15–30 minutes per cycle
-- Flood frequency: 2–4 × per day (timer-controlled)
-- Reservoir: 150–200 L HDPE food-grade, positioned below or beside tables
-- Pump: 800–1200 L/h submersible (sufficient to flood all three tables in 5–10 min)
-- Media: LECA (clay pebbles) — ~260 L total for 3 tables at ~12 cm media depth
-- Net pots: 50 mm for greens/herbs; 75–100 mm for fruiting crops
+- 3 flood tables, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level. Long axis faces south (SA: north).
+- Table 1: one indeterminate tomato or one cucumber. Table 2: pepper, aubergine, or courgette, 1–2 plants. Table 3: lettuce, herbs, pak choi, or a later fruiting crop.
+- Media: LECA, 5 in (13 cm) deep. 25 US gal (95 L) per table. Buy 90 US gal (340 L) for the system so rinse loss is covered.
+- Flood level: about ¾ in (2 cm) below the LECA surface, set by the 1½ in (40 mm) overflow standpipe.
+- Drain: a separate 1 in (25 mm) bulkhead on each table. The pump fills through this line and, with no check valve, the table drains back down it when the pump stops.
+- Flood duration: 15–30 minutes. Vegetative: 3 times a day. Fruiting: 4 times a day. Four is the ceiling.
+- Reservoir: 45 US gal (170 L), range 40–50 US gal (151–189 L), below the drains.
+- Pump: 250 US gph (950 L/h), range 200–300 US gph (760–1,140 L/h), about 35 W (range 25–45 W).
+- Timer: digital, 1-minute resolution, in a weatherproof box. Not a mechanical timer.
+- These are open LECA beds. There is no table lid and no net-pot holes drilled in a lid.
 
 Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
@@ -129,14 +131,13 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 | Tool | Purpose | Notes |
 |---|---|---|
-| Tape measure | All measurements | Steel, 5 m minimum |
+| Tape measure | All measurements | Steel, 16 ft (5 m) minimum |
 | Pencil / marker | Marking cut lines | Permanent marker for PVC and liner |
 | Spirit level | Setting table level | Critical — tables MUST be level for E&F |
 | Handsaw or circular saw | Cutting timber frame | Or mitre saw for accuracy |
 | Jigsaw | Cutting liner and PVC sheet | Needed for DIY table construction |
 | Electric drill | Pilot holes, screwing frame | 10–18V cordless |
-| Hole saw set | Net pot holes in table lid/rim | 50 mm for 50mm net pots; 75 mm and 100 mm for fruiting |
-| Step drill / hole cutter | Bulkhead fitting holes | 32–40 mm range for standard bulkheads |
+| Step drill / hole cutter | Bulkhead holes in the table floor | 1½ in (40 mm) overflow and 1 in (25 mm) drain. No lid, so no net-pot hole saw |
 | Screwdriver (flat + Philips) | Assembly | Or drill bits |
 | Adjustable spanner | Tightening bulkhead lock nuts | Or large slip-joint pliers |
 | Rubber mallet | Seating fittings and bulkheads | Avoids cracking plastic |
@@ -155,7 +156,7 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 | Digital level / angle finder | Precise level verification |
 | Cable ties (bag of 100) | Securing hoses, tidying wiring |
 | Heat gun | Bending any PVC pipe if needed |
-| Pipe cutters (22–32 mm) | Clean cuts on supply/drain pipes |
+| Pipe cutters, ¾–1½ in (19–40 mm) | Clean cuts on supply and drain pipe |
 | Wheel (hand truck / trolley) | Moving the filled reservoir when maintenance required |
 
 [↑ Back to TOC](#table-of-contents)
@@ -167,7 +168,7 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 
 1. **Wear safety glasses for all cutting.** Timber and PVC generate chips; liner trimming produces sharp edges.
 2. **Test the system with plain water before nutrient solution.** This catches all leaks before they cost anything.
-3. **All outdoor electrical connections must be weatherproofed.** Use outdoor-rated extension leads and timer enclosures with minimum IP44 rating.
+3. **Outdoor power is a 120 V GFCI outlet (SA: 230 V, on a 30 mA earth-leakage breaker).** The digital timer sits in a weatherproof box. Use an outdoor-rated lead.
 4. **Use only food-safe materials** in contact with nutrient solution:
    - HDPE, LDPE, or HDPE containers — ✅
    - EPDM pond liner — ✅ (food safe grade)
@@ -196,10 +197,11 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
     → Leafy greens: 4–6 h acceptable
     → Tomatoes/peppers: 6–8 h required
 
-  □ Proximity to power: GFCI/RCD-protected outdoor outlet within 10 m?
-    → Extension leads OK if outdoor-rated and kept dry
+  □ Proximity to power: 120 V outdoor GFCI within 30 ft (9 m)?
+    (SA: 230 V outlet on a 30 mA earth-leakage breaker.)
+    → Outdoor-rated leads are fine if they stay dry
 
-  □ Proximity to water: Can you fill a 150–200 L reservoir without a 50 m carry?
+  □ Proximity to water: Can you fill a 45 US gal (170 L) reservoir without a long carry?
     → Hose access preferred
 
   □ Level ground: Is the ground reasonably flat?
@@ -210,23 +212,21 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
     → Avoid positioning tables over sealed paving with no drain
     → Excess solution runoff and overflow must be able to soak away or drain
 
-  □ Reservoir clearance below table: If going under-table,
-    is there at least 60–70 cm clear height below table base?
-    → For a 150–200 L low-profile reservoir ~50–60 cm tall when full,
-      you need this clearance.
+  □ Reservoir clearance below the table: the tank sits below the drains.
+    → A 45 US gal (170 L) tank is often about 20–24 in (51–61 cm) tall.
+      Leave that height under the table, plus a little room to lift the lid.
 
-  □ Accessibility: Can you reach all net pots comfortably to plant and harvest?
-    → Ideal table height above ground: 75–90 cm for standing access
-    → Table width: 1.2 m means maximum 60 cm reach from either side
+  □ Accessibility: the beds are open LECA, 2 ft (0.61 m) wide.
+    → A comfortable standing height for the table top is 30–36 in (76–91 cm).
+    → You can reach the middle of a 2 ft bed from one side.
 ```
 
 ### 4.2 Orientation
 
-In E&F, table orientation matters less than for NFT channels because the table is a flat horizontal surface — all sides receive similar light. However:
+Face the long axis south (SA: north). On the central plains the prevailing wind is often from the south or southwest, so keep a windbreak on that side. The site plan also puts a wind break on the north edge, about 12 in (30 cm) clear of the frame.
 
-- Position so you can access both long sides of each table (for planting and harvest)
-- Position with prevailing wind at the narrow end of the table to minimise open surface wind exposure
-- Ensure the reservoir position (below or beside) is on the side that gives you access for maintenance
+- Leave a 24 in (61 cm) working aisle on the south side
+- The reservoir sits below the drains, where you can still lift the lid
 
 ### 4.3 Marking Out
 
@@ -237,9 +237,9 @@ block-beta
     columns 1
     block:fp["ZONE A FOOTPRINT — top-down view"]
         columns 3
-        access1["← 60cm<br/>access aisle"] tables["TABLE 1   TABLE 2   TABLE 3<br/>each 1.2m × 0.6m<br/><br/>[RESERVOIR BELOW OR TO SIDE]"] access2["60cm →<br/>access aisle"]
+        access1["24 in aisle<br/>south side"] tables["TABLE 1   TABLE 2   TABLE 3<br/>each 4 ft x 2 ft<br/><br/>RESERVOIR BELOW THE DRAINS"] access2["north edge<br/>wind break"]
     end
-    dims["Total footprint approx: 1.5m wide × 2.2m deep (tables only)<br/>With access aisles: 2.5m wide × 2.4m deep"]
+    dims["Three tables plus aisle fit the 13 ft x 10 ft (4.0 m x 3.0 m) site"]
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -258,13 +258,13 @@ The flood table is the heart of the E&F system. You have two options: buy a purp
 - Pre-drilled or moulded fill port and drain port positions
 - Raised border to contain flood water (at least 10 cm deep internal dimension)
 - Flat, level base (check with a spirit level in-store if possible)
-- Size: 120 cm × 60 cm is the standard hydroponics flood table size
+- Size: 4 ft × 2 ft (1.22 m × 0.61 m). That is the table in this build.
 
 | Type | Typical cost | Notes |
 |---|---|---|
-| Economy PP flood tray (China-sourced) | $25–$40 each | Functional; check thickness (min 3 mm); UV stability varies |
-| Mid-range dedicated hydro flood table | $45–$70 each | Better UV stability; often includes fittings |
-| Premium (commercial grade) | $80–$150 each | For permanent installations; thick walls; long lifespan |
+| Economy PP flood tray | $25–$40 (R450–R720) each | Functional; walls at least ⅛ in (3 mm); UV stability varies |
+| Mid-range dedicated hydro flood table | $45–$70 (R810–R1,260) each | Better UV stability; often includes fittings |
+| Premium (commercial grade) | $80–$150 (R1,440–R2,700) each | Permanent installations; thick walls |
 
 **Ready-made table preparation:**
 1. Inspect for any cracks or thin spots before purchasing
@@ -276,15 +276,15 @@ The flood table is the heart of the E&F system. You have two options: buy a purp
 
 A DIY table is cheaper than buying ready-made and allows custom sizing. The key is a watertight pond liner inside a sturdy timber frame.
 
-**Materials for one 1.2 m × 0.6 m table (internal dimensions):**
+**Materials for one 4 ft × 2 ft (1.22 m × 0.61 m) table:**
 
 | Component | Specification | Notes |
 |---|---|---|
-| Timber — sides (long) | 2× PAR timber 150 mm × 25 mm × 1,200 mm | 150 mm gives 15 cm internal depth |
-| Timber — sides (short) | 2× PAR timber 150 mm × 25 mm × 600 mm | |
-| Timber — base support | 3× PAR timber 50 mm × 50 mm × 600 mm | Cross-support ribs every ~40 cm |
-| Plywood base | 1× 9 mm exterior ply, 1,200 mm × 600 mm | Sits on support ribs |
-| Pond liner | 1× EPDM or PVC, 1,600 mm × 1,100 mm | 20 cm overlap on all sides |
+| Timber — sides (long) | 2× 1×6 board, 6 in × 1 in × 4 ft (150 mm × 25 mm × 1.22 m) | 6 in side gives room for 5 in (13 cm) of LECA |
+| Timber — sides (short) | 2× 1×6 board, 6 in × 1 in × 2 ft (150 mm × 25 mm × 0.61 m) | |
+| Timber — base support | 3× 2×2, 2 in × 2 in × 2 ft (50 mm × 50 mm × 0.61 m) | Ribs about every 16 in (40 cm) |
+| Plywood base | 1× ⅜ in (9 mm) exterior ply, 4 ft × 2 ft | Sits on the ribs |
+| Pond liner | 1× EPDM or PVC, about 5 ft 8 in × 3 ft 8 in (1.73 m × 1.12 m) | Overlap all sides |
 | Liner tape | 1× roll pond liner tape | For sealing overlap joints |
 | Exterior timber preservative | water-based | Coat all external timber surfaces |
 
@@ -377,7 +377,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
      ground or stand surface so you can re-check quickly after any
      disturbance.
 
-  TARGET: ±2 mm across the full 1.2 m table length (0.1° deviation maximum)
+  TARGET: within 1/16 in (2 mm) across the 4 ft (1.22 m) length
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -393,7 +393,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
 flowchart TD
     subgraph under["OPTION 1 — UNDER TABLE (recommended)"]
         T_u["Flood Table<br/>─────────────────────<br/>   fill port    drain port<br/>        ↑              ↓<br/>  hose from        gravity drain hose<br/>  pump up              ↓<br/>        ←─────────────←"]
-        R_u["RESERVOIR 150–200L<br/>  (pump inside)<br/>  sits on ground<br/>  BELOW table level<br/>  shaded by table"]
+        R_u["RESERVOIR 45 US gal<br/>  (pump inside)<br/>  sits on ground<br/>  BELOW the drains<br/>  shaded by table"]
     end
     subgraph beside["OPTION 2 — BESIDE TABLE"]
         T_b["Flood Table<br/>─────────────────────<br/>   fill port    drain port<br/>        ↑              ↓<br/> hose from pump    drain hose runs<br/> (horizontal)      down + across to<br/>                   reservoir beside"]
@@ -413,7 +413,7 @@ flowchart TD
 
 ### Reservoir Preparation
 
-1. **Choose a food-grade HDPE container.** 150–200 L capacity. A low-profile rectangular footprint (e.g., ~80×60×50 cm) fits under the tables more easily than a tall barrel.
+1. **Choose a food-grade HDPE container** of 45 US gal (170 L), in the range 40–50 US gal (151–189 L). A low rectangular tank, about 32 in × 24 in × 20 in (81 cm × 61 cm × 51 cm), fits under the tables more easily than a tall barrel.
 
 2. **Prepare lid access points:**
    - Pump power cable exit: 12 mm slit (not round hole — allows cable out but resists water ingress)
@@ -428,7 +428,7 @@ flowchart TD
    With the reservoir in position and filled to operating level (leave 10 cm from top), mark the external wall with permanent marker at the waterline. Add 10 L increment marks going down. This lets you track daily consumption at a glance.
 
 5. **Install pump:**
-   Place the submersible pump on the reservoir floor. Route the power cable through the lid cable exit. Connect supply hose to pump outlet. The pump should be fully submerged at all times — mark the minimum safe water level (pump top +5 cm) on the reservoir exterior.
+   Place the submersible pump on the reservoir floor. Route the power cable through the lid. Connect the 1 in supply hose to the pump outlet. The pump stays submerged — mark the minimum waterline 2 in (5 cm) above the pump on the outside of the 45 US gal (170 L) tank.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -439,46 +439,38 @@ flowchart TD
 
 ### The Two-Fitting System Explained
 
-Every E&F flood table requires exactly two fittings:
+Every flood table has two floor fittings, and they are not the same size.
 
 ```mermaid
 flowchart LR
     subgraph table["FLOOD TABLE — top view"]
-        FP["FILL PORT<br/>(inlet fitting)<br/>● Supply hose from pump enters here<br/>● Solution floods table from this port<br/>● Located at one end of table"]
-        OP["OVERFLOW/DRAIN PORT<br/>(bulkhead + standpipe)<br/>● Overflow standpipe controls flood depth<br/>● When flood reaches standpipe top:<br/>  water exits via this fitting<br/>● Also provides gravity drain path<br/>  when pump stops<br/>● Located at OPPOSITE end or corner"]
+        DR["1 in DRAIN bulkhead<br/>Pump pushes solution up this line<br/>No check valve<br/>When the pump stops, the table<br/>drains back down the same line"]
+        OP["1.5 in OVERFLOW bulkhead<br/>Removable standpipe<br/>Top sits 3/4 in below the LECA<br/>Excess returns here while the pump runs<br/>The standpipe does not empty the bed"]
     end
-    PUMP["Pump<br/>in reservoir"] -->|"supply hose"| FP
-    OP -->|"gravity drain hose"| RES["Reservoir<br/>(below table)"]
+    PUMP["Pump in the<br/>45 US gal reservoir"] -->|"1 in line"| DR
+    OP -->|"1.5 in return"| RES["Reservoir<br/>below the drains"]
+    DR -->|"gravity return<br/>when pump is off"| RES
 ```
 
-**Fill port:** Where the pump pushes solution into the table. Typically a simple bulkhead fitting with a barbed hose connection. Position at one end of the table or one corner.
+**1 in (25 mm) drain:** One bulkhead per table, in the floor. The pump fills the table through this line. There is no check valve, so when the pump stops the bed empties back down the same line into the reservoir.
 
-**Overflow/drain port:** The second bulkhead fitting carries a removable standpipe (a vertical tube). The standpipe height above the table floor determines maximum flood depth. When solution reaches the top of the standpipe it exits via the fitting to the drain hose. When the pump stops, the entire table volume drains through this same fitting by gravity.
+**1½ in (40 mm) overflow:** One bulkhead and a removable standpipe per table, also in the floor, at the opposite end. The top of the standpipe is the flood ceiling, about ¾ in (2 cm) below the LECA surface. While the pump runs, anything above that lip returns to the reservoir. The standpipe does not drain the bed below its lip. The 1 in line does that.
 
 ### Setting Flood Depth with Overflow Height
 
 ```
-  OVERFLOW STANDPIPE HEIGHT GUIDE:
+  OVERFLOW STANDPIPE HEIGHT:
 
-  Target flood level: ~2 cm BELOW the top of the LECA bed
-  (capillary action wets the top layer; keeping the waterline below
-  the surface stops LECA floating and prevents surface algae)
+  LECA depth: 5 in (13 cm)
+  Flood ceiling: about ¾ in (2 cm) below the LECA surface
+  Standpipe height above the table floor: 5 in − ¾ in = 4¼ in (11 cm)
 
-  LECA fill depth in table: typically 12–15 cm
-  Table internal depth: 15–20 cm (DIY) or 15 cm (bought table)
-
-  STANDPIPE HEIGHT CALCULATION:
-  Standpipe height above table floor = LECA depth − 2 cm
-
-  Examples:
-  LECA depth 12 cm − 2 cm = standpipe 10 cm tall
-  LECA depth 15 cm − 2 cm = standpipe 13 cm tall
+  Capillary action wets the top ¾ in. The waterline stays below the
+  surface so the pebbles do not float and algae has less light.
 
   NOTES:
-  1. Start conservative: set the standpipe ~3 cm below the LECA surface
-     first. Watch roots over 2 weeks. If the upper root zone looks dry
-     between floods: raise the standpipe (to a maximum of 2 cm below
-     the LECA surface).
+  1. Mark 4¼ in (11 cm) on the standpipe with a permanent marker.
+     After cleaning, put it back to that mark.
 
   2. The standpipe must be removable: you should be able to lift it out
      to do media flushes and table cleaning.
@@ -493,13 +485,14 @@ flowchart LR
 
 ### Installing Bulkhead Fittings
 
-Each table needs two bulkhead fittings (fill port + overflow/drain port). For 3 tables: 6 bulkhead fittings total.
+Each table needs one 1½ in (40 mm) overflow bulkhead and one 1 in (25 mm) drain bulkhead. Three tables need three of each. They are not six identical 1 in fittings.
 
 ```
   BULKHEAD FITTING INSTALLATION PROCEDURE:
 
   Materials:
-  - 2× bulkhead fittings per table (25 mm or 32 mm thread size)
+  - 1× 1½ in (40 mm) bulkhead and standpipe per table (overflow)
+  - 1× 1 in (25 mm) bulkhead per table (drain / fill return)
   - EPDM or PTFE flat washers (one per fitting face)
   - Pond-safe silicone sealant
   - Step drill or appropriate hole cutter
@@ -507,15 +500,14 @@ Each table needs two bulkhead fittings (fill port + overflow/drain port). For 3 
   Steps:
 
   1. MARK FITTING POSITIONS:
-     Fill port: near one short end of the table, close to the table wall
-     Overflow port: opposite end or diagonally opposite corner
-     Both ports must be in the BOTTOM of the table (so drain can happen
-     by gravity). Do NOT put ports in the side walls of the table.
+     1 in drain: near one short end, in the table floor
+     1½ in overflow: opposite end or the opposite corner, also in the floor
+     Both holes are in the bottom. A side-wall hole will not drain the bed.
 
   2. DRILL THE HOLE:
-     Use a step drill to create a hole exactly sized for the bulkhead
-     fitting body. For a 25mm (1") bulkhead: drill ~32mm hole.
-     Test fit the fitting before proceeding.
+     Step-drill to the bulkhead body, not to the pipe's nominal bore.
+     A 1 in (25 mm) bulkhead usually wants about a 1¼ in (32 mm) hole.
+     A 1½ in (40 mm) bulkhead wants a larger hole. Test-fit before silicone.
 
   3. PREPARE THE FITTING:
      Slide the rubber/EPDM washer onto the fitting body (this goes
@@ -557,25 +549,28 @@ Each table needs two bulkhead fittings (fill port + overflow/drain port). For 3 
 
 ```mermaid
 flowchart TD
-    PUMP["Submersible pump<br/>(in reservoir)<br/>800–1200 L/h"]
-    TIMER["Timer<br/>(controls pump on/off)"]
-    SPLITTER["Supply manifold<br/>(two T-junctions or a<br/>3-way manifold splits pump<br/>output to all three tables)"]
-    T1FP["Table 1<br/>Fill port"]
-    T2FP["Table 2<br/>Fill port"]
-    T3FP["Table 3<br/>Fill port"]
-    T1OP["Table 1<br/>Overflow/drain port"]
-    T2OP["Table 2<br/>Overflow/drain port"]
-    T3OP["Table 3<br/>Overflow/drain port"]
-    RES["Reservoir<br/>(receives gravity drain<br/>from all three tables)"]
+    PUMP["Submersible pump<br/>250 US gph (950 L/h)<br/>about 35 W"]
+    TIMER["Digital 1-minute timer<br/>in a weatherproof box"]
+    SPLITTER["1 in supply manifold<br/>splits the pump across<br/>the three drain lines"]
+    T1D["Table 1<br/>1 in drain"]
+    T2D["Table 2<br/>1 in drain"]
+    T3D["Table 3<br/>1 in drain"]
+    T1O["Table 1<br/>1.5 in overflow"]
+    T2O["Table 2<br/>1.5 in overflow"]
+    T3O["Table 3<br/>1.5 in overflow"]
+    RES["45 US gal reservoir<br/>below the drains"]
 
     TIMER --> PUMP
-    PUMP -->|"25–32mm supply hose"| SPLITTER
-    SPLITTER -->|"20–25mm hose"| T1FP
-    SPLITTER -->|"20–25mm hose"| T2FP
-    SPLITTER -->|"20–25mm hose"| T3FP
-    T1OP -->|"gravity drain<br/>25–32mm hose"| RES
-    T2OP -->|"gravity drain<br/>25–32mm hose"| RES
-    T3OP -->|"gravity drain<br/>25–32mm hose"| RES
+    PUMP --> SPLITTER
+    SPLITTER --> T1D
+    SPLITTER --> T2D
+    SPLITTER --> T3D
+    T1O --> RES
+    T2O --> RES
+    T3O --> RES
+    T1D --> RES
+    T2D --> RES
+    T3D --> RES
     RES --> PUMP
 ```
 
@@ -588,47 +583,38 @@ The pump pushes solution from the reservoir to all three flood tables simultaneo
 ```
   PUMP SIZING FOR 3 TABLES:
 
-  Each table: 1.2m × 0.6m = 0.72 m²
-  LECA fill depth: ~12 cm; standpipe (flood level) at 10 cm
-  Water needed to flood one table to standpipe height:
-    Gross volume to 10 cm: 0.72 × 0.10 = 0.072 m³ = 72 L
-    Minus LECA solids in the flooded zone (~60% of bed volume):
-    0.72 × 0.10 × 0.6 = ~43 L
-    Net water per table: 72 − 43 = ~29 L
-  Total for 3 tables: ~85–90 L per flood
+  Each table: 4 ft × 2 ft (1.22 m × 0.61 m)
+  LECA: 5 in (13 cm). Standpipe: 4¼ in (11 cm)
+  Free water to flood one table to the standpipe: about 8–10 US gal (30–38 L)
+  Three tables: about 25–30 US gal (95–114 L) per flood
 
-  RESERVOIR CHECK (150 L fill):
-  150 − 90 = ~60 L remains in the reservoir at full flood —
-  the pump stays safely submerged. ✓
+  RESERVOIR CHECK (45 US gal / 170 L fill):
+  45 − 30 = about 15 US gal (57 L) still in the tank at full flood.
+  The pump stays submerged. The acceptable tank range is 40–50 US gal
+  (151–189 L). Below 40 US gal the pump can suck air on a full flood.
 
-  Time to fill (target 5–10 min to flood):
-  Required pump flow rate = 90 L ÷ 10 min = 9 L/min = 540 L/h minimum
-
-  HOWEVER: pump also lifts solution (head height).
-  For under-table reservoir → table base: ~50 cm head height
-  An 800 L/h pump at 50 cm head delivers roughly 600 L/h = 10 L/min
-  This floods all three tables in ~9 minutes — within target.
-
-  CONCLUSION: A pump rated 800–1200 L/h is adequate; choose the
-  1000–1200 L/h end if your lift exceeds 50 cm head.
-  Use a ball valve or flow restrictor on the supply line if fill rate is
-  too fast (which can cause turbulence that disturbs LECA).
+  PUMP:
+  250 US gph (950 L/h), range 200–300 US gph (760–1,140 L/h).
+  About 35 W (range 25–45 W).
+  At roughly 20 in (50 cm) of lift, a pump at the low end of that range
+  still fills all three tables inside a 15–30 minute flood.
+  A ball valve on each branch evens the three tables if one fills first.
 ```
 
 **Supply plumbing assembly:**
 
-1. Connect pump output (typically 25 mm barbed outlet) to a 25 mm hose.
-2. Route hose to two T-junctions (25 mm × 25 mm × 25 mm) — or a single 3-way manifold — positioned along the run between the three tables.
-3. From each branch, run 20 mm hose to the fill port bulkhead fitting on each table.
-4. Secure all barbed connections with hose clips.
-5. Keep supply hoses as short as possible and route with gentle curves (no tight bends).
+1. Connect the pump outlet to 1 in (25 mm) hose.
+2. Split that hose with two 1 in tees, or one 3-way manifold, so each table has its own branch.
+3. Each branch connects to that table's 1 in (25 mm) drain bulkhead. No check valve.
+4. Clip every barb.
+5. Keep the runs short and the bends gentle.
 
 **Flow rate balancing:**
 If one table fills much faster than the others (due to hose length differences — the table nearest the pump usually fills first), add a small in-line ball valve on each faster table's supply branch. Throttle until all three tables fill at roughly equal rates.
 
 ### Drain Side (Tables to Reservoir)
 
-The drain is entirely gravity-fed. No pump required — when the flood pump stops, solution flows back through the drain/overflow fitting under gravity.
+When the pump stops, solution returns down the 1 in (25 mm) line by gravity. The 1½ in (40 mm) overflow only carries water while the pump is running and the level is at the standpipe lip.
 
 **Critical requirements:**
 - Drain hose must slope continuously downhill from table drain port to reservoir entry — no flat or uphill sections
@@ -636,21 +622,20 @@ The drain is entirely gravity-fed. No pump required — when the flood pump stop
 
 **Assembly:**
 
-1. Connect a 25–32 mm hose to each table overflow/drain bulkhead fitting.
-2. Route each hose down and toward the reservoir, maintaining a continuous downhill slope.
-3. For under-table reservoir: hoses drop almost vertically — very efficient drain.
-4. For beside-table reservoir: hoses route down and across. Use drain manifolds (25mm T-junctions) to combine the three hoses into a single return before entering the reservoir.
-5. The return hose end drops into the open reservoir through the fill/inspection port (simplest, good oxygenation from splash) or connects to a bulkhead fitting in the reservoir side wall.
+1. The 1 in (25 mm) drain line from each table runs downhill all the way to the reservoir. That same line is the fill line.
+2. The 1½ in (40 mm) overflow on each table has its own return hose, also downhill, into the reservoir.
+3. Under the table, both hoses drop almost straight down.
+4. If the reservoir sits beside the tables, keep every run falling. A flat section holds a puddle in the pipe.
+5. Both returns can splash into the open reservoir. The splash adds oxygen.
 
 ### Pipe Sizing Reference
 
-| Application | Minimum ID | Recommended | Notes |
-|---|---|---|---|
-| Pump to T-splitter | 20 mm | 25 mm | Match pump outlet size |
-| T-splitter to table fill port | 16 mm | 20 mm | Max 1.5 m hose length |
-| Table overflow/drain port | 20 mm | 25 mm | Larger drains faster |
-| Combined drain header | 25 mm | 32 mm | For all three tables draining simultaneously |
-| Drain return to reservoir | 25 mm | 32 mm | |
+| Application | Size | Notes |
+|---|---|---|
+| Pump to manifold | 1 in (25 mm) | Match the pump outlet |
+| Manifold to each table drain | 1 in (25 mm) | Keep each branch under 5 ft (1.5 m) |
+| Overflow standpipe and its return | 1½ in (40 mm) | One per table. Sets the flood ceiling |
+| Drain / fill return | 1 in (25 mm) | One per table. Empties the bed when the pump stops |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -661,44 +646,36 @@ The drain is entirely gravity-fed. No pump required — when the flood pump stop
 
 ### Mechanical vs Digital Timer
 
-| Type | Pros | Cons | Recommended for |
+| Type | Pros | Cons | Role in this build |
 |---|---|---|---|
-| Mechanical pin timer | Cheap ($5–$10); no electricity to operate timer itself; continues after power cut (spring driven) | Minimum 30 min interval (pins represent 30 min slots); cannot do 15 min floods precisely | Budget builds only |
-| Digital timer (single-channel) | Precise to 1 minute; multiple programs; retains settings after power cut (with battery backup) | Costs $10–$20; requires battery backup for retention | Most builds — recommended |
-| Smart plug timer (WiFi) | Phone app control; energy monitoring (detects pump failure); remote override | Requires WiFi; battery backup essential for schedule retention | Tier 1+ automation — highly recommended |
+| Mechanical pin timer | Cheap, about $5–$10 (R90–R180) | 30-minute pins. Cannot run a 15-minute flood cleanly. A stuck pin holds the pump on | Not the outdoor timer |
+| Digital timer, 1-minute steps | Multiple programs. Battery keeps the schedule through a power cut | About $10–$20 (R180–R360) | This is the outdoor timer. It lives in a weatherproof box |
+| Smart plug | Phone alerts if the pump runs too long | Needs WiFi, and a weatherproof box | Optional monitor. See Guide 13. It does not replace the digital timer |
 
-**Recommendation:** Use a digital timer with battery backup. This is critical for E&F — a power cut resetting a mechanical timer to 00:00 and leaving the pump on 24/7 until you notice is the most common catastrophic failure mode.
+**Recommendation:** Digital timer, 1-minute resolution, in a weatherproof box, on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). A mechanical timer is not the outdoor control. A pump stuck ON rots roots in 2–4 hours. The Guide 13 drain float opens the pump relay if the float is still up after the pump should be off.
 
 ### Setting Flood Times
 
 ```
-  RECOMMENDED FLOOD SCHEDULE EXAMPLES:
+  FLOOD PROGRAMS:
 
-  SPRING START (cool conditions, 10–15°C):
-  Schedule: 2 floods/day
-  Program:  ON 07:00 for 20 min, ON 16:00 for 20 min
+  VEGETATIVE (Table 3, and any young transplant):
+  3 floods a day. Example: 07:00, 12:00, 18:00, 20 minutes each.
 
-  STANDARD (mild conditions, 15–22°C):
-  Schedule: 3 floods/day
-  Program:  ON 07:00 for 20 min, ON 12:00 for 20 min, ON 18:00 for 20 min
+  FRUITING (Table 1 vine, Table 2):
+  4 floods a day. Example: 06:30, 10:00, 15:30, 20:00.
+  Keep the midday gap. See Guide 10.
 
-  SUMMER (warm conditions, 22–28°C):
-  Schedule: 4 floods/day
-  Program:  ON 06:30 for 20 min, ON 10:00 for 15 min,
-            ON 15:30 for 15 min, ON 20:00 for 20 min
-  (Avoids 12:00–14:00 peak heat — see Guide 10)
+  HEATWAVE (afternoons above 85°F / 29°C):
+  Still 4 floods. Shorten them to about 15 minutes.
+  Example: 06:00, 10:00, 16:00, 20:00.
+  Add 40% shade. Do not add a 05:00 fifth flood.
+  Do not drop the day to 2 floods.
 
-  HEATWAVE (>30°C):
-  As above but add 05:00 pre-dawn cool flood
-  Program:  ON 05:00 for 15 min, ON 09:00 for 15 min,
-            ON 16:00 for 15 min, ON 21:00 for 20 min
-
-  RULES FOR SETTING FLOOD DURATION:
-  - Minimum flood duration: long enough for table to reach overflow height
-    Test: time how long the table takes to flood to overflow. Add 5 min buffer.
-  - Maximum flood duration: 30 min (longer reduces dry period between floods)
-  - Minimum dry period between floods: at least 4 hours per Guide 10
-  - Never exceed 4 floods per day in routine operation
+  DURATION:
+  - Long enough for the water to reach the 1½ in standpipe, plus about 5 minutes.
+  - Stop by 30 minutes.
+  - Four floods a day is the ceiling.
 ```
 
 ### Testing the Timer
@@ -724,7 +701,7 @@ Before any nutrient solution is involved, test the timer with plain water:
 ```
   FULL WATER TEST SEQUENCE
 
-  Step 1: Fill reservoir with plain tap water to operating level (~150 L)
+  Step 1: Fill the reservoir with plain tap water to 45 US gal (170 L)
     → Pump must be fully submerged — verify before powering on
 
   Step 2: Power on pump manually (bypass timer — direct plug)
@@ -797,17 +774,15 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 ```
   LECA PREPARATION PROCEDURE:
 
-  Amount needed for 3 tables (each 1.2m × 0.6m, filled 12cm deep):
-  Bed volume per table: 1.2 × 0.6 × 0.12 = 0.0864 m³ = ~86 L
-  Total for 3 tables: ~260 L of LECA
-  LECA is sold by bulk volume — buy 6× 45–50 L bags (~270–300 L total).
-  Bags settle slightly in transit (a 50 L bag fills ~45 L of bed), and
-  spare LECA is always useful for net pots and top-ups.
+  Each table is 4 ft × 2 ft (1.22 m × 0.61 m), filled 5 in (13 cm) deep.
+  That is 25 US gal (95 L) of LECA per table.
+  Three tables are 75 US gal (284 L).
+  Buy 90 US gal (340 L). The extra covers dust and pebbles lost in the rinse.
 
   RINSING STEPS:
 
   1. Fill a clean bucket or large tub with LECA (max half full)
-  2. Add tap water to cover LECA by 10 cm
+  2. Add tap water to cover the LECA by 4 in (10 cm)
   3. Stir vigorously for 2 minutes — water turns reddish-brown
   4. Drain through a colander or mesh bag
   5. Repeat until rinse water runs mostly clear (typically 4–6 rinses)
@@ -827,11 +802,11 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 ### Filling Tables with LECA
 
 1. After passing the water test and rinsing LECA, drain the test water from the reservoir.
-2. Place net pots in the table holes BEFORE adding LECA. This is easier than pushing them through LECA after filling.
-3. Pour pre-soaked LECA into the table around the net pots. Aim for 12–15 cm deep. Leave ~3 cm clear above LECA to the top of the table walls.
+2. These are open beds. There is no lid and no ring of holes to drop pots through. Set any net pots into the LECA after the bed is in, or nest them as you pour.
+3. Pour pre-soaked LECA to 5 in (13 cm). Leave about 1 in (3 cm) of wall above the pebbles.
 4. Level the LECA surface — gently rake with fingers to distribute evenly.
 5. Run one test flood cycle to confirm LECA doesn't pile up on one side (the table is level) and drain returns correctly with LECA in place. Observe drain time — add 5 min to plain-table drain time (LECA slows drain slightly due to surface tension).
-6. Confirm overflow standpipe is at the correct height relative to the LECA surface — top of standpipe ~2 cm below the top of the bed (see Step 4).
+6. Confirm the 1½ in overflow standpipe sits about ¾ in (2 cm) below the LECA surface (see [Setting Flood Depth with Overflow Height](#setting-flood-depth-with-overflow-height)).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -842,22 +817,22 @@ New LECA (clay pebbles) comes coated in fine clay dust and often has a slightly 
 
 After a successful water test and LECA installation, mix the first nutrient batch.
 
-**For 150 L reservoir fill at EC ~1.0–1.4 (conservative first fill for young transplants):**
+**First fill is the vegetative base**, aimed at about 1.4–1.6 mS/cm. Per 1 US gal (3.8 L): 2.4 g Masterblend 4-18-38, 2.4 g calcium nitrate, 1.2 g Epsom salt (0.63 / 0.63 / 0.32 g/L). For the 45 US gal (170 L) reservoir:
 
-| Component | Amount for 150 L | Rate |
+| Component | Amount for 45 US gal (170 L) | Rate |
 |---|---|---|
-| MasterBlend 4-18-38 | 68 g | 0.45 g/L |
-| Calcium Nitrate (Ca(NO₃)₂) | 68 g | 0.45 g/L |
-| Epsom Salt (MgSO₄·7H₂O) | 34 g | 0.23 g/L |
+| Masterblend 4-18-38 | 108 g | 2.4 g/US gal (0.63 g/L) |
+| Calcium nitrate | 108 g | 2.4 g/US gal (0.63 g/L) |
+| Epsom salt | 54 g | 1.2 g/US gal (0.32 g/L) |
 
-> **Note:** This is a reduced-strength first fill for seedlings and young transplants. Once plants are established (2–3 weeks), increase to 0.6 g/L each component (90g + 90g + 45g for 150L) for EC ~1.4–1.6.
+> **Note:** This is the vegetative base. Raise or lower the whole recipe together when the crop needs a different EC. Keep the ratio. The 2.4 g figure is per US gallon, which is 0.63 g per litre.
 
 **Mixing order (always in this sequence — never mix Stock A and B together in concentrate):**
-1. Fill reservoir with 145 L of pre-pH-adjusted water.
+1. Fill the reservoir with about 43 US gal (163 L) of water already in the pH 5.8–6.2 band. The two mixing buckets bring it to 45 US gal (170 L).
 2. In a separate bucket, dissolve Calcium Nitrate in 2 L of water. Stir until clear. Pour into reservoir.
 3. In the same bucket (rinsed), dissolve Masterblend in 2 L of water. Stir until clear. Pour into reservoir.
 4. Add Epsom Salt directly to reservoir and stir.
-5. Measure EC — target 1.0–1.4 mS/cm for first fill.
+5. Measure EC. The vegetative base should land near 1.4–1.6 mS/cm. Adjust the whole recipe up or down if it does not.
 6. Measure pH — adjust to 5.8–6.0 with pH Down or pH Up.
 7. Start pump. Run one complete flood cycle and drain. EC and pH will shift slightly as LECA interacts with new solution — re-test after first flood cycle and adjust again.
 8. Record in logbook: date, EC, pH, reservoir level, nutrient recipe used.
@@ -959,13 +934,11 @@ This zone is identical to the NFT system Zone B and is not affected by the E&F s
 
 | Item | Qty | Notes |
 |---|---|---|
-| Seedling trays (10×20 in / 53×27 cm) | 6–8 | Standard 1020 trays; reusable |
-| Solid tray liners | 6–8 | Fits inside standard tray; for bottom watering |
-| Coco coir brick (500 g) | 2–3 | Expands to ~8–10 L; enough for several fills |
-| Perlite | 1–2 L | Optional; mix 10% into coco for drainage |
-| Microgreens seeds | Assorted | Sunflower, radish, pea shoots, broccoli, mustard |
-| Shelving unit | 1 | Metal wire or timber; two tiers minimum |
-| LED grow panel (50–100W) | 1 | Full-spectrum; 25–30 cm above tray surface |
+| Seedling trays, 10 in × 20 in (25 cm × 50 cm) | 6 | Standard 1020 trays |
+| Solid tray liners | 6 | Bottom watering |
+| Coco coir | Enough for 1–1¼ in (2.5–3 cm) in each tray | Standard crops get pH-adjusted water only |
+| Shelving unit | 1 | 24 in × 20 in (61 cm × 51 cm), two tiers, about 36 in (91 cm) tall |
+| LED grow panel (50–100 W) | 1 | Full-spectrum; 10–12 in (25–30 cm) above the trays |
 | Timer | 1 | 16h on / 8h off for LED panel |
 | Spray bottle | 1 | For initial surface moisture at sowing |
 | Watering can (fine rose) | 1 | For bottom watering after germination |
@@ -973,13 +946,13 @@ This zone is identical to the NFT system Zone B and is not affected by the E&F s
 ### Seeding and Watering
 
 1. Expand coco coir brick with 5–6 L water; mix to moist but not dripping consistency.
-2. Fill solid liner to 2–3 cm depth. Level and lightly firm surface.
+2. Fill the solid liner to 1–1¼ in (2.5–3 cm). Level and lightly firm the surface. Standard crops get pH-adjusted water only, pH 5.8–6.2, no nutrients. Sunflower and pea shoots may use EC 0.4–0.8 mS/cm if the grow runs long.
 3. Pre-soak large seeds (sunflower, peas) for 8–12 h.
 4. Spread seeds densely and evenly — touching but not piled.
 5. Cover with inverted solid tray as blackout lid for 2–4 days.
 6. Once sprouts lift the lid: move to LED panel under 16h light cycle.
-7. Bottom-water only (fill outer tray with 1 cm water; let coco absorb).
-8. Harvest when cotyledons are fully open, 5–8 cm tall.
+7. Mist twice a day. After germination you can also bottom-water with about ⅜ in (1 cm) in the outer tray.
+8. Harvest when the cotyledons are fully open, 2–3 in (5–8 cm) tall.
 
 ```mermaid
 block-beta
@@ -1004,40 +977,38 @@ block-beta
 
 | Item | Qty | Notes |
 |---|---|---|
-| Fabric grow bags (15–25 L) | 6–8 | Breathable fabric; prevents root circling |
-| Coco coir (50 L bag, loose) | 1 | Or use 5× 500g bricks |
-| Perlite (30 L bag) | 1 | |
-| Vermiculite (10 L bag) | 1 | |
-| Slow-release fertiliser | 1 | e.g., Osmocote Plus; or use liquid feeds |
-| Drip trays / saucers | 6–8 | Catches runoff; prevents nutrient loss |
+| Fabric grow bags, 5 US gal (19 L) | 3 | Two for radish, one for beetroot |
+| Fabric grow bags, 10 US gal (38 L) | 3 | Carrot |
+| Coco coir | 60% of the mix by volume | No garden soil |
+| Perlite | 30% by volume | |
+| Vermiculite | 10% by volume | |
+| Drip trays / saucers | 6 | Catch runoff |
 | Watering can (fine rose) | 1 | |
 
 ### Media Mix
 
 ```
-  ZONE C MIX (per 15L bag):
+  ZONE C MIX (by volume, same ratio in every bag):
 
-  Component          Volume    Proportion
-  ─────────────────────────────────────────
-  Coco coir          9 L       60%
-  Perlite            4.5 L     30%
-  Vermiculite        1.5 L     10%
-  Slow-release fert  30–40 ml  Season-long nutrition
-  ─────────────────────────────────────────
-  Total:             ~15 L
+  Component          Proportion
+  ─────────────────────────────
+  Coco coir          60%
+  Perlite            30%
+  Vermiculite        10%
+  Garden soil        none
 ```
 
-Mix all components in a large tub. Moisten slightly before filling bags (dry coco is hydrophobic — pre-moisten with pH-adjusted water before packing into bags). Fill bags to 3 cm from the top. Firm gently.
+A 5 US gal (19 L) bag takes about 3 US gal (11 L) coco, 1½ US gal (6 L) perlite, and ½ US gal (2 L) vermiculite. A 10 US gal (38 L) bag takes double. Fertigation EC stays at or below 2.0 mS/cm. Beetroot does not get a higher target. Moisten dry coco before it goes in the bag. Fill to about 1 in (3 cm) from the top.
 
 ### Direct Sowing
 
 Root vegetables do not transplant well — sow seeds directly into the bags.
 
-- **Radishes:** 1 cm deep, 3 cm spacing. Germination 3–5 days. Harvest 25–35 days.
-- **Carrots:** 1 cm deep, 3–5 cm apart. Thin to 5 cm once established. Harvest 70–80 days.
-- **Beetroot:** 2 cm deep, 5 cm apart. Thin to 1 plant per 10 cm. Harvest 55–70 days.
+- **Radishes** (two 5 US gal bags): ⅜ in (1 cm) deep, 1 in (3 cm) apart. Harvest 25–35 days. Planning yield 15 lb (6.8 kg).
+- **Beetroot** (one 5 US gal bag): ¾ in (2 cm) deep, 2 in (5 cm) apart. Thin to one plant per 4 in (10 cm). Planning yield 8 lb (3.6 kg).
+- **Carrots** (three 10 US gal bags): ⅜ in (1 cm) deep, 1–2 in (3–5 cm) apart. Thin to 2 in (5 cm). Planning yield 20 lb (9.1 kg).
 
-**Watering:** Check moisture with finger 2 cm into media. If dry: water until slight drainage. If moist: hold off. Target consistent moisture — neither waterlogged nor bone dry.
+Zone C planning total is 43 lb (20 kg). **Watering:** if the top ¾ in (2 cm) is dry, water until a little drains. Keep fertigation at or below 2.0 mS/cm.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1056,25 +1027,25 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 **What happens:** Solution floods table too deeply, completely submerging the LECA and roots. Roots are denied oxygen during the long period roots are submerged. Even if the table eventually drains, the reduced dry time causes progressive root suffocation and Pythium onset.
 
-**Prevention:** Start with a conservative standpipe height (~3 cm below the LECA surface). Observe plants for 2 weeks. Raise the standpipe slowly — never above 2 cm below the LECA surface — and only if plants show symptoms of dryness between floods.
+**Prevention:** Set the 1½ in standpipe so the waterline is about ¾ in (2 cm) below the LECA surface, 4¼ in (11 cm) off the floor in a 5 in bed. Do not raise it to the pebble surface.
 
 ### Mistake 3 — Overflow Standpipe Too Low
 
-**What happens:** Table floods to only 1 cm depth. Only the bottom of the LECA is wetted. Roots in upper LECA layers are never reached by the flood. Plants in net pots sitting high in the LECA receive insufficient moisture — equivalent to under-flooding.
+**What happens:** The table floods only the bottom inch of a 5 in (13 cm) bed. Roots higher in the LECA never see water.
 
-**Prevention:** Verify standpipe height against LECA surface level (not table floor) before first nutrient fill. The standpipe top should sit ~2 cm below the top of the LECA bed — capillary action wets the layer above the waterline.
+**Prevention:** The standpipe top sits about ¾ in (2 cm) below the top of the LECA, not a token inch off the floor. Capillary action wets the layer above the waterline.
 
 ### Mistake 4 — Drain Too Slow (Drain Pipe Undersized or Running Flat)
 
 **What happens:** Table empties but takes 45–60 minutes to drain fully. In a 4× per day schedule, the table is still draining when the next flood cycle starts. Eventually the table is wet most of the time. Root rot follows.
 
-**Prevention:** Use 32 mm minimum drain pipe. Ensure continuous downhill slope from table drain port to reservoir. After LECA installation, time the drain — it must complete in <30 minutes.
+**Prevention:** Keep the drain at 1 in (25 mm) all the way to the reservoir, falling the whole way. The overflow is 1½ in (40 mm) and is not the drain. After the LECA is in, the bed should be empty within 30 minutes of the pump stopping.
 
 ### Mistake 5 — Reservoir Positioned at Same Height as Table Drain
 
 **What happens:** Gravity drain stops working. When the pump turns off, solution in the drain hose cannot flow because it has nowhere to go — the reservoir entry point is at the same height. The table retains a permanent layer of solution at the drain fitting level.
 
-**Prevention:** The reservoir entry point (top of reservoir water surface, or bulkhead fitting on reservoir wall) must be LOWER than the table drain port by at least 20 cm. For under-table reservoirs, this is automatic. For beside-table reservoirs, confirm this geometry before finalising the layout.
+**Prevention:** The reservoir water surface stays at least 8 in (20 cm) below the table drain. Under the table, that happens on its own. Beside the table, measure it before you commit to the layout.
 
 ### Mistake 6 — Skipping the Water Test
 
@@ -1082,11 +1053,11 @@ Root vegetables do not transplant well — sow seeds directly into the bags.
 
 **Prevention:** Always complete the full water test (Step 7) before adding LECA or nutrients. Run two full flood/drain cycles. Inspect every joint.
 
-### Mistake 7 — Using a Mechanical Timer Without Battery Backup
+### Mistake 7 — Using a Mechanical Timer Outdoors
 
-**What happens:** A power cut at 3 AM resets the mechanical timer to 12:00 (or the pin position at the time of the cut). The pump runs continuously from when power is restored. By morning, the table has been flooded for 6+ hours. Roots begin to rot.
+**What happens:** A mechanical pin timer is not the outdoor control. A stuck pin, or a power cut that leaves the pin on, holds the pump on. Roots start to rot in 2–4 hours.
 
-**Prevention:** Use a digital timer with battery backup. Test that the schedule survives a power cut by unplugging and re-plugging the timer — schedule should be retained. Keep a digital timer as the primary control even if you also have a manual backup.
+**Prevention:** Use the digital 1-minute timer in a weatherproof box, on the 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). Unplug the timer and plug it back in. The program should still be there. The primary automatic safety, in Guide 13, opens the pump relay if the drain float is still up after the pump should be off. A second timer that only restarts a stopped pump does not fix a stuck-ON flood.
 
 ### Mistake 8 — LECA Not Pre-Rinsed and Pre-Soaked
 
@@ -1118,10 +1089,10 @@ Use this as a final sign-off before moving to nutrient operation.
   □ No pooling in corner test confirmed (if DIY)
 
   FITTINGS:
-  □ Fill port bulkhead fitted; silicone cured 24h; no weeping
-  □ Overflow/drain port bulkhead fitted; silicone cured 24h; no weeping
-  □ Overflow standpipe inserted; height set at LECA depth −2 cm
-  □ All 6 bulkhead fittings (2 per table × 3 tables) complete
+  □ 1 in (25 mm) drain bulkhead fitted on each table; silicone cured 24 h; no weeping
+  □ 1½ in (40 mm) overflow bulkhead fitted on each table; silicone cured 24 h; no weeping
+  □ Overflow standpipe at 4¼ in (11 cm), about ¾ in (2 cm) below a 5 in LECA bed
+  □ Three overflow fittings and three drain fittings. Not six identical 1 in bulkheads
 
   RESERVOIR:
   □ Reservoir food-grade; light-proofed (wrapped black + white)
@@ -1132,15 +1103,14 @@ Use this as a final sign-off before moving to nutrient operation.
   □ Minimum pump submersion level marked
 
   PLUMBING:
-  □ Supply hose: pump → supply manifold → all three table fill ports
-  □ All supply hose connections secured with hose clips
-  □ Drain hoses: all three tables → reservoir; continuous downhill slope
-  □ Drain hose minimum 25 mm ID; combined drain 32 mm ID
+  □ 1 in supply: pump → manifold → each table's 1 in drain (no check valve)
+  □ 1½ in overflow return from each table, downhill into the reservoir
+  □ Both runs fall the whole way. No flat sections
   □ No hose kinks; all barbed connections seated and clipped
 
   TIMER AND ELECTRICS:
-  □ Digital timer with battery backup installed in waterproof enclosure
-  □ Timer connected to GFCI/RCD-protected outdoor outlet
+  □ Digital 1-minute timer in a weatherproof box
+  □ Timer on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage)
   □ Initial flood schedule programmed and verified
   □ Timer settings survive power-off test (unplug → replug → check)
 
@@ -1156,12 +1126,12 @@ Use this as a final sign-off before moving to nutrient operation.
   MEDIA AND NUTRIENTS:
   □ LECA rinsed (water ran clear) and pre-soaked 24h
   □ LECA soak-water pH below 7.0 before using
-  □ Net pots placed in table holes before LECA added
-  □ LECA filled to 12–15 cm depth; levelled
+  □ Open bed: no lid, no net-pot holes drilled in a lid
+  □ LECA filled to 5 in (13 cm) and levelled. Bought volume is 90 US gal (340 L)
   □ Flood/drain test with LECA in place completed
   □ Drain time with LECA in place: <30 min ✓
   □ EC and pH meters calibrated (not just rinsed — calibrated)
-  □ First nutrient batch mixed: EC ______; pH ______
+  □ First nutrient batch is the vegetative base (2.4 g + 2.4 g + 1.2 g per US gal): EC ______; pH ______
   □ One post-nutrient flood cycle completed; EC/pH re-tested
 
   PLANTING:
@@ -1175,7 +1145,8 @@ Use this as a final sign-off before moving to nutrient operation.
   □ First trays filled with coco and in blackout stage
 
   ZONE C — ROOT VEG BAGS:
-  □ Bags filled with coco/perlite/vermiculite mix
+  □ Two 5 US gal radish bags, one 5 US gal beet bag, three 10 US gal carrot bags
+  □ Mix is 60% coco, 30% perlite, 10% vermiculite. No garden soil. EC ceiling 2.0 mS/cm
   □ Bags in drip trays, on permeable surface
   □ First seeds sown direct
 
@@ -1192,7 +1163,8 @@ Use this as a final sign-off before moving to nutrient operation.
 ---
 
 
-*Next: [`guide/ebb-and-flow/12-budget-and-sourcing.md`](12-budget-and-sourcing.md) — Bill of materials, costs, where to buy, and ROI*
+> **Previous:** [Guide 10 — Climate Management](./10-climate-management.md)
+> **Next:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
 
 [↑ Back to TOC](#table-of-contents)
 

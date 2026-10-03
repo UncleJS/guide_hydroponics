@@ -1,378 +1,269 @@
-# Zone Layout & Spatial Design
-## Outdoor Hybrid Hydroponics Station
+# Zone Layout and Spatial Design
+## Outdoor Hybrid Hydroponics Station — Inland Mid-USA, about 38°N
 
 [![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](README.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Numbers in this file match [guide/design-constants.md](guide/design-constants.md). If they disagree, the constants file wins.
+
+Build **one** Zone A: the NFT channel array **or** the Ebb and Flow tables. Zone B and Zone C are the same either way.
 
 ---
 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Full Site Layout Map (Top-Down View)](#full-site-layout-map-top-down-view)
-- [Dimensions & Clearances](#dimensions-clearances)
-- [Zone A — NFT Channel Array (Detailed)](#zone-a-nft-channel-array-detailed)
-  - [Frame Side-View Diagram](#frame-side-view-diagram)
-  - [Channel Spacing (Front-View Cross Section)](#channel-spacing-front-view-cross-section)
-  - [Net Pot Hole Layout Per Channel](#net-pot-hole-layout-per-channel)
-  - [Reservoir Placement](#reservoir-placement)
-  - [Plumbing Route](#plumbing-route)
-- [Zone B — Microgreens Tray Station (Detailed)](#zone-b-microgreens-tray-station-detailed)
-  - [Shelf Structure](#shelf-structure)
-  - [Tray Configuration](#tray-configuration)
-  - [Microgreens Protocol Summary](#microgreens-protocol-summary)
-- [Zone C — Root Vegetable Grow Bags (Detailed)](#zone-c-root-vegetable-grow-bags-detailed)
-  - [Bag Layout](#bag-layout)
-  - [Bag Sizes and Depths](#bag-sizes-and-depths)
-  - [Media Mix for Grow Bags](#media-mix-for-grow-bags)
-  - [Fertigation Schedule (Zone C)](#fertigation-schedule-zone-c)
-- [Shade Cloth & Environmental Controls](#shade-cloth-environmental-controls)
-  - [Shade Cloth Positioning](#shade-cloth-positioning)
-  - [Frost Fleece Deployment](#frost-fleece-deployment)
-  - [Wind Break](#wind-break)
-- [Maintenance Access Map](#maintenance-access-map)
-- [Utility Requirements](#utility-requirements)
+- [Dimensions and clearances](#dimensions-and-clearances)
+- [Zone A — NFT channel array](#zone-a--nft-channel-array)
+- [Zone A — Ebb and Flow tables](#zone-a--ebb-and-flow-tables)
+- [Zone B — Microgreens](#zone-b--microgreens)
+- [Zone C — Root-vegetable grow bags](#zone-c--root-vegetable-grow-bags)
+- [Shade, frost, and wind](#shade-frost-and-wind)
+- [Maintenance access](#maintenance-access)
+- [Utility requirements](#utility-requirements)
 
 ---
-
 
 ## Overview
 
-The hybrid growing station is designed to occupy a **backyard footprint of approximately 4m × 3m** (12m²). This is enough for the full three-zone system with clearance for maintenance access on all sides and a comfortable working aisle.
+The station occupies about **13 ft × 10 ft (4.0 m × 3.0 m)**. The long axis runs east–west so the south face takes the sun at about **38°N** (Kansas City, St. Louis, Louisville, Richmond — USDA zones 6b–7a). In South Africa, face the long axis **north**.
 
-The station is oriented with the **long axis running east–west** so that the south-facing side of the channels receives maximum sun exposure in the Northern Hemisphere. Adjust to north-facing if you are in the Southern Hemisphere.
-
-[↑ Back to TOC](#table-of-contents)
-
----
-
-## Full Site Layout Map (Top-Down View)
-
-**↑ NORTH — wind break / fence / trellis mesh (north edge)**
-
-```mermaid
-flowchart TD
-    WB["WIND BREAK / FENCE / TRELLIS MESH — north edge"]
-
-    subgraph ZA["ZONE A — NFT CHANNEL ARRAY  (frame height: 80 cm)"]
-        RES["RES — Reservoir 80L"] --> P["P — Pump"] --> M["M — Manifold"]
-        M --> CH1["CH1 ══════════ D  (75mm, 2.4m)"]
-        M --> CH2["CH2 ══════════ D  (75mm, 2.4m)"]
-        M --> CH3["CH3 ══════════ D  (75mm, 2.4m)"]
-        M --> CH4["CH4 ══════════ D  (100mm, 2.4m)"]
-    end
-
-    subgraph ZB["ZONE B — Microgreens Tray Shelf  (2-tier)"]
-        B["Tier 1 trays · Tier 2 trays"]
-    end
-
-    subgraph ZC["ZONE C — Root Veg Bags"]
-        C["B B B<br/>B B B"]
-    end
-
-    BENCH["WORK / MIXING BENCH"]
-    STORE["STORAGE BOX"]
-
-    WB --> ZA
-    ZA --> ZB
-    ZA --> ZC
-    ZB --> BENCH
-    ZC --> BENCH
-    BENCH --> STORE
-```
-
-**↓ SOUTH — direction of sunlight · main access aisle (0.6 m)**
-
-> **Legend:** RES = Reservoir · P = Pump · M = Manifold · D = Drain return · CH1–4 = NFT channels · B = Grow bag · ══ = NFT channel with net pot holes
+Planning season: **mid-April through mid-October** (SA: mid-October through mid-April). Last spring frost about **April 15** (SA: October 15). First fall frost about **October 20** (SA: April 20). These are planning dates, not a guarantee.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Dimensions & Clearances
+## Dimensions and clearances
 
 | Area | Dimensions | Notes |
-|------|-----------|-------|
-| Total site footprint | 4.0m × 3.0m | Includes all 3 zones and work area |
-| Zone A (NFT array) | 2.6m × 1.2m | Frame + reservoir beside it |
-| Zone B (microgreens shelf) | 0.6m × 0.5m | 2-tier shelf, fits 3 trays per tier |
-| Zone C (grow bags) | 1.2m × 0.6m | 6 bags, 2 rows of 3 |
-| Working aisle | 0.6m | Front access to all zones |
-| Work/mixing bench | 0.8m × 0.5m | Optional — a table or board on sawhorses |
-| Wind break clearance | 0.3m | From fence/wall to system |
+|------|------------|-------|
+| Whole site | 13 ft × 10 ft (4.0 m × 3.0 m) | Zones, aisle, and bench |
+| Zone A, NFT | 9 ft × 4 ft (2.7 m × 1.2 m) | Frame plus both reservoirs at the low end |
+| Zone A, Ebb and Flow | 9 ft × 6 ft (2.7 m × 1.8 m) | Three 4 ft × 2 ft tables and the reservoir underneath |
+| Zone B | 24 in × 20 in (61 cm × 51 cm) | Two-tier shelf, six trays |
+| Zone C | 4 ft × 2 ft (1.22 m × 0.61 m) | Six bags, two rows of three |
+| Working aisle | 24 in (61 cm) | South side, in front of every zone |
+| Work bench | 32 in × 20 in (81 cm × 51 cm) | Optional mixing table |
+| Wind-break gap | 12 in (30 cm) | Fence or mesh to the frame |
 
-**Minimum workable footprint:** 3.5m × 2.5m if space is tight — compress Zone B/C side by side under a shelf.
+A tight yard can drop to about **12 ft × 8 ft (3.7 m × 2.4 m)** by putting Zone B and Zone C under one shelf. Do not shrink the south aisle below **18 in (46 cm)**.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Zone A — NFT Channel Array (Detailed)
+## Zone A — NFT channel array
 
-### Frame Side-View Diagram
+Four channels, **two reservoirs**. CH1–CH3 share the greens tank. CH4 has its own tank and pump so tomatoes and peppers can run a higher EC than lettuce.
 
-```mermaid
-block-beta
-    columns 3
-    HIGH["HIGH END<br/>(inlet)<br/>80 cm post"]:1
-    CHANNELS:1
-    LOW["LOW END<br/>(drain)<br/>72 cm post"]:1
-
-    block:CHANNELS:1
-        columns 1
-        CH1["CH1 — 75mm square tube"]
-        CH2["CH2 — 75mm square tube"]
-        CH3["CH3 — 75mm square tube"]
-        CH4["CH4 — 100mm square tube"]
-    end
-
-    SLOPE["Slope: 8 cm drop over 2.4 m = 1:30 ratio (3.3%)<br/>Channels rest on cross-supports at each end<br/>←────────────── 2.4 metres ──────────────→"]:3
-```
-
-### Channel Spacing (Front-View Cross Section)
-
-```mermaid
-block-beta
-    columns 5
-    RAIL["Frame top rail<br/>←────────── ~1.0 metre ──────────→"]:5
-    CH1["CH1<br/>75 mm"]:1
-    GAP1[" "]:1
-    CH2["CH2<br/>75 mm"]:1
-    GAP2[" "]:1
-    CH3["CH3<br/>75 mm"]:1
-    CH4["CH4<br/>100 mm"]:2
-    NOTE["↕ 15 cm gap between channels for airflow"]:3
-```
-
-### Net Pot Hole Layout Per Channel
+### Frame, side view
 
 ```mermaid
 flowchart LR
-    INLET["← inlet end"]
-    P1["[O]<br/>Site 1"] --> P2["[O]<br/>Site 2"] --> P3["[O]<br/>Site 3"] --> P4["[O]<br/>Site 4"] --> P5["[O]<br/>Site 5"] --> P6["[O]<br/>Site 6"] --> P7["[O]<br/>Site 7 (CH1–3)"]
-    INLET --> P1
-    P7 --> DRAIN["drain end →"]
-
-    W1["[O]<br/>Site 1"] --> W2["[O]<br/>Site 2"] --> W3["[O]<br/>Site 3"] --> W4["[O]<br/>Site 4"] --> W5["[O]<br/>Site 5"] --> W6["[O]<br/>Site 6"]
-    W6 --> DRAIN4["drain end →"]
-
-    note1["CH1–3: 75mm channel · 50mm net pots · 230mm spacing<br/>11 sites per channel (50mm edge buffer each end)<br/>Total CH1–3: 11 × 3 = 33 sites"]
-    note2["CH4: 100mm channel · 75mm net pots · 300mm spacing<br/>7 plant sites"]
-    note3["Total Zone A sites: (11 × 3) + 7 = 40 plant sites"]
+  highEnd["High end inlet posts 36 in"] --> channels["Four channels 8 ft"]
+  channels --> lowEnd["Low end drain posts 32.75 in"]
 ```
 
-### Reservoir Placement
+The drop is **3¼ in (83 mm)** over **8 ft (2.44 m)**, a **1:30** slope. Channels sit on cross-supports at each end. Do not use a steeper A-frame. A slope near 1:15 drains too fast and leaves dry roots.
+
+### Channel spacing
+
+Leave about **6 in (15 cm)** of air between channels. CH1–CH3 are **3 in (76 mm)** square tube. CH4 is **4 in (102 mm)** square tube.
+
+### Plant sites
+
+| Channel | Tube | Net pot | Spacing | Sites | Crop |
+|---------|------|---------|---------|-------|------|
+| CH1 | 3 in (76 mm) | 2 in (51 mm) | 9 in (229 mm) | 11 | Lettuce |
+| CH2 | 3 in (76 mm) | 2 in (51 mm) | 9 in (229 mm) | 11 | Basil, cilantro, parsley, chives |
+| CH3 | 3 in (76 mm) | 2 in (51 mm) | 9 in (229 mm) | 11 | Spinach, kale, mint, and 3–4 strawberry sites |
+| CH4 | 4 in (102 mm) | 3 in (76 mm) | 12 in (305 mm) | 7 | Cherry tomato and pepper only |
+
+Total: **40 sites**. Keep about **2 in (51 mm)** of tube past the first and last hole. On CH4, plant **4–5** indeterminate cherries and skip holes, or up to **7** compact determinate plants. Strawberries stay on CH3. They cannot share the tomato tank.
+
+### Reservoirs and plumbing
+
+Both tanks sit at the **low** end so the return is gravity. Paint the body black and the outside white, or wrap with reflective foam, and keep them out of the sun.
+
+| Loop | Reservoir | Pump | Feeds |
+|------|-----------|------|-------|
+| Greens | 20 US gal (76 L) | 160–210 US gph (600–800 L/h), 24 hours a day | 1 in (25 mm) manifold, then ½ in (13 mm) into CH1, CH2, CH3 |
+| Fruiting | 10 US gal (38 L) | 50–100 US gph (200–400 L/h), 24 hours a day | Own ½ in (13 mm) line into CH4 only |
+
+Each lid needs two holes: the pump cord, and the return pipe. An air stone in each tank is worth fitting. Flow per greens channel is **0.26–0.53 US gpm (1–2 L/min)**.
+
+```mermaid
+flowchart LR
+  greensRes["Greens 20 gal"] --> greensPump["160 to 210 gph"] --> manifold["1 in manifold"]
+  manifold --> ch1["CH1"]
+  manifold --> ch2["CH2"]
+  manifold --> ch3["CH3"]
+  ch1 --> greensRes
+  ch2 --> greensRes
+  ch3 --> greensRes
+  fruitRes["Fruit 10 gal"] --> fruitPump["50 to 100 gph"] --> ch4["CH4"]
+  ch4 --> fruitRes
+```
+
+Both pumps run **continuously**. A timer is not part of normal NFT operation. Roots in a stopped channel dry in **15–30 minutes** in warm weather.
+
+[↑ Back to TOC](#table-of-contents)
+
+---
+
+## Zone A — Ebb and Flow tables
+
+Use this section instead of the NFT section if you are building flood tables. Do not plumb both Zone A designs into one reservoir.
+
+### Tables
+
+Three tables, each **4 ft × 2 ft (1.22 m × 0.61 m)**, built dead level. A **3/16 in (5 mm)** tilt floods one side and starves the other.
+
+| Table | Crop | Plants |
+|-------|------|--------|
+| Table 1 | Indeterminate tomato or cucumber | 1 |
+| Table 2 | Pepper, aubergine, or courgette | 1–2 |
+| Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop | Several |
+
+### Media and flood
+
+Fill each table with **5 in (13 cm)** of rinsed LECA: **25 US gal (95 L)** per table, **75 US gal (284 L)** for three. Buy **90 US gal (340 L)** so rinsing and settling do not leave you short.
+
+The overflow standpipe stops the flood about **¾ in (2 cm)** below the top of the LECA. Water does not sit on the surface.
+
+| Crop stage | Floods per day | Duration |
+|------------|----------------|----------|
+| Vegetative | 3 | 15–30 minutes |
+| Fruiting, and hot afternoons | 4 | 15–30 minutes, shorter if the tank is warming |
+
+Four floods is the ceiling. A fifth flood keeps the root zone too wet. In a 90–100°F (32–38°C) afternoon, add **40% shade** and keep four floods. Do not cut back to two.
+
+### Reservoir and fittings
+
+| Item | Value |
+|------|-------|
+| Reservoir | 45 US gal (170 L), under the tables, below the drain outlets. Acceptable range 40–50 US gal (151–189 L) |
+| Pump | 250 US gph (950 L/h). Acceptable range 200–300 US gph (760–1,140 L/h) |
+| Timer | Digital, 1-minute steps, in a weatherproof box on a GFCI |
+| Overflow | 1½ in (40 mm) bulkhead and standpipe, one per table |
+| Drain | 1 in (25 mm) bulkhead, one per table, gravity back to the reservoir |
 
 ```mermaid
 flowchart TD
-    RES["RESERVOIR 80L<br/>(placed BESIDE frame at LOW end of slope)"]
-    LID["Lid with 2 holes:<br/>1. Pump power cable<br/>2. Inlet / return pipe"]
-    BODY["Exterior: painted white<br/>+ insulated with foam sheet"]
-    POS["Position: low end of channels<br/>so gravity returns flow naturally.<br/>Shade: under the frame or<br/>wrapped with reflective foam."]
-
-    RES --> LID
-    LID --> BODY
-    BODY --> POS
+  res["Reservoir 45 gal under tables"] --> pump["Pump 250 gph"]
+  pump --> t1["Table 1 fruiting vine"]
+  pump --> t2["Table 2 pepper or courgette"]
+  pump --> t3["Table 3 leafy"]
+  t1 --> overflow["1.5 in overflow sets flood height"]
+  t2 --> overflow
+  t3 --> overflow
+  t1 --> drain["1 in drain back to reservoir"]
+  t2 --> drain
+  t3 --> drain
 ```
 
-### Plumbing Route
+A timer that sticks **on** rots roots in **2–4 hours**. A float that confirms the table has drained, and that opens the pump if it has not, is the safety device to fit before the first crop. Moist LECA still buffers a missed flood for **8–24 hours**.
 
-```mermaid
-flowchart TD
-    RES1["RESERVOIR"]
-    PUMP["PUMP<br/>submersible · 600–800 L/h<br/>sitting on reservoir floor"]
-    OUTLET["25mm outlet pipe<br/>up through lid"]
-    MANIFOLD["25mm PVC manifold<br/>runs along HIGH end of frame"]
-    CH1["CH1<br/>13mm inlet tube"]
-    CH2["CH2<br/>13mm inlet tube"]
-    CH3["CH3<br/>13mm inlet tube"]
-    CH4["CH4<br/>13mm inlet tube"]
-    RETURN["19–25mm return pipe<br/>runs along LOW end of frame · gravity"]
-    RES2["RESERVOIR<br/>← gravity drain-back · no second pump needed"]
-
-    RES1 --> PUMP --> OUTLET --> MANIFOLD
-    MANIFOLD --> CH1
-    MANIFOLD --> CH2
-    MANIFOLD --> CH3
-    MANIFOLD --> CH4
-    CH1 --> RETURN
-    CH2 --> RETURN
-    CH3 --> RETURN
-    CH4 --> RETURN
-    RETURN --> RES2
-```
+Build steps: [guide/ebb-and-flow/11-build-guide.md](guide/ebb-and-flow/11-build-guide.md).
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Zone B — Microgreens Tray Station (Detailed)
+## Zone B — Microgreens
 
-### Shelf Structure
+### Shelf
 
-```mermaid
-block-beta
-    columns 3
+Two tiers, **24 in wide × 20 in deep (61 cm × 51 cm)**, about **36 in (91 cm)** tall. Tier heights about **16 in (41 cm)** and **32 in (81 cm)**. Six trays, each **10 in × 20 in (25 cm × 50 cm)**.
 
-    block:TOPVIEW["TOP VIEW — shelf"]:3
-        columns 3
-        T1["TRAY 1"] T2["TRAY 2"] T3["TRAY 3"]
-        T4["TRAY 4"] T5["TRAY 5"] T6["TRAY 6"]
-    end
+### Protocol
 
-    block:SIDEVIEW["SIDE VIEW"]:3
-        columns 2
-        H80["80 cm<br/>(Tier 2 height)"] TIER2["Tier 2 trays<br/>← top tier"]
-        H40["40 cm<br/>(Tier 1 height)"] TIER1["Tier 1 trays<br/>← bottom tier"]
-    end
+1. Fill with **1–1¼ in (2.5–3 cm)** of moist coco coir.
+2. Broadcast seed. Press it in with a flat board.
+3. Blackout: an empty tray plus a light weight for 2–4 days.
+4. Uncover when shoots are about **1 in (2.5 cm)**. Full sun, or 40% shade in June–August (SA: December–February).
+5. Mist twice a day. Bottom-water after the blackout.
+6. Standard crops get **pH 5.8–6.2 water only**. Sunflower and pea may take EC **0.4–0.8 mS/cm** if the grow runs long. No other nutrients.
+7. Cut at the coco when the first true leaves show, usually 7–14 days.
 
-    DIMS["Shelf: 60 cm wide × 55 cm deep × 90 cm tall<br/>Build from: 2×4 timber + plywood, or wire shelving unit"]:3
-```
+| Tray | Crop | Sow rhythm |
+|------|------|------------|
+| 1 | Sunflower | Week 1 |
+| 2 | Pea | Week 1 |
+| 3 | Radish | Week 2 |
+| 4 | Broccoli | Week 2 |
+| 5 | Amaranth | Week 3 |
+| 6 | Wheatgrass | Week 3 |
 
-### Tray Configuration
-
-| Tray | Crop | Sow Date Rotation |
-|------|------|-------------------|
-| Tray 1 | Sunflower shoots | Week 1 |
-| Tray 2 | Pea shoots | Week 1 |
-| Tray 3 | Radish microgreens | Week 2 |
-| Tray 4 | Broccoli microgreens | Week 2 |
-| Tray 5 | Amaranth | Week 3 |
-| Tray 6 | Wheatgrass | Week 3 |
-
-**Rotation cycle:** Sow a new tray every 3–5 days to maintain continuous harvest.
-
-### Microgreens Protocol Summary
-
-1. **Fill tray** with 2–3cm of moistened coco coir
-2. **Broadcast seeds** evenly (no spacing — dense mat)
-3. **Press seeds** gently into media with a flat board
-4. **Blackout phase:** Cover with empty tray + weight for 2–4 days (germination)
-5. **Light phase:** Uncover when shoots reach 2–3cm, place in full outdoor light (or partial shade in peak summer)
-6. **Water:** Mist surface 2× daily during blackout, bottom-water after uncovering
-7. **Harvest:** Cut at soil level when first true leaves appear (7–14 days depending on variety)
+Sow a fresh tray every 3–5 days.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Zone C — Root Vegetable Grow Bags (Detailed)
+## Zone C — Root-vegetable grow bags
 
-### Bag Layout
+Six bags on a pallet or gravel so they cannot stand in water. Two rows of three.
 
-```mermaid
-block-beta
-    columns 3
-    TITLE["TOP VIEW — Grow Bag Layout"]:3
-    B1["Radish 20L"] B2["Radish 20L"] B3["Beetroot 20L"]
-    B4["Carrot 30L"] B5["Carrot 30L"] B6["Carrot 30L"]
-    NOTE["All bags sit on a slatted wooden pallet or gravel/bark chip bed for drainage.<br/>Ensure no standing water under bags."]:3
-```
+| Bags | Size | Crop | Root depth to allow |
+|------|------|------|---------------------|
+| 2 | 5 US gal (19 L) | Radish | 8–10 in (20–25 cm) |
+| 1 | 5 US gal (19 L) | Beetroot | 8–10 in (20–25 cm) |
+| 3 | 10 US gal (38 L) | Carrot | 12–16 in (30–41 cm) |
 
-### Bag Sizes and Depths
+Media by volume: **60% coco, 30% perlite, 10% vermiculite**. No garden soil. For a 5 US gal (19 L) bag that is about **3 US gal (11 L)** coco, **1.5 US gal (6 L)** perlite, and **0.5 US gal (2 L)** vermiculite. Double those scoops for a 10 US gal bag.
 
-| Crop | Bag Size | Depth Needed | Why |
-|------|----------|-------------|-----|
-| Radishes | 20L (round, wide) | 20–25cm | Short tap root, wide spread |
-| Beetroot | 20L (round, wide) | 20–25cm | Moderate root depth |
-| Carrots | 30L (tall/deep bag) | 30–40cm | Long tap root needs depth |
+| Stage | How often | EC | pH |
+|-------|-----------|----|----|
+| Seedling, 0–2 weeks | Once a day | 0.8–1.0 mS/cm | 6.0–6.5 |
+| Vegetative | Twice a day | 1.2–1.6 mS/cm | 6.0–6.5 |
+| Root fill | Twice a day | 1.6–2.0 mS/cm | 6.0–6.5 |
 
-### Media Mix for Grow Bags
+Water until about 20% of the volume runs out the bottom. The EC ceiling is **2.0 mS/cm** for every Zone C crop, including beetroot.
 
-```mermaid
-block-beta
-    columns 1
-    TITLE["PER 20L BAG — Media Mix"]
-    COCO["Coco coir · 12L · 60%"]
-    PERL["Perlite · 6L · 30%"]
-    VERM["Vermiculite · 2L · 10%"]
-    NOTE["Moisten coco before filling.<br/>Do NOT use garden soil."]
-```
-
-### Fertigation Schedule (Zone C)
-
-| Crop Stage | Frequency | Solution EC | pH |
-|------------|-----------|-------------|-----|
-| Seedling (0–2 weeks) | 1× daily | 0.8–1.0 mS/cm | 6.0–6.5 |
-| Vegetative (2–6 weeks) | 2× daily | 1.2–1.6 mS/cm | 6.0–6.5 |
-| Root bulking (6+ weeks) | 2× daily | 1.6–2.0 mS/cm | 6.0–6.5 |
-
-**Method:** Mix nutrient solution in a watering can. Water until runoff drains from bag bottom (20% runoff recommended to prevent salt buildup).
+One-season planning yields, used by both budget guides: radish **15 lb (6.8 kg)**, beetroot **8 lb (3.6 kg)**, carrot **20 lb (9.1 kg)**.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Shade Cloth & Environmental Controls
+## Shade, frost, and wind
 
-### Shade Cloth Positioning
+**Shade.** 40% cloth on a conduit or bamboo frame, with **12–20 in (30–51 cm)** of air under the cloth. Put it on when afternoon highs stay above **85°F (29°C)** — normal in June–August (SA: December–February) at 38°N. Take it off in a cloudy spell so the DLI does not collapse.
 
-```mermaid
-flowchart TD
-    CLOTH["Shade cloth 40%<br/>stretched over bamboo/conduit frame<br/>(summer: June–August peak)"]
-    GAP["↓ 30–50 cm clearance ↓"]
-    ZONES["NFT CHANNELS  ·  ZONE B  ·  ZONE C"]
-    NOTE["Deploy when daily temps exceed 28°C<br/>or plants show heat stress.<br/>Remove in overcast / autumn conditions<br/>to maximise light."]
+**Frost.** Below **40°F (4°C)** at night, drape horticultural fleece over the zone and clip the edges. Take it off on a mild sunny day. Do not leave it on in heavy rain. Outdoor NFT does not stay out through deep winter here: lows of **0–15°F (−18 to −9°C)** will freeze both tanks.
 
-    CLOTH --> GAP --> ZONES
-    ZONES --> NOTE
-```
-
-### Frost Fleece Deployment
-
-```
-  Autumn / cold nights (below 5°C):
-
-  Drape horticultural fleece (30–50g/m²) over entire zone.
-  Anchor edges with clips or stones.
-  Remove during warm sunny days — fleece traps heat and humidity.
-
-  Do NOT leave fleece on during heavy rain — weight can damage plants.
-```
-
-### Wind Break
-
-- Install mesh fencing or slatted timber on the **north and east** sides
-- Leave south and west open for sunlight and gentle air movement
-- Secure all channels and the reservoir to the frame with cable ties or straps in high-wind conditions
-- Taller plants (tomatoes, peppers) need individual staking/trellis regardless
+**Wind.** Mesh or slatted timber on the **north** and **east**. Leave the south and west open. Strap channels, tables, and tanks to the frame. Stake tomatoes and peppers even behind a wind break. Place the break far enough that it does not dump turbulence onto the tables — a rough rule is several times the break’s own height.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Maintenance Access Map
+## Maintenance access
 
-```mermaid
-flowchart TD
-    NORTH["NORTH SIDE<br/>Wind break — no access needed"]
-    NFT["NFT CHANNELS<br/>Accessible from SOUTH SIDE<br/>→ Net pots · channel inspection · inlet check"]
-    RES_ACCESS["RESERVOIR — LOW END (right/east side)<br/>→ Fill point · pump check · EC/pH testing"]
-    ZB_ACCESS["ZONE B SHELF — EAST side<br/>→ Tray swap · watering · harvest"]
-    ZC_ACCESS["ZONE C BAGS — SOUTH-EAST corner<br/>→ Daily watering · harvest"]
-    BENCH_ACCESS["WORK BENCH — SOUTH side, central<br/>→ Nutrient mixing · propagation · tools"]
-    SOUTH["SOUTH SIDE<br/>Main access aisle — 0.6 m wide"]
-
-    NORTH --> NFT --> RES_ACCESS --> ZB_ACCESS --> ZC_ACCESS --> BENCH_ACCESS --> SOUTH
-```
+| Side | What you do there |
+|------|-------------------|
+| South aisle, 24 in (61 cm) | Net pots, flood-table surface, harvest, the main working side |
+| Low end (east) | Both NFT reservoirs, or the Ebb and Flow tank: fill, pump, EC and pH |
+| East | Zone B tray swaps |
+| South-east | Zone C watering and harvest |
+| North | Wind break. Do not rely on this side for daily access |
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
-## Utility Requirements
+## Utility requirements
 
 | Utility | Requirement | Notes |
-|---------|------------|-------|
-| **Electricity** | 1 outdoor socket within ~3m | For submersible pump (5–15W). Use outdoor-rated extension lead and waterproof socket cover |
-| **Water** | Garden hose or tap within ~5m | For topping up reservoir and mixing nutrient solution |
-| **Drainage** | Ground drainage or drain slab | Overflow from reservoir and runoff from grow bags must drain away |
-| **Storage** | Weatherproof box (optional) | For pH/EC meters, nutrients, spare fittings — keep out of sunlight |
+|---------|-------------|-------|
+| Electricity | One outdoor receptacle within **10 ft (3 m)** | **120 V GFCI** (SA: **230 V**, **30 mA earth-leakage**). Weatherproof cover. NFT: two pumps, about 15 W and 8 W. Ebb and Flow: one pump, about 35 W, on a digital timer |
+| Water | Hose bib within **16 ft (5 m)** | Top-up and mixing |
+| Drainage | Ground that sheds water | Tank overflow and bag runoff must leave the site |
+| Storage | Latched weatherproof box | Meters, dry salts, acids, pesticides. Out of the sun. Away from children and pets |
 
----
-
-*See [`guide/nft/11-build-guide.md`](guide/nft/11-build-guide.md) for NFT construction instructions*
+NFT build: [guide/nft/11-build-guide.md](guide/nft/11-build-guide.md). Ebb and Flow build: [guide/ebb-and-flow/11-build-guide.md](guide/ebb-and-flow/11-build-guide.md).
 
 [↑ Back to TOC](#table-of-contents)
 

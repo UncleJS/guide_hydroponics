@@ -4,6 +4,7 @@
 [![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Pot sizes, bag volumes, and coco depth follow [Design Constants](../design-constants.md). Zone layout is in [zones.md](../../zones.md).
 
 ---
 
@@ -99,13 +100,13 @@ Net pots are mesh baskets that sit in the holes drilled in your NFT channels. Th
 
 | Size | Use Case | Channel |
 |------|---------|---------|
-| **50mm (2 inch)** | Lettuce, spinach, herbs, kale | CH1, CH2, CH3 (75mm channels) |
-| **75mm (3 inch)** | Cherry tomatoes, peppers, strawberries | CH4 (100mm wide channel) |
-| **25mm (1 inch)** | Cloning, propagation only | Not used in main channels |
+| **2 in (51 mm)** | Lettuce, herbs, spinach, kale, mint, and the 3–4 strawberry sites | CH1, CH2, CH3, which are 3 in (76 mm) channels, 11 sites each at 9 in (229 mm) |
+| **3 in (76 mm)** | Cherry tomato and pepper only | CH4, the 4 in (102 mm) channel, 7 holes at 12 in (305 mm) |
+| **1 in (25 mm)** | Cloning and propagation only | Not used in the main channels |
 
 ### Net Pot Materials
 
-- **Plastic net pots:** Standard, reusable, cheap (~$0.10–$0.30 each). Preferred choice.
+- **Plastic net pots:** Standard, reusable, cheap, about $0.10–$0.30 (R2–R5) each. Preferred choice.
 - **Biodegradable net pots:** Hemp, coconut husk — useful for media bed systems but unnecessary for NFT
 - **DIY net pots:** Cut-down plastic cups with holes drilled — works perfectly fine
 
@@ -116,23 +117,25 @@ When building channels, holes must be drilled to fit net pots snugly:
 ```mermaid
 flowchart TD
     A["─── channel top surface ───<br/>(net pot lips rest here)"]
-    B["NET POT<br/>(sits in drilled hole;<br/>bottom hangs 2–3cm inside channel)"]
+    B["NET POT<br/>sits in the drilled hole<br/>bottom hangs 3/4 to 1.25 in inside"]
     C["─── channel floor ───<br/>(nutrient film runs here)"]
 
     A --> B --> C
 
     D["Too loose: pot falls in or floats when filled"]
     E["Too tight: media falls out around edges; roots deflected"]
-    F["Correct: pot lips rest on surface; pot hangs down ~2–3cm"]
+    F["Correct: lips rest on the surface; pot hangs 3/4 to 1.25 in"]
 
     C -.->|"fit check"| D
     C -.->|"fit check"| E
     C -.->|"fit check"| F
 ```
 
-Use a **hole saw drill bit** of the correct size:
-- 50mm net pot: use a 46–48mm hole saw (pot lips hold it in)
-- 75mm net pot: use a 71–73mm hole saw
+Use a **hole saw** that lets the lip sit on the channel:
+- 2 in (51 mm) net pot: 1⅞ in (46–48 mm) hole saw
+- 3 in (76 mm) net pot: 2⅞ in (71–73 mm) hole saw
+
+CH1–CH3 get 11 holes at 9 in (229 mm), about 2 in (51 mm) clear of each end, on an 8 ft (2.44 m) channel. CH4 gets 7 holes at 12 in (305 mm). Strawberries use 3–4 of the CH3 holes and the same 2 in (51 mm) pots. They do not move to the 3 in pots.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -154,8 +157,8 @@ LECA is kiln-fired clay that has been expanded into lightweight, porous balls. T
 | Drainage | Excellent |
 | Water retention | Moderate (surface wicking, not absorption) |
 | Root aeration | Excellent — air pockets between pebbles |
-| Cost | ~$1.50–$3.00 per litre |
-| Typical size | 4–16mm diameter balls |
+| Cost | About $5.70–$11.40 per US gal (R103–R205), which is $1.50–$3.00/L (R27–R54/L) |
+| Typical size | 3/16–5/8 in (4–16 mm) diameter |
 
 ### Preparation Before First Use
 
@@ -222,12 +225,12 @@ Rockwool is manufactured from volcanic basalt rock and chalk, spun into fibres a
 | Air porosity | Good — ~20% air at saturation |
 | Reusable | Yes but degrades over time |
 | Biodegradability | Poor — does not decompose |
-| Cost | Cheap — ~$0.10–$0.30 per starter cube |
+| Cost | About $0.10–$0.30 (R2–R5) per starter cube |
 
 ### Types
 
-- **Starter/propagation cubes** (25mm × 25mm, 36mm × 36mm): For germinating seeds — place one seed per cube
-- **Grow blocks** (75mm × 75mm, 100mm × 100mm): For growing tomatoes, peppers in media-bed systems (not needed for this NFT system)
+- **Starter/propagation cubes**, 1 in (25 mm) and 1½ in (36 mm): one seed per cube
+- **Grow blocks**, 3 in (75 mm) and 4 in (100 mm): media-bed tomatoes and peppers. This NFT build does not need them. CH4 uses a 3 in (76 mm) net pot and clay pebbles, not a rockwool block
 - **Slab/panel rockwool**: Large slabs used in commercial Dutch bucket systems — not relevant here
 
 ### Critical: pH Conditioning
@@ -253,13 +256,13 @@ Raw rockwool has a pH of ~7.5–8.0 due to the calcium and limestone in its comp
 ```
   SEED-TO-TRANSPLANT PROTOCOL:
 
-  1. Use conditioned rockwool cubes (25–36mm)
+  1. Use conditioned rockwool cubes, 1–1½ in (25–36 mm)
   2. Make a small hole in the top of the cube (or use pre-made hole)
   3. Place 1–2 seeds per hole (thin to 1 seedling after germination)
   4. Cover hole with a small piece of rockwool or leave open
   5. Place cubes in a tray with a little water (pH 5.5–6.0, EC 0.4–0.6 mS/cm)
   6. Cover tray with plastic wrap or humidity dome to retain moisture
-  7. Keep in warm location: 20–25°C for most crops
+  7. Keep warm: 68–77°F (20–25°C) for most crops
   8. Check daily — cubes should feel moist but not waterlogged
   9. Germination: 2–7 days depending on crop and temperature
   10. Once seedlings emerge, move to light
@@ -324,7 +327,7 @@ Coco coir (coconut husk fibre) is the primary media for Zone C grow bags (root v
 ### Coco Coir Types
 
 - **Compressed blocks:** Expand when wetted (~5L block expands to ~60–70L). Very cost-effective.
-- **Loose bagged coco:** Ready to use, convenient but more expensive per litre.
+- **Loose bagged coco:** Ready to use, convenient, and more expensive per US gal than a compressed block.
 - **Coco perlite pre-mixed:** Some brands sell 70/30 coco/perlite — convenient for grow bags.
 - **Buffered coco:** Pre-treated with calcium/magnesium to prevent CEC issues. Worth the slight extra cost.
 
@@ -336,8 +339,8 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
   COCO BUFFERING PROCEDURE:
 
   Before first use:
-  1. Expand/prepare coco coir fully
-  2. Mix a strong Cal-Mag solution: 5ml Cal-Mag per litre of water
+  1. Expand and prepare the coco coir
+  2. Mix a strong Cal-Mag solution: 19 ml per 1 US gal (5 ml/L)
   3. Saturate the coco coir completely with this solution
   4. Let sit for 30–60 minutes
   5. Drain excess
@@ -350,16 +353,30 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
 ### Media Mix for Zone C Grow Bags
 
 ```
-  RECOMMENDED MIX (per 20L bag):
+  RECOMMENDED MIX (by volume): 60% coco, 30% perlite, 10% vermiculite.
+  No garden soil.
 
-  12L buffered coco coir (60%)
-   6L perlite (30%)
-   2L vermiculite (10%)
+  Per 5 US gal (19 L) bag — two of these are radish, one is beetroot:
+
+  3.0 US gal (11.4 L) buffered coco coir (60%)
+  1.5 US gal (5.7 L) perlite (30%)
+  0.5 US gal (1.9 L) vermiculite (10%)
+
+  Per 10 US gal (38 L) bag — three of these are carrot. Double the
+  5 US gal amounts:
+
+  6.0 US gal (22.8 L) buffered coco
+  3.0 US gal (11.4 L) perlite
+  1.0 US gal (3.8 L) vermiculite
 
   WHY THIS RATIO:
-  - Coco: main water/nutrient retention medium
-  - Perlite: improves drainage and aeration, prevents compaction
-  - Vermiculite: improves moisture retention for root veg (prevents dry pockets)
+  - Coco: the water and nutrient store
+  - Perlite: drainage and air, so the bag does not pack solid
+  - Vermiculite: holds a little extra moisture around the roots
+
+  Fertigation EC ceiling for every bag is 2.0 mS/cm. Beetroot does
+  not get a higher target. One-season planning yields: radish 15 lb
+  (6.8 kg), beetroot 8 lb (3.6 kg), carrot 20 lb (9.1 kg).
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -369,7 +386,7 @@ Raw coco coir has a high cation exchange capacity (CEC) that causes it to **abso
 
 ## 7. Perlite
 
-Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~870°C, causing it to expand like popcorn into lightweight, highly porous granules.
+Perlite is expanded volcanic glass (amorphous silica) heated to about 1,600°F (870°C) until it pops into lightweight, porous granules.
 
 ### Properties
 
@@ -380,7 +397,7 @@ Perlite is expanded volcanic glass (amorphous silica) that has been heated to ~8
 | Aeration | Excellent — large air pores |
 | Nutrient holding | Very low — almost inert |
 | Weight | Extremely light |
-| Cost | ~$1.50–$3.00 per litre |
+| Cost | About $5.70–$11.40 per US gal (R103–R205), or $1.50–$3.00/L (R27–R54/L) |
 | Reusable | Yes, but degrades over time (breaks down into fine dust) |
 
 ### Uses
@@ -410,7 +427,7 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 | Aeration | Moderate (less than perlite) |
 | Nutrient holding | Some — modest CEC |
 | pH | Slightly alkaline (7.0–7.5) |
-| Cost | ~$1.50–$2.50 per litre |
+| Cost | About $5.70–$9.50 per US gal (R103–R171), or $1.50–$2.50/L (R27–R45/L) |
 
 ### Uses in This System
 
@@ -518,23 +535,23 @@ If seedlings were started in soil and you want to move them to NFT channels, roo
 
 | Zone | Component | Media | Net Pot |
 |------|-----------|-------|---------|
-| Zone A — CH1 (lettuce) | NFT channel | Clay pebbles + rockwool cube | 50mm |
-| Zone A — CH2 (herbs) | NFT channel | Clay pebbles + rockwool cube | 50mm |
-| Zone A — CH3 (kale/spinach/mint) | NFT channel | Clay pebbles + rockwool cube | 50mm |
-| Zone A — CH4 (tomatoes/strawberries) | NFT channel | Clay pebbles + rockwool cube | 75mm |
-| Zone B (microgreens) | Tray | Coco coir (2–3cm layer) | None |
-| Zone C (radishes/beetroot) | 20L grow bag | 60% coco + 30% perlite + 10% vermiculite | None |
-| Zone C (carrots) | 30L deep grow bag | 60% coco + 30% perlite + 10% vermiculite | None |
+| Zone A — CH1 (lettuce, 11 sites) | 3 in (76 mm) NFT channel, 8 ft (2.44 m) | Clay pebbles + rockwool cube | 2 in (51 mm) |
+| Zone A — CH2 (basil, cilantro, parsley, chives, 11 sites) | 3 in (76 mm) NFT channel | Clay pebbles + rockwool cube | 2 in (51 mm) |
+| Zone A — CH3 (spinach, kale, mint, plus 3–4 strawberry sites) | 3 in (76 mm) NFT channel | Clay pebbles + rockwool cube | 2 in (51 mm) |
+| Zone A — CH4 (cherry tomato or pepper, 7 holes) | 4 in (102 mm) NFT channel, own reservoir | Clay pebbles + rockwool cube | 3 in (76 mm) |
+| Zone B (microgreens, 6 trays) | 10 in × 20 in (25 cm × 50 cm) tray | Coco coir, 1–1¼ in (2.5–3 cm). Water at pH 5.8–6.2 | None |
+| Zone C radish | Two 5 US gal (19 L) bags | 60% coco + 30% perlite + 10% vermiculite | None |
+| Zone C beetroot | One 5 US gal (19 L) bag | Same mix. EC ceiling 2.0 mS/cm | None |
+| Zone C carrot | Three 10 US gal (38 L) bags | Same mix. EC ceiling 2.0 mS/cm | None |
 | Propagation | Germination tray | Rockwool cubes or Rapid Rooter plugs | None |
 
 ---
 
 
-*Next: [`guide/nft/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*
-
 [↑ Back to TOC](#table-of-contents)
 
----
+> **Previous:** [Guide 04 — Lighting](04-lighting.md)
+> **Next:** [Guide 06 — Crops](06-crops.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

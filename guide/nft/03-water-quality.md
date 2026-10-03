@@ -4,6 +4,7 @@
 [![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Reservoir volumes, temperatures, and prices follow [Design Constants](../design-constants.md). Zone layout is in [zones.md](../../zones.md).
 
 ---
 
@@ -144,7 +145,7 @@ Most municipal water suppliers publish annual water quality reports online. Look
 
 ```
   METHOD 1 — Vitamin C (Ascorbic Acid):
-  Add 1 gram of ascorbic acid per 40 litres of water.
+  Add 1 gram of ascorbic acid per 10.6 US gal (40 L) of water.
   Neutralises chloramine within minutes.
   Slightly lowers pH (small effect, adjust pH after).
   Buy food-grade vitamin C powder — very cheap.
@@ -176,7 +177,7 @@ Hard water contains excess calcium and magnesium carbonate (bicarbonates). Probl
 
   Strategy 2 — Acidify to neutralise bicarbonates:
   Adding phosphoric acid (pH down) consumes bicarbonate as well as lowering pH.
-  Hard water will simply require more pH-down per litre — this is normal.
+  Hard water will simply require more pH-down per US gal (3.8 L) — this is normal.
 
   Strategy 3 — Blend with RO or rainwater:
   50/50 blend of hard tap water with RO or rainwater halves the mineral load.
@@ -204,7 +205,7 @@ If you use well water, test it thoroughly before use. Common problems:
 | **Low pH (acidic)** | Rare; corrosive | pH up to correct |
 | **Nitrates (from agriculture)** | Adds to nutrient load unpredictably | Test and adjust nutrient recipe |
 
-**Recommendation:** If using well water, buy a basic water test kit from a hardware store or send a sample to a lab before starting. This costs $15–$50 and can save you a season of problems.
+**Recommendation:** If using well water, buy a basic water test kit from a hardware store or send a sample to a lab before starting. This costs $15–$50 (R270–R900) and can save you a season of problems.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -221,9 +222,9 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
 
 | Pros | Cons |
 |------|------|
-| Perfect baseline water (EC ~0.0) | Cost: $50–$200 for a basic unit |
-| No chlorine/chloramine issues | Waste water: produces 3–4L waste per 1L RO water |
-| No hard water complications | Slow output: 50–200 litres per day for home units |
+| Perfect baseline water (EC ~0.0) | Cost: $50–$200 (R900–R3,600) for a basic unit |
+| No chlorine/chloramine issues | Waste water: 3–4 US gal of waste per 1 US gal of RO water (3–4 L per 1 L) |
+| No hard water complications | Slow output: 13–53 US gal/day (50–200 L/day) for home units |
 | Maximum nutrient control | Removes beneficial Ca/Mg (add back via CalMag or Masterblend) |
 | Consistent results season to season | Membrane replacement every 1–2 years |
 
@@ -241,7 +242,7 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
 
 ### RO Setup for This System
 
-A countertop or under-sink RO unit with a storage tank (10–20L) is sufficient for an 80L reservoir that needs full changes every 7–10 days.
+A countertop or under-sink RO unit with a storage tank of 2.6–5.3 US gal (10–20 L) covers the two NFT reservoirs: the greens tank is 20 US gal (76 L) and changes every 7 days, and the fruiting tank is 10 US gal (38 L) and changes every 5–7 days. You do not fill both on the same hour unless you choose to.
 
 - Fill reservoir with RO water
 - Add nutrients from scratch (EC starts at ~0.0)
@@ -268,8 +269,8 @@ Outdoor systems have a natural advantage: **free, soft, near-pure water falls fr
 ```mermaid
 flowchart TD
     A["Roof area (any)"] -->|rainwater| B["Guttering"]
-    B --> C["First-flush diverter<br/>(discards first 5–10L of dirty water from roof)"]
-    C --> D["Rainwater butt / IBC tank<br/>(50–1000L)"]
+    B --> C["First-flush diverter<br/>discards first 1.3-2.6 US gal"]
+    C --> D["Rainwater butt or IBC<br/>13-264 US gal"]
     D --> E["Outlet tap"]
     E --> F["Watering can or hose"]
     F --> G["Reservoir fill"]
@@ -282,7 +283,7 @@ flowchart TD
 
 ### Legality Note
 
-Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. In some US states (historically Colorado, Utah) it was restricted, though most states now permit domestic collection. **Check your local regulations** before investing in a large collection system.
+In the inland mid-USA worked climate, domestic rainwater collection is generally allowed. A few states restricted it in the past (Colorado and Utah are the usual examples) and most now permit a household barrel. South African municipal bylaws differ by city. **Check the local rule** before you buy a large tank.
 
 ### Using Rainwater in the System
 
@@ -303,7 +304,7 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 ```
   HOW IT WORKS: Add indicator drops to a water sample; colour matches pH chart.
 
-  Pros:  Cheap ($5–$10), no calibration, no batteries, works forever
+  Pros:  Cheap, $5–$10 (R90–R180), no calibration, no batteries, works forever
   Cons:  Subjective colour matching, ±0.2–0.5 accuracy, only tests point samples
 
   Best for: Backup verification, no electricity environments
@@ -314,7 +315,7 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 ```
   HOW IT WORKS: Dip strip into solution; compare colour to chart.
 
-  Pros:  Cheap ($5–$15 for 100 strips), no calibration
+  Pros:  Cheap, $5–$15 (R90–R270) for 100 strips, no calibration
   Cons:  ±0.5–1.0 accuracy, affected by nutrients staining the strip
          Especially inaccurate in nutrient solution (colour masking)
 
@@ -330,9 +331,9 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
   Cons:  Requires calibration with buffer solution, electrode degrades over time,
          must store probe in storage solution (not water)
 
-  Budget options:  Vivosun, Dr.meter (~$12–$20) — acceptable accuracy
-  Mid-range:       Apera PH20, BlueLab (~$35–$60) — excellent accuracy and build quality
-  Professional:    Hanna HI98100+ (~$80+) — lab grade
+  Budget options:  Vivosun, Dr.meter, about $12–$20 (R216–R360) — acceptable accuracy
+  Mid-range:       Apera PH20, BlueLab, about $35–$60 (R630–R1,080) — stronger accuracy and build
+  Professional:    Hanna HI98100 and similar, about $80 and up (R1,440 and up) — lab grade
 
   Recommendation: Apera PH20 for this budget system — reliable, auto-calibrating.
 ```
@@ -370,11 +371,11 @@ Rainwater harvesting is legal and encouraged in most of Europe, UK, and Canada. 
 
 | Type | Accuracy | Cost | Notes |
 |------|----------|------|-------|
-| Basic pen meter (budget) | ±0.1 mS/cm | $10–$20 | Good enough for home use; single-point calibration |
-| Mid-range digital | ±0.05 mS/cm | $20–$50 | Better accuracy, temperature compensation |
-| Combination EC/pH | ±0.1 EC, ±0.05 pH | $30–$80 | Convenient but compromises on both |
-| BlueLab Truncheon | ±0.1 mS/cm | $50+ | No display, LED colour indicators — durable |
-| Professional inline | ±0.02 mS/cm | $100+ | Continuous monitoring, data logging |
+| Basic pen meter (budget) | ±0.1 mS/cm | $10–$20 (R180–R360) | Good enough for home use; single-point calibration |
+| Mid-range digital | ±0.05 mS/cm | $20–$50 (R360–R900) | Better accuracy, temperature compensation |
+| Combination EC/pH | ±0.1 EC, ±0.05 pH | $30–$80 (R540–R1,440) | Convenient but compromises on both |
+| BlueLab Truncheon | ±0.1 mS/cm | $50+ (R900+) | No display, LED colour indicators — durable |
+| Professional inline | ±0.02 mS/cm | $100+ (R1,800+) | Continuous monitoring, data logging |
 
 ### Calibration
 
@@ -416,7 +417,7 @@ Most commonly: **Phosphoric acid (H₃PO₄)** — sold as pH Down or pH Minus
   Safe use:
   - Wear gloves and eye protection
   - Always add to WATER, never water to acid
-  - Start with small doses: 1ml per 4L, stir, measure, repeat
+  - Start with small doses: 1 ml per 1 US gal (3.8 L), stir, measure, repeat
   - Rinse skin immediately if contact occurs
 
   Other pH down options:
@@ -438,7 +439,7 @@ Most commonly: **Potassium hydroxide (KOH)** — sold as pH Up or pH Plus
   Safe use:
   - Wear gloves and eye protection
   - Very caustic — corrosive to skin and eyes
-  - Add small drops only: 1ml per 4L, stir, measure, repeat
+  - Add small drops only: 1 ml per 1 US gal (3.8 L), stir, measure, repeat
   - Store upright in a cool, dark place
   - Rinse skin immediately if contact occurs
 
@@ -471,39 +472,47 @@ Most commonly: **Potassium hydroxide (KOH)** — sold as pH Up or pH Plus
 
 ### The Outdoor Heat Problem
 
-An 80L reservoir in direct sun on a hot summer day can reach 28–35°C — a temperature range where:
-- Dissolved oxygen drops dramatically
-- Pythium (root rot) thrives
+Both reservoirs — greens 20 US gal (76 L) and fruiting 10 US gal (38 L) — can climb past the heat action line if they sit in the sun. Summer afternoon highs in this climate are 90–100°F (32–38°C), June–August (SA: December–February). Solution above **77°F (25°C)** is already the action line: dissolved oxygen falls and pythium risk rises. A tank that reaches 82–95°F (28–35°C) is well past that line.
+
+- Dissolved oxygen drops
+- Pythium (root rot) is more likely
 - Nutrient uptake becomes stressed
-- Beneficial microbial balance shifts
+
+The aim is **64–72°F (18–22°C)** in both tanks.
 
 ### Management Strategies
 
 ```
-  STRATEGY 1 — SHADE (Free, most effective):
-  Position reservoir UNDER the NFT frame in the shade of the channels.
-  Or wrap with shade cloth.
+  STRATEGY 1 — SHADE (most effective, and it is the design):
+  Sit both reservoirs under the NFT frame, at the low end, out of direct sun.
+  Deploy 40% shade cloth over the channels when afternoon highs hold
+  above 85°F (29°C).
 
-  STRATEGY 2 — INSULATION ($5–$20):
-  Wrap reservoir in:
-  - Reflective bubble wrap insulation (best — reflects + insulates)
-  - Foam camping mat glued to exterior
-  - Bury partially in the ground (1/3 depth underground = effective thermal mass)
+  STRATEGY 2 — INSULATION, about $5–$20 (R90–R360):
+  Wrap each reservoir in:
+  - Reflective bubble wrap (reflects and insulates)
+  - A foam camping mat on the outside
+  - Or bury about one third of the depth for thermal mass
+  Keep the lid on.
 
-  STRATEGY 3 — WHITE/REFLECTIVE PAINT (Free if you have paint):
-  Paint exterior of reservoir white or silver.
-  Reflects radiant heat — can reduce water temp 2–4°C vs black container.
+  STRATEGY 3 — BLACK BODY, WHITE EXTERIOR (the specified finish):
+  The tank body is black so light cannot reach the solution and grow algae.
+  The exterior is white so it reflects radiant heat.
+  A white coat over a black body can hold the water several degrees
+  cooler than a bare black container in the same sun, on the order of
+  4–7°F (2–4°C). Do not leave a bare black exterior in the sun, and do
+  not use a clear or white-only wall that lets light through.
 
-  STRATEGY 4 — FROZEN BOTTLES (Free, temporary):
-  Fill 500ml–1L plastic bottles with water, freeze.
-  Drop into reservoir on hot days.
-  Works well for short-term temperature spikes.
-  Replace daily in peak summer.
+  STRATEGY 4 — FROZEN BOTTLES (temporary):
+  Fill 17–34 fl oz (0.5–1 L) plastic bottles with water and freeze them.
+  Float them in the reservoir on hot afternoons.
+  Replace them daily in peak summer. This buys time. It is not a
+  substitute for shade and the white exterior.
 
-  STRATEGY 5 — AQUARIUM CHILLER ($50–$200):
-  Most effective, most expensive.
-  Inline chiller maintains water at set temperature.
-  Worth considering if summer temps regularly exceed 30°C.
+  STRATEGY 5 — AQUARIUM CHILLER, about $50–$200 (R900–R3,600):
+  An inline chiller holds a set temperature.
+  Consider it when shade, the white exterior, and insulation cannot
+  keep the solution at or below 77°F (25°C).
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -527,12 +536,12 @@ Algae needs two things: **light** and **nutrients**. Your reservoir and channels
 ```
   ALGAE PREVENTION CHECKLIST:
 
-  [ ] Use OPAQUE channels (white or black PVC — not clear tubing)
-  [ ] Keep reservoir lid firmly in place and light-tight
+  [ ] Use opaque channels (not clear tubing)
+  [ ] Keep each reservoir lid on and light-tight
   [ ] Cover any exposed nutrient tubing with tape or black pipe insulation
-  [ ] Wrap the reservoir in black plastic film or paint it black/dark green
-  [ ] Remove any transparent or translucent components from nutrient contact
-  [ ] Clean reservoir and channels on the schedule (see guide/08)
+  [ ] Reservoir finish: black body, white exterior, shaded
+  [ ] Remove any transparent or translucent part that touches nutrient solution
+  [ ] Clean both reservoirs and the channels on the schedule in [Guide 08 — System Maintenance](08-system-maintenance.md)
 
   If algae appears despite prevention:
   [ ] Do a full system clean and reservoir change
@@ -547,19 +556,26 @@ If algae is already present:
 ```
   H₂O₂ (Hydrogen Peroxide) TREATMENT:
 
-  Use: 3% food-grade H₂O₂ (available at pharmacies)
-  Dose: 2–3ml per litre of reservoir volume
+  Use: 3% food-grade hydrogen peroxide (pharmacy grade)
+  Dose: 7.6–11 ml per 1 US gal (2–3 ml/L)
+
+  Worked volumes at 2 ml/L (7.6 ml/US gal):
+  Greens tank, 20 US gal (76 L): about 150 ml
+  Fruiting tank, 10 US gal (38 L): about 76 ml
 
   Process:
-  1. Remove all plants from affected channels first
-  2. Add H₂O₂ to reservoir at 2ml/L
-  3. Run pump for 30 minutes (circulates through all channels)
+  1. Take the plants out, or hand-water them on a tray. Do this first.
+     Roots in a stopped NFT channel dry in 15–30 minutes in warm weather.
+  2. Add peroxide to the reservoir you are cleaning
+  3. Run that loop's pump for 30 minutes so the dose reaches its channels
   4. Drain and rinse thoroughly with plain water
-  5. Refill with fresh nutrient solution
+  5. Refill with fresh nutrient solution for that loop
   6. Replant
 
-  Note: H₂O₂ kills algae AND beneficial microbes AND can stress plant roots.
-  Always remove plants before treatment and rinse completely after.
+  Peroxide kills algae, beneficial microbes, and it stresses live roots.
+  Do not run this dose through a planted channel. Rinse completely before
+  the fresh solution goes in. Clean one loop at a time so the other loop
+  can keep flowing.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -572,19 +588,29 @@ If algae is already present:
 ### Minimum Volume per Plant Site
 
 ```
-  STRICT MINIMUM: 3L per plant site
-  PRACTICAL MINIMUM: 5L per plant site (with daily monitoring)
-  COMFORTABLE: 10L per plant site (weekly monitoring is sufficient)
+  TEXTBOOK MINIMUMS (one shared tank, commercial thinking):
+  Strict:        0.8 US gal (3 L) per site
+  Practical:     1.3 US gal (5 L) per site, with daily checks
+  Comfortable:   2.6 US gal (10 L) per site
 
-  Our system (40 sites, 80L reservoir):
-  80L ÷ 40 sites = 2.0L per site ← below strict minimum
+  THIS BUILD IS TWO TANKS:
 
-  This is manageable ONLY with:
-  - Daily EC/pH measurement and adjustment
-  - Top-up with pH-corrected water every 1–2 days
-  - Full reservoir change every 7 days maximum
+  Greens: 20 US gal (76 L) for 33 sites
+          20 / 33 = 0.61 US gal (2.3 L) per site
+  Fruiting: 10 US gal (38 L) for 7 holes
+          10 / 7 = 1.4 US gal (5.4 L) per hole
 
-  If you want more relaxed management: upgrade to 120–150L reservoir.
+  The greens volume is under the textbook 0.8 US gal (3 L) per site.
+  That is the designed home tank. It stays stable only if you:
+  - Measure EC and pH in each tank every day
+  - Top up by the EC rule: plain water at pH 5.8–6.2 when EC is
+    at or above target; nutrient stock when EC is low
+  - Change the greens tank every 7 days
+  - Change the fruiting tank every 5–7 days
+  - Change sooner if EC will not hold, the solution smells, or roots slime
+
+  Do not merge the loops into one larger tank to chase the textbook
+  volume. Tomato fruiting EC does not belong in the lettuce solution.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -597,42 +623,50 @@ If algae is already present:
 ### Step-by-Step Reservoir Change
 
 ```
-  FREQUENCY: Every 7–14 days (minimum), or when any trigger condition occurs
+  FREQUENCY:
+  Greens tank, 20 US gal (76 L): every 7 days
+  Fruiting tank, 10 US gal (38 L): every 5–7 days
+  Sooner if EC will not hold, the solution smells, or roots slime.
+
+  Change one loop at a time. Leave the other pump running.
 
   WHAT YOU NEED:
   - Pump-out pump or siphon hose
   - Bucket for old solution
-  - Scrub brush / sponge
-  - 10% bleach solution (1 part bleach : 9 parts water) OR 3% H₂O₂
-  - Fresh water supply
-  - Nutrient concentrates and pH adjustment
-  - Clean EC/pH meters
+  - Scrub brush or sponge
+  - 10% bleach (1 part bleach to 9 parts water) OR 3% hydrogen peroxide
+  - Fresh water
+  - Nutrient salts and pH adjustment for THAT tank's recipe
+  - Calibrated EC and pH meters
+  - A tray and a watering can if plants will be hand-watered
 
   STEPS:
-  1. Turn off the pump
-  2. Remove the pump from the reservoir (so it doesn't run dry)
-  3. Siphon or pump out old nutrient solution
-  4. Wipe interior of reservoir with a clean cloth to remove biofilm and sediment
-  5. Add 2–3L of 10% bleach solution, swirl to coat all surfaces
-  6. Leave for 10–15 minutes (sterilisation contact time)
-  7. Drain and TRIPLE rinse with fresh water (no bleach residue must remain)
-  8. Inspect pump filter — clean or replace
-  9. Inspect return pipe inlet — clear any debris
-  10. Refill with fresh source water (or RO/rainwater)
-  11. Add nutrients and adjust pH to target
-  12. Verify EC and pH before restarting pump
-  13. Restart pump, confirm flow in all channels
-  14. Log the date of reservoir change
+  1. Lift the plants out of the channels on this loop, or move them to a
+     tray and hand-water the roots. Do this BEFORE the pump stops.
+     Warm-weather roots dry in 15–30 minutes.
+  2. Turn off only this loop's pump
+  3. Lift that pump out of the reservoir so it cannot run dry
+  4. Siphon or pump out the old solution
+  5. Wipe the interior. Remove biofilm and sediment
+  6. Add 0.5–0.8 US gal (2–3 L) of 10% bleach, or use the peroxide dose
+     in Section 11. Swirl to coat the walls
+  7. Leave 10–15 minutes of contact time. Plants are already out
+  8. Drain and triple-rinse. No bleach smell may remain
+  9. Clean or replace the pump sponge. Clear the return inlet
+  10. Refill with fresh source water, RO water, or rainwater
+  11. Add nutrients for this tank and set pH to 5.8–6.2
+  12. Confirm EC is inside this tank's target before the pump starts
+  13. Restart the pump, confirm flow, then put the plants back
+  14. Log which reservoir you changed and the date
 ```
 
 ---
 
 
-*Next: [`guide/nft/04-lighting.md`](04-lighting.md) — Outdoor light, DLI targets, shade cloth, and seasons*
-
 [↑ Back to TOC](#table-of-contents)
 
----
+> **Previous:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
+> **Next:** [Guide 04 — Lighting](04-lighting.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

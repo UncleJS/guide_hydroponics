@@ -79,7 +79,7 @@ E&F provides solution only during flood periods (typically 3–6 times per day).
 - Peppers (mild stress improves capsaicin production)
 - Strawberries (mild stress concentration improves flavour)
 
-However, if floods are missed — due to timer failure, power cut, or scheduling error — E&F plants experience genuine drought stress much faster than NFT plants. Fruiting crops in high summer with 4-hour flood intervals can show wilting within 1.5–2 hours of a missed cycle.
+A missed flood from a timer stuck OFF or a power cut is still buffered by moist LECA for **8–24 hours**. That is slower damage than an NFT pump stop (15–30 minutes). Do not plan as if Ebb and Flow wilts in 1.5–2 hours after one skipped flood. Hot, windy afternoons shorten the buffer; they do not erase it.
 
 ### Nutrient Delivery Rhythm
 
@@ -185,20 +185,20 @@ Fruiting crops need more complex nutrition over a longer cycle (8–20 weeks): h
 **Tomatoes (all types)**
 - E&F is the premier outdoor hydroponic system for tomatoes
 - Indeterminate varieties require vertical string or bamboo support (install before planting)
-- Flood frequency: 3× daily vegetative → 5× daily fruiting (hot weather)
-- EC: 1.8–2.2 mS/cm reservoir; media EC 2.2–2.8 mS/cm acceptable during fruiting
+- Flood frequency: 3× daily vegetative, 4× daily fruiting. Four is the ceiling, including hot weather
+- Reservoir EC: 2.5–3.5 mS/cm in fruiting. Flush the LECA if media EC is more than 0.5 mS/cm above the reservoir. The same fruiting band applies to cherry tomatoes on the NFT CH4 tank
 - Varieties: Gardener's Delight, Sungold, Moneymaker, Alicante, Shirley
 
 **Cucumbers**
-- Very high yield in E&F; one to two plants per 1.2 m × 0.6 m table is typical
-- Aggressive root system uses all available media volume
-- 5× daily flood at peak summer; never skip a cycle — wilting in 1.5 hours in 28°C+ heat
+- Very high yield in Ebb and Flow; one plant per 4 ft × 2 ft (1.22 m × 0.61 m) table
+- Aggressive root system uses the 25 US gal (95 L) of LECA
+- 4× daily flood at peak summer (above 85°F / 29°C). Do not add a fifth. Moist LECA still buffers a missed flood for 8–24 hours; do not plan on wilt in 90 minutes as the normal case
 - EC: 2.0–2.4 mS/cm; high magnesium requirement
 - Train vertically; prune to a single leader; remove side shoots below knee height
 
 **Courgettes / zucchini**
 - One plant per table maximum; enormous canopy (1.5 m diameter)
-- High flood frequency (5×/day) during fruiting
+- Fruiting floods stay at 4×/day, not 5×
 - EC: 1.6–2.0 mS/cm — lower than tomatoes; sensitive to salt stress
 - Harvest fruit when 15–20 cm long; if allowed to mature, reduces further fruit set dramatically
 
@@ -438,8 +438,8 @@ This gives 52 weeks of lettuce, herbs, and spinach from NFT, plus 20+ weeks of h
 1. **Media**: use rockwool cubes OR coco coir plugs. Coco coir is preferable for E&F because it transitions better into LECA (less osmotic shock at transplant).
 2. **Germination**: as for NFT; same temperature and humidity requirements.
 3. **Transplant timing**: for E&F, you can transplant slightly later — when the second true leaf is visible and roots are 1–2 cm out of the plug. A slightly more established plant handles the flood-drain transition better than a very young seedling.
-4. **LECA bed preparation**: pre-soak LECA for 24 hours in pH 6.0 water, then drain. Fill the table to the required depth. Make a planting pocket in the LECA surface (3–5 cm deep) for each plug.
-5. **Post-transplant**: run flood cycles 4–5× daily for the first week to help roots establish in the LECA; reduce to normal frequency after week 1.
+4. **LECA bed preparation**: pre-soak LECA for 24 hours in pH 5.8 water, then drain. Fill the table to 5 in (13 cm). Make a planting pocket about 1¼–2 in (3–5 cm) deep in the LECA for each plug.
+5. **Post-transplant**: run flood cycles 4× daily for the first week so roots settle into the LECA, then drop to the normal 3× vegetative schedule. Do not use a fifth flood.
 
 ### Moving Plants Between Systems
 
@@ -486,24 +486,27 @@ If you need to transfer (e.g., system fault repair), handle as follows:
 ```mermaid
 graph TD
   A[What do you want to grow?] --> B{Is it a fruiting<br/>crop?}
-  B -->|Yes: tomato, cucumber,<br/>courgette, aubergine,<br/>pepper| C[Use E&F]
+  B -->|Yes: cucumber, courgette,<br/>aubergine| C[Use Ebb and Flow]
+  B -->|Tomato or pepper| C2[Ebb and Flow Table 1 or 2<br/>or NFT CH4 tank]
   B -->|No: leafy green,<br/>herb, salad| D{Do you want the<br/>highest yield<br/>per m²?}
   D -->|Yes| E[Use NFT]
   D -->|No — just a few plants| F{Do you already<br/>have an E&F<br/>system running?}
   F -->|Yes| G[Use E&F<br/>gap planting]
   F -->|No| E
   C --> H{Timer reliability<br/>confirmed?}
+  C2 --> H
   H -->|Yes — timer tested,<br/>backup in place| I[Proceed with E&F<br/>fruiting crop plan]
   H -->|No| J[Install and test timer<br/>and float switch drain sensor<br/>before transplanting]
   J --> I
 ```
 
 **Summary decision rules:**
-1. **Tomatoes, cucumbers, courgettes, aubergine, or peppers** → E&F always
-2. **Lettuce, spinach, arugula, pak choi, basil, coriander, chives** → NFT for highest density and speed
-3. **Strawberries** → E&F in summer; NFT acceptable for short shoulder-season runs
-4. **Mint, parsley, thyme, oregano** → either system; Mediterranean herbs prefer drier intervals (E&F with low flood frequency)
-5. **If you have both systems** → put all fruiting crops in E&F, all leafy crops and herbs in NFT; use E&F tables in spring and autumn for additional leafy crop overflow
+1. **Cucumbers, courgettes, aubergine** → Ebb and Flow. They do not fit the NFT channels.
+2. **Tomatoes and peppers** → Ebb and Flow Table 1 or 2, or the NFT CH4 tank (10 US gal / 38 L, its own pump). Never on the NFT greens loop.
+3. **Lettuce, spinach, arugula, pak choi, basil, cilantro (coriander), chives** → NFT greens channels for density and speed.
+4. **Strawberries** → 3–4 sites on NFT CH3 (greens EC), or Ebb and Flow Table 3. Not on CH4.
+5. **Mint, parsley, thyme, oregano** → either system. On Ebb and Flow, keep floods at 3×/day so the root zone can dry between cycles.
+6. **If you have both systems** → leafy crops and herbs on the NFT greens loop; cherry tomato and pepper on NFT CH4 or on Ebb and Flow; cucumber, courgette, and aubergine on Ebb and Flow only.
 
 ---
 

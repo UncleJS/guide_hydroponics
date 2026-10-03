@@ -13,7 +13,7 @@
 - [2. Temperature — The Critical Variable](#2-temperature-the-critical-variable)
   - [Solution Temperature Targets](#solution-temperature-targets)
   - [How E&F Tables Respond to Temperature Differently from NFT](#how-ef-tables-respond-to-temperature-differently-from-nft)
-  - [Reservoir Thermal Profile — 150L Under-Table](#reservoir-thermal-profile-150l-under-table)
+  - [Reservoir Thermal Profile — 45 US gal Under-Table](#reservoir-thermal-profile--45-us-gal-under-table)
 - [3. Managing Heat — Summer Strategies](#3-managing-heat-summer-strategies)
   - [Shade Cloth for Flood Tables](#shade-cloth-for-flood-tables)
   - [Reservoir Cooling Strategies](#reservoir-cooling-strategies)
@@ -21,7 +21,7 @@
 - [4. Managing Cold — Frost Protection](#4-managing-cold-frost-protection)
   - [Frost Risk Assessment](#frost-risk-assessment)
   - [Protection Measures](#protection-measures)
-  - [Reservoir Freeze Risk — 150L Thermal Mass](#reservoir-freeze-risk-150l-thermal-mass)
+  - [Reservoir Freeze Risk — 45 US gal Thermal Mass](#reservoir-freeze-risk--45-us-gal-thermal-mass)
 - [5. Wind — The Often-Overlooked Factor](#5-wind-the-often-overlooked-factor)
   - [Wind Effects on Ebb & Flow Specifically](#wind-effects-on-ebb-flow-specifically)
   - [Windbreak Options](#windbreak-options)
@@ -36,8 +36,8 @@
 - [8. Flood Cycle Frequency by Season and Temperature](#8-flood-cycle-frequency-by-season-and-temperature)
 - [9. EC and pH Management by Season](#9-ec-and-ph-management-by-season)
 - [10. Emergency Action Plans](#10-emergency-action-plans)
-  - [Heatwave Protocol (>30°C forecast)](#heatwave-protocol-30c-forecast)
-  - [Frost Warning Protocol (<3°C forecast)](#frost-warning-protocol-3c-forecast)
+  - [Heatwave Protocol (afternoons holding above 85°F / 29°C)](#heatwave-protocol-afternoons-holding-above-85f--29c)
+  - [Frost Warning Protocol (forecast below 37°F / 3°C)](#frost-warning-protocol-forecast-below-37f--3c)
   - [Storm Protocol (Heavy Rain + Wind)](#storm-protocol-heavy-rain-wind)
 
 ---
@@ -50,10 +50,10 @@ An NFT system houses nutrient solution in enclosed channels — sheltered, shade
 ```mermaid
 flowchart LR
     subgraph nft["NFT CHANNEL — enclosed"]
-        NC["Solution flows inside<br/>closed 75mm square tube<br/>Shaded from above<br/>Insulated by plastic walls<br/>Minimal surface area exposed"]
+        NC["Solution flows inside<br/>closed 3 in (76 mm) square tube<br/>Shaded from above<br/>Insulated by plastic walls<br/>Minimal surface area exposed"]
     end
-    subgraph ef["Ebb &amp; Flow FLOOD TABLE — open"]
-        ET["Solution floods open tray<br/>1.2m × 0.6m exposed surface<br/>Direct sun during flood<br/>Wind across open surface<br/>Rain falls directly in<br/>Large thermal mass in LECA bed"]
+    subgraph ef["Ebb and Flow FLOOD TABLE — open"]
+        ET["Solution floods open tray<br/>4 ft x 2 ft (1.22 m x 0.61 m)<br/>Direct sun during flood<br/>Wind across open surface<br/>Rain falls directly in<br/>Large thermal mass in 5 in LECA bed"]
     end
     NC -.->|"more exposure<br/>more challenges"| ET
 ```
@@ -62,7 +62,7 @@ Key differences for climate management:
 
 | Factor | NFT | Ebb & Flow |
 |---|---|---|
-| Surface area exposed to sun/wind | Low (enclosed channels) | High (open 0.72 m² per table) |
+| Surface area exposed to sun/wind | Low (enclosed channels) | High (open 8 sq ft / 0.74 m² per table) |
 | Rain ingress risk | Very low | High — rain falls directly into table |
 | Wind evaporation | Low | Significant — open surface |
 | Thermal mass in grow zone | Very low (thin film) | High — LECA bed holds heat/cold |
@@ -83,23 +83,22 @@ These differences mean that an E&F grower in the same backyard as an NFT grower 
 ```
   SOLUTION TEMPERATURE TARGETS FOR E&F:
 
-  Optimal range:     16–22°C (roots most active, maximum nutrient uptake)
-  Acceptable range:  13–24°C (some stress; growth slows at edges)
-  Warning zone:      10–13°C (cold slows growth significantly)
-                     24–26°C (Pythium risk rising; reduce flood frequency)
-  Critical:          Below 10°C (near growth shutdown; phosphorus lockout)
-                     Above 26°C (Pythium onset likely; take immediate action)
+  Target band:       64–72°F (18–22°C)
+  Action line:       Above 77°F (25°C). Dissolved oxygen falls and pythium risk rises.
+                     Keep the 4 fruiting floods, shorten them, and deploy 40% shade.
+                     Do not drop to 2 floods. Do not add a fifth.
+  Cold slowdown:     Below 50°F (10°C) growth nearly stops and phosphorus uptake falls.
 
   KEY TARGETS DIFFER FROM AIR TEMPERATURE:
-  On a hot summer day (32°C air), an under-table reservoir may reach only 24–26°C
-  due to shading from the table above. But the LECA bed itself, flooded with warm
-  solution 3× per day, can warm to 26–28°C in sun-exposed table sections.
-  Monitor both reservoir temperature AND, periodically, the LECA near the roots.
+  Summer afternoon highs in this climate are 90–100°F (32–38°C) in June–August
+  (SA: December–February). An under-table reservoir stays cooler than the air.
+  The action line is still the solution, not the air: 77°F (25°C).
+  Monitor reservoir temperature and, periodically, the LECA near the roots.
 ```
 
 ### How E&F Tables Respond to Temperature Differently from NFT
 
-In NFT, the thin nutrient film in enclosed channels heats and cools rapidly with air temperature. A 30°C day can push solution temp to 28°C in hours in an unshaded NFT channel.
+In NFT, the thin nutrient film in enclosed channels heats and cools rapidly with air temperature. A 86°F (30°C) day can push solution temperature to 82°F (28°C) in hours in an unshaded NFT channel.
 
 In Ebb & Flow, the LECA bed acts as a significant thermal mass:
 
@@ -111,26 +110,25 @@ In Ebb & Flow, the LECA bed acts as a significant thermal mass:
 ```
   E&F THERMAL BUFFER EFFECT — illustrative values:
 
-  Air temp:      08:00  12:00  15:00  18:00  22:00
-                 16°C   28°C   32°C   25°C   18°C
+  Air temp:      08:00       12:00       15:00       18:00       22:00
+                 61°F (16°C) 82°F (28°C) 90°F (32°C) 77°F (25°C) 64°F (18°C)
 
-  NFT solution:  17°C   25°C   29°C   23°C   18°C  ← Fast response to air
-  E&F LECA:      16°C   21°C   24°C   22°C   19°C  ← Damped by thermal mass
-  E&F reservoir: 16°C   19°C   22°C   21°C   18°C  ← Under-table, most stable
+  NFT solution:  63°F (17°C) 77°F (25°C) 84°F (29°C) 73°F (23°C) 64°F (18°C)  ← Fast response to air
+  E&F LECA:      61°F (16°C) 70°F (21°C) 75°F (24°C) 72°F (22°C) 66°F (19°C)  ← Damped by thermal mass
+  E&F reservoir: 61°F (16°C) 66°F (19°C) 72°F (22°C) 70°F (21°C) 64°F (18°C)  ← Under-table, most stable
 
-  E&F advantage: Peak LECA temp is 5°C LOWER than peak NFT solution temp.
-  This is a meaningful difference for Pythium risk (critical at >22°C).
+  E&F advantage: peak LECA temperature stays several degrees below peak NFT solution temperature.
+  Pythium risk still rises once solution temperature passes 77°F (25°C). That is the action line.
 ```
 
-### Reservoir Thermal Profile — 150L Under-Table
+### Reservoir Thermal Profile — 45 US gal Under-Table
 
-A 150L reservoir fill positioned below or beside the flood tables has a distinctive thermal profile compared to an 80L NFT reservoir positioned at the end of open channels.
+A 45 US gal (170 L) reservoir (acceptable range 40–50 US gal / 151–189 L) sitting below the drains has a slower thermal swing than a small tank in the sun.
 
 **Under-table placement (recommended):**
-- Shaded by table above — up to 4–6°C cooler than ambient on hot days
-- Thermal mass of 150 kg of water is very slow to heat or cool
-- 150L takes approximately 6× longer to change temperature by 1°C compared to 25L
-- This is a significant natural advantage in both summer (stays cooler) and winter (stays warmer)
+- Shaded by the table above — often 7–11°F (4–6°C) cooler than ambient on hot days
+- About 375 lb (170 kg) of water is slow to heat or cool
+- This buffer helps in summer and in a brief cold snap. It does not make outdoor running safe through December–February (SA: June–August), when winter lows in this band are 0–15°F (−18 to −9°C).
 
 **Beside-table placement:**
 - More accessible for maintenance
@@ -150,9 +148,7 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
 
 | Shade % | Effect | Best for |
 |---|---|---|
-| 20–30% | Reduces intense midday sun; minimal growth penalty | Tomatoes, peppers, cucumbers in midsummer |
-| 40–50% | Significant reduction; acceptable for all E&F crops | Mixed table in prolonged heatwave |
-| 60%+ | Strong shade; risk of reduced yield in fruiting crops | Lettuce/greens only; do not use for fruiting crops |
+| 40% | The cloth for this system. Deploy when afternoon highs hold above 85°F (29°C) | All three tables in a heatwave |
 
 **Deployment:**
 - Use a removable shade frame or hoops over the flood tables
@@ -166,56 +162,47 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
 ```
   RESERVOIR COOLING OPTIONS (in order of cost/effort):
 
-  1. SHADE THE RESERVOIR (cost: $0)
-     If reservoir is beside the table (not under it), shade it.
-     A piece of cardboard, plywood, or shade cloth over the reservoir
-     can prevent direct sun and reduce reservoir temp by 4–6°C.
+  1. SHADE THE RESERVOIR (cost: $0 / R0)
+     If the reservoir sits beside the table, shade it.
+     A board or the same 40% cloth can keep direct sun off the tank
+     and drop reservoir temperature by 7–11°F (4–6°C).
 
-  2. INSULATE RESERVOIR WALLS (cost: $5–$10)
-     Wrap reservoir with bubble wrap insulation or foam camping mat.
-     Fix with tape or cable ties. Reduces both heating (summer) and
-     cooling (winter) of reservoir. Particularly effective for
-     under-table reservoirs where insulation holds cool temperatures.
+  2. INSULATE RESERVOIR WALLS (cost: $5–$10 / R90–R180)
+     Wrap the reservoir with bubble wrap or a foam camping mat.
+     Fix with tape or cable ties. Slows both summer heating and winter cooling.
 
-  3. ICE BOTTLES (cost: ~$2 in electricity per week)
-     Fill 2–3 large (2L) plastic bottles with water and freeze them.
-     Place 1–2 in reservoir when temperature approaches 22°C.
-     Each 2L frozen bottle provides ~600 kJ of cooling as it melts.
-     For a 150L fill, this typically lowers temp by 1.5–3°C
-     for 4–6 hours. Rotate bottles: keep 2 in freezer, 1 in reservoir.
-     Advantage: zero electricity cost during cooling (just freezer runtime).
+  3. ICE BOTTLES (freezer cost only, at $0.15/kWh / R2.70/kWh)
+     Freeze 2–3 bottles of about ½ US gal (2 L).
+     Place 1–2 in the reservoir as solution temperature approaches 77°F (25°C).
+     On a 45 US gal (170 L) fill, one frozen bottle typically lowers the tank
+     a couple of degrees for a few hours. Rotate bottles.
 
-  4. AQUARIUM CHILLER (cost: $60–$150)
-     For serious heat management: an aquarium chiller set to 20°C
-     maintains solution temperature precisely. Overkill for most gardens
-     but effective in very hot climates.
+  4. AQUARIUM CHILLER (cost: $60–$150 / R1,080–R2,700)
+     Set it to hold the target band of 64–72°F (18–22°C).
+     Most gardens in this climate will not need one if the tank is shaded.
 
-  5. REDUCE FLOOD FREQUENCY IN HEAT (cost: $0)
-     Fewer floods per day means less warm solution circulating through
-     the LECA bed. In a heatwave, reducing from 4× to 2× per day
-     (with longer flood duration to compensate) reduces heat load.
-     This must be balanced against higher transpiration demand.
+  5. HEATWAVE FLOOD RULE (cost: $0 / R0)
+     Keep 4 floods a day. Shorten them if the solution is warm.
+     Deploy 40% shade when afternoon highs hold above 85°F (29°C).
+     Do not drop from 4 floods to 2. Do not add a fifth flood.
 ```
 
 ### Flood Cycle Adjustments for Heat
 
+One rule for heat. Fruiting crops already flood 4 times a day, and 4 is the ceiling. A heatwave keeps those 4 floods. Shorten each one if you need to. Put 40% shade cloth on when afternoon highs hold above 85°F (29°C). Never schedule a fifth flood. Never use a drop to 2 floods as the heat plan.
+
 ```
-  FLOOD FREQUENCY IN HEATWAVES (>30°C ambient):
+  FLOODS WHEN THE AIR IS HOT:
 
-  Normal schedule:    3× per day (e.g., 07:00, 12:00, 18:00)
-  Heatwave schedule:  4× per day, shorter floods, early morning and late evening
-                      e.g., 06:00 (20 min), 10:00 (15 min),
-                            16:00 (15 min), 20:00 (20 min)
+  Vegetative crops:   3 floods a day
+  Fruiting crops:     4 floods a day, including during a heatwave
+  Heatwave example:   06:00 (15 min), 10:00 (15 min),
+                      16:00 (15 min), 20:00 (15 min)
 
-  AVOID flooding between 12:00–14:00 during peak heat.
-  Warm solution from the reservoir (even at 22°C) heated by noon sun
-  will flood into LECA already warmed by direct sun, compounding
-  the heat stress. Instead, schedule floods for early morning and
-  late afternoon/evening when solution is coolest.
-
-  NOTE: More frequent shorter floods are BETTER than fewer long floods
-  in heat stress conditions. The key is frequent wetting of roots
-  (oxygen access) rather than prolonged immersion.
+  Skip the 12:00–14:00 window. Solution that is already near 72°F (22°C)
+  should not be pushed through sun-heated LECA at the hottest hour.
+  If solution temperature crosses 77°F (25°C), that is the action line:
+  shade, ice bottles, and shorter floods. The flood count stays at 4.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -228,58 +215,63 @@ Shade cloth is the most cost-effective intervention for both plants and flood ta
 ### Frost Risk Assessment
 
 ```
-  FROST RISK THRESHOLDS FOR E&F CROPS:
+  FROST RISK FOR THIS CLIMATE (USDA 6b–7a, about 38°N):
 
-  Air temp    Risk level    Action
-  ──────────────────────────────────────────────────────────
-  5–8°C       None          Growth slows; no damage
-  3–5°C       Low           Deploy fleece on tender crops (basil, tomatoes)
-  0–3°C       Moderate      Fleece all tables. Check reservoir temp.
-  -2–0°C      High          Full fleece protection. Consider reservoir heater.
-  Below -2°C  Critical      All tender crops must be covered or moved indoors.
-                            LECA in flood table may freeze if exposed.
-  Below -5°C  Severe        Drain system if cannot provide frost protection.
+  Planning last spring frost: April 15 (SA: October 15)
+  Planning first fall frost:  October 20 (SA: April 20)
+  Outdoor season:             mid-April through mid-October
+                              (SA: mid-October through mid-April)
+  Winter lows in this band:   0–15°F (−18 to −9°C)
+
+  Air temp              Risk        Action
+  ────────────────────────────────────────────────────────────────
+  41–46°F (5–8°C)       Low         Growth slows
+  37–41°F (3–5°C)       Watch       Fleece basil and the fruiting vine
+  32–37°F (0–3°C)       Moderate    Fleece all tables. Check solution temperature.
+  Below 32°F (0°C)      High        Cover tender crops or end the outdoor season
+  0–15°F (−18 to −9°C)  Winter      Do not run the outdoor system.
+                                    December–February (SA: June–August) is shutdown.
 ```
 
 ### Protection Measures
 
 **Horticultural fleece:**
-- Primary protection for plants; raises effective temperature by 2–4°C
+- Primary protection for plants; raises effective temperature by 4–7°F (2–4°C)
 - Drape over plants and anchor at table edges with clips
 - Fleece does NOT protect the reservoir — it insulates plants only
-- Multiple layers: each additional layer adds ~1°C protection
+- Multiple layers: each additional layer adds about 2°F (1°C) of protection
 
 **Cloche and cover frames:**
 - Polycarbonate or polythene covers over the table on a hoop frame
-- Provides 4–8°C protection vs. a single fleece layer
+- Provides 7–14°F (4–8°C) of protection compared with a single fleece layer
 - Keeps rain out (secondary benefit — see Section 6)
 - Can be ventilated during mild days by lifting one end
 
 **Reservoir heater:**
-- A 50–100W aquarium heater in the reservoir maintains solution above 15°C
-- Cost to run: ~$0.07–$0.14/hour (50–100W at 14p/kWh typical)
-- In E&F, warm solution circulated during flood cycles also warms the LECA root zone
-- Set heater thermostat to 16°C — it only activates when needed
-- This makes flood cycles an active warming mechanism in cold weather
+- A 50–100 W aquarium heater can hold solution near the bottom of the target band during a shoulder-season night
+- Cost to run at $0.15/kWh (R2.70/kWh): about $0.01–$0.02 per hour (R0.14–R0.27 per hour)
+- Warm solution circulated during a flood also warms the LECA
+- Set the thermostat to 64°F (18°C). It only runs when the tank falls below that.
+- A heater does not make December–February (SA: June–August) an outdoor season. Winter lows of 0–15°F (−18 to −9°C) are a shutdown.
 
-### Reservoir Freeze Risk — 150L Thermal Mass
+### Reservoir Freeze Risk — 45 US gal Thermal Mass
 
-A 150L reservoir fill is very difficult to freeze. At 0°C ambient air temperature, it would take many hours (typically 18–30h) to freeze through. This makes the E&F reservoir more frost-resilient than a smaller NFT reservoir.
+A 45 US gal (170 L) fill is slow to freeze compared with a small tank. At 23°F (−5°C) ambient, with no insulation, a tank this size takes many hours to freeze through. Pipes and fittings freeze first.
 
 ```
-  FREEZING TIME ESTIMATES FOR RESERVOIR:
+  FREEZING TIME ESTIMATES (at 23°F / −5°C ambient, no insulation):
 
-  Reservoir volume    Time to freeze (at -5°C ambient, no insulation)
-  ─────────────────────────────────────────────────────────────────
-  10 L (small NFT)    ~2–4 hours
-  30 L                ~6–10 hours
-  80 L (large NFT)    ~16–24 hours
-  150 L (this E&F)    ~30–45 hours
+  Reservoir                         Rough time to freeze
+  ─────────────────────────────────────────────────────────
+  3 US gal (10 L)                   2–4 hours
+  8 US gal (30 L)                   6–10 hours
+  21 US gal (80 L)                  16–24 hours
+  45 US gal (170 L), this system    30–45 hours
 
-  CONCLUSION: The 150L E&F reservoir fill provides substantially more
-  thermal inertia against overnight freezing than smaller reservoirs.
-  A single night at -2°C is unlikely to freeze a 150L reservoir
-  even without insulation — but ALWAYS use a heater below 0°C to be safe.
+  A single night just below freezing is unlikely to freeze the full
+  45 US gal (170 L) tank. Exposed pipes can still split. Drain or
+  insulate them if a hard freeze is forecast. Do not leave the system
+  outdoors through the winter lows of 0–15°F (−18 to −9°C).
 
   NOTE: Flood cycle pipes and fittings are more vulnerable than the
   reservoir itself. Any pipe exposed to frost can freeze and crack.
@@ -297,42 +289,41 @@ A 150L reservoir fill is very difficult to freeze. At 0°C ambient air temperatu
 
 Wind has a disproportionately large impact on outdoor Ebb & Flow compared to NFT, for two reasons:
 
-1. **Open table surface evaporation:** Wind passing over an open flood table dramatically increases evaporative water loss. A 20 km/h wind can triple evaporation rate from the table surface compared to still conditions. This causes rapid EC concentration and increased daily water consumption.
+1. **Open table surface evaporation:** Wind passing over an open flood table dramatically increases evaporative water loss. A 12 mph (20 km/h) wind can triple evaporation from the table surface compared with still air. EC rises, and the reservoir needs more top-up.
 
 2. **Desiccation between floods:** In E&F, plants experience a dry period between flood cycles when roots are not in contact with solution. Wind accelerates leaf transpiration during this period, increasing the risk of wilt stress — particularly for leafy crops.
 
 ```
   WIND IMPACT ON E&F — QUANTIFIED EXAMPLE:
 
-  Still day (5 km/h wind), 22°C:
-  → Evaporation from 2× tables (1.44 m² surface): ~1.5 L/day
-  → Total daily water loss: ~5–7 L (transpiration + evaporation)
+  Still day (3 mph / 5 km/h), 72°F (22°C):
+  → Evaporation from two tables (about 16 sq ft / 1.5 m²): ~0.4 US gal (1.5 L)/day
+  → Total daily water loss: about 1–2 US gal (4–7 L)
 
-  Moderate wind day (25 km/h), 22°C:
-  → Evaporation from tables: ~4–5 L/day (3× increase)
-  → Total daily water loss: ~10–15 L
+  Moderate wind (15 mph / 25 km/h), 72°F (22°C):
+  → Evaporation from the tables: about 1–1.3 US gal (4–5 L)/day
+  → Total daily water loss: about 3–4 US gal (11–15 L)
 
-  Strong wind day (50 km/h), 22°C:
-  → Evaporation from tables: ~8–10 L/day
-  → Potential for wilt stress even with correct flood frequency
-  → Total daily water loss: ~18–25 L
+  Strong wind (30 mph / 50 km/h), 72°F (22°C):
+  → Evaporation from the tables: about 2–2.5 US gal (8–10 L)/day
+  → Total daily water loss: about 5–7 US gal (18–25 L)
 
-  ACTION: On windy days, top up reservoir more frequently. Monitor EC
-  daily. Consider adding a midday flood cycle to compensate for
-  increased desiccation between normal flood cycles.
+  ACTION: On windy days, top up more often and watch EC.
+  If the crop is fruiting, keep 4 floods and shorten them.
+  Do not add a fifth flood to "catch up" with the wind.
 ```
 
 ### Windbreak Options
 
 | Option | Effectiveness | Cost | Notes |
 |---|---|---|---|
-| Fence or wall (existing) | Excellent (100% block) | $0 | Best if available — position system in lee of existing structure |
-| Dense hedge (established) | Very good (70–80% wind reduction) | $0–$30 (plants) | Requires 1–2 years to establish from planting |
-| Polycarbonate windbreak panel | Good (60–70%) | $20–$40 | Rigid, permanent. Blocks light if facing south. Position to west or north. |
-| Shade cloth as windbreak | Moderate (40–50%) | $10–$20 | Doubles as shade; reduces light too. Use 30% shade cloth on windward side. |
-| Temporary hessian screen | Moderate (50%) | $5–$15 | Cheap and quick for seasonal use. Biodegrades in 2–3 years. |
+| Fence or wall (existing) | Excellent (100% block) | $0 (R0) | Best if it already stands on the prevailing-wind side |
+| Dense hedge (established) | Very good (70–80% wind reduction) | $0–$30 (R0–R540) | Takes 1–2 years to establish |
+| Polycarbonate windbreak panel | Good (60–70%) | $20–$40 (R360–R720) | Rigid. Do not block the south face (SA: north face) that the tables look toward |
+| 40% shade cloth as a screen | Moderate | $10–$20 (R180–R360) | Same cloth used for heat. Put it on the prevailing-wind side |
+| Temporary hessian screen | Moderate (50%) | $5–$15 (R90–R270) | Seasonal. Lasts 2–3 years |
 
-**Important:** A windbreak on the prevailing wind side (typically southwest or west in the UK) should be positioned 3–5× its own height away from the tables. Closer than this creates turbulence that can be worse than no windbreak.
+**Wind.** On the central plains the prevailing wind is often from the south or southwest. Put the windbreak on that prevailing-wind side, 3–5 times its own height away from the tables. Closer than that, the screen throws turbulence onto the beds. The site plan also keeps a wind break on the north edge, about 12 in (30 cm) clear of the frame, for the cold north wind. Long-axis of the tables faces south (SA: north).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -347,16 +338,18 @@ Rain falling into open flood tables is the most significant climate challenge un
 
 ```mermaid
 flowchart TD
-    RAIN["Heavy rain event<br/>(25 mm / 24h typical UK summer storm)"]
-    RAIN --> T1["Table 1 (1.2m × 0.6m = 0.72 m²)<br/>Collects: 0.72 × 25 = 18 L of rain"]
-    RAIN --> T2["Table 2 (1.2m × 0.6m = 0.72 m²)<br/>Collects: 0.72 × 25 = 18 L of rain"]
-    RAIN --> T3["Table 3 (1.2m × 0.6m = 0.72 m²)<br/>Collects: 0.72 × 25 = 18 L of rain"]
-    T1 & T2 & T3 --> DRAIN["54 L total rainwater<br/>drains back to reservoir via<br/>normal drain fitting"]
-    DRAIN --> DILUTE["150 L reservoir fill receives 54 L<br/>of essentially zero-EC water<br/>New volume: ~204 L (overflow discarded)<br/>EC diluted by ~26%"]
-    DILUTE --> ECCRASH["EC CRASH: if reservoir was at EC 1.5,<br/>after storm: EC drops to ~1.1<br/>Below target for most crops"]
+    RAIN["1 in (25 mm) of rain in 24 hours"]
+    RAIN --> T1["Table 1, 4 ft x 2 ft<br/>Collects about 5 US gal (19 L)"]
+    RAIN --> T2["Table 2, 4 ft x 2 ft<br/>Collects about 5 US gal (19 L)"]
+    RAIN --> T3["Table 3, 4 ft x 2 ft<br/>Collects about 5 US gal (19 L)"]
+    T1 --> DRAIN["About 15 US gal (57 L) returns<br/>through the 1 in drains"]
+    T2 --> DRAIN
+    T3 --> DRAIN
+    DRAIN --> DILUTE["45 US gal (170 L) reservoir<br/>receives near-zero-EC water<br/>EC can fall by about a quarter"]
+    DILUTE --> ECCRASH["If EC was 1.5 mS/cm<br/>it can land near 1.1 mS/cm"]
 ```
 
-This ~26% EC dilution from a single moderate rainstorm is a significant management event. Heavy rain (50 mm) would cause even more severe dilution.
+An inch of rain is a real EC event on these open tables. Two inches (50 mm) dilutes the tank further.
 
 ### Rain Management Strategies
 
@@ -367,7 +360,7 @@ No physical modification required. Accept rain dilution as an occasional event. 
 2. Test pH — rain is typically slightly acidic (pH 5.5–6.5) which may slightly lower reservoir pH
 3. The diluted solution is not harmful — just below target EC. Plants tolerate brief EC dips.
 
-This is the simplest approach and adequate for typical UK summer weather (a few heavy rain days per month).
+This is enough for a normal summer in this inland band, which has a handful of heavy rain days a month rather than a maritime drizzle season.
 
 **Strategy 2: Simple sloped rain deflectors**
 
@@ -376,14 +369,14 @@ Fit a simple polythene sheet on a slight slope over each table, positioned to de
 ```
   SLOPED DEFLECTOR DESIGN:
 
-  Frame: Two hoops of 20 mm alkathene pipe over the table
-  Sheet: Clear polythene (150 µm thickness) draped over hoops
-  Slope: ~15° angle so rain runs off to one side
-  Clearance: Leave 15–20 cm gap at each end for airflow and light
+  Frame: Two hoops of ¾ in (20 mm) pipe over the table
+  Sheet: Clear polythene about 6 mil (150 µm) draped over the hoops
+  Slope: about 15° so rain runs off to one side
+  Clearance: Leave a 6–8 in (15–20 cm) gap at each end for airflow and light
 
-  Plant headroom: hoops must be 30–40 cm above tallest plants at harvest.
-  For tomatoes (>1.2m): vertical supports and individual plant covers
-  are more practical than a table-wide deflector.
+  Plant headroom: hoops must clear the canopy by 12–16 in (30–40 cm).
+  Table 1 is one indeterminate tomato or one cucumber. A vine that tall
+  needs a trellis and its own cover. A table-wide sheet will not clear it.
 
   CLEAR vs OPAQUE POLYTHENE:
   Clear: allows most light through; risk of greenhouse effect in sun
@@ -397,109 +390,92 @@ Install permanent covers over roughly 60% of the table surface (particularly ove
 
 **Flood cycle adjustment after heavy rain:**
 
-After a heavy rain event, the tables may already be at or beyond flood depth from rain alone. Skip the next 1–2 scheduled flood cycles to allow normal drain. If the timer is not aware of rain events, manually override the next flood cycle after heavy rain (>10 mm in 1h).
+After a heavy rain, the tables may already be at flood depth. Let them drain through the 1 in (25 mm) fittings before the next pump cycle. Skip the next flood if more than ⅜ in (10 mm) fell in an hour. Do not add a flood to "make up" for the skipped one, and do not go to 5 floods the next day.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
 
 
-## 7. Seasonal Calendar — Outdoor Ebb & Flow (Temperate)
+## 7. Seasonal Calendar — Inland Mid-USA, about 38°N
 
-### Spring (March–May)
+Worked climate: USDA zones 6b–7a (Kansas City, St. Louis, Louisville, Richmond). Not the Pacific coast at the same latitude. South African months are a six-month shift of the same season, not a second climate.
 
-```
-  MARCH — COMMISSIONING:
-  [ ] Take system out of winter storage — inspect liner, fittings, pump
-  [ ] Prepare reservoir: sterilise, refill with fresh nutrient solution
-  [ ] LECA: sterilise (if stored from last year), rinse thoroughly, refill tables
-  [ ] Test flood/drain cycle with plain water before nutrient solution
-  [ ] Begin with 2× flood per day (morning + afternoon) — cool conditions,
-      low transpiration demand
-  [ ] Start seedlings indoors (still frost risk outdoors)
-  [ ] Deploy Zone B microgreens station — conditions suitable indoors
+Clear-sky DLI: summer 45–55 mol/m²/day, spring and fall 25–35 mol/m²/day, winter 10–15 mol/m²/day. Shade cloth is 40%, deployed when afternoon highs hold above 85°F (29°C).
 
-  APRIL:
-  [ ] Monitor last frost date for your area — typically mid-April in S England,
-      late April or May in Scotland and N England
-  [ ] Begin transitioning cold-hardy crops outdoors after last frost date:
-      lettuce, spinach, kale, herbs (except basil)
-  [ ] Keep basil, tomatoes, peppers, cucumbers INDOORS until night temps
-      consistently above 12°C
-  [ ] Increase flood to 3× per day as plants establish and temps warm
-
-  MAY:
-  [ ] Plant tomatoes, peppers, cucumbers, strawberries outdoors
-      (after last frost — after mid-May most of UK is safe)
-  [ ] Deploy shade cloth if warm spells arrive (>25°C)
-  [ ] Begin monitoring EC closely — spring growth is nutrient-hungry
-  [ ] Prepare windbreak if prevailing wind is strong at this site
-```
-
-### Summer (June–August)
+### Spring — March through May (SA: September through November)
 
 ```
-  JUNE:
-  [ ] Full summer flood schedule: 3–4× per day
-  [ ] First lettuce harvest likely — begin succession planting cycle
-  [ ] Monitor for aphids on warm days — first major pest pressure
-  [ ] Check EC daily — evaporation concentrates solution fast
-  [ ] Begin managing shade cloth deployment on >28°C days
+  MARCH (SA: SEPTEMBER) — STILL IN STORAGE:
+  [ ] Outdoor beds stay empty. Winter lows in this band are 0–15°F (−18 to −9°C)
+  [ ] Zone B microgreens can run indoors
+  [ ] Order seed and check the pump and the digital timer
 
-  JULY:
-  [ ] Peak maintenance intensity period
-  [ ] Flood tables: 4× per day possible in hot spells
-  [ ] Reservoir: top up morning AND evening if hot
-  [ ] Salt crust check weekly — maximum accumulation rate in hot/dry summer
-  [ ] Watch for spider mites (hot, dry conditions) on tomatoes/peppers
-  [ ] Tomatoes and peppers: pollinate by hand or vibrate flowers daily
-  [ ] First tomato and strawberry harvests
+  APRIL (SA: OCTOBER) — SEASON OPENS:
+  [ ] Planning last spring frost: April 15 (SA: October 15)
+  [ ] Outdoor season starts mid-April (SA: mid-October)
+  [ ] After that frost date, set Table 3 with lettuce, herbs, or pak choi
+  [ ] Vegetative floods: 3 times a day
+  [ ] Keep the Table 1 vine and Table 2 pepper, aubergine, or courgette
+      indoors until nights hold above 54°F (12°C)
 
-  AUGUST:
-  [ ] Same as July
-  [ ] Begin transitioning to autumn crops: plant new lettuce, spinach,
-      kale seedlings for autumn harvest
-  [ ] Remove spent summer crops (bolted lettuce, old basil) and replant
-  [ ] Monitor night temperatures — if dropping to 15°C, reduce flood to 3× per day
+  MAY (SA: NOVEMBER):
+  [ ] Plant Table 1: one indeterminate tomato or one cucumber
+  [ ] Plant Table 2: one or two pepper, aubergine, or courgette plants
+  [ ] Fruiting floods: 4 times a day. That count is the ceiling
+  [ ] Face the long axis south (SA: north)
+  [ ] 40% shade only if a warm spell holds afternoons above 85°F (29°C)
 ```
 
-### Autumn (September–October)
+### Summer — June through August (SA: December through February)
 
 ```
-  SEPTEMBER:
-  [ ] Cool weather reduces evaporation — reduce top-up frequency
-  [ ] Flood schedule: 2–3× per day as temps drop
-  [ ] Last tomatoes and peppers ripening — harvest before first frost
-  [ ] Bring tender crops indoors if frost forecast
-  [ ] Deploy fleece covers for cold nights (<5°C)
-  [ ] Autumn crops: kale, spinach, hardy herbs thriving in cooler conditions
+  JUNE (SA: DECEMBER):
+  [ ] Fruiting tables stay at 4 floods. Leafy Table 3 can stay at 3
+  [ ] Clear-sky DLI is 45–55 mol/m²/day. Watch for tip burn on lettuce
+  [ ] Afternoon highs start toward 90°F (32°C). Have 40% cloth ready
+  [ ] Change the 45 US gal (170 L) reservoir every 10–14 days
 
-  OCTOBER:
-  [ ] First frost possible — have fleece ready to deploy within 1 hour's notice
-  [ ] Harvest all remaining tomatoes, peppers, cucumbers before first hard frost
-  [ ] Continue with cold-hardy crops: kale, spinach, parsley, chives
-  [ ] Flood schedule: 2× per day maximum
-  [ ] Watch for Botrytis (grey mould) in cool, humid conditions on leafy crops
-  [ ] Begin end-of-season review planning
+  JULY (SA: JANUARY):
+  [ ] Afternoon highs 90–100°F (32–38°C)
+  [ ] Heat rule: keep 4 floods, shorten them, deploy 40% shade above 85°F (29°C)
+  [ ] If solution temperature crosses 77°F (25°C), cool the reservoir
+  [ ] Top up morning and evening. EC rises from evaporation
+  [ ] Hand-pollinate the Table 1 vine and the Table 2 flowers
+
+  AUGUST (SA: FEBRUARY):
+  [ ] Same heat rule. Do not add a fifth flood. Do not drop to 2
+  [ ] Sow the next Table 3 lettuce for the fall window
+  [ ] Remove bolted lettuce and spent basil
 ```
 
-### Winter (November–February)
+### Autumn — September through October (SA: March through April)
 
 ```
-  NOVEMBER:
-  [ ] Final harvest of all remaining crops
-  [ ] Full winterisation (see Guide 08 Section 6)
-  [ ] System breakdown, clean, and storage
-  [ ] Order seeds for next season
+  SEPTEMBER (SA: MARCH):
+  [ ] Clear-sky DLI falls toward 25–35 mol/m²/day
+  [ ] Fruit still on the vine stays at 4 floods. New leafy plantings stay at 3
+  [ ] Fleece nights that fall below 41°F (5°C)
 
-  DECEMBER–FEBRUARY:
-  [ ] Plan next season's crop rotations and succession schedule
-  [ ] Service/replace any equipment that showed problems this season
-  [ ] Replace worn flood table liner or fittings
-  [ ] Order replacement media (LECA) if existing batch is too salt-laden
-      to be worth sterilising
-  [ ] Optionally: maintain Zone B microgreens indoors during winter
-      (no outdoor system needed; just the shelf + LED)
+  OCTOBER (SA: APRIL):
+  [ ] Planning first fall frost: October 20 (SA: April 20)
+  [ ] Outdoor season closes mid-October (SA: mid-April)
+  [ ] Harvest the vine and Table 2 before a hard frost
+  [ ] Winterise after the last harvest (Guide 08)
+```
+
+### Winter — November through February (SA: May through August)
+
+```
+  NOVEMBER (SA: MAY):
+  [ ] Beds empty, LECA cleaned and stored dry, pump indoors
+  [ ] Do not run outdoor ebb and flow through December–February
+      (SA: June–August)
+
+  DECEMBER–FEBRUARY (SA: JUNE–AUGUST):
+  [ ] Winter lows 0–15°F (−18 to −9°C). Clear-sky DLI 10–15 mol/m²/day
+  [ ] Plan next year's one vine, Table 2 crop, and Table 3 succession
+  [ ] Zone B can stay indoors under the LED
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -512,24 +488,20 @@ After a heavy rain event, the tables may already be at or beyond flood depth fro
 This table gives recommended flood cycle frequency based on ambient temperature. These are starting points — adjust based on your crops, plant size, and weather conditions.
 
 ```
-  FLOOD FREQUENCY GUIDE BY CONDITIONS:
+  FLOOD COUNT — ONE RULE:
 
-  Condition                 Floods/day  Duration  Notes
-  ─────────────────────────────────────────────────────────────────────
-  Winter storage            0           —         System shutdown
-  Early spring (<10°C)      1           20 min    Minimal plant demand
-  Spring (10–15°C)          2           20 min    Morning + afternoon
-  Mild (15–20°C)            2–3         20–25 min Standard schedule
-  Warm (20–25°C)            3           20–25 min Add midday flood
-  Hot (25–30°C)             3–4         15–20 min Early AM + late PM floods
-  Heatwave (>30°C)          4           15 min    Avoid 12:00–14:00 flood
-  Cold snap (10–15°C after  2           20 min    Reduce immediately
-    warm spell)
-  Post-heavy-rain           1–2         Normal    Skip cycles if table flooded
+  Crop stage                         Floods/day   Duration
+  ─────────────────────────────────────────────────────────────────
+  Winter shutdown                     0            Beds empty
+  Vegetative (Table 3, young plants)  3            15–30 min
+  Fruiting (Table 1 and Table 2)      4            15–30 min
+  Heatwave, fruiting                  4            Shorter, 15 min
+  Heatwave extras                     40% shade when afternoons hold above 85°F (29°C)
+  Solution above 77°F (25°C)          Still 4      Cool the reservoir. Do not add a 5th
+  After heavy rain                    Skip one     Resume the same count the next day
 ```
 
-**Minimum dry time between flood cycles:**
-The LECA must have at least 4–6 hours of air-dry time in every 24-hour period to maintain adequate root zone oxygenation. Four floods per day means roughly 4–5 hours between floods. This is the practical maximum for most situations. More than 4 floods per day creates near-continuous wet conditions and dramatically increases Pythium risk.
+Four floods a day is the ceiling. A fifth flood is not a heat strategy and not a recovery strategy. Dropping from 4 to 2 is not the heat plan. Vegetative crops stay at 3. Moist LECA holds a missed flood for 8–24 hours, so one skipped cycle after rain is not an emergency.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -579,43 +551,37 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
 
 ## 10. Emergency Action Plans
 
-### Heatwave Protocol (>30°C forecast)
+### Heatwave Protocol (afternoons holding above 85°F / 29°C)
 
 ```
-  PRE-HEATWAVE (day before, evening):
-  □ Check reservoir temperature — is it below 22°C?
-     If above 20°C: freeze ice bottles now and add one at bedtime
-  □ Check reservoir level — fill to maximum operating level
-  □ Top up nutrient solution to target EC — evaporation will concentrate it
-  □ Prepare shade cloth — is it ready to deploy quickly?
-  □ Check EC and pH — adjust to correct range before heat arrives
+  THE DAY BEFORE:
+  □ Solution temperature should sit in 64–72°F (18–22°C)
+  □ If it is already near 77°F (25°C), freeze the ice bottles
+  □ Fill the reservoir to the 45 US gal (170 L) operating mark
+  □ 40% shade cloth is staged and can go on by mid-morning
 
-  DURING HEATWAVE (each hot day):
-  □ Deploy shade cloth by 10:00 (before peak heat)
-  □ Add ice bottle to reservoir if temp exceeds 22°C
-  □ Monitor reservoir level morning AND afternoon — top up with plain water
-  □ Add midday flood cycle if you can (manual override if possible)
-  □ Do NOT flood between 12:00–14:00 — solution at peak temperature
-  □ Check plants for wilting at 14:00 — if wilting occurs and EC is correct:
-     increase flood frequency next day
-  □ If solution temp reaches 26°C: add second ice bottle, increase shade
+  EACH HOT DAY:
+  □ Deploy 40% shade when the afternoon will hold above 85°F (29°C)
+  □ Fruiting floods stay at 4. Shorten them. Do not add a 12:00 flood
+  □ Do not drop the schedule to 2 floods
+  □ If solution temperature crosses 77°F (25°C): ice bottles, more shade,
+     and a shorter flood. That temperature is the pythium action line
+  □ Top up with plain water if EC is at or above target.
+     Add nutrient stock only if EC has fallen below target
 
-  POST-HEATWAVE (evening, and next morning):
-  □ Measure EC and pH — evaporation concentration will have occurred
-  □ Top up with plain water as needed to reduce EC to target
-  □ Remove ice bottles from reservoir
-  □ Remove shade cloth if temperatures are back to normal
-  □ Inspect roots on next post-flood inspection — root rot may have begun
-     during the heat stress period
+  THE NEXT MORNING:
+  □ Recheck EC and pH
+  □ Take the cloth off when afternoons fall back below 85°F (29°C)
+  □ Look at roots. Stuck water plus heat is how pythium starts
 ```
 
-### Frost Warning Protocol (<3°C forecast)
+### Frost Warning Protocol (forecast below 37°F / 3°C)
 
 ```
   PRE-FROST (afternoon before):
   □ Deploy horticultural fleece over all flood tables before sunset
   □ Close or cover Zone B microgreens shelf if outdoors
-  □ Confirm reservoir heater is operational (if fitted) — set to 16°C
+  □ If a heater is fitted for a shoulder-season night, set it to 64°F (18°C)
   □ Reduce flood frequency: run a flood cycle just before sunset so
      roots and LECA are warm before overnight
   □ Ensure reservoir has adequate solution (not run low)
@@ -625,18 +591,19 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
      - Exposing flooded roots to freezing conditions via cold solution flow
        is more harmful than leaving roots in insulated LECA
      - Set timer to no-flood from midnight to 07:00 on frost nights
-  □ The 150L reservoir thermal mass will typically stay above 10°C
-     through a single -2°C night even without a heater
+  □ The 45 US gal (170 L) tank usually stays above 50°F (10°C)
+     through a single night just below freezing. It will not survive
+     a run of 0–15°F (−18 to −9°C) nights. That is shutdown weather.
 
   FROST MORNING:
   □ Check plants before removing fleece — are they firm and upright?
      If frosted (limp, translucent leaves): do NOT remove fleece immediately.
      Allow slow rewarming under fleece.
-  □ Check reservoir temperature — if below 14°C: run a flood cycle to
-     circulate and begin warming the LECA bed
-  □ Resume normal flood schedule once air temp is above 5°C
+  □ If solution temperature is below 57°F (14°C), run one flood to move
+     warmer reservoir water into the LECA, then return to 3 or 4 floods
+  □ Resume the normal count once air temperature is above 41°F (5°C)
 
-  SEVERE FROST FORECAST (<-3°C for multiple nights):
+  HARD FROST (below 27°F / −3°C for several nights), OR ANY NIGHT IN THE 0–15°F BAND:
   □ Move all tender plants (tomatoes, peppers, basil) indoors
   □ Drain flood tables completely
   □ Either: drain and store pump indoors; or keep running with heater
@@ -651,8 +618,8 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
   □ Secure all loose items: label sticks, spray bottles, tools
   □ Check shade cloth and covers are secured — wind will tear unsecured covers
   □ If deploying rain deflectors: fit them before rain starts
-  □ Set timer to reduced flood frequency (1× per day) for the storm period:
-     rain into tables may flood them beyond overflow height
+  □ Leave the flood count alone. If rain is already filling the tables,
+     skip the next pump cycle. Do not switch the season to 1 flood a day.
 
   DURING STORM:
   □ If very heavy rain: consider turning pump OFF temporarily
@@ -673,7 +640,8 @@ The LECA must have at least 4–6 hours of air-dry time in every 24-hour period 
 ---
 
 
-*Next: [`guide/ebb-and-flow/11-build-guide.md`](11-build-guide.md) — Complete step-by-step build instructions for the outdoor Ebb & Flow system*
+> **Previous:** [Guide 09 — Troubleshooting](./09-troubleshooting.md)
+> **Next:** [Guide 11 — Build Guide](./11-build-guide.md)
 
 [↑ Back to TOC](#table-of-contents)
 

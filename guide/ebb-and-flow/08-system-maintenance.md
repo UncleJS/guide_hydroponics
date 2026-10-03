@@ -23,6 +23,7 @@
   - [Salt Crust and Media Check](#salt-crust-and-media-check)
   - [Algae and Biofilm Check](#algae-and-biofilm-check)
   - [Overflow Fitting Inspection](#overflow-fitting-inspection)
+  - [Weatherproof Timer and GFCI Test](#weatherproof-timer-and-gfci-test)
   - [Harvest and Succession Planting](#harvest-and-succession-planting)
   - [Nutrient Stock Solution Top-Up](#nutrient-stock-solution-top-up)
 - [5. Periodic Deep Tasks (2–3 hours per session)](#5-periodic-deep-tasks-23-hours-per-session)
@@ -32,7 +33,7 @@
   - [Meter Calibration](#meter-calibration)
   - [Grow Bag Media Refresh (Zone C)](#grow-bag-media-refresh-zone-c)
 - [6. End-of-Season Tasks (3–6 hours total over 1–2 days)](#6-end-of-season-tasks-36-hours-total-over-12-days)
-  - [November Winterisation Checklist](#november-winterisation-checklist)
+  - [End-of-Season Winterisation (after mid-October)](#end-of-season-winterisation-after-mid-october)
   - [Season-End Review](#season-end-review)
 - [7. Maintenance Logbook Template](#7-maintenance-logbook-template)
   - [Daily Log Entry Format](#daily-log-entry-format)
@@ -78,8 +79,8 @@ Check the system first thing, before the first scheduled flood of the day. This 
   [ ] Check timer display — does it show correct current time?
   [ ] Confirm last flood completed a full DRAIN: look at table surface —
       no standing water should remain from overnight flood
-  [ ] If water is still standing in table (>5mm deep) → IMMEDIATE ACTION:
-      check drain fitting, check overflow, test pump off manually
+  [ ] If water is still standing in the table (deeper than ¼ in / 6 mm) → IMMEDIATE ACTION:
+      check the 1 in (25 mm) drain, check the 1½ in (40 mm) overflow, switch the pump off manually
 
   SYSTEM HEALTH
   [ ] Check reservoir water level — note if more than 10% low (top-up needed)
@@ -90,18 +91,19 @@ Check the system first thing, before the first scheduled flood of the day. This 
   PLANT HEALTH
   [ ] Walk each table — look for wilting, yellowing, or collapsed plants
   [ ] Check undersides of 3–4 leaves per table for pests (aphids, mites, whitefly)
-  [ ] Check media surface in each table — is LECA surface drying between floods?
-      (surface LECA should be dry or barely moist 2+ hours after last flood)
+  [ ] Check the media surface in each table — is the top of the 5 in (13 cm) LECA bed drying between floods?
+      (surface LECA should be dry or barely moist a few hours after the last flood.
+       Moist LECA still holds a missed flood for 8–24 hours. Wilt in under 2 hours is not the normal case.)
   [ ] White crust visible on LECA surface? Note for weekly salt check.
   [ ] Note any unusual spots, mould, or webbing
 
   ZONE B — MICROGREENS
   [ ] Are trays in blackout phase? Check for any mould (white or green fuzzy growth)
   [ ] Are trays in light phase? Check moisture — mist if surface is dry
-  [ ] Any trays ready to harvest? (cotyledons open, 5–8 cm tall)
+  [ ] Any trays ready to harvest? (cotyledons open, 2–3 in / 5–8 cm tall)
 
   ZONE C — GROW BAGS
-  [ ] Check media surface moisture — water if top 2–3 cm are dry
+  [ ] Check media surface moisture — water if the top 1 in (2–3 cm) is dry
   [ ] Check for any pest damage on root veg leaves
 
   LOG
@@ -110,7 +112,7 @@ Check the system first thing, before the first scheduled flood of the day. This 
 
 ### Evening Top-Up (~5–10 min, as needed)
 
-On hot days, combined plant transpiration and evaporation from the open table surface (E&F tables are more exposed than NFT channels) can drop the reservoir 5–10 L per day.
+On hot days, combined plant transpiration and evaporation from the open table surface (E&F tables are more exposed than NFT channels) can drop the 45 US gal (170 L) reservoir by 1–3 US gal (4–11 L) per day.
 
 > **Realistic daily total:** In peak summer with all 3 zones active, expect 20–30 minutes total daily (morning check + evening top-up + any adjustments). In cool weather or with fewer plants, 10–15 minutes is typical. The times listed here are per-task minimums — add extra time when you spot issues.
 
@@ -118,15 +120,14 @@ On hot days, combined plant transpiration and evaporation from the open table su
   TOP-UP PROTOCOL (E&F specific):
 
   1. Check reservoir level — use fill marks on side of reservoir
-  2. If level has dropped by >5 L, top-up is needed
-  3. Prepare top-up water:
-     a. Fill watering can/bucket with source water
-     b. Adjust pH to 5.8–6.0 (water only — no nutrients)
-     c. Do NOT add nutrients to top-up water (raises EC unpredictably)
-  4. Pour into reservoir — confirm pump is still fully submerged
-  5. Re-test EC and pH after top-up (dilution effect)
-  6. If EC has dropped more than 0.3 mS/cm below target after top-up,
-     a small nutrient addition may be needed
+  2. If the level has dropped by more than 1 US gal (4 L), a top-up is needed
+  3. Prepare the top-up:
+     a. Fill a watering can or bucket with source water
+     b. Adjust pH to 5.8–6.2
+     c. If EC is at or above target, add this plain water only
+     d. If EC is below target, add nutrient stock, then recheck EC and pH
+  4. Pour into the reservoir — confirm the pump is still fully submerged
+  5. Re-test EC and pH after the top-up
 
   NOTE ON E&F EVAPORATION:
   Open flood tables evaporate faster than enclosed NFT channels, especially
@@ -137,7 +138,8 @@ On hot days, combined plant transpiration and evaporation from the open table su
   - RO or rainwater (best): zero mineral addition per top-up
   - Soft tap water (EC <0.3): fine — minimal accumulation
   - Hard tap water (EC >0.5): mineral accumulation accelerates salt crust
-    formation in LECA. Full reservoir changes every 7 days mandatory.
+    formation in LECA. Change the reservoir at the short end of the 10–14 day
+    interval, and sooner if EC will not hold.
   See Guide 03 for water source analysis.
 ```
 
@@ -233,8 +235,8 @@ This is a uniquely important E&F maintenance task. Manually observe one complete
   □ Time to reach overflow fitting: typically 5–10 min
   □ Solution should reach overflow height and STOP rising
   □ If still rising above overflow: overflow fitting is BLOCKED → clear it
-  □ Maximum flood level: solution at overflow height — ~2 cm below the
-    media surface (capillary action wets the top layer)
+  □ Maximum flood level: solution at the overflow standpipe — about ¾ in (2 cm)
+    below the LECA surface (capillary action wets the top layer)
 
   Step 3 — Flood plateau:
   □ During flood, solution should remain steady at overflow height
@@ -247,7 +249,7 @@ This is a uniquely important E&F maintenance task. Manually observe one complete
   □ If still wet after 60 min: CRITICAL — see Guide 09, Section C2
 
   Step 5 — Post-drain:
-  □ Confirm reservoir level is back to pre-flood level (±2 L for evaporation)
+  □ Confirm reservoir level is back to the pre-flood level (within about ½ US gal / 2 L for evaporation)
   □ Confirm no puddles under table (liner integrity check)
   □ Log: flood start time, drain-complete time, any issues
 ```
@@ -308,8 +310,9 @@ Salt buildup in LECA is a defining maintenance issue for Ebb & Flow — it does 
   GREEN SLIME/ALGAE: Identify and eliminate the light source.
   Tables open to sky are more algae-prone than enclosed NFT channels.
   Shade cloth reduces algae growth as a secondary benefit.
-  If algae established in table: remove plants, flush with 1% H₂O₂,
-  rinse thoroughly with plain water. Replace plants.
+  If algae is established in the table: remove the plants (or hand-water them
+  on a tray) before a 3% hydrogen-peroxide flush. Do not run that dose through
+  a live root zone. Rinse thoroughly with plain water. Replace the plants.
 
   BIOFILM (grey/clear slimy coating on table surfaces): Normal at low levels.
   Excessive biofilm: indicator that reservoir change is overdue.
@@ -327,8 +330,27 @@ The overflow fitting is unique to E&F and is the single most critical fitting to
   [ ] Clear any material found — run a thin brush or pipe cleaner through it
   [ ] Confirm the overflow basket/screen (if fitted) is not clogged
   [ ] Re-insert standpipe and confirm it seats correctly
-  [ ] During the next flood, observe overflow draining correctly when
-      solution reaches the standpipe top
+  [ ] During the next flood, observe the 1½ in (40 mm) overflow returning
+      correctly when solution reaches the standpipe top
+  [ ] Confirm the separate 1 in (25 mm) drain empties the table after the pump stops
+```
+
+### Weatherproof Timer and GFCI Test
+
+The outdoor timer is a digital 1-minute timer inside a weatherproof box. A mechanical pin timer is not the outdoor control.
+
+```
+  WEEKLY TIMER AND GFCI CHECK:
+
+  [ ] Open the weatherproof box. Confirm the digital timer shows the correct time
+      and the programmed floods (3× vegetative, 4× fruiting — never a 5th)
+  [ ] Confirm the box gasket is seated and the cable glands are tight
+  [ ] Press the GFCI test button on the 120 V outdoor outlet (SA: 230 V, 30 mA
+      earth-leakage breaker). The pump circuit must trip.
+  [ ] Press reset. Confirm the timer still holds its program and the next flood
+      is still scheduled.
+  [ ] If the GFCI will not reset, or the timer lost its program: do not leave
+      the pump powered. See Guide 09, C1, and the stuck-ON cutoff in Guide 13.
 ```
 
 ### Harvest and Succession Planting
@@ -374,9 +396,9 @@ The overflow fitting is unique to E&F and is the single most critical fitting to
 
 Even with good water management, nutrient salts accumulate, organic matter builds up, and microbial populations shift. A full drain and clean resets the system.
 
-**Frequency depends on reservoir size and water quality:**
-- **150–200 L reservoir (this system):** Full change every **10–14 days** — our 150 L fill is larger than a typical NFT reservoir relative to plant count, giving more buffer. If using hard tap water, change every 7 days.
-- **If EC and pH are stable and plants look healthy:** You can extend to 14 days maximum.
+**Frequency for this reservoir:**
+- **45 US gal (170 L) reservoir (acceptable range 40–50 US gal / 151–189 L):** Full change every **10–14 days**.
+- **Hard tap water, EC that will not hold, a musty smell, or slimy roots:** Change at the short end of that interval, or immediately.
 - **After any pest or disease event, or after any root rot discovery:** Change immediately regardless of schedule.
 
 ```
@@ -413,7 +435,7 @@ Even with good water management, nutrient salts accumulate, organic matter build
 
   7. Refill and re-mix nutrient solution:
      a. Fill with fresh source water
-     b. Mix nutrients (Masterblend or GH Flora) per recipe
+     b. Mix the vegetative Masterblend base: 2.4 g Masterblend + 2.4 g calcium nitrate + 1.2 g Epsom salt per US gal (0.63 / 0.63 / 0.32 g/L). For 45 US gal (170 L) that is 108 g + 108 g + 54 g. Scale the whole recipe to the crop EC. Do not change the ratio.
      c. Check and adjust EC to target
      d. Check and adjust pH to 5.8–6.0
      e. Restart pump — run one manual test flood before re-setting timer
@@ -508,6 +530,12 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
 ```
   MONTHLY ZONE C CHECK:
 
+  Bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beetroot,
+  three 10 US gal (38 L) carrot. Mix is 60% coco, 30% perlite, 10% vermiculite.
+  Fertigation stays at or below 2.0 mS/cm. Beetroot does not get a higher target.
+  Zone B trays stay at 1–1¼ in (2.5–3 cm) of coco. Standard microgreens get
+  pH-adjusted water only. Sunflower and pea may use EC 0.4–0.8 mS/cm.
+
   [ ] Check bags for compaction — is media still loose and airy?
   [ ] If compacted: aerate by pressing fingers through the media gently
   [ ] Check for fungus gnat larvae (tiny white worms at media surface)
@@ -524,7 +552,7 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
 
 ## 6. End-of-Season Tasks (3–6 hours total over 1–2 days)
 
-### November Winterisation Checklist
+### End-of-Season Winterisation (after mid-October)
 
 ```
   PLANT HARVEST AND REMOVAL:
@@ -533,7 +561,7 @@ For DIY timber tables lined with pond liner, the liner requires periodic close i
   [ ] Harvest root veg from grow bags (don't leave in cold, wet media)
   [ ] Remove strawberry crowns — pot up in coco and bring to frost-free shelter
       (everbearing strawberries can be overwintered and replanted next spring)
-  [ ] Cut back perennial herbs (mint, chives) to 5 cm and mulch
+  [ ] Cut back perennial herbs (mint, chives) to 2 in (5 cm) and mulch
 
   E&F TABLE BREAKDOWN:
   [ ] Run final flood/drain cycle — table fully drained
@@ -733,9 +761,10 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 ---
 
 
-*Next: [`guide/ebb-and-flow/09-troubleshooting.md`](09-troubleshooting.md) — Symptom → cause → fix decision trees for Ebb & Flow*
+> **Tip:** The weekly flood and drain check is the manual version of Guide 13. The automatic version opens the pump relay if the drain float is still up after the pump should be off.
 
-> **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for budget-friendly ways to automate flood cycle monitoring, get phone alerts for pump failures and timer faults, and build a dashboard to track EC/pH/temperature trends over time.
+> **Previous:** [Guide 07 — Pests and Disease](./07-pests-and-disease.md)
+> **Next:** [Guide 09 — Troubleshooting](./09-troubleshooting.md)
 
 [↑ Back to TOC](#table-of-contents)
 

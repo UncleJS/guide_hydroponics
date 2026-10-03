@@ -25,13 +25,15 @@
   - [pH Drift Patterns in E&F](#ph-drift-patterns-in-ef)
 - [6. Two-Part vs Three-Part vs One-Part Nutrients](#6-two-part-vs-three-part-vs-one-part-nutrients)
 - [7. Masterblend Trio — Mixing Recipe for E&F](#7-masterblend-trio-mixing-recipe-for-ef)
+  - [Personal Protective Equipment and Storage](#personal-protective-equipment-and-storage)
   - [Components](#components)
-  - [Standard Mixing Recipe (per litre of water)](#standard-mixing-recipe-per-litre-of-water)
+  - [Standard Mixing Recipe (per US gallon)](#standard-mixing-recipe-per-us-gallon)
   - [Masterblend Dose Scaling](#masterblend-dose-scaling)
 - [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
 - [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
-  - [Optimal: 18–22°C](#optimal-1822c)
+  - [Target Solution Temperature](#target-solution-temperature)
 - [10. Reservoir Top-Up vs Full Change — E&F Specifics](#10-reservoir-top-up-vs-full-change-ef-specifics)
+  - [Top-Up Rule](#top-up-rule)
   - [The Salt Accumulation Problem in E&F Media](#the-salt-accumulation-problem-in-ef-media)
   - [Media Flush Protocol](#media-flush-protocol)
 - [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
@@ -120,7 +122,7 @@ flowchart TD
     A --> B --> C --> D --> E
 ```
 
-**E&F note on mixed tables:** If your flood table contains both leafy greens (EC 1.0–1.4 mS/cm) and fruiting crops (EC 2.5–4.0 mS/cm), you have an EC conflict. The standard solution is to dedicate separate tables to different crop categories — fruiting crops on Tables 1–2, leafy greens on Table 3 — allowing independent flood schedules and EC management.
+**E&F note on shared solution:** Table 1 is one indeterminate tomato or one cucumber. Table 2 is pepper, aubergine, or courgette, 1–2 plants. Table 3 is leafy greens or a later fruiting crop. All three tables share the 45 US gal (170 L) reservoir, so they share one EC. Separate tables let you pick crops that can live on that one number. They do not give you two ECs. When Tables 1 and 2 are fruiting, run the fruiting target and either keep Table 3 leafy crops at the high end of their range or switch Table 3 to a later fruiting crop. Flood counts can still differ: 3× per day vegetative, 4× per day fruiting, and 4× is the ceiling.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -168,10 +170,11 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 | Courgette/zucchini | 1.0–1.2 | 1.8–2.4 | 2.4–3.2 | 3.8 |
 | Aubergine/eggplant | 1.0–1.4 | 2.0–2.8 | 2.8–3.5 | 4.0 |
 | Strawberries | 0.8–1.0 | 1.2–1.8 | 1.6–2.2 | 2.5 |
-| Radishes (bags) | 0.8–1.0 | 1.2–1.8 | 1.6–2.2 | 2.5 |
-| Carrots (bags) | 0.6–0.8 | 1.0–1.4 | 1.4–2.0 | 2.2 |
+| Radishes (bags) | 0.8–1.0 | 1.2–1.6 | 1.4–1.8 | 2.0 |
+| Beetroot (bags) | 0.8–1.0 | 1.2–1.6 | 1.4–2.0 | 2.0 |
+| Carrots (bags) | 0.6–0.8 | 1.0–1.4 | 1.4–1.8 | 2.0 |
 
-> **Mixed table note:** When running a flood table with multiple crop types at different stages, set EC to the **lower end** of the most sensitive crop's range. For a lettuce/herb table, target 1.0–1.4 mS/cm. For a dedicated fruiting table, run the fruiting EC for the dominant crop.
+> **Shared-reservoir note:** Zone C fertigation stops at 2.0 mS/cm. Beetroot does not get a higher target. On the flood tables, one reservoir means one EC. A lettuce and herb season on Table 3, with Tables 1 and 2 not yet fruiting, sits around 1.0–1.6 mS/cm. Once Table 1 is fruiting, the tank moves to that crop's fruiting EC.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -182,11 +185,11 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 
 ### Target pH Range
 
-The target pH range for E&F hydroponics is the same as all hydroponic systems: **5.5–6.5**, with an optimal window of **5.8–6.3** where all essential nutrients are simultaneously available.
+The working window is **5.8–6.2**. The acceptable band is **5.5–6.5**. Mix to the working window.
 
 ### How Clay Pebbles Affect pH
 
-New clay pebbles have an alkaline surface residue (pH 7.0–8.0). This alkalinity slowly leaches into your nutrient solution during each flood cycle, causing pH to rise. This is why clay pebble preparation (pre-soak in pH 5.5 water for 24h) is essential before first use — see Guide 05.
+New clay pebbles have an alkaline surface residue (pH 7.0–8.0). This alkalinity slowly leaches into the nutrient solution during each flood cycle and pulls pH up. Pre-soak LECA for 24 hours at **pH 5.8** before first use (acceptable soak band 5.5–6.0). Use 5.8 everywhere you mix a soak or a working solution. See [Guide 05 — Growing Media](05-growing-media.md).
 
 Even with prepared pebbles, some pH rise will occur during early use:
 
@@ -211,7 +214,7 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 - **pH falling:** Plants consuming cations (NH₄⁺, K⁺, Ca²⁺, Mg²⁺) → pH falls. More common in fruiting stage.
 - **Stable pH:** Balance between plant uptake and media buffering — the best-case scenario.
 
-**E&F-specific tip:** Because media buffers pH somewhat, your reservoir pH can read 6.0 while the media pH (measured by pressing a pH probe into wet media) may read 6.4–6.8. If you see signs of micronutrient deficiency (especially iron and manganese lockout) despite correct reservoir pH, the media pH may be the culprit. Flush the media (see Section 10) and verify with a soil probe.
+**E&F-specific tip:** Media can sit above the reservoir. A reservoir at pH 6.0 can hide media at 6.4–6.8. Sample 2 in (5 cm) into wet LECA, just after a flood. Iron and manganese lockout with a correct reservoir pH is a reason to flush (Section 10) and check that sample.
 
 **Nutrient availability by pH (reference):**
 
@@ -224,7 +227,7 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 | B | 5.5–6.5 |
 | Mo | 6.5–8.0 (locked out below ~6.0) |
 
-**Optimal window: pH 5.8–6.3 maximises simultaneous availability of all nutrients.**
+**Working window: pH 5.8–6.2.** That is the band this system is mixed to. The wider acceptable band is 5.5–6.5.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -238,7 +241,7 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 | **One-part / all-in-one** | GH MaxiGro/MaxiBloom | Simple, one container | Cannot adjust NPK ratio independently |
 | **Two-part** | Canna Aqua Vega/Flores | Adjust growth/bloom ratio | Two containers to manage |
 | **Three-part** | GH Flora Series | Full NPK control at every stage | Three bottles, schedule required |
-| **Masterblend trio** | MasterBlend + CalNit + Epsom | Cheapest per litre, professional-grade | Dry salts, requires digital scale |
+| **Masterblend trio** | MasterBlend + calcium nitrate + Epsom | Lowest cost per US gallon, professional-grade | Dry salts, needs a digital scale and PPE |
 
 **Recommendation for this E&F system:** Masterblend trio for cost and precision, or GH Flora Series for liquid convenience. Either gives excellent results. Avoid all-in-one products for fruiting crops — you cannot adjust the N:P:K ratio to shift from vegetative to fruiting phase.
 
@@ -249,7 +252,19 @@ pH drift in E&F follows the same plant-driven patterns as other hydroponic syste
 
 ## 7. Masterblend Trio — Mixing Recipe for E&F
 
-This is the most cost-effective professional nutrient system available. The mixing procedure is identical to NFT; only the target EC values differ for E&F.
+This is the lowest-cost professional nutrient system in these guides. The ratio is the same one used for the NFT reservoirs. Only the target EC and the tank volume change. Doses below are **per US gallon**, then the same dose per litre in brackets. The base figure of 2.4 g belongs with one US gallon. The matching per-litre amount is 0.63 g.
+
+### Personal Protective Equipment and Storage
+
+Dry salts and the pH chemicals are the hazard in this guide. Wear the kit before you open a bag or a bottle.
+
+- **Gloves**, **eye protection**, and a **dust mask** when you handle dry Masterblend, calcium nitrate, or Epsom salt.
+- The same three items when you handle **pH Down (phosphoric acid)** or **pH Up (potassium hydroxide)**. Acid and hydroxide are corrosive even when you only pour them.
+- Add acid or hydroxide to water. Do not add water to a jug of concentrated acid or hydroxide.
+- Store nutrient concentrates, acids, and any pesticides in a **latched box**, away from children and pets.
+- If you describe this garden as a good project for children, also say the chemicals stay locked.
+
+Keep the box shut between mixing sessions. Weigh salts on a digital scale. Do not scoop by eye.
 
 ### Components
 
@@ -259,47 +274,56 @@ This is the most cost-effective professional nutrient system available. The mixi
 | Calcium Nitrate | Ca(NO₃)₂ | 15.5-0-0 + 19% Ca |
 | Magnesium Sulphate | MgSO₄ (Epsom Salt) | 10% Mg, 13% S |
 
-### Standard Mixing Recipe (per litre of water)
+### Standard Mixing Recipe (per US gallon)
+
+Per **1 US gal (3.8 L)**, vegetative, EC about 1.4–1.6 mS/cm:
+
+- Masterblend 4-18-38: **2.4 g (0.63 g/L)**
+- Calcium nitrate: **2.4 g (0.63 g/L)**
+- Epsom salt: **1.2 g (0.32 g/L)**
 
 ```
-  STANDARD VEGETATIVE MIX (EC ~1.4–1.6 mS/cm):
+  MIXING ORDER (always this sequence):
 
-  1. Calcium Nitrate:      0.6g per litre
-  2. MasterBlend 4-18-38:  0.6g per litre
-  3. Epsom Salt:           0.3g per litre
-
-  MIXING ORDER (critical — always in this sequence):
-
-  Step 1: Fill reservoir with 50% of target water volume
-  Step 2: Add Calcium Nitrate — stir until dissolved
-  Step 3: Add remaining water (dilutes Ca before adding sulphate/phosphate)
-  Step 4: Add Epsom Salt — stir until dissolved
-  Step 5: Add MasterBlend — stir until dissolved
+  Step 1: Fill the reservoir with about half the target water volume
+  Step 2: Dissolve calcium nitrate completely
+  Step 3: Add the rest of the water (dilute the calcium before sulphate and phosphate)
+  Step 4: Dissolve Epsom salt
+  Step 5: Dissolve Masterblend
   Step 6: Adjust pH to 5.8–6.2
-  Step 7: Measure EC — should read ~1.4–1.6 mS/cm
+  Step 7: Read EC. The vegetative base should land near 1.4–1.6 mS/cm
+          before you scale it for a fruiting target
 
-  ⚠ NEVER mix Calcium Nitrate and MasterBlend directly — they will precipitate.
-    Always dissolve in water separately using the order above.
+  NEVER pour calcium nitrate and Masterblend into the same dry cup.
+  They precipitate. Dissolve them in water, in the order above.
 
-  E&F SPECIFIC NOTE: Your source water EC plus the mineral leaching from new clay
-  pebbles will contribute additional EC. Subtract your source water EC from your
-  target before measuring how much nutrient to add.
-  Example: Source water EC = 0.3 mS/cm → add nutrients to reach (1.5 - 0.3) = 1.2 mS/cm
-  Final reading after adding nutrients: 1.5 mS/cm total.
+  SOURCE WATER: nutrients sit on top of the EC already in the tap.
+  Example: source EC 0.3 mS/cm, target 1.5 mS/cm.
+  The salts need to contribute about 1.2 mS/cm. The meter, after mixing,
+  should read about 1.5 mS/cm total.
+
+  For the 45 US gal (170 L) reservoir at the vegetative base:
+  Masterblend      2.4 g × 45 = 108 g
+  Calcium nitrate  2.4 g × 45 = 108 g
+  Epsom salt       1.2 g × 45 = 54 g
 ```
 
 ### Masterblend Dose Scaling
 
-| Target EC | Calcium Nitrate | MasterBlend | Epsom Salt |
-|-----------|----------------|-------------|-----------|
-| 0.8 mS/cm (seedling) | 0.3g/L | 0.3g/L | 0.15g/L |
-| 1.2 mS/cm (light veg) | 0.45g/L | 0.45g/L | 0.22g/L |
-| 1.6 mS/cm (standard veg) | 0.6g/L | 0.6g/L | 0.3g/L |
-| 2.0 mS/cm (tomatoes veg) | 0.75g/L | 0.75g/L | 0.37g/L |
-| 2.5 mS/cm (tomatoes early fruit) | 0.95g/L | 0.95g/L | 0.47g/L |
-| 3.5 mS/cm (tomatoes peak fruit) | 1.35g/L | 1.35g/L | 0.67g/L |
+Keep the 2 : 2 : 1 ratio (Masterblend : calcium nitrate : Epsom). Raise or lower the **whole** recipe to hit the crop EC. Do not change the ratio to chase one element unless you are in a deficiency correction.
 
-> **Always verify with your EC meter.** These are starting points — your source water EC and media mineral leaching both affect the final reading.
+Doses are per 1 US gal (3.8 L). The gram-per-litre figure is the same dose, not a different recipe.
+
+| Target EC | Masterblend | Calcium nitrate | Epsom salt |
+|-----------|-------------|-----------------|------------|
+| 0.8 mS/cm (seedling) | 1.3 g (0.34 g/L) | 1.3 g (0.34 g/L) | 0.6 g (0.17 g/L) |
+| 1.2 mS/cm (light veg) | 1.9 g (0.50 g/L) | 1.9 g (0.50 g/L) | 1.0 g (0.26 g/L) |
+| 1.4–1.6 mS/cm (base veg) | 2.4 g (0.63 g/L) | 2.4 g (0.63 g/L) | 1.2 g (0.32 g/L) |
+| 2.0 mS/cm | 3.2 g (0.85 g/L) | 3.2 g (0.85 g/L) | 1.6 g (0.42 g/L) |
+| 2.5 mS/cm (early fruit) | 4.0 g (1.06 g/L) | 4.0 g (1.06 g/L) | 2.0 g (0.53 g/L) |
+| 3.5 mS/cm (peak fruit) | 5.6 g (1.48 g/L) | 5.6 g (1.48 g/L) | 2.8 g (0.74 g/L) |
+
+> **Verify with the EC meter.** Source-water EC and new LECA both move the reading. Zone C fertigation still stops at 2.0 mS/cm. The 3.5 mS/cm row is for a fruiting flood table, not for beetroot.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -310,16 +334,18 @@ This is the most cost-effective professional nutrient system available. The mixi
 
 For those preferring a liquid system. This is the most documented nutrient schedule in hobby hydroponics.
 
+Doses are per US gallon, with the per-litre figure in brackets. Add FloraMicro first.
+
 | Stage | FloraGro | FloraBloom | FloraMicro | EC Target |
 |-------|----------|-----------|-----------|---------|
-| Seedling/clone | 1.25ml/L | 1.25ml/L | 0.5ml/L | 0.6–0.8 |
-| Early vegetative | 3ml/L | 1ml/L | 2ml/L | 1.0–1.4 |
-| Late vegetative | 4ml/L | 2ml/L | 3ml/L | 1.4–1.8 |
-| Pre-flower / transition | 3ml/L | 3ml/L | 3ml/L | 1.8–2.4 |
-| Early bloom | 2ml/L | 4ml/L | 3ml/L | 2.0–2.8 |
-| Mid bloom (fruiting crops) | 1ml/L | 5ml/L | 3ml/L | 2.4–3.2 |
-| Late bloom / ripening | 0ml/L | 6ml/L | 3ml/L | 2.8–3.8 |
-| Flush (final week) | 0ml/L | 0ml/L | 0ml/L | 0.2–0.4 |
+| Seedling/clone | 4.7 ml (1.25 ml/L) | 4.7 ml (1.25 ml/L) | 1.9 ml (0.5 ml/L) | 0.6–0.8 |
+| Early vegetative | 11.4 ml (3 ml/L) | 3.8 ml (1 ml/L) | 7.6 ml (2 ml/L) | 1.0–1.4 |
+| Late vegetative | 15.1 ml (4 ml/L) | 7.6 ml (2 ml/L) | 11.4 ml (3 ml/L) | 1.4–1.8 |
+| Pre-flower / transition | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 1.8–2.4 |
+| Early bloom | 7.6 ml (2 ml/L) | 15.1 ml (4 ml/L) | 11.4 ml (3 ml/L) | 2.0–2.8 |
+| Mid bloom (fruiting crops) | 3.8 ml (1 ml/L) | 18.9 ml (5 ml/L) | 11.4 ml (3 ml/L) | 2.4–3.2 |
+| Late bloom / ripening | 0 | 22.7 ml (6 ml/L) | 11.4 ml (3 ml/L) | 2.8–3.8 |
+| Flush (final week) | 0 | 0 | 0 | 0.2–0.4 |
 
 > Always add FloraMicro first when mixing multiple components. The flush week (plain water only) in the final week before harvest reduces residual salts in the media and plant tissue — more important in E&F than in NFT because of salt accumulation in clay pebbles.
 
@@ -330,18 +356,18 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 ## 9. Nutrient Solution Temperature
 
-### Optimal: 18–22°C
+### Target Solution Temperature
 
-Solution temperature affects dissolved oxygen content, root enzyme activity, and pathogen pressure. This is doubly important in E&F because the reservoir sits under the flood tables and can heat rapidly on warm days.
+Aim for **64–72°F (18–22°C)**. Above **77°F (25°C)**, dissolved oxygen falls and pythium risk rises. That 77°F (25°C) line is the heat action point for this system. The reservoir sits under the tables and can still heat on a 90–100°F (32–38°C) afternoon.
 
 ```mermaid
 flowchart LR
-    T1["10–15°C<br/>DO: High (9–11 mg/L)<br/>Roots: Cold stress, slow<br/>Pathogens: Very low"]
-    T2["15–18°C<br/>DO: Good (8–9 mg/L)<br/>Roots: Slightly reduced<br/>Pathogens: Low"]
-    T3["✅ 18–22°C — TARGET<br/>DO: Optimal (8–9 mg/L)<br/>Roots: Excellent<br/>Pathogens: Low"]
-    T4["22–26°C<br/>DO: Reduced (7–8 mg/L)<br/>Roots: Good<br/>Pathogens: Moderate"]
-    T5["26–30°C<br/>DO: Low (7 mg/L)<br/>Roots: Stressed<br/>Pathogens: High — Pythium risk"]
-    T6["30°C+<br/>DO: Very low (&lt;7 mg/L)<br/>Roots: Severe stress<br/>Pathogens: Very high"]
+    T1["50–59°F (10–15°C)<br/>DO: High (9–11 mg/L)<br/>Roots: Cold stress, slow<br/>Pathogens: Very low"]
+    T2["59–64°F (15–18°C)<br/>DO: Good (8–9 mg/L)<br/>Roots: Slightly reduced<br/>Pathogens: Low"]
+    T3["64–72°F (18–22°C) TARGET<br/>DO: Optimal (8–9 mg/L)<br/>Roots: Excellent<br/>Pathogens: Low"]
+    T4["72–79°F (22–26°C)<br/>DO: Reduced (7–8 mg/L)<br/>Roots: Good<br/>Pathogens: Moderate"]
+    T5["79–86°F (26–30°C)<br/>DO: Low (7 mg/L)<br/>Roots: Stressed<br/>Pathogens: High, pythium risk"]
+    T6["Above 86°F (30°C)<br/>DO: Very low, under 7 mg/L<br/>Roots: Severe stress<br/>Pathogens: Very high"]
 
     T1 --> T2 --> T3 --> T4 --> T5 --> T6
 
@@ -355,7 +381,7 @@ flowchart LR
 
 **E&F advantage:** The reservoir is positioned under the flood tables, naturally shaded by the table structure. This is a significant design advantage over NFT (where the reservoir is typically in full sun beside the channels). The tables act as a roof over the reservoir — use this to your advantage by ensuring the tables overhang the reservoir fully.
 
-**Temperature management strategies:** Shade and insulate the reservoir exterior. Keep the lid on tightly. Paint the reservoir white or wrap with reflective insulation. If summer ambient temperatures regularly exceed 30°C, consider a small aquarium chiller.
+**Temperature management:** Shade and insulate the reservoir. Keep the lid on. Paint the outside white or wrap it in reflective insulation. If the solution itself holds above 77°F (25°C), treat that as the action line: more shade, insulation, and a small aquarium chiller if afternoons stay at 90–100°F (32–38°C). Flood count stays at 4 on fruiting tables. Shorten the flood if you need to. Do not add a 5th.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -363,6 +389,16 @@ flowchart LR
 
 
 ## 10. Reservoir Top-Up vs Full Change — E&F Specifics
+
+### Top-Up Rule
+
+Read EC before you add anything.
+
+- **EC at or above target:** add plain water, pH-adjusted to 5.8–6.2. Do not add stock on top of a solution that is already strong.
+- **EC below target:** add nutrient stock, then recheck EC and pH.
+- Do not top up every time at full target EC, and do not top up every time with plain water. The meter chooses.
+
+A falling level with a rising EC means the plants took water faster than salts. Plain water is the right top-up. A falling level with a falling EC means the plants took salts. Stock is the right top-up.
 
 ### The Salt Accumulation Problem in E&F Media
 
@@ -380,10 +416,11 @@ This is the most important nutrient management issue specific to Ebb & Flow that
                    ─ pH in media diverging from reservoir pH
 
   DETECTION:
-  Press a calibrated EC probe into the wet media immediately after a flood.
-  Compare to reservoir EC.
-  If media EC > reservoir EC + 0.5 mS/cm: media flush is needed.
-  If media EC > reservoir EC + 1.0 mS/cm: immediate media flush required.
+  Just after a flood, push a calibrated EC probe 2 in (5 cm) into wet LECA.
+  Compare with the reservoir.
+  Media EC more than 0.5 mS/cm above the reservoir: flush.
+  Media EC 1.0 mS/cm or more above the reservoir: flush the same day.
+  A gap of 0.5–1.0 is not "always normal." It is already past the flush trigger.
 ```
 
 ### Media Flush Protocol
@@ -392,7 +429,7 @@ This is the most important nutrient management issue specific to Ebb & Flow that
   MEDIA FLUSH PROCEDURE (monthly minimum, or when EC test triggers it):
 
   1. Do a full reservoir change (fresh plain water, no nutrients)
-  2. Run 3–4 extra flood cycles with plain pH-adjusted water (pH 6.0, no nutrients)
+  2. Run 3–4 extra flood cycles with plain water at pH 5.8 (no nutrients)
      — flood every 30 minutes for 2 hours — more cycles than normal
   3. This flushes accumulated salts from media pore spaces back into reservoir
   4. Drain reservoir (now contains dissolved salt waste) and dispose
@@ -412,12 +449,16 @@ This is the most important nutrient management issue specific to Ebb & Flow that
 
   Trigger 1: EC rising above target despite correct top-up (salts concentrating)
   Trigger 2: pH swings >0.5 per day with mature media (signs of imbalance)
-  Trigger 3: Solution older than 7–10 days
-  Trigger 4: Visible discolouration (brown, green, slimy)
-  Trigger 5: After any disease outbreak
-  Trigger 6: Before introducing new seedlings to a table
+  Trigger 3: Solution older than 10–14 days
+  Trigger 4: The solution smells, or roots slime
+  Trigger 5: Visible discolouration (brown, green, slimy)
+  Trigger 6: After any disease outbreak
+  Trigger 7: Before introducing new seedlings to a table
 
-  Recommended schedule: Full change every 7 days; media flush every 3–4 weeks.
+  Schedule: full reservoir change every 10–14 days.
+  Also change sooner on any trigger above.
+  Flush the media when the +0.5 mS/cm test says so, not on a looser "monthly is fine" rule
+  that ignores the probe.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -489,11 +530,11 @@ Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F s
 
 ### Common Organic Nutrient Sources
 
-- **Fish emulsion/hydrolysate (2-4-1):** Excellent vegetative N source; 5ml/L in nutrient solution
-- **Seaweed extract:** Micronutrients, cytokinins, growth regulators; 2ml/L supplement
+- **Fish emulsion/hydrolysate (2-4-1):** Vegetative nitrogen. 19 ml per US gal (5 ml/L)
+- **Seaweed extract:** Micronutrients and growth regulators. 7.6 ml per US gal (2 ml/L)
 - **Bat guano:** High P for fruiting stage
 - **Worm castings extract (worm tea):** Broad-spectrum nutrition + beneficial microbe inoculant
-- **Molasses:** Feeds beneficial bacteria in media; 1ml/L once per week
+- **Molasses:** Feeds beneficial bacteria in the media. 3.8 ml per US gal (1 ml/L) once per week
 
 **Key organic practice for E&F:** After establishing an organic cycle, add an **air stone to the reservoir** — aeration keeps the microbial population aerobic. Without it, anaerobic bacteria will outcompete beneficials within days in a warm outdoor reservoir.
 
@@ -506,55 +547,50 @@ Unlike NFT's thin film (minimal media surface for microbial colonisation), E&F s
 
 ### Reservoir Volume and E&F Flood Cycling
 
-The 150–200L reservoir in this system is sized for the three 1.2m × 0.6m flood tables. Understanding why this volume matters:
+The reservoir is **45 US gal (170 L)**, acceptable range **40–50 US gal (151–189 L)**, under three 4 ft × 2 ft (1.22 m × 0.61 m) tables.
 
 ```
-  E&F RESERVOIR SIZING CONSIDERATIONS:
+  WHY 45 US GAL:
 
-  Volume consumed per flood cycle:
-  ─ Flood level: ~2cm below the LECA surface (standpipe at 10cm for a
-    12cm bed). Water fills the void space between pebbles up to that level:
-    Gross volume to 10cm: 1.2 × 0.6 × 0.10 = 72L per table
-    Minus LECA solids (~60% of flooded bed): ~43L
-    Net water out per table at full flood: ~29L
-  ─ Three tables flooded simultaneously: ~85–90L per flood event
-  ─ Note: not all 90L is consumed — it drains back. BUT the pump must push
-    ~90L up to the tables before overflow controls level. The reservoir must
-    hold well over 90L to flood all three tables without running dry.
+  Each table holds 25 US gal (95 L) of LECA, 5 in (13 cm) deep.
+  Pore space is about 40%, and the flood stops 3/4 in (2 cm) below the surface.
+  Water out per table at full flood: about 10 US gal (38 L).
+  Three tables at once: about 30 US gal (114 L) out of the reservoir.
+  Remaining in a 45 US gal tank: about 15 US gal (57 L). The pump stays covered.
+  That water drains back. It is not used up. Daily loss is transpiration and
+  evaporation, often 1–2 US gal (4–8 L) in warm weather.
 
-  150L fill buffer analysis:
-  ─ Tables full: ~90L in tables, ~60L remaining in reservoir
-  ─ Pump stays submerged and continues running until timer cuts — safe margin
-  ─ After drain: 150L back in reservoir (minus plant uptake and evaporation)
+  TOP-UP (see the rule above):
+  ─ EC at or above target → plain water at pH 5.8–6.2
+  ─ EC below target → nutrient stock, then recheck EC and pH
 
-  Daily water consumption:
-  ─ Plant transpiration + evaporation: ~3–8L per day in warm weather
-  ─ At 3 floods/day with 3 tables: steady state, same water recycled
-  ─ Top up reservoir daily with pH-adjusted plain water to replace losses
+  MASTERBLEND FOR A 45 US GAL (170 L) FILL
+  Vegetative base, EC about 1.4–1.6 mS/cm. Per US gal: 2.4 g + 2.4 g + 1.2 g.
 
-  MASTERBLEND RECIPE FOR 150L FILL (standard vegetative mix, EC ~1.4–1.6 mS/cm):
+  Masterblend       2.4 g × 45 = 108 g
+  Calcium nitrate   2.4 g × 45 = 108 g
+  Epsom salt        1.2 g × 45 = 54 g
 
-  Calcium Nitrate:   0.6g/L × 150L = 90g
-  MasterBlend:       0.6g/L × 150L = 90g
-  Epsom Salt:        0.3g/L × 150L = 45g
+  Early fruit, EC about 2.5 mS/cm (same ratio, scaled):
+  Masterblend       4.0 g × 45 = 180 g
+  Calcium nitrate   4.0 g × 45 = 180 g
+  Epsom salt        2.0 g × 45 = 90 g
 
-  For fruiting crops (EC ~2.5 mS/cm):
-  Calcium Nitrate:   0.95g/L × 150L = 143g
-  MasterBlend:       0.95g/L × 150L = 143g
-  Epsom Salt:        0.47g/L × 150L = 70g
+  Zone C is not this tank. Beetroot and the other bags stop at 2.0 mS/cm.
 
-  Always verify EC with meter after mixing — before running first flood.
-  Weigh all dry nutrients on a digital scale. Volume estimation is inaccurate.
+  Verify EC after mixing, before the first flood.
+  Weigh salts on a digital scale. Wear gloves, eye protection, and a dust mask.
 ```
 
 ---
 
-
-*Next: [`guide/ebb-and-flow/03-water-quality.md`](03-water-quality.md) — Sources, testing, treatment, and management*
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 01 — Ebb and Flow Basics](01-ebb-flow-basics.md)
+> **Next:** [Guide 03 — Water Quality](03-water-quality.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

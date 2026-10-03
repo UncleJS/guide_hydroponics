@@ -95,7 +95,8 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
   5. ALGAE IN RESERVOIR OR CHANNELS
      Algae consumes CO₂ during photosynthesis, raising pH.
      Sign: Visible green coating, solution smells or looks green.
-     FIX: Eliminate light sources. Full system clean. See guide/07.
+     FIX: Eliminate light sources. Clean the affected loop. Both tanks are a black
+          body with a white exterior. See [Guide 07 — Pests and Disease](07-pests-and-disease.md).
 ```
 
 ---
@@ -143,13 +144,13 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
      FIX: Topping up with plain water will further dilute EC. Add a small nutrient dose.
           Prepare a 10× concentrate stock and add measured doses to maintain EC.
 
-  2. RESERVOIR TOO SMALL FOR PLANT LOAD
-     An 80L reservoir with 40+ plants will see rapid EC swings.
-     FIX: Reduce plant count, OR change solution more frequently (every 5–7 days).
-          NOTE: This system is designed around an 80L reservoir. Increasing to
-          120–150L requires a larger container and proportionally more nutrients
-          per fill. For most home growers, reducing plant density in peak summer
-          or changing solution twice per week is more practical than upsizing.
+  2. TANK SIZE VERSUS THE CROP ON THAT LOOP
+     Greens: 20 US gal (76 L) for 33 sites, changed every 7 days.
+     CH4: 10 US gal (38 L) for up to 7 fruiting plants, changed every 5–7 days.
+     Fast EC movement on a small tank is expected. It is not a reason to join
+     the two loops into one reservoir.
+     FIX: Change the tank that is swinging, on its own interval. Do not put
+          tomato or pepper EC into the greens tank.
 
   3. EVAPORATION RATE HIGH (hot day)
      Water evaporating faster than plants consume it — EC and all nutrients remain,
@@ -179,7 +180,8 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
 
   2. SALT ACCUMULATION (solution is old)
      As plants absorb water, the remaining nutrient solution becomes more concentrated.
-     After 7–10 days, EC naturally rises.
+     Greens solution is changed every 7 days. The CH4 tank is changed every 5–7 days.
+     Past that, EC rises because the plants have taken up water and left salts behind.
      FIX: Do a full reservoir change. The solution has run its course.
 
   3. HARD WATER TOP-UPS
@@ -195,22 +197,30 @@ Find your symptom in the relevant section. Follow the decision tree to identify 
   Discoloured or slimy reservoir/solution
 
   GREEN SOLUTION or GREEN COATING ON WALLS:
-  → ALGAE BLOOM
+  → ALGAE BLOOM in that tank (check greens and CH4 separately)
   FIX: 
-  1. Identify light source — seal it (tape, paint, opaque cover)
-  2. Full reservoir change and sterilisation
-  3. Flush channels with 1% H₂O₂
-  4. Ensure reservoir lid is fully light-tight
+  1. Identify the light source — seal it (tape, opaque cover)
+  2. Paint is a black body with a white exterior. Black blocks light. White reflects heat.
+     Do not leave a white-only wall (light enters) or a black-only exterior (it absorbs heat).
+  3. Full change and sterilisation of the affected tank
+  4. Hydrogen peroxide flush: remove plants, or hand-water them, first.
+     Do not run a 3% H₂O₂ flush through a live crop. A 1% channel flush is a
+     cleaning step on an empty channel, followed by a plain-water rinse.
+  5. Confirm that reservoir lid is fully light-tight
 
   BROWN SOLUTION with foul smell:
-  → ROOT ROT (Pythium) or bacterial decomposition
+  → ROOT ROT (Pythium) or bacterial decomposition in that loop
   FIX:
-  1. Inspect roots in all channels — look for brown, slimy roots
-  2. Reduce reservoir temperature immediately (shade, insulate)
-  3. Full reservoir change with H₂O₂ treatment (2ml/L)
-  4. Remove most affected plants
-  5. Add Hydroguard to new solution
-  6. See guide/07 Pythium treatment
+  1. Inspect roots on the affected loop — brown, slimy roots
+  2. Bring solution temperature down immediately. Action line is 77°F (25°C).
+     Target is 64–72°F (18–22°C). Shade the tank. Keep the white exterior.
+  3. Remove the worst plants, or hand-water them, before any peroxide treatment.
+     Do not pour 3% H₂O₂ through a channel that still has a live crop.
+     A dilute dose in a fresh fill is about 0.26 US fl oz/US gal (2 mL/L) of 3% H₂O₂,
+     and only after plants are out or being hand-watered.
+  4. Full change of the affected tank. Greens: 20 US gal (76 L). CH4: 10 US gal (38 L).
+  5. Add Hydroguard to the new solution in that tank
+  6. See [Guide 07 — Pests and Disease](07-pests-and-disease.md) Pythium treatment
 
   GREY/WHITE CLOUDY SOLUTION:
   → Microbial bloom — usually from organic matter decomposition
@@ -244,7 +254,7 @@ flowchart TD
     Start --> All[All leaves simultaneously]
 
     Old --> N[Uniform yellow whole leaf<br/>Nitrogen deficiency<br/>FIX: Check EC in range, check pH above 5.5,<br/>add Cal-mag or increase N in mix]
-    Old --> Mg[Yellow between green veins interveinal<br/>Magnesium deficiency<br/>FIX: Add 0.3ml/L Epsom salt,<br/>check pH 6.0–6.5]
+    Old --> Mg[Yellow between green veins interveinal<br/>Magnesium deficiency<br/>FIX: Add Epsom salt at about 1.1 g/US gal, 0.3 g/L,<br/>check pH is inside 5.8–6.2]
     Old --> P[Yellow with purple undersides<br/>Phosphorus deficiency<br/>FIX: Check pH above 5.5,<br/>adjust pH up, check EC]
     Old --> K[Brown scorched dry margins on leaf edges<br/>Potassium deficiency<br/>FIX: Check EC is in range,<br/>increase K in mix or raise overall Masterblend dose]
 
@@ -252,7 +262,7 @@ flowchart TD
     New --> Mn[Similar interveinal pattern<br/>Manganese deficiency<br/>FIX: Check pH, Mn locks out above 6.5]
     New --> S[Uniform pale yellow in newest growth<br/>Sulfur deficiency<br/>FIX: Rare with Masterblend, check EC,<br/>may need Epsom salt]
 
-    All --> Pythium[Root rot Pythium<br/>roots cannot supply nutrients<br/>FIX: Inspect roots, see guide/07]
+    All --> Pythium[Root rot Pythium<br/>roots cannot supply nutrients<br/>FIX: Inspect roots, see Guide 07]
     All --> pHOut[pH severely out of range<br/>below 4.5 or above 8.0<br/>FIX: Urgent pH correction,<br/>change reservoir solution]
     All --> PumpFail[Pump failure<br/>plants starving from no nutrient flow<br/>FIX: Restore pump immediately]
 ```
@@ -275,7 +285,7 @@ flowchart TD
   - Ensure adequate airflow around plants (no stagnant air pockets)
   - Check EC is not above target
   - Check pH is 5.8–6.2 (Ca locks out below 5.5)
-  - In severe cases: foliar spray with calcium nitrate solution (2g/L) directly on young leaves
+  - In severe cases: foliar spray of calcium nitrate at 7.6 g/US gal (2 g/L) on young leaves
   - Choose tip-burn resistant lettuce varieties (Jericho, Nevada)
 
   BROWN EDGES ON OLD LEAVES:
@@ -283,12 +293,14 @@ flowchart TD
   FIX: Check EC and K ratio in your nutrient mix. If using Masterblend, increase overall dose.
 
   CRISPY BROWN EVERYWHERE (multiple plants simultaneously):
-  → Nutrient burn — EC too high
-  FIX: Measure EC. If above 3.0 for greens: dilute with plain water or change reservoir.
+  → Nutrient burn — EC too high for that tank
+  FIX: Measure the tank the plants actually drink from.
+       Greens above 1.8 mS/cm: dilute with plain pH-adjusted water, or change the greens tank.
+       CH4 above 3.5 mS/cm (tomato) or 3.0 mS/cm (pepper): dilute that tank only.
 
   SUNSCALD (bleached/white patches on upper leaf surfaces):
   → Direct sun exposure exceeding plant tolerance
-  FIX: Deploy 40% shade cloth, especially in summer.
+  FIX: Deploy 40% shade cloth when afternoon highs hold above 85°F (29°C).
 ```
 
 ---
@@ -308,14 +320,14 @@ flowchart TD
     Pump -->|YES| Roots
 
     Roots{Are roots healthy?<br/>white and firm}
-    Roots -->|NO brown/slimy| Pythium[Pythium root rot<br/>See guide/07 treatment]
+    Roots -->|NO brown/slimy| Pythium[Pythium root rot<br/>See Guide 07. Remove plants<br/>before any 3% peroxide flush]
     Roots -->|YES| Temp
 
-    Temp{Reservoir temperature<br/>above 26°C?}
-    Temp -->|YES| HeatStress[Heat stress on roots<br/>Shade reservoir, add frozen bottles, insulate]
+    Temp{That tank above<br/>77°F / 25°C?}
+    Temp -->|YES| HeatStress[Heat stress on roots<br/>Shade the tank. Black body, white exterior.<br/>Frozen bottles. Air pump on.]
     Temp -->|NO| EC
 
-    EC{EC very high?<br/>above 4.0 greens<br/>or above 5.0 tomatoes}
+    EC{EC very high for THAT tank?<br/>Greens above 1.8<br/>Tomato CH4 above 3.5<br/>Pepper CH4 above 3.0}
     EC -->|YES| Osmotic[Osmotic stress<br/>Dilute with plain water<br/>Partial reservoir change]
     EC -->|NO| Wind
 
@@ -346,11 +358,12 @@ flowchart TD
     FIX: Raise pH.
 
   STEP 4: Check temperature
-  - Air below 12°C: growth slows dramatically. Most crops stop below 10°C.
-    FIX: Deploy frost fleece, or wait for warmer weather.
+  - Air below 54°F (12°C): growth slows. Most crops stall below 50°F (10°C).
+    FIX: Deploy frost fleece on a shoulder-season night, or wait for warmer weather.
+         Do not run this NFT system unprotected in deep winter, 0–15°F (−18 to −9°C).
 
   STEP 5: Check light
-  - Fewer than 4 sun hours for greens, fewer than 8 for tomatoes
+  - Greens short of about 4 hours of sun, or CH4 tomatoes and peppers short of about 8 hours
     FIX: Relocate system or accept lower yields in poor light.
 
   STEP 6: Check roots
@@ -370,14 +383,15 @@ flowchart TD
   LETTUCE, SPINACH, CILANTRO SENDING UP A FLOWER STALK:
 
   CAUSE: Bolting is triggered by:
-  1. Long days (>14 hours daylight) — most common outdoor cause
-  2. High temperatures (above 24°C consistently)
-  3. Plant stress (erratic EC/pH, root damage, overcrowding)
+  1. Long days (more than 14 hours of daylight) — common outdoors in early summer
+  2. High temperatures, afternoons holding above 75°F (24°C), and especially
+     the 90–100°F (32–38°C) stretch in June–August (SA: December–February)
+  3. Plant stress (erratic EC or pH, root damage, overcrowding)
 
-  WHEN IS BOLTING NORMAL?
-  - Lettuce in July: essentially inevitable with most varieties
-  - Cilantro after 4–5 weeks in summer: very common
-  - Spinach in long summer days: expected
+  WHEN IS BOLTING NORMAL AT THIS SITE?
+  - Lettuce in July (SA: January): likely with most varieties under full sun
+  - Cilantro after 4–5 weeks in that same heat: very common
+  - Spinach on the long, hot days of June–August (SA: December–February): expected
 
   WHEN BOLTING STARTS:
   - Harvest IMMEDIATELY — flavour deteriorates rapidly once bolting begins
@@ -400,13 +414,15 @@ flowchart TD
 
   MOST COMMON CAUSES:
 
-  1. TEMPERATURE TOO LOW (< 15°C at night)
-     Most common cause in spring/early summer and autumn.
-     FIX: Protect with fleece at night. Delay harvest expectations to warmer weeks.
+  1. NIGHTS TOO COOL (below 59°F (15°C))
+     Most common near the planning frosts: April 15 (SA: October 15) and
+     October 20 (SA: April 20). CH4 is the only fruiting channel.
+     FIX: Fleece on those shoulder nights. Do not expect fruit set in deep winter.
 
-  2. TEMPERATURE TOO HIGH (> 32°C during day)
-     Pollen becomes non-viable above 32°C.
-     FIX: Deploy shade cloth. Accept reduced fruit set in heat waves.
+  2. DAYS TOO HOT (above 90°F (32°C))
+     Pollen becomes non-viable above 90°F (32°C). This site's summer afternoons
+     run 90–100°F (32–38°C) in June–August (SA: December–February).
+     FIX: 40% shade cloth once highs hold above 85°F (29°C). Accept reduced set in a heat wave.
 
   3. POOR POLLINATION
      No wind or insects to move pollen (especially under cover).
@@ -419,7 +435,8 @@ flowchart TD
 
   5. EC TOO HIGH OR TOO LOW
      Nutritional stress prevents successful fruit set.
-     FIX: Ensure EC is within target range for fruiting stage.
+     FIX: Read the CH4 tank, not the greens tank. Tomato fruiting EC is
+          2.5–3.5 mS/cm. Pepper fruiting EC is 2.0–3.0 mS/cm. Greens stay at 0.8–1.8.
 
   6. INSUFFICIENT LIGHT
      Below 20 DLI — fruiting crops need substantial light to support flowering.
@@ -440,7 +457,7 @@ flowchart TD
   FIX: Check pH — if below 5.5, raise to 5.8–6.2. P availability improves immediately.
 
   CAUSE 2 — Cold stress
-  Temperatures below 10°C cause anthocyanin accumulation — same purple appearance.
+  Air below 50°F (10°C) causes anthocyanin accumulation — the same purple appearance.
   Distinguish from P deficiency: cold-stressed plants show purple uniformly AND the
   symptom resolves when temperatures warm up.
   FIX: Protect with fleece, harvest and wait for warmer conditions.
@@ -500,22 +517,25 @@ flowchart TD
 
   NO (completely silent) → MECHANICAL FAILURE or POWER ISSUE
   - Test pump in a bucket of plain water
-  - If silent: motor failed. Replace pump (keep a spare — ~$15)
+  - If silent: that motor has failed. Replace it. Keep a spare greens pump and a spare
+    fruiting pump. A basic spare is about $15 (R270) at the 3 October 2026 planning rate ($1 = R18).
 
   STEP 3: Pump runs but flow is weak?
   - CHECK FILTER SPONGE: if clogged, reduces flow dramatically
     FIX: Remove and rinse filter sponge in reservoir water (not tap)
-  - CHECK HEAD PRESSURE: how high is the pump lifting water?
-    Each metre of head reduces output ~20%. Reduce manifold height if possible.
+  - CHECK HEAD PRESSURE: how high is that pump lifting water?
+    Each 3 ft (1 m) of head cuts output by roughly 20%. The greens manifold is 1 in (25 mm)
+    and feeds CH1–CH3 only. CH4 has its own ½ in (13 mm) line from its own pump.
   - CHECK FOR KINKED TUBING: straighten or replace kinked sections
   - CHECK MANIFOLD: one clogged outlet = reduced flow to one channel
     FIX: Remove each inlet tube in turn, check flow from each manifold branch.
 
-  EMERGENCY TEMPORARY FIX IF PUMP FAILS:
-  - Immediately hand-water each channel with a watering can (pour solution slowly
-    from inlet end to drain end)
-  - This buys 30–60 minutes while you fix or replace the pump
-  - Have a spare pump ready — this is the most common hardware failure
+  EMERGENCY TEMPORARY FIX IF A PUMP FAILS:
+  - The other loop can keep running. Hand-water the dry loop immediately.
+    Pour solution slowly from the inlet end toward the drain.
+  - In warm weather the film is gone in 15–30 minutes. That is the action time.
+    Repeat the hand-watering every 15–30 minutes until that pump is back.
+  - Keep a spare for each pump. Pump failure is the most common hardware fault.
 ```
 
 ---
@@ -531,11 +551,12 @@ flowchart TD
 
   CAUSE 2 — INCORRECT SLOPE (too flat or negative)
   The drain end should be LOWER than the inlet end. If equal or reversed, water pools.
-  FIX: Re-check slope with spirit level. Adjust frame height at drain end downward.
-       Confirm 8cm drop over 2.4m (1:30 slope).
+  FIX: Re-check slope with a spirit level. The low-end posts are 32¾ in (83 cm).
+       The high-end posts are 36 in (91 cm). Drop is 3¼ in (83 mm) over 8 ft (2.44 m),
+       which is the 1:30 slope. An A-frame is too steep for this and is not part of this build.
 
   CAUSE 3 — FLOW RATE TOO HIGH
-  Pump delivering more than 2L/min per channel — water cannot drain fast enough.
+  A greens channel above 0.53 US gpm (2 L/min) can fill faster than the drain clears it.
   FIX: Add a flow restriction valve on the manifold to reduce flow to each channel.
        Alternatively reduce pump output (if it has a flow control).
 
@@ -551,13 +572,15 @@ flowchart TD
 ```
   INLET END DRY / PLANTS AT INLET END WILTING:
 
-  CAUSE 1 — FLOW RATE TOO LOW (< 0.8L/min)
-  Solution runs out before reaching all plant sites.
-  FIX: Increase pump output. Check for blockages reducing flow.
+  CAUSE 1 — FLOW RATE TOO LOW (under 0.21 US gpm (0.8 L/min) on a greens channel)
+  Solution runs out before it wets every site.
+  FIX: Check the filter and the inlet on that loop. Greens target is
+       0.26–0.53 US gpm (1–2 L/min) per channel from the 160–210 US gph (600–800 L/h) pump.
 
   CAUSE 2 — SLOPE TOO STEEP
-  Solution flows too fast and reaches drain before wetting all roots adequately.
-  FIX: Reduce slope angle slightly (aim for 1:30, not steeper than 1:20).
+  Solution races to the drain and leaves dry patches.
+  FIX: This build is 1:30, a 3¼ in (83 mm) drop over 8 ft (2.44 m). Do not use an
+       A-frame. That geometry is too steep and is not part of this build.
 
   CAUSE 3 — INLET BLOCKAGE
   Clay pebbles or debris blocking the inlet fitting, reducing flow into that channel.
@@ -573,23 +596,33 @@ flowchart TD
 ### C4: RESERVOIR OVERHEATING
 
 ```
-  RESERVOIR TEMPERATURE ABOVE 24°C:
+  EITHER TANK ABOVE 77°F (25°C):
+
+  Target solution temperature is 64–72°F (18–22°C). Above 77°F (25°C), dissolved
+  oxygen falls and Pythium risk rises. Check the greens tank and the CH4 tank separately.
 
   IMMEDIATE FIXES (short-term):
-  1. Shade the reservoir (move under NFT frame, drape with shade cloth or reflective foil)
-  2. Wrap with white/silver reflective foam insulation
-  3. Float 1–2 sealed 1L bottles of ice in the reservoir — replace daily
-  4. Do a partial water change with cooler fresh water
+  1. Shade the tank. 40% cloth goes on when afternoon highs hold above 85°F (29°C).
+  2. Wrap the outside with white or silver reflective foam. Leave the body black underneath
+     so light still cannot enter.
+  3. Float one or two frozen 1 US qt (1 L) bottles in the hot tank. Replace them through the day.
+     The greens tank is 20 US gal (76 L). The fruiting tank is 10 US gal (38 L). A bottle
+     cools the smaller tank faster.
+  4. Partial change with cooler fresh water, then recheck EC. If EC is still at or above
+     target, the replacement water is plain and pH-adjusted to 5.8–6.2. If EC fell below
+     target, add nutrient stock and recheck.
 
-  MEDIUM-TERM FIXES:
-  5. Paint reservoir exterior WHITE (reflects radiant heat)
-  6. Bury reservoir up to 1/3 depth in the ground (thermal mass of soil helps)
-  7. Replace black reservoir with white/light-coloured container
+  THE PAINT:
+  5. Black body, white exterior. The black layer blocks light. The white layer reflects heat.
+     Do not paint the outside black only. Do not switch to a white-only container.
 
-  LONG-TERM FIX:
-  8. Aquarium chiller (~$60–$150): inline chiller maintains set temperature regardless of weather
-     Well worth investment if summer temps exceed 30°C regularly.
-     Connect inline on return pipe before reservoir.
+  LONGER FIXES:
+  6. Bury a tank up to about one-third of its depth if the site allows it
+  7. An inline aquarium chiller is about $60–$150 (R1,080–R2,700) at the
+     3 October 2026 planning rate ($1 = R18). Fit it on that loop's return,
+     before the water falls back into its own tank. Summer afternoons at this
+     site run 90–100°F (32–38°C) in June–August (SA: December–February).
+     Do not turn either NFT pump off to "rest" it in the heat. Both run 24 hours.
 ```
 
 ---
@@ -638,12 +671,14 @@ Multiple symptoms appearing **simultaneously across multiple plants** almost alw
 
   CHECK IN THIS ORDER:
   1. Pump running?        → NO: Pump failure (see C1). Roots drying out.
-  2. Roots healthy?       → Brown/slimy: Pythium root rot (see guide/07).
-  3. Reservoir temp?      → Above 26°C: Heat stress + low DO₂. Shade and cool reservoir.
-  4. pH in range?         → Below 4.5 or above 7.5: Severe nutrient lockout.
-                             Multiple elements become unavailable simultaneously.
-  5. EC extremely high?   → Above 4.0 for greens: Osmotic stress causing both wilt
-                             (can't take up water) and yellowing (nutrient imbalance).
+  2. Roots healthy?       → Brown/slimy: Pythium (see [Guide 07 — Pests and Disease](07-pests-and-disease.md)).
+                             Remove plants or hand-water them before any peroxide flush.
+  3. Which tank is hot?   → Above 77°F (25°C): heat stress and low dissolved oxygen.
+                             Shade that tank. Black body, white exterior.
+  4. pH in range?         → Below 4.5 or above 7.5: severe lockout.
+                             Several elements drop out together.
+  5. EC high for THAT tank? → Greens above 1.8 mS/cm, or CH4 above its fruiting
+                             ceiling (3.5 tomato, 3.0 pepper): osmotic stress.
 
   IF ALL METRICS ARE NORMAL:
   → Check for root mat blockage in channels (roots blocking flow to downstream plants).
@@ -680,13 +715,15 @@ Multiple symptoms appearing **simultaneously across multiple plants** almost alw
   nutrients at all. The root cause is almost always one of:
 
   1. PYTHIUM ROOT ROT — roots are damaged and cannot function.
-     → Inspect roots immediately. Brown, slimy = Pythium. See guide/07.
+     → Inspect roots immediately. Brown and slimy means Pythium. See [Guide 07 — Pests and Disease](07-pests-and-disease.md).
+        Do not flush 3% H₂O₂ through a live crop.
 
   2. pH SEVERELY OUT OF RANGE — below 4.5 or above 8.0.
      → Most nutrients become unavailable. Fix pH, do full reservoir change.
 
   3. PUMP FAILURE (partial) — flow reduced but not stopped.
-     → Check flow rate at each channel drain. Should be 1–2 L/min.
+     → Check flow at each greens drain. Target is 0.26–0.53 US gpm (1–2 L/min) per channel.
+        CH4 is a separate, smaller pump. Confirm that line on its own.
      → Pump impeller may be partially blocked.
 
   4. COMPLETE NUTRIENT DEPLETION — EC reads very low (<0.4).
@@ -713,7 +750,7 @@ flowchart TD
     System --> Reservoir{Check reservoir:<br/>pH, EC, temp, clarity}
     Reservoir -->|Abnormal| FixRes[Fix the abnormal metric<br/>See Sections A1–A5]
     Reservoir -->|All normal| Roots{Inspect roots<br/>on worst plant}
-    Roots -->|Brown/slimy| Pythium[Pythium — see guide/07<br/>Full system response needed]
+    Roots -->|Brown/slimy| Pythium[Pythium — see Guide 07<br/>Treat the affected loop only]
     Roots -->|White/healthy| Mystery[Rare: environmental stress<br/>Check wind, recent weather,<br/>shade cloth deployment]
 ```
 
@@ -735,7 +772,7 @@ flowchart TD
 
   Solution turned green/brown overnight:
   → Algae bloom (green) — light leak appeared. See A5.
-  → Pythium explosion (brown) — reservoir was too warm. See guide/07.
+  → Pythium in that tank (brown) — solution was above 77°F (25°C). See [Guide 07 — Pests and Disease](07-pests-and-disease.md).
 
   RULE: If something changed rapidly, something EXTERNAL changed rapidly.
   Think: weather event, power outage (pump off), accidental contamination,
@@ -766,7 +803,7 @@ flowchart TD
     Yellowing -->|NO| Spots
 
     Spots{Discolouration, spots,<br/>or mould on leaves?}
-    Spots -->|YES| Pests[See guide/07<br/>Pests and Disease<br/>identify and treat]
+    Spots -->|YES| Pests[See Guide 07<br/>Pests and Disease<br/>identify and treat]
     Spots -->|NO| SolnColor
 
     SolnColor{Is the solution<br/>discoloured?}
@@ -786,11 +823,12 @@ flowchart TD
 ---
 
 
-*Next: [`guide/nft/10-climate-management.md`](10-climate-management.md) — Heat, cold, wind, rain, and seasonal strategy*
-
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 08 — System Maintenance](08-system-maintenance.md)
+> **Next:** [Guide 10 — Climate Management](10-climate-management.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

@@ -65,8 +65,8 @@ flowchart LR
     end
 
     subgraph EF["Ebb &amp; Flow SYSTEM — Substantial Media"]
-        TABLE["Flood table<br/>(1.2m × 0.6m × 100–150mm deep)"]
-        LECA["~72–108L LECA per table<br/>(fills entire table depth)"]
+        TABLE["Flood table<br/>4 ft x 2 ft, LECA 5 in deep"]
+        LECA["25 US gal LECA per table<br/>75 US gal in three tables"]
         NP2["Multiple net pots<br/>in the media bed"]
         ROOTS["Root mass spreads throughout<br/>media volume between floods"]
         TABLE --> LECA --> NP2 --> ROOTS
@@ -81,30 +81,30 @@ flowchart LR
 | **Moisture buffer** | None — roots dry in 15 min if pump fails | 8–24 hours of moisture reserve in media |
 | **Structural support** | Poor — heavy crops need canes/strings | Good — LECA holds root ball firmly in place |
 | **Temperature buffer** | Roots at ambient temperature | Media mass moderates rapid temperature swings |
-| **Media volume per table** | 0.5–1L per net pot | 20–30L per flood table (10–15cm depth × 0.72 m²) |
+| **Media volume per table** | About 1 US cup (150 ml) of LECA in a net pot | 25 US gal (95 L) of LECA, 5 in (13 cm) deep, on each 4 ft × 2 ft table |
 
 **Practical media volume for this system:**
 
 ```
   ZONE A — FLOOD TABLES:
 
-  Each flood table: 1.2m × 0.6m = 0.72 m²
+  Each table: 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level
+  One depth on every table: 5 in (13 cm)
 
-  Media depth 100mm (10cm) — standard leafy greens:
-    Volume = 0.72 m² × 0.1m = 0.072 m³ = 72L (bulk volume)
-    LECA needed: ~72L per table (LECA is sold by bulk volume —
-    the bag's litre rating includes the pore space)
+  Bulk LECA per table:     25 US gal (95 L)
+  Three tables:            75 US gal (284 L)
+  Buy:                     90 US gal (340 L), to cover rinse loss
 
-  Media depth 150mm (15cm) — fruiting crops:
-    Volume = 0.72 m² × 0.15m = 0.108 m³ = 108L (bulk volume)
-    LECA needed: ~108L per table
+  The bag rating is bulk volume, pore space included.
+  There is no separate "leafy depth" and "fruiting depth" in this build.
+  Table 1 (one tomato or one cucumber), Table 2 (1–2 pepper, aubergine,
+  or courgette), and Table 3 (leafy, or a later fruiting crop) all use
+  the same 5 in bed.
 
-  All three tables combined (12cm standard depth):
-    ~260L of LECA (≈ 6× 45–50L bags)
-    Budget: ~$150–$250 for initial media fill
+  Hardware cost, including media, is in Guide 12.
 ```
 
-> **The media is a long-term investment.** Clay pebbles last many years with proper sterilisation. The upfront media cost is paid back across multiple growing seasons.
+> **The media is a long-term investment.** Clay pebbles last many years with proper sterilisation. The purchase is 90 US gal (340 L) up front, then the same LECA comes back each season.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -138,10 +138,10 @@ LECA's behaviour during the flood-and-drain cycle is nearly perfect for E&F:
   ─ LECA retains moisture in its internal pores — roots still supplied
 
   INTERVAL PHASE (between floods):
-  ─ LECA surface dries within 1–2 hours in warm conditions
-  ─ Interior of pebbles retains moisture for longer
-  ─ Roots draw moisture from media between floods
-  ─ Mild drying stress drives root extension through media
+  ─ The pebble surface can look dry while the insides still hold water
+  ─ Moist LECA buffers a missed flood for 8–24 hours
+  ─ A dry-looking surface is not the missed-flood clock. The buffer is 8–24 hours
+  ─ Roots draw on the water inside the pebbles between floods
 ```
 
 The speed of LECA's drainage is its most important property for E&F. Media that drains slowly (coco, soil) creates long anaerobic periods after flooding — acceptable for passive systems but dangerous in an active E&F flood cycle where you may flood 3–4 times per day.
@@ -157,9 +157,9 @@ The speed of LECA's drainage is its most important property for E&F. Media that 
 | Water retention | Moderate (internal pores hold moisture; surface dries) |
 | Root aeration | Excellent — air gaps between pebbles |
 | Structural support | Very good — heavy plants stable in LECA |
-| Cost | ~$1.50–$3.00 per litre |
+| Cost | About $6–$11 per US gal (R108–R198). Confirm the current price in Guide 12 |
 | Typical size | 4–16mm diameter balls |
-| Weight (dry) | ~300–500 g per litre |
+| Weight (dry) | About 2.5–4.2 lb per US gal (300–500 g/L) |
 | Salt accumulation | Yes — accumulates over time; requires periodic flush |
 
 [↑ Back to TOC](#table-of-contents)
@@ -182,7 +182,8 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
   CLAY PEBBLE PREPARATION — STEP BY STEP:
 
   Equipment needed:
-  - Large bucket (20–30L) or colander over a sink/drain
+  - A tub or colander big enough to submerge the pebbles you are washing
+    (this wash tub is not the table volume — each table takes 25 US gal / 95 L)
   - Hosepipe or tap with good pressure
   - pH meter
   - pH Down solution
@@ -193,17 +194,18 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
     Rinse under running water, turning/agitating pebbles continuously
     Continue until water runs CLEAR (not milky or orange-brown)
     This takes 3–5 full bucket changes for new LECA
-    Do NOT skip this — clay dust will clog your 19mm drain fittings
+    Do NOT skip this — clay dust will clog the 1 in (25 mm) drain
 
   STEP 2 — FIRST SOAK (pH buffering):
-    Fill bucket with water adjusted to pH 5.5 (use pH Down)
+    Fill the tub with water adjusted to pH 5.8 (use pH Down).
+    The acceptable soak band is 5.5–6.0. This build uses 5.8 every time.
     Submerge pebbles completely — weigh down if they float
     Soak for 12 hours minimum, 24 hours preferred
     Clay pebbles float initially — this is normal; they sink as they absorb water
 
   STEP 3 — CHECK PH OF SOAK WATER:
     After soaking, test the pH of the soak water with your pH meter
-    If pH > 7.0: drain, re-fill with fresh pH 5.5 water, soak another 12 hours
+    If pH > 7.0: drain, re-fill with fresh pH 5.8 water, soak another 12 hours
     If pH 6.0–7.0: acceptable — do one more rinse and use
     If pH < 6.0: pebbles are ready — just rinse and use
 
@@ -212,7 +214,7 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
     Do not rinse with pH-adjusted water at this stage — just remove surface residue
 
   STEP 5 — FILL TABLES:
-    Fill tables to target depth (10–15cm)
+    Fill every table to 5 in (13 cm)
     Place net pots into media
     System is ready for first flood cycle
 ```
@@ -245,57 +247,48 @@ Raw LECA from the bag has two problems that must be addressed before it goes int
 
 ## 4. Media Depth in Flood Tables
 
-Media depth is not a fixed constant — it is determined by the crop you are growing, and it directly affects how you set your flood frequency.
+This build uses **one depth on every table: 5 in (13 cm)**. Table 1 is not the leafy table, and it is not a deeper bed than Table 3.
 
-### Standard Depths by Crop
+### Depth and Planting in This Build
 
 ```
-  MEDIA DEPTH GUIDE — E&F FLOOD TABLES:
+  MEDIA DEPTH — ALL THREE TABLES:
 
-  LEAFY GREENS AND HERBS (Table 3 typical use):
-  ─────────────────────────────────────────────
-  Recommended depth:   100mm (10cm)
-  Net pot size:        50mm
-  Notes:
-  - 10cm provides adequate root volume for lettuce, herbs, spinach
-  - Roots generally stay within the media volume — no deep penetration needed
-  - Allows approx 8 × 50mm net pots per 0.72 m² table (20cm spacing)
-  - Flood to ~2cm below the LECA surface (standpipe = media depth −2cm)
+  Depth:               5 in (13 cm)
+  Bulk LECA:           25 US gal (95 L) per table
+  Flood level:         about 3/4 in (2 cm) below the LECA surface
+  Standpipe:           about 4 1/4 in (11 cm) above the table floor
+  Overflow:            1 1/2 in (40 mm), one per table
+  Drain:               1 in (25 mm), one per table
 
-  FRUITING CROPS — MEDIUM (peppers, strawberries, aubergine):
-  ──────────────────────────────────────────────────────────
-  Recommended depth:   120–150mm (12–15cm)
-  Net pot size:        75mm
-  Notes:
-  - Deeper media accommodates larger root balls
-  - Provides better structural support for tall pepper/aubergine plants
-  - Allows approx 4–6 plants per table (35–40cm spacing)
-  - Flood to ~2cm below the LECA surface
+  TABLE 1 — one indeterminate tomato, or one cucumber
+  Net pot:             3–4 in (75–100 mm)
+  Floods:              3× per day vegetative, 4× per day fruiting
+                       4× is the ceiling
 
-  FRUITING CROPS — LARGE (tomatoes, cucumbers, courgettes):
-  ─────────────────────────────────────────────────────────
-  Recommended depth:   150mm (15cm) minimum
-  Net pot size:        75–100mm
-  Notes:
-  - Tomatoes and cucumbers have extensive root systems
-  - Roots will penetrate the full media depth and extend below net pots
-  - 4 plants per table maximum (40–50cm spacing — these are large plants)
-  - Courgettes: 2 plants per table — extremely vigorous, need space
-  - Flood to ~2cm below the LECA surface
-  - Consider supplementing with a second flood per day during peak fruiting
+  TABLE 2 — pepper, aubergine, or courgette, 1–2 plants
+  Net pot:             3–4 in (75–100 mm)
+  Same depth, same flood ceiling. A courgette is one of those 1–2 plants,
+  not a reason to deepen the bed or add a 5th flood.
+
+  TABLE 3 — lettuce, herbs, pak choi, or a later fruiting crop
+  Net pot:             2 in (50 mm) for leafy crops; 3 in (75 mm) if you
+                       later put a fruiting crop here
+  Floods:              3× per day while the crop is vegetative
 ```
 
-### How Depth Affects Flood Frequency
+### How This Depth Fills
 
-Deeper media holds more moisture between floods — but it also takes longer to fully saturate from below.
+The pump is 250 US gph (950 L/h), about 35 W. Pore space in LECA is about 40%, so each table holds roughly 10 US gal (38 L) of water at full flood.
 
-| Media depth | Volume to fill (pore space ~40%) | Time to fill at 700 L/h effective flow | Recommended flood duration |
-|-------------|----------------------------------|----------------------------------------|---------------------------|
-| 100mm | ~29L per table | ~2.5 min + buffer | 15 min |
-| 120mm | ~35L per table | ~3.0 min + buffer | 15–20 min |
-| 150mm | ~43L per table | ~3.7 min + buffer | 20 min |
+| Item | Value |
+|------|-------|
+| Bulk LECA | 25 US gal (95 L) per table |
+| Water in the pore space | about 10 US gal (38 L) |
+| Time to move that water at 250 US gph | about 2–3 minutes, plus wetting lag |
+| Flood duration | 15–30 minutes |
 
-> **Rule of thumb:** For every extra 50mm of media depth, add 5 minutes to your flood duration to ensure the full media column is wetted before the pump stops. Deeper media also retains moisture longer — you may be able to reduce flood frequency by one cycle per day when moving from 10cm to 15cm depth.
+> **Do not vary the depth to change the flood count.** Vegetative crops get 3 floods a day. Fruiting crops get 4. In a heatwave at 90–100°F (32–38°C), keep 4 floods, shorten them if needed, and use 40% shade. A deeper bed is a different system. This one is 5 in (13 cm).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -312,7 +305,7 @@ Coco coir is the primary media for Zone C grow bags and the germination substrat
 Coco coir cubes (similar to rockwool cubes but organic) work well for germinating seeds before transplanting into LECA flood tables. They are biodegradable and pH-friendly.
 
 **2. Top-dressing layer to reduce evaporation:**
-A thin layer of coco (1–2cm) spread on top of the LECA surface between net pots reduces evaporation from the media surface in hot weather. This reduces the frequency of irrigating outside flood cycles and helps prevent LECA from overheating on the surface.
+A thin layer, well under ¾ in (2 cm), spread on the LECA between net pots can slow surface evaporation in hot weather. It is not the Zone B depth, and it is not a reason to flood less often than the 3× / 4× schedule. Zone B coco is a separate thing: 1–1¼ in (2.5–3 cm) in trays, with plain pH 5.8–6.2 water.
 
 **3. Net pot fill medium alongside LECA:**
 Some growers fill the upper portion of net pots with a coco/LECA mix — the coco retains moisture higher in the pot and is beneficial for seedlings that haven't yet developed a root system reaching the media bed.
@@ -350,11 +343,11 @@ Coco coir should **not** be used to fill the main flood table volume in an activ
 
 If you are using any coco in your flood table media mix (e.g., coco chips blended with LECA), **reduce flood frequency**:
 
-| Media composition | Standard flood frequency | With coco component |
-|------------------|-------------------------|---------------------|
-| 100% LECA | 3–4× per day | — |
-| 80% LECA / 20% coco chips | 3× per day | 2–3× per day |
-| 100% coco chips | Not recommended for active E&F | 2× per day if used |
+| Media composition | Flood frequency in this build |
+|------------------|-------------------------------|
+| 100% LECA (the design) | 3× per day vegetative, 4× per day fruiting. 4× is the ceiling |
+| 80% LECA / 20% coarse coco chips | Not the design. If you experiment, stay at 3×. Do not add a 5th flood |
+| 100% coco, fine or chip | Do not use it as the flood-table fill |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -385,16 +378,16 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
 ```
   ROCKWOOL CONDITIONING PROCEDURE:
 
-  1. Mix a bucket of water adjusted to pH 5.5 (use pH Down)
+  1. Mix a bucket of water adjusted to pH 5.8 (use pH Down). Same target as the LECA pre-soak.
   2. Submerge rockwool cubes fully — soak for 1–2 hours
   3. Check water pH after soaking:
-     - If pH has risen above 6.0 → drain, refill with fresh pH 5.5 water,
+     - If pH has risen above 6.2 → drain, refill with fresh pH 5.8 water,
        soak another hour
      - If pH remains below 6.0 → cubes are ready
   4. Remove cubes, gently squeeze to ~70% saturation (not dripping)
   5. Cubes are now ready for seeding
 
-  After conditioning, cubes will hold pH 5.5–6.5 in use.
+  After conditioning, aim to keep the cubes in the working window, pH 5.8–6.2. The acceptable band is 5.5–6.5.
   Check your reservoir pH on first use — a rise indicates cubes need more soaking.
 ```
 
@@ -407,9 +400,9 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
   ─ Use conditioned 25mm or 36mm rockwool cubes
   ─ Place 1–2 seeds per cube (1 for large seeds, 2 for small — thin later)
   ─ Depth: large seeds 5mm deep, small seeds 2–3mm, surface seeds = surface
-  ─ Place cubes in a tray with 1cm of pH 5.5 water (EC 0.4 mS/cm)
+  ─ Place cubes in a tray with about ⅜ in (1 cm) of pH 5.8 water (EC 0.4 mS/cm)
   ─ Cover tray with plastic wrap or humidity dome
-  ─ Temperature: 20–25°C for most crops (see Guide 06 for per-crop temps)
+  ─ Temperature: 68–77°F (20–25°C) for most crops (see Guide 06 for per-crop temps)
 
   Days 2–5:
   ─ Check daily — cubes should feel moist but not waterlogged
@@ -472,7 +465,7 @@ Vermiculite is a naturally occurring mineral that expands when heated. Unlike pe
 | Aeration | Moderate (less than perlite) |
 | Nutrient holding | Some — modest CEC |
 | pH | Slightly alkaline (7.0–7.5) |
-| Cost | ~$1.50–$2.50 per litre |
+| Cost | About $6–$9 per US gal (R108–R162) |
 
 **In E&F flood tables:** Do not use vermiculite in flood tables. Its high moisture retention creates the same problem as coco — the media never fully dries between floods, leading to chronic oxygen deficit and Pythium risk. Additionally, fine vermiculite particles wash through LECA pore spaces and clog drain fittings.
 
@@ -525,7 +518,7 @@ Useful only for testing seed viability before committing to a batch. Place seeds
 
 ### Rockwool Starter Cubes
 
-The most reliable method for E&F. Condition to pH 5.5, sow 1–2 seeds per cube, cover with humidity dome, keep at 20–25°C. Transplant when roots emerge from cube base and seedling has 2–3 true leaves. Drop the whole cube into the net pot — no root disturbance.
+The most reliable method for E&F. Condition to pH 5.8, sow 1–2 seeds per cube, cover with a humidity dome, keep at 68–77°F (20–25°C). Transplant when roots emerge from the cube base and the seedling has 2–3 true leaves. Drop the whole cube into the net pot.
 
 ### Rapid Rooter Plugs
 
@@ -539,18 +532,17 @@ For robust, fast-germinating crops (herbs, kale, mint), seeds can be germinated 
   DIRECT LECA GERMINATION PROCEDURE:
 
   1. Prepare LECA (rinse, pre-soak, pH adjust) — see Section 3
-  2. Fill 50mm net pot to within 5mm of rim with prepared LECA
+  2. Fill a 2 in (50 mm) net pot to within ¼ in (5 mm) of the rim with prepared LECA
   3. Create a small depression in the top of the media
   4. Place 2–3 seeds in the depression
-  5. Cover with 5mm of LECA
+  5. Cover with ¼ in (5 mm) of LECA
   6. Lightly mist with pH-adjusted water (pH 5.8–6.2, EC 0.4)
-  7. Place net pots in a tray with 5mm of water
-  8. Cover with humidity dome
+  7. Place net pots in a tray with ¼ in (5 mm) of water
+  8. Cover with a humidity dome
   9. Do NOT use flood cycles until germination is visible — fine seeds
-     can be displaced by flood water before root anchor is established
-  10. Once seedlings are 3–4cm tall with visible roots through net pot
-      mesh, begin regular flood cycles at reduced frequency (2×/day)
-      and increase to full schedule after one week
+     can be displaced by flood water before a root anchor is established
+  10. Once seedlings are about 1¼–1½ in (3–4 cm) tall with roots through the
+      net pot mesh, start the vegetative schedule of 3 floods a day
 
   SUCCESS RATE: Lower than rockwool (60–70% vs 90%+ for rockwool)
   Use this method for cheap/plentiful seeds (herbs, kale) where
@@ -577,7 +569,7 @@ flowchart TD
     E["Fill remaining space around cube with LECA<br/>(do not compact — light fill only)"]
     F["Place net pot in flood table at correct spacing"]
     G["Mist with pH-adjusted nutrient solution<br/>(EC 0.6–1.0 for greens; EC 1.2–1.8 for fruiting)"]
-    H["First flood cycle — see Section 11b"]
+    H["First flood after transplant<br/>see the schedule below"]
 
     A --> B --> C --> D --> E --> F --> G --> H
 ```
@@ -601,33 +593,33 @@ The timing of the first flood after transplant is important. Seedlings need time
   ─ Keep media lightly moist by hand-watering to the base of net pots
 
   Day 1:
-  ─ Run ONE flood cycle at reduced duration (10 minutes)
-  ─ Flood level: keep 1–2cm BELOW the base of the net pots on this day
-    (roots should not be submerged until they have penetrated below net pot base)
-  ─ Monitor for wilting — normal; plants recover within 1–2 hours
+  ─ Run ONE flood cycle at a shorter duration (10 minutes)
+  ─ Keep the water about ½–¾ in (1–2 cm) below the base of the net pots
+    on this day only, so new roots are not held under water before they
+    have grown out of the cube
+  ─ The design flood, from day 2 on, is about ¾ in (2 cm) below the LECA surface
 
   Day 2–3:
-  ─ Increase to 2 flood cycles per day at standard duration (15 min)
-  ─ Flood level now at normal setting (~2cm below media surface)
+  ─ Move to 3 floods per day at the normal 15–30 minute duration
+  ─ Flood level now at the design setting, about ¾ in (2 cm) below the media surface
   ─ Plants should show signs of new growth — leaf expansion
 
   Day 4–7:
-  ─ Full flood schedule (3–4× per day depending on crop and conditions)
+  ─ Full schedule: 3× per day for a vegetative crop, up to 4× per day once a fruiting crop is established. Four is the ceiling
   ─ Plant is now fully established in the flood table
 ```
 
 ### Depth Requirements by Crop
 
-| Crop | Net pot size | Media depth below pot | Notes |
-|------|--------------|-----------------------|-------|
-| Lettuce | 50mm | 5–8cm below pot base | Shallow — roots spread laterally |
-| Herbs (basil, parsley) | 50mm | 5–10cm below pot base | Moderate root penetration |
-| Kale, spinach | 50mm | 8–12cm below pot base | Deeper root system than lettuce |
-| Peppers, aubergine | 75mm | 10–15cm below pot base | Substantial root ball needed |
-| Tomatoes | 75–100mm | 12–15cm below pot base | Extensive root system |
-| Cucumbers | 75–100mm | 12–15cm below pot base | Fast root extension |
-| Courgettes | 100mm | 12–15cm below pot base | Very vigorous — need maximum depth |
-| Strawberries | 75mm | 8–12cm below pot base | Lateral spreading roots |
+The bed is 5 in (13 cm) on every table. Roots use that depth. Do not specify a deeper bed for tomato or cucumber.
+
+| Crop | Where | Net pot | Notes |
+|------|-------|---------|-------|
+| Lettuce, herbs, pak choi | Table 3 | 2 in (50 mm) | Roots spread through the 5 in bed |
+| Kale, spinach | Table 3 | 2 in (50 mm); 3 in (75 mm) for a large kale | Same bed depth |
+| Tomato or cucumber | Table 1, 1 plant | 3–4 in (75–100 mm) | One plant. Same 5 in bed |
+| Pepper, aubergine, or courgette | Table 2, 1–2 plants | 3–4 in (75–100 mm) | Same 5 in bed |
+| Strawberries | Table 3, later fruiting crop | 3 in (75 mm) | Replaces the leafy crop for that run. Crown stays above the flood |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -691,7 +683,7 @@ After removing a crop — especially after a heavy fruiting crop like tomatoes o
   ─ Final rinse water should have no bleach odour
 
   Step 6 — pH re-conditioning soak:
-  ─ Soak in pH 5.5 water for 12–24 hours (bleach raises surface pH)
+  ─ Soak in pH 5.8 water for 12–24 hours (bleach raises surface pH)
   ─ Test soak water pH after soaking — should be 6.0–7.0
   ─ If still above 7.0: repeat pH soak
 
@@ -727,20 +719,22 @@ Before refilling flood tables with previously used LECA:
 
 | Zone | Location | Primary media | Secondary media | Notes |
 |------|----------|---------------|-----------------|-------|
-| Zone A — Table 1 | Leafy greens/herbs flood table | LECA (100mm depth) | Rockwool cubes (germination) | 50mm net pots; 3–4 floods/day |
-| Zone A — Table 2 | Fruiting crops flood table | LECA (150mm depth) | Rockwool or Rapid Rooter (germination) | 75–100mm net pots; 3–4 floods/day |
-| Zone B | Microgreens trays | Coco coir (2–3cm layer) | None | Manual misting; no flood fittings |
-| Zone C | Root veg grow bags | 60% coco + 30% perlite + 10% vermiculite | None | Manual fertigation; no flood fittings |
-| Propagation | Germination tray (all zones) | Rockwool 25–36mm cubes or Rapid Rooter plugs | — | pH 5.5 conditioning required for rockwool |
+| Zone A — Table 1 | One indeterminate tomato or one cucumber | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pot. 3× vegetative, 4× fruiting |
+| Zone A — Table 2 | Pepper, aubergine, or courgette, 1–2 plants | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pots. Same flood ceiling |
+| Zone A — Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool cubes | 2 in (50 mm) net pots for leafy crops. 3× per day |
+| Zone B | 6 trays, 10 in × 20 in (25 cm × 50 cm), two-tier shelf | Coco, 1–1¼ in (2.5–3 cm) | None | Plain water, pH 5.8–6.2. Optional EC 0.4–0.8 only for sunflower and pea |
+| Zone C | 2 × 5 US gal radish, 1 × 5 US gal beet, 3 × 10 US gal carrot | 60% coco + 30% perlite + 10% vermiculite | None | Fertigation EC ceiling 2.0 mS/cm. Beetroot does not go higher |
+| Propagation | Germination tray | Rockwool cubes or Rapid Rooter plugs | — | Condition rockwool at pH 5.8 |
 
 ---
 
-
-*Next: [`guide/ebb-and-flow/06-crops.md`](06-crops.md) — Per-crop growing guide for every plant in this system*
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 04 — Lighting](04-lighting.md)
+> **Next:** [Guide 06 — Crops](06-crops.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

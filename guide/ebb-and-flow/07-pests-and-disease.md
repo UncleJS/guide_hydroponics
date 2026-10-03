@@ -120,9 +120,9 @@ flowchart TD
 ```
   STICKY TRAP DEPLOYMENT — FLOOD TABLES:
 
-  Type: Yellow sticky traps (8cm × 12cm minimum)
-  Number: 2 per flood table (1 per 0.36 m²)
-  Height: 10–15cm above the plant canopy (not at media level)
+  Type: Yellow sticky traps, at least 3 in × 5 in (8 cm × 12 cm)
+  Number: 2 per flood table (1 per 4 sq ft / 0.37 m²)
+  Height: 4–6 in (10–15 cm) above the plant canopy (not at media level)
   Position: One at each end of the table — captures insects entering from either direction
 
   What to look for:
@@ -168,12 +168,12 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
   Adult female:
   ─ Attracted to moist media surface
-  ─ Lays 100–200 eggs in the top 2–3cm of LECA or at media surface
-  ─ Eggs hatch in 3–5 days at 20°C
+  ─ Lays 100–200 eggs in the top 1 in (2–3 cm) of LECA or at the media surface
+  ─ Eggs hatch in 3–5 days at 68°F (20°C)
 
   Larvae (the damaging stage):
-  ─ Transparent to white, 5–6mm long with black head capsule
-  ─ Live in the top 5–7cm of media
+  ─ Transparent to white, about ¼ in (5–6 mm) long with a black head capsule
+  ─ Live in the top 2–3 in (5–7 cm) of media
   ─ Feed on: root tips, root hairs, decaying organic material, algae in media
   ─ Root tip damage = nutrient and water uptake impairment
   ─ On seedlings: larvae girdle (encircle and cut) stem at soil level = death
@@ -182,13 +182,13 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
   Pupa:
   ─ 4–5 days in media
 
-  Total life cycle: 17–28 days at 20–25°C
+  Total life cycle: 17–28 days at 68–77°F (20–25°C)
   → Multiple overlapping generations possible during growing season
 ```
 
 **Why E&F has higher fungus gnat risk than NFT:**
 
-- LECA surface in a flood table is 0.72 m² of moist, periodically flooded media — ideal egg-laying habitat
+- Each flood table is 4 ft × 2 ft (1.22 m × 0.61 m), about 8 sq ft (0.74 m²) of moist, periodically flooded LECA — ideal egg-laying habitat
 - Any algae growing on the LECA surface provides organic food for larvae
 - Flood cycles keep the upper media perpetually damp between floods — no dry period to kill eggs and young larvae
 - Table height is close to ground — fungus gnats from surrounding soil fly directly onto table
@@ -213,14 +213,14 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
     Reapply every 7–10 days for 3–4 weeks to break the cycle
   ─ Beneficial nematodes (Steinernema feltiae):
     Apply as media drench — nematodes parasitise larvae in the media
-    Effective at media temperatures above 14°C
+    Effective at media temperatures above 57°F (14°C)
     Single application can suppress population for 4–6 weeks
 
   LEVEL 3 — PHYSICAL/CHEMICAL CONTROL:
   ─ Sticky yellow cards at media level (in addition to canopy-level cards)
     catches adults before they lay eggs
   ─ Neem oil drench (azadirachtin):
-    Mix 5ml neem oil + 1ml dish soap per litre of pH-adjusted water
+    Mix 1 tsp (5 ml) neem oil + ¼ tsp (1 ml) dish soap per 1 US qt (0.95 L) of pH-adjusted water
     Apply as media drench; azadirachtin disrupts larval development
     Repeat weekly for 3–4 weeks
   ─ Pyrethrin spray (contact insecticide for adults):
@@ -310,7 +310,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
 
 **Identification:** Tiny (0.4–0.5mm) arachnids — not insects. Appear as fine speckling on upper leaf surface (chlorophyll removed at feeding sites). Webbing between leaves in severe infestations. Found on undersides of leaves.
 
-**E&F context:** Spider mites thrive in hot, dry conditions. The slightly higher humidity around E&F flood tables (due to periodic flooding) provides some natural suppression. Most risk during hot dry periods in July/August, particularly on tomatoes, cucumbers, and aubergines.
+**E&F context:** Spider mites thrive in hot, dry conditions. The slightly higher humidity around E&F flood tables (due to periodic flooding) provides some natural suppression. Most risk during hot dry periods in July–August (SA: January–February), particularly on the Table 1 tomato or cucumber and on Table 2 aubergine.
 
 **Control:**
 
@@ -328,8 +328,8 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
   ─ Predatory mite Phytoseiulus persimilis:
     Commercially available; released onto infested plants
     Consumes spider mites rapidly in warm conditions
-    Effective between 20–30°C
-  ─ Neoseiulus californicus: works at slightly lower temperatures (15–28°C)
+    Effective between 68–86°F (20–30°C)
+  ─ Neoseiulus californicus: works at slightly lower temperatures, 59–82°F (15–28°C)
 
   CHEMICAL:
   ─ Neem oil spray (2%) on leaf undersides — highly effective
@@ -386,7 +386,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
   BAIT:
   ─ Ferrous phosphate slug pellets (Sluggo, Ferroform):
     Safe for use around food crops, pets, and wildlife
-    Avoid metaldehyde pellets — toxic to birds, hedgehogs, and pets
+    Avoid metaldehyde pellets — toxic to birds, pets, and wildlife. Keep pellets in the latched chemical box.
   ─ Beer traps: shallow containers sunk near the tables; slugs attracted
     to fermentation smell, fall in and drown
 ```
@@ -443,19 +443,23 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
      ─ Standing water in lower media layer = permanent anaerobic zone
 
   3. HIGH SOLUTION TEMPERATURE:
-     ─ Reservoir temperature above 24°C
+     ─ Solution temperature above 77°F (25°C). That is the action line.
      ─ Warm water holds less dissolved oxygen
-     ─ Pythium zoospores are more active and motile at higher temperatures
+     ─ Pythium zoospores are more active above that line
+     ─ Target band is 64–72°F (18–22°C)
 
   4. OVER-CROWDED PLANTS:
      ─ Dense canopy + high temperature + humidity = foliar Pythium entry
      ─ Any wound on stem at media surface is a Pythium entry point
 
-  DRAIN CONFIRMATION CHECK — do this weekly:
-  ─ After a flood cycle, observe the drain fittings
-  ─ Flow should be STRONG for first 3–5 minutes, then trickle to nothing
+  DRAIN CONFIRMATION CHECK — do this weekly, and automate it:
+  ─ After a flood cycle, observe the 1 in (25 mm) drain on each table
+  ─ Flow should be STRONG for the first 3–5 minutes, then trickle to nothing
   ─ Table should be visually dry (no standing water visible) within 10 minutes
-  ─ If drain takes >15 minutes: blockage risk — clean drain fitting immediately
+  ─ If the drain takes more than 15 minutes: blockage risk — clean the drain fitting immediately
+  ─ Guide 13 is the prevention for an over-flood: if the drain float is still up
+    after the pump should be off, open the pump relay. That stuck-ON cutoff
+    is what stops a failed timer from holding roots under water.
 ```
 
 **Symptoms:**
@@ -470,9 +474,10 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
   IMMEDIATE RESPONSE:
   1. Remove affected plant from table immediately — do not leave it in place
   2. Identify and fix the cause (flood duration, drain blockage, temp)
-  3. Treat remaining plants in table with:
-     ─ Hydrogen peroxide drench (3% solution):
-       Run a flood cycle with 3% H2O2 added to the flood water
+  3. Treat remaining plants in the table with:
+     ─ A 3% hydrogen-peroxide flush is a cleaning step. Remove the plants,
+       or hand-water them on a tray, before the flush. Do not run that dose
+       through a live root zone.
        Kills Pythium zoospores in the water column
        Wait 24 hours before returning to normal nutrient solution
      ─ Or: Trichoderma-based biocontrol product (RootShield, Plant Doctor)
@@ -483,10 +488,13 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 2–3mm lon
      full table sterilisation (Section 7)
 
   PREVENTION MEASURES:
-  ─ Monitor reservoir temperature — keep below 22°C
-  ─ Confirm drain completion after every flood cycle (especially in summer)
-  ─ Never increase flood frequency without confirming complete drainage first
-  ─ Add beneficial bacteria (Bacillus subtilis products) to reservoir monthly
+  ─ Hold solution temperature at 64–72°F (18–22°C). Act when it rises above 77°F (25°C)
+  ─ Fruiting floods stay at 4 times a day. That is the ceiling. Heat does not add a fifth flood
+    and does not drop the schedule to 2. Shorten the floods and use 40% shade instead.
+  ─ Confirm drain completion after every flood cycle (especially in summer).
+    The Guide 13 drain float opens the pump relay if the table is still flooded
+    after the pump should be off.
+  ─ Add beneficial bacteria (Bacillus subtilis products) to the reservoir monthly
     as a preventive — they compete with Pythium in the water
 ```
 
@@ -554,7 +562,7 @@ Courgettes and cucumbers grown in E&F flood tables are particularly susceptible:
   ─ Avoid overhead irrigation (use flood table, not sprinklers)
 
   EARLY TREATMENT (white patches on <10% of leaf area):
-  ─ Baking soda spray: 1 tsp baking soda + 1 tsp mild soap per litre water
+  ─ Baking soda spray: 1 tsp baking soda + 1 tsp mild soap per 1 US qt (0.95 L) water
     Spray upper and lower leaf surfaces; repeat weekly
   ─ Potassium bicarbonate spray: more effective than baking soda;
     commercially available as Armicarb, Kaligreen
@@ -563,7 +571,7 @@ Courgettes and cucumbers grown in E&F flood tables are particularly susceptible:
   ESTABLISHED INFECTION (>10% leaf area):
   ─ Remove and bag severely infected leaves (do not compost)
   ─ Apply sulfur-based fungicide: Kumulus, Thiovit
-    Note: do NOT apply sulfur when temperatures exceed 30°C — phytotoxic
+    Note: do not apply sulfur when temperatures exceed 86°F (30°C) — phytotoxic
   ─ Bicarbonate sprays continue in rotation with sulfur
 
   RESISTANT VARIETIES:
@@ -643,8 +651,8 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
 ```
   MINOR ALGAE (green film on LECA surface):
   ─ Cover immediately with black weed fabric (light exclusion kills it within 2 weeks)
-  ─ Run an H2O2 flood cycle (3% hydrogen peroxide in flood water)
-    Kills algae on contact; safe for plants when diluted correctly
+  ─ A 3% hydrogen-peroxide flood kills algae on contact. Lift the plants out,
+    or hand-water them on a tray, before that flush. Do not run 3% through a live root zone.
 
   SIGNIFICANT ALGAE (thick mat, blue-green present):
   ─ Remove and clean affected LECA sections manually
@@ -667,8 +675,8 @@ Algae growth on the moist, exposed LECA surface is not a disease in the traditio
   ─ Use sterile propagation media (rockwool, Rapid Rooter — not reused coco)
   ─ Do not over-water germination trays — cubes should be moist, not wet
   ─ Ensure adequate airflow around seedlings once humidity dome is removed
-  ─ Do not start flood cycles too early — wait until seedlings are 3–4cm
-    with visible root emergence before placing in flood table
+  ─ Do not start flood cycles too early — wait until seedlings are 1½ in (3–4 cm)
+    with visible root emergence before placing them in the flood table
   ─ Use dilute nutrient solution during germination (EC 0.4–0.6) —
     high EC stresses young seedlings and increases susceptibility
 ```
@@ -701,12 +709,14 @@ In a continuously-harvested system (lettuce, herbs, cut-and-come-again crops, ch
 | Spinosad | Spinosyn A+D | Thrips, caterpillars | 1–3 days | Check label by crop |
 | Hydrogen peroxide (3%) | H2O2 | Pythium, algae, root rot | 0 days | Breaks down to water + oxygen |
 | Copper hydroxide | Copper | Downy mildew, Pythium, Botrytis | 0–7 days | Check label; some formulations have 7-day PHI |
-| Sulfur | Sulfur | Powdery mildew | 1–7 days | Check label; do not apply above 30°C |
+| Sulfur | Sulfur | Powdery mildew | 1–7 days | Check label; do not apply above 86°F (30°C) |
 | Potassium bicarbonate | Potassium bicarbonate | Powdery mildew | 0 days | OMRI-listed; safest fungicide option |
-| Imidacloprid | Neonicotinoid | Aphids, whitefly | 7–21 days | **Last resort only** — harmful to bees; significant PHI |
-| Spirotetramat | Ketoenol | Whitefly, aphids | 3–7 days | Systemic; check label for edible crops |
+| Imidacloprid | Neonicotinoid | Aphids, whitefly | 7–21 days | **Last resort on an edible crop.** Harmful to pollinators. Do not spray open flowers. Long PHI. |
+| Spirotetramat | Ketoenol | Whitefly, aphids | 3–7 days | Systemic last resort. Check the edible-crop label and the PHI. |
 
 > **Always read the label.** PHI can vary by crop and formulation. When in doubt, use the longer PHI or choose a product with a shorter interval.
+
+Last-resort pesticides are for a crop that would otherwise be lost. On food plants, wait out the full pre-harvest interval before you pick. Neonicotinoids and other systemic products harm pollinators, so keep them off open flowers and off plants that bees are working. Nutrient concentrates, acids, and every pesticide in this guide stay in a latched box, away from children and pets.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -724,7 +734,7 @@ The most effective thing you can do is create habitat for beneficial insects nea
 ```
   HABITAT PLANTINGS THAT ATTRACT BENEFICIALS:
 
-  Within 2 metres of your flood tables if possible:
+  Within 6 ft (1.8 m) of your flood tables if possible:
 
   Marigolds (Tagetes spp.):
   ─ Attract hoverflies (aphid predators) and parasitic wasps
@@ -756,12 +766,12 @@ When natural populations are insufficient or an infestation is established, comm
 
 | Beneficial | Target pest | Conditions | Application |
 |------------|-------------|-----------|-------------|
-| *Phytoseiulus persimilis* | Spider mites | 20–30°C, >60% humidity | Sachets hung on plants |
-| *Neoseiulus californicus* | Spider mites | 15–28°C | Sachets or loose on foliage |
-| *Encarsia formosa* | Whitefly | 18–25°C, good light | Hanging cards near plants |
-| *Aphidius colemani* | Aphids | 15–25°C | Sachets on plants; release early |
-| *Steinernema feltiae* | Fungus gnats | >12°C soil temp | Media drench — billions per pack |
-| *Amblyseius cucumeris* | Thrips, spider mites | 15–28°C | Sachets on plants |
+| *Phytoseiulus persimilis* | Spider mites | 68–86°F (20–30°C), >60% humidity | Sachets hung on plants |
+| *Neoseiulus californicus* | Spider mites | 59–82°F (15–28°C) | Sachets or loose on foliage |
+| *Encarsia formosa* | Whitefly | 64–77°F (18–25°C), good light | Hanging cards near plants |
+| *Aphidius colemani* | Aphids | 59–77°F (15–25°C) | Sachets on plants; release early |
+| *Steinernema feltiae* | Fungus gnats | Above 54°F (12°C) media temp | Media drench — billions per pack |
+| *Amblyseius cucumeris* | Thrips, spider mites | 59–82°F (15–28°C) | Sachets on plants |
 | Lacewing eggs/larvae | Aphids, whitefly | Outdoor temps | Bottle or sachet release |
 
 > **Timing:** Release beneficial insects **early** — before pest populations are high. Beneficials are most effective when there is just enough prey to sustain them. Releasing predatory mites into a severe spider mite outbreak does not produce instant results — the predator population takes 2–3 weeks to build.
@@ -849,15 +859,18 @@ Scrub the inside of all fittings with a long bottle brush. Consider replacing pl
 
   5. Monitor closely for the first 2 weeks:
      ─ Daily root inspection (lift net pots and check)
-     ─ Confirm drain completion after each flood cycle
-     ─ Reduce flood frequency initially (2× per day for first week)
-       to reduce any remaining anaerobic risk
+     ─ Confirm drain completion after each flood cycle.
+       If you have the Guide 13 drain float, confirm it opens the pump relay
+       when the float is still up after the pump should be off.
+     ─ Keep the vegetative schedule of 3 floods a day and shorten each flood
+       for the first week. Do not add a fifth flood.
 ```
 
 ---
 
 
-*Next: [`guide/ebb-and-flow/08-system-maintenance.md`](08-system-maintenance.md) — Routine maintenance, cleaning schedules, and seasonal tasks*
+> **Previous:** [Guide 06 — Crops](./06-crops.md)
+> **Next:** [Guide 08 — System Maintenance](./08-system-maintenance.md)
 
 [↑ Back to TOC](#table-of-contents)
 

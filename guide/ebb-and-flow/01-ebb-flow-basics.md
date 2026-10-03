@@ -96,30 +96,33 @@ Every Ebb & Flow system — from a single tray on a balcony to a multi-table com
 
 ```mermaid
 flowchart TD
-    RES["RESERVOIR<br/>(150–200L food-grade, under the tables)"]
-    PUMP["SUBMERSIBLE PUMP<br/>(800–1200 L/h, timer-controlled)"]
-    TIMER["TIMER<br/>(controls flood frequency)"]
-    FILL["FILL TUBE<br/>(carries solution UP to table — also acts as overflow drain)"]
-    OVF["OVERFLOW FITTING<br/>(sets maximum flood height — critical safety device)"]
-    T1["FLOOD TABLE 1<br/>(1.2m × 0.6m, net pots in clay pebbles)"]
-    T2["FLOOD TABLE 2<br/>(1.2m × 0.6m, net pots in clay pebbles)"]
-    T3["FLOOD TABLE 3<br/>(1.2m × 0.6m, net pots in clay pebbles)"]
-    DR1["DRAIN — gravity return<br/>(when pump off, table drains back to reservoir)"]
-    DR2["DRAIN — gravity return"]
-    DR3["DRAIN — gravity return"]
+    RES["RESERVOIR<br/>45 US gal, under the tables"]
+    PUMP["SUBMERSIBLE PUMP<br/>250 US gph, timer-controlled"]
+    TIMER["DIGITAL TIMER<br/>1-minute resolution, weatherproof"]
+    T1["TABLE 1<br/>4 ft x 2 ft<br/>1 tomato or cucumber"]
+    T2["TABLE 2<br/>4 ft x 2 ft<br/>1-2 pepper, aubergine, or courgette"]
+    T3["TABLE 3<br/>4 ft x 2 ft<br/>leafy, or a later fruiting crop"]
+    OF1["TABLE 1 OVERFLOW<br/>1.5 in standpipe"]
+    OF2["TABLE 2 OVERFLOW<br/>1.5 in standpipe"]
+    OF3["TABLE 3 OVERFLOW<br/>1.5 in standpipe"]
+    DR1["TABLE 1 DRAIN<br/>1 in, gravity return"]
+    DR2["TABLE 2 DRAIN<br/>1 in, gravity return"]
+    DR3["TABLE 3 DRAIN<br/>1 in, gravity return"]
 
     TIMER --> PUMP
     RES --> PUMP
-    PUMP --> FILL
-    FILL --> T1
-    FILL --> T2
-    FILL --> T3
-    T1 --> OVF
-    T2 --> OVF
-    T3 --> OVF
-    OVF --> DR1
-    OVF --> DR2
-    OVF --> DR3
+    PUMP --> T1
+    PUMP --> T2
+    PUMP --> T3
+    T1 --> OF1
+    T2 --> OF2
+    T3 --> OF3
+    T1 --> DR1
+    T2 --> DR2
+    T3 --> DR3
+    OF1 --> RES
+    OF2 --> RES
+    OF3 --> RES
     DR1 --> RES
     DR2 --> RES
     DR3 --> RES
@@ -129,15 +132,15 @@ flowchart TD
 
 | Component | Function | Notes |
 |-----------|----------|-------|
-| **Reservoir** | Holds nutrient solution | 150–200L food-grade, shaded, under flood tables |
-| **Submersible pump** | Pumps solution up to flood tables during flood cycle | 800–1200 L/h; must be timer-controlled |
-| **Timer** | Controls flood cycle frequency and duration | Digital preferred; 15-min increments minimum |
-| **Fill tube (inlet fitting)** | Carries solution from pump to table bottom | 19–25mm barbed fitting through table base |
-| **Overflow fitting** | Sets maximum flood depth; allows return to reservoir during flood | Standpipe height = maximum flood level |
-| **Flood tables** | Shallow watertight trays where plants grow | Food-safe plastic or timber-lined pond liner |
-| **Growing media** | Clay pebbles (LECA) primary; holds plants, buffers moisture | 100–150mm depth typical |
-| **Net pots** | Hold individual plants in media | 50mm (greens/herbs), 75–100mm (fruiting) |
-| **Drain lines** | Return drained solution from table to reservoir | Gravity-fed; no pump needed for drain |
+| **Reservoir** | Holds nutrient solution | 45 US gal (170 L) recommended, range 40–50 US gal (151–189 L). Food-grade, shaded, under the tables |
+| **Submersible pump** | Pumps solution up to the flood tables | 250 US gph (950 L/h) recommended, range 200–300 US gph (760–1,140 L/h), about 35 W. Timer-controlled |
+| **Timer** | Controls flood frequency and duration | Digital, 1-minute resolution, in a weatherproof box. Not a mechanical timer |
+| **Fill tube (inlet fitting)** | Carries solution from the pump to the table | ¾–1 in (19–25 mm) barbed fitting through the table base. This is not the overflow |
+| **Overflow fitting** | Sets maximum flood depth; returns excess while the pump runs | 1½ in (40 mm) bulkhead and standpipe, one per table |
+| **Flood tables** | Shallow watertight trays where plants grow | 3 tables, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level. Food-safe plastic or a timber frame with pond liner |
+| **Growing media** | LECA holds plants and buffers moisture | 5 in (13 cm) deep. 25 US gal (95 L) per table |
+| **Net pots** | Hold individual plants in the media | 2 in (50 mm) for greens and herbs; 3–4 in (75–100 mm) for fruiting crops |
+| **Drain** | Returns solution when the pump is off | 1 in (25 mm) bulkhead, one per table. Gravity. No drain pump |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -161,7 +164,8 @@ The overflow fitting is a standpipe — a vertical tube inserted through the bas
     │                                     │
     │   CLAY PEBBLES / MEDIA (surface)    │
     │  ← flood level (set by overflow)    │  ← top of overflow standpipe
-    │     ~2cm BELOW media surface        │     (capillarity wets the top layer)
+    │     about 3/4 in (2 cm) BELOW       │     (capillarity wets the top layer)
+    │     the media surface               │
     │         roots in media              │
     │                                     │
     │  ← ← bottom of table ← ← ← ←      │
@@ -193,11 +197,11 @@ Most Ebb & Flow tables use **two fittings through the table base**, not one:
 | **Fill/inlet fitting** | Solution pumped IN from below | Gravity drain path when pump off |
 | **Overflow fitting** | Sets max flood height; overflow returns to reservoir | Also drains — but primarily sets level |
 
-The overflow standpipe height is adjustable — by using a taller or shorter standpipe, you change your flood level. For this system:
-- **All crops:** flood to ~2cm below the clay pebble surface (standpipe height = media depth −2cm). Capillary action wets the top layer.
-- **Never flood above the media surface:** floating pebbles, surface algae, and oxygen starvation result — and the water volume required would exceed the reservoir capacity.
+The overflow standpipe height is adjustable — a taller or shorter standpipe changes the flood level. For this system:
+- **All crops, all three tables:** flood to about ¾ in (2 cm) below the LECA surface. On the 5 in (13 cm) bed the standpipe stands about 4¼ in (11 cm) above the table floor. Capillary action wets the top layer.
+- **Never flood above the media surface:** floating pebbles, surface algae, and oxygen starvation follow, and the water volume can run the reservoir down.
 
-> **Critical rule:** The overflow fitting must always be lower than the table rim by at least 3–5cm. If the overflow fails or gets blocked, the table must not overflow onto the floor — a blocked overflow with a pump running will simply fill to the rim and overflow. Keep the overflow fitting clear of roots and debris.
+> **Critical rule:** The design flood is the level about ¾ in (2 cm) below the media surface. It is not a 3–5 cm deep flood. Keep the top of each standpipe at least 1¼–2 in (3–5 cm) below the table rim so a blocked overflow still has freeboard before water spills on the floor. Keep each overflow clear of roots and debris. Each table has its own 1½ in (40 mm) overflow and its own 1 in (25 mm) drain.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -214,21 +218,24 @@ Flood frequency (how often per day you flood) and flood duration (how long each 
   FLOOD SCHEDULE DETERMINANTS:
 
   1. GROWING MEDIA
-     Clay pebbles (LECA):  Drains fast, dries fast → needs more frequent flooding
-                           Typical: 3–4× per day in warm weather
-     Coco coir:            Retains water well → needs less frequent flooding
-                           Typical: 2–3× per day
-     Mixed (coco + clay):  Intermediate → start at 3× per day
+     LECA (this build):    Drains fast. Design schedule below.
+                           Vegetative: 3× per day
+                           Fruiting:   4× per day. This is the ceiling
+     Coco coir:            Holds water. Not the flood-table fill in this build
+                           (Zone B and Zone C only)
+     Mixed coco + LECA:    If you ever blend coarse chips into a table, stay at
+                           3× per day. Do not add floods to "make up" for coco
 
   2. PLANT STAGE / SIZE
-     Seedling (small root zone): 2× per day (media stays moist longer)
-     Established vegetative:     3× per day
-     Large fruiting crop:        4× per day (high transpiration rate)
+     Seedling and vegetative:  3× per day
+     Fruiting:                 4× per day (high transpiration). That is the last step
 
   3. TEMPERATURE / EVAPOTRANSPIRATION
-     Cool day (<20°C):     2× per day (slower drying)
-     Warm day (20–28°C):   3× per day
-     Hot day (>28°C):      4× per day (rapid transpiration)
+     Cool day, below 68°F (20°C):     keep 3×; shorten duration if the media stays saturated
+     Warm day, 68–82°F (20–28°C):     3× vegetative, 4× fruiting
+     Heatwave, 90–100°F (32–38°C):    keep 4 floods, shorten them if needed,
+                                      and deploy 40% shade. Do not drop 4 to 2.
+                                      Do not add a 5th flood
 ```
 
 ### Calculating Your Schedule
@@ -238,36 +245,35 @@ A flood cycle must be long enough to fully wet the media column from bottom to t
 ```
   FLOOD DURATION CALCULATION:
 
-  Table dimensions: 1.2m × 0.6m = 0.72 m² surface area
-  Media depth: 100mm = 0.1m
-  Media volume: 0.72 × 0.1 = 0.072 m³ = 72L
-  Porosity of clay pebbles: ~40% air space
-  Volume to fill pore space: 72L × 0.4 = ~29L
+  Table: 4 ft × 2 ft (1.22 m × 0.61 m), about 8 ft² (0.74 m²)
+  Media depth: 5 in (13 cm)
+  Bulk LECA: 25 US gal (95 L) per table
+  Pore space between pebbles: about 40%
+  Water to fill that pore space: about 10 US gal (38 L) per table
+  Flood stops 3/4 in (2 cm) below the surface, so the real volume is a little less
 
-  Pump output at head pressure (approx 0.5m lift): ~700 L/h = 11.7 L/min
+  Pump: 250 US gph (950 L/h) at modest head, about 4 US gal/min (15 L/min)
+  Time to fill one table's pore space: about 2–3 minutes
+  Three tables together: about 30 US gal (114 L) out of the 45 US gal (170 L) reservoir
 
-  Time to fill pore space: 29L ÷ 11.7 L/min ≈ 2.5 minutes
+  Add a multiplier of about 3–4 for distribution and wetting lag.
 
-  Add buffer for distribution and wetting lag: ×3–4 multiplier
-
-  Minimum flood duration: ~8–10 minutes
-  Recommended flood duration: 15–20 minutes (safe margin + complete wetting)
-  Maximum useful duration: 30 minutes (diminishing returns after full saturation)
-
-  Note: Most timers have 15-minute minimum increments — 15 minutes is the
-  standard practical flood duration for this system.
+  Useful flood duration: 15–30 minutes
+  The digital timer resolves to 1 minute, so 15 minutes is a choice, not a
+  timer limit. Shorten toward 15 minutes in a heatwave if roots stay wet
+  too long. Do not lengthen past 30 minutes hoping to replace a missed flood.
 ```
 
 ### Media-Specific Guidelines
 
 | Media | Flood Duration | Flood Frequency | Notes |
 |-------|---------------|----------------|-------|
-| Clay pebbles (LECA) only | 15–20 min | 3–4× per day | Fast drain; needs more floods |
-| Coco coir only | 15 min | 2–3× per day | Retains moisture; risk of overwatering |
-| 70% clay / 30% coco | 15–20 min | 3× per day | Good compromise |
-| Rockwool slabs | 10–15 min | 3–5× per day | Commercial use; very fast drain |
+| LECA only (this build) | 15–30 min | 3× vegetative, 4× fruiting | 4× is the ceiling |
+| Coco coir only | — | Not used as flood-table fill | Holds water; Zone B and Zone C only |
+| 80% LECA / 20% coarse coco chips | 15–20 min | 3× per day | Do not push this mix to 4× |
+| Rockwool slabs | 10–15 min | 3–4× per day | Commercial reference only. Not a 5th flood |
 
-**First-season rule:** Start at 3× per day for 15 minutes. Observe media moisture 1 hour after a flood — if it feels completely dry (bone dry), increase frequency. If still saturated (no air space), decrease frequency. Adjust in increments of one flood per day.
+**First-season rule:** Start at 3 floods per day for 15–20 minutes. One hour after a flood, the LECA should be moist inside the pebbles, not bone dry and not still full of free water. Fruiting crops may move to 4 floods per day. That is the last step. If a heatwave at 90–100°F (32–38°C) still stresses plants at 4 floods, shorten the duration and put on 40% shade.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -317,7 +323,7 @@ The risk arises when:
 - **Flood duration is too long** (>45–60 min): Dissolved O₂ depleted, root suffocation begins
 - **Media is compacted or clogged**: Poor drainage → standing water → anaerobic zone
 - **Flood frequency is too high with slow-draining media**: Media never fully dries, O₂ debt accumulates
-- **Reservoir temperature is high** (>24°C): Less dissolved O₂ in flood solution
+- **Reservoir temperature is high**, above 77°F (25°C): less dissolved oxygen in the flood solution. The aim is 64–72°F (18–22°C)
 
 **Signs of chronic oxygen deficiency:**
 - Roots turning brown (not the slimy Pythium brown — a dry, caramelised brown)
@@ -363,27 +369,27 @@ The risk arises when:
 Ebb & Flow's primary advantage over NFT is its suitability for **fruiting and structurally heavy crops**:
 
 **Tomatoes, peppers, cucumbers, courgettes:**
-- These plants develop root balls 20–40cm in diameter at maturity
-- They need structural support in the root zone — clay pebbles provide this; NFT channels do not
-- High transpiration rates mean high water demand — media volume provides a buffer between flood cycles
-- Heavy fruit loads need the plant anchored at the base — net pots in deep media are stable; NFT plants wobble
+- These plants develop root balls 8–16 in (20–40 cm) across at maturity
+- They need structural support in the root zone — LECA provides this; an NFT channel does not
+- High transpiration means high water demand — the 5 in (13 cm) bed buffers the gap between floods
+- Heavy fruit needs the plant anchored — one tomato or cucumber on Table 1, and 1–2 plants on Table 2, each in a 3–4 in (75–100 mm) net pot
 
 **Why media depth matters for fruiting crops:**
 
 ```
   ROOT ZONE COMPARISON:
 
-  NFT channel (75–100mm square PVC):
-  ─ Root zone volume: minimal (plant sits in net pot, roots hang into channel)
-  ─ Support: poor — large plants need external support structures
-  ─ Moisture buffer: virtually none (roots exposed to air between pump cycles)
-  ─ Maximum crop: lettuce, herbs, small strawberries
+  NFT channel (3–4 in / 76–102 mm square PVC):
+  ─ Root zone volume: minimal (plant sits in a net pot, roots hang into the channel)
+  ─ Support: poor — large plants need external support
+  ─ Moisture buffer: short — a stopped NFT channel is a 15–30 minute problem in warm weather
+  ─ Crop fit: lettuce, herbs, and a separate fruiting channel
 
-  Ebb & Flow flood table (1.2m × 0.6m × 100mm media depth):
-  ─ Root zone volume per plant: large (roots spread through 72L of media per table)
-  ─ Support: excellent — clay pebbles hold the root ball firmly
-  ─ Moisture buffer: significant — media holds moisture for hours between floods
-  ─ Maximum crop: full-size tomatoes, cucumbers, peppers
+  Ebb and Flow flood table, 4 ft × 2 ft (1.22 × 0.61 m), LECA 5 in (13 cm):
+  ─ Media per table: 25 US gal (95 L). Table 1 holds 1 plant. Table 2 holds 1–2
+  ─ Support: LECA holds the root ball
+  ─ Moisture buffer: moist LECA holds 8–24 hours after a missed flood
+  ─ Crop fit: a full-size tomato or cucumber on Table 1; pepper, aubergine, or courgette on Table 2
 ```
 
 **Lettuce and herbs also grow well** — E&F is not only for fruiting crops. Leafy crops in clay pebbles grow at least as fast as in NFT, with the added advantage that pump failure does not immediately endanger them (media holds moisture for hours, not minutes).
@@ -410,7 +416,7 @@ The timer is not an accessory in Ebb & Flow — it **is** the system's brain. A 
   MECHANICAL TIMER CHARACTERISTICS:
 
   How it works:   Rotating dial with physical ON/OFF pins/tabs
-  Minimum increment: 15 minutes (most models) — critical limitation
+  Minimum increment: often 15 minutes — too coarse for a 15–30 minute flood you may need to shorten
   Failure modes:
     - Pins accidentally knocked off their set positions
     - Motor wears over time — timer runs slow or fast
@@ -418,8 +424,8 @@ The timer is not an accessory in Ebb & Flow — it **is** the system's brain. A 
     - Pins stick in ON or OFF position during wet/outdoor conditions
 
   Outdoor suitability: Poor — contact corrosion in damp conditions
-  Cost: $5–$15
-  Verdict: Acceptable indoors, not recommended for outdoor E&F systems
+  Cost: $5–$15 (R90–R270)
+  Verdict: Not the outdoor timer for this system
 ```
 
 ### Digital Timers
@@ -435,9 +441,9 @@ The timer is not an accessory in Ebb & Flow — it **is** the system's brain. A 
     - Relay contact wear — timer activates but pump doesn't start
     - Software freeze — rare but documented in cheap units
 
-  Outdoor suitability: Use IP44-rated or outdoor-specific units; protect from rain
-  Cost: $10–$30
-  Verdict: Recommended — 1-minute increments allow precise schedule adjustment
+  Outdoor suitability: Weatherproof box, outdoor-rated plugs. 120 V GFCI (SA: 230 V, 30 mA earth-leakage)
+  Cost: $10–$30 (R180–R540)
+  Verdict: This is the timer. 1-minute resolution is the requirement, not a 15-minute step
 ```
 
 ### Redundancy Strategy
@@ -465,20 +471,22 @@ This occurs if the timer fails in the ON position, the timer programme is corrup
 ```
   PUMP STUCK ON — TIMELINE:
 
-  0 min:      Table floods to overflow level — overflow runs continuously back to reservoir
-              (system is working as designed for a continuous flood)
-  30–60 min:  Roots have been fully submerged for an extended period
-              Dissolved oxygen in solution depletes
-  1–2 hours:  Root suffocation begins — roots lose ability to absorb nutrients
-  2–4 hours:  Visible wilting despite roots being in water (oxygen starvation)
-  4–8 hours:  Pythium begins to colonise stressed root zone
-  8–24 hours: Root rot advancing — plants may not recover
+  0 min:      Each table floods to its own overflow. Excess returns to the reservoir.
+              The level is correct, but the roots never get a drain phase.
+  30–60 min:  Roots stay submerged. Dissolved oxygen in the solution falls.
+  2–4 hours:  Root rot risk. This is the action window. Wilting can show even
+              though the roots are in water, because the problem is oxygen, not drought.
+  After 4 h:  Pythium colonises the stressed root zone. Recovery gets unlikely.
+
+  A drain-confirmation float that opens the pump relay when the table is still
+  up after the pump should be off is the primary safety device. A second timer
+  that only restarts a stopped pump does not cover this fault.
 
   IMMEDIATE RESPONSE:
-  1. Cut power to pump manually
-  2. Verify tables drain (overflow/drain fittings not blocked)
-  3. Inspect roots — trim and treat if early rot detected
-  4. Diagnose timer failure and repair or replace before next flood
+  1. Cut power to the pump
+  2. Confirm each table's own drain and overflow are clear
+  3. Inspect roots — trim and treat if rot has started
+  4. Repair or replace the timer before the next flood
 ```
 
 ### Failure Mode B — Pump or Timer Stuck OFF (No Floods)
@@ -486,23 +494,22 @@ This occurs if the timer fails in the ON position, the timer programme is corrup
 This is the more common failure mode — the pump stops and no further floods occur.
 
 ```
-  PUMP STUCK OFF — TIMELINE (clay pebble media, warm day):
+  PUMP STUCK OFF — TIMELINE (LECA, warm day):
 
-  0 hours:    Last flood occurred normally — media at field capacity
-  2–4 hours:  Media draining to residual moisture — roots still well supplied
-  4–8 hours:  Media beginning to dry — roots drawing on residual moisture
-  8–12 hours: Media significantly dry — plants begin mild stress (wilting in heat)
-  12–24 hours: Significant root zone desiccation — visible wilting and stress
-  24–48 hours: Severe stress — young seedlings may not recover
-  48+ hours:  Established plants likely damaged; recovery uncertain
+  0 hours:     Last flood finished normally. Media is at field capacity.
+  8–24 hours:  Moist LECA still supplies the roots. This is the normal buffer.
+               The pebble surface can look dry while the insides still hold water.
+  After 24 h:  The buffer is used up. Visible stress, then desiccation.
+               Seedlings fail first. Established plants may still recover if
+               you flood as soon as you are back.
 
-  NOTE: Clay pebbles buffer MUCH longer than NFT (where roots dry in 15 minutes).
-  This is a critical advantage of Ebb & Flow over NFT for power failure resilience.
+  NFT contrast: a stopped channel in warm weather is a 15–30 minute problem.
+  That number is not the Ebb and Flow buffer.
 
   IMMEDIATE RESPONSE:
-  1. Manually flood tables using a watering can — pour solution over media surface
-  2. Diagnose pump/timer failure
-  3. If extended failure (>24h): inspect roots for desiccation and disease
+  1. Flood each table by hand with nutrient solution
+  2. Find the pump or timer fault
+  3. If the gap was longer than 24 hours, check roots for drying and disease
 ```
 
 ### Emergency Protocol
@@ -519,45 +526,47 @@ This is the more common failure mode — the pump stops and no further floods oc
 
 ## 11. Scaling: Adding Tables and Channels
 
-The flood table design in this system (3× 1.2m × 0.6m tables sharing one 150–200L reservoir) is a deliberate starting point, not a fixed limit.
+This build is three 4 ft × 2 ft (1.22 m × 0.61 m) tables on one 45 US gal (170 L) reservoir and one 250 US gph (950 L/h) pump. That is the system these guides describe. Anything below is an optional later change, not a second design.
 
 ```
-  SCALING OPTIONS:
+  THIS BUILD:
 
-  Current system:
-  ─ 3 flood tables (1.2m × 0.6m each) = 2.16 m² total grow area
-  ─ 1 × 150–200L reservoir
-  ─ 1 × 800–1200 L/h pump
+  ─ 3 tables × 4 ft × 2 ft = 24 ft² (2.2 m²)
+  ─ LECA 5 in (13 cm): 25 US gal (95 L) per table, 75 US gal (284 L) placed,
+    buy 90 US gal (340 L)
+  ─ Reservoir 45 US gal (170 L), acceptable 40–50 US gal (151–189 L)
+  ─ Pump 250 US gph (950 L/h), acceptable 200–300 US gph (760–1,140 L/h), about 35 W
+  ─ About 10 US gal (38 L) of solution leaves the reservoir per table at full flood
+  ─ Three tables at once: about 30 US gal (114 L) out, about 15 US gal (57 L) still
+    in a 45 US gal reservoir. The pump stays submerged.
 
-  Scale up Option 1 — Larger reservoir:
-  ─ Upgrade to a 200–300L reservoir
-  ─ Same 3 tables — more nutrient buffer, less frequent full changes
-  ─ No pump upgrade needed
+  Optional later — more reservoir on the same three tables:
+  ─ A larger tank than 50 US gal (189 L) adds buffer. It is not required.
+  ─ The pump does not have to change.
 
-  Scale up Option 2 — Add a fourth table:
-  ─ Add 1 × 1.2m × 0.6m table
-  ─ Upgrade reservoir to 200L minimum (each table draws ~29L per flood)
-  ─ Check pump output — may need 1200–1500 L/h pump
-  ─ Ensure flood manifold can supply all tables simultaneously
+  Optional later — a fourth table:
+  ─ Another 4 ft × 2 ft table needs about another 10 US gal (38 L) of flood volume
+    and another 25 US gal (95 L) of LECA.
+  ─ The 45 US gal reservoir is sized for three tables. A fourth table needs a
+    larger reservoir so the pump does not suck air.
+  ─ Recheck the pump against the 200–300 US gph (760–1,140 L/h) band before
+    buying a bigger one.
 
-  Scale up Option 3 — Split flood schedules by crop type:
-  ─ Run the tables on independent schedules:
-    Table 3 (leafy greens, herbs) — 2–3 floods/day at low EC
-    Tables 1–2 (tomatoes/peppers/courgettes) — 3–4 floods/day at high EC
-  ─ Independent timers + per-table supply valves allow different schedules
-  ─ All tables still share the reservoir (or separate reservoirs for best control)
-
-  Rule of thumb:
-  ─ Allow 10L reservoir volume per large plant (tomato/pepper/cucumber)
-  ─ Allow 5L reservoir volume per medium plant (lettuce, herbs)
-  ─ Minimum reservoir: 150L for 3 tables at moderate density
-    (must also cover ~90L of solution out in the tables at full flood)
+  Flood timing on a shared reservoir:
+  ─ Table 3 (leafy, or a later fruiting crop) can stay at 3 floods/day while
+    Tables 1 and 2 run 4 floods/day in fruit.
+  ─ Valves or a second digital timer can do that.
+  ─ EC is still one number. All three tables share the reservoir. You cannot
+    run lettuce at 1.2 mS/cm and tomato at 3.0 mS/cm in the same tank.
+  ─ Set EC for the crops that are actually in the tables. When Tables 1 and 2
+    are fruiting, either accept that Table 3 leafy crops sit at the high end
+    of their range, or use Table 3 for a later fruiting crop.
 ```
 
-When adding tables, also consider:
-- **Manifold sizing:** A shared 25mm supply line feeds the three tables in this build; upgrade to 32mm for a fourth table or long supply runs
-- **Drain capacity:** All tables must drain simultaneously without overwhelming the reservoir capacity
-- **Timer complexity:** Independent timers per table allow stage-specific schedules — worth the small extra cost
+When you add hardware, also check:
+- **Manifold:** this build feeds three tables from a 1 in (25 mm) supply. A fourth table or a long run wants 1¼ in (32 mm)
+- **Drains:** each table keeps its own 1 in (25 mm) drain and its own 1½ in (40 mm) overflow. They must all be able to return without the reservoir overflowing
+- **Timers:** a second digital timer is reasonable. A mechanical timer is still not the outdoor default
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -597,28 +606,36 @@ When adding tables, also consider:
 
 | Parameter | Value |
 |-----------|-------|
-| Flood table dimensions (each) | 1.2m × 0.6m (3 tables) |
-| Flood level | ~2cm below media surface |
-| Flood duration | 15–30 minutes |
-| Flood frequency | 2–4× per day (varies by media, temp, plant size) |
-| Interval between floods | 4–12 hours (varies) |
-| Pump capacity | 800–1200 L/h submersible |
-| Reservoir size | 150–200L food-grade |
-| Media depth in table | 100–150mm clay pebbles |
-| Overflow fitting height | = media depth −2cm above table floor |
-| Net pot sizes | 50mm (greens/herbs), 75–100mm (fruiting crops) |
-| Media pump failure buffer | 8–24 hours (vs 15–30 min for NFT) |
-| Optimal solution temperature | 18–22°C |
-| Reservoir change interval | Every 7–14 days |
+| Flood tables | 3, each 4 ft × 2 ft (1.22 m × 0.61 m), perfectly level |
+| Table 1 | Indeterminate tomato or cucumber, 1 plant |
+| Table 2 | Pepper, aubergine, or courgette, 1–2 plants |
+| Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop |
+| Flood level | About ¾ in (2 cm) below the LECA surface |
+| Flood duration | 15–30 minutes. Shorten in a heatwave; do not add a 5th flood |
+| Vegetative floods | 3× per day |
+| Fruiting floods | 4× per day. This is the ceiling |
+| Pump | 250 US gph (950 L/h), range 200–300 US gph (760–1,140 L/h), about 35 W |
+| Reservoir | 45 US gal (170 L), range 40–50 US gal (151–189 L) |
+| LECA | 5 in (13 cm). 25 US gal (95 L) per table. Buy 90 US gal (340 L) |
+| Overflow | 1½ in (40 mm), one per table. Standpipe about 4¼ in (11 cm) on this bed |
+| Drain | 1 in (25 mm), one per table |
+| Timer | Digital, 1-minute resolution, weatherproof box |
+| Net pots | 2 in (50 mm) greens and herbs; 3–4 in (75–100 mm) fruiting |
+| Missed-flood buffer | Moist LECA holds 8–24 hours |
+| Stuck pump ON | Root rot risk in 2–4 hours |
+| Solution temperature | Aim 64–72°F (18–22°C). Act above 77°F (25°C) |
+| Reservoir change | Every 10–14 days |
+| pH | Working window 5.8–6.2. Acceptable band 5.5–6.5 |
 
 ---
 
-
-*Next: [`guide/ebb-and-flow/02-nutrient-solution.md`](02-nutrient-solution.md) — EC, pH, macros, micros, mixing, and schedules*
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 00 — System Overview](00-system-overview.md)
+> **Next:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

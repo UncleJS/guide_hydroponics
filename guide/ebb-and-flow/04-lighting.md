@@ -155,35 +155,36 @@ These are the daily light requirements your plants need for optimal growth. The 
 | Carrots (bags) | 10 | 15–20 | 25 |
 | Microgreens | 10 | 12–20 | — |
 
-### Seasonal DLI in a Temperate Climate
+### Seasonal DLI at the Worked Site
+
+The worked climate is inland mid-USA, about **38°N**, USDA zones **6b–7a** (Kansas City, St. Louis, Louisville, Richmond). It is not a coastal site at the same latitude. The South African month is a six-month shift so a southern-hemisphere reader can use the same season. It is not a second climate dataset.
 
 ```
-  APPROXIMATE DAILY LIGHT INTEGRAL BY MONTH (Temperate, 50–55°N latitude):
+  CLEAR-SKY DLI — INLAND ~38°N
 
-  Month       Avg hours daylight   Clear sky DLI   Typical overcast DLI
-  ─────────────────────────────────────────────────────────────────────
-  January          8.5h              12–15           4–6
-  February         9.5h              15–18           5–8
-  March           11.5h              20–25           8–12
-  April           13.5h              28–35           12–18
-  May             15.0h              35–45           15–22
-  June            16.5h              40–50           18–25
-  July            15.5h              38–48           16–24
-  August          14.0h              32–42           14–20
-  September       12.0h              22–28           10–15
-  October         10.0h              14–18           6–10
-  November         8.5h              8–12            3–6
-  December         7.5h              6–10            2–5
+  Season                         Months (SA)                         Clear-sky DLI
+  ─────────────────────────────────────────────────────────────────────────────────
+  Winter                         Dec–Feb (SA: Jun–Aug)               10–15 mol/m²/day
+  Spring and fall (shoulder)     Mar–May and Sep–Nov
+                                 (SA: Sep–Nov and Mar–May)           25–35 mol/m²/day
+  Summer                         Jun–Aug (SA: Dec–Feb)               45–55 mol/m²/day
 
-  KEY CONCLUSIONS:
-  - Lettuce and herbs: adequate light April–September
-  - Tomatoes/peppers/cucumbers: adequate light May–August (peak season)
-  - Courgettes/aubergines: best May–August; marginal in April and September
-  - Strawberries: adequate light April–September
-  - Winter growing outdoors: not viable without supplemental lighting
+  Outdoor season: mid-April through mid-October
+                  (SA: mid-October through mid-April)
+  Summer afternoon highs: 90–100°F (32–38°C) in June–August
+                          (SA: December–February)
+  Winter lows in this band: 0–15°F (−18 to −9°C)
+
+  WHAT THAT MEANS FOR CROPS:
+  - Lettuce and herbs: useful light from the April opening through October
+    (SA: October through April)
+  - Table 1 tomato or cucumber, and Table 2 pepper, aubergine, or courgette:
+    the summer band (45–55) covers their optimal DLI. Shoulder light
+    (25–35) is enough to establish and to finish
+  - Do not run the outdoor tables through December–February
+    (SA: June–August) without a real cover and a reason. Clear-sky winter
+    DLI is 10–15, and the nights are far below fruiting temperatures
 ```
-
-> **Latitude matters:** The table above is calibrated for **50–55°N latitude** (UK, northern Europe, southern Canada). If you are at a **lower latitude** (30–45°N — southern US, Mediterranean, Japan), expect higher DLI year-round and a longer viable outdoor season. If you are at a **higher latitude** (55–65°N — Scandinavia, northern Canada), expect more extreme seasonal swings. Adjust your planting calendar and supplemental lighting plans accordingly.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -208,7 +209,7 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 | Strawberries | 6–8 hours |
 | Radishes/carrots | 6–8 hours |
 
-> **Site selection rule:** Choose a location with **unobstructed southern sky** (Northern Hemisphere) for at least 8 hours. Avoid sites shaded by buildings, walls, or large trees during peak growing hours (10am–4pm). For courgettes and cucumbers grown in E&F flood tables, maximum sun exposure translates directly to yield — these are high-light, high-energy crops.
+> **Site selection rule:** Face the long axis **south** (SA: **north**). You want an unobstructed sky on that side for at least 8 hours. Avoid shade from buildings, walls, or large trees between 10am and 4pm. Table 1 (one tomato or one cucumber) and Table 2 (pepper, aubergine, or courgette) turn that light into yield.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -217,9 +218,9 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 ## 4. Siting the System: Sun Mapping
 
-### Southern Exposure (Northern Hemisphere)
+### South Facing (SA: North Facing)
 
-The sun moves from east to west across the southern sky. Your system should face south, with no obstructions on the south, southeast, or southwest aspect during 10am–4pm.
+In this mid-USA example the sun travels across the southern sky. Face the tables south, with the south, southeast, and southwest open from 10am to 4pm. In South Africa, face them north, and keep the north, northeast, and northwest open for the same hours. The working aisle in the site plan is on the south side of the US layout.
 
 ```mermaid
 flowchart TD
@@ -246,26 +247,27 @@ Walk your site at:
 
 If your site is in shadow at 12pm due to a building or tall fence, you either need to move the system or accept reduced yields.
 
-**Height rule of thumb:** A wall or fence at a distance D from your system will cast a shadow with a length of approximately **D × (1/tan(sun altitude angle))**. At summer noon in the UK (~55°N), sun altitude is ~55°; shadow length = D × 0.7. At winter noon, it is ~10°; shadow length = D × 5.7.
+**Height rule of thumb:** A wall or fence at distance D casts a shadow about **D × (1/tan(sun altitude))**. At this site, about 38°N, summer noon sun altitude is roughly 75°, so the shadow is about **D × 0.27**. Winter noon altitude is roughly 29°, so the shadow is about **D × 1.8**. A fence that is harmless in June can cover the tables in December. That is one reason the outdoor season closes in mid-October (SA: mid-April) and stays shut through deep winter.
 
 ### Flood Table Geometry and Light Distribution
 
-The Ebb & Flow flood tables in this system (1.2m × 0.6m, flat horizontal surface) have distinct light characteristics compared to NFT channels:
+The flood tables in this system, each 4 ft × 2 ft (1.22 m × 0.61 m) and perfectly level, spread light differently from a row of NFT channels:
 
 ```
   E&F FLOOD TABLE LIGHT PROFILE vs NFT CHANNELS:
 
   NFT CHANNELS (slightly sloped, narrow profile):
   ─ Plants grow in a line along the channel
-  ─ Each plant is spaced 20–25cm apart
-  ─ Low-angle morning/evening sun hits plants from the side easily
-  ─ Channel slope means plants at the elevated end are slightly higher
+  ─ Greens are spaced about 9 in (229 mm) apart
+  ─ Low-angle morning and evening sun hits them from the side
+  ─ The high end of the channel sits a little above the low end
 
-  E&F FLOOD TABLES (flat, wide horizontal surface):
-  ─ Plants are distributed across a 1.2m × 0.6m area
-  ─ ALL plants sit at the same height — perfectly even light distribution
-  ─ Low sun angles hit the outer rows more than the centre
-  ─ Wide table = taller crops in the centre can shade shorter neighbours
+  EBB AND FLOW TABLES (flat, 4 ft × 2 ft):
+  ─ Table 1 is one tomato or one cucumber. Table 2 is 1–2 plants.
+    Table 3 holds the leafy crop or a later fruiting crop
+  ─ Every plant on a table sits at the same height
+  ─ Low sun hits the outer plants more than the middle
+  ─ A tall plant shades whatever is south of it (SA: north of it)
 
   ADVANTAGE — Reservoir shading:
   ─ The reservoir sits UNDER the flood tables
@@ -275,7 +277,7 @@ The Ebb & Flow flood tables in this system (1.2m × 0.6m, flat horizontal surfac
   ADVANTAGE — Water surface reflectance during flood:
   ─ When tables are flooded, the water surface briefly reflects light
   ─ This reflected light illuminates the undersides of lower leaves
-  ─ Effect is small (5–10 min flood cycle) but contributes to overall DLI
+  ─ The effect is small across a 15–30 minute flood, and it adds a little DLI
   ─ Most noticeable in low-canopy crops (lettuce, herbs)
 ```
 
@@ -285,13 +287,13 @@ On wide flat tables, tall plants can shade smaller neighbours in a way that does
 
 | Crop combination on same table | Shading risk | Recommendation |
 |-------------------------------|--------------|----------------|
-| Lettuce + lettuce | None | Pack tightly — 20cm spacing fine |
-| Lettuce + basil | Low | Basil grows taller — place at north end of table |
-| Tomatoes + peppers | Medium | Place tallest (tomatoes) on north side |
-| Cucumbers + courgettes | High | Do not mix on the same table — both are vigorous |
-| Fruiting crops + leafy greens | High | Separate onto different tables — Tables 1–2 vs Table 3 |
+| Lettuce + lettuce | Low on Table 3 | About 8–10 in (20–25 cm) is enough |
+| Lettuce + basil | Low | Put the taller basil at the north end (SA: south end) |
+| Tomato + pepper | High | Do not share a table. Tomato is the Table 1 plant. Pepper is Table 2 |
+| Cucumber + courgette | High | Cucumber is Table 1. Courgette is Table 2. One crop family per table |
+| Fruiting + leafy | High | Leafy crops stay on Table 3, or Table 3 becomes a later fruiting crop |
 
-> **Practical rule:** Orient tall crops (tomatoes, cucumbers) to the north end of the flood table so they do not shade the shorter crops growing to the south. Better still, dedicate Tables 1 and 2 entirely to fruiting crops and keep Table 3 for leafy greens and herbs.
+> **Practical rule:** Table 1 is the tall crop (one indeterminate tomato or one cucumber). Put that table on the north side of the group (SA: south side) so it does not shade Table 3. Table 2 is pepper, aubergine, or courgette, 1–2 plants. Table 3 is lettuce, herbs, pak choi, or a later fruiting crop.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -316,27 +318,27 @@ Shade cloth reduces PPFD to a level that maximises photosynthesis without heat s
 | 70% | Reduces PPFD by ~70% | Seedlings, sensitive plants — too dark for most crops |
 | 90% | Reduces PPFD by ~90% | Mushrooms, propagation — not for growing food crops |
 
-**Recommendation for this system:** **40% shade cloth** deployed over Zone A flood tables during peak summer (June–August). Remove on overcast days or when average temperatures are below 22°C.
+**Recommendation for this system:** **40% shade cloth** over the Zone A tables when afternoon highs hold above **85°F (29°C)**. In this climate that is the June–August stretch (SA: December–February), including heatwaves at 90–100°F (32–38°C). Take it off on a run of overcast days, and take it off once highs no longer hold above 85°F (29°C).
 
 ### Deployment Method for Flood Tables
 
-Flood tables present a different shade cloth challenge than NFT channels. The tables are wider (0.6m) and sit lower to the ground, making a simple overhead frame the most practical solution.
+Flood tables need a different shade frame than NFT channels. Each table is 2 ft (0.61 m) wide and sits lower, so a simple overhead frame is the practical fix.
 
 ```mermaid
 block-beta
   columns 1
-  cloth["40% shade cloth<br/>(stretched over 4 corner posts, 1.2–1.5m tall)"]
-  gap["40–60cm air gap<br/>(clearance above tallest plant canopy — wider gap needed for fruiting crops)"]
+  cloth["40% shade cloth<br/>stretched over 4 corner posts, 4-5 ft (1.2-1.5 m) tall"]
+  gap["16-24 in (40-60 cm) air gap<br/>clearance above the tallest canopy"]
   tables["Ebb &amp; Flow Flood Tables — Zone A<br/>(flat, wide horizontal surface)"]
   res["RESERVOIR — shaded by tables<br/>(no separate shading needed)"]
 ```
 
 **Installation for flood tables:**
 
-1. Install 4 corner posts at the corners of the Zone A footprint — 1.2–1.5m above the table surface (extra height needed for tall fruiting crops like tomatoes and cucumbers)
+1. Install 4 corner posts at the corners of the Zone A footprint — 4–5 ft (1.2–1.5 m) above the table. Table 1 carries the tall plant (one tomato or one cucumber), so the cloth has to clear that canopy
 2. For tomatoes and cucumbers, a trellis or support structure is often already in place — attach shade cloth to the outer face of the trellis frame
 3. Stretch 40% shade cloth over the top, securing with clips, bungee cords, or wire
-4. Leave the south-facing vertical face open (or covered with mesh only) to allow low-angle morning and evening light to reach plants — critical in spring and autumn
+4. Leave the south face open (SA: the north face) or cover it with mesh only, so low-angle morning and evening light still reaches the plants in the shoulder seasons
 5. On tables with fruiting crops at different heights, consider a horizontal shade panel above the canopy rather than a tent-style enclosure — this avoids blocking side-light to lower plants
 
 **Anchoring on open flood tables:**
@@ -344,23 +346,26 @@ block-beta
 Unlike NFT channels (which are structural tubes), flood tables have a flat open surface. Shade cloth must be anchored externally — do not use the table edges for tension:
 - Use ground stakes on the table perimeter
 - Attach to a pergola, fence, or wall where available
-- A simple PVC conduit frame (25mm diameter conduit in ground anchors) is low-cost and effective
+- A simple PVC conduit frame, 1 in (25 mm) conduit in ground anchors, is cheap and works. See [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md) for cost
 
 ### When to Deploy and Remove
 
 ```
-  DEPLOY shade cloth when:
-  - Daily high temperature exceeds 28°C consistently
-  - Plants show heat stress signs (wilting at midday despite adequate water)
-  - Lettuce/herbs are bolting (going to seed prematurely)
+  DEPLOY 40% shade cloth when:
+  - Afternoon highs hold above 85°F (29°C)
+  - A heatwave is running at 90–100°F (32–38°C). Keep 4 floods on fruiting
+    tables and shorten the duration if the media stays wet. Do not add a 5th
+    flood and do not drop from 4 floods to 2
+  - Lettuce or herbs on Table 3 are bolting
   - Leaf tip burn is increasing
-  - LECA surface is visibly hot to the touch at noon
+  - The LECA surface is hot to the touch at noon
 
   REMOVE shade cloth when:
-  - Consecutive overcast days (DLI will drop below minimum without full sun)
-  - September onwards — every bit of light matters as days shorten
-  - Night temperatures drop below 15°C consistently
-  - Fruiting crops are in final ripening phase — maximum light improves fruit quality and sugar content
+  - Several overcast days in a row (DLI will fall below the crop minimum)
+  - Afternoon highs no longer hold above 85°F (29°C). In this climate that
+    is after August (SA: after February), into the shoulder
+  - Fruit is in the last ripening stretch and nights have cooled. Light
+    then does more for flavour than shade does for heat
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -383,9 +388,9 @@ These can look similar but have different causes and solutions:
 | **Root temperature** | Often high (warm LECA media) | Normal root temp |
 | **LECA surface dry between floods** | Yes — large surface area heats fast | No |
 
-**Test:** Check your reservoir water temperature. If it's above 24°C, heat is the primary stressor. In E&F, also check the temperature of the LECA surface at noon — if the media surface is hot to the touch, root zone temperature will be elevated even if the flood solution is cool.
+**Test:** Check solution temperature. The aim is **64–72°F (18–22°C)**. Above **77°F (25°C)**, heat is the stressor: dissolved oxygen falls and pythium risk rises. Also feel the LECA at noon. A hot surface warms roots even when the flood water is cooler.
 
-> **E&F-specific advantage:** The reservoir sits under the flood tables in this system, which naturally shades it from direct sun and helps maintain lower solution temperatures compared to exposed reservoirs. If your reservoir temperature is still climbing above 22°C, wrap it with insulation foam or a reflective cover.
+> **E&F advantage:** The reservoir sits under the tables, so it is already shaded. If the solution still climbs past 77°F (25°C), wrap the tank. Shade cloth does not replace that, and it does not change the flood ceiling.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -415,12 +420,12 @@ Many plants respond to the **length of the dark period** (night length) rather t
 **Strawberries:**
 - **Everbearing/day-neutral varieties** (Albion, Seascape, Evie) — produce fruit regardless of day length — **best for E&F flood tables**
 - **June-bearing varieties** — produce one crop in June/July triggered by short-day conditions of the previous autumn — not ideal for continuous production
-- In E&F, strawberries are grown in net pots in LECA on the flood table — runners can be removed promptly to maintain productivity
+- If you grow strawberries, they are a later fruiting crop on Table 3, not a second crop beside the pepper on Table 2. Pull runners so they do not root into the LECA beside the crown
 
 **Cucumbers, courgettes, aubergine (day-neutral):**
 - These crops are not photoperiod-sensitive — they flower and fruit based on temperature and plant maturity
 - All three are vigorous growers; their primary limitation in a temperate climate is temperature, not photoperiod
-- Cucumbers and courgettes can be very productive from May–September — they will continue until frost
+- Cucumber (Table 1) and courgette (Table 2) produce from the warm part of the mid-April to mid-October season (SA: mid-October to mid-April) and stop at frost
 
 **Tomatoes and peppers:** Day-neutral — flower and fruit based on plant maturity and temperature, not photoperiod. No photoperiod concerns.
 
@@ -434,69 +439,84 @@ Many plants respond to the **length of the dark period** (night length) rather t
 ### Spring (March–May) — Establishment Phase
 
 ```
-  Light: Increasing, usually adequate from April
+  Light: shoulder band, 25–35 mol/m²/day on a clear day
+  Last spring frost (planning): 15 April (SA: 15 October)
+  Outdoor season opens: mid-April (SA: mid-October)
+
   Action:
-  - Germinate seeds indoors in late February–March if nights are still cold
-  - Transplant to flood tables from mid-April (after last frost risk)
-  - No shade cloth needed
-  - Monitor for late frosts — protect LECA surface with fleece overnight
-  - Best time to plant: lettuce, spinach, herbs
-  - Start fruiting crop seedlings (tomatoes, peppers, cucumbers) indoors in March
-    for transplant to Table 2 in May
-  - E&F advantage: media volume in flood tables buffers cold nights better
-    than NFT (LECA holds warmth longer than bare roots in a channel)
+  - Germinate indoors in February–March (SA: August–September) while nights
+    are still cold. Winter lows in this band are 0–15°F (−18 to −9°C)
+  - Transplant leafy crops to Table 3 from mid-April, after frost risk
+  - No shade cloth yet. Highs are not holding above 85°F (29°C)
+  - Fleece the LECA on a late frost night
+  - Table 1: one indeterminate tomato, or one cucumber. Tomato can go out
+    after 15 April. Cucumber prefers warmer nights, often May (SA: November)
+  - Table 2: pepper, aubergine, or courgette, 1–2 plants, after nights settle
+  - Do not put the tomato on Table 2. Table 2 is the pepper / aubergine /
+    courgette table
+  - The 5 in (13 cm) LECA bed buffers a cool night better than bare NFT roots
 ```
 
 ### Summer (June–August) — Peak Production, Heat Management
 
 ```
-  Light: Abundant — often excessive for sensitive crops
+  Light: clear-sky DLI 45–55 mol/m²/day. Often more than lettuce can use
+  Air: afternoon highs 90–100°F (32–38°C)
+
   Action:
-  - Deploy 40% shade cloth over flood tables from mid-June
-  - Monitor for bolting in leafy greens on Table 3 — harvest promptly
-  - Tables 1–2 (fruiting crops): remove shade cloth on non-peak heat days
-    — tomatoes, cucumbers, and courgettes want maximum light
-  - Succession-plant lettuce on Table 3 every 2–3 weeks
-  - Monitor LECA surface temperature — if hot, increase flood frequency
-    (more floods cool the media and replenish moisture)
-  - Keep reservoir under the tables — it stays naturally shaded
-  - Cucumbers and courgettes: peak growth — these are extremely productive
-    in good light; harvest every 2–3 days to maintain plant energy
-  - Strawberries: peak fruiting — keep well watered, high EC for fruit quality
-  - Check flood drain fittings weekly — algae can partially block overflow
-    in warm weather
+  - 40% shade when afternoon highs hold above 85°F (29°C). That includes
+    a heatwave. Keep it on the whole Zone A block on those days
+  - Fruiting floods stay at 4× per day. Shorten the duration if roots stay
+    wet. Keep the 4 floods. Do not drop them to 2
+  - Watch Table 3 for bolting. Harvest lettuce promptly
+  - Succession-plant Table 3 every 2–3 weeks, or switch it to a later
+    fruiting crop if the shared reservoir EC is now a fruiting target
+  - If the LECA surface is hot, the answer is shade and solution temperature
+    (aim 64–72°F / 18–22°C; act above 77°F / 25°C), not a 5th flood
+  - The reservoir stays under the tables
+  - Table 1 cucumber, or Table 2 courgette: harvest every 2–3 days
+  - Check each table's own overflow and drain weekly. Algae in the standpipe
+    raises the flood level
 ```
 
 ### Autumn (September–October) — Second Season
 
 ```
-  Light: Declining but often excellent quality (lower sun angle, less heat)
+  Light: back in the 25–35 mol/m²/day shoulder band. Lower sun, less heat
+  First fall frost (planning): 20 October (SA: 20 April)
+  Season closes: mid-October (SA: mid-April)
+
   Action:
-  - Remove shade cloth completely from September
-  - Plant second crop of lettuce, spinach, herbs on Table 3 (autumn is ideal)
-  - Harvest final tomatoes/cucumbers/courgettes before first frost
-    (courgettes and cucumbers are frost-sensitive — harvest all before night
-    temps drop below 5°C)
-  - Peppers: can often be brought indoors in pots for overwintering
-  - Strawberries: allow to set runners in autumn for next year's plants
-  - Watch night temperatures below 10°C — deploy frost fleece over tables
-  - Continue microgreens rotation through October with cold-tolerant varieties
+  - Remove 40% shade once afternoon highs no longer hold above 85°F (29°C)
+  - A second leafy planting on Table 3 suits this light
+  - Clear Table 1 (tomato or cucumber) and Table 2 (pepper, aubergine, or
+    courgette) before the 20 October frost. Cucumber and courgette are
+    finished once nights fall below 41°F (5°C)
+  - A pepper can be lifted, washed, and potted to come indoors. The table
+    itself does not overwinter outdoors
+  - Fleece the tables if nights drop below 50°F (10°C) while you still
+    have a crop to finish
+  - Zone B can keep turning through October (SA: April) with cool-season trays
 ```
 
 ### Winter (November–February) — Shutdown / Planning
 
 ```
-  Light: Insufficient for most crops outdoors
+  Light: clear-sky DLI 10–15 mol/m²/day in December–February
+         (SA: June–August)
+  Nights: 0–15°F (−18 to −9°C) in this band
+
   Action:
-  - Harvest final crops before hard frost
-  - Drain reservoir completely — clean reservoir and pump
-  - Remove and clean all LECA media (sterilisation protocol — see Guide 05)
-  - Flush flood table fittings and drain lines
-  - Store timer, pump, and small components indoors
-  - Plan next season's crop rotation (Table 1 vs Table 2 allocation)
-  - Order seeds, replacement media, nutrients for next season
-  - Consider: a cold frame over Table 3 can extend lettuce production
-    to November/December with no supplemental lighting
+  - The outdoor season is already closed. Do not try to hold fruiting crops
+  - Drain the 45 US gal (170 L) reservoir. Clean the reservoir and the pump
+  - Sterilise LECA (Guide 05). Plants out before any bleach soak
+  - Clean each table's overflow and drain. They are not a shared fitting
+  - Store the digital timer, pump, and meters indoors
+  - Next year, Table 1 is again one tomato or one cucumber. Table 2 is
+    again pepper, aubergine, or courgette, 1–2 plants
+  - Order seed and nutrients. Prices are in Guide 12
+  - A cold frame on Table 3 might stretch lettuce into November
+    (SA: May). It will not carry the table through a 0°F (−18°C) night
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -518,10 +538,10 @@ If you want to extend your growing season beyond September outdoors, supplementa
 
 | Option | Power | Coverage | Cost | Best For |
 |--------|-------|----------|------|---------|
-| LED grow strips | 10–30W | Small shelves | $20–$60 | Microgreens, small herb shelf |
-| T5 fluorescent | 24–54W | 1 flood table zone | $30–$80 | Lettuce on Table 3 under cover |
-| LED quantum board | 100–200W | Full flood table | $80–$200 | Serious season extension |
-| CMH (ceramic metal halide) | 315W+ | Large area | $150–$300 | Semi-commercial extension |
+| LED grow strips | 10–30W | Small shelves | $20–$60 (R360–R1,080) | Microgreens, small herb shelf |
+| T5 fluorescent | 24–54W | 1 flood table | $30–$80 (R540–R1,440) | Lettuce on Table 3 under cover |
+| LED quantum board | 100–200W | One 4 ft × 2 ft table | $80–$200 (R1,440–R3,600) | Serious season extension |
+| CMH (ceramic metal halide) | 315W+ | Large area | $150–$300 (R2,700–R5,400) | Semi-commercial extension |
 
 ### Target PPFD for Supplemental Lighting
 
@@ -534,33 +554,32 @@ If you want to extend your growing season beyond September outdoors, supplementa
 Flood tables have a much larger canopy area than NFT channels — sizing supplemental lighting accordingly is important.
 
 ```
-  SIZING SUPPLEMENTAL LIGHT FOR AN E&F FLOOD TABLE (1.2m × 0.6m):
+  SIZING SUPPLEMENTAL LIGHT FOR ONE FLOOD TABLE
+  4 ft × 2 ft (1.22 m × 0.61 m)
 
-  Table surface area: 1.2 × 0.6 = 0.72 m²
-  Effective canopy area (plants spread out across table): ~0.72 m²
+  Table area: about 8 ft² (0.74 m²)
 
   TARGET: 200–400 μmol/m²/s (PPFD) for lettuce/herbs
 
   LED quantum board (typical efficacy: 2.5 μmol/J):
-    To deliver 300 μmol/m²/s over 0.72 m²:
-    Power needed = (300 × 0.72) / 2.5 ≈ 86 W
-    → A single 100 W LED quantum board covers one flood table comfortably.
-    → Three flood tables side-by-side: three 100 W boards, or one 200 W
-      board + one 100 W board if two tables share a footprint.
+    To deliver 300 μmol/m²/s over 0.74 m²:
+    Power needed = (300 × 0.74) / 2.5 ≈ 89 W
+    → A single 100 W LED quantum board covers one 4 ft × 2 ft table.
+    → Three tables side by side want three boards, or you only light Table 3.
 
   T5 fluorescent (typical efficacy: 1.5 μmol/J):
-    Same target: (300 × 0.72) / 1.5 ≈ 144 W
+    Same target: (300 × 0.74) / 1.5 ≈ 148 W
     → A 4-tube T5 fixture (4 × 54 W = 216 W) covers one table with margin.
 
   HANGING HEIGHTS (measured from canopy top):
   ─────────────────────────────────────────────────────────────────
   Light type         Recommended height    Notes
-  LED quantum board  35–50 cm              Wider beam angle covers wide table better
-  T5 fluorescent     15–25 cm              Low heat — can hang close
-  LED grow strips    10–15 cm              Good for microgreens shelves only
-  CMH 315 W          70–100 cm             High heat — needs ventilation clearance
+  LED quantum board  14–20 in (35–50 cm)   Wider beam covers a 2 ft table better
+  T5 fluorescent     6–10 in (15–25 cm)    Low heat — can hang close
+  LED grow strips    4–6 in (10–15 cm)     Microgreens shelves only
+  CMH 315 W          28–40 in (70–100 cm)  High heat — needs clearance
 
-  NOTE: E&F flood tables are WIDER than NFT channels (0.6m vs ~0.1m).
+  NOTE: Each flood table is 2 ft (0.61 m) wide. An NFT channel is about 3–4 in (76–102 mm).
   Choose lights with a wide beam angle or use multiple units to avoid
   bright centre / dark edge uneven distribution on wide tables.
 ```
@@ -572,13 +591,14 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
 
   Lettuce/herbs need 14–18 hours total light, target DLI ≥ 15 mol/m²/day.
 
-  EXAMPLE — NOVEMBER (50–55°N):
-    Natural daylight: ~8.5 hours, overcast DLI: 3–6 mol/m²/day
-    Shortfall: need ~10–12 mol/m²/day from supplemental light
+  EXAMPLE — DECEMBER AT THIS SITE (~38°N):
+    Clear-sky winter DLI is 10–15 mol/m²/day. Overcast days are lower.
+    The outdoor tables are shut for December–February (SA: June–August).
+    This example is only for a covered Table 3 or an indoor shelf.
 
-    A 100 W LED quantum board at 300 μmol/m²/s over 0.72 m²:
+    A 100 W LED quantum board at 300 μmol/m²/s over 0.74 m²:
     DLI contribution = 300 × 3600 × hours / 1,000,000
-    At 10 hours supplemental: 300 × 36,000 / 1,000,000 = 10.8 mol/m²/day ✓
+    At 10 hours: 300 × 36,000 / 1,000,000 = 10.8 mol/m²/day
 
     Schedule: lights on at 06:00, off at 22:00 (16 hours total).
     If natural light enters during the day, reduce artificial hours accordingly.
@@ -596,14 +616,14 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
   IS SUPPLEMENTAL LIGHTING WORTH IT?
 
   FOR LETTUCE/HERBS (YES — if you have a sheltered spot):
-    One 100 W LED board: ~$80–$120
-    Electricity: 100 W × 10 h/day × 90 days (Oct–Dec) = 90 kWh ≈ $15–$25
-    Extends harvest by 2–3 months → ~5–8 kg extra lettuce/herbs
-    Retail value of extended harvest: $50–$100
-    → Pays for itself in Season 1 if you value fresh winter greens.
+    One 100 W LED board: about $80–$120 (R1,440–R2,160)
+    Electricity at the worked rate of $0.15/kWh (R2.70/kWh):
+    100 W × 10 h/day × 90 days = 90 kWh × $0.15 = $13.50 (R243)
+    That can add a couple of months of lettuce on a covered Table 3.
+    It does not make December–February an outdoor fruiting season.
 
   FOR MICROGREENS (YES — excellent ROI):
-    LED grow strips: $20–$60
+    LED grow strips: $20–$60 (R360–R1,080)
     Electricity: negligible (10–30 W)
     Enables year-round microgreens production indoors.
     → Pays for itself in 2–4 weeks of production.
@@ -611,10 +631,11 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
   FOR FRUITING CROPS (NO — not cost-effective):
     Would need 200+ W per table, plus heating.
     Electricity cost exceeds the value of the produce.
-    → Grow fruiting crops in their natural season (May–September) only.
+    Grow the Table 1 and Table 2 crops in the outdoor season only:
+    mid-April through mid-October (SA: mid-October through mid-April).
 ```
 
-> **Budget consideration:** For a $100–$500 budget system, supplemental lighting is an optional upgrade. Focus on getting the outdoor system working perfectly first. The flood tables are well-suited to a cold frame or low tunnel covering in autumn — this extends the season without the cost of artificial lighting.
+> **Cost:** Hardware prices for the whole system are in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md). Supplemental light is an optional extra, not part of the outdoor build. A cold frame or low tunnel over Table 3 in autumn extends lettuce without a lamp. Planning exchange rate: $1 = R18, frozen 3 October 2026. Worked electricity price: $0.15/kWh (R2.70/kWh).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -623,7 +644,7 @@ Flood tables have a much larger canopy area than NFT channels — sizing supplem
 
 ## 10. Microgreens Lighting (Zone B)
 
-Microgreens have different light needs from mature crops. Zone B consists of 6 trays on a 2-tier shelf — light access depends on shelf positioning relative to the flood tables.
+Microgreens have different light needs from mature crops. Zone B is a 24 in × 20 in (61 cm × 51 cm) shelf, two tiers, about 36 in (91 cm) tall, with 6 trays of 10 in × 20 in (25 cm × 50 cm). Coco is 1–1¼ in (2.5–3 cm) deep. Standard trays get plain water at pH 5.8–6.2. Only sunflower and pea may see an optional EC of 0.4–0.8 mS/cm if the grow runs long. Light on the shelf depends on where it sits relative to the flood tables.
 
 ```
   MICROGREENS LIGHT PHASES:
@@ -640,7 +661,7 @@ Microgreens have different light needs from mature crops. Zone B consists of 6 t
   Target DLI: 10–15 mol/m²/day
 
   Phase 3 — Growth to harvest (days 7–14):
-  Full outdoor light (40% shade in summer to prevent heat stress on tender seedlings)
+  Full outdoor light. Use the same 40% shade cloth when afternoon highs hold above 85°F (29°C)
   Harvest when first true leaves appear.
   Target DLI: 12–20 mol/m²/day
 ```
@@ -652,29 +673,30 @@ The 2-tier shelf for microgreens should be positioned where it receives direct l
 ```
   ZONE B SHELF LIGHT CONSIDERATIONS:
 
-  - Avoid placing the shelf directly to the north of the flood tables
-    (tall crops on Table 2 will shade the lower shelf)
+  - Do not put the shelf directly north of the tables
+    (SA: directly south). The Table 1 tomato or cucumber is the tall plant
+    and will shade the lower shelf
   - East or west placement relative to the flood tables is preferable
   - In autumn/winter, the shelf can be moved under artificial lights or
     onto a windowsill for season extension — microgreens work well indoors
-  - In summer, move the upper tier to a slightly shaded position to prevent
-    heat stress on tender seedlings — a 30% shade cloth or dappled light
-    under a tree works well for Zone B in summer
+  - In summer, when highs hold above 85°F (29°C), the same 40% cloth
+    used on Zone A is enough for these trays. Dappled tree shade also works
 ```
 
-| Shelf tier | Summer recommendation | Spring/Autumn recommendation |
-|------------|----------------------|------------------------------|
-| Upper tier | Light partial shade (30% shade) | Full light — no shade |
-| Lower tier | Dappled shade or natural building shadow | Full light where possible |
+| Shelf tier | Summer, highs above 85°F (29°C) | Shoulder season |
+|------------|----------------------------------|-----------------|
+| Upper tier | 40% shade | Full light |
+| Lower tier | 40% shade, or the building's own shadow | Full light where the Table 1 plant does not shade it |
 
 ---
 
-
-*Next: [`guide/ebb-and-flow/05-growing-media.md`](05-growing-media.md) — Clay pebbles, coco coir, rockwool, perlite, and germination*
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 03 — Water Quality](03-water-quality.md)
+> **Next:** [Guide 05 — Growing Media](05-growing-media.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

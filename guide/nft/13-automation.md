@@ -6,7 +6,7 @@
 
 Manual monitoring — the 10-minute daily walk-and-check — works. But it has hard limits: you can't check the system at 3 AM when a frost arrives, you can't spot the moment EC drifts past a threshold while you're at work, and you'll never notice the slow creep of reservoir temperature that precedes a Pythium outbreak unless you happen to check at the right time.
 
-Automation and continuous data logging transform your system from reactive ("the plants look stressed — what happened?") to proactive ("the reservoir hit 24 °C at 2 PM yesterday, I need shade cloth before it happens again today"). This guide covers every level of automation — from a $15 WiFi thermometer to a full ESP32-based sensor network with dashboards, alerts, and automated dosing — all within the budget-conscious, DIY spirit of this project.
+Automation and continuous data logging move you from "the plants look stressed" to "the greens tank hit 77°F (25°C) at 2 PM, and the CH4 tank did not." This NFT system has two reservoirs, two EC targets, and two pumps. Both pumps run 24 hours. This guide keeps the same ladder, from a low-cost WiFi thermometer up to a full sensor network. Prices below are US dollars with rand in brackets at $1 = R18, frozen 3 October 2026.
 
 ---
 
@@ -147,11 +147,11 @@ Continuous logging would have caught it AND alerted you.
 
 Logging tells you what happened. Automation takes action:
 
-- **Pump failure → automatic alert** (before roots dry out)
-- **Reservoir temp > 24 °C → turn on a fan or chiller** automatically
-- **pH drift > 6.5 → dose pH Down** automatically (Tier 4)
-- **EC drop below target → dose concentrate** automatically (Tier 4)
-- **Frost forecast → turn on reservoir heater** automatically
+- **Either pump stops → alert.** Roots on that loop dry in 15–30 minutes in warm weather. The other loop keeps running.
+- **Either tank above 77°F (25°C) → fan or chiller on that loop.** Do not switch the NFT pumps off to cool the system. Both run 24 hours.
+- **pH outside 5.8–6.2 → dose that tank** (Tier 4)
+- **EC below that tank's target → dose that tank.** Greens target is 0.8–1.8 mS/cm. CH4 tomato is 2.5–3.5 mS/cm. CH4 pepper is 2.0–3.0 mS/cm. One EC reading does not describe both tanks.
+- **Frost forecast in April or October → heater or fleece.** Deep winter, 0–15°F (−18 to −9°C), is a drained system, not a heater left outside.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -162,11 +162,11 @@ Logging tells you what happened. Automation takes action:
 
 ```mermaid
 flowchart LR
-    T0["**Tier 0**<br/>Manual only<br/><br/>Cost: $0<br/>─────────<br/>Manual pH/EC pen<br/>Manual temp check<br/>Paper logbook<br/><br/>Skill: None"]
-    T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60<br/>─────────<br/>WiFi thermometer<br/>WiFi smart plug<br/>Phone alerts<br/>Basic timer<br/><br/>Skill: None"]
-    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80<br/>─────────<br/>Continuous temp<br/>Continuous humidity<br/>Water level sensor<br/>Pump current monitor<br/>Return flow confirm<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
-    T3["**Tier 3**<br/>Multi-node sensor<br/>network + dashboard<br/><br/>Cost: $80–$160<br/>─────────<br/>All Tier 2 sensors<br/>+ pH probe (inline)<br/>+ EC probe (inline)<br/>+ light sensor (LDR)<br/>Grafana dashboard<br/>Historical data<br/>Trend analysis<br/><br/>Skill: Moderate<br/>electronics, WiFi<br/>networking"]
-    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150–$300<br/>─────────<br/>All Tier 3 +<br/>Automated pH dosing<br/>Automated EC dosing<br/>Smart pump control<br/>Telegram/email alerts<br/>Relay-controlled<br/>dosing pumps<br/><br/>Skill: Intermediate<br/>electronics, plumbing<br/>for dosing lines"]
+    T0["**Tier 0**<br/>Manual only<br/><br/>Cost: $0 (R0)<br/>─────────<br/>Manual pH/EC pen<br/>Manual temp check<br/>Paper logbook<br/><br/>Skill: None"]
+    T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60 (R270–R1,080)<br/>─────────<br/>WiFi thermometer<br/>WiFi smart plug<br/>Phone alerts<br/>Zone B light timer<br/><br/>Skill: None"]
+    T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80 (R540–R1,440)<br/>─────────<br/>Continuous temp<br/>Continuous humidity<br/>Water level sensor<br/>Pump current monitor<br/>Two return-flow sensors<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
+    T3["**Tier 3**<br/>Multi-node sensor<br/>network + dashboard<br/><br/>Cost: $80–$160 (R1,440–R2,880)<br/>─────────<br/>All Tier 2 sensors<br/>+ pH probe (inline)<br/>+ EC probe (inline)<br/>+ light sensor (LDR)<br/>Grafana dashboard<br/>Historical data<br/>Trend analysis<br/><br/>Skill: Moderate<br/>electronics, WiFi<br/>networking"]
+    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150–$300 (R2,700–R5,400)<br/>─────────<br/>All Tier 3 +<br/>Automated pH dosing<br/>Automated EC dosing<br/>Smart pump control<br/>Telegram/email alerts<br/>Relay-controlled<br/>dosing pumps<br/><br/>Skill: Intermediate<br/>electronics, plumbing<br/>for dosing lines"]
 
     T0 --> T1 --> T2 --> T3 --> T4
 ```
@@ -208,7 +208,7 @@ This is the easiest, fastest way to add 24/7 monitoring and alerts with zero tec
 
 ### 4.1 WiFi Temperature and Humidity Logger
 
-**Recommended: Govee H5075 or H5179** (~$15–$25)
+**Recommended: Govee H5075 or H5179** (~$15–$25 (R270–R450))
 
 Features:
 - Logs temperature and humidity every 2 seconds
@@ -238,30 +238,30 @@ For reservoir WATER temperature:
 ```
 
 **Setting alerts:**
-- High temp alert: >30 °C (air) or >24 °C (water probe) → action: deploy shade, ice bottles
-- Low temp alert: <3 °C → action: deploy fleece, check reservoir heater
+- High air alert: above 86°F (30°C). High water alert: above 77°F (25°C) on either probe. Action: 40% shade, ice in the hot tank. Do not turn the pumps off.
+- Low air alert: below 37°F (3°C) → fleece if this is a shoulder frost (April 15 or October 20; SA: October 15 or April 20). If the forecast is 0–15°F (−18 to −9°C), the NFT loops should already be drained.
 - High humidity alert: >85% RH → action: ventilate, check for Botrytis
 
 ### 4.2 WiFi Smart Plug with Energy Monitoring
 
-**Recommended: TP-Link Tapo P110 or Shelly Plug S** (~$12–$18)
+**Recommended: TP-Link Tapo P110 or Shelly Plug S** (~$12–$18 (R216–R324))
 
-Plug your submersible pump into this smart plug. Benefits:
+Use one smart plug per water pump. The greens pump is about 15 W (160–210 US gph). The fruiting pump is about 8 W (50–100 US gph). Both are supposed to draw power all day.
 
-1. **Pump failure detection:** If the pump draws 0W when it should be running → the smart plug sends an alert. You know the pump has failed before roots dry out.
-2. **Power monitoring:** Track actual pump electricity consumption. Typical: 8–15W.
-3. **Remote on/off:** Turn the pump on or off from your phone (useful for emergency shutoff if you're away and get a high-temp alert — stopping the pump stops warm solution circulation).
-4. **Scheduling:** Replace the mechanical timer with the smart plug's built-in schedule.
+1. **Pump failure detection:** If either plug reads 0 W while that pump should be running, you get an alert. In warm weather that loop dries in 15–30 minutes.
+2. **Power monitoring:** You can see each pump's real wattage.
+3. **Remote control:** A phone switch is for a leak or a dead pump you are about to pull, not for heat. Turning a pump off stops the film. It does not safely "rest" warm roots. If you do stop a pump, hand-water that loop within 15–30 minutes.
+4. **No on/off schedule.** Both NFT pumps run 24 hours. Do not program a 15-minutes-on / 45-minutes-off cycle, and do not cut them off overnight. The Zone B light can still use a timer.
 
 **Setup:**
-- Plug smart plug into the GFCI outlet
-- Plug pump into smart plug
-- Set schedule: 24h on (or 15-min-on/45-min-off cycle)
-- Set power alert: if consumption = 0W during scheduled ON → send notification
+- Plug each smart plug into the GFCI outlet (SA: 30 mA earth-leakage)
+- One plug for the greens pump, one for the fruiting pump
+- Leave both schedules at 24 hours on
+- Alert if consumption is 0 W
 
 ### 4.3 WiFi Camera (Optional)
 
-A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at the system gives you:
+A cheap WiFi camera (~$20–$30 (R360–R540), e.g., Wyze Cam, TP-Link Tapo C100) pointed at the system gives you:
 - Visual confirmation that water is flowing (you can see the drain return splashing)
 - Time-lapse growth tracking
 - Remote plant health check (zoom in on leaves)
@@ -271,11 +271,11 @@ A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at t
 
 | Device | Cost | What it provides |
 |---|---|---|
-| Govee H5075 (air temp/humidity) | $15 | 24/7 temp + RH logging, phone alerts |
-| Govee H5179 (water temp probe) | $20 | Reservoir water temp logging |
-| TP-Link Tapo P110 (smart plug) | $15 | Pump failure alert, remote control, scheduling |
-| WiFi camera (optional) | $25 | Visual monitoring, time-lapse |
-| **Tier 1 total** | **$50–$75** | |
+| Govee H5075 (air temp/humidity) | $15 (R270) | 24/7 temp + RH logging, phone alerts |
+| Govee H5179 (water temp probe) | $20 (R360) | One tank's water temperature. Buy a second probe for the other tank. |
+| TP-Link Tapo P110 (smart plug) | $15 (R270) | One pump's failure alert. Buy a second plug for the other pump. Both pumps stay on 24 hours. |
+| WiFi camera (optional) | $25 (R450) | Visual monitoring, time-lapse |
+| **Tier 1 total** | **$50–$75 (R900–R1,350)** | One of each device, including the optional camera. A second water probe and a second plug are the same prices again. |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -286,7 +286,7 @@ A cheap WiFi camera (~$20–$30, e.g., Wyze Cam, TP-Link Tapo C100) pointed at t
 
 ### Cost: $30–$80 | Skill: Basic soldering, firmware flashing | Time: 2–4 hours
 
-This is where you build your own sensor system. The ESP32 is a $5–$8 microcontroller with built-in WiFi and Bluetooth, dozens of GPIO pins for sensors, low power consumption, and a massive open-source community. It's the best value platform for DIY IoT monitoring.
+This is where you build your own sensor system. The ESP32 is a $5–$8 (R90–R144) microcontroller with built-in WiFi and Bluetooth, dozens of GPIO pins for sensors, low power consumption, and a massive open-source community. It's the best value platform for DIY IoT monitoring.
 
 ### 5.1 Why ESP32 Over Arduino or Raspberry Pi?
 
@@ -295,7 +295,7 @@ PLATFORM COMPARISON FOR HYDROPONIC MONITORING
 
                     Arduino Uno    ESP32          Raspberry Pi 4
                     ───────────    ──────────     ──────────────
-Cost                $5–$25         $5–$8          $35–$75
+Cost                $5–$25 (R90–R450)         $5–$8 (R90–R144)          $35–$75 (R630–R1,350)
 WiFi built-in       ❌              ✅              ✅
 Bluetooth           ❌              ✅              ✅
 Analog inputs       6              Up to 18       0 (needs ADC)
@@ -320,17 +320,17 @@ With one ESP32 board and a few sensors, you can continuously monitor:
 
 | Sensor | Measurement | Why it matters | Cost |
 |---|---|---|---|
-| DS18B20 (waterproof) | Solution temperature | Pythium risk, DO₂ proxy | $2–$4 |
-| DS18B20 (standard) | Air temperature | Heat/frost alerts | $2–$3 |
-| DHT22 / SHT30 | Air humidity + temp | Disease risk, transpiration | $3–$6 |
-| HC-SR04 / JSN-SR04T | Reservoir water level | Low-level alert, usage tracking | $2–$5 |
-| ACS712 / SCT-013 | Pump current draw | Pump failure detection | $3–$6 |
-| Float switch (NC) or YF-S201 | Return flow confirmation | **#1 NFT sensor** — confirms solution is actually flowing | $3–$15 |
-| LDR (photoresistor) | Light level (relative) | Cloud cover, DLI estimation | $0.50 |
+| DS18B20 (waterproof) | Solution temperature | Pythium risk, DO₂ proxy | $2–$4 (R36–R72) |
+| DS18B20 (standard) | Air temperature | Heat/frost alerts | $2–$3 (R36–R54) |
+| DHT22 / SHT30 | Air humidity + temp | Disease risk, transpiration | $3–$6 (R54–R108) |
+| HC-SR04 / JSN-SR04T | Reservoir water level | Low-level alert, usage tracking | $2–$5 (R36–R90) |
+| ACS712 / SCT-013 | Pump current draw | Pump failure detection | $3–$6 (R54–R108) |
+| Float switch (NC) or YF-S201 | Return flow confirmation | **#1 NFT sensor** — confirms solution is actually flowing | $3–$15 (R54–R270) |
+| LDR (photoresistor) | Light level (relative) | Cloud cover, DLI estimation | $0.50 (R9) |
 
-**Total sensor cost: ~$13–$25**
-**ESP32 board: ~$5–$8**
-**Supporting components (resistors, wires, breadboard): ~$5–$10**
+**Total sensor cost: ~$13–$25 (R234–R450)**
+**ESP32 board: ~$5–$8 (R90–R144)**
+**Supporting components (resistors, wires, breadboard): ~$5–$10 (R90–R180)**
 
 ### 5.3 Recommended Starter Sensor Suite
 
@@ -345,12 +345,12 @@ ESP32 STARTER SENSOR KIT
 4. ACS712 current sensor     → Pump power draw (failure detection)
 5. Float switch (NC)         → Return tank flow confirmation (NFT #1 sensor)
 
-Total cost: ESP32 ($6) + sensors ($18) + wires/resistors ($5) = ~$29
+Total cost: ESP32 ($6 (R108)) + sensors ($18 (R324)) + wires/resistors ($5 (R90)) = ~$29 (R522)
 ```
 
 ### 5.4 Flow Confirmation — The #1 NFT-Specific Sensor
 
-The pump current sensor (ACS712) tells you the pump is **drawing power** — but not that solution is **actually flowing**. A pump can run with an air lock, a blocked inlet, or a broken impeller, drawing normal current while delivering zero flow. In NFT, where roots die within 1–2 hours of a dry film, confirming actual flow is the single highest-value sensor upgrade.
+A current sensor tells you a pump is **drawing power**. It does not prove solution is **moving**. An air lock or a broken impeller can draw current and deliver nothing. This build has two loops, so you want **two flow sensors**: one on the greens return (CH1–CH3) and one on the fruiting return (CH4). In warm weather a dry film is a 15–30 minute problem, not a multi-hour buffer. The YAML examples later in this guide show one return. Build the same sensor again for the second loop. Do not treat one float as proof that both pumps are moving water.
 
 There are three ways to confirm flow:
 
@@ -360,7 +360,7 @@ There are three ways to confirm flow:
 
 Mount a float switch at the low-water mark in the return tank at the base of the NFT channels. When the pump is running, return water fills the tank and keeps the float up. If the pump fails or a channel blocks, the return tank drains within 5–10 minutes and the float drops.
 
-- **Cost:** $3–$8
+- **Cost:** $3–$8 (R54–R144)
 - **Wiring:** Single digital input with 10 kΩ pull-up to 3.3V
 - **Alert:** Float LOW while pump is scheduled ON → pump failure or channel blockage
 - **False positives:** Negligible — the return tank is always full during normal operation
@@ -425,9 +425,9 @@ binary_sensor:
 
 A YF-S201 (or YF-B10 for 1/2" pipe) measures actual flow rate by counting magnetic pulses from a spinning rotor in the flow path. Mounts inline on the return pipe from the channels to the reservoir.
 
-- **Cost:** $6–$15
+- **Cost:** $6–$15 (R108–R270)
 - **Wiring:** One digital interrupt pin on ESP32
-- **Alert:** Flow rate drops below threshold (e.g., < 2 L/min) during pump-on hours
+- **Alert:** Flow on that loop drops below the example threshold in the YAML (`< 2.0`, which is 2 L/min, about 0.53 US gpm). Both pumps are supposed to be on 24 hours, so a zero or a collapsed reading is a failure, not a scheduled off period.
 - **Advantage over float switch:** Can detect **partial blockage** — reduced flow rather than total stoppage
 - **Disadvantage:** Requires cutting into the return pipe; rotor can jam with algae/debris after months of use
 
@@ -460,7 +460,7 @@ binary_sensor:
       - delayed_on: 120s   # only alert if low flow persists for 2 minutes
 ```
 
-> **Calibration note:** YF-S201 pulse factor varies by pressure and temperature. Calibrate by running a known volume (e.g., 5 L) into a bucket and counting pulses. `pulse_factor = pulses_counted / volume_litres`.
+> **Calibration note:** YF-S201 pulse factor varies by pressure and temperature. Calibrate by running a known volume (for example 1.3 US gal, which is 5 L) into a bucket and counting pulses. `pulse_factor = pulses_counted / volume_litres`. The YAML above is one return. Copy it for the fruiting return. Keep these GPIO numbers on the first node. Use free pins on the copy. Do not treat one sensor as both loops.
 
 ---
 
@@ -468,7 +468,7 @@ binary_sensor:
 
 A non-invasive AC current clamp that clips around the pump power cable without cutting anything. Detects whether the pump is drawing current. Cheaper than a flow sensor and easier to install than inline ACS712.
 
-- **Cost:** $8–$15 (SCT-013-030 for loads up to 30A)
+- **Cost:** $8–$15 (R144–R270) (SCT-013-030 for loads up to 30A)
 - **Wiring:** Analog input + 2× 10 kΩ burden resistors (voltage divider for ESP32 ADC)
 - **Limitation:** Confirms pump is drawing power — does NOT confirm water is flowing (air lock not detected)
 - **Best use case:** As an addition to the float switch, not a replacement
@@ -479,10 +479,10 @@ A non-invasive AC current clamp that clips around the pump power cable without c
 
 | Scenario | Recommended |
 |---|---|
-| First build — keep it simple | Option A (float switch, $3–$8) |
-| Want to detect partial blockages | Option B (YF-S201, $6–$15) |
-| Can't cut the return pipe | Option C (SCT-013, $8–$15) |
-| Best protection | Option A + Option C together ($11–$23) |
+| First build — keep it simple | Option A (float switch, $3–$8 (R54–R144)) |
+| Want to detect partial blockages | Option B (YF-S201, $6–$15 (R108–R270)) |
+| Can't cut the return pipe | Option C (SCT-013, $8–$15 (R144–R270)) |
+| Best protection | Option A + Option C together ($11–$23 (R198–R414)) |
 
 Add this row to your sensor matrix in Section 8.1:
 
@@ -503,9 +503,9 @@ EVERY 60 SECONDS, THE NODE:
   4. Reads pump current          ──→ Logs to WiFi endpoint
   5. Reads return tank float     ──→ Logs to WiFi endpoint
 
-  IF solution temp > 24°C       ──→ Sends alert (Telegram/email)
-  IF solution temp < 10°C       ──→ Sends alert
-  IF air temp < 3°C             ──→ Sends alert (frost warning)
+  IF either tank > 77°F (25°C)  ──→ Alert. Shade that tank. Do not stop its pump.
+  IF either tank < 50°F (10°C)  ──→ Alert
+  IF air temp < 37°F (3°C)      ──→ Frost alert. Deep winter means the loops are drained.
   IF humidity > 85%             ──→ Sends alert (disease risk)
   IF water level < 30%          ──→ Sends alert (top up needed)
   IF pump current = 0A          ──→ Sends alert (PUMP FAILURE)
@@ -530,10 +530,10 @@ Tier 3 adds inline pH and EC probes for continuous water quality monitoring, a l
 
 | Sensor | Measurement | Cost | Notes |
 |---|---|---|---|
-| Gravity Analog pH Sensor Kit (DFRobot SEN0161-V2) | Solution pH (continuous) | $30–$40 | Requires calibration; probe lasts 12–18 months |
-| Gravity Analog EC Sensor Kit (DFRobot DFR0300) | Solution EC (continuous) | $40–$55 | Temperature-compensated; requires calibration |
-| BH1750 digital light sensor | Lux / light intensity | $2–$4 | Can estimate DLI over time |
-| Soil moisture sensor (capacitive) | Zone C grow bag moisture | $2–$3 | Capacitive type only (resistive corrodes) |
+| Gravity Analog pH Sensor Kit (DFRobot SEN0161-V2) | Solution pH (continuous) | $30–$40 (R540–R720) | Requires calibration; probe lasts 12–18 months |
+| Gravity Analog EC Sensor Kit (DFRobot DFR0300) | Solution EC (continuous) | $40–$55 (R720–R990) | Temperature-compensated; requires calibration |
+| BH1750 digital light sensor | Lux / light intensity | $2–$4 (R36–R72) | Can estimate DLI over time |
+| Soil moisture sensor (capacitive) | Zone C grow bag moisture | $2–$3 (R36–R54) | Capacitive type only (resistive corrodes) |
 
 ### 6.2 pH and EC Probes — Important Notes
 
@@ -543,7 +543,7 @@ Inline pH and EC probes are the most valuable automation sensors but also the mo
 - Store the probe tip in KCl storage solution when not submerged (if removed from system)
 - Calibrate every 2–4 weeks with pH 4.0 and 7.0 buffer solutions
 - Probe lifespan: 12–18 months before drift becomes unacceptable
-- Replacement probe: ~$15–$25
+- Replacement probe: ~$15–$25 (R270–R450)
 - Never let the probe dry out — the glass membrane must stay hydrated
 
 **EC probe care:**
@@ -575,8 +575,8 @@ flowchart TD
 1. Use a 32 mm PVC T-piece.
 2. Drill probe-diameter holes in the top of the T (or in a fitted end cap).
 3. Insert probes through rubber grommets so they hang into the flowing solution.
-4. Place the sensor cell between the pump output and the manifold inlet — all solution flows past the probes.
-5. Ensure probes are fully submerged but not blocking flow.
+4. One sensor cell per loop. The greens cell sits on the greens pump outlet, before the 1 in (25 mm) manifold that feeds CH1–CH3 only. The fruiting cell sits on the CH4 pump's own ½ in (13 mm) line. Do not put one EC probe on a shared header. There is no shared header.
+5. Probes stay submerged without blocking flow. Calibrate each EC probe to the tank it sits in. Greens alarm band is 0.8–1.8 mS/cm. CH4 alarm band is 2.5–3.5 mS/cm for tomato or 2.0–3.0 mS/cm for pepper.
 
 ### 6.3 Dashboard — Grafana + InfluxDB
 
@@ -648,13 +648,13 @@ Tier 4 adds actuators — devices that take physical action based on sensor read
 
 | Function | How it works | Components | Cost |
 |---|---|---|---|
-| **pH auto-dosing** | Peristaltic pump dispenses pH Down/Up into reservoir when pH drifts | Peristaltic pump + relay + pH probe | $25–$40 |
-| **EC auto-dosing** | Peristaltic pump dispenses nutrient concentrate when EC drops | Peristaltic pump + relay + EC probe | $25–$40 |
-| **Reservoir top-up** | Solenoid valve on water supply opens when level drops | Float valve or solenoid + level sensor | $15–$25 |
-| **Cooling fan** | Fan blows across reservoir surface when temp exceeds threshold | 12V fan + relay module | $8–$12 |
-| **Reservoir heater** | Aquarium heater turns on when temp drops below threshold | Relay module (heater has its own thermostat, but relay adds remote control) | $5 (relay only; heater from Tier 2 budget) |
-| **Grow light control** | LED panel switches based on light sensor or schedule | Relay module | $5 |
-| **Misting** | Misting nozzles activate for foliar cooling in heatwaves | Solenoid + misting line | $20–$35 |
+| **pH auto-dosing** | Peristaltic pump dispenses pH Down/Up into reservoir when pH drifts | Peristaltic pump + relay + pH probe | $25–$40 (R450–R720) |
+| **EC auto-dosing** | Peristaltic pump dispenses nutrient concentrate when EC drops | Peristaltic pump + relay + EC probe | $25–$40 (R450–R720) |
+| **Reservoir top-up** | Solenoid valve on water supply opens when level drops | Float valve or solenoid + level sensor | $15–$25 (R270–R450) |
+| **Cooling fan** | Fan blows across reservoir surface when temp exceeds threshold | 12V fan + relay module | $8–$12 (R144–R216) |
+| **Reservoir heater** | Aquarium heater turns on when temp drops below threshold | Relay module (heater has its own thermostat, but relay adds remote control) | $5 (R90) (relay only; heater from Tier 2 budget) |
+| **Grow light control** | LED panel switches based on light sensor or schedule | Relay module | $5 (R90) |
+| **Misting** | Misting nozzles activate for foliar cooling in heatwaves | Solenoid + misting line | $20–$35 (R360–R630) |
 
 ### 7.2 Automated pH Dosing — Detailed Design
 
@@ -691,16 +691,16 @@ flowchart TD
 **Peristaltic pump details:**
 - A peristaltic pump squeezes liquid through a silicone tube using a rotating mechanism. The liquid never contacts the pump motor — only the tube. This makes it ideal for corrosive chemicals like pH Down (phosphoric acid).
 - Recommended: 12V DC peristaltic pump, 1–100 mL/min flow rate
-- Cost: $8–$15 (AliExpress, Amazon)
+- Cost: $8–$15 (R144–R270) (AliExpress, Amazon)
 - Controlled via a relay module connected to ESP32 GPIO pin
 
 **Dosing calculation example:**
-- Reservoir: 80 L
-- Current pH: 6.5
-- Target pH: 5.9
-- pH Down stock: 85% phosphoric acid diluted to 10% working solution
-- Typical dose: 0.5–1.0 mL per dose lowers 80 L by ~0.1–0.2 pH
-- Always under-dose and re-check — you can add more but can't take it back
+- Greens tank: 20 US gal (76 L). Fruiting tank: 10 US gal (38 L). Dose the tank you measured.
+- A 0.5–1.0 mL dose that was sized for a much larger single tank will move these smaller tanks further. Start smaller on the 10 US gal tank.
+- Target pH in both tanks: 5.8–6.2
+- pH Down stock stays phosphoric acid, diluted, in a labeled bottle
+- Under-dose and re-check. You can add more. You cannot take it back.
+- Lock the acid, the hydroxide, and the nutrient stocks in a latched box, away from children and pets.
 
 ### 7.3 Automated EC Dosing — Detailed Design
 
@@ -712,19 +712,19 @@ flowchart TD
     ECCB["Stock B: MasterBlend + Epsom Salt<br/>(100 g MasterBlend + 50 g Epsom / L)"]
 
     ECR["EC Probe"] --> ESP["ESP32"]
-    ESP --> CHK{"Is EC < 1.0?"}
+    ESP --> CHK{"Greens EC below 0.8–1.8 band?<br/>OR CH4 below its own band?<br/>Tomato 2.5–3.5, pepper 2.0–3.0"}
 
     CHK -->|YES| DA["Dose 5 mL Stock A<br/>→ Peristaltic Pump A"]
     DA --> WAIT1["Wait 30 seconds"]
     WAIT1 --> DB["Dose 5 mL Stock B<br/>→ Peristaltic Pump B"]
     DB --> WAIT2["Wait 5 minutes<br/>(mixing)"]
     WAIT2 --> REREAD["Re-read EC"]
-    REREAD --> AGAIN{"Still < 1.0?"}
+    REREAD --> AGAIN{"Still below that tank's band?"}
     AGAIN -->|"YES (max 5×)"| DA
     AGAIN -->|NO| MON["Return to monitoring"]
     CHK -->|NO| MON
 
-    SAFETY["SAFETY<br/>───────────────<br/>NEVER run both pumps simultaneously<br/>Always dose A first, wait, then B<br/>Max 20 doses per 24h<br/>If limit reached → ALERT (leak or heavy consumption)"]
+    SAFETY["SAFETY<br/>───────────────<br/>NEVER run both dosing pumps at once<br/>The two NFT water pumps stay on 24 h<br/>Always dose A first, wait, then B<br/>Max 20 doses per 24h<br/>If limit reached → ALERT (leak or heavy consumption)"]
 
     ESP -.-> SAFETY
     ECCA -.-> DA
@@ -736,7 +736,8 @@ flowchart TD
 **Stock solution preparation:**
 - Stock A (Calcium Nitrate): Dissolve 100 g Ca(NO₃)₂ in 1 L of water. Store in opaque bottle. Shelf life: 2–3 weeks.
 - Stock B (MasterBlend + Epsom): Dissolve 100 g MasterBlend 4-18-38 + 50 g Epsom Salt in 1 L of water. Store in opaque bottle. Shelf life: 1–2 weeks.
-- Label bottles clearly. Keep away from children and pets.
+- These bottles are concentrates for the dosing pumps. The reservoir fill is still Masterblend at 2.4 g/US gal (0.63 g/L), calcium nitrate at the same mass, and Epsom at half that mass. Do not pour the 100 g/L stock in as if it were the tank recipe.
+- Label bottles clearly, including which tank they feed. Keep them in a latched box, away from children and pets. A garden that is good for children still locks the chemicals. Do not mix a greens stock into the CH4 tank, or the reverse. The two EC targets are not one number.
 
 ### 7.4 Safety Interlocks (Critical)
 
@@ -783,16 +784,16 @@ DOSING SAFETY INTERLOCKS
 ### 8.2 Sensor Selection Tips
 
 **Temperature — DS18B20 is king:**
-- The DS18B20 is the standard for hydroponics temperature. It costs $2, is waterproof (probe version), and you can run multiple probes on a single GPIO pin using the OneWire bus. This means one pin can read 5+ temperature probes simultaneously.
+- The DS18B20 is the standard for hydroponics temperature. It costs $2 (R36), is waterproof (probe version), and you can run multiple probes on a single GPIO pin using the OneWire bus. This means one pin can read 5+ temperature probes simultaneously.
 - Use the waterproof probe version for solution temp and the bare TO-92 package for air temp.
 
 **Humidity — DHT22 vs. SHT30:**
-- DHT22: $3, widely available, adequate accuracy. Use 10 kΩ pull-up resistor.
-- SHT30: $5, I2C interface, better accuracy (±2% vs ±3%), faster reads. Preferred if you want cleaner data.
+- DHT22: $3 (R54), widely available, adequate accuracy. Use 10 kΩ pull-up resistor.
+- SHT30: $5 (R90), I2C interface, better accuracy (±2% vs ±3%), faster reads. Preferred if you want cleaner data.
 
 **Water level — JSN-SR04T over HC-SR04:**
 - The HC-SR04 is the common cheap ultrasonic sensor, but it's NOT waterproof. In a humid outdoor environment near a reservoir, it corrodes quickly.
-- The JSN-SR04T is the waterproof version with a sealed transducer on a cable. It's designed for liquid level measurement. Worth the extra $2.
+- The JSN-SR04T is the waterproof version with a sealed transducer on a cable. It's designed for liquid level measurement. Worth the extra $2 (R36).
 
 **pH and EC probes — DFRobot kits:**
 - DFRobot's Gravity series pH and EC sensor kits are the de facto standard for hobbyist hydroponic automation. They come with a signal conditioning board that outputs a clean analog voltage to the ESP32's ADC.
@@ -810,10 +811,10 @@ DOSING SAFETY INTERLOCKS
 
 | Board | Cost | Pro | Con | Recommended for |
 |---|---|---|---|---|
-| ESP32-WROOM-32 DevKit | $5–$8 | Cheapest, widely available | No battery management | Tier 2 sensor node |
-| ESP32-S3 DevKit | $7–$12 | More ADC channels, USB-C | Slightly more expensive | Tier 3 with many analog sensors |
-| ESP32-C3 Super Mini | $3–$5 | Tiny, very cheap | Fewer pins | Single-purpose nodes |
-| LILYGO T-Display S3 | $15–$20 | Built-in LCD screen | Higher cost | Display node showing current values |
+| ESP32-WROOM-32 DevKit | $5–$8 (R90–R144) | Cheapest, widely available | No battery management | Tier 2 sensor node |
+| ESP32-S3 DevKit | $7–$12 (R126–R216) | More ADC channels, USB-C | Slightly more expensive | Tier 3 with many analog sensors |
+| ESP32-C3 Super Mini | $3–$5 (R54–R90) | Tiny, very cheap | Fewer pins | Single-purpose nodes |
+| LILYGO T-Display S3 | $15–$20 (R270–R360) | Built-in LCD screen | Higher cost | Display node showing current values |
 
 **Recommended: ESP32-WROOM-32 DevKit** for the first build. It's the most documented, cheapest, and has plenty of pins.
 
@@ -1124,7 +1125,7 @@ If you don't want cloud services or internet dependency:
 1. ESP32 hosts a local web server (built into ESPHome or custom firmware).
 2. Access it at `http://hydro-node.local` on your home WiFi.
 3. Current sensor values displayed as a simple web page.
-4. Optional: ESP32 logs data to a microSD card (using an SD card breakout board, ~$3). You can pull the card periodically and import into a spreadsheet.
+4. Optional: ESP32 logs data to a microSD card (using an SD card breakout board, ~$3 (R54)). You can pull the card periodically and import into a spreadsheet.
 
 This option provides 100% local operation — no cloud accounts, no subscriptions, no privacy concerns.
 
@@ -1139,12 +1140,12 @@ This option provides 100% local operation — no cloud accounts, no subscription
 
 | Option | Cost | Retention | Access | Skill | Best for |
 |---|---|---|---|---|---|
-| **Paper logbook** | $0 | Forever (physical) | Physical only | None | Manual-only Tier 0 |
-| **Spreadsheet (manual entry)** | $0 | Forever | Your computer | Basic | Tier 0–1 |
-| **Google Sheets (auto-populated via IFTTT)** | $0 | Forever | Any browser | Basic | Tier 1 with Govee |
-| **InfluxDB Cloud + Grafana Cloud** | $0 (free tier) | 30 days | Any browser | Moderate | Tier 2–4 |
-| **Home Assistant + InfluxDB (local)** | $35–$75 (Pi) | Forever | Local network | Moderate | Tier 2–4, privacy-first |
-| **SD card on ESP32** | $3 | Until card full | Physical card | Basic | Offline sites |
+| **Paper logbook** | $0 (R0) | Forever (physical) | Physical only | None | Manual-only Tier 0 |
+| **Spreadsheet (manual entry)** | $0 (R0) | Forever | Your computer | Basic | Tier 0–1 |
+| **Google Sheets (auto-populated via IFTTT)** | $0 (R0) | Forever | Any browser | Basic | Tier 1 with Govee |
+| **InfluxDB Cloud + Grafana Cloud** | $0 (R0) (free tier) | 30 days | Any browser | Moderate | Tier 2–4 |
+| **Home Assistant + InfluxDB (local)** | $35–$75 (R630–R1,350) (Pi) | Forever | Local network | Moderate | Tier 2–4, privacy-first |
+| **SD card on ESP32** | $3 (R54) | Until card full | Physical card | Basic | Offline sites |
 
 ### 12.2 Google Sheets — Simplest Auto-Logging
 
@@ -1188,9 +1189,9 @@ Step 4: Build dashboard panels
   → Panel 6: Pump status (stat panel, current/previous state)
 
 Step 5: Configure alerts in Grafana
-  → Alert: Solution temp > 24°C → notification
-  → Alert: Pump current = 0 for > 2 min → notification
-  → Alert: Water level < 25% → notification
+  → Alert: either tank above 77°F (25°C) → notification. Do not switch that pump off.
+  → Alert: either pump current = 0 for > 2 min → notification
+  → Alert: either tank level < 25% → notification
   → Notification channel: Email, Telegram, or Slack (all free)
 ```
 
@@ -1204,7 +1205,7 @@ If you want to keep everything local (no cloud), Home Assistant running on a Ras
 - Notifications via Telegram, email, or phone push
 
 **Home Assistant setup:**
-1. Install Home Assistant OS on a Raspberry Pi 4 (4 GB RAM recommended) — ~$50–$75 for the Pi
+1. Install Home Assistant OS on a Raspberry Pi 4 (4 GB RAM recommended) — ~$50–$75 (R900–R1,350) for the Pi
 2. Install the ESPHome add-on from the HA Add-on Store
 3. Flash your ESP32 via ESPHome
 4. The ESP32 appears automatically in Home Assistant
@@ -1225,18 +1226,18 @@ Not all alerts are equal. Structure your notifications to avoid alert fatigue:
 ALERT PRIORITIES
 
 🔴 CRITICAL (immediate action required — wake you up at night)
-  • Pump current = 0A (pump failure)           → roots dry in 30 min
-  • Solution temp < 2°C (freeze imminent)      → system damage risk
-  • Water level < 10% (nearly empty)            → pump dry run risk
+  • Either pump at 0 A                         → that loop dries in 15–30 min in warm weather
+  • Either tank below 36°F (2°C)               → freeze risk
+  • Either tank below 10% full                 → pump dry-run risk
   • pH outside 4.0–8.0 (extreme drift)          → system malfunction
 
-🟡 WARNING (action within 2–4 hours)
-  • Solution temp > 24°C (heat stress)          → deploy shade/ice
-  • Solution temp < 10°C (cold stress)          → deploy heater/fleece
-  • Air temp < 3°C (frost warning)              → deploy fleece
-  • pH outside 5.5–6.5                          → adjust pH
-  • EC outside target range by >20%             → top up / dilute
-  • Water level < 30%                           → top up reservoir
+🟡 WARNING (same-day action, while the film is still moving)
+  • Either tank above 77°F (25°C)              → 40% shade, ice in that tank. Leave the pump on.
+  • Either tank below 50°F (10°C)              → fleece or a shoulder-night heater
+  • Air below 37°F (3°C)                       → frost warning
+  • pH outside 5.5–6.5                          → adjust that tank
+  • Greens EC outside 0.8–1.8, or CH4 outside its fruiting band → top up or dilute that tank
+  • Either tank below 30%                       → top up that tank
   • Humidity > 85% for 6+ hours                 → disease risk
 
 🟢 INFORMATIONAL (check at convenience)
@@ -1252,7 +1253,7 @@ ALERT PRIORITIES
 |---|---|---|---|---|
 | **Telegram bot** | Free | Instant | 10 min | All alert levels — best overall |
 | **Email (Gmail SMTP)** | Free | 1–5 min | 15 min | Non-urgent alerts, daily summaries |
-| **Pushover** | $5 one-time | Instant | 5 min | Push notifications with priority levels |
+| **Pushover** | $5 (R90) one-time | Instant | 5 min | Push notifications with priority levels |
 | **Home Assistant Companion** | Free | Instant | 5 min (if using HA) | Phone push notifications |
 | **Slack webhook** | Free | Instant | 10 min | If you already use Slack |
 | **Discord webhook** | Free | Instant | 5 min | If you already use Discord |
@@ -1502,7 +1503,7 @@ This gives an immediate visual of how many hours per day the crop is under heat 
 
 The ESP32 and its wiring must be protected from rain, splash, and UV degradation.
 
-**Recommended enclosure: IP65 junction box** (~$5–$10)
+**Recommended enclosure: IP65 junction box** (~$5–$10 (R90–R180))
 
 ```mermaid
 flowchart TD
@@ -1533,7 +1534,7 @@ flowchart TD
 | Sensor | Protection needed |
 |---|---|
 | DS18B20 waterproof probe | None — already sealed. Just ensure cable gland entry into box |
-| DHT22 / SHT30 | Mount inside a radiation shield (small white louvred housing, $3) to prevent direct sun on the sensor. Needs airflow. |
+| DHT22 / SHT30 | Mount inside a radiation shield (small white louvred housing, $3 (R54)) to prevent direct sun on the sensor. Needs airflow. |
 | JSN-SR04T | Transducer is waterproof. Mount above reservoir, pointing down. Controller board goes in main box. |
 | ACS712 | Inside main box — only the pump wire passes through the sensor |
 | BH1750 | Mount outside box under a small clear polycarbonate cover — needs to see sky |
@@ -1543,10 +1544,10 @@ flowchart TD
 
 | Power source | Cost | Runtime | Best for |
 |---|---|---|---|
-| USB wall charger + outdoor extension | $0 (existing) | Unlimited | Systems near mains power |
-| USB power bank (20,000 mAh) | $15–$25 | ~4–7 days (ESP32 @ 120 mA average) | Remote locations, backup |
-| 5W solar panel + LiPo battery | $15–$25 | Unlimited (with sun) | Off-grid sites |
-| PoE splitter (if Ethernet available) | $10 | Unlimited | Wired setups |
+| USB wall charger + outdoor extension | $0 (R0) (existing) | Unlimited | Systems near mains power |
+| USB power bank (20,000 mAh) | $15–$25 (R270–R450) | ~4–7 days (ESP32 @ 120 mA average) | Remote locations, backup |
+| 5W solar panel + LiPo battery | $15–$25 (R270–R450) | Unlimited (with sun) | Off-grid sites |
+| PoE splitter (if Ethernet available) | $10 (R180) | Unlimited | Wired setups |
 
 **Solar power option:**
 A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiPo battery can run an ESP32 sensor node indefinitely in most climates. The ESP32 can deep-sleep between readings (waking every 60 seconds) to reduce average current to ~5 mA, extending battery life to weeks even without sun.
@@ -1562,67 +1563,67 @@ A 5W (5V/1A) solar panel with a TP4056 charge controller and a 3.7V 6000 mAh LiP
 
 | Item | Cost |
 |---|---|
-| Govee H5075 temp/humidity logger | $15 |
-| Govee H5179 water temp probe (or aquarium thermometer) | $20 |
-| TP-Link Tapo P110 smart plug | $15 |
-| WiFi camera (optional) | $25 |
-| **Total** | **$50–$75** |
+| Govee H5075 temp/humidity logger | $15 (R270) |
+| Govee H5179 water temp probe (or aquarium thermometer) | $20 (R360) |
+| TP-Link Tapo P110 smart plug | $15 (R270) |
+| WiFi camera (optional) | $25 (R450) |
+| **Total** | **$50–$75 (R900–R1,350)** |
 
 ### Tier 2 — ESP32 Sensor Node ($26–$50)
 
 | Item | Cost |
 |---|---|
-| ESP32-WROOM-32 DevKit | $6 |
-| DS18B20 waterproof probe (solution temp) | $3 |
-| DS18B20 TO-92 (air temp) | $2 |
-| DHT22 module (humidity) | $4 |
-| JSN-SR04T waterproof ultrasonic (water level) | $5 |
-| ACS712 5A current sensor (pump monitor) | $4 |
-| BH1750 light sensor | $3 |
-| 4.7kΩ + 10kΩ resistors (assorted pack) | $2 |
-| Dupont jumper wires (40-pack) | $3 |
-| Breadboard or proto board | $3 |
-| IP65 junction box | $6 |
-| Cable glands PG7 (10-pack) | $2 |
-| USB charger 5V/2A | $5 |
-| Micro-USB cable (2m) | $3 |
-| **Total** | **$51** |
+| ESP32-WROOM-32 DevKit | $6 (R108) |
+| DS18B20 waterproof probe (solution temp) | $3 (R54) |
+| DS18B20 TO-92 (air temp) | $2 (R36) |
+| DHT22 module (humidity) | $4 (R72) |
+| JSN-SR04T waterproof ultrasonic (water level) | $5 (R90) |
+| ACS712 5A current sensor (pump monitor) | $4 (R72) |
+| BH1750 light sensor | $3 (R54) |
+| 4.7kΩ + 10kΩ resistors (assorted pack) | $2 (R36) |
+| Dupont jumper wires (40-pack) | $3 (R54) |
+| Breadboard or proto board | $3 (R54) |
+| IP65 junction box | $6 (R108) |
+| Cable glands PG7 (10-pack) | $2 (R36) |
+| USB charger 5V/2A | $5 (R90) |
+| Micro-USB cable (2m) | $3 (R54) |
+| **Total** | **$51 (R918)** |
 
 ### Tier 3 — Full Monitoring ($80–$160, adds to Tier 2)
 
 | Item | Add to Tier 2 cost |
 |---|---|
-| DFRobot Gravity pH Sensor Kit (SEN0161-V2) | $35 |
-| DFRobot Gravity EC Sensor Kit (DFR0300) | $45 |
-| Capacitive soil moisture sensor (Zone C) × 2 | $4 |
-| BME280 weather sensor (temp/humidity/pressure) | $4 |
-| pH calibration buffers (4.0 + 7.0 sachets × 3) | $6 |
-| EC calibration solution (1413 µS/cm, 250 mL) | $5 |
-| Raspberry Pi 4 (4 GB) for local dashboard (optional) | $55 |
-| **Tier 3 total (Tier 2 + additions)** | **$100–$160** |
+| DFRobot Gravity pH Sensor Kit (SEN0161-V2) | $35 (R630) |
+| DFRobot Gravity EC Sensor Kit (DFR0300) | $45 (R810) |
+| Capacitive soil moisture sensor (Zone C) × 2 | $4 (R72) |
+| BME280 weather sensor (temp/humidity/pressure) | $4 (R72) |
+| pH calibration buffers (4.0 + 7.0 sachets × 3) | $6 (R108) |
+| EC calibration solution (1413 µS/cm, 250 mL) | $5 (R90) |
+| Raspberry Pi 4 (4 GB) for local dashboard (optional) | $55 (R990) |
+| **Tier 3 total (Tier 2 + additions)** | **$100–$160 (R1,800–R2,880)** |
 
 ### Tier 4 — Automated Control ($150–$300, adds to Tier 3)
 
 | Item | Add to Tier 3 cost |
 |---|---|
-| 4-channel relay module (5V, optocoupled) | $5 |
-| 12V DC peristaltic pump × 3 (pH, Stock A, Stock B) | $30 |
-| 12V / 2A power supply (for pumps) | $8 |
-| Silicone tubing (2m × 3 lines) | $6 |
-| Non-return valves (3×) | $5 |
-| Stock solution bottles (3× 1L opaque HDPE) | $5 |
-| 12V cooling fan (80mm, brushless) | $6 |
-| Physical kill switch (toggle, inline) | $3 |
-| **Tier 4 total (Tier 3 + additions)** | **$168–$230** |
+| 4-channel relay module (5V, optocoupled) | $5 (R90) |
+| 12V DC peristaltic pump × 3 (pH, Stock A, Stock B) | $30 (R540) |
+| 12V / 2A power supply (for pumps) | $8 (R144) |
+| Silicone tubing (2m × 3 lines) | $6 (R108) |
+| Non-return valves (3×) | $5 (R90) |
+| Stock solution bottles (3× 1L opaque HDPE) | $5 (R90) |
+| 12V cooling fan (80mm, brushless) | $6 (R108) |
+| Physical kill switch (toggle, inline) | $3 (R54) |
+| **Tier 4 total (Tier 3 + additions)** | **$168–$230 (R3,024–R4,140)** |
 
 ### Combined Tier Totals
 
 | Tier | Standalone cost | Cumulative (if building up from Tier 1) |
 |---|---|---|
-| Tier 1 | $50–$75 | $50–$75 |
-| Tier 2 | $51 | $101–$126 |
-| Tier 3 | $100–$160 | $150–$235 |
-| Tier 4 | $168–$230 | $218–$305 |
+| Tier 1 | $50–$75 (R900–R1,350) | $50–$75 (R900–R1,350) |
+| Tier 2 | $51 (R918) | $101–$126 (R1,818–R2,268) |
+| Tier 3 | $100–$160 (R1,800–R2,880) | $150–$235 (R2,700–R4,230) |
+| Tier 4 | $168–$230 (R3,024–R4,140) | $218–$305 (R3,924–R5,490) |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -1866,7 +1867,7 @@ sensor:
           - 2.46 -> 7.0     # calibrate with pH 7.0 buffer
 ```
 
-**Prevention — hardware upgrade: ADS1115 external ADC ($3)**
+**Prevention — hardware upgrade: ADS1115 external ADC ($3 (R54))**
 
 For Tier 3–4 where pH and EC readings drive automated dosing decisions, the ESP32's internal ADC is not adequate. The ADS1115 is a 16-bit I2C ADC that provides dramatically cleaner readings.
 
@@ -1874,7 +1875,7 @@ For Tier 3–4 where pH and EC readings drive automated dosing decisions, the ES
 |---|---|---|
 | Resolution | 12-bit (4096 steps) | 16-bit (65536 steps) |
 | Noise (typical) | ±15–30 mV | ±0.1–0.5 mV |
-| Cost | Free (already on ESP32) | $2–$4 |
+| Cost | Free (already on ESP32) | $2–$4 (R36–R72) |
 | Interface | Dedicated GPIO pin | I2C (shared with other sensors) |
 | Max channels | 2 usable (GPIO35, GPIO34) | 4 channels per module |
 
@@ -2019,30 +2020,30 @@ MONTH 2:
   → Get 24/7 temperature alerts
   → Get pump failure alerts
   → Start seeing temperature patterns on your phone
-  Cost: +$50
+  Cost: +$50 (R900)
 
 MONTH 3–4 (CONFIDENT GROWER):
   Build Tier 2 ESP32 node
   → Continuous logging of temp, humidity, water level, pump current
   → Set up InfluxDB + Grafana dashboard (free cloud)
   → Start sending alerts via Telegram
-  Cost: +$51
+  Cost: +$51 (R918)
 
 SEASON 2:
   Upgrade to Tier 3 (add pH + EC probes)
   → Continuous water quality monitoring
   → Full dashboard with all critical parameters
   → Historical trend analysis — compare this season to last
-  Cost: +$80–$110
+  Cost: +$80–$110 (R1,440–R1,980)
 
 SEASON 2–3 (WHEN YOU'RE TIRED OF DAILY pH ADJUSTMENTS):
   Upgrade to Tier 4 (automated dosing)
   → pH and EC maintain themselves
   → You check the dashboard once a day and top up stock bottles weekly
   → The system runs itself with human oversight
-  Cost: +$70–$100
+  Cost: +$70–$100 (R1,260–R1,800)
 
-TOTAL INVESTED OVER 2+ SEASONS: $250–$310
+TOTAL INVESTED OVER 2+ SEASONS: $250–$310 (R4,500–R5,580)
   → Equivalent to a mid-range commercial hydroponic controller
   → But fully customisable, repairable, and you understand every component
 ```
@@ -2075,12 +2076,11 @@ TOTAL INVESTED OVER 2+ SEASONS: $250–$310
 
 ---
 
-> **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
-> **Back to:** [README — Hydroponics Guide Index](../../README.md)
-
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

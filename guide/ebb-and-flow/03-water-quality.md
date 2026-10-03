@@ -103,9 +103,12 @@ Your source water EC is a floor you start from — all nutrients are added on to
   E&F ADDITIONAL CONCERN:
   Hard water top-ups over several days:
   ─ Each top-up adds more Ca/Mg minerals to the media
-  ─ Even if reservoir EC stays in range, media mineral load increases
-  ─ After 2–3 weeks, media EC can exceed reservoir EC by 0.5–1.0 mS/cm
-  ─ Hard water growers need more frequent media flushes (every 2–3 weeks vs monthly)
+  ─ Reservoir EC can stay in range while the media climbs
+  ─ Flush when media EC is more than 0.5 mS/cm above the reservoir
+  ─ At +1.0 mS/cm, flush the same day
+  ─ A 0.5–1.0 gap is the flush trigger. It is not a normal gap you can ignore
+  ─ Top up with plain pH 5.8–6.2 water only when EC is at or above target.
+    Add stock only when EC is low.
 ```
 
 ### Interpreting Your Local Water Report
@@ -139,7 +142,7 @@ Most municipal water suppliers publish annual quality reports. Look for:
 **Chloramine removal:**
 ```
   METHOD 1 — Vitamin C (Ascorbic Acid):
-  Add 1 gram per 40 litres of water. Neutralises chloramine within minutes.
+  Add 1 g per 10.6 US gal (40 L). Neutralises chloramine within minutes.
   Slightly lowers pH — adjust pH after adding.
   Buy food-grade vitamin C powder — inexpensive.
 
@@ -167,14 +170,15 @@ Hard water causes the same problems as in NFT (pH creep, scale, excess Ca/Mg) bu
 
   Strategy 2 — Acidify to neutralise bicarbonates:
   Phosphoric acid (pH Down) consumes bicarbonate as well as lowering pH.
-  Hard water simply requires more pH-down per litre — this is normal.
+  Hard water simply needs more pH Down per US gallon. That is normal.
 
   Strategy 3 — Blend with RO or rainwater:
   50/50 blend halves the mineral load. Most practical and cost-effective.
 
-  Strategy 4 — Increase media flush frequency:
-  With hard water, flush media every 2 weeks instead of monthly.
-  Hard water deposits accumulate faster in pore spaces.
+  Strategy 4 — Obey the media EC trigger:
+  Flush when media EC is more than 0.5 mS/cm above the reservoir.
+  Urgent at +1.0 mS/cm. Hard water reaches that gap sooner.
+  Do not wait out a 0.5–1.0 gap because a calendar says "next month."
 
   Strategy 5 — End-of-season acid soak:
   Soak clay pebbles in pH 4.0–4.5 water for 24h to dissolve calcium carbonate.
@@ -199,7 +203,7 @@ If you use well water, test it thoroughly before use. Common problems in well wa
 | **Nitrates (from agriculture)** | Adds to nutrient load unpredictably | EC baseline higher than expected | Test and adjust nutrient recipe accordingly |
 | **Low pH (acidic)** | Corrosive | Leaches minerals from clay pebbles faster | pH Up to correct; test media EC weekly |
 
-**Recommendation:** If using well water, buy a basic water test kit from a hardware store or send a sample to a lab before starting. The $15–$50 cost is trivial compared to losing a season of crops.
+**Recommendation:** If you use well water, buy a basic test kit or send a sample to a lab before the first fill. $15–$50 (R270–R900) is small next to a lost season.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -214,9 +218,9 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
 
 | Pros | Cons |
 |------|------|
-| Perfect baseline water (EC ~0.0) | Cost: $50–$200 for a basic unit |
-| No chlorine/chloramine issues | Waste water: 3–4L waste per 1L RO water |
-| No hard water scale in clay pebbles | Slow output: 50–200 L/day for home units |
+| Perfect baseline water (EC ~0.0) | Cost: $50–$200 (R900–R3,600) for a basic unit |
+| No chlorine/chloramine issues | Waste water: about 3–4 US gal waste per 1 US gal of RO water (3–4 L per 1 L) |
+| No hard water scale in clay pebbles | Slow output: about 13–53 US gal/day (50–200 L/day) for home units |
 | Maximum nutrient precision | Removes Ca/Mg — must add back via CalMag or Masterblend |
 | Consistent results season to season | Membrane replacement every 1–2 years |
 
@@ -233,7 +237,7 @@ Reverse osmosis forces water through a semi-permeable membrane that removes 95�
   You are organic growing in E&F: → RO or rainwater preferred (chloramine harms microbes)
 ```
 
-For a 150L reservoir fill requiring weekly full changes, a countertop RO unit with a 10–20L storage tank is sufficient. Fill slowly over 24–36 hours, store in the tank, use for reservoir fill.
+A full change of the 45 US gal (170 L) reservoir every 10–14 days is the schedule. A countertop RO unit with a 3–5 US gal (10–20 L) storage tank can feed that fill if you collect over a day or two. Store it covered, then use it for the reservoir.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -256,8 +260,8 @@ Outdoor systems have a natural advantage: free, soft, near-pure water falls from
 ```mermaid
 flowchart TD
     A["Roof area (any pitch)"] -->|rainwater| B["Guttering"]
-    B --> C["First-flush diverter<br/>(discards first 5–10L per 25m² of roof<br/>— removes initial dirty wash-off)"]
-    C --> D["Rainwater butt or IBC tank<br/>(200–1000L)"]
+    B --> C["First-flush diverter<br/>discards first 1.3-2.6 US gal per 270 ft2 of roof<br/>removes the initial dirty wash-off"]
+    C --> D["Rainwater butt or IBC<br/>53-264 US gal"]
     D --> E["Outlet tap or siphon hose"]
     E --> F["Reservoir fill"]
     D:::tank
@@ -270,7 +274,7 @@ flowchart TD
 - Use a fine mesh filter (200 micron) at the tank outlet before adding to your reservoir
 - Test pH and EC when you first start using a new collection system
 
-**Legality note:** Rainwater harvesting is permitted and encouraged in most of Europe, UK, Australia, and Canada. In the US it is now legal in nearly all states (historically restricted in a few western states). Check your local regulations before investing in a large system.
+**Legality note:** This worked example is an inland mid-USA site at about 38°N. Rainwater harvesting is legal in nearly all US states (a few western states restricted it in the past). In South Africa, check the local by-law before you plumb a large tank. Confirm the rule where you live before you buy a big cistern.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -288,9 +292,9 @@ flowchart TD
   Speed:       Reading stable in 10–30 seconds
   Key issue:   Requires regular calibration and storage in electrode storage solution
 
-  Budget:      Vivosun, Dr.meter (~$12–$20) — acceptable, short electrode life
-  Mid-range:   Apera PH20, Bluelab (~$35–$60) — excellent accuracy and durability
-  Professional: Hanna HI98100+ (~$80+) — lab grade
+  Budget:      Vivosun, Dr.meter, about $12–$20 (R216–R360) — acceptable, short electrode life
+  Mid-range:   Apera PH20, Bluelab, about $35–$60 (R630–R1,080) — accurate and durable
+  Professional: Hanna HI98100 and similar, about $80 and up (R1,440 and up) — lab grade
 
   Recommendation: Apera PH20 for this system — auto-calibrating, reliable.
 
@@ -299,7 +303,7 @@ flowchart TD
   that comes with the meter filled with storage solution.
 ```
 
-**pH drops / test kits:** Cheap ($5–$10), no calibration, works for backup. Accuracy ±0.2–0.5 — acceptable for rough checks only.
+**pH drops / test kits:** About $5–$10 (R90–R180), no calibration, fine as a backup. Accuracy ±0.2–0.5 — rough checks only.
 
 **pH test strips:** Not recommended for nutrient solution — coloured solution masks colour comparison. ±0.5–1.0 accuracy. Use only as absolute last resort.
 
@@ -325,8 +329,8 @@ flowchart TD
   Replace electrode: every 12–18 months (or when calibration drifts >0.3 pH)
 
   E&F NOTE: Test reservoir pH AND media pH separately.
-  Media pH test: press probe into moist media immediately after a flood cycle.
-  Media pH is frequently 0.2–0.5 higher than reservoir pH in E&F systems.
+  Media pH test: press the probe 2 in (5 cm) into moist LECA immediately after a flood.
+  Media pH often reads 0.2–0.5 higher than the reservoir. The working window is still 5.8–6.2.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -340,11 +344,11 @@ flowchart TD
 
 | Type | Accuracy | Cost | Notes |
 |------|----------|------|-------|
-| Basic pen meter | ±0.1 mS/cm | $10–$20 | Good enough for home use; single-point calibration |
-| Mid-range digital | ±0.05 mS/cm | $20–$50 | Better accuracy, automatic temperature compensation |
-| Combination EC/pH | ±0.1 EC, ±0.05 pH | $30–$80 | Convenient; acceptable accuracy for both |
-| BlueLab Truncheon | ±0.1 mS/cm | $50+ | No display; LED indicators — highly durable |
-| Professional inline | ±0.02 mS/cm | $100+ | Continuous monitoring with data logging |
+| Basic pen meter | ±0.1 mS/cm | $10–$20 (R180–R360) | Enough for home use; single-point calibration |
+| Mid-range digital | ±0.05 mS/cm | $20–$50 (R360–R900) | Better accuracy, automatic temperature compensation |
+| Combination EC/pH | ±0.1 EC, ±0.05 pH | $30–$80 (R540–R1,440) | Convenient; acceptable accuracy for both |
+| Bluelab Truncheon | ±0.1 mS/cm | $50+ (R900+) | No display; LED indicators — durable |
+| Professional inline | ±0.02 mS/cm | $100+ (R1,800+) | Continuous monitoring with data logging |
 
 **Critical feature:** Always buy a meter with **Automatic Temperature Compensation (ATC)**. EC readings change with temperature — a meter without ATC will give inaccurate readings in outdoor conditions where water temperature fluctuates.
 
@@ -361,16 +365,17 @@ This is unique to media-based systems. Your management routine should include bo
   ─ Target: crop-specific EC range (see Guide 02, Section 4)
 
   Test 2 — MEDIA EC (weekly):
-  ─ Perform immediately after a flood cycle (media fully wet)
-  ─ Method: push EC probe tip 3–5cm into clay pebbles
-  ─ Read the EC while probe is in wet media
-  ─ Compare to reservoir EC
+  ─ Immediately after a flood (media fully wet)
+  ─ Push the EC probe 2 in (5 cm) into the LECA
+  ─ Read while the probe is in wet media
+  ─ Compare with the reservoir
 
   INTERPRETING MEDIA EC:
-  Media EC = Reservoir EC ± 0.3 mS/cm:    → Normal; minor variation
-  Media EC > Reservoir EC + 0.5 mS/cm:    → Salt accumulation beginning — monitor closely
-  Media EC > Reservoir EC + 1.0 mS/cm:    → Flush media now (see Guide 02, Section 10)
-  Media EC < Reservoir EC − 0.5 mS/cm:    → Media depleted — check for channelling/dry zones
+  Within 0.3 mS/cm of the reservoir:     normal variation
+  More than 0.5 mS/cm above reservoir:   flush (Guide 02, Section 10)
+  1.0 mS/cm or more above reservoir:     urgent — flush the same day
+  More than 0.5 mS/cm below reservoir:   media looks depleted — check dry zones
+  A gap of 0.5–1.0 above the reservoir is not "always normal." It is the flush.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -386,10 +391,11 @@ This is unique to media-based systems. Your management routine should include bo
   Concentration: Typically 25–81% solution — corrosive; dilute before skin contact.
 
   Safe use:
-  ─ Wear gloves and eye protection
+  ─ Wear gloves, eye protection, and a dust mask. Phosphoric acid is in the same PPE rule as the dry salts (Guide 02)
   ─ Always add acid TO WATER, never water to acid
-  ─ Start with small doses: 1ml per 4L, stir, wait 30 seconds, remeasure
-  ─ Rinse skin immediately if contact occurs
+  ─ Start with about 1 ml per 1 US gal (3.8 L), stir, wait 30 seconds, remeasure
+  ─ Rinse skin immediately if it gets on you
+  ─ Store the bottle in a latched box, away from children and pets
 
   Citric acid: natural, safe, used by organic growers — gentler and less corrosive.
   Not recommended for E&F: citric acid can feed bacterial growth in warm reservoirs.
@@ -401,10 +407,10 @@ This is unique to media-based systems. Your management routine should include bo
   Concentration: Typically 1–25% solution — caustic, corrosive to skin and eyes.
 
   Safe use:
-  ─ Wear gloves and eye protection
-  ─ Add drop by drop: 1ml per 4L, stir, remeasure
-  ─ Store upright, cool, dark location
-  ─ Rinse skin immediately if contact
+  ─ Wear gloves, eye protection, and a dust mask. Potassium hydroxide is caustic
+  ─ Add about 1 ml per 1 US gal (3.8 L), stir, remeasure
+  ─ Store upright, in the same latched box as the acid and the dry salts, away from children and pets
+  ─ Rinse skin immediately if it gets on you
 
   Alternative: Sodium bicarbonate (baking soda) — gentle, cheap, but adds Na which
   can accumulate in clay pebbles over time and stress roots. Emergency use only.
@@ -438,15 +444,15 @@ This is unique to media-based systems. Your management routine should include bo
 
 ### The Outdoor Heat Problem
 
-An outdoor reservoir in summer can reach 28–35°C — temperatures where:
-- Dissolved oxygen (DO) drops sharply (from 9mg/L at 20°C to <7mg/L at 30°C)
+An outdoor reservoir in this climate can reach the high 80s °F (about 28–35°C) on a bare tank. Summer afternoon air is 90–100°F (32–38°C). At those solution temperatures:
+- Dissolved oxygen drops sharply (from about 9 mg/L at 68°F / 20°C to under 7 mg/L at 86°F / 30°C)
 - Pythium and other water moulds thrive exponentially
 - Nutrient uptake by roots becomes impaired
 - Beneficial microbial balance is disrupted
 
 ### E&F Reservoir Positioning Advantage
 
-Unlike NFT (where the reservoir typically sits beside the channels in open air), the E&F reservoir in this system sits **under the flood tables**. The tables act as a roof, shading the reservoir naturally. This is a significant thermal advantage — the reservoir in this system will typically run 3–6°C cooler than an equivalently sized exposed reservoir.
+The E&F reservoir sits **under the flood tables**. The tables shade it. Expect it to run about 5–11°F (3–6°C) cooler than the same tank in full sun. The aim is still **64–72°F (18–22°C)**. Above **77°F (25°C)**, treat dissolved oxygen and pythium as the problem to solve.
 
 Maximise this advantage:
 - Ensure the flood tables fully overhang the reservoir on all sides
@@ -459,26 +465,26 @@ Maximise this advantage:
   STRATEGY 1 — MAXIMISE NATURAL SHADE (free):
   As above — use table overhang. Add shade cloth to reservoir sides if gaps exist.
 
-  STRATEGY 2 — INSULATION ($5–$20):
+  STRATEGY 2 — INSULATION, about $5–$20 (R90–R360):
   Wrap reservoir exterior in:
   ─ Reflective bubble wrap insulation (best — reflects + insulates)
   ─ Foam camping mat glued to exterior
   ─ Partially bury reservoir in the ground (1/3 depth = effective thermal mass)
 
   STRATEGY 3 — WHITE/REFLECTIVE PAINT (free if you have paint):
-  Paint exterior of reservoir white or silver.
-  Reduces radiant heat absorption — can reduce water temp by 2–4°C vs black container.
+  Paint the outside of the reservoir white or silver.
+  That can cut water temperature about 4–7°F (2–4°C) compared with a black tank.
 
   STRATEGY 4 — FROZEN BOTTLES (free, temporary):
-  Fill 500ml–1L bottles with water and freeze.
-  Drop into reservoir through lid port on hot days.
-  Each 1L bottle absorbs ~80kcal of heat as it melts — effective for short spikes.
+  Freeze 1 US pint–1 US qt (about 0.5–1 L) bottles of water.
+  Drop them in through the lid on hot days.
+  Each 1 US qt (1 L) bottle absorbs roughly 80 kcal as it melts — useful for a short spike.
   Replace daily in peak summer.
 
-  STRATEGY 5 — AQUARIUM CHILLER ($50–$200):
+  STRATEGY 5 — AQUARIUM CHILLER, about $50–$200 (R900–R3,600):
   Most effective, most expensive.
-  Inline chiller maintains water at precise temperature.
-  Worth considering if summer temperatures regularly exceed 30°C.
+  An inline chiller holds a set temperature.
+  Consider one if the solution itself stays above 77°F (25°C) through the 90–100°F (32–38°C) afternoons.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -524,11 +530,12 @@ If algae is already established:
   H₂O₂ (Hydrogen Peroxide) TREATMENT:
 
   Product: 3% food-grade H₂O₂ (available at pharmacies)
-  Dose: 2–3ml per litre of reservoir volume
+  Dose: 8–11 ml per US gal (2–3 ml/L) of reservoir volume
+  This is a cleaning step. Do not run it through a live root zone.
 
   Procedure:
   1. Remove all plants from affected tables
-  2. Add H₂O₂ to reservoir at 2–3ml/L
+  2. Add H₂O₂ to the reservoir at 8–11 ml per US gal (2–3 ml/L)
   3. Run 2–3 flood cycles (circulates through tables and media)
   4. Let sit for 30 minutes between cycles
   5. Drain reservoir completely
@@ -560,8 +567,8 @@ The most important water management practice unique to E&F is **monitoring and m
   Day and timing: Any day, immediately after a flood cycle ends
 
   Step 1: Test RESERVOIR EC → record value
-  Step 2: Push EC probe 3–5cm into clay pebbles in multiple locations
-          (Test at least 3 spots: near fill inlet, middle of table, near drain)
+  Step 2: Push the EC probe 2 in (5 cm) into the LECA in several places
+          (at least 3 spots: near the inlet, middle of the table, near that table's drain)
           Record each value
   Step 3: Calculate average media EC
 
@@ -569,10 +576,10 @@ The most important water management practice unique to E&F is **monitoring and m
   ────────────────────────────────────────────────────────────────────
   Media EC vs Reservoir EC     Action
   ────────────────────────────────────────────────────────────────────
-  Within ±0.3 mS/cm            Normal — no action needed
-  +0.3 to +0.5 mS/cm           Mild accumulation — plan flush next week
-  +0.5 to +1.0 mS/cm           Moderate — flush this week
-  >+1.0 mS/cm                  Urgent — flush today; inspect roots for tip burn
+  Within 0.3 mS/cm             Normal — no flush
+  Up to 0.5 mS/cm above        Watch. Flush as soon as it passes 0.5
+  More than 0.5 above          Flush. Do not call 0.5–1.0 "always normal"
+  1.0 or more above            Urgent — flush today; inspect roots for tip burn
   ────────────────────────────────────────────────────────────────────
 
   Record in a log: date, reservoir EC, media EC, any symptoms observed.
@@ -589,8 +596,9 @@ The most important water management practice unique to E&F is **monitoring and m
 ### Step-by-Step Reservoir Change
 
 ```
-  FREQUENCY: Every 7 days recommended; maximum 14 days.
-  Also perform on any trigger condition from Section 10.
+  FREQUENCY: Every 10–14 days.
+  Also change sooner if EC will not hold, the solution smells, or roots slime.
+  The other triggers are in Guide 02, Section 10 (not the temperature section of this guide).
 
   WHAT YOU NEED:
   ─ Siphon hose or small submersible utility pump
@@ -608,7 +616,7 @@ The most important water management practice unique to E&F is **monitoring and m
   3.  Siphon or pump out all old nutrient solution
   4.  Wipe interior walls and floor of reservoir with a cloth
       ─ Remove biofilm, algae patches, and mineral deposits
-  5.  Add 2–3L of 10% bleach solution, swirl to coat all surfaces
+  5.  Add about 0.5–0.8 US gal (2–3 L) of 10% bleach solution, swirl to coat all surfaces
   6.  Leave 10–15 minutes (sterilisation contact time)
   7.  Drain bleach solution completely
   8.  Triple rinse: fill with fresh water, slosh, drain — repeat 3 times
@@ -630,11 +638,12 @@ The most important water management practice unique to E&F is **monitoring and m
 ---
 
 
-*Next: [`guide/ebb-and-flow/04-lighting.md`](04-lighting.md) — Outdoor light, PAR, DLI, shade management, and seasons*
-
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
+> **Next:** [Guide 04 — Lighting](04-lighting.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

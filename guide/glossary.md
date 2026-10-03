@@ -102,11 +102,14 @@ A micronutrient involved in growth hormone production and enzyme function. Defic
 **kWh — Kilowatt-hour**
 A unit of electrical energy. One kilowatt-hour is the energy consumed by a 1,000 W device running for one hour. Used in these guides for costing supplemental lighting and pump running costs.
 
+**gph — Gallons per Hour (US)**
+Flow rate used first in this guide. The NFT greens pump is 160–210 US gph (600–800 L/h). The NFT fruiting pump is 50–100 US gph (200–400 L/h). The Ebb and Flow pump is 250 US gph (950 L/h). A US gallon is 3.785 L, not the 4.55 L imperial gallon.
+
 **L/h — Litres per Hour**
-Flow rate unit for pumps. A 600–800 L/h pump is the standard recommendation for the NFT system in this guide.
+Metric flow rate, shown in brackets after US gph.
 
 **L/min — Litres per Minute**
-Flow rate unit used at the channel level. Target NFT flow rate is 1–2 L/min per channel.
+Channel-level flow. Target NFT flow is 0.26–0.53 US gpm (1–2 L/min) per channel.
 
 **mol/m²/day — Moles per Square Metre per Day**
 The unit for DLI (Daily Light Integral). One mole equals approximately 6 × 10²³ photons. A DLI of 12–17 mol/m²/day is typical for leafy crops.
@@ -134,7 +137,7 @@ A hydroponic method where plant roots are suspended in a constantly aerated, nut
 A hydroponic method where a grow table or tray is periodically flooded with nutrient solution from a reservoir below, then drained back by gravity. Plants sit in an inert growing medium (typically LECA). The flood-drain cycle is controlled by a timer. This is one of the two primary systems covered in this guide.
 
 **Flood Cycle**
-One complete flood-and-drain event in an Ebb & Flow system: the pump runs (15–30 minutes), solution rises to the overflow standpipe height (~2 cm below the media surface), the pump stops, and the table drains back to the reservoir by gravity within 30 minutes. Typically scheduled 2–4× per day by timer.
+One complete flood-and-drain event: the pump runs 15–30 minutes, solution stops about 3/4 in (2 cm) below the LECA surface, the pump stops, and the table drains back by gravity. Vegetative crops are flooded 3 times a day. Fruiting crops 4 times a day. Four is the ceiling.
 
 **IPM — Integrated Pest Management**
 A systematic approach to pest and disease control that combines prevention, monitoring, and targeted intervention, using the least disruptive methods first (physical barriers → biological controls → organic treatments → chemical pesticides as a last resort).
@@ -177,7 +180,7 @@ Also called clay pebbles. A growing medium made from clay balls fired at high te
 Commonly known by the brand name Teflon. Used as thread-seal tape (PTFE tape) when assembling threaded plumbing fittings. Prevents leaks at all threaded connections on pumps, manifolds, and bulkhead fittings.
 
 **PVC — Polyvinyl Chloride**
-A rigid plastic used for NFT channels, pipes, manifolds, and fittings. Food-safe and readily available in standard sizes. Used in this guide for 75 mm and 100 mm square NFT channels and all plumbing connections.
+A rigid plastic used for NFT channels, pipes, manifolds, and fittings. This build uses 3 in (76 mm) square tube for CH1–CH3 and 4 in (102 mm) square tube for CH4, each 8 ft (2.44 m) long. The greens manifold is 1 in (25 mm). Channel inlets are 1/2 in (13 mm).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -264,10 +267,10 @@ The standard for wireless local networking (IEEE 802.11). The ESP32's built-in W
 ## Electrical Safety
 
 **GFCI — Ground Fault Circuit Interrupter**
-A safety device that cuts power in milliseconds if it detects current leaking to ground (e.g. through water or a person). Mandatory for any outdoor or wet-location electrical installation. Known as RCD in the UK/EU.
+A safety device that cuts power in milliseconds if current leaks to ground (through water or a person). This guide’s worked example is a 120 V outdoor receptacle with GFCI. In South Africa use a 230 V circuit with a 30 mA earth-leakage breaker.
 
 **RCD — Residual Current Device**
-The UK and European term for what North America calls a GFCI. Detects a difference between current flowing in the live and neutral conductors — if current is "leaking" (e.g. through water to ground), the RCD trips within 30 ms, preventing electrocution. Always use an RCD-protected outlet for outdoor hydroponic systems.
+The earth-leakage breaker used in South Africa and much of the world. A 30 mA device is the bracketed equivalent of the US GFCI in this guide.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -277,13 +280,13 @@ The UK and European term for what North America calls a GFCI. Detects a differen
 ## General
 
 **DIY — Do It Yourself**
-Building or assembling something without professional help. All systems in this guide are designed as DIY builds within a budget of £150–£600 depending on the system and tier.
+Building or assembling something without professional help. Prices in this guide are US dollars with South African rand in brackets, at a planning rate of $1 = R18 (3 October 2026). Hardware totals live in each system’s Guide 12.
 
 **CSV — Comma-Separated Values**
 A simple text file format for storing tabular data (rows and columns separated by commas). Used in automation logging — sensor readings can be saved or exported as a CSV file for analysis in a spreadsheet.
 
 **Pythium**
-A genus of water-mould (oomycete) pathogens that cause root rot — the most serious disease threat in both NFT and Ebb & Flow systems. Infected roots turn brown, slimy, and smell sour. Thrives in warm (>24–26°C), oxygen-poor solution and permanently wet root zones. Prevention: keep solution below 24°C, maintain dissolved oxygen, ensure complete drainage (E&F), and sterilise media between crops. See Guide 07 in both tracks.
+A water-mould that causes root rot. Infected roots turn brown, slimy, and smell sour. Risk rises when solution stays above 77°F (25°C), oxygen is low, or an Ebb and Flow table never drains. Keep solution at 64–72°F (18–22°C), run NFT pumps 24 hours a day, and fit a drain-confirmation cutoff on Ebb and Flow. See Guide 07 in both tracks.
 
 **ROI — Return on Investment**
 A measure of the financial return relative to the cost of a project. In the context of these guides: how long it takes for the value of harvested produce to equal the cost of building and running the system.

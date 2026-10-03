@@ -4,6 +4,7 @@
 [![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Numbers in this guide follow [Design Constants](../design-constants.md). The zone map is in [zones.md](../../zones.md).
 
 ---
 
@@ -14,10 +15,10 @@
 - [3. Anatomy of an NFT System](#3-anatomy-of-an-nft-system)
   - [Component Descriptions](#component-descriptions)
 - [4. Channel Slope: The Critical Variable](#4-channel-slope-the-critical-variable)
-  - [Optimal Slope: 1:30 to 1:40](#optimal-slope-130-to-140)
+  - [Design Slope: 1:30](#design-slope-130)
   - [Slope Effects Table](#slope-effects-table)
 - [5. Flow Rate Science](#5-flow-rate-science)
-  - [Target: 1–2 Litres Per Minute Per Channel](#target-12-litres-per-minute-per-channel)
+  - [Target Flow per Greens Channel](#target-flow-per-greens-channel)
   - [Calculating Pump Requirements](#calculating-pump-requirements)
   - [Laminar vs Turbulent Flow](#laminar-vs-turbulent-flow)
 - [6. Root Zone Oxygenation](#6-root-zone-oxygenation)
@@ -62,7 +63,7 @@ block-beta
     air["Air gap above roots<br/>(oxygen zone)"]
     pots["Net pots → ▓ ▓ ▓ ▓ ▓"]
     roots["Root zone — partially air-exposed, partially submerged"]
-    film["~~~~ Nutrient film — 2–4mm deep ~~~~"]
+    film["~~~~ Nutrient film — about 1/16 to 1/8 in deep ~~~~"]
     floor["Channel floor"]
   end
 ```
@@ -72,7 +73,7 @@ block-beta
 2. **Oxygenation** — the air gap above the film oxygenates the root mass
 3. **Simplicity** — no need to flood/drain; gravity + pump does all the work
 
-**Why this matters:** Roots need both water/nutrients AND oxygen. Submerging roots fully (as in DWC without aeration) risks suffocation without an air pump. NFT's thin film naturally provides the air-water interface that maximises root health.
+**Why this matters:** Roots need both water/nutrients AND oxygen. Submerging roots fully (as in DWC without aeration) risks suffocation. NFT's thin film provides an air-water interface along the channel. An air pump is still recommended in both reservoirs of this build, so the stored solution stays oxygenated between passes through the channels.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -83,52 +84,49 @@ block-beta
 
 Every NFT system — from a 2-channel home setup to a commercial greenhouse — shares the same fundamental components:
 
+This build is two loops. CH1–CH3 share a greens reservoir. CH4 has its own reservoir and is not teed into the greens manifold.
+
 ```mermaid
 flowchart TD
-    RES1["RESERVOIR<br/>(nutrient solution storage)"]
-    PUMP["PUMP<br/>(submersible, sits on reservoir floor)"]
-    SUPPLY["SUPPLY LINE<br/>(pipe/tube carrying solution upward)"]
-    MAN["MANIFOLD<br/>(splits flow to multiple channels)"]
+    RESG["GREENS RESERVOIR<br/>20 US gal, black body, white exterior"]
+    PUMPG["GREENS PUMP<br/>160-210 US gph, 24 h/day"]
+    MANG["MANIFOLD 1 in<br/>CH1-CH3 only"]
+    CH1["CH1 lettuce"]
+    CH2["CH2 herbs"]
+    CH3["CH3 spinach, kale, mint, strawberry"]
+    D1["DRAIN"]
+    D2["DRAIN"]
+    D3["DRAIN"]
+    RETG["GREENS RETURN, gravity"]
 
-    CH1["CHANNEL 1"]
-    CH2["CHANNEL 2"]
-    CH3["CHANNEL 3"]
-    CH4["CHANNEL 4"]
+    RESF["FRUITING RESERVOIR<br/>10 US gal, black body, white exterior"]
+    PUMPF["FRUITING PUMP<br/>50-100 US gph, 24 h/day"]
+    CH4["CH4 tomato or pepper"]
+    D4["DRAIN"]
+    RETF["FRUITING RETURN, gravity"]
 
-    D1["DRAIN FITTING"]
-    D2["DRAIN FITTING"]
-    D3["DRAIN FITTING"]
-    D4["DRAIN FITTING"]
-
-    RETURN["RETURN LINE<br/>(gravity)"]
-    RES2["RESERVOIR"]
-
-    RES1 --> PUMP --> SUPPLY --> MAN
-    MAN -->|INLET| CH1 --> D1
-    MAN -->|INLET| CH2 --> D2
-    MAN -->|INLET| CH3 --> D3
-    MAN -->|INLET| CH4 --> D4
-
-    D1 --> RETURN
-    D2 --> RETURN
-    D3 --> RETURN
-    D4 --> RETURN
-    RETURN --> RES2
+    RESG --> PUMPG --> MANG
+    MANG -->|1/2 in inlet| CH1 --> D1 --> RETG --> RESG
+    MANG -->|1/2 in inlet| CH2 --> D2 --> RETG
+    MANG -->|1/2 in inlet| CH3 --> D3 --> RETG
+    RESF --> PUMPF -->|own inlet| CH4 --> D4 --> RETF --> RESF
 ```
 
 ### Component Descriptions
 
 | Component | Function | Notes |
 |-----------|----------|-------|
-| **Reservoir** | Holds nutrient solution | Food-grade, shaded, 50–100L for medium system |
-| **Submersible pump** | Circulates solution continuously | 400–800 L/h for 3–4 channels |
-| **Supply line** | Carries solution from pump to manifold | 25mm PVC or flexible tubing |
-| **Manifold** | Distributes flow evenly to all channels | 25mm main, 13mm branches |
-| **Inlet fittings** | Deliver solution at the high end of each channel | Barbed or threaded fitting through end cap |
-| **Channels** | The grow tubes where plants sit | 75–100mm square PVC |
-| **Net pots** | Hold plants + minimal media | 50mm (greens), 75mm (fruiting) |
-| **Drain fittings** | Exit point at low end of each channel | Gravity-fed |
-| **Return line** | Carries drained solution back to reservoir | 25mm pipe, gravity only |
+| **Greens reservoir** | Holds the CH1–CH3 solution | 20 US gal (76 L), food-grade, black body, white exterior, shaded |
+| **Fruiting reservoir** | Holds the CH4 solution only | 10 US gal (38 L), same finish. Never shared with lettuce |
+| **Greens pump** | Circulates the greens loop 24 hours a day | 160–210 US gph (600–800 L/h), about 15 W |
+| **Fruiting pump** | Circulates CH4 24 hours a day | 50–100 US gph (200–400 L/h), about 8 W. Not teed into the greens manifold |
+| **Air pump** | Aerates stored solution | Recommended in both reservoirs |
+| **Greens manifold** | Splits flow to CH1–CH3 only | 1 in (25 mm) main, ½ in (13 mm) inlets |
+| **Inlet fittings** | Deliver solution at the high end of each channel | ½ in (13 mm) barb or thread through the end cap |
+| **Channels** | The grow tubes where plants sit | 8 ft (2.44 m). CH1–CH3 are 3 in (76 mm) square. CH4 is 4 in (102 mm) square |
+| **Net pots** | Hold plants and a little media | 2 in (51 mm) on CH1–CH3, including strawberries. 3 in (76 mm) on CH4 |
+| **Drain fittings** | Exit at the low end of each channel | Gravity-fed |
+| **Return line** | Carries drained solution back to its own reservoir | ¾–1 in (19–25 mm), gravity only, one return per loop |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -139,15 +137,14 @@ flowchart TD
 
 The slope of the channel determines everything about how the thin film behaves. Too shallow and solution pools; too steep and solution rushes through without adequate contact.
 
-### Optimal Slope: 1:30 to 1:40
+### Design Slope: 1:30
+
+This build uses **1:30**: a **3¼ in (83 mm)** drop over each **8 ft (2.44 m)** channel. The inlet-end posts are **36 in (91 cm)** and the drain-end posts are **32¾ in (83 cm)**. That post difference is the drop.
 
 ```mermaid
 flowchart LR
-    subgraph s1["1:30 slope — 8cm drop over 2.4m channel"]
-        IN1["INLET<br/>(high end)"] -->|"← 2.4m →"| OUT1["DRAIN<br/>(low end)<br/>↕ 8cm drop"]
-    end
-    subgraph s2["1:40 slope — 6cm drop over 2.4m channel"]
-        IN2["INLET<br/>(high end)"] -->|"← 2.4m →"| OUT2["DRAIN<br/>(low end)<br/>↕ 6cm drop"]
+    subgraph s1["1:30 slope — this build"]
+        IN1["INLET high end<br/>posts 36 in"] -->|"8 ft channel"| OUT1["DRAIN low end<br/>posts 32.75 in<br/>drop 3.25 in"]
     end
 ```
 
@@ -155,12 +152,13 @@ flowchart LR
 
 | Slope | Effect | Use Case |
 |-------|--------|---------|
-| Less than 1:50 (too flat) | Solution pools, uneven distribution, root rot risk | Avoid |
-| 1:40–1:30 (optimal) | Smooth thin film, good contact, good drainage | Standard use |
-| 1:30–1:20 (slightly steep) | Film flows faster, less contact time — acceptable for long channels | Long channels >3m |
-| Steeper than 1:20 | Solution rushes through, minimal root contact, dry spots at inlet | Avoid |
+| Flatter than 1:50 | Solution pools, uneven distribution, root rot risk | Avoid |
+| 1:40 | Smooth film, a bit less drop than this build | Acceptable on other rigs |
+| **1:30 (this build)** | Smooth thin film, good contact, good drainage | 3¼ in (83 mm) over 8 ft (2.44 m) |
+| 1:30–1:20 | Film flows faster, less contact time | Sometimes used on channels longer than 10 ft (3 m) |
+| Steeper than 1:20 | Solution rushes through, minimal root contact, dry spots at the inlet | Avoid |
 
-**Practical tip:** Set slope with a spirit level and shims under the frame. A 1:30 slope on a 2.4m channel = raise the inlet end 8cm higher than the drain end. This is a very gentle angle — not visually obvious but critical to measure correctly.
+**Practical tip:** Set the slope with a spirit level and shims, then confirm the post heights: 36 in (91 cm) at the inlet and 32¾ in (83 cm) at the drain. The angle is gentle and easy to miss by eye, so measure it.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -169,39 +167,48 @@ flowchart LR
 
 ## 5. Flow Rate Science
 
-### Target: 1–2 Litres Per Minute Per Channel
+### Target Flow per Greens Channel
 
-Flow rate (measured in litres per minute, L/min) determines how thick the film is and how fast nutrients are replenished at the root zone.
+Flow rate determines how thick the film is and how fast nutrients are replenished at the root zone. The greens loop (CH1–CH3) is designed for **0.26–0.53 US gpm (1–2 L/min)** in each channel. CH4 has its own smaller pump and is not part of that total.
 
 ```
-  FLOW RATE EFFECTS:
+  FLOW RATE EFFECTS (per channel):
 
-  0.5 L/min (too slow):
+  0.13 US gpm / 0.5 L/min (too slow):
   ─ Film becomes intermittent, dry spots develop, roots desiccate
 
-  1–2 L/min (optimal):
-  ─ Continuous thin film, ~2–4mm depth, laminar flow
-  ─ Roots stay moist, maximum air gap maintained
+  0.26–0.53 US gpm / 1–2 L/min (greens target):
+  ─ Continuous thin film, about 1/16–1/8 in (2–4 mm) deep, laminar flow
+  ─ Roots stay moist, air gap maintained
 
-  3+ L/min (too fast):
+  0.8 US gpm / 3 L/min and above (too fast on a greens channel):
   ─ Turbulent flow, film too deep, roots partially submerged
   ─ Reduced oxygenation, increased system noise
 ```
 
 ### Calculating Pump Requirements
 
-For a 4-channel system at 1.5 L/min per channel:
+The greens pump feeds three channels. The fruiting pump feeds CH4 alone.
 
 ```
-  Total flow needed = 4 channels × 1.5 L/min = 6 L/min = 360 L/h
+  GREENS LOOP (CH1–CH3):
 
-  Add 20–30% safety margin for head pressure (vertical lift from reservoir to manifold)
+  3 channels × 0.40 US gpm (1.5 L/min) = 1.2 US gpm (4.5 L/min)
+                                       = 72 US gph (270 L/h) at the channels
 
-  Recommended pump: 500–700 L/h minimum for 4 channels
-  (select 600–800 L/h for comfortable headroom)
+  Add headroom for the lift from the reservoir up to the manifold.
+
+  Design pump: 160–210 US gph (600–800 L/h), about 15 W
+  Runtime: 24 hours a day
+
+  FRUITING LOOP (CH4 only):
+
+  Design pump: 50–100 US gph (200–400 L/h), about 8 W
+  Runtime: 24 hours a day
+  Do not tee this pump into the 1 in (25 mm) greens manifold.
 ```
 
-**Head pressure note:** Every 1 metre of vertical lift reduces effective pump output by ~20%. If your pump must push solution 1m upward to reach the manifold, a 600 L/h pump may deliver only ~480 L/h at the outlet.
+**Head pressure note:** Every 3.3 ft (1 m) of vertical lift reduces effective pump output by roughly 20%. If the greens pump must lift solution 3.3 ft (1 m) to the manifold, a 160 US gph (600 L/h) pump may deliver about 125 US gph (480 L/h) at the outlet. The specified 160–210 US gph (600–800 L/h) range is there to cover that lift. The inlet posts are 36 in (91 cm), so measure the actual lift from the pump to the manifold rather than assuming the post height is the whole lift.
 
 ### Laminar vs Turbulent Flow
 
@@ -230,9 +237,9 @@ block-beta
   end
 ```
 
-**Oxygen dissolved in water:** Water at 20°C holds approximately 9 mg/L of dissolved oxygen. Plant roots can deplete this quickly in a stagnant system. In NFT, the cascading return flow re-oxygenates the solution as it splashes back into the reservoir. The air gap ensures roots never run out of O₂ regardless of dissolved O₂ in the solution.
+**Oxygen dissolved in water:** Water at 68°F (20°C) holds approximately 9 mg/L of dissolved oxygen. Plant roots can deplete this quickly in a stagnant tank. In NFT, the return stream re-oxygenates solution as it falls back into the reservoir, and an air pump in each reservoir keeps that store from going stale. The air gap in the channel is the root zone's main oxygen supply.
 
-**Why this matters for temperature:** At 28°C, water only holds ~7.8 mg/L dissolved O₂. At 30°C, it drops to ~7.5 mg/L. This is why warm reservoirs increase root rot risk — less O₂ available in the film itself.
+**Why this matters for temperature:** Aim for **64–72°F (18–22°C)**. Above **77°F (25°C)**, dissolved oxygen falls and pythium risk rises. That is the heat action line. At 82°F (28°C), water holds about 7.8 mg/L of dissolved oxygen. At 86°F (30°C), it is about 7.5 mg/L. Shade the reservoirs, keep the black body and white exterior, and act before the solution sits above 77°F (25°C).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -248,7 +255,7 @@ block-beta
 | **Oxygenation** | Excellent (natural) | Good (air pump) | Good (flood cycle) | OK (air gap) | Poor |
 | **Pump required** | Yes (continuous) | Air pump | Water pump + timer | No | No |
 | **Power failure risk** | High (roots dry fast) | Medium | Medium | None | None |
-| **Best for** | Leafy greens, herbs | Lettuce, basil | Tomatoes, peppers | Lettuce | Herbs |
+| **Best for** | Leafy greens, herbs; fruiting crops on their own tank | Lettuce, basil | Tomatoes, peppers, in a media bed | Lettuce | Herbs |
 | **Root veg** | Poor | Poor | OK | Poor | Poor |
 | **Media needed** | Minimal | Minimal | Yes | None | Yes |
 | **Scalability** | Excellent | Good | Moderate | Low | Low |
@@ -265,12 +272,12 @@ block-beta
 ### Ideal for leafy crops because:
 - Fast-growing, shallow root systems are perfectly served by the thin film
 - High harvest frequency and succession planting work perfectly with the modular channel system
-- Low EC requirements (0.8–1.6 mS/cm) mean simple, cheap nutrient management
+- The greens loop runs at EC 0.8–1.8 mS/cm, so leafy crops share one simple tank. Lettuce stays at or below 1.8 mS/cm
 - Multiple plants per channel maximise the return on the pump investment
 
 ### Poor for root vegetables because:
 - Carrots, radishes, and beetroot develop a **tap root** that must grow downward into a substrate
-- NFT channels are only 75–100mm tall — not enough depth for root development
+- These channels are only 3 in (76 mm) or 4 in (102 mm) tall — not enough depth for a tap root
 - The thin film doesn't provide the structural support root veg need
 - Root veg need a solid medium to form correct shapes; NFT produces deformed, stunted roots
 
@@ -288,27 +295,27 @@ block-beta
 Unlike ebb-and-flow systems that flood and drain on a timer, NFT relies on a **continuous thin film**. If the pump stops, the film disappears within seconds and the roots — now hanging in air — begin to desiccate. This is the Achilles heel of NFT.
 
 ```
-  ROOT DRY-OUT TIMELINE AFTER PUMP FAILURE:
+  ROOT DRY-OUT AFTER A PUMP STOPS (warm weather):
 
-  0–5 minutes:   Film disappears from channel floor
-  5–15 minutes:  Root tips begin to dry, especially near inlet
-  15–30 minutes: Significant root zone stress, plants begin to wilt
-  30–60 minutes: Outer root hairs desiccate and die
-  1–2 hours:     Serious root damage, plants may not recover
-  2–4 hours:     Catastrophic root failure in established plants
+  The film leaves the channel floor within a few minutes.
+  Root tips at the inlet start to dry soon after that.
+  15–30 minutes: action window. Plants are already stressed.
+                 Hand-water the channel or get the pump back on.
+                 Do not wait out a longer "recovery" period.
 
-  (Times vary by temperature, humidity, and plant size. Hot, dry, windy
-  conditions dramatically shorten these windows.)
+  Hot, dry, windy weather sits at the short end of that 15–30 minute window.
+  Treat 15–30 minutes as the action time. Get flow back, or hand-water.
 ```
 
 ### When a Timer Makes Sense
 
-Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles — to:
-- Reduce pump wear
-- Lower electricity cost
-- Increase dissolved oxygen in the film (re-exposure to air)
+It does not, on this system. Both pumps run **24 hours a day**.
 
-**This is risky for beginners.** If the timer fails in the OFF position, roots dry out. Only use timed NFT if you have a reliable backup alert system. **Recommendation: run 24/7.**
+- Do not turn the pumps off overnight.
+- Do not use 15 minutes on / 45 minutes off.
+- A timer that fails in the OFF position leaves roots dry inside the 15–30 minute warm-weather window.
+
+Electricity for these small pumps is part of the [Guide 12](12-budget-and-sourcing.md) running-cost notes, at the planning rate of $0.15/kWh (R2.70/kWh). Saving that by cycling the film off is the wrong trade. Dissolved oxygen is handled by the thin film plus an air pump in each reservoir, not by parking the channel dry.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -326,7 +333,7 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 4. If failure persists >30 minutes: move plants to a temporary container with water to keep roots moist
 
 **Prevention:**
-- Keep a spare pump (cost: ~$15–$25 for a basic spare)
+- Keep a spare pump (about $15–$25 (R270–R450) for a basic spare)
 - Use an outdoor-rated extension lead with surge protection
 - Set a phone reminder to visually confirm pump operation every morning
 - Consider a cheap WiFi smart plug — if the pump draws 0W, it sends an alert
@@ -338,24 +345,29 @@ Some growers use a timer in NFT — typically 15–30 min ON / 5 min OFF cycles 
 
 ## 11. Scaling: Modular Channel Design
 
-NFT is highly modular. Each channel is independent — you can add or remove channels without changing the core reservoir/pump system (up to the pump's capacity).
+NFT channels are modular, but this build is already two loops and they stay that way. CH4 is not an extra outlet on the greens pump.
 
 ```
-  SCALING THE SYSTEM:
+  THIS BUILD — 40 SITES, TWO RESERVOIRS:
 
-  Start:      1 reservoir + 2 channels = ~24 plant sites
-  Expand to:  1 reservoir + 4 channels = ~48 plant sites  ← this system
-  Grow to:    1 reservoir + 6 channels = ~72 plant sites  (upgrade pump)
-  Commercial: Multiple reservoirs, 10–20 channels per zone
+  Greens:   20 US gal (76 L) + CH1, CH2, CH3 = 33 sites
+            11 sites per channel at 9 in (229 mm)
+  Fruiting: 10 US gal (38 L) + CH4 = 7 holes at 12 in (305 mm)
+            4–5 indeterminate cherry plants (skip holes),
+            or up to 7 compact plants
+  Total:    40 sites
 
-  Rule of thumb: 1 channel per 0.4–0.8 L/min pump capacity
+  Greens pump:   160–210 US gph (600–800 L/h), 24 h/day
+  Fruiting pump: 50–100 US gph (200–400 L/h), 24 h/day
+  Manifold:      1 in (25 mm), CH1–CH3 only
 ```
 
-When scaling, consider:
-- **Reservoir size:** Scale up to maintain adequate solution volume (minimum 5–10L per channel)
-- **Pump capacity:** Each added channel needs 1–2 L/min more flow
-- **Manifold size:** Upgrade to 32mm if adding more than 6 channels
-- **Return pipe:** Ensure drain pipe can handle combined flow from all channels
+If you later add a fifth greens channel, that is a new design, not a tee onto today's manifold:
+- **Keep the loops separate.** Tomato fruiting EC does not go in the lettuce tank.
+- **Reservoir volume:** a textbook greenhouse allows several gallons per site. This home build uses the 20 US gal (76 L) and 10 US gal (38 L) tanks and relies on daily EC and pH checks plus the change intervals in [Guide 02 — Nutrient Solution](02-nutrient-solution.md).
+- **Pump capacity:** each added greens channel needs another 0.26–0.53 US gpm (1–2 L/min).
+- **Manifold:** this 1 in (25 mm) manifold feeds three channels. A run of more than six greens channels wants a larger main, about 1¼ in (32 mm).
+- **Return pipe:** each loop's ¾–1 in (19–25 mm) return has to carry that loop's combined flow back to its own reservoir.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -368,7 +380,7 @@ When scaling, consider:
 
 | Advantage | Detail |
 |-----------|--------|
-| Excellent oxygenation | Natural air gap eliminates need for air pump |
+| Excellent oxygenation | The film leaves an air gap at the roots. An air pump is still recommended in both reservoirs |
 | Low water usage | Recirculating system, evaporation losses only |
 | Low media cost | Only net pots + small amount of clay pebbles |
 | Easy root inspection | Lift net pot to check roots anytime |
@@ -381,7 +393,7 @@ When scaling, consider:
 
 | Disadvantage | Detail |
 |-------------|--------|
-| Power dependency | Pump failure = root desiccation within minutes |
+| Power dependency | In warm weather, act within 15–30 minutes of a pump stop |
 | Not suitable for all crops | Root veg and large fruiting plants are poor fits |
 | Channel blockage risk | Root mats can block flow; needs monitoring |
 | Disease spread risk | Water recirculation can spread pathogens quickly |
@@ -398,24 +410,33 @@ When scaling, consider:
 
 | Parameter | Value |
 |-----------|-------|
-| Channel slope | 1:30 to 1:40 (2.5–3.3%) |
-| Flow rate per channel | 1–2 L/min |
-| Film depth | 2–4mm |
-| Pump runtime | Continuous (24/7) |
-| Reservoir size (4 channels) | 60–100L minimum |
-| Root dry-out time (pump failure) | 15–30 min to stress, 2–4h to catastrophic loss |
-| Optimal solution temp | 18–22°C |
-| Net pot sizes | 50mm (greens/herbs), 75mm (fruiting crops) |
-| Channel material | 75mm or 100mm square opaque PVC |
+| Channel length | 8 ft (2.44 m) |
+| Channel slope | 1:30, a 3¼ in (83 mm) drop |
+| Posts | 36 in (91 cm) high end, 32¾ in (83 cm) low end |
+| Greens channels | CH1–CH3, 3 in (76 mm) square, 11 sites at 9 in (229 mm) |
+| Fruiting channel | CH4, 4 in (102 mm) square, 7 holes at 12 in (305 mm) |
+| Total sites | 40 |
+| Greens flow | 0.26–0.53 US gpm (1–2 L/min) per channel |
+| Film depth | About 1/16–1/8 in (2–4 mm) |
+| Greens pump | 160–210 US gph (600–800 L/h), 24 hours a day |
+| Fruiting pump | 50–100 US gph (200–400 L/h), 24 hours a day, own reservoir |
+| Greens reservoir | 20 US gal (76 L), black body, white exterior |
+| Fruiting reservoir | 10 US gal (38 L), black body, white exterior |
+| Air pump | Recommended in both reservoirs |
+| Manifold | 1 in (25 mm), CH1–CH3 only. Inlets ½ in (13 mm) |
+| Dry-out action window | 15–30 minutes in warm weather |
+| Solution temperature | Aim 64–72°F (18–22°C). Act above 77°F (25°C) |
+| Net pots | 2 in (51 mm) on CH1–CH3, 3 in (76 mm) on CH4 |
+| Greens EC | 0.8–1.8 mS/cm. Full change every 7 days |
+| Fruiting EC | Tomato 2.5–3.5 mS/cm, pepper 2.0–3.0 mS/cm, this tank only. Change every 5–7 days |
 
 ---
 
-
-*Next: [`guide/nft/02-nutrient-solution.md`](02-nutrient-solution.md) — Nutrients, EC, pH, and mixing*
 
 [↑ Back to TOC](#table-of-contents)
 
----
+> **Previous:** [Guide 00 — System Overview](00-system-overview.md)
+> **Next:** [Guide 02 — Nutrient Solution](02-nutrient-solution.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

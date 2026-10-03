@@ -7,7 +7,9 @@
 
 Manual monitoring works. But Ebb & Flow systems carry a silent failure mode that makes continuous data logging more important than in almost any other hydroponics method: **timer failure causing permanent flooding.** In NFT, a pump failure dries the roots in 15–30 minutes — visible and bad, but quickly spotted. In E&F, a timer or pump stuck in the ON state floods the table continuously. Roots sit submerged in stagnant, oxygen-depleted solution. Root rot begins within 2–4 hours. By the time you notice, the plants look fine from above — the damage is invisible until it is catastrophic.
 
-This guide covers every level of E&F automation — from a $15 smart plug that confirms the pump is actually cycling, to a full ESP32-based sensor network with drain confirmation sensors, flood cycle logging, EC/pH dashboards, and automated dosing — all within the budget-conscious DIY spirit of this project.
+The primary automatic safety action is a stuck-ON cutoff. If the drain float is still up after the pump should be off, open the pump relay. Roots rot in 2–4 hours when a flood does not end. A second timer that only restarts a pump which failed to start is a convenience. It is not the safety story.
+
+This guide covers every level of E&F automation — from a $15 (R270) smart plug that confirms the pump is actually cycling, to a full ESP32-based sensor network with drain confirmation, flood-cycle logging, EC/pH dashboards, and dosing — in the same DIY spirit as the rest of the build. Prices below use $1 = R18, frozen 3 October 2026.
 
 ---
 
@@ -44,7 +46,7 @@ This guide covers every level of E&F automation — from a $15 smart plug that c
 - [7. Tier 4 — Automated Control](#7-tier-4-automated-control)
   - [Cost: $150–$300 | Skill: Intermediate electronics, basic plumbing | Time: 12–18 hours](#cost-150300-skill-intermediate-electronics-basic-plumbing-time-1218-hours)
   - [7.1 What Tier 4 Automates](#71-what-tier-4-automates)
-  - [7.2 Backup Timer Relay — Critical E&F-Specific Addition](#72-backup-timer-relay-critical-ef-specific-addition)
+  - [7.2 Stuck-ON Cutoff — the Primary Safety Action](#72-stuck-on-cutoff--the-primary-safety-action)
   - [7.3 Automated pH Dosing — E&F Adaptation](#73-automated-ph-dosing-ef-adaptation)
   - [7.4 Automated EC Dosing in E&F — Media Salt Accumulation](#74-automated-ec-dosing-in-ef-media-salt-accumulation)
   - [7.5 Automated Dosing Full Flow](#75-automated-dosing-full-flow)
@@ -100,7 +102,7 @@ This guide covers every level of E&F automation — from a $15 smart plug that c
   - [Pitfall 5 — Skip Calibration on Inline pH/EC Probes](#pitfall-5-skip-calibration-on-inline-phec-probes)
   - [Pitfall 6 — Ignoring Drain EC vs. Reservoir EC Drift](#pitfall-6-ignoring-drain-ec-vs-reservoir-ec-drift)
   - [Pitfall 7 — Alert Fatigue from Turbulence False Positives](#pitfall-7-alert-fatigue-from-turbulence-false-positives)
-  - [Pitfall 8 — Backup Timer Relay Conflicts with Primary Timer](#pitfall-8-backup-timer-relay-conflicts-with-primary-timer)
+  - [Pitfall 8 — A Stuck-OFF Restart Fighting the Stuck-ON Cutoff](#pitfall-8--a-stuck-off-restart-fighting-the-stuck-on-cutoff)
   - [Pitfall 9 — WiFi Outage Creates a Silent Monitoring Blackout](#pitfall-9-wifi-outage-creates-a-silent-monitoring-blackout)
   - [Pitfall 10 — Analog Sensor Noise Causing False Dosing Triggers](#pitfall-10-analog-sensor-noise-causing-false-dosing-triggers)
 - [18. Upgrade Path — From Tier 1 to Tier 4](#18-upgrade-path-from-tier-1-to-tier-4)
@@ -128,9 +130,9 @@ flowchart TD
         T1["07:00 — Flood ON<br/>Table floods normally"]
         T2["07:20 — Flood OFF<br/>Table drains normally"]
         T3["12:00 — Flood ON<br/>Table floods normally"]
-        T4["12:20 — Flood OFF<br/>⚠ DRAIN PARTIALLY BLOCKED<br/>5cm water retained in table"]
-        T5["17:00 — Flood ON<br/>Table adds 5cm more on top of<br/>residual water — now 10cm deep"]
-        T6["17:20 — PUMP OFF<br/>But table cannot fully drain<br/>through partial blockage<br/>Roots submerged 10cm — Pythium begins"]
+        T4["12:20 — Flood OFF<br/>DRAIN PARTIALLY BLOCKED<br/>2 in (5 cm) of water stays in the table"]
+        T5["17:00 — Flood ON<br/>Another 2 in on top of<br/>the water that never left"]
+        T6["17:20 — PUMP OFF<br/>The 1 in drain is still blocked<br/>Roots stay under water<br/>Pythium starts inside 2 to 4 hours"]
         T1 --> T2 --> T3 --> T4 --> T5 --> T6
     end
 
@@ -152,7 +154,7 @@ The partial drain failure at 12:20 was invisible to both manual checks. A drain 
 | Pump stuck ON — permanent flood | 2–4 hours | ❌ Leaves look fine initially | Only if you check during the stuck ON period |
 | Drain partially blocked — residual water | 1–3 days | ❌ No visible sign | Only if you feel the LECA below the surface |
 | Reservoir empty — incomplete floods | Hours to days | ❌ Plants may look fine (stored moisture in LECA) | Only if you check reservoir level |
-| Timer failure — skipped flood cycles | 1–2 days | Slight wilting eventually | Only if you count cycles manually |
+| Timer failure — skipped flood cycles | Moist LECA holds 8–24 hours | Slight wilting is late | Only if you count cycles manually |
 | EC accumulation in LECA between reservoir changes | Weeks | Leaf tip burn eventually | Only if you EC-test the LECA itself |
 | Rain diluting open reservoir | Hours | ❌ | Only if you test EC after rain |
 
@@ -178,9 +180,10 @@ WITH TIER 3 (+ drain confirmation sensor + EC/pH):
   → You know EC and pH continuously
   → You catch drain blockages within 45 minutes — before Pythium establishes
 
-WITH TIER 4 (automated dosing + backup relay):
-  → EC and pH adjust automatically
-  → A second relay fires the pump if the primary timer fails
+WITH TIER 4 (dosing, plus the stuck-ON cutoff):
+  → If the drain float is still up after the pump should be off, the controller opens the pump relay
+  → A backup timer that only recovers a stuck-OFF pump is secondary
+  → EC and pH can dose automatically, outside an active flood
   → You check the dashboard once a day and top up stock bottles weekly
 ```
 
@@ -197,7 +200,7 @@ flowchart LR
     T1["**Tier 1**<br/>Off-the-shelf<br/>smart devices<br/><br/>Cost: $15–$60<br/>─────────<br/>Smart plug on pump<br/>(flood cycle alert)<br/>WiFi thermometer<br/>Battery-backup timer<br/>Phone alerts<br/><br/>Skill: None"]
     T2["**Tier 2**<br/>Single ESP32<br/>sensor node<br/><br/>Cost: $30–$80<br/>─────────<br/>Reservoir level sensor<br/>DS18B20 solution temp<br/>Flood cycle counter<br/>Pump current monitor<br/>WiFi data upload<br/>Simple web UI<br/><br/>Skill: Basic wiring,<br/>flash firmware"]
     T3["**Tier 3**<br/>Multi-sensor network<br/>+ dashboard<br/><br/>Cost: $80–$160<br/>─────────<br/>All Tier 2 +<br/>Table drain confirm<br/>(float switch per table)<br/>EC/pH monitoring<br/>Rain sensor<br/>Grafana dashboard<br/>Historical trends<br/><br/>Skill: Moderate<br/>electronics"]
-    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150–$300<br/>─────────<br/>All Tier 3 +<br/>Automated EC dosing<br/>Automated pH dosing<br/>Backup timer relay<br/>Remote pump control<br/>Full alert system<br/><br/>Skill: Intermediate<br/>electronics, plumbing"]
+    T4["**Tier 4**<br/>Automated<br/>control<br/><br/>Cost: $150 to $300<br/>─────────<br/>All Tier 3 plus<br/>Stuck-ON cutoff:<br/>float still up, open<br/>the pump relay<br/>Dosing<br/>Stuck-OFF restart<br/>is secondary<br/><br/>Skill: Intermediate<br/>electronics, plumbing"]
 
     T0 --> T1 --> T2 --> T3 --> T4
 ```
@@ -285,7 +288,7 @@ ALERT CONDITIONS:
 ```
 
 **Setup:**
-- Plug smart plug into the GFCI/RCD-protected outdoor outlet
+- Plug the smart plug into the 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage breaker)
 - Plug pump into the smart plug (not the timer — the timer connects to the smart plug, and the smart plug connects to the pump, so the smart plug sees the actual pump cycling)
 - Set alert: if consumption stays >5W for >35 consecutive minutes → send notification
 
@@ -404,8 +407,8 @@ The flood cycle counter is the key Tier 2 feature unique to E&F automation. It c
 FLOOD CYCLE COUNTER — HOW IT WORKS:
 
 The ACS712 current sensor is wired in-line with the pump power cable.
-When the pump runs, it draws 20–30W (0.08–0.12A at 240V AC, or
-0.4–0.6A at 12V DC for very small pumps).
+When the pump runs it draws about 35 W (range 25–45 W).
+On 120 V that is roughly 0.2–0.4 A. On 230 V (SA) it is roughly 0.1–0.2 A.
 
 The ESP32 monitors current every 5 seconds:
   IF current > threshold (e.g., >0.05A) → pump is ON
@@ -432,9 +435,10 @@ In NFT, the reservoir level slowly drops over days and weeks as solution is cons
 RESERVOIR LEVEL ALERT THRESHOLDS (E&F system):
 
 Measure level BETWEEN floods (all solution returned to the reservoir).
-A full flood sends ~90 L out to the three tables, so the between-flood
-level must stay high enough that the pump remains submerged at full flood:
-~90 L out + ~20 L pump submersion = ~110 L of the 150 L fill (~75%).
+A full flood sends about 25–30 US gal (95–114 L) out to the three tables.
+The 45 US gal (170 L) fill (range 40–50 US gal / 151–189 L) has to keep
+the pump submerged at the bottom of that swing. Plan on about 15 US gal
+(57 L) still in the tank at full flood.
 
 Level > 90%:  GREEN   Normal operation
 Level 80–90%: GREEN   Monitor; top up within 1–2 days
@@ -482,31 +486,29 @@ EVERY 60 SECONDS, THE NODE:
 
 ### 6.1 The Drain Confirmation Sensor — The Most Important E&F Sensor
 
-The single most important sensor addition at Tier 3 is a **drain confirmation sensor** in each flood table. This sensor answers the question: "Did the table drain completely after the last flood cycle?"
+The drain float is the sensor behind the primary safety action. It answers one question: is the bed still full after the pump should be off?
 
 **Why this matters more than pH or EC sensors:**
 
-A table that does not drain completely creates a permanently saturated zone at the bottom of the LECA bed. Within 24–48 hours of a drain failure, anaerobic conditions in the saturated zone trigger Pythium and other water-mould pathogens. The plant looks completely healthy from above — the roots are dying below. By the time leaf symptoms appear, the plant is past saving.
-
-Drain failure is the silent killer of E&F systems. A drain confirmation sensor catches it within 45 minutes of flood end, long before any plant damage occurs.
+A pump stuck ON, or a 1 in (25 mm) drain that does not empty, holds roots under water. Root rot starts in 2–4 hours. The plant still looks fine from above. The action is not another alert you might sleep through. If the float is still up after the pump should be off, open the pump relay.
 
 ### 6.2 Drain Confirmation Sensor — Float Switch
 
-A float switch is a simple waterproof switch that opens or closes based on whether it is submerged. Mount one in each flood table, low on the table wall — 3–4 cm above the table floor: below the flood waterline (standpipe height) so it reads ON at flood, but above any residual puddle so it reads OFF once the table has drained. Keep a small pocket in the LECA clear so the float moves freely.
+A float switch opens or closes depending on whether it is under water. Mount one in each flood table, low in the bed — about 1½ in (3–4 cm) above the floor. That is below the 4¼ in (11 cm) standpipe, so the float is up during a real flood, and down once the 1 in drain has emptied the bed. Keep a pocket in the 5 in (13 cm) LECA clear so the float can move.
 
 ```mermaid
 flowchart TD
     subgraph table["FLOOD TABLE — cross-section view"]
         TOP["─── table wall top ───────────────"]
-        LECA["── LECA bed (12–15cm depth) ─────"]
-        SP["─── STANDPIPE tip (flood limit, ~2cm below LECA surface) ──"]
-        FS["🔵 FLOAT SWITCH<br/>(mounted 3–4cm above table floor)<br/>● Submerged = ON (water present)<br/>● Dry = OFF (drained)"]
+        LECA["── LECA bed, 5 in (13 cm) ──"]
+        SP["── STANDPIPE, 4.25 in, about 0.75 in below the LECA ──"]
+        FS["FLOAT SWITCH<br/>about 1.5 in above the floor<br/>Up = water still there<br/>Down = drained"]
         DRAIN["─── table floor / drain port ────"]
     end
     ESP["ESP32<br/>monitors float switch state"]
 
     FS -->|"signal wire"| ESP
-    ESP -->|"IF float ON >45 min after flood end"| ALERT["ALERT: Table not drained<br/>Check standpipe, drain hose,<br/>drain fitting for blockage"]
+    ESP -->|"float still up after the pump should be off"| ALERT["OPEN THE PUMP RELAY<br/>Then alert: table not drained<br/>Check the 1 in drain and the 1.5 in standpipe"]
 
     style FS fill:#1a3a5a,stroke:#4a8aaa,color:#aaddff
     style ALERT fill:#3a1a1a,stroke:#aa4a4a,color:#ffaaaa
@@ -531,10 +533,11 @@ EVERY 60 SECONDS:
   time_since_flood_end = now() - flood_end_time
 
   FOR EACH table:
-    IF table_float[i] == SUBMERGED AND time_since_flood_end > 45 minutes:
-      → SEND ALERT: "Table [i] not drained 45 min after flood end"
-      → LOG event with timestamp
-      → PAUSE next flood cycle (do not flood a table that has not drained)
+    IF table_float[i] == SUBMERGED AND the pump should already be off:
+      → OPEN THE PUMP RELAY. This is the stuck-ON cutoff.
+      → SEND ALERT: "Table [i] still flooded after the pump should be off"
+      → LOG the event
+      → Do not start another flood until that float is down
 
     IF table_float[i] == DRY AND time_since_flood_end > 5 minutes:
       → LOG "Table [i] drain confirmed at [timestamp]"
@@ -581,7 +584,7 @@ Inline EC and pH probes are placed in a sensor cell on the reservoir outflow lin
 
 ```mermaid
 flowchart TD
-    RES["Reservoir (150–200L)"]
+    RES["Reservoir, 45 US gal"]
     PUMP["Submersible Pump<br/>800–1200 L/h"]
     CELL["Sensor Cell<br/>(32mm PVC T-piece)<br/>EC probe ●<br/>pH probe ●<br/>Temp probe ●"]
     SPLIT["Supply manifold<br/>(splits to all three tables)"]
@@ -686,37 +689,38 @@ Panel 7: ALERT LOG
 |---|---|---|---|
 | **pH auto-dosing** | Peristaltic pump dispenses pH Down/Up when pH drifts | Peristaltic pump + relay + pH probe | $25–$40 |
 | **EC auto-dosing** | Peristaltic pump dispenses nutrient concentrate when EC drops | Peristaltic pump + relay + EC probe | $25–$40 |
-| **Backup timer relay** | If primary timer fails, backup relay fires flood cycle | Second relay module + watchdog timer | $10–$15 |
+| **Stuck-ON cutoff** | If the drain float is still up after the pump should be off, open the pump relay | Float input plus the pump relay | $10–$15 (R180–R270) |
+| **Stuck-OFF restart** | Secondary. If a scheduled flood never starts, a second path can start the pump | Second relay. Not the safety device | included above |
 | **Remote pump control** | Manually fire a flood cycle from phone | Smart plug with API / ESP32 relay | $0 (existing smart plug) |
 | **Cooling fan** | Fan blows across reservoir surface when temp > 24°C | 12V fan + relay module | $8–$12 |
 | **Reservoir auto top-up** | Float valve or solenoid opens water supply when level drops | Float valve or solenoid + level sensor | $15–$25 |
 
-### 7.2 Backup Timer Relay — Critical E&F-Specific Addition
+### 7.2 Stuck-ON Cutoff — the Primary Safety Action
 
-This is the Tier 4 addition most specific to E&F and most important for reliability. The primary flood timer controls the pump via normal means (mechanical or digital timer). A secondary relay, controlled by the ESP32, acts as a fallback.
+The failure that rots roots is a pump that stays on. Root rot starts in 2–4 hours. The outdoor timer is already a digital 1-minute timer in a weatherproof box. Automation adds one action on top of that timer: if the drain float is still up after the pump should be off, open the pump relay.
+
+A second path that only starts a pump which failed to start is useful, and it is secondary. It does not stop a flood that never ended.
 
 ```mermaid
 flowchart TD
-    SCHED["ESP32 internal clock<br/>(knows the flood schedule)"]
-    PRIMARY["PRIMARY TIMER<br/>(digital timer with battery backup)"]
-    RELAY["BACKUP RELAY<br/>(ESP32 GPIO → relay module)"]
-    PUMP["Submersible Pump"]
-    MONITOR["ACS712 current sensor<br/>(confirms pump is ON)"]
+    SCHED["Schedule says the pump should be off"]
+    FLOAT["Drain float"]
+    RELAY["Pump relay"]
+    PUMP["Submersible pump"]
+    OFFPATH["Secondary path<br/>stuck-OFF only"]
 
-    PRIMARY -->|"scheduled ON"| PUMP
-    RELAY -->|"backup ON<br/>(if primary fails)"| PUMP
-    PUMP --> MONITOR --> SCHED
+    SCHED --> FLOAT
+    FLOAT -->|"still up"| RELAY
+    RELAY -->|"open the relay"| PUMP
+    SCHED -->|"flood time and current still 0 A"| OFFPATH
+    OFFPATH -->|"may close the relay to start one flood"| PUMP
 
-    LOGIC["BACKUP RELAY LOGIC:<br/>─────────────────────────────────────<br/>IF scheduled flood time arrives:<br/>   AND pump current still 0A after 5 min:<br/>   → Fire backup relay (pump ON)<br/>   → Log: 'Primary timer failed — backup activated'<br/>   → ALERT: 'Primary timer failure — check timer'<br/><br/>IF pump current detected (primary working):<br/>   → Do NOT fire backup relay<br/>   → Normal operation"]
+    LOGIC["PRIMARY: float still up after the pump should be off<br/>then open the pump relay and alert<br/><br/>SECONDARY: scheduled flood and current still 0 A after 5 min<br/>then a stuck-OFF restart may run one flood and alert<br/>That restart does not hold the relay closed"]
 
-    SCHED --> LOGIC
-    LOGIC --> RELAY
-
-    style RELAY fill:#1a3a1a,stroke:#4a8a4a,color:#aaffaa
-    style LOGIC fill:#1a1a3a,stroke:#4a4a8a,color:#ccccff
+    FLOAT --> LOGIC
 ```
 
-This dual-timer approach means the system continues to operate correctly even if the primary timer fails — and you receive an alert to replace the timer at your convenience rather than discovering the failure after plant damage.
+Opening the relay is the headline. The stuck-OFF restart is the footnote. Do not describe a backup timer that only recovers a stopped pump as the safety system.
 
 ### 7.3 Automated pH Dosing — E&F Adaptation
 
@@ -1475,13 +1479,13 @@ E&F ALERT PRIORITIES
 
 🔴 CRITICAL (wake you up at 3 AM — immediate action required)
 
-  • Pump running > 35 consecutive minutes
-    → Timer failure / stuck relay → permanent flooding → root rot in 2–4h
-    → Action: Power off pump immediately; inspect and replace timer
+  • Pump running past the end of the flood, or the drain float still up
+    → Stuck ON. Root rot in 2–4 hours
+    → Action: open the pump relay. That is the primary automatic safety action.
+      Then clear the 1 in drain or the timer.
 
-  • Table float switch SUBMERGED > 45 min after flood end
-    → Drain failure → roots submerged → Pythium within hours
-    → Action: Power off pump; inspect drain fitting and hose; clear blockage
+  • Table float still up after the pump should be off
+    → Same cutoff. Open the pump relay. Inspect the 1 in drain and the 1½ in standpipe.
 
   • Reservoir level < 15%
     → Pump at risk of dry run → incomplete floods → pump damage
@@ -1722,7 +1726,7 @@ PATTERN: Flood count = 0 for a whole day
 CRITICAL — immediate investigation:
   - Timer failure (battery dead? programme corrupted?)
   - Pump failure (impeller seized, capacitor failed)
-  - GFCI/RCD tripped (possible water ingress to electrics)
+  - 120 V outdoor GFCI tripped (SA: 230 V, 30 mA earth-leakage). Water may have reached the electrics.
   - Power outage lasted longer than timer battery backup
   → Manually run one flood cycle; if system responds: timer issue
   → If pump doesn't respond manually: pump or electrical failure
@@ -2086,7 +2090,9 @@ if (millis() - flood_end_ms > 300000) {  // 5 min post-flood
 
 **Prevention:** Use flood-active masking for all sensor readings that are affected by turbulence. In ESPHome: use `filters: - heartbeat: 5min` on the reservoir level sensor to average out transient turbulence dips. In custom firmware: maintain a running average over 3 minutes and only trigger alerts on the averaged value.
 
-### Pitfall 8 — Backup Timer Relay Conflicts with Primary Timer
+### Pitfall 8 — A Stuck-OFF Restart Fighting the Stuck-ON Cutoff
+
+The primary action is still: if the drain float is still up after the pump should be off, open the pump relay. The stuck-OFF restart below is secondary, and it can fight that cutoff if both paths close the relay at once.
 
 **Problem:** The Tier 4 backup timer relay (ESP32-controlled) fires simultaneously with the primary timer. Both the primary timer and the backup relay are trying to control the same pump simultaneously. Under certain relay configurations, this can cause a race condition where both signal ON but the pump receives an ambiguous control signal.
 
@@ -2431,12 +2437,15 @@ flowchart TD
 | Historical data | Paper log | App (20 days) | 30+ days | 30+ days | 30+ days |
 | Automated pH dosing | ❌ | ❌ | ❌ | ❌ | ✅ |
 | Automated EC dosing | ❌ | ❌ | ❌ | ❌ | ✅ |
-| Backup timer relay | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Stuck-ON cutoff (open the pump relay) | ❌ | Alert only | Alert only | Float can trip it | ✅ relay opens |
+| Stuck-OFF restart | ❌ | ❌ | ❌ | ❌ | Secondary |
 | Daily time required | 10–15 min | 5–10 min | 5 min | 3–5 min | 1–2 min |
 
-> The E&F system's most dangerous failure modes — stuck-ON pump and undrained tables — are both addressed by Tier 1 (smart plug) and Tier 2 (current sensor + float switches) respectively. If you only have $60 to spend on automation, spend it on Tier 1. If you have $120, add Tier 2 float switches. Everything after that improves convenience and data quality. But those two additions protect your crops.
+> A stuck-ON pump rots roots in 2–4 hours. The safety action is: if the drain float is still up after the pump should be off, open the pump relay. A smart plug that texts you is the Budget version of noticing. The float that opens the relay is the version that acts. A backup timer that only recovers a stuck-OFF pump is secondary. If you spend $60 (R1,080), spend it on a smart plug that can drop the pump. If you spend more, add the float and wire it to open that relay.
 
 ---
+
+> **Previous:** [Guide 12 — Budget and Sourcing](./12-budget-and-sourcing.md)
 
 [↑ Back to TOC](#table-of-contents)
 

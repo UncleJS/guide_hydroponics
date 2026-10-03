@@ -4,6 +4,7 @@
 [![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Doses, EC targets, and reservoir volumes follow [Design Constants](../design-constants.md). Zone layout is in [zones.md](../../zones.md).
 
 ---
 
@@ -32,12 +33,12 @@
   - [The Masterblend Trio (Budget Champion)](#the-masterblend-trio-budget-champion)
 - [7. Masterblend Trio — Mixing Recipe](#7-masterblend-trio-mixing-recipe)
   - [Components](#components)
-  - [Standard Mixing Recipe (per 4 litres / ~1 US gallon of water)](#standard-mixing-recipe-per-4-litres-1-us-gallon-of-water)
+  - [Standard Mixing Recipe (per 1 US gal)](#standard-mixing-recipe-per-1-us-gal)
   - [Masterblend Dose Scaling](#masterblend-dose-scaling)
 - [8. General Hydroponics Flora Series Schedule](#8-general-hydroponics-flora-series-schedule)
-  - [Mix Ratios (per litre of water)](#mix-ratios-per-litre-of-water)
+  - [Mix Ratios (per US gallon)](#mix-ratios-per-us-gallon)
 - [9. Nutrient Solution Temperature](#9-nutrient-solution-temperature)
-  - [Optimal: 18–22°C](#optimal-1822c)
+  - [Aim: 64–72°F (18–22°C)](#solution-temperature-aim)
 - [10. Reservoir Top-Up vs Full Change](#10-reservoir-top-up-vs-full-change)
   - [Two Operations — Very Different Purposes](#two-operations-very-different-purposes)
 - [11. Visual Nutrient Deficiency and Toxicity Guide](#11-visual-nutrient-deficiency-and-toxicity-guide)
@@ -51,7 +52,7 @@
   - [Why Organic Is Harder in NFT Specifically](#why-organic-is-harder-in-nft-specifically)
 - [13. Water Volume Calculator Reference](#13-water-volume-calculator-reference)
   - [Reservoir Volume Needed](#reservoir-volume-needed)
-  - [Solution Volume per Full Mix (80L reservoir)](#solution-volume-per-full-mix-80l-reservoir)
+  - [Solution Volume per Full Mix](#solution-volume-per-full-mix)
 
 ---
 
@@ -71,7 +72,9 @@ This is both the power and the responsibility of hydroponics:
 
 ## 2. The 17 Essential Plant Nutrients
 
-Plants require 17 elements to complete their life cycle. These are divided into three groups:
+A plant needs 17 essential elements to finish its life cycle. Carbon, hydrogen, and oxygen are three of them, and the plant takes those from air and water, not from the nutrient bottle. The other 14 are mineral elements you dissolve into the solution. They are the tables below: nitrogen, phosphorus, potassium, calcium, magnesium, sulfur, iron, manganese, zinc, copper, boron, molybdenum, chlorine, and nickel.
+
+Hydroponic lists sometimes call a longer mineral set "the 17" by adding silicon or other extras. Silicon is beneficial for cell walls and pest resistance. It is not one of the 17. Cobalt and sodium are not part of that list either. Do not count them in the 14 minerals you are required to dose.
 
 ### Macronutrients (needed in large quantities)
 
@@ -101,9 +104,8 @@ Plants require 17 elements to complete their life cycle. These are divided into 
 | **Molybdenum** | Mo | Nitrogen fixation, enzyme function | Cupped/cupping leaves, marginal scorch |
 | **Chlorine** | Cl | Osmosis, photosynthesis | Wilting, bronzing of leaves |
 | **Nickel** | Ni | Urease enzyme | Rare — tip necrosis of young leaves |
-| **Silicon** | Si | Cell wall reinforcement, pest resistance | Not technically essential but highly beneficial |
-| **Cobalt** | Co | Nitrogen fixation, vitamin B12 | Extremely rare deficiency |
-| **Sodium** | Na | Osmotic adjustment | Rarely deficient |
+
+Silicon is beneficial, not one of the 17, and it is not in the Masterblend dose you weigh below. Cobalt and sodium are not essential for this system.
 
 > **Key insight:** Micronutrient deficiencies are often caused not by absence from the solution but by **pH locking them out**. This is why pH control is non-negotiable.
 
@@ -128,7 +130,7 @@ flowchart TD
     B --> BP["P: Moderate"]
     B --> BK["K: Moderate"]
 
-    C["🍅 FRUITING / FLOWERING (tomatoes, peppers, strawberries)<br/>NPK ratio: 1 : 2 : 3<br/>EC: 2.5–4.0 mS/cm"]
+    C["FRUITING (CH4 tank only: tomato or pepper)<br/>NPK ratio: 1 : 2 : 3<br/>Tomato EC 2.5-3.5, pepper EC 2.0-3.0"]
     C --> CN["N: Reduce — too much N delays fruiting"]
     C --> CP["P: High — flower initiation, seed/fruit set"]
     C --> CK["K: Very high — fruit quality, sugar, firmness"]
@@ -170,21 +172,27 @@ Units: **mS/cm** (millisiemens per centimetre) — some meters display as EC, ot
 
 ### EC Target Ranges by Crop
 
-| Crop | Seedling | Vegetative | Fruiting | Maximum |
-|------|----------|-----------|---------|---------|
-| Lettuce | 0.6–0.8 | 0.8–1.2 | 1.0–1.6 | 1.8 |
-| Spinach | 0.8–1.0 | 1.4–1.8 | 1.8–2.0 | 2.2 |
-| Basil | 0.8–1.0 | 1.0–1.6 | 1.4–1.8 | 2.0 |
-| Cilantro/parsley | 0.8–1.0 | 1.2–1.6 | — | 1.8 |
-| Mint | 0.8–1.0 | 1.2–1.6 | — | 2.0 |
-| Kale | 1.0–1.2 | 1.5–2.0 | 2.0–2.5 | 2.5 |
-| Cherry tomatoes | 0.8–1.2 | 2.0–2.5 | 2.5–4.0 | 4.5 |
-| Peppers | 0.8–1.2 | 1.8–2.5 | 2.5–3.5 | 4.0 |
-| Strawberries | 0.8–1.0 | 1.2–1.6 | 1.4–2.0 | 2.2 |
-| Radishes (bags) | 0.8–1.0 | 1.2–1.6 | 1.6–2.0 | 2.2 |
-| Carrots (bags) | 0.6–0.8 | 1.0–1.4 | 1.4–1.8 | 2.0 |
+| Crop | Where it grows | Seedling | Vegetative | Fruiting or mature | Ceiling |
+|------|----------------|----------|-----------|--------------------|---------|
+| Lettuce | CH1, greens tank | 0.6–0.8 | 0.8–1.2 | 1.0–1.6 | 1.8 |
+| Spinach | CH3, greens tank | 0.8–1.0 | 1.2–1.6 | 1.4–1.8 | 1.8 |
+| Basil | CH2, greens tank | 0.8–1.0 | 1.0–1.6 | 1.4–1.8 | 1.8 |
+| Cilantro, parsley, chives | CH2, greens tank | 0.8–1.0 | 1.0–1.6 | — | 1.8 |
+| Kale, mint | CH3, greens tank | 0.8–1.2 | 1.2–1.6 | 1.4–1.8 | 1.8 |
+| Strawberries | CH3, 3–4 of the 11 sites, greens tank | 0.8–1.0 | 1.2–1.6 | 1.4–1.8 | 1.8 |
+| Cherry tomatoes | CH4, fruiting tank only | 0.8–1.2 | 2.0–2.5 | 2.5–3.5 | 3.5 |
+| Peppers | CH4, fruiting tank only | 0.8–1.2 | 1.8–2.2 | 2.0–3.0 | 3.0 |
+| Radishes (bags) | Zone C | 0.8–1.0 | 1.2–1.6 | 1.6–2.0 | 2.0 |
+| Beetroot (bags) | Zone C | 0.8–1.0 | 1.2–1.6 | 1.6–2.0 | 2.0 |
+| Carrots (bags) | Zone C | 0.6–0.8 | 1.0–1.4 | 1.4–1.8 | 2.0 |
 
-> **Mixed channel note:** When running a channel with multiple crop types, set EC to the **lower end** of the most sensitive crop's range. In CH1 (lettuce + herbs), target 1.0–1.4 mS/cm.
+All values are mS/cm.
+
+CH1–CH3 share the 20 US gal (76 L) greens tank, so that tank stays in **0.8–1.8 mS/cm** for the whole loop. Lettuce stays at or below 1.8 mS/cm, which is why spinach, kale, herbs, and strawberries on this loop do not get a higher target. CH1 is lettuce only. Herbs are CH2, not a mix inside the lettuce channel.
+
+Tomato fruiting **2.5–3.5 mS/cm** and pepper fruiting **2.0–3.0 mS/cm** apply only in the 10 US gal (38 L) CH4 tank. If tomato and pepper share that tank, hold **2.5–3.0 mS/cm**, which sits inside both fruiting bands. Do not put those numbers in the greens tank.
+
+Zone C fertigation ceiling is **2.0 mS/cm**. Beetroot does not get a higher target.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -202,7 +210,7 @@ pH measures the **acidity or alkalinity** of the solution on a 0–14 scale:
 
 ### Target pH Range for Hydroponics: 5.5–6.5
 
-This range is critical because it is the window where **all essential nutrients are simultaneously available** at adequate levels. Outside this range, specific nutrients become chemically locked into forms the plant cannot absorb — even if those nutrients are present in the water.
+The **working window is pH 5.8–6.2**. The **acceptable band is 5.5–6.5**. That wider band is where the essential nutrients are available together at usable levels. Outside 5.5–6.5, specific nutrients lock into forms the plant cannot absorb, even when those nutrients are in the water. Steer daily readings back into 5.8–6.2.
 
 ### Nutrient Availability vs pH (Mulder's Chart Simplified)
 
@@ -214,7 +222,7 @@ xychart-beta
     bar [2, 8, 8, 8, 8, 4, 0]
 ```
 
-> **Key:** Each bar represents the number of major nutrients readily available at that pH level. The range **5.8–6.3** maximises simultaneous availability of all nutrients.
+> **Key:** Each bar represents the number of major nutrients readily available at that pH level. The working window for this build is **pH 5.8–6.2**. The acceptable band is **5.5–6.5**.
 >
 > Detailed availability by nutrient:
 >
@@ -231,19 +239,18 @@ xychart-beta
 > | B | 5.5–6.5 |
 > | Mo | 6.5–8.0 (locked out below ~6.0) |
 >
-> **Optimal window: pH 5.8–6.3 maximises all nutrient availability**
+> **Working window: pH 5.8–6.2. Acceptable band: pH 5.5–6.5.**
 
 ### Ideal pH by Crop
 
 | Crop | Target pH |
 |------|-----------|
-| Most leafy greens | 5.5–6.5 (aim for 6.0) |
-| Tomatoes | 5.5–6.5 (aim for 6.0–6.2) |
-| Peppers | 5.5–6.5 (aim for 6.0) |
-| Strawberries | 5.5–6.5 (aim for 5.8–6.2) |
-| Herbs (basil, cilantro) | 5.5–6.5 (aim for 5.8–6.2) |
+| Greens loop (lettuce, herbs, spinach, kale, mint, strawberries) | Working window 5.8–6.2 |
+| CH4 tomatoes or peppers | Working window 5.8–6.2 |
+| Zone B microgreens (water only) | 5.8–6.2 |
+| Zone C bags | Working window 5.8–6.2 |
 
-**For a mixed channel:** target **5.8–6.2** as a universal compromise.
+**Both reservoirs and the grow-bag fertigation use pH 5.8–6.2.** The acceptable band, if a reading drifts, is 5.5–6.5. Adjust when the reading leaves 5.5–6.5, and steer back into 5.8–6.2.
 
 ### pH Drift
 
@@ -278,7 +285,7 @@ Normal drift: ±0.2–0.5 pH per day is acceptable. Adjust when outside 5.5–6.
 
 ### The Masterblend Trio (Budget Champion)
 - **Components:** MasterBlend 4-18-38 + Calcium Nitrate (15.5-0-0) + Magnesium Sulphate (Epsom Salt)
-- **Pros:** Extremely cost-effective (a few dollars per growing season), professional-grade results, widely used by commercial growers
+- **Pros:** Extremely cost-effective for a season of reservoir fills, professional-grade results, widely used by commercial growers. Price the salts in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md) in US dollars with rand in brackets
 - **Cons:** Dry salts, requires accurate weighing (digital scale needed), no pH buffering built in
 
 [↑ Back to TOC](#table-of-contents)
@@ -298,40 +305,50 @@ This is the most cost-effective nutrient system available. Used by professional 
 | Calcium Nitrate | Ca(NO₃)₂ | 15.5-0-0 + 19% Ca |
 | Magnesium Sulphate | MgSO₄ (Epsom Salt) | 10% Mg, 13% S |
 
-### Standard Mixing Recipe (per 4 litres / ~1 US gallon of water)
+### Standard Mixing Recipe (per 1 US gal)
+
+Per **1 US gal (3.8 L)**, vegetative base, EC about **1.4–1.6 mS/cm**:
+
+| Salt | Per 1 US gal | Per litre |
+|------|----------------|-----------|
+| Masterblend 4-18-38 | 2.4 g | 0.63 g/L |
+| Calcium nitrate | 2.4 g | 0.63 g/L |
+| Epsom salt | 1.2 g | 0.32 g/L |
+
+Write the dose as **2.4 g/US gal (0.63 g/L)** for Masterblend and for calcium nitrate, and **1.2 g/US gal (0.32 g/L)** for Epsom salt. Keep that 2 : 2 : 1 ratio when you scale. Do not change the ratio to chase one element unless you are in a deficiency correction.
 
 ```
-  STANDARD VEGETATIVE MIX (EC ~1.4–1.6 mS/cm):
-
-  1. Calcium Nitrate:     2.4g per 4L (0.6g per litre)
-  2. MasterBlend 4-18-38: 2.4g per 4L (0.6g per litre)
-  3. Epsom Salt:          1.2g per 4L (0.3g per litre)
-
   MIXING ORDER (critical — always in this sequence):
 
-  Step 1: Fill reservoir/container with 50% of your target water volume
-  Step 2: Add Calcium Nitrate, stir until dissolved
-  Step 3: Add remaining water (to dilute Ca before adding sulphate/phosphate)
-  Step 4: Add Epsom Salt, stir until dissolved
-  Step 5: Add MasterBlend, stir until dissolved
+  Step 1: Fill the reservoir with 50% of the target water volume
+  Step 2: Add calcium nitrate, stir until dissolved
+  Step 3: Add the remaining water (dilute calcium before sulphate and phosphate)
+  Step 4: Add Epsom salt, stir until dissolved
+  Step 5: Add Masterblend, stir until dissolved
   Step 6: Adjust pH to 5.8–6.2
-  Step 7: Measure EC — should read ~1.4–1.6 mS/cm
+  Step 7: Measure EC — the vegetative base should read about 1.4–1.6 mS/cm
 
-  ⚠ NEVER mix Calcium Nitrate and MasterBlend directly — they will precipitate
-    (form insoluble solids). Always dissolve in water separately.
+  NEVER mix calcium nitrate and Masterblend as dry salts in the same
+  cup. They precipitate. Dissolve each in water, in the order above.
 ```
 
 ### Masterblend Dose Scaling
 
-| Target EC | Calcium Nitrate | MasterBlend | Epsom Salt |
-|-----------|----------------|-------------|-----------|
-| 0.8 mS/cm (seedling) | 1.2g/4L | 1.2g/4L | 0.6g/4L |
-| 1.2 mS/cm (light veg) | 1.8g/4L | 1.8g/4L | 0.9g/4L |
-| 1.6 mS/cm (standard veg) | 2.4g/4L | 2.4g/4L | 1.2g/4L |
-| 2.0 mS/cm (tomatoes veg) | 3.0g/4L | 3.0g/4L | 1.5g/4L |
-| 3.0 mS/cm (tomatoes fruiting) | 4.5g/4L | 4.5g/4L | 2.2g/4L |
+Scale the **whole** recipe. The grams below are per 1 US gal (3.8 L). The litre column is the same dose divided by 3.8, not a second recipe.
 
-> **Always verify with your EC meter.** These are starting points — your source water EC affects the final reading.
+| Target EC | Masterblend | Calcium nitrate | Epsom salt |
+|-----------|-------------|-----------------|------------|
+| 0.8 mS/cm (seedling, greens) | 1.3 g/US gal (0.34 g/L) | 1.3 g/US gal (0.34 g/L) | 0.65 g/US gal (0.17 g/L) |
+| 1.2 mS/cm (light veg) | 1.9 g/US gal (0.50 g/L) | 1.9 g/US gal (0.50 g/L) | 0.95 g/US gal (0.25 g/L) |
+| 1.4–1.6 mS/cm (vegetative base) | 2.4 g/US gal (0.63 g/L) | 2.4 g/US gal (0.63 g/L) | 1.2 g/US gal (0.32 g/L) |
+| 2.0 mS/cm (pepper fruiting, low end) | 3.2 g/US gal (0.84 g/L) | 3.2 g/US gal (0.84 g/L) | 1.6 g/US gal (0.42 g/L) |
+| 2.5 mS/cm (tomato fruiting, low end) | 4.0 g/US gal (1.06 g/L) | 4.0 g/US gal (1.06 g/L) | 2.0 g/US gal (0.53 g/L) |
+| 3.0 mS/cm (inside both fruiting bands) | 4.8 g/US gal (1.27 g/L) | 4.8 g/US gal (1.27 g/L) | 2.4 g/US gal (0.63 g/L) |
+| 3.5 mS/cm (tomato fruiting ceiling) | 5.6 g/US gal (1.48 g/L) | 5.6 g/US gal (1.48 g/L) | 2.8 g/US gal (0.74 g/L) |
+
+Rows are proportional to the vegetative base: 2.4 g Masterblend per 1 US gal at about 1.5 mS/cm, the middle of the 1.4–1.6 band. The 2.0–3.5 rows are for the **CH4 tank only**. The greens tank stops at 1.8 mS/cm.
+
+> **Always verify with your EC meter.** Source-water EC sits underneath these doses. If the meter is already at target, do not add the next step of salts.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -342,19 +359,21 @@ This is the most cost-effective nutrient system available. Used by professional 
 
 For those preferring a liquid system. This is the most documented nutrient schedule in hobby hydroponics.
 
-### Mix Ratios (per litre of water)
+### Mix Ratios (per US gallon)
+
+Millilitres per 1 US gal (3.8 L). The figure in brackets is the same dose per litre. EC is mS/cm. On this system, stop the greens tank at 1.8 mS/cm. Bloom rows above that are for the CH4 tank only, and they still have to land inside tomato fruiting 2.5–3.5 or pepper fruiting 2.0–3.0. Do not run the late-bloom row past those ceilings.
 
 | Stage | FloraGro | FloraBloom | FloraMicro | EC Target |
 |-------|----------|-----------|-----------|---------|
-| Seedling/clone | 1.25ml | 1.25ml | 0.5ml | 0.6–0.8 |
-| Early vegetative | 3ml | 1ml | 2ml | 1.0–1.4 |
-| Late vegetative | 4ml | 2ml | 3ml | 1.4–1.8 |
-| Early bloom | 2ml | 4ml | 3ml | 1.8–2.4 |
-| Mid bloom | 1ml | 5ml | 3ml | 2.0–2.8 |
-| Late bloom/ripening | 0ml | 6ml | 3ml | 2.4–3.2 |
-| Flush (final week) | 0ml | 0ml | 0ml | 0.2–0.4 |
+| Seedling/clone | 4.7 ml (1.25 ml/L) | 4.7 ml (1.25 ml/L) | 1.9 ml (0.5 ml/L) | 0.6–0.8 |
+| Early vegetative | 11 ml (3 ml/L) | 3.8 ml (1 ml/L) | 7.6 ml (2 ml/L) | 1.0–1.4 |
+| Late vegetative | 15 ml (4 ml/L) | 7.6 ml (2 ml/L) | 11 ml (3 ml/L) | 1.4–1.8 |
+| Early bloom (CH4) | 7.6 ml (2 ml/L) | 15 ml (4 ml/L) | 11 ml (3 ml/L) | 1.8–2.4 |
+| Mid bloom (CH4) | 3.8 ml (1 ml/L) | 19 ml (5 ml/L) | 11 ml (3 ml/L) | 2.0–2.8 |
+| Late bloom (CH4) | 0 ml | 23 ml (6 ml/L) | 11 ml (3 ml/L) | 2.4–3.2, then cap at the crop ceiling |
+| Flush (final week) | 0 ml | 0 ml | 0 ml | 0.2–0.4 |
 
-> Always add FloraMicro FIRST when mixing multiple components.
+> Always add FloraMicro first when mixing multiple components.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -363,21 +382,23 @@ For those preferring a liquid system. This is the most documented nutrient sched
 
 ## 9. Nutrient Solution Temperature
 
-### Optimal: 18–22°C
+### Solution temperature aim
+
+Aim for **64–72°F (18–22°C)**. Above **77°F (25°C)** is the heat action line.
 
 Nutrient solution temperature affects:
 1. **Dissolved oxygen** — colder water holds more O₂ (critical for roots)
-2. **Nutrient uptake rates** — enzyme activity in roots slows below 15°C and above 28°C
-3. **Microbial activity** — warm water promotes pathogen growth (Pythium thrives above 24°C)
+2. **Nutrient uptake rates** — root enzyme activity slows below 59°F (15°C) and above 82°F (28°C)
+3. **Microbial activity** — warm water promotes pathogens. Above **77°F (25°C)**, dissolved oxygen falls and pythium risk rises. That is the heat action line for both reservoirs
 
 ```mermaid
 flowchart LR
-    T1["10–15°C<br/>DO: High (9–11 mg/L)<br/>Roots: Slow — cold stress<br/>Pathogens: Very low"]
-    T2["15–18°C<br/>DO: Good (8–9 mg/L)<br/>Roots: Slightly reduced<br/>Pathogens: Low"]
-    T3["✅ 18–22°C — TARGET<br/>DO: Optimal (8–9 mg/L)<br/>Roots: Excellent<br/>Pathogens: Low"]
-    T4["22–26°C<br/>DO: Reduced (7–8 mg/L)<br/>Roots: Good<br/>Pathogens: Moderate"]
-    T5["26–30°C<br/>DO: Low (7 mg/L)<br/>Roots: Stressed<br/>Pathogens: High"]
-    T6["30°C+<br/>DO: Very low (&lt;7 mg/L)<br/>Roots: Severe stress<br/>Pathogens: Very high"]
+    T1["50-59 F / 10-15 C<br/>DO: High, 9-11 mg/L<br/>Roots: Slow, cold stress<br/>Pathogens: Very low"]
+    T2["59-64 F / 15-18 C<br/>DO: Good, 8-9 mg/L<br/>Roots: Slightly reduced<br/>Pathogens: Low"]
+    T3["64-72 F / 18-22 C TARGET<br/>DO: 8-9 mg/L<br/>Roots: Excellent<br/>Pathogens: Low"]
+    T4["72-77 F / 22-25 C<br/>DO: Falling<br/>Roots: Still workable<br/>Watch the 77 F line"]
+    T5["Above 77 F / 25 C<br/>HEAT ACTION<br/>DO: Low<br/>Pythium risk rises"]
+    T6["86 F / 30 C and above<br/>DO: Very low<br/>Roots: Severe stress<br/>Pathogens: Very high"]
 
     T1 --> T2 --> T3 --> T4 --> T5 --> T6
 
@@ -389,7 +410,7 @@ flowchart LR
     style T6 fill:#5a0000,color:#fcc
 ```
 
-**Outdoor challenge:** Reservoir water temperature tracks ambient temperature. A black or exposed reservoir in summer can reach 28–32°C — dangerous territory. Solutions: shade the reservoir, insulate it, paint it white, partially bury it, or use an aquarium chiller (see guide/10).
+**Outdoor challenge:** Reservoir temperature tracks the air. Summer afternoon highs in the worked climate are 90–100°F (32–38°C), June–August (SA: December–February). An unshaded dark tank can climb well past 77°F (25°C). Both reservoirs are a **black body with a white exterior**, shaded, ideally under the frame. Insulation, a partial bury, or an aquarium chiller are the next steps if shade and the white exterior cannot hold the aim of 64–72°F (18–22°C). See [Guide 10 — Climate Management](10-climate-management.md). Deploy 40% shade cloth when afternoon highs hold above 85°F (29°C).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -400,30 +421,33 @@ flowchart LR
 
 ### Two Operations — Very Different Purposes
 
-**Daily top-up (common):**
-- As plants transpire and the pump operates, reservoir level drops
-- Top up with **pH-adjusted water only** (no nutrients)
-- This restores volume without increasing nutrient concentration
-- EC will rise slightly over time as water evaporates but nutrients remain
+**Top-up (level has dropped):**
+- Plants transpire, and the level in that reservoir falls. Decide from the EC reading, not from a single habit.
+- **EC at or above target:** add plain water, pH-adjusted to 5.8–6.2. This restores volume without pushing the salt concentration higher.
+- **EC below target:** add nutrient stock at the recipe ratio, then recheck EC and pH.
+- Do not top up every time with nutrient stock at the full target EC. That stacks salts as water leaves. Do not top up every time with plain water either. A low EC needs stock.
 
-**Full reservoir change (weekly/bi-weekly):**
-- Drain reservoir completely
-- Clean reservoir interior (see guide/08)
-- Refill with fresh nutrient solution
+**Full reservoir change:**
+- Drain that reservoir completely
+- Clean the interior (see [Guide 08 — System Maintenance](08-system-maintenance.md))
+- Plants come out, or they are hand-watered on a tray, before a bleach or peroxide soak. NFT roots dry in 15–30 minutes in warm weather. Do not leave plants sitting in a stopped channel during the clean
+- Refill with fresh nutrient solution for that loop
 - Reset EC and pH from scratch
-- Removes accumulated salt byproducts, prevents nutrient imbalance
+- This removes leftover salts and a drifting ratio
 
 ```
   WHEN TO DO A FULL CHANGE:
 
-  Trigger 1: EC creeping above target range despite correct top-up
-  Trigger 2: pH swings become extreme (>0.5 per day drift)
-  Trigger 3: Solution is >7–10 days old
-  Trigger 4: Visible discolouration (brown/green/slimy)
-  Trigger 5: After any disease outbreak
-  Trigger 6: Before introducing new plants to a channel
+  Greens tank, 20 US gal (76 L): every 7 days
+  Fruiting tank, 10 US gal (38 L): every 5–7 days
 
-  General rule: Full change every 7–14 days regardless.
+  Also change sooner when:
+  - EC will not hold inside the target for that tank
+  - pH swings more than about 0.5 in a day
+  - The solution smells, or it looks brown, green, or slimy
+  - Roots slime
+  - After a disease outbreak
+  - Before a new crop goes into that loop
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -505,27 +529,30 @@ It is possible to grow hydroponically with organic nutrient sources, though it i
 ### Simple Organic Nutrient Recipe (Vegetative Stage)
 
 ```
-  BASIC ORGANIC FORMULA (per 10L of water):
+  BASIC ORGANIC FORMULA (per 1 US gal / 3.8 L):
 
-  Fish hydrolysate (2-4-1 NPK):     5 ml/L  → 50 ml per 10L
-  Liquid seaweed extract (0-0-1):    2 ml/L  → 20 ml per 10L
+  Fish hydrolysate (2-4-1 NPK):     19 ml/US gal (5 ml/L)
+  Liquid seaweed extract (0-0-1):    7.6 ml/US gal (2 ml/L)
+
+  A 2.6 US gal (10 L) jug is 50 ml fish hydrolysate and 20 ml seaweed.
 
   Mix fish hydrolysate into water first, stir well, then add seaweed.
   pH adjust to 5.8–6.2 with citric acid (down) or potassium bicarbonate (up).
 
   NOTE: EC meters read LOWER with organics than the actual nutrient content —
   organic molecules are partially non-ionic until broken down by microbes.
-  Target EC 1.0–1.2 on the meter (actual nutrient availability is higher).
+  Target EC 1.0–1.2 on the meter for a greens-loop trial (actual nutrient
+  availability is higher). Do not push this into the CH4 fruiting band.
 
-  Change solution every 5 days maximum — organic solutions degrade faster
-  than mineral salts and can develop anaerobic bacteria if left too long.
+  Change an organic solution every 5 days at most — it degrades faster
+  than mineral salts and can go anaerobic if it sits.
 ```
 
 ### Why Organic Is Harder in NFT Specifically
 
 Organic hydroponics works best in media-based systems (deep water culture, flood-and-drain with expanded clay) where beneficial microbes colonise surfaces. In NFT, the thin film of flowing solution creates specific challenges:
 
-- **Clogging:** Organic particles and biofilm accumulate in narrow NFT channels (especially the 75 mm channels in this system). Expect to flush channels weekly with plain water.
+- **Clogging:** Organic particles and biofilm accumulate in narrow NFT channels, especially the 3 in (76 mm) greens channels. Expect to flush channels with plain water on the greens-tank change (every 7 days). Plants come out or get hand-watered first if the flush includes peroxide or bleach, because roots dry in 15–30 minutes.
 - **Inconsistent EC:** Standard EC meters measure ionic conductivity — organic nutrients are partially non-ionic, so readings understate actual nutrient content. You must rely more on plant appearance than meter readings.
 - **Microbial balance:** The constant flow and thin film make it harder to establish a stable beneficial microbial community compared to a deep reservoir with media surfaces. Biofilm can go anaerobic in dead spots, producing hydrogen sulphide (rotten egg smell).
 - **Reservoir hygiene:** Organic reservoirs need aeration (air stone running 24/7) to keep the microbial population aerobic. Without aeration, pathogenic anaerobes outcompete beneficial microbes within days.
@@ -541,66 +568,84 @@ Organic hydroponics works best in media-based systems (deep water culture, flood
 
 ### Reservoir Volume Needed
 
-This system is designed around an **80 L HDPE food-grade reservoir**. The maths below shows how we arrive at that number — it is not a compromise but the deliberate design choice for a home-scale NFT system with daily management.
+This system has **two** reservoirs. They do not share solution.
 
 ```
-  RESERVOIR SIZING — FROM THEORY TO PRACTICE:
+  RESERVOIR SIZING — FROM THEORY TO THIS BUILD:
 
   TEXTBOOK RULE (commercial greenhouses):
-  Allow 10–15 litres per active plant site for maximum chemistry stability.
+  Allow 2.6–4.0 US gal (10–15 L) per active plant site for chemistry stability.
 
-  Our system:
-  Zone A: ~40 plant sites × 10L minimum = 400L (impractical for a home system)
+  If all 40 sites shared one tank at 2.6 US gal (10 L) each:
+  40 × 2.6 US gal = 104 US gal (about 400 L). That is a commercial tank,
+  not this backyard frame.
 
-  REDUCED RULE: 5L per site minimum + 30% buffer
-  ~40 sites × 5L = 200L — still large for a home setup.
+  THIS BUILD, TWO LOOPS:
 
-  HOME-SCALE DESIGN (this system):
-  An 80L reservoir is the designed capacity for this specific build.
-  It works well because:
-  - You check EC/pH daily and adjust (part of the daily 10–15 min routine)
-  - You do full solution changes every 7 days
-  - You ramp up plant density gradually (not all 40 sites from day one)
-  - Channels run at 1–2 L/min each — the 80L volume recirculates fully
-    every 20–40 minutes, keeping conditions uniform
+  Greens, CH1–CH3, 33 sites:
+    20 US gal (76 L)
+    About 0.6 US gal (2.3 L) per site
+    Pump 160–210 US gph (600–800 L/h), 24 hours a day
+    Full change every 7 days
+    EC 0.8–1.8 mS/cm
 
-  The trade-off vs. a larger reservoir is more frequent monitoring —
-  but daily checks are already best practice for any home system.
+  Fruiting, CH4, 7 holes:
+    10 US gal (38 L)
+    About 1.4 US gal (5.4 L) per hole
+    Pump 50–100 US gph (200–400 L/h), 24 hours a day
+    Full change every 5–7 days
+    Tomato fruiting EC 2.5–3.5 mS/cm, pepper fruiting 2.0–3.0 mS/cm
 
-  This system uses: 80L reservoir — the designed capacity with daily management.
+  Both tanks: black body, white exterior, shaded, air pump recommended.
+
+  Why the smaller home volumes still work:
+  - You check EC and pH daily and top up by the rule above
+  - You change on the interval for that tank, sooner if EC will not hold
+  - You do not have to fill all 40 sites on day one
+  - Greens flow is 0.26–0.53 US gpm (1–2 L/min) per channel, so the
+    20 US gal (76 L) tank turns over many times a day
+
+  A larger tank would drift more slowly. Daily checks are already the
+  practice this build is designed around.
 ```
 
-### Solution Volume per Full Mix (80L reservoir)
+### Solution Volume per Full Mix
+
+Weigh salts on a digital scale. A tablespoon estimate is not accurate enough.
 
 ```
-  MASTERBLEND RECIPE FOR 80L FILL (standard vegetative mix):
+  GREENS TANK — 20 US gal (76 L), vegetative base, EC about 1.4–1.6:
 
-  Calcium Nitrate:  0.6g/L × 80L = 48g
-  MasterBlend:      0.6g/L × 80L = 48g
-  Epsom Salt:       0.3g/L × 80L = 24g
+  Masterblend:      2.4 g/US gal × 20 = 48 g    (0.63 g/L × 76 L = 48 g)
+  Calcium nitrate:  2.4 g/US gal × 20 = 48 g
+  Epsom salt:       1.2 g/US gal × 20 = 24 g
 
-  Target EC: ~1.4–1.6 mS/cm (standard vegetative)
+  FRUITING TANK — 10 US gal (38 L), same vegetative base, then scale:
 
-  For a lower-EC seedling fill (EC ~1.0–1.4), use the 0.45g/L rate instead:
-  36g / 36g / 18g — see Guide 11 first fill instructions.
-  For higher-EC fruiting crops, use the dose scaling table above.
+  Masterblend:      2.4 g/US gal × 10 = 24 g
+  Calcium nitrate:  2.4 g/US gal × 10 = 24 g
+  Epsom salt:       1.2 g/US gal × 10 = 12 g
+  Then raise the whole recipe, same ratio, until the meter reads the
+  CH4 target (tomato 2.5–3.5, pepper 2.0–3.0). Use the scaling table.
 
-  Always weigh on a digital scale. Tablespoon/teaspoon estimation is inaccurate.
+  Seedling fills for the greens tank use the 0.8 or 1.2 mS/cm rows,
+  not a different ratio. See Guide 11 for the first-fill sequence:
+  [Guide 11 — Build](11-build-guide.md).
 
-  SHOPPING TIP: 1kg bags of each will last many reservoir fills.
-  - 1kg Masterblend: ~20 reservoir fills (80L each)
-  - 1kg Calcium Nitrate: ~20 reservoir fills
-  - 1kg Epsom Salt: ~40 reservoir fills (cheap and widely available)
+  SHOPPING, at these vegetative weights:
+  - 2.2 lb (1 kg) Masterblend: about 20 greens-tank fills (48 g each)
+  - 2.2 lb (1 kg) calcium nitrate: about 20 greens-tank fills
+  - 2.2 lb (1 kg) Epsom salt: about 40 greens-tank fills
+  Fruiting fills at a higher EC use more salt per 10 US gal (38 L).
 ```
 
 ---
 
-
-*Next: [`guide/nft/03-water-quality.md`](03-water-quality.md) — Water sources, testing, and treatment*
 
 [↑ Back to TOC](#table-of-contents)
 
----
+> **Previous:** [Guide 01 — NFT Basics](01-nft-basics.md)
+> **Next:** [Guide 03 — Water Quality](03-water-quality.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

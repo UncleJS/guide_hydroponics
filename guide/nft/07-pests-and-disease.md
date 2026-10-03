@@ -51,7 +51,7 @@ Growing outdoors exposes your system to the full range of garden pests and disea
 - Rain can splash pathogens from one part of the system to another
 - Beneficial insects are present but so are destructive ones
 
-**The recirculating water system risk:** Pathogens that enter your reservoir can spread to every plant on the system within hours. A single infected plant can infect all others via the shared nutrient solution. **Early identification and immediate action is critical.**
+**The recirculating water system risk:** This NFT build has two loops that never share solution. CH1–CH3 share the 20 US gal (76 L) greens reservoir. CH4 has its own 10 US gal (38 L) fruiting reservoir and its own pump, and it is not teed into the greens manifold. A pathogen that enters one tank can reach every plant on that loop within hours. It does not automatically enter the other loop, unless tools, hands, or splash carry it across. **Early identification and immediate action on the affected loop is critical.**
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -124,13 +124,13 @@ flowchart LR
   ● Hand-pick heavily infested tips and dispose of in sealed bag (not compost)
 
   Level 2 — Soap spray:
-  ● Insecticidal soap: 5ml castile soap per 1L water in a spray bottle
+  ● Insecticidal soap: 0.64 US fl oz per US gal (5 mL/L) of castile soap in a spray bottle
   ● Coat all surfaces, especially undersides of leaves
   ● Repeat every 3–5 days for 2–3 applications
   ● Note: soap can damage young leaves if too concentrated — test on one leaf first
 
   Level 3 — Neem oil:
-  ● Mix 2ml neem oil + 1ml liquid soap (emulsifier) in 1L water
+  ● Mix 0.26 US fl oz neem oil + 0.13 US fl oz liquid soap (emulsifier) per US gal (2 mL + 1 mL per L)
   ● Spray all plant surfaces — coats insects and prevents feeding/reproducing
   ● Apply in morning (avoid hot midday application — can burn leaves)
   ● Repeat every 5–7 days
@@ -175,7 +175,7 @@ flowchart LR
   ● Fungus gnat larvae need moist conditions to survive
   ● In NFT channels: reduce or stop top-watering the net pot media (the film alone
     wets the roots) — let the upper media dry between reservoir top-ups
-  ● In grow bags: allow surface 2cm to dry between waterings
+  ● In grow bags: allow the top ¾ in (2 cm) to dry between waterings
 
   Level 3 — Bti (Bacillus thuringiensis var. israelensis):
   ● Bti is a naturally occurring bacteria that kills diptera larvae (fungus gnats, mosquitoes)
@@ -281,7 +281,7 @@ flowchart LR
 **Treatment:**
 ```
   Level 1 — Hand picking at night:
-  ● Go out with a torch 1–2 hours after dark
+  ● Go out with a torch once it is fully dark
   ● Pick slugs and snails into a bucket of salty water or drop in a container for birds
 
   Level 2 — Copper tape:
@@ -380,35 +380,47 @@ flowchart LR
 ```
 
 **Cause:** Pythium is an oomycete (water mould) that thrives in:
-- Water temperatures above 24°C
+- Solution temperatures above 77°F (25°C)
 - Low dissolved oxygen in solution
-- High organic matter in reservoir
+- High organic matter in the reservoir
 - Stressed plants (nutrient imbalance, pH issues)
 
 **Treatment:**
 ```
   IMMEDIATE RESPONSE TO PYTHIUM:
 
-  1. Remove affected plants from the channel
-  2. Inspect roots — trim brown, mushy sections with sterile scissors
-  3. Dip roots in 3% H₂O₂ solution for 30 seconds — rinse with clean water
-  4. Do a full reservoir change (Pythium spores in the water will re-infect)
-  5. Add H₂O₂ to new reservoir at 2ml/L
-  6. Lower reservoir temperature (shade, insulate, frozen bottles)
-  7. Increase aeration (turbulence in return line helps re-oxygenate solution)
-  8. Return treated plants to channel
+  1. Identify which loop is affected. Greens (CH1–CH3) and fruiting (CH4)
+     do not share a reservoir. Treat the affected tank. Do not mix the two solutions.
+  2. Remove affected plants from the channel. Roots in a stopped NFT channel
+     dry out in 15–30 minutes in warm weather, so hand-water any plants you
+     have taken out, and do not leave the rest of that loop dry while you work.
+  3. Inspect roots — trim brown, mushy sections with sterile scissors
+  4. Dip the removed roots in 3% H₂O₂ for 30 seconds, then rinse with clean water.
+     This dip is only for plants already out of the channel. Do not pour 3% H₂O₂
+     through a channel that still has a live crop in it.
+  5. Do a full change of the affected reservoir. Spores in that tank will re-infect
+     that loop. Greens tank: 20 US gal (76 L). Fruiting tank: 10 US gal (38 L).
+  6. A hydrogen-peroxide flush is a cleaning step. Remove plants, or hand-water
+     them on a tray, before any peroxide flush. If you add peroxide to the fresh
+     solution after that, keep it dilute: about 0.26 US fl oz/US gal (2 mL/L) of
+     3% H₂O₂. Do not run a 3% flush through a live root zone.
+  7. Lower reservoir temperature (shade, black body with white exterior, frozen bottles)
+  8. Increase aeration. An air pump is recommended in both reservoirs. Turbulence
+     in the return line also re-oxygenates the solution.
+  9. Return treated plants to the channel and confirm that loop's pump is running
 
   If Pythium is severe:
-  9. Remove ALL plants
-  10. Full system sterilisation (see guide/08)
-  11. Restart with fresh solution
+  10. Remove ALL plants from the affected loop and hand-water them
+  11. Full sterilisation of that loop (see [Guide 08 — System Maintenance](08-system-maintenance.md))
+  12. Restart with fresh solution
 
   Preventive ongoing measure: Hydroguard (Bacillus amyloliquefaciens) added to
-  reservoir — beneficial bacteria colonise roots and outcompete Pythium.
-  Dose: 2ml per litre, add to each reservoir fill.
+  the reservoir you just cleaned — beneficial bacteria colonise roots and
+  outcompete Pythium.
+  Dose: 0.26 US fl oz/US gal (2 mL/L), add at each fill of that reservoir.
 ```
 
-**Prevention:** Keep water below 24°C (ideally 18–22°C), maintain dissolved oxygen, keep reservoir clean, avoid overfeeding.
+**Prevention:** Aim for solution temperature of 64–72°F (18–22°C). Above 77°F (25°C), dissolved oxygen falls and Pythium risk rises. Run an air pump in both reservoirs, keep each tank clean, and avoid overfeeding. Greens EC stays 0.8–1.8 mS/cm. Tomato fruiting EC 2.5–3.5 mS/cm and pepper fruiting EC 2.0–3.0 mS/cm apply only to the CH4 tank.
 
 ---
 
@@ -420,7 +432,7 @@ flowchart LR
 - Affected leaves eventually yellow and die
 - Distinct from downy mildew (which appears on UNDERSIDES)
 
-**Crops affected:** Courgettes, cucumbers most severely — but also basil, strawberries, and others
+**Crops affected in this NFT build:** Basil, and strawberries on CH3, are the usual foliar cases. Tomato and pepper on CH4 can also show it. Fruiting sites in this system are tomato and pepper on CH4 only.
 
 **Cause:** Fungal spores spread by wind. Triggered by:
 - High humidity + poor airflow
@@ -432,12 +444,12 @@ flowchart LR
   Level 1 — Remove infected leaves immediately (bag and bin — not compost)
 
   Level 2 — Potassium bicarbonate spray:
-  ● 5g potassium bicarbonate per litre water
+  ● 19 g/US gal (5 g/L) potassium bicarbonate
   ● Spray affected and surrounding leaves — changes surface pH to kill fungus
   ● Very effective, safe for food crops, PHI: 0 days
 
   Level 3 — Baking soda spray (sodium bicarbonate):
-  ● 5g per litre water + a few drops of liquid soap
+  ● 19 g/US gal (5 g/L) plus a few drops of liquid soap
   ● Less effective than potassium bicarbonate but works as temporary measure
   ● Avoid excessive sodium accumulation with repeated use
 
@@ -448,7 +460,7 @@ flowchart LR
   Level 5 — Sulphur-based fungicide:
   ● Most effective for severe infections
   ● PHI: 1–14 days depending on product — check label
-  ● Do NOT use sulphur on plants when temperature is above 32°C — can burn leaves
+  ● Do NOT use sulphur on plants when air temperature is above 90°F (32°C) — it can burn leaves
 ```
 
 **Prevention:** Space plants well, ensure good airflow, avoid overhead watering. Grow resistant varieties where available.
@@ -459,7 +471,7 @@ flowchart LR
 
 **Identification:**
 - Grey-brown fuzzy mould on leaves, stems, and fruit
-- Most commonly found on strawberries, but also tomatoes and others
+- Most often on strawberries, which sit in 3–4 sites on CH3 in this build, and on tomatoes on CH4
 - Affected tissue becomes water-soaked then collapses
 - Spores are spread by air movement and water splashing
 
@@ -496,7 +508,7 @@ flowchart LR
 **Management:**
 ```
   1. Remove infected plant IMMEDIATELY — no treatment is effective
-  2. Do a FULL system drain and sterilisation (see guide/08)
+  2. Drain and sterilise the affected loop (see [Guide 08 — System Maintenance](08-system-maintenance.md)). Do not pour the CH4 tank into the greens tank, or the reverse.
   3. Change nutrient solution
   4. Inspect and sterilise net pots and clay pebbles from adjacent sites
   5. Monitor remaining plants closely for 2 weeks
@@ -543,7 +555,7 @@ flowchart LR
 ```
   1. Remove affected seedlings immediately
   2. Improve airflow and reduce humidity in germination area
-  3. Drench remaining seedlings with dilute H₂O₂ solution (1ml/L) or Bti solution
+  3. Drench remaining seedlings with dilute H₂O₂ (0.13 US fl oz/US gal, 1 mL/L) or a Bti solution. This is a seedling-tray drench, not a 3% flush through an NFT channel.
   4. Avoid overwatering germination media — moist, not wet
   5. Use sterile media for each new seed batch
   6. If using rockwool: ensure it was fully pH-conditioned (alkaline pH promotes damping off)
@@ -617,21 +629,26 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 ```
   FULL SYSTEM STERILISATION PROCEDURE:
 
-  1. Remove all plants from infected channels/zones
+  1. Remove all plants from the infected loop. Hand-water them on a tray.
+     NFT roots dry in 15–30 minutes in warm weather. Do not leave plants in a
+     stopped channel during a bleach soak. Sterilise one loop at a time so the
+     other loop can keep flowing.
   2. Photograph the issue for future reference/diagnosis
-  3. Dispose of infected plant material in sealed bag — not compost, not open air
-  4. Drain reservoir completely
-  5. Remove pump, fittings, net pots, clay pebbles — soak all in 10% bleach solution
-     for 30 minutes
-  6. Scrub interior of reservoir with 10% bleach, leave 15 minutes, drain, triple rinse
-  7. Flush channels with 10% bleach solution — leave 15 minutes, flush with clean water × 3
+  3. Dispose of infected plant material in a sealed bag — not compost, not open air
+  4. Drain that loop's reservoir completely. Greens: 20 US gal (76 L). Fruiting: 10 US gal (38 L).
+  5. Pump off. Remove pump, fittings, net pots, and clay pebbles. Soak them in
+     10% bleach for 30 minutes. Plants are already out.
+  6. Scrub the interior of that reservoir with 10% bleach, leave 15 minutes, drain, triple rinse
+  7. Flush empty channels with 10% bleach — leave 15 minutes, then flush with clean water × 3.
+     Do not send bleach through a channel that still holds plants.
   8. Rinse all components thoroughly (triple rinse minimum)
   9. Air dry all components in sunlight (UV assists sterilisation)
-  10. Re-pH condition clay pebbles (see guide/05)
-  11. Use FRESH rockwool cubes for replanting (do not reuse)
-  12. Refill with fresh nutrient solution
-  13. Monitor remaining plants on other channels closely for 7–14 days
-  14. If outbreak was Pythium: add Hydroguard to new reservoir as preventive measure
+  10. Re-pH condition clay pebbles (see [Guide 05 — Growing Media](05-growing-media.md))
+  11. Use fresh rockwool cubes for replanting (do not reuse)
+  12. Refill that reservoir with fresh nutrient solution. Greens EC 0.8–1.8 mS/cm.
+      CH4 only: tomato 2.5–3.5 mS/cm or pepper 2.0–3.0 mS/cm.
+  13. Monitor the other loop closely for 7–14 days
+  14. If the outbreak was Pythium: add Hydroguard to the new fill of that reservoir
 
   Time required: 3–4 hours
   Frequency: Any time significant disease is detected, or as part of end-of-season deep clean
@@ -640,11 +657,12 @@ When a significant pest outbreak or disease (especially Pythium, Fusarium, or se
 ---
 
 
-*Next: [`guide/nft/08-system-maintenance.md`](08-system-maintenance.md) — Daily, weekly, monthly, and seasonal schedules*
-
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 06 — Crops](06-crops.md)
+> **Next:** [Guide 08 — System Maintenance](08-system-maintenance.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

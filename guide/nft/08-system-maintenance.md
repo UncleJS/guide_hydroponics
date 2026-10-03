@@ -29,7 +29,7 @@
   - [Meter Calibration](#meter-calibration)
   - [Grow Bag Media Refresh (Zone C)](#grow-bag-media-refresh-zone-c)
 - [6. End-of-Season Tasks (3–6 hours total over 1–2 days)](#6-end-of-season-tasks-36-hours-total-over-12-days)
-  - [November Winterisation Checklist](#november-winterisation-checklist)
+  - [Late October Winterisation Checklist](#late-october-winterisation-checklist)
   - [Season-End Review](#season-end-review)
 - [7. Maintenance Logbook Template](#7-maintenance-logbook-template)
   - [Daily Log Entry Format](#daily-log-entry-format)
@@ -45,7 +45,7 @@ A hydroponics system is a living, dynamic environment. Unlike soil gardening whe
 
 - **pH can drift** outside the 5.5–6.5 window in 24–48 hours, locking out nutrients
 - **EC can spike** from evaporation, causing osmotic stress and tip burn
-- **Pump blockages** can dry out roots in under 30 minutes
+- **Pump blockages** can dry out roots in 15–30 minutes in warm weather. That is the action time. Both pumps run 24 hours a day.
 - **Biofilm and algae** can colonise channels and tubes in 3–5 days if ignored
 - **Pests and disease** can spread through the entire system before you notice
 
@@ -64,10 +64,12 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
   DAILY MORNING CHECKLIST:
 
   SYSTEM HEALTH
-  [ ] Listen — confirm pump is audible/running (reach into reservoir to feel flow)
-  [ ] Visually confirm flow exiting drain fittings on all channels (check all 4)
-  [ ] Check reservoir water level — note if more than 10% low (needs top-up)
+  [ ] Listen — confirm BOTH pumps are running (greens loop and CH4 fruiting loop)
+  [ ] Visually confirm flow at the drain of CH1, CH2, CH3, and CH4
+  [ ] Check both reservoir levels — greens 20 US gal (76 L) and fruiting 10 US gal (38 L).
+      Note if either is more than 10% low
   [ ] Visually check all fittings and joints for drips or leaks
+  [ ] Confirm the air pump is bubbling in both tanks
 
   PLANT HEALTH
   [ ] Walk each channel — look for wilting, yellowing, or collapsed plants
@@ -78,10 +80,14 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
   ZONE B — MICROGREENS
   [ ] Are trays in blackout phase? Check for any mould (white or green fuzzy growth)
   [ ] Are trays in light phase? Check moisture — mist if surface is dry
-  [ ] Any trays ready to harvest? (cotyledons open, 5–8cm tall)
+  [ ] Any trays ready to harvest? (cotyledons open, about 2–3 in (5–8 cm) tall)
+  [ ] Mist twice a day. Standard trays get pH-adjusted water only (pH 5.8–6.2), no nutrients.
+      Sunflower and pea shoots may use EC 0.4–0.8 mS/cm if the grow runs long.
 
   ZONE C — GROW BAGS
-  [ ] Check media surface moisture — water if top 2–3cm are dry
+  [ ] Check media surface moisture — water if the top ¾–1¼ in (2–3 cm) is dry
+  [ ] Bags are 5 US gal (19 L) for radish and beetroot, and 10 US gal (38 L) for carrot.
+      Fertigation EC ceiling is 2.0 mS/cm. Beetroot does not get a higher target.
   [ ] Check for any pest damage on root veg leaves
 
   LOG
@@ -90,33 +96,36 @@ Consistency is more important than intensity. Spending 10 minutes every day is f
 
 ### Evening Top-Up (~5–10 min, as needed)
 
-On hot days, the reservoir can drop significantly through evaporation and plant transpiration.
+On hot days, either reservoir can drop through evaporation and plant transpiration. Check the greens tank and the CH4 tank separately. They are not one shared solution.
 
 > **Realistic daily total:** In peak summer with all 3 zones active, expect 20–30 minutes total daily (morning check + evening top-up + any adjustments). In cool weather or with fewer plants, 10–15 minutes is typical. The times listed here are per-task minimums — add extra time when you spot issues that need investigation.
 
 ```
-  TOP-UP PROTOCOL:
+  TOP-UP PROTOCOL (do this for each tank):
 
-  1. Check reservoir level — fill mark reference on the side of the reservoir
-  2. If level has dropped by >5L, top up is needed
-  3. Prepare top-up water:
-     a. Fill watering can/bucket with source water
-     b. Adjust pH to 5.8–6.0 (this is WATER ONLY — no nutrients)
-     c. Do NOT add nutrients to top-up water — this raises EC unpredictably
-  4. Pour into reservoir — check that pump is still submerged
-  5. Re-test EC and pH after top-up (adding water slightly dilutes the solution)
-  6. If EC has dropped more than 0.3 mS/cm below target, a small nutrient addition
-     may be needed — but this is unusual with daily top-up
+  1. Check the fill mark on that reservoir
+  2. If the level has dropped by more than 1.3 US gal (5 L) in the greens tank,
+     or by more than 0.5 US gal (2 L) in the fruiting tank, top up
+  3. Measure EC before you add anything
+  4. Choose the top-up by the reading. Do not use one rule for every day.
+     a. EC at or above that tank's target: add plain water, pH-adjusted to 5.8–6.2.
+        No nutrients in this top-up.
+     b. EC below that tank's target: add nutrient stock, then recheck EC and pH.
+  5. Greens target is 0.8–1.8 mS/cm. Lettuce stays at or below 1.8.
+     CH4 only: tomato fruiting 2.5–3.5 mS/cm, or pepper fruiting 2.0–3.0 mS/cm.
+     Never put the fruiting EC into the greens tank.
+  6. Pour into the correct reservoir — confirm that tank's pump is still submerged
+  7. Recheck EC and pH after the top-up
 
   WHICH WATER TO USE FOR TOP-UPS:
-  Use the same source water you used for the original reservoir fill.
-  - RO or rainwater (best): Adds no minerals, doesn't raise EC. pH adjust and add.
-  - Soft tap water (EC <0.3): Fine — minimal mineral addition per top-up.
-  - Hard tap water (EC >0.5): Each top-up adds calcium, magnesium, and
-    bicarbonates. Over 7–10 days of daily top-ups, this accumulates and
-    raises baseline EC. If using hard tap water, do full reservoir changes
-    more frequently (every 7 days) to prevent mineral buildup.
-  See Guide 03 for full water source analysis.
+  Use the same source water you used for the original fill of that tank.
+  - RO or rainwater (best): adds no minerals. pH-adjust, then add.
+  - Soft tap water (EC below 0.3): fine for plain-water top-ups.
+  - Hard tap water (EC above 0.5): each plain-water top-up adds calcium, magnesium,
+    and bicarbonate. Greens solution is changed every 7 days, and the CH4 tank
+    every 5–7 days, which limits that buildup. Do not stretch either tank past
+    its change interval when the source water is hard.
+  See [Guide 03 — Water Quality](03-water-quality.md) for source-water analysis.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -140,22 +149,23 @@ While you can assess plant health daily with visual inspection, accurate EC and 
   - Log book
 
   Steps:
-  1. Take sample from RESERVOIR (not from a channel drain — this is already diluted
-     by plant uptake and evaporation)
-  2. Take sample in the morning BEFORE top-up (this reflects overnight changes)
+  1. Sample each RESERVOIR (not a channel drain — drain water has already been
+     changed by plant uptake). Greens tank and CH4 tank are separate readings.
+  2. Sample in the morning, before any top-up
   3. Measure EC first (EC meters are robust — pH meters need careful handling)
-  4. Record EC reading
-  5. Rinse EC meter probe with clean water
-  6. Measure pH
-  7. Record pH reading
-  8. Compare to targets for your current crop mix:
-     - Target EC: 1.0–1.6 mS/cm (mixed channel with greens and herbs)
-     - Target pH: 5.8–6.2
-  9. Adjust as needed (see pH adjustment in guide/02)
-  10. Rinse and dry meters, store pH meter in KCl storage solution
+  4. Record both EC readings
+  5. Rinse the EC meter probe with clean water between tanks
+  6. Measure pH in each tank
+  7. Record both pH readings
+  8. Compare to the target for THAT tank:
+     - Greens (CH1–CH3): EC 0.8–1.8 mS/cm. Lettuce stays at or below 1.8.
+     - CH4 fruiting tank only: tomato 2.5–3.5 mS/cm, or pepper 2.0–3.0 mS/cm.
+     - Both tanks: pH 5.8–6.2 (acceptable band 5.5–6.5)
+  9. Adjust as needed (see pH adjustment in [Guide 02 — Nutrient Solution](02-nutrient-solution.md))
+  10. Rinse and dry meters. Store the pH meter in KCl storage solution.
 
   RECORDING FORMAT (see Section 7 — logbook template):
-  Date | EC | pH | Reservoir level | Notes
+  Date | Greens EC | Greens pH | CH4 EC | CH4 pH | Levels | Notes
 ```
 
 ### Actions Based on Readings
@@ -166,13 +176,14 @@ While you can assess plant health daily with visual inspection, accurate EC and 
   pH 5.5–6.5: No action needed
   pH > 6.5: Add pH Down (phosphoric acid) — 1ml at a time, stir, retest
 
-  EC ACTIONS:
-  EC < target: Add small amount of nutrients (mix a stock concentrate and add)
-               OR if more than 0.5 below target, do a partial reservoir change
-  EC at target: No action needed
-  EC > target by 0.2–0.4: Top up with plain pH-adjusted water (no nutrients)
-  EC > target by 0.5+: Partial drain (remove 20–30% of solution) and replace with
-                        pH-adjusted plain water to dilute
+  EC ACTIONS (apply to the tank you just measured):
+  EC below that tank's target: Add nutrient stock, then recheck EC and pH.
+               If more than 0.5 below target, do a partial change of THAT tank.
+  EC inside the target band: No nutrient action
+  EC above target by 0.2–0.4: Top up with plain water, pH-adjusted to 5.8–6.2
+  EC above target by 0.5 or more: Drain 20–30% of THAT tank and replace with
+                        pH-adjusted plain water
+  Do not "correct" the greens tank toward the CH4 fruiting numbers.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -202,7 +213,7 @@ Same as above but with a more thorough approach — also check solution colour, 
   - White, dense, fine hairs: Excellent — healthy root mat
   - Pale tan, thin: OK — may need higher EC or better oxygenation
   - Brown tips, slight mushy: Early Pythium — reduce temp, add Hydroguard
-  - Brown, mushy, foul smell: Active Pythium — see guide/07 treatment
+  - Brown, mushy, foul smell: Active Pythium — see [Guide 07 — Pests and Disease](07-pests-and-disease.md)
 
   Replace net pots immediately after inspection.
 ```
@@ -218,8 +229,11 @@ Same as above but with a more thorough approach — also check solution colour, 
   [ ] Inspect inlet tubing where it enters each channel
 
   GREEN SLIME/ALGAE: Identify and eliminate the light source. Seal any light leaks.
-  If algae is established in channels: flush with 1% H₂O₂ solution,
-  then flush with plain water. Remove plants first.
+  Both reservoirs are a black body with a white exterior, fully shaded.
+  If algae is established in a channel: remove the plants, or hand-water them
+  on a tray, then flush the empty channel with 1% H₂O₂ and rinse with plain water.
+  Do not run that flush through a live root zone. Roots dry in 15–30 minutes
+  in warm weather, so do not leave plants in a stopped channel while you flush.
 
   BIOFILM (grey/clear slimy coating on surfaces): Normal at low levels.
   Excessive biofilm: indicator that reservoir change is overdue.
@@ -230,18 +244,24 @@ Same as above but with a more thorough approach — also check solution colour, 
 ```
   WEEKLY PUMP CHECK:
 
-  1. Check pump filter/sponge — rinse in water from the reservoir (not tap water —
-     tap water chlorine kills beneficial microbes on the filter)
-  2. Place hand over each inlet tube in turn — feel for consistent flow
-  3. If flow in one channel seems reduced: check for root block at the drain end,
-     or check that inlet tube is not kinked or clogged
+  1. Check each pump's filter or sponge — rinse it in water from its own reservoir
+     (not tap water — tap chlorine kills beneficial microbes on the filter)
+  2. Greens pump: 160–210 US gph (600–800 L/h), about 15 W, running 24 hours.
+     Fruiting pump: 50–100 US gph (200–400 L/h), about 8 W, running 24 hours.
+     CH4 is on its own ½ in (13 mm) line. It is not on the greens manifold.
+  3. Feel each ½ in (13 mm) inlet. Flow should be steady.
+  4. If one greens channel is weak: check the drain end for a root block, and check
+     that the inlet tube is not kinked. The greens manifold is 1 in (25 mm) and
+     feeds CH1–CH3 only.
+  5. Confirm the air pump is feeding both tanks.
 
-  FLOW RATE TEST (monthly or if flow seems reduced):
-  1. Remove an inlet tube from a channel
-  2. Hold over a measuring jug for 30 seconds
-  3. Double the amount = litres per minute
-  4. Target: 1–2 L/min per channel
-  5. If below 0.8 L/min: check pump filter, check for kinks, check pump head pressure
+  FLOW RATE TEST (monthly, or if flow seems reduced):
+  1. Remove an inlet tube from one channel
+  2. Hold it over a measuring jug for 30 seconds
+  3. Double the volume to get the per-minute rate
+  4. Greens target: 0.26–0.53 US gpm (1–2 L/min) per channel
+  5. If a greens channel is below 0.21 US gpm (0.8 L/min): check that pump's
+     filter, look for kinks, and check head pressure
 ```
 
 ### Harvest and Succession Planting
@@ -250,10 +270,11 @@ Same as above but with a more thorough approach — also check solution colour, 
   WEEKLY HARVEST AND REPLANT:
 
   [ ] Harvest ripe/ready crops:
-      - Lettuce: pull heads or cut outer leaves
-      - Herbs: snip as needed (pinch basil, cut chives and parsley)
-      - Tomatoes/strawberries: pick ripe fruit
-      - Root veg: check if ready (pull a test radish/carrot)
+      - CH1 lettuce: pull heads or cut outer leaves
+      - CH2 herbs: snip as needed (pinch basil, cut chives, cilantro, and parsley)
+      - CH3: cut spinach, kale, or mint; pick strawberries from the 3–4 strawberry sites
+      - CH4 only: pick ripe cherry tomatoes or peppers
+      - Zone C: pull a test radish, beetroot, or carrot
 
   [ ] Identify vacant net pot sites (harvested full plants)
 
@@ -289,48 +310,65 @@ Same as above but with a more thorough approach — also check solution colour, 
 
 Even with good water management, nutrient salts accumulate, organic matter builds up, and microbial populations shift over time. A regular full drain and clean resets the system.
 
-**Frequency depends on reservoir size:**
-- **80L reservoir (this system):** Full change every **7–10 days** — our reservoir-to-plant ratio is tight (1.9L per site), so nutrient imbalance builds up faster. This aligns with Guide 02 and Guide 03 recommendations.
-- **120–200L reservoir:** Every 10–14 days is acceptable with daily EC/pH monitoring.
-- **200L+ reservoir:** Monthly changes are sufficient if EC and pH remain stable.
+Change each tank on its own schedule. Do not combine them.
+
+- **Greens reservoir, 20 US gal (76 L), CH1–CH3:** full change every **7 days**.
+- **Fruiting reservoir, 10 US gal (38 L), CH4 only:** full change every **5–7 days**.
+- Change sooner if EC will not hold, the solution smells, or roots slime.
+
+These intervals match [Guide 02 — Nutrient Solution](02-nutrient-solution.md) and [Guide 03 — Water Quality](03-water-quality.md).
 
 ```
-  FULL RESERVOIR CHANGE:
-  (For this 80L system: every 7–10 days. See frequency guide above.)
+  FULL RESERVOIR CHANGE (one tank at a time):
 
-  1. Drain all nutrient solution from reservoir
-     - Use pump or siphon hose to a bucket/drain
-     - Note: this solution can be diluted and used to water garden/lawn
+  The other loop keeps running. Roots on the loop you stop will dry in
+  15–30 minutes in warm weather. Hand-water those plants, or lift them onto
+  a tray, before a bleach soak. Do not leave them in a stopped channel.
 
-  2. Clean reservoir interior:
-     a. Wipe interior walls with clean cloth to remove sediment and biofilm
-     b. Mix 10% bleach solution (100ml bleach per 900ml water)
+  1. Drain that tank
+     - Siphon to a bucket or drain
+     - Diluted solution can water a garden or lawn. Do not pour one tank into the other.
+
+  2. Clean the reservoir interior (plants already out or hand-watered):
+     a. Wipe interior walls to remove sediment and biofilm
+     b. Mix 10% bleach (about 3.4 US fl oz bleach per 1 US qt, or 100 mL per 900 mL)
      c. Coat all interior surfaces — let sit 10 minutes
-     d. Drain bleach solution
+     d. Drain the bleach
      e. TRIPLE RINSE with clean water — no residual bleach
 
-  3. Clean pump:
-     a. Remove pump from reservoir
-     b. Disassemble and rinse filter sponge in clean water
-     c. Run pump briefly in a bucket of clean water to flush impeller
-     d. Inspect impeller for calcium deposits — scrub with old toothbrush if needed
+  3. Clean that loop's pump:
+     a. Remove the pump from the tank
+     b. Rinse the filter sponge in clean water
+     c. Run the pump briefly in a bucket of clean water to flush the impeller
+     d. Scrub calcium on the impeller with an old toothbrush if needed
 
-  4. Flush return pipe:
-     a. Pour several litres of clean water through the return pipe
-     b. If any blockage or resistance: use flexible bottle brush
+  4. Flush the return pipe for that loop, ¾–1 in (19–25 mm):
+     a. Pour about 1 US gal (4 L) of clean water through the return
+     b. If it resists, use a flexible bottle brush
 
-  5. Inspect all fittings:
-     a. Check all barbed fittings, grommets, and thread tape joints
-     b. Tighten or re-tape any weeping joints
+  5. Inspect fittings on that loop:
+     a. Check barbed fittings, grommets, and thread-tape joints
+     b. Tighten or re-tape any weeping joint
 
-  6. Refill and re-mix nutrient solution:
+  6. Refill and remix. Scale the Masterblend ratio to the tank.
+     Per 1 US gal (3.8 L) at the vegetative base (EC about 1.4–1.6):
+       Masterblend 4-18-38: 2.4 g/US gal (0.63 g/L)
+       Calcium nitrate:      2.4 g/US gal (0.63 g/L)
+       Epsom salt:           1.2 g/US gal (0.32 g/L)
+     Greens, 20 US gal (76 L), base fill: 48 g, 48 g, and 24 g.
+     Then raise or lower the WHOLE recipe to land in 0.8–1.8 mS/cm.
+     Fruiting, 10 US gal (38 L), base fill: 24 g, 24 g, and 12 g.
+     Then raise the WHOLE recipe to the CH4 target only:
+       tomato fruiting 2.5–3.5 mS/cm, or pepper fruiting 2.0–3.0 mS/cm.
+     Do not change the ratio to chase one element.
      a. Fill with fresh source water
-     b. Mix nutrients (Masterblend or GH Flora) per recipe
-     c. Check and adjust EC
-     d. Check and adjust pH
-     e. Restart pump — verify flow in all channels
+     b. Dissolve calcium nitrate first, then Masterblend, then Epsom salt
+     c. Check and adjust EC for that tank
+     d. Check and adjust pH to 5.8–6.2
+     e. Restart that pump. Greens pump runs 24 hours. Fruiting pump runs 24 hours.
+     f. Confirm the air stone in that tank is bubbling
 
-  7. Log date and observations
+  7. Log the date, which tank, EC, and pH
 ```
 
 ### Channel Inspection and Flush
@@ -338,16 +376,19 @@ Even with good water management, nutrient salts accumulate, organic matter build
 ```
   MONTHLY CHANNEL INSPECTION:
 
-  1. One channel at a time (keep others running):
-  2. Remove all net pots from one channel
-  3. Pour 5–10L of plain water through the inlet end
-  4. Inspect flow — should be smooth, uniform film
-  5. Check drain fitting for blockage (root mat, salt, debris)
-  6. If algae visible on channel floor: flush with 1% H₂O₂, then rinse with plain water
-  7. White salt deposits on channel: wipe with damp cloth, rinse
-  8. Replace net pots
-  9. Confirm flow is restored
-  10. Move to next channel
+  1. One channel at a time. Keep the other loop running.
+  2. Lift the net pots. Hand-water the plants. Do not leave them dry:
+     the film is gone in 15–30 minutes in warm weather.
+  3. Pour 1.3–2.6 US gal (5–10 L) of plain water in at the inlet end
+  4. Inspect flow — a smooth, thin film, not a pool
+  5. Check the drain fitting for a root mat, salt, or debris
+  6. If algae is on the channel floor: with plants still out or hand-watered,
+     flush with 1% H₂O₂, then rinse with plain water. Do not run a 3%
+     hydrogen-peroxide flush through a live crop.
+  7. White salt deposits: wipe with a damp cloth, then rinse
+  8. Replace the net pots and restart flow before you open the next channel
+  9. Confirm flow is back
+  10. Move to the next channel
 ```
 
 ### Meter Calibration
@@ -358,7 +399,7 @@ Even with good water management, nutrient salts accumulate, organic matter build
   pH Meter:
   [ ] pH 4.0 buffer solution (check expiry)
   [ ] pH 7.0 buffer solution (check expiry)
-  [ ] Two-point calibration (see guide/03 Section 7)
+  [ ] Two-point calibration (see [Guide 03 — Water Quality](03-water-quality.md))
   [ ] Record calibration date
 
   EC Meter:
@@ -377,12 +418,16 @@ Even with good water management, nutrient salts accumulate, organic matter build
 ```
   MONTHLY ZONE C CHECK:
 
-  [ ] Check bags for compaction — is media still loose and airy?
+  [ ] Six bags: two 5 US gal (19 L) radish, one 5 US gal (19 L) beetroot,
+      three 10 US gal (38 L) carrot
+  [ ] Media is 60% coco, 30% perlite, 10% vermiculite. No garden soil.
+  [ ] Check bags for compaction — media should stay loose and airy
   [ ] If compacted: aerate by pressing fingers through the media gently
-  [ ] Check for fungus gnat larvae (tiny white worms in media surface)
-  [ ] Flush bags: water thoroughly until 20% runoff (helps remove salt buildup)
-  [ ] Check drainage — runoff should flow freely; if pooling, elevate bags or improve drainage
-  [ ] Between crops: full media changeout per guide/05 Section 11
+  [ ] Check for fungus gnat larvae (tiny white worms at the surface)
+  [ ] Flush bags: water until about 20% runs out the bottom (pulls excess salt)
+  [ ] Fertigation EC stays at or below 2.0 mS/cm, including beetroot
+  [ ] Runoff should flow freely. If it pools, elevate the bag.
+  [ ] Between crops: full media change per [Guide 05 — Growing Media](05-growing-media.md)
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -392,26 +437,27 @@ Even with good water management, nutrient salts accumulate, organic matter build
 
 ## 6. End-of-Season Tasks (3–6 hours total over 1–2 days)
 
-### November Winterisation Checklist
+### Late October Winterisation Checklist
+
+Worked climate: inland mid-USA, about 38°N, USDA zones 6b–7a. Planning frost dates are April 15 (SA: October 15) and October 20 (SA: April 20). The outdoor season is mid-April through mid-October (SA: mid-October through mid-April). Do not run unprotected NFT through December–February (SA: June–August), when lows in this band are 0–15°F (−18 to −9°C).
 
 ```
-  PLANT HARVEST AND REMOVAL:
-  [ ] Harvest all remaining crops before first hard frost
-  [ ] Remove all plants from NFT channels
-  [ ] Harvest root veg from grow bags (don't leave in cold, wet media)
-  [ ] Remove strawberry crowns — pot up in coco and bring to frost-free shelter
-      (everbearing strawberries can be overwintered and replanted next spring)
-  [ ] Cut back perennial herbs (mint, chives) to 5cm and mulch
+  PLANT HARVEST AND REMOVAL (by October 20 / SA: April 20):
+  [ ] Harvest remaining crops before the first fall frost
+  [ ] Remove all plants from the NFT channels
+  [ ] Harvest Zone C roots. Do not leave them in cold, wet media.
+  [ ] Lift strawberry crowns from CH3 — pot them in coco and move them to a
+      frost-free shelter. Everbearing crowns can be replanted next spring.
+  [ ] Cut perennial herbs (mint on CH3, chives on CH2) back to about 2 in (5 cm)
 
   SYSTEM BREAKDOWN:
-  [ ] Drain reservoir completely
-  [ ] Full reservoir sterilisation (10% bleach wash — triple rinse)
-  [ ] Remove pump — clean fully, dry, store indoors
-  [ ] Remove all net pots — sterilise and store in sealed bag
-  [ ] Remove clay pebbles — sterilise, dry, store in sealed bag
+  [ ] Drain BOTH reservoirs. Plants are out first. Roots dry in 15–30 minutes.
+  [ ] Bleach wash each tank (10% bleach, triple rinse). Do not soak a live crop.
+  [ ] Remove both water pumps and the air pump — clean, dry, store indoors
+  [ ] Remove all net pots — 33 of 2 in (51 mm) and 7 of 3 in (76 mm). Sterilise and bag them.
+  [ ] Remove clay pebbles — sterilise, dry, store in a sealed bag
   [ ] Flush all channels with plain water
-  [ ] Inspect channels for UV degradation (PVC becomes brittle outdoors over time)
-      Replace any cracked or significantly discoloured channels
+  [ ] Inspect channels for UV damage. Replace any cracked channel.
 
   FITTINGS AND PLUMBING:
   [ ] Check all barbed fittings, grommets — replace any that are cracked or leaking
@@ -427,7 +473,7 @@ Even with good water management, nutrient salts accumulate, organic matter build
   [ ] Compost all root veg media after harvest (used coco can go to garden compost)
   [ ] Clean grow bags — shake out, rinse, dry in sun
   [ ] Store bags flat in a dry place
-  [ ] If reusing media next season: sterilise per guide/05 Section 11
+  [ ] If reusing media next season: sterilise per [Guide 05 — Growing Media](05-growing-media.md)
 
   SHADE CLOTH AND ACCESSORIES:
   [ ] Clean shade cloth — brush off debris, rinse if dirty, dry before storage
@@ -467,11 +513,13 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
   DATE: _____________ | WEATHER: ________________
 
   SYSTEM:
-  Pump running: Y / N
-  Reservoir level: FULL / OK / LOW / TOPPED UP (___L added)
-  EC reading: _______ mS/cm | Target: _______
-  pH reading: _______ | Target: 5.8–6.2
-  Adjustment made: pH Up ___ml | pH Down ___ml | Nutrients ___g
+  Greens level: FULL / OK / LOW / TOPPED UP (___ US gal / ___ L added)
+  Fruiting level: FULL / OK / LOW / TOPPED UP (___ US gal / ___ L added)
+  Greens EC: _______ mS/cm | Target: 0.8–1.8
+  CH4 EC: _______ mS/cm | Target: tomato 2.5–3.5 or pepper 2.0–3.0
+  Greens pH: _______ | CH4 pH: _______ | Target both: 5.8–6.2
+  Greens pump 24 h: Y / N | CH4 pump 24 h: Y / N | Air in both tanks: Y / N
+  Adjustment made: pH Up ___ mL | pH Down ___ mL | Nutrients ___ g | Which tank: _______
   Leaks/issues: _______________________________________________
 
   PLANTS:
@@ -499,18 +547,19 @@ Keep a physical notebook or a simple spreadsheet. Consistency of recording is mo
 ```
   WEEK OF: ______________
 
-  Reservoir changed this week: Y / N | Date: _______
+  Greens tank changed (every 7 days): Y / N | Date: _______
+  CH4 tank changed (every 5–7 days): Y / N | Date: _______
   Root inspection — all channels: HEALTHY / CONCERNS (describe)
   Algae/biofilm noted: Y / N | Location: ____________
   Pest scouting — sticky trap count: _______________
   Structural issues: ______________________________________
 
   Season snapshot:
-  CH1 (lettuce) — plants in channel: _____ | Expected harvest date: _______
-  CH2 (herbs) — varieties growing: _______________________________
-  CH3 (kale/spinach/mint) — status: ______________________________
-  CH4 (tomatoes/peppers/strawberries) — flowers: Y/N | Fruit: Y/N
-  Zone C bags — crops growing: _____________ | Status: ____________
+  CH1 (lettuce, 11 sites) — plants in channel: _____ | Expected harvest: _______
+  CH2 (herbs: basil, cilantro, parsley, chives) — varieties: _______________
+  CH3 (spinach/kale/mint, plus 3–4 strawberries) — status: ________________
+  CH4 (cherry tomato and pepper only) — flowers: Y/N | Fruit: Y/N
+  Zone C — radish, beetroot, carrot — status: ____________
 
   Next week priorities:
   1. _______________________________________________________
@@ -531,10 +580,11 @@ Catch problems before they become crises. Add these to your daily and weekly sca
   EARLY WARNING SYSTEM — act immediately on any of these:
 
   SYSTEM SIGNALS:
-  ⚠ Pump quieter than usual or flow rate reduced → check impeller, filter
-  ⚠ Reservoir level dropping faster than usual → check for slow leak, or
-    unusual heat/transpiration — identify cause
-  ⚠ Solution smells musty or foul → root rot developing — immediate reservoir check
+  ⚠ Either pump quieter than usual, or flow reduced → check that pump's impeller and filter.
+    Both pumps are meant to run 24 hours. Roots dry in 15–30 minutes in warm weather.
+  ⚠ Either reservoir dropping faster than usual → check for a slow leak, or
+    unusual heat and transpiration. Identify which tank.
+  ⚠ Either solution smells musty or foul → root rot in that loop. Check that tank now.
   ⚠ Solution has turned green/brown → algae bloom or microbial growth
   ⚠ White crust on channel surfaces → salt buildup — flush channels, check EC
   ⚠ Any dripping from fittings → retape and reseal before it worsens
@@ -553,13 +603,14 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 ---
 
 
-*Next: [`guide/nft/09-troubleshooting.md`](09-troubleshooting.md) — Symptom → cause → fix decision trees*
-
-> **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for budget-friendly ways to automate monitoring, get phone alerts for pump failures and temperature spikes, and build a dashboard to track pH/EC/temperature trends over time.
+> **Tip:** Tired of manual daily checks? See [Guide 13 — Automation and Data Logging](13-automation.md) for a sensor path from a low-cost logger up to a full network. This system has two EC targets and two pumps, both running 24 hours.
 
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 07 — Pests and Disease](07-pests-and-disease.md)
+> **Next:** [Guide 09 — Troubleshooting](09-troubleshooting.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

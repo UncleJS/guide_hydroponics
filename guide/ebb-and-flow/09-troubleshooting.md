@@ -72,23 +72,26 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ```
   SYMPTOM: Water level in table is visibly lower than expected during flood.
-  Expected flood level: ~2 cm below the media surface (at standpipe height).
+  Expected flood level: about ¾ in (2 cm) below the LECA surface (set by the overflow standpipe).
 
   MOST COMMON CAUSES (in order of likelihood):
 
   1. RESERVOIR TOO LOW — insufficient volume to flood the table
      Sign: Reservoir level is clearly low before flood starts.
-     Fix: Top up reservoir immediately. Calculate minimum reservoir level
-          needed to flood all three tables. For 3× tables (1.2m × 0.6m each),
-          flooding to standpipe height (~10 cm in a 12 cm bed) draws
-          ~29 L each = ~90 L minimum reserve above pump submersion depth.
-          Keep reservoir topped to operating level (~150 L).
+     Fix: Top up the reservoir immediately. Each table is 4 ft × 2 ft
+          (1.22 m × 0.61 m) with 5 in (13 cm) of LECA. Flooding to the
+          standpipe, about ¾ in (2 cm) below the LECA surface, draws roughly
+          8–10 US gal (30–38 L) of free water per table. Three tables need
+          about 25–30 US gal (95–114 L) above the pump. Keep the reservoir
+          at its 45 US gal (170 L) operating level (range 40–50 US gal /
+          151–189 L).
 
   2. PUMP TOO WEAK / IMPELLER PARTIALLY BLOCKED
      Sign: Pump sounds strained; flood rises slowly and levels off below target.
      Fix: Remove pump, inspect impeller for calcium or debris.
           Scrub with toothbrush in clean water. Retest flow rate.
-          Target: pump fills all three tables within 5–10 min at flood frequency used.
+          Target pump: 250 US gph (950 L/h), range 200–300 US gph (760–1,140 L/h),
+          about 35 W. It should fill all three tables within 5–10 minutes.
 
   3. FILL PORT PARTIALLY CLOGGED
      Sign: Pump runs fine when tested in a bucket, but table fills slowly.
@@ -104,8 +107,10 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   5. OVERFLOW STANDPIPE TOO SHORT (set too low)
      Sign: Table drains out at a height LOWER than expected, before fully flooding.
      This is not really "not reaching depth" — the overflow is set incorrectly.
-     Fix: Replace overflow standpipe with a taller one to set a higher flood depth.
-          See Guide 11 Section 4 for overflow height calculation.
+     Fix: Fit a taller 1½ in (40 mm) overflow standpipe so the waterline sits
+          about ¾ in (2 cm) below the LECA surface.
+          See the overflow standpipe height in Guide 11
+          ([Setting Flood Depth with Overflow Height](11-build-guide.md#setting-flood-depth-with-overflow-height)).
 ```
 
 ---
@@ -114,7 +119,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ```
   SYMPTOM: After pump stops, water remains in table for >30 minutes.
-  Or: significant standing water (>5 mm) is still present at next flood cycle.
+  Or: significant standing water (deeper than ¼ in / 6 mm) is still present at the next flood cycle.
 
   ⚠ THIS IS A HIGH-PRIORITY PROBLEM: roots sitting in stagnant solution
     rapidly become anaerobic. Pythium onset can begin within 2–4 hours.
@@ -140,7 +145,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
      Sign: Water drains slowly but never fully clears; possible pool in drain pipe.
      Fix: The gravity drain pipe from table to reservoir must slope downhill
           continuously. Add shims or re-route pipe to ensure no flat or
-          uphill sections. Minimum slope: 1:40 (1 cm drop per 40 cm length).
+          uphill sections. Minimum slope: 1:40 (about 1 in drop per 40 in, or 2.5 cm per 1 m).
 
   4. TABLE NOT LEVEL — POOLING IN LOW CORNER
      Sign: After drain, one corner of table retains water but rest is dry.
@@ -150,8 +155,10 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   5. DRAIN PIPE DIAMETER TOO SMALL
      Sign: Drain empties very slowly (water level drops but takes >45 minutes).
-     Fix: Upgrade drain pipe to at least 25 mm ID. For three tables draining
-          simultaneously, use 32 mm ID minimum.
+     Fix: Each table already uses a 1 in (25 mm) drain. If that line is
+          necked down, restore 1 in (25 mm) all the way to the reservoir.
+          The overflow is the separate 1½ in (40 mm) standpipe. It sets flood
+          height. It is not a substitute for the drain.
 ```
 
 ---
@@ -186,8 +193,9 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   □ Test source water hardness: EC above 0.4 mS/cm = high mineral load
   □ Compare flush frequency to build rate: if crust returns in <2 weeks after
     a flush, water source is the primary driver — switch water sources
-  □ Check flood frequency: more floods per day = more residue deposited
-    Consider reducing to 2× per day in cool weather to slow accumulation
+  □ Check flood frequency: more floods per day deposit more residue.
+    Vegetative crops stay at 3 floods a day. Fruiting stays at 4.
+    Four is the ceiling. Do not add a fifth, and do not drop to 2 as a heat plan.
 ```
 
 ---
@@ -196,7 +204,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
 ```
   SYMPTOM: Reservoir needs topping up more than once per day, or is dropping
-  >15 L per day despite cool conditions.
+  more than 4 US gal (15 L) per day despite cool conditions.
 
   CAUSES AND DIAGNOSIS:
 
@@ -217,7 +225,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
           over tables during hottest part of day. Increase top-up frequency.
 
   3. RAIN COLLECTING IN TABLES MASKING ACTUAL SOLUTION LOSS
-     Sign: Reservoir drops by 10 L overnight after rain, but you attribute
+     Sign: Reservoir drops by about 2½ US gal (10 L) overnight after rain, but you attribute
            it to evaporation. Actually: solution in tables was diluted by
            rain and extra water volume kept the reservoir appearing correct
            until the next flood flushed it.
@@ -322,29 +330,33 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   DIAGNOSIS DECISION TREE:
 
   Is table draining completely between floods?
-  └─ NO: Fix drain first (see A2). Root rot is secondary to the drainage failure.
-         Improve drain. Reduce flood frequency temporarily to 1× per day.
-         Root rot may recover once drain is correct.
+  └─ NO: Fix the drain first (see A2). Root rot is secondary to the drainage failure.
+         A pump stuck ON rots roots in 2–4 hours. If the Guide 13 drain float
+         is still up after the pump should be off, open the pump relay.
   └─ YES: Drainage is correct. Root rot is likely from:
-         (a) Solution temperature too high (>22°C) → Pythium thrives above 20°C
-         (b) Over-flooding (too many floods per day) — roots never get
-             sufficient air-dry time between floods
-         (c) Pythium already established — environmental trigger was earlier
+         (a) Solution temperature above 77°F (25°C) — that is the pythium action line.
+             The target band is 64–72°F (18–22°C).
+         (b) A fifth flood, or floods that never finish draining
+         (c) Pythium already established — the environmental trigger was earlier
 
   TREATMENT — EARLY STAGE (brown tips, musty smell, some white roots remain):
-  1. Reduce flood frequency to 1× per day immediately
-  2. Increase dissolved oxygen: add air stone to reservoir
-  3. Treat reservoir with H₂O₂ (3% solution, 3 ml per litre) or
-     Hydroguard (Bacillus-based beneficial bacteria product)
-  4. If reservoir temp >20°C: take steps to cool (shade, ice bottles)
-  5. Run a dilute (50% strength) nutrient solution for 1 week to reduce stress
+  1. Keep floods at 3 per day and shorten them. Do not add a fifth. Do not use
+     a drop to 2 floods as the heat plan — heat gets 40% shade and shorter floods.
+  2. Increase dissolved oxygen: add an air stone to the reservoir
+  3. A 3% hydrogen-peroxide flush is a cleaning step. Remove the plants, or
+     hand-water them, before the flush. Do not run that dose through a live
+     root zone. Hydroguard (Bacillus) can go into a live reservoir.
+  4. If solution temperature is above 77°F (25°C): shade the reservoir and use ice bottles
+  5. Run a half-strength nutrient solution for 1 week to reduce stress
 
   TREATMENT — SEVERE STAGE (most roots brown/black, wilting plants):
   1. Remove affected plants. Trim all dead root material with sterilised scissors.
-  2. Rinse roots in 0.3% H₂O₂ solution (3 ml/L) for 30 seconds, then rinse in water.
+  2. Rinse roots in a 0.3% hydrogen-peroxide solution (about 2 tsp / 10 ml of 3%
+     peroxide per 1 US qt / 0.95 L) for 30 seconds, then rinse in water.
   3. Replace table media: remove all LECA, sterilise (see Guide 08 Section 5).
   4. Full reservoir drain and sterilisation.
-  5. Replant at 1× flood per day. Do not return to 3–4× until roots are healthy.
+  5. Replant on the vegetative schedule of 3 floods a day, shortened, until roots
+     are white again. Fruiting returns to 4. Never 5.
   6. Remaining plants in the same table: monitor closely for spread.
 ```
 
@@ -360,21 +372,22 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   1. FLOOD FREQUENCY TOO LOW — roots drying out between floods
      Sign: Wilting worsens mid-afternoon (hottest/driest point). LECA is bone dry
            several hours after flood. Wilting recovers after next flood.
-     Fix: Increase flood frequency. In hot summer weather, 4× per day may be
-          needed. Add a midday flood cycle specifically.
+     Fix: Vegetative crops flood 3 times a day. Fruiting crops flood 4 times a day.
+          Four is the ceiling. If the schedule is already at 4, do not add a fifth.
+          On a heatwave, keep the 4 floods, shorten them, and deploy 40% shade.
 
   2. FLOOD NOT REACHING ROOT ZONE — roots not being contacted
      Sign: Flood runs but plants are still wilting. Check flood depth — is
            water reaching base of net pots? Roots must reach the flood zone.
-     Fix: Raise overflow standpipe to increase flood depth (up to 5 cm above
-          media base). Ensure roots from net pots are long enough to reach
-          the standing water level during flood.
+     Fix: Raise the 1½ in (40 mm) overflow standpipe so the waterline is about
+          ¾ in (2 cm) below the LECA surface. Roots in the open bed must reach
+          that waterline during the flood.
 
   3. HIGH EVAPOTRANSPIRATION STRESS
-     Sign: Hot (>30°C), sunny, windy day. Even with correct flooding,
-           plant can lose water faster than roots can absorb it.
-     Fix: Deploy shade cloth (30–40% shade). Reduce wind exposure.
-          Temporarily increase flood frequency to compensate.
+     Sign: Hot day above 85°F (29°C), sunny and windy. Even with correct flooding,
+           the plant can lose water faster than the roots can absorb it.
+     Fix: Deploy 40% shade cloth. Reduce wind on the prevailing-wind side.
+          Keep 4 floods if the crop is fruiting. Shorten them. Do not add a fifth.
 
   4. EC TOO HIGH — osmotic stress
      Sign: Wilting despite regular flooding. EC is above 3.5 mS/cm.
@@ -383,9 +396,9 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
           into correct range for your crop.
 
   5. ROOT ZONE TEMPERATURE TOO HIGH
-     Sign: Solution temperature above 26°C. Roots look healthy but are
-           metabolically impaired by heat. Wilting occurs even in mild weather.
-     Fix: Cool the reservoir (shade, insulation, ice bottles). See Guide 10.
+     Sign: Solution temperature above 77°F (25°C). Roots look healthy but dissolved
+           oxygen is falling and pythium risk is rising. That is the action line.
+     Fix: Cool the reservoir back toward 64–72°F (18–22°C). See Guide 10.
 ```
 
 ---
@@ -442,7 +455,8 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
      Context: Calcium moves with water flow. In E&F, calcium reaches roots
      only during flood cycles. If flood frequency is low or flood depth
      insufficient, inner growing leaves receive less calcium.
-     Fix: Increase flood frequency to 3–4× per day during peak growth.
+     Fix: Flood 3 times a day in vegetative growth and 4 times a day in fruit.
+          Four is the ceiling.
           Ensure flood depth reaches all root levels. Lower pH to 5.8–6.0
           to improve Ca availability. Consider Ca-EDTA supplement.
 
@@ -454,8 +468,9 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
      Sign: Tip burn occurs on hot days; lower margins crispy.
      The "VPD" (vapour pressure deficit) is too high: plants
      transpire faster than calcium can be translocated to tips.
-     Fix: Shade cloth, windbreak, or misting to reduce leaf temperature.
-          Increase flood frequency during heatwaves.
+     Fix: 40% shade cloth when afternoon highs hold above 85°F (29°C), plus a
+          windbreak on the prevailing-wind side. Keep the 4 fruiting floods and
+          shorten them. Do not add a fifth.
 
   4. AMMONIUM TOXICITY (if using a nutrient formula with high NH₄)
      Sign: Brown leaf margins, reduced growth; distinctive ammonia-
@@ -490,10 +505,9 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   └─ YES: Salt lockout (see B6). Perform media flush.
 
   Is root zone temperature correct?
-  └─ Below 16°C: cold root zone drastically reduces uptake of all nutrients,
-     especially phosphorus. Insulate reservoir. Reduce flood frequency
-     in cold weather (2× per day maximum below 16°C).
-  └─ Above 26°C: heat stress reduces nutrient transport. Cool reservoir.
+  └─ Below 61°F (16°C): a cold root zone slows uptake, especially phosphorus.
+     Insulate the reservoir. Stay on 3 vegetative floods. Do not add a fifth.
+  └─ Above 77°F (25°C): pythium risk rises. Cool the reservoir toward 64–72°F (18–22°C).
 
   Has the plant suffered any pest/disease setback?
   └─ Root rot, aphid infestations, or caterpillar damage all cause stunting
@@ -544,8 +558,10 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   CAUSES:
 
   1. TEMPERATURE EXTREMES
-     Night temps <10°C or day temps >32°C prevent pollination/fruit set.
-     Fix: Fleece at night below 12°C. Shade cloth during >30°C days.
+     Night temperatures below 50°F (10°C) or day temperatures above 90°F (32°C)
+     prevent pollination and fruit set.
+     Fix: Fleece at night below 54°F (12°C). Deploy 40% shade when afternoon
+          highs hold above 85°F (29°C).
 
   2. POOR POLLINATION
      Outdoors, wind provides some pollination for tomatoes/peppers.
@@ -560,14 +576,16 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   4. FLOOD STRESS DURING FLOWERING
      Inconsistent flood cycles during bloom (missed floods, over-flooding)
      disrupts calcium and boron translocation — both essential for fruit set.
-     Fix: Maintain consistent 3× per day flood schedule during flowering.
-          Increase to 4× on very hot days.
+     Fix: Keep a consistent schedule: 3 floods a day while vegetative, 4 once
+          fruit is setting. On a hot day, keep those 4 and shorten them.
+          Do not add a fifth flood.
 
   5. CALCIUM AND BORON DEFICIENCY
      Blossom end rot (dark sunken areas at fruit base) = calcium deficiency.
      If flowers dropping before setting: boron may be limiting.
      Fix: Lower pH to 5.8–6.0. Consider adding calcium in chelated form.
-          Boron: tiny amounts (0.1–0.3 mg/L) in complete nutrient formulas.
+          Boron: a complete formula already carries the trace the crop needs.
+          Do not add a separate boron dose unless a tissue test asks for it.
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -600,24 +618,26 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   □ Is the timer display showing incorrect time? (Timer lost power = reset to 00:00)
      Fix: Reset to current time and reschedule. Fit a timer with backup battery
           to retain settings through power cuts.
-  □ Is the mechanical timer pin stuck in the ON position?
-     Fix: Manually reset pins. Replace mechanical timer with digital type.
+  □ Is a mechanical pin timer stuck in the ON position?
+     Fix: Unplug it. The outdoor timer is a digital 1-minute timer in a
+          weatherproof box. A mechanical timer is not the outdoor control.
   □ Is the digital timer settings corrupted?
      Fix: Factory reset timer, reprogram schedule, verify correct current time.
   □ Is a Tier 1/4 smart plug relay stuck closed?
      Fix: Power cycle smart plug at wall socket. Check app for relay status.
 
   AFTER FIX:
-  1. Reduce flood frequency to 1× per day for 48 hours to allow roots to recover
+  1. Shorten the next day's floods. Stay at 3 (vegetative) or 4 (fruiting).
+     Do not add a fifth.
   2. Inspect roots: if brown and slimy, begin root rot treatment (see B1)
-  3. Add a second independent timer as a backup (belt-and-braces)
-  4. Invest in a smart plug with energy monitoring to alert you to
-     unexpected pump runtime (see Guide 13)
+  3. The primary safety device is the Guide 13 drain float. If the float is
+     still up after the pump should be off, it opens the pump relay.
+     A second timer that only restarts a stopped pump does not stop a stuck-ON flood.
 
   PREVENTION:
-  Use a digital timer with battery backup. Test timer operation weekly
-  (see Guide 08 Section 4). Set a smart-plug alert for pump runtime
-  exceeding scheduled window by more than 5 minutes.
+  Use the digital 1-minute timer in its weatherproof box, on a 120 V outdoor
+  GFCI (SA: 230 V, 30 mA earth-leakage). Test the timer and the GFCI weekly
+  (Guide 08). Root rot from a stuck-ON pump starts in 2–4 hours.
 ```
 
 ---
@@ -633,7 +653,8 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   □ Is the timer showing correct time and schedule?
      Fix: If timer reset to 00:00 (power cut): reset time, reprogram schedule.
   □ Is the pump plugged in?
-     Fix: Check plug, check circuit breaker, check GFCI hasn't tripped.
+     Fix: Check the plug, the breaker, and the 120 V outdoor GFCI
+          (SA: 230 V, 30 mA earth-leakage). Reset it if it has tripped.
   □ Is the pump impeller jammed?
      Test: Remove pump from reservoir, place in a bucket of water, plug in.
      If no output: disassemble and clear impeller.
@@ -650,10 +671,12 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   3. When flood reaches overflow height, unplug pump, allow drain
   4. Repair timer/pump before re-automating
 
-  PLANTS THAT WILTED FROM MISSED FLOODS:
-  Most plants recover within 4–6 hours after correct flooding resumes.
-  Spray foliage with plain water to reduce transpiration stress while
-  the root zone rehydrates.
+  PLANTS THAT MISSED A FLOOD:
+  Moist LECA holds 8–24 hours. Wilt in 1½–2 hours is not the normal buffer.
+  Most plants recover once the next flood runs. Spray foliage with plain water
+  if the leaves are soft while the root zone rehydrates.
+  A second timer that only recovers a stuck-OFF pump is a convenience.
+  It is not the safety device. The safety device cuts a pump that stayed on.
 ```
 
 ---
@@ -700,7 +723,9 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
      Sign: Water bypasses the standpipe; flows around the fitting seal.
           Drain is fast but not via the standpipe path.
      Fix: Replace rubber grommet in the bulkhead fitting.
-          Source: plumbing/hydroponics suppliers; fit 20-25mm EPDM washers.
+          Source: plumbing or hydroponics suppliers. The overflow bulkhead is
+          1½ in (40 mm). The drain bulkhead is 1 in (25 mm). Match the washer
+          to that fitting.
 ```
 
 ---
@@ -716,13 +741,13 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   STEP 1 — CONFIRM IT IS A LINER LEAK (not evaporation or normal loss):
   □ Mark reservoir level at night, check in morning before any flood cycle
-  □ If reservoir has dropped >3 L overnight in cool conditions: leak likely
+  □ If the reservoir has dropped more than ¾ US gal (3 L) overnight in cool conditions: a leak is likely
   □ Inspect ground below the flood tables — is there a damp patch?
   □ After removing LECA: look at liner surface for wet spots, staining,
     or visible cracks/pinholes
 
   STEP 2 — LOCATE THE LEAK:
-  □ Fill table with plain water to 5 cm depth (no media)
+  □ Fill the table with plain water to 2 in (5 cm) depth (no media)
   □ Watch for 10 minutes — where does water appear on the outside?
   □ Most common leak sites:
      - Around bulkhead fitting flanges (fitting over-tightened or under-tightened)
@@ -829,7 +854,7 @@ flowchart TD
     Q3 -->|NO| EC_fix["Fix EC:<br/>Raise (add nutrients) or<br/>Lower (dilute with water)"]
     Q3 -->|YES| Q4{"Is there heavy<br/>salt crust in LECA?"}
     Q4 -->|YES| salt_fix["Media flush first.<br/>Then reassess symptoms.<br/>(See A3, B6)"]
-    Q4 -->|NO| Q5{"Is reservoir temp<br/>in range 16–22°C?"}
+    Q4 -->|NO| Q5{"Is reservoir temp<br/>64–72 F (18–22 C)?"}
     Q5 -->|NO| temp_fix["Address temperature.<br/>(See Guide 10)"]
     Q5 -->|YES| specific["Consult specific<br/>symptom sections<br/>B1–B7, A1–A6"]
 ```
@@ -975,7 +1000,8 @@ flowchart TD
 ---
 
 
-*Next: [`guide/ebb-and-flow/10-climate-management.md`](10-climate-management.md) — Temperature, heat, frost, wind, rain, and seasonal management for outdoor Ebb & Flow*
+> **Previous:** [Guide 08 — System Maintenance](./08-system-maintenance.md)
+> **Next:** [Guide 10 — Climate Management](./10-climate-management.md)
 
 [↑ Back to TOC](#table-of-contents)
 

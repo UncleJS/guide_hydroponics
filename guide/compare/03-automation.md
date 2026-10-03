@@ -66,12 +66,12 @@ In NFT, the solution film flows continuously. The failure modes, ranked by sever
 
 | Severity | Failure | Time to damage | Detectable by |
 |---|---|---|---|
-| Critical | Pump stops (no flow) | 1–2 hours (summer) | Flow sensor at return drain |
+| Critical | Pump stops (no flow) | 15–30 minutes in warm weather | Flow sensor on that loop’s return |
 | Critical | Return pipe blocks (roots, debris) | 2–4 hours | Water level sensor in catch tank |
 | High | pH drift outside 5.5–6.5 | 24–48 hours | pH probe in reservoir |
 | High | EC crash or spike | 12–24 hours | EC probe in reservoir |
 | High | Reservoir runs dry | 4–8 hours | Float switch in reservoir |
-| Medium | Water temperature above 26°C | 24–48 hours | Temperature probe |
+| Medium | Water temperature above 77°F (25°C) | 24–48 hours | Temperature probe in each reservoir |
 | Low | Algae growth (light leak) | Weeks | Visual inspection |
 
 The pattern: **flow is everything** in NFT. If solution is moving, the system is functional. If it stops, damage begins within minutes to hours.
@@ -188,32 +188,31 @@ NFT pumps run 24/7. Monitoring pump health:
 Water temperature affects dissolved oxygen in the solution. For NFT, where roots are partially air-exposed, the dissolved oxygen in the thin film is critical.
 
 Dissolved oxygen saturation at key temperatures:
-- 16°C → 10.0 mg/L
-- 20°C → 9.1 mg/L
-- 24°C → 8.3 mg/L
-- 28°C → 7.7 mg/L
-- 32°C → 7.1 mg/L
+- 61°F (16°C) → 10.0 mg/L
+- 68°F (20°C) → 9.1 mg/L
+- 75°F (24°C) → 8.3 mg/L
+- 82°F (28°C) → 7.7 mg/L
+- 90°F (32°C) → 7.1 mg/L
 
-Below 7.5 mg/L, root zone oxygen stress begins. Above 26°C reservoir temperature, Pythium (root rot) organisms become active.
+Below 7.5 mg/L, root-zone oxygen stress begins. Above 77°F (25°C) reservoir temperature, pythium risk rises. The aim is 64–72°F (18–22°C).
 
-**Mitigation when water temperature is high (>24°C):**
-- Insulate reservoir (wrap in foil-faced foam, shade from direct sun)
-- Add a small aquarium air stone to the reservoir to increase oxygen exchange
-- Consider running solution overnight when ambient temperature is lowest
+**When the tank is hot:**
+- Shade it and wrap it. Black body, white exterior, reflective foam.
+- Run an air stone in that reservoir.
+- Both NFT pumps already run 24 hours a day. Do not add an overnight-off timer to “cool” the channel. A stopped channel dries roots in 15–30 minutes.
 
 ### NFT Automation Priority Stack
 
-From highest to lowest value-for-money:
+NFT has two loops. Fit the flow and level sensors on both the 20 US gal (76 L) greens tank and the 10 US gal (38 L) fruiting tank. One EC probe cannot serve both targets.
 
-1. **Float switch in return tank** → alerts to pump failure ($5)
-2. **DS18B20 in reservoir** → water temperature alert ($3)
-3. **DHT22/SHT31 at canopy** → air temperature and humidity ($4–8)
-4. **Float switch in reservoir** → low water level alert ($5)
-5. **pH probe in reservoir** → pH monitoring ($20–80 depending on quality)
-6. **EC probe in reservoir** → EC monitoring ($20–80)
-7. **Flow sensor on return pipe** → precise flow monitoring ($10)
-8. **Automated top-up valve** → refills from a header tank when reservoir is low (Full Tier)
-9. **Automated pH dosing** → peristaltic pump + pH up/down reservoir (Full Tier)
+1. **Flow sensor on each return** → the pump on that loop stopped ($10 each)
+2. **Float switch in each reservoir** → low water ($5 each)
+3. **DS18B20 in each reservoir** → water temperature ($3 each)
+4. **Canopy temperature and humidity** → $4–$8 (R72–R144)
+5. **pH probe in each reservoir** → $20–$80 (R360–R1,440)
+6. **EC probe in each reservoir** → $20–$80 (R360–R1,440). Greens target 0.8–1.8 mS/cm. CH4 fruiting target is 2.0–3.5 mS/cm. Do not dose both from one setpoint.
+7. **Automated top-up valve** on each tank (full tier)
+8. **Automated pH dosing** with a peristaltic pump (full tier)
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -242,21 +241,21 @@ Expected state at T minutes after pump-OFF:
   - T = 30: table should be drained (switch OPEN) → if still CLOSED → ALERT
 ```
 
-**Alert trigger:** Float switch still reads CLOSED 30 minutes after the pump-off time. This indicates:
+**Alert and cutoff:** If the float is still CLOSED 30 minutes after pump-off, open the pump relay first, then send the alert. An alert alone leaves a stuck-ON pump running. Causes:
 - Drain port is blocked (most common)
 - Overflow fitting has failed and is holding solution
 - Timer fired again before drain was complete (scheduling error)
 
 ### Timer Failure Detection
 
-E&F uses a timer (mechanical or digital relay) to control flood cycles. Timer failures:
+Ebb and Flow uses a digital timer with 1-minute steps, in a weatherproof box. A mechanical timer is not the outdoor default. Timer failures:
 - **Stuck ON**: pump runs continuously → table permanently flooded → root rot
 - **Stuck OFF**: pump never runs → plants dehydrate → wilting and death within hours in summer
 
 **Detection using the drain confirmation float switch:**
 
-- **Stuck ON**: float switch never returns to OPEN after pump-off time → alert after 30 min
-- **Stuck OFF**: float switch never transitions to CLOSED during the expected flood window → "missed flood" alert after the window passes
+- **Stuck ON**: the float never returns to OPEN. Open the pump relay. Do not wait for the next cycle.
+- **Stuck OFF**: the float never closes during the flood window. Alert. Moist LECA still buffers 8–24 hours. That is not a 90-minute wilt.
 
 Both failure modes are detectable from a single float switch, provided the microcontroller knows the flood schedule.
 
@@ -266,7 +265,7 @@ graph TD
   B -->|No - table never flooded| C[ALERT: Timer stuck OFF<br/>or pump failure]
   B -->|Yes| D[Pump turns OFF at T=20min<br/>Table drains]
   D -->|float switch should open| E{Float OPEN<br/>within 30 min?}
-  E -->|No - table still flooded| F[ALERT: Drain blocked<br/>or timer stuck ON]
+  E -->|No - table still flooded| F[OPEN pump relay<br/>then alert: drain blocked<br/>or timer stuck ON]
   E -->|Yes| G[Drain confirmed OK<br/>Log cycle timestamp]
   G -->|wait for next scheduled flood| A
 ```

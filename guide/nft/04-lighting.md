@@ -4,6 +4,7 @@
 [![Docs: Home Hydroponics](https://img.shields.io/badge/Docs-Home%20Hydroponics-2d6a4f)](../../README.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+The worked climate, DLI bands, and shade rule follow [Design Constants](../design-constants.md). Zone layout is in [zones.md](../../zones.md).
 
 ---
 
@@ -139,7 +140,7 @@ These are the daily light requirements your plants need for optimal growth:
 | Lettuce (all types) | 8 mol/m²/day | 12–17 | 20 |
 | Spinach | 8 | 12–16 | 20 |
 | Basil | 12 | 15–20 | 25 |
-| Cilantro/coriander | 8 | 12–16 | 18 |
+| Cilantro | 8 | 12–16 | 18 |
 | Mint | 8 | 12–16 | 20 |
 | Parsley | 8 | 12–16 | 18 |
 | Kale | 10 | 15–20 | 25 |
@@ -150,34 +151,40 @@ These are the daily light requirements your plants need for optimal growth:
 | Carrots (bags) | 10 | 15–20 | 25 |
 | Microgreens | 10 | 12–20 | — |
 
-### Seasonal DLI in a Temperate Climate
+### Seasonal DLI in the Worked Climate
+
+The worked example is **inland mid-USA, about 38°N, USDA zones 6b–7a** (Kansas City, St. Louis, Louisville, Richmond). It is not the Pacific coast at the same latitude. Clear-sky DLI planning bands:
+
+| Season | Months | Clear-sky DLI |
+|--------|--------|----------------|
+| Summer | June–August (SA: December–February) | 45–55 mol/m²/day |
+| Spring and fall | March–May and September–November (SA: September–November and March–May) | 25–35 mol/m²/day |
+| Winter | December–February (SA: June–August) | 10–15 mol/m²/day |
+
+Day length at about 38°N is roughly 9.5 hours in December and about 14.8 hours in June. Overcast days deliver less than the clear-sky band, often around half, sometimes less. Use the clear-sky band for planning and a light meter if you need the day you actually have.
 
 ```
-  APPROXIMATE DAILY LIGHT INTEGRAL BY MONTH (Temperate, 50–55°N latitude):
+  WHAT THOSE BANDS MEAN FOR THIS SYSTEM:
 
-  Month       Avg hours daylight   Clear sky DLI   Typical overcast DLI
-  ─────────────────────────────────────────────────────────────────────
-  January          8.5h              12–15           4–6
-  February         9.5h              15–18           5–8
-  March           11.5h              20–25           8–12
-  April           13.5h              28–35           12–18
-  May             15.0h              35–45           15–22
-  June            16.5h              40–50           18–25
-  July            15.5h              38–48           16–24
-  August          14.0h              32–42           14–20
-  September       12.0h              22–28           10–15
-  October         10.0h              14–18           6–10
-  November         8.5h              8–12            3–6
-  December         7.5h              6–10            2–5
+  Outdoor season: mid-April through mid-October
+                  (SA: mid-October through mid-April)
 
-  KEY CONCLUSIONS:
-  - Lettuce and herbs: adequate light April–September
-  - Tomatoes/peppers: adequate light May–August (peak season)
-  - Strawberries: adequate light April–September
-  - Winter growing outdoors: not viable without supplemental lighting
+  Lettuce, herbs, spinach, kale, strawberries on CH1–CH3:
+    Clear-sky light is enough from mid-April through mid-October.
+    Summer DLI (45–55) is more than leafy crops can use at noon.
+    That excess is heat. Shade is the response, not more plants.
+
+  Cherry tomatoes and peppers on CH4:
+    They want the high summer band. Fruit them June–August
+    (SA: December–February), inside the outdoor season that
+    ends at the first frost, about October 20 (SA: April 20).
+
+  Winter, December–February (SA: June–August):
+    Clear-sky DLI is only 10–15 mol/m²/day, and nights in this
+    band fall to 0–15°F (−18 to −9°C). Do not run outdoor NFT.
 ```
 
-> **Latitude matters:** The table above is calibrated for **50–55°N latitude** (UK, northern Europe, southern Canada). If you are at a **lower latitude** (30–45°N — southern US, Mediterranean, Japan), expect higher DLI year-round and a longer viable outdoor season. If you are at a **higher latitude** (55–65°N — Scandinavia, northern Canada), expect more extreme seasonal swings — very long summer days but significantly less winter light. Adjust your planting calendar and supplemental lighting plans accordingly.
+The month in brackets is a six-month shift so a southern-hemisphere reader can use the same season. It is not a second climate dataset. Summer afternoon highs are 90–100°F (32–38°C). Last spring frost, for planning, is April 15 (SA: October 15). First fall frost is October 20 (SA: April 20).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -199,7 +206,7 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 | Strawberries | 6–8 hours |
 | Radishes/carrots | 6–8 hours |
 
-> **Site selection rule:** Choose a location with **unobstructed southern sky** (Northern Hemisphere) for at least 8 hours. Avoid sites shaded by buildings, walls, or large trees during peak growing hours (10am–4pm).
+> **Site selection rule:** The worked build faces **south (SA: north)** and wants unobstructed sky in that direction for at least 8 hours. The site is 13 ft × 10 ft (4.0 m × 3.0 m). Avoid shade from buildings, walls, or large trees between 10am and 4pm. The wind break sits on the north edge (SA: the south edge), about 12 in (30 cm) clear of the frame.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -210,7 +217,7 @@ While DLI is more accurate, a simple sun hours estimate works for practical plan
 
 ### Southern Exposure (Northern Hemisphere)
 
-The sun moves from east to west across the southern sky. Your system should face south, with no obstructions on the south, southeast, or southwest aspect during 10am–4pm.
+In the worked climate the sun moves from east to west across the southern sky. Face the long axis **south**. Keep the south, southeast, and southwest open from 10am to 4pm. A South African site faces **north** instead, and the open sky is the north, northeast, and northwest. The wind break stays on the poleward edge: north in the worked example, south in South Africa.
 
 ```mermaid
 flowchart TD
@@ -237,7 +244,13 @@ Walk your site at:
 
 If your site is in shadow at 12pm due to a building or tall fence, you either need to move the system or accept reduced yields.
 
-**Height rule of thumb:** A wall or fence at a distance D from your system will cast a shadow with a length of approximately **D × (1/tan(sun altitude angle))**. At summer noon in the UK (~60°N), sun altitude is ~55°; shadow length = D × 0.7. At winter noon, it is ~10°; shadow length = D × 5.7 (this is why winter indoor growing requires much more space from walls).
+**Height rule of thumb:** A wall or fence at a distance D from the system casts a shadow about **D × (1/tan(sun altitude))**. At about **38°N**:
+
+- Summer noon (June), sun altitude is about 75°. Shadow length is about **0.26 × D**. A 6 ft (1.8 m) fence set 10 ft (3.0 m) to the south throws a shadow of roughly 2.6 ft (0.8 m), which a south-facing bed can clear.
+- Equinox noon, altitude is about 52°. Shadow length is about **0.8 × D**.
+- Winter noon (December), altitude is about 29°. Shadow length is about **1.8 × D**. A fence 10 ft (3.0 m) away throws a shadow near 18 ft (5.5 m). That is one reason outdoor NFT is shut down December–February (SA: June–August), not a reason to squeeze the summer bed against a tall south wall.
+
+In South Africa, mirror the diagram: the low winter sun is to the north, so the wall you measure is on the north side of a north-facing bed.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -262,33 +275,37 @@ Shade cloth reduces PPFD to a level that maximises photosynthesis without heat s
 | 70% | Reduces PPFD by ~70% | Seedlings, sensitive plants — too dark for most crops |
 | 90% | Reduces PPFD by ~90% | Mushrooms, propagation — not for growing food crops |
 
-**Recommendation for this system:** **40% shade cloth** deployed over the entire Zone A during peak summer (June–August). Remove on overcast days or when average temperatures are below 22°C.
+**Recommendation for this system:** **40% shade cloth** over Zone A when afternoon highs hold above **85°F (29°C)**. In this climate that is the June–August stretch (SA: December–February), when highs run 90–100°F (32–38°C). Roll it back on a cool overcast spell, and take it off once highs are no longer holding above 85°F (29°C).
 
 ### Deployment Method
 
 ```mermaid
 block-beta
   columns 1
-  cloth["40% shade cloth<br/>(stretched over 4 corner posts, 1.2m tall, outside channel frame)"]
-  gap["30–50cm air gap<br/>(clearance above plant tops — required for airflow)"]
+  cloth["40% shade cloth<br/>4 corner posts, 4 ft tall, outside the channel frame"]
+  gap["12-20 in air gap<br/>clearance above plant tops, for airflow"]
   channels["NFT CHANNELS — ZONE A"]
 ```
 
-Install 4 posts at the corners of Zone A. Stretch 40% shade cloth over the top, securing with clips or wire. Clearance above plant tops: 30–50cm minimum for airflow. The cloth rolls up and stores when not needed. Use bamboo poles or conduit as shade frame supports.
+Install 4 posts at the corners of Zone A, about 4 ft (1.2 m) tall, which is taller than the channel posts (36 in / 91 cm at the high end). Stretch 40% shade cloth over the top and secure it with clips or wire. Leave 12–20 in (30–50 cm) between the cloth and the plant tops so air can move. The cloth rolls up and stores. Bamboo or conduit is enough for the shade frame. These posts are not the channel-support posts.
 
 ### When to Deploy and Remove
 
 ```
-  DEPLOY shade cloth when:
-  - Daily high temperature exceeds 28°C consistently
-  - Plants show heat stress signs (wilting at midday despite adequate water)
-  - Lettuce/herbs are bolting (going to seed prematurely)
+  DEPLOY 40% shade cloth when:
+  - Afternoon highs hold above 85°F (29°C). In this climate that is
+    June–August (SA: December–February)
+  - Plants wilt at midday even though the film is running
+  - Lettuce or herbs are bolting
   - Leaf tip burn is increasing
 
   REMOVE shade cloth when:
-  - Consecutive overcast days (DLI will drop below minimum without full sun)
-  - September onwards — every bit of light matters as days shorten
-  - Night temperatures drop below 15°C (plants need all the DLI they can get)
+  - Highs are no longer holding above 85°F (29°C)
+  - Several overcast days in a row would drop DLI under the crop minimum
+  - From September (SA: March) toward the October 20 frost
+    (SA: April 20), unless a late heat spike returns
+  - Night temperatures are falling through 59°F (15°C) and the plants
+    need the full clear-sky DLI of the shoulder season (25–35)
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -310,7 +327,7 @@ These can look similar but have different causes and solutions:
 | **Bleached/whitish patches on leaves** | Rare | Yes (sunscald) |
 | **Root temperature** | Often high (warm reservoir) | Normal root temp |
 
-**Test:** Check your reservoir water temperature. If it's above 24°C, heat is the primary stressor. Deploy shade AND insulate the reservoir.
+**Test:** Check both reservoir temperatures. If either is above **77°F (25°C)**, heat is the primary stressor. Deploy 40% shade if highs are above 85°F (29°C), and keep the black body / white exterior finish in the shade. The aim is 64–72°F (18–22°C).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -332,16 +349,17 @@ Many plants respond to the **length of the dark period** (night length) rather t
 ### Implications for Your System
 
 **Lettuce, spinach, cilantro (long-day plants):**
-- In midsummer (June–July), the long days actively trigger bolting in these crops
-- Shade cloth can help slightly, but ultimately these crops bolt in summer
-- **Solution:** Plant in early spring and autumn — avoid trying to grow them through July
-- Heat-tolerant/slow-bolt varieties exist — worth seeking out
+- In midsummer, June–July (SA: December–January), the long days trigger bolting
+- 40% shade helps with heat. It does not turn a long day into a short day
+- **Solution:** Sow the main leafy crops from mid-April (SA: mid-October) and again in the fall shoulder. Use bolt-resistant varieties if a few sites stay in through July (SA: January)
+- Cilantro is the name used in this guide
 
 **Strawberries:**
-- **Everbearing/day-neutral varieties** (Albion, Seascape, Evie) — produce fruit regardless of day length — **best for NFT**
-- **June-bearing varieties** — produce one crop in June/July triggered by short-day conditions of the previous autumn — not ideal for continuous production
+- They occupy 3–4 sites on **CH3**, in the greens tank, in 2 in (51 mm) pots. They are not on CH4
+- **Everbearing / day-neutral varieties** (Albion, Seascape, Evie) fruit without a short-day trigger. Use those
+- **June-bearing varieties** give one crop and are a poor fit for a continuous CH3 site
 
-**Tomatoes and peppers:** Day-neutral — flower and fruit based on plant maturity and temperature, not photoperiod. No photoperiod concerns.
+**Tomatoes and peppers:** Day-neutral. They flower from maturity and temperature, on CH4 only, in their own tank. No photoperiod trick is required.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -350,53 +368,68 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 ## 8. Seasonal Light Strategy
 
-### Spring (March–May) — Establishment Phase
+### Spring (March–May; SA: September–November) — Establishment
 
 ```
-  Light: Increasing, usually adequate from April
+  Light: clear-sky DLI in the spring band, 25–35 mol/m²/day,
+         rising toward summer by late May (SA: late November)
   Action:
-  - Germinate seeds indoors in late February–March if nights are still cold
-  - Transplant to NFT channels from mid-April
-  - No shade cloth needed
-  - Monitor for late frosts (protect with fleece overnight)
-  - Best time to plant: lettuce, spinach, herbs, peas
+  - Last frost for planning is April 15 (SA: October 15)
+  - Germinate indoors in March (SA: September) while nights are still cold
+  - Transplant greens and herbs from mid-April (SA: mid-October),
+    after that frost date
+  - No shade cloth yet
+  - Fleece on a late frost night. This is plant cover, not a pump timer.
+    Both NFT pumps stay on 24 hours a day
+  - Best first plantings: lettuce, spinach, herbs
 ```
 
-### Summer (June–August) — Peak Production, Heat Management
+### Summer (June–August; SA: December–February) — Peak Light and Heat
 
 ```
-  Light: Abundant — often excessive for sensitive crops
+  Light: clear-sky DLI 45–55 mol/m²/day. More than lettuce can use at noon
+  Air: afternoon highs 90–100°F (32–38°C)
   Action:
-  - Deploy 40% shade cloth from mid-June
-  - Monitor for bolting in leafy greens — harvest promptly
-  - Focus NFT channels on heat-tolerant crops: tomatoes, peppers, kale, mint
-  - Succession-plant lettuce every 2–3 weeks (expect faster bolting in heat)
-  - Keep reservoir shaded and insulated
-  - Strawberries: peak fruiting — keep well watered, high EC for fruit quality
+  - Deploy 40% shade when highs hold above 85°F (29°C)
+  - Harvest leafy greens before they bolt
+  - CH4 (tomato or pepper) is the heat-tolerant fruiting loop, on its
+    own tank and its own EC
+  - Kale and mint on CH3 tolerate the heat better than spinach and lettuce
+  - Succession-sow lettuce every 2–3 weeks if you keep CH1 going
+  - Both reservoirs stay shaded: black body, white exterior
+  - Strawberries stay on CH3 in the greens tank (EC 0.8–1.8 mS/cm).
+    Do not raise them to a tomato EC
 ```
 
-### Autumn (September–October) — Second Season
+### Autumn (September–October; SA: March–April) — Second Season
 
 ```
-  Light: Declining but often excellent quality (lower sun angle, less heat)
+  Light: back in the spring/fall band, 25–35 mol/m²/day, with less heat
   Action:
-  - Remove shade cloth completely from September
-  - Plant second crop of lettuce, spinach, herbs (autumn is ideal — no bolting)
-  - Begin harvesting tomatoes/peppers before first frost
-  - Watch night temperatures below 10°C — deploy frost fleece
-  - Continue microgreens rotation through October with some cold tolerance
+  - Roll shade off unless a late spike holds highs above 85°F (29°C)
+  - Sow a second round of lettuce, spinach, and herbs
+  - Finish tomatoes and peppers before the first frost, about
+    October 20 (SA: April 20). The outdoor season ends mid-October
+    (SA: mid-April)
+  - Nights heading below 50°F (10°C): frost fleece on the plants
+  - Microgreens can continue through October (SA: April) with some
+    cold tolerance. They still use pH 5.8–6.2 water
 ```
 
-### Winter (November–February) — Shutdown / Planning
+### Winter (November–February; SA: May–August) — Shutdown
 
 ```
-  Light: Insufficient for most crops outdoors
+  Light: December–February clear-sky DLI is 10–15 mol/m²/day
+         (SA: June–August)
+  Nights in this band: 0–15°F (−18 to −9°C)
   Action:
-  - Harvest final crops before hard frost
-  - Winterise system (see guide/10)
-  - Clean and store all components
-  - Plan next season's crop rotation
-  - Consider: a simple cold frame can extend lettuce production to November/December
+  - The last outdoor harvest is around the October 20 frost
+    (SA: April 20), not deep winter
+  - Do not run outdoor NFT through December–February
+    (SA: June–August)
+  - Winterise the frame. See [Guide 10 — Climate Management](10-climate-management.md)
+  - Clean and store pumps, nets, and meters
+  - Plan the next mid-April start (SA: mid-October)
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -406,22 +439,22 @@ Many plants respond to the **length of the dark period** (night length) rather t
 
 ## 9. Supplemental Lighting for Season Extension
 
-If you want to extend your growing season beyond September outdoors, supplemental lighting is an option.
+Outdoor NFT stops for December–February (SA: June–August). Supplemental light is for a sheltered corner or an indoor microgreen shelf, not for keeping the outdoor channels running through a 0–15°F (−18 to −9°C) night.
 
 ### When It Makes Sense
 
-- You want to grow lettuce/herbs into November/December
-- DLI has dropped below minimum for your target crop
-- You have access to a sheltered spot (porch, lean-to, polytunnel)
+- You want lettuce or herbs into November (SA: May) under a porch or cover, after the outdoor channels are done
+- Measured DLI is under the crop minimum in that shelter
+- You already have a spot that does not freeze: porch, lean-to, or a small cover
 
 ### Options
 
 | Option | Power | Coverage | Cost | Best For |
 |--------|-------|----------|------|---------|
-| LED grow strips | 10–30W | Small shelves | $20–$60 | Microgreens, small herb shelf |
-| T5 fluorescent | 24–54W | 1–2 channels | $30–$80 | Lettuce channels under cover |
-| LED quantum board | 100–200W | Multiple channels | $80–$200 | Serious season extension |
-| CMH (ceramic metal halide) | 315W+ | Large area | $150–$300 | Semi-commercial extension |
+| LED grow strips | 10–30W | Small shelves | $20–$60 (R360–R1,080) | Microgreens, small herb shelf |
+| T5 fluorescent | 24–54W | 1–2 channels | $30–$80 (R540–R1,440) | Lettuce under cover |
+| LED quantum board | 100–200W | Multiple channels | $80–$200 (R1,440–R3,600) | A sheltered extension, not outdoor winter NFT |
+| CMH (ceramic metal halide) | 315W+ | Large area | $150–$300 (R2,700–R5,400) | More power and heat than this build needs |
 
 ### Target PPFD for Supplemental Lighting
 
@@ -432,31 +465,32 @@ If you want to extend your growing season beyond September outdoors, supplementa
 ### Wattage & Hanging Height Per Channel
 
 ```
-  SIZING SUPPLEMENTAL LIGHT FOR A 2.4 m NFT CHANNEL:
+  SIZING SUPPLEMENTAL LIGHT FOR AN 8 ft (2.44 m) NFT CHANNEL:
 
-  Each channel is 2.4 m long × ~0.1 m wide = ~0.24 m² canopy area.
-  In practice, plant canopy spreads to ~0.3 m wide → ~0.72 m² effective area.
+  Each channel is 8 ft (2.44 m) long and about 4 in (10 cm) wide.
+  The canopy spreads to about 12 in (30 cm), so the lit area is
+  about 8 ft² (0.73 m²).
 
   TARGET: 200–400 μmol/m²/s (PPFD) for lettuce/herbs
 
   LED quantum board (typical efficacy: 2.5 μmol/J):
-    To deliver 300 μmol/m²/s over 0.72 m²:
-    Power needed = (300 × 0.72) / 2.5 ≈ 86 W
+    To deliver 300 μmol/m²/s over 0.73 m² (about 8 ft²):
+    Power needed = (300 × 0.73) / 2.5 ≈ 88 W
     → A single 100 W LED quantum board covers one channel comfortably.
     → Two channels side-by-side: one 200 W board, or two 100 W boards.
 
   T5 fluorescent (typical efficacy: 1.5 μmol/J):
-    Same target: (300 × 0.72) / 1.5 ≈ 144 W
+    Same target: (300 × 0.73) / 1.5 ≈ 146 W
     → A 4-tube T5 fixture (4 × 54 W = 216 W) covers one channel with margin.
     → Less efficient than LED but cheaper upfront.
 
-  HANGING HEIGHTS (measured from canopy top, not from channel):
+  HANGING HEIGHTS (from the canopy, not from the channel):
   ─────────────────────────────────────────────────────────────
-  Light type         Recommended height    Notes
-  LED quantum board  30–45 cm              Closer = more intense, smaller footprint
-  T5 fluorescent     15–25 cm              Low heat — can hang close
-  LED grow strips    10–15 cm              Very close; good for microgreens shelves
-  CMH 315 W          60–90 cm              High heat — needs ventilation clearance
+  Light type         Recommended height              Notes
+  LED quantum board  12–18 in (30–45 cm)             Closer is brighter and narrower
+  T5 fluorescent     6–10 in (15–25 cm)              Low heat, can hang close
+  LED grow strips    4–6 in (10–15 cm)               Microgreens shelves
+  CMH 315 W          24–36 in (60–90 cm)             Hot. Needs clearance
 ```
 
 ### Photoperiod Recommendations
@@ -466,11 +500,14 @@ If you want to extend your growing season beyond September outdoors, supplementa
 
   Lettuce/herbs need 14–18 hours total light, target DLI ≥ 15 mol/m²/day.
 
-  EXAMPLE — NOVEMBER (50–55°N):
-    Natural daylight: ~8.5 hours, overcast DLI: 3–6 mol/m²/day
-    Shortfall: need ~10–12 mol/m²/day from supplemental light
+  EXAMPLE — DECEMBER AT ABOUT 38°N, INDOORS OR UNDER COVER:
+    Outdoor clear-sky DLI is only 10–15 mol/m²/day, and the outdoor
+    channels are shut down. A sheltered lettuce crop still wants
+    about 12–17 mol/m²/day.
+    Daylight is about 9.5 hours. A bright overcast day can land
+    under the lettuce minimum, so the lamp makes up the gap.
 
-    A 100 W LED quantum board at 300 μmol/m²/s over 0.72 m²:
+    A 100 W LED quantum board at 300 μmol/m²/s over 0.73 m² (about 8 ft²):
     DLI contribution = 300 × 3600 × hours / 1,000,000
     At 10 hours supplemental: 300 × 36,000 / 1,000,000 = 10.8 mol/m²/day ✓
 
@@ -490,14 +527,15 @@ If you want to extend your growing season beyond September outdoors, supplementa
   IS SUPPLEMENTAL LIGHTING WORTH IT?
 
   FOR LETTUCE/HERBS (YES — if you have a sheltered spot):
-    One 100 W LED board: ~$80–$120
-    Electricity: 100 W × 10 h/day × 90 days (Oct–Dec) = 90 kWh ≈ $15–$25
-    Extends harvest by 2–3 months → ~5–8 kg extra lettuce/herbs
-    Retail value of extended harvest: $50–$100
+    One 100 W LED board: about $80–$120 (R1,440–R2,160)
+    Electricity at the planning rate of $0.15/kWh (R2.70/kWh):
+    100 W × 10 h/day × 90 days = 90 kWh = $13.50 (R243)
+    A sheltered extension might add 11–18 lb (5–8 kg) of lettuce and herbs
+    Retail-equivalent value of that extra harvest: about $50–$100 (R900–R1,800)
     → Pays for itself in Season 1 if you value fresh winter greens.
 
   FOR MICROGREENS (YES — excellent ROI):
-    LED grow strips: $20–$60
+    LED grow strips: $20–$60 (R360–R1,080)
     Electricity: negligible (10–30 W)
     Enables year-round microgreens production indoors.
     → Pays for itself in 2–4 weeks of production.
@@ -505,10 +543,11 @@ If you want to extend your growing season beyond September outdoors, supplementa
   FOR FRUITING CROPS (NO — not cost-effective):
     Would need 200+ W per channel, plus heating.
     Electricity cost exceeds the value of the produce.
-    → Grow fruiting crops in their natural season (May–September) only.
+    → Grow CH4 fruiting crops in the outdoor season only:
+      mid-April through mid-October (SA: mid-October through mid-April).
 ```
 
-> **Budget consideration:** For a $100–$500 budget system, supplemental lighting is an optional upgrade. Focus on getting the outdoor system working perfectly first.
+> **Budget:** Supplemental lighting is an optional add-on. Price it in [Guide 12 — Budget and Sourcing](12-budget-and-sourcing.md) in US dollars with rand in brackets. Get the outdoor two-loop system running through a full mid-April to mid-October season first (SA: mid-October to mid-April).
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -530,22 +569,25 @@ Microgreens have different light needs from mature crops:
   Phase 2 — Green-up (days 4–7):
   Uncover and place in bright light.
   Chlorophyll develops, cotyledons expand and green up.
-  Outdoor: Place in partial shade first, then full light.
+  Outdoor: partial shade first, then full light.
   Target DLI: 10–15 mol/m²/day
+  Water only, pH 5.8–6.2. Sunflower and pea may use EC 0.4–0.8 mS/cm
+  if the tray runs long. Other microgreens stay on water.
 
   Phase 3 — Growth to harvest (days 7–14):
-  Full outdoor light (40% shade in summer to prevent heat stress on tender seedlings)
-  Harvest when first true leaves appear.
+  Full outdoor light. Use the same 40% shade as Zone A when highs
+  hold above 85°F (29°C), so the seedlings do not cook.
+  Harvest when the first true leaves appear.
+  Coco depth in the tray is 1–1¼ in (2.5–3 cm).
 ```
 
 ---
 
 
-*Next: [`guide/nft/05-growing-media.md`](05-growing-media.md) — Net pots, clay pebbles, rockwool, coco, and germination*
-
 [↑ Back to TOC](#table-of-contents)
 
----
+> **Previous:** [Guide 03 — Water Quality](03-water-quality.md)
+> **Next:** [Guide 05 — Growing Media](05-growing-media.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*

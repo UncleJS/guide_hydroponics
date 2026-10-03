@@ -63,7 +63,7 @@ Each crop entry includes:
 - **Harvest method** — how to harvest without damaging adjacent plants
 - **E&F-specific tips** — notes particular to Ebb & Flow flood table growing
 
-> **EC and pH values given are for the reservoir.** In E&F, the media buffers these values slightly — the root zone may experience a slightly higher EC than the reservoir due to salt accumulation in LECA between floods. Monitor reservoir EC and pH daily; check media flush performance weekly (see Guide 05 Section 12).
+> **EC and pH values are for the shared reservoir.** Working pH is **5.8–6.2** (acceptable band 5.5–6.5). All three tables share the 45 US gal (170 L) tank, so they share one EC. Media can run saltier than the reservoir. Flush when media EC is more than 0.5 mS/cm above the reservoir; treat +1.0 as urgent (Guide 02, Section 10). Probe depth is 2 in (5 cm). Guide 05 Section 12 is the end-of-season sterilisation, not the weekly flush.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -74,29 +74,29 @@ Each crop entry includes:
 
 | Crop | Zone | Table/Location | EC (mS/cm) | pH | Flood freq/day | Seed-to-harvest |
 |------|------|---------------|-----------|-----|---------------|-----------------|
-| Lettuce (all types) | A | Table 3 | 0.8–1.6 | 5.5–6.5 | 3–4 | 28–45 days |
-| Spinach | A | Table 3 | 1.2–2.0 | 6.0–7.0 | 3–4 | 30–45 days |
-| Kale | A | Table 3 | 1.4–2.0 | 5.5–6.5 | 3–4 | 55–70 days |
-| Basil | A | Table 3 | 1.0–1.6 | 5.5–6.5 | 3–4 | 28–42 days |
-| Cilantro | A | Table 3 | 1.0–1.6 | 6.0–6.8 | 3–4 | 25–35 days |
-| Mint | A | Table 3 | 1.2–1.8 | 5.5–6.5 | 3 | 28–35 days |
-| Chives | A | Table 3 | 1.2–1.8 | 6.0–6.8 | 3 | 30–40 days |
-| Parsley | A | Table 3 | 0.8–1.6 | 5.5–6.5 | 3 | 35–60 days |
-| Cherry tomatoes | A | Table 1 | 2.0–3.5 | 5.5–6.5 | 3–4 | 60–80 days |
-| Peppers (sweet) | A | Table 2 | 1.8–3.0 | 5.5–6.5 | 3–4 | 70–90 days |
-| Peppers (chilli) | A | Table 2 | 2.0–3.5 | 5.5–6.5 | 3–4 | 65–85 days |
-| Strawberries | A | Table 2 | 1.0–1.8 | 5.5–6.5 | 3 | 60–90 days from plant |
-| Cucumbers | A | Table 1 | 1.8–2.8 | 5.5–6.5 | 3–4 | 50–65 days |
-| Courgettes | A | Table 2 | 1.6–2.4 | 5.5–6.5 | 3–4 | 45–60 days |
-| Aubergine | A | Table 2 | 1.8–3.0 | 5.5–6.5 | 3–4 | 70–90 days |
-| Sunflower shoots | B | Tray station | — (coco) | — | Manual mist | 8–12 days |
-| Radish microgreens | B | Tray station | — (coco) | — | Manual mist | 6–10 days |
-| Pea shoots | B | Tray station | — (coco) | — | Manual mist | 8–12 days |
-| Broccoli microgreens | B | Tray station | — (coco) | — | Manual mist | 7–10 days |
-| Wheatgrass | B | Tray station | — (coco) | — | Manual mist | 7–10 days |
-| Radishes (root) | C | Grow bags | 0.8–1.4 | 6.0–7.0 | Manual | 22–35 days |
-| Carrots | C | Grow bags | 1.0–1.8 | 6.0–7.0 | Manual | 70–90 days |
-| Beetroot | C | Grow bags | 1.4–2.0 | 6.0–7.0 | Manual | 50–70 days |
+| Lettuce (all types) | A | Table 3 | 0.8–1.6 | 5.8–6.2 | 3, or 4 in heat | 28–45 days |
+| Spinach | A | Table 3 | 1.2–2.0 | 5.8–6.2 | 3, or 4 in heat | 30–45 days |
+| Kale | A | Table 3 | 1.4–2.0 | 5.8–6.2 | 3, or 4 in heat | 55–70 days |
+| Basil | A | Table 3 | 1.0–1.6 | 5.8–6.2 | 3, or 4 in heat | 28–42 days |
+| Cilantro | A | Table 3 | 1.0–1.6 | 5.8–6.2 | 3 | 25–35 days |
+| Mint | A | Table 3 | 1.2–1.8 | 5.8–6.2 | 3 | 28–35 days |
+| Chives | A | Table 3 | 1.2–1.8 | 5.8–6.2 | 3 | 30–40 days |
+| Parsley | A | Table 3 | 0.8–1.6 | 5.8–6.2 | 3 | 35–60 days |
+| Cherry tomatoes | A | Table 1, 1 plant | 2.0–3.5 | 5.8–6.2 | 3 veg, 4 fruit | 60–80 days |
+| Peppers (sweet) | A | Table 2, 1–2 plants | 1.8–3.0 | 5.8–6.2 | 3 veg, 4 fruit | 70–90 days |
+| Peppers (chilli) | A | Table 2, 1–2 plants | 2.0–3.0 | 5.8–6.2 | 3 veg, 4 fruit | 65–85 days |
+| Strawberries | A | Table 3, later fruiting crop | 1.0–1.8 | 5.8–6.2 | 3 | 60–90 days from plant |
+| Cucumbers | A | Table 1, 1 plant | 1.8–2.8 | 5.8–6.2 | 3 veg, 4 fruit | 50–65 days |
+| Courgettes | A | Table 2, 1–2 plants | 1.6–2.4 | 5.8–6.2 | 3 veg, 4 fruit | 45–60 days |
+| Aubergine | A | Table 2, 1–2 plants | 1.8–3.0 | 5.8–6.2 | 3 veg, 4 fruit | 70–90 days |
+| Sunflower shoots | B | Tray | 0.4–0.8 optional | 5.8–6.2 | Mist twice a day | 8–12 days |
+| Radish microgreens | B | Tray | plain water | 5.8–6.2 | Mist twice a day | 6–10 days |
+| Pea shoots | B | Tray | 0.4–0.8 optional | 5.8–6.2 | Mist twice a day | 8–12 days |
+| Broccoli microgreens | B | Tray | plain water | 5.8–6.2 | Mist twice a day | 7–10 days |
+| Wheatgrass | B | Tray | plain water | 5.8–6.2 | Mist twice a day | 7–10 days |
+| Radishes (root) | C | 2 × 5 US gal bags | 0.8–1.4 | 5.8–6.2 | Manual | 22–35 days |
+| Carrots | C | 3 × 10 US gal bags | 1.0–1.8 | 5.8–6.2 | Manual | 70–90 days |
+| Beetroot | C | 1 × 5 US gal bag | 1.4–2.0 max | 5.8–6.2 | Manual | 50–70 days |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -113,12 +113,12 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.4 mS/cm (seedling) → 1.2–1.6 mS/cm (mature) |
-| **pH range** | 5.5–6.5 (optimal 6.0) |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day (seedling); 3–4× per day (mature, hot weather) |
 | **Temperature** | Day 18–24°C / Night 12–18°C |
 | **Light (DLI)** | Minimum 8; optimal 12–17 mol/m²/day |
 | **Seed-to-harvest** | 35–45 days (faster in warm conditions; slower below 15°C) |
-| **Spacing** | 20–25cm on centre; 8–12 plants per table |
+| **Spacing** | 8–10 in (20–25 cm) on centre. Table 3 can hold a leafy planting; do not treat it as the tomato table |
 | **Harvest method** | Cut at base with clean knife; whole head or outer leaves |
 | **Net pot** | 50mm |
 
@@ -136,7 +136,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 16–24°C / Night 10–18°C |
 | **Light (DLI)** | Optimal 12–17 mol/m²/day |
@@ -159,7 +159,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
 | **Temperature** | Day 16–24°C / Night 10–18°C |
 | **Light (DLI)** | Minimum 8; optimal 12–17 mol/m²/day |
@@ -182,7 +182,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–2.0 mS/cm |
-| **pH range** | 6.0–7.0 (tolerates slightly higher pH than most leafy greens) |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5). Spinach tolerates a drift toward the top of that band |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 15–20°C / Night 8–15°C (cool-season crop) |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
@@ -195,7 +195,7 @@ Each crop entry includes:
 - Spinach germinates poorly above 25°C — start seeds indoors in early spring or late summer for the best results
 - Best seasons in this system: March–May and September–October; avoid trying to grow through June–August (bolts rapidly in long days + heat)
 - Spinach is a higher-nitrogen crop — increase nitrogen component in your nutrient solution during spinach production (if using a two-part or customisable nutrient)
-- In E&F, spinach roots spread more laterally than deeply — a standard 10cm LECA depth is sufficient; no need for extra depth for spinach
+- Spinach roots spread more sideways than down. The 5 in (13 cm) LECA bed on Table 3 is enough. Do not build a second, shallower table for it
 
 ---
 
@@ -205,7 +205,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.4–2.0 mS/cm |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 15–25°C / Night 8–18°C (frost tolerant — handles light frost) |
 | **Light (DLI)** | Minimum 10; optimal 15–20 mol/m²/day |
@@ -216,7 +216,7 @@ Each crop entry includes:
 
 **E&F-specific tips:**
 - Kale is one of the most productive long-season crops for an E&F flood table — a single plant produces leaves for 3–4 months with regular harvesting
-- In E&F, kale's fibrous root system penetrates deeply through the LECA — use 12–15cm media depth and 75mm net pots for large Tuscan/dinosaur kale varieties
+- Kale roots run through the 5 in (13 cm) LECA. Use a 3 in (75 mm) net pot for a large Tuscan variety. The bed depth does not change between tables
 - Unlike lettuce, kale does not bolt in summer — it can stay on Table 3 through the entire growing season while lettuce is replaced by succession planting around it
 - Kale improves in flavour after a light frost — leave late-season plants in until the first frost for the sweetest harvests
 - Space kale carefully: its large canopy spreads 40–60cm and will shade adjacent plants — place at the north or rear of the table
@@ -229,7 +229,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.0–1.6 mS/cm |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day (basil is thirsty — one of the highest flood-frequency herbs) |
 | **Temperature** | Day 22–28°C / Night 15–20°C (tropical origin — cold-sensitive) |
 | **Light (DLI)** | Minimum 12; optimal 15–20 mol/m²/day |
@@ -253,7 +253,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.0–1.6 mS/cm |
-| **pH range** | 6.0–6.8 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
 | **Temperature** | Day 17–24°C / Night 10–18°C |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
@@ -267,7 +267,7 @@ Each crop entry includes:
 - Best planted in succession every 3 weeks from March to May, then again from August to September
 - Cilantro seeds can be slow to germinate (5–10 days) — pre-soak seeds for 12 hours in water before placing in rockwool or LECA for faster germination
 - Use slow-bolt varieties ("slow-bolt cilantro", "Santo") for summer succession planting — they add 1–2 weeks before bolting
-- In E&F, cilantro develops a tap-root-like primary root that goes straight down into the LECA — ensure at least 10cm LECA depth
+- Cilantro puts a tap-root-like primary root down into the LECA. The Table 3 bed is 5 in (13 cm), which covers that
 
 ---
 
@@ -277,7 +277,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–1.8 mS/cm |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day (mint is moderately drought-tolerant vs other herbs) |
 | **Temperature** | Day 16–24°C / Night 10–18°C |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
@@ -289,7 +289,7 @@ Each crop entry includes:
 **E&F-specific tips:**
 - Propagate mint from cuttings, not seeds — place 10cm stem cutting with leaves in a glass of water for 5–7 days until roots appear, then transfer to rockwool or directly into a prepared LECA net pot
 - Mint's vigorous spreading habit is contained by the net pot in an E&F table — this is one advantage of E&F over open-bed growing where mint invades neighbouring plants
-- Mint can tolerate more moisture than most herbs — flood frequency can stay at 3× even in cool weather where other herbs might be reduced to 2×
+- Mint can stay on the vegetative schedule of 3 floods a day in cool weather. Do not drop a fruiting table from 4 floods to 2 to match an herb
 - One of the most cold-tolerant herbs on Table 3 — can be left in the system until first hard frost (below -3°C); often regrows after light frosts
 
 ---
@@ -300,7 +300,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 1.2–1.8 mS/cm |
-| **pH range** | 6.0–6.8 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
 | **Temperature** | Day 15–24°C / Night 8–18°C |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
@@ -323,7 +323,7 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 3, Ebb & Flow flood table |
 | **EC range** | 0.8–1.6 mS/cm |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day |
 | **Temperature** | Day 15–24°C / Night 8–18°C |
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
@@ -336,7 +336,7 @@ Each crop entry includes:
 - Parsley seed is notoriously slow to germinate — pre-soak in warm water for 24 hours before sowing; expect 14–21 days to germination at 18–22°C
 - Due to slow start, parsley should be started indoors in February/March for a spring transplant — do not direct-sow into LECA and expect quick results
 - Parsley is biennial — in its second season it will bolt and set seed in spring; treat as an annual and replant each season for best leaf production
-- The taproot of parsley benefits from the deeper LECA media in E&F — use 12cm depth minimum. Parsley in NFT often produces inferior yields because its taproot has nowhere to develop
+- Parsley's taproot has room in the 5 in (13 cm) LECA bed. An NFT channel does not give that taproot anywhere to go, which is why parsley is a Table 3 crop here
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -345,7 +345,7 @@ Each crop entry includes:
 
 ## FRUITING CROPS — Zone A, Tables 1 & 2
 
-> **Table assignment:** Table 1 carries the long-season vining crops (indeterminate tomatoes, cucumbers); Table 2 carries the medium-season fruiting crops (peppers, aubergine, courgette, strawberries). See Guide 00 for the full zone design.
+> **Table assignment:** Table 1 is one indeterminate tomato **or** one cucumber. Table 2 is pepper, aubergine, or courgette, 1–2 plants. Table 3 is lettuce, herbs, pak choi, or a later fruiting crop (strawberries go here, not on Table 2). See Guide 00. The three tables share one reservoir.
 
 ---
 
@@ -355,22 +355,22 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
 | **EC range** | 2.0–2.5 mS/cm (vegetative) → 2.5–3.5 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3× per day (vegetative); 4× per day (fruiting, hot weather) |
 | **Temperature** | Day 20–28°C / Night 15–20°C |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 60–80 days from transplant |
-| **Spacing** | 40–50cm on centre; 2–4 plants per table |
+| **Spacing** | One plant on the 4 ft × 2 ft (1.22 m × 0.61 m) table |
 | **Harvest method** | Individual fruits or whole trusses when fully coloured |
-| **Net pot** | 75–100mm |
-| **Media depth** | 150mm minimum |
+| **Net pot** | 3–4 in (75–100 mm) |
+| **Media depth** | 5 in (13 cm), same as the other tables |
 
 **E&F-specific tips:**
-- Start seeds indoors in late February/March — transplant to Table 1 after last frost (May) when plants are 15–20cm with visible flower buds
+- Start seeds indoors in February (SA: August), 8–10 weeks before the 15 April last frost (SA: 15 October). Transplant the one plant to Table 1 after that frost, at about 6–8 in (15–20 cm), once flower buds show. May (SA: November) is the safer month if nights are still cold in late April
 - Train to a single stem (cordon/indeterminate varieties): remove all side shoots (suckers) from leaf axils every 3–5 days. Let 2 side shoots develop on determinate varieties
 - Support with a vertical string or bamboo cane anchored to a post above the table — in E&F, the LECA anchors the root ball but the stem needs support above media level
 - High EC during fruiting (2.5–3.5 mS/cm) increases sugar content and flavour — do not dilute EC to 2.0 during fruiting phase
-- Monitor flood frequency carefully: tomatoes at peak fruiting in July/August need 4 floods per day. Inadequate flooding causes blossom end rot (calcium deficiency)
+- In July–August (SA: January–February), fruiting floods stay at 4 per day. That is the ceiling. Blossom end rot is often a missed flood or a hot root zone, not a reason to add a 5th flood. At 90–100°F (32–38°C), keep 4 floods, shorten them if needed, and use 40% shade
 - Blossom end rot in E&F is often a flood frequency problem, not a nutrient deficiency — check flood schedule before adjusting nutrients
 
 ---
@@ -381,18 +381,18 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
 | **EC range** | 1.8–2.2 mS/cm (vegetative) → 2.5–3.0 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 22–28°C / Night 16–20°C (warmth-demanding) |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 70–90 days from transplant (green to red adds 3–4 weeks) |
-| **Spacing** | 35–45cm on centre; 4 plants per table |
-| **Harvest method** | Cut stem 2–3cm above fruit with clean scissors |
-| **Net pot** | 75mm |
-| **Media depth** | 120–150mm |
+| **Spacing** | 1–2 plants on Table 2 |
+| **Harvest method** | Cut the stem about 1 in (2–3 cm) above the fruit with clean scissors |
+| **Net pot** | 3 in (75 mm) |
+| **Media depth** | 5 in (13 cm) |
 
 **E&F-specific tips:**
-- Peppers are the most cold-sensitive fruiting crop in this system — do not transplant to Table 2 until night temperatures are reliably above 15°C (late May/early June in most temperate climates)
+- Do not transplant peppers to Table 2 until nights stay above 59°F (15°C). In this 38°N climate that is often late May (SA: late November), after the 15 April last-frost date (SA: 15 October)
 - At season end, peppers can be overwintered indoors as potted plants — remove from net pot, wash roots, pot in soil, and bring inside before first frost. This skips the germination/seedling stage for next year
 - Blossom drop is common in temperatures above 30°C or below 15°C — shade cloth deployment is important for peppers during heat waves
 - Sweet peppers can be harvested green (smaller, earlier) or left to colour red/orange/yellow (sweeter, more nutritious, but requires 3–4 extra weeks)
@@ -403,20 +403,20 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
-| **EC range** | 2.0–2.5 mS/cm (vegetative) → 2.5–3.5 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
+| **Zone & System** | Zone A, Table 2, Ebb & Flow flood table. 1–2 plants |
+| **EC range** | 2.0–2.5 mS/cm (vegetative) → 2.5–3.0 mS/cm (fruiting). Do not push chilli above 3.0 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 22–30°C / Night 16–20°C |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 65–85 days from transplant |
-| **Spacing** | 30–40cm on centre; 4–6 per table (smaller plants than sweet pepper) |
+| **Spacing** | 1–2 plants on Table 2. Do not add plants to "fill" the 4 ft × 2 ft table |
 | **Harvest method** | Cut with clean scissors; leaving the calyx intact extends shelf life |
 | **Net pot** | 75mm |
 
 **E&F-specific tips:**
 - Chilli peppers generally produce more fruits per plant than sweet peppers and need slightly less space
-- Higher EC (3.0–3.5 mS/cm) during fruiting increases capsaicin content — if you want hotter chillies, stress the plant slightly by increasing EC and slightly reducing flood frequency in the final 2 weeks before harvest
+- A fruiting EC toward 3.0 mS/cm can increase capsaicin. Do not chase heat by dropping floods from 4 to 2, and do not add a 5th flood. Pepper fruiting in these guides stays at or below 3.0 mS/cm
 - Allow some chillies to fully ripen red/orange — they are sweeter and more nutritious than unripe green chillies
 - Cayenne, jalapeño, and serrano varieties are most productive in temperate E&F systems — habanero and scotch bonnet need higher temperatures and a longer season
 
@@ -426,23 +426,23 @@ Each crop entry includes:
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
+| **Zone & System** | Zone A, Table 3, as a later fruiting crop. Not on Table 2 |
 | **EC range** | 1.0–1.4 mS/cm (vegetative) → 1.4–1.8 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
-| **Flood frequency** | 3× per day (strawberries prefer slightly less flooding than other fruiting crops) |
-| **Temperature** | Day 18–24°C / Night 10–18°C |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
+| **Flood frequency** | 3× per day. Do not push strawberries to the 4× fruiting ceiling used for tomato |
+| **Temperature** | Day 64–75°F (18–24°C) / Night 50–64°F (10–18°C) |
 | **Light (DLI)** | Minimum 15; optimal 20–30 mol/m²/day |
 | **Seed-to-harvest** | 60–90 days from plug/transplant (grow from established plugs, not seeds) |
-| **Spacing** | 25–30cm on centre; 6–8 plants per table |
-| **Harvest method** | Pick when fully coloured (red over 80% of surface); leave 5mm of stem attached |
-| **Net pot** | 75mm |
+| **Spacing** | 10–12 in (25–30 cm). They replace the leafy crop on Table 3 for that run |
+| **Harvest method** | Pick when fully coloured (red over 80% of the surface); leave about ¼ in (5 mm) of stem |
+| **Net pot** | 3 in (75 mm) |
 
 **E&F-specific tips:**
 - Always use **everbearing or day-neutral varieties** (Albion, Seascape, Evie, Gasana, Portola) — these fruit continuously throughout the season regardless of day length. June-bearing varieties only produce once and are not suited to E&F continuous production
 - Start from established runners or plugs, not seeds — strawberry seeds have variable quality and take months longer to first fruit
 - Remove runners as they appear to maintain plant energy in fruit production — an E&F flood table is not the place for runners to establish (they will root into adjacent LECA spaces)
-- Strawberries are somewhat drought-tolerant compared to tomatoes — reduce flood frequency to 3× per day even in summer rather than the 4× used for tomatoes
-- Crown rot (a form of Pythium) is the main risk — ensure the crown (growing point at the base of leaves) is NEVER submerged during floods. Keep flood level 1–2cm below the top of the net pot when strawberries are in Table 2
+- Keep strawberries at 3 floods a day, including in summer. The 4× ceiling is for the Table 1 tomato or cucumber and for Table 2 fruit, not a target you must hit here
+- Crown rot is the main risk. The design flood stops about ¾ in (2 cm) below the LECA surface, and the crown stays above that. Do not bury the crown to chase a deeper flood
 
 ---
 
@@ -452,22 +452,22 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 1, Ebb & Flow flood table |
 | **EC range** | 1.8–2.2 mS/cm (vegetative) → 2.0–2.8 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
-| **Flood frequency** | 3–4× per day; up to 5× on the hottest days (cucumbers transpire heavily) |
-| **Temperature** | Day 22–28°C / Night 16–22°C |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
+| **Flood frequency** | 3× per day vegetative; 4× per day fruiting. 4× is the ceiling, including the hottest days |
+| **Temperature** | Day 72–82°F (22–28°C) / Night 61–72°F (16–22°C) |
 | **Light (DLI)** | Minimum 20; optimal 25–35 mol/m²/day |
 | **Seed-to-harvest** | 50–65 days from transplant |
-| **Spacing** | 40–60cm on centre; 2–3 plants per table maximum |
-| **Harvest method** | Cut stem 2–3cm above fruit; harvest every 2–3 days once fruiting starts |
-| **Net pot** | 100mm |
-| **Media depth** | 150mm minimum |
+| **Spacing** | One plant on Table 1. A cucumber and a tomato do not share that table |
+| **Harvest method** | Cut the stem about 1 in (2–3 cm) above the fruit; harvest every 2–3 days once fruiting starts |
+| **Net pot** | 4 in (100 mm) |
+| **Media depth** | 5 in (13 cm) |
 
 **E&F-specific tips:**
 - Cucumbers are among the most productive plants in this system — each plant can produce 15–40 fruits per season with proper management
-- Essential trellis: cucumbers are vigorous climbers. Install a vertical string or mesh trellis at least 1.5–2m tall above the flood table before transplanting. Train the main stem vertically, pinching side shoots at 2 leaves
-- Cucumbers require the highest flood frequency of any crop in this system — do not under-flood. Wilting between flood cycles is normal in heat; if plants remain wilted 30 minutes after a flood cycle, increase flood frequency
+- Essential trellis: install a vertical string or mesh at least 5–6.5 ft (1.5–2 m) above the table before transplanting. Train the main stem up and pinch side shoots at 2 leaves
+- Fruiting floods stop at 4 per day. On a 90–100°F (32–38°C) afternoon, keep those 4 floods, shorten them if the LECA stays saturated, and use 40% shade. A wilt that clears after the next flood is heat. A wilt that is still there 30 minutes after a completed flood means the flood did not wet the bed, not that you should add a 5th cycle. Moist LECA still buffers a missed flood for 8–24 hours
 - Female flowers: cucumbers produce separate male and female flowers. In outdoor growing, pollination by insects is usually adequate. In sheltered conditions (under polytunnel), hand-pollinate by transferring pollen from male flowers with a small brush
-- Bitterness in fruits is caused by irregular watering/flooding or low temperatures — consistent flood schedule and warmth above 18°C prevents bitterness
+- Bitterness comes from an irregular flood schedule or from nights below about 64°F (18°C). Hold the 3× / 4× schedule and the night temperature
 - Harvest promptly: cucumbers left too long on the plant stop triggering new fruit set. Harvest every 2–3 days at peak production
 
 ---
@@ -478,21 +478,21 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
 | **EC range** | 1.6–2.0 mS/cm (vegetative) → 2.0–2.4 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 20–28°C / Night 14–20°C |
 | **Light (DLI)** | Minimum 18; optimal 22–32 mol/m²/day |
 | **Seed-to-harvest** | 45–60 days from transplant |
-| **Spacing** | 60–80cm on centre; 2 plants per table maximum (these are large plants) |
-| **Harvest method** | Cut fruits at 15–25cm length; harvest every 2–3 days |
-| **Net pot** | 100mm |
-| **Media depth** | 150mm minimum |
+| **Spacing** | 1–2 plants on Table 2. Two plants fill the 4 ft × 2 ft table |
+| **Harvest method** | Cut fruits at 6–10 in (15–25 cm); harvest every 2–3 days |
+| **Net pot** | 4 in (100 mm) |
+| **Media depth** | 5 in (13 cm) |
 
 **E&F-specific tips:**
-- Courgettes are the largest plant in this system — two plants will fill an entire 1.2m × 0.6m flood table. Do not try to combine courgettes with other fruiting crops on Table 2 — they will outcompete and shade everything else
+- Two courgettes fill a 4 ft × 2 ft (1.22 m × 0.61 m) table. Do not add a pepper or an aubergine beside them on Table 2
 - If growing both courgettes and cucumbers, grow them on **separate tables** — cucumbers train vertically (trellis) and courgettes spread horizontally; they require very different support setups
 - Courgettes have separate male and female flowers (female flowers have a miniature fruit at the base). Hand-pollination with a soft brush is recommended, especially in cool or sheltered conditions where insects may be less active
-- Harvest when fruits are 15–25cm long — do not let fruits grow to marrow size (30cm+). Large fruits signal the plant to stop producing; regular picking at 15–25cm drives continuous fruiting
+- Harvest at 6–10 in (15–25 cm). A fruit past about 12 in (30 cm) tells the plant to stop. Pick every 2–3 days at peak
 - Powdery mildew is a common late-season problem on courgette leaves — see Guide 07 for management. The flooding cycle in E&F keeps humidity higher around the root zone but does not directly affect foliar mildew
 
 ---
@@ -503,20 +503,20 @@ Each crop entry includes:
 |-----------|-------|
 | **Zone & System** | Zone A, Table 2, Ebb & Flow flood table |
 | **EC range** | 1.8–2.5 mS/cm (vegetative) → 2.5–3.0 mS/cm (fruiting) |
-| **pH range** | 5.5–6.5 |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Flood frequency** | 3–4× per day |
 | **Temperature** | Day 22–30°C / Night 18–22°C (heat-demanding — most warmth-requiring crop in the system) |
 | **Light (DLI)** | Minimum 18; optimal 22–30 mol/m²/day |
 | **Seed-to-harvest** | 70–90 days from transplant |
-| **Spacing** | 40–50cm on centre; 3–4 plants per table |
-| **Harvest method** | Cut stem 2–3cm above fruit when skin is glossy and firm; dull skin = overripe |
-| **Net pot** | 75–100mm |
-| **Media depth** | 120–150mm |
+| **Spacing** | 1–2 plants on Table 2 |
+| **Harvest method** | Cut the stem about 1 in (2–3 cm) above the fruit when the skin is glossy and firm |
+| **Net pot** | 3–4 in (75–100 mm) |
+| **Media depth** | 5 in (13 cm) |
 
 **E&F-specific tips:**
-- Aubergine is the most temperature-demanding crop in this system. In temperate climates, it needs the warmest summer slot and benefits from a south-facing wall behind the flood table to reflect heat
-- Start seeds 8–10 weeks before last frost date (late January/February) for the longest possible outdoor season. Aubergine takes longer from seed to first flower than tomatoes or peppers
-- Fruit set is slow in temperatures below 20°C — if your climate is marginal, protect Table 2 with a clear polytunnel cover on cool nights; the enclosed microclimate boosts temperatures sufficiently
+- Aubergine wants the warmest part of this inland 38°N summer. Face the tables south (SA: north) so a wall on the north side (SA: south side) can reflect heat onto Table 2
+- Start seeds 8–10 weeks before 15 April (SA: 15 October). That is early to mid-February (SA: early to mid-August). Aubergine is slower to first flower than tomato or pepper
+- Fruit set is slow below 68°F (20°C). A clear cover on cool nights helps Table 2. It does not change the flood ceiling
 - Limit to 4–6 fruits per plant for the best individual fruit size — remove excess flowers/small fruits on plants already carrying several developing fruits
 - The purple calyx (cap) and stem are spiny — use gloves when harvesting
 
@@ -527,7 +527,9 @@ Each crop entry includes:
 
 ## MICROGREENS — Zone B, Tray Station
 
-Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco coir (2–3cm depth) with manual misting — no flood fittings or timer involved.
+Zone B is a 24 in × 20 in (61 cm × 51 cm) shelf, two tiers, about 36 in (91 cm) tall, with 6 trays of 10 in × 20 in (25 cm × 50 cm). Coco is **1–1¼ in (2.5–3 cm)** deep. Mist twice a day. There is no flood fitting and no timer.
+
+Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower and pea only** may take an optional EC of **0.4–0.8 mS/cm** if the grow runs long. Radish, broccoli, and wheatgrass stay on plain water.
 
 ---
 
@@ -536,10 +538,10 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 | Parameter | Value |
 |-----------|-------|
 | **Zone & System** | Zone B, coco coir tray |
-| **EC range** | 0.8–1.2 mS/cm (misting solution) |
-| **pH range** | 6.0–6.5 |
-| **Media** | 2–3cm coco coir |
-| **Seed density** | ~30–40g seeds per 30×20cm tray (dense sowing) |
+| **EC range** | Optional 0.4–0.8 mS/cm only if the grow runs long. Otherwise plain water |
+| **pH range** | 5.8–6.2 |
+| **Media** | Coco, 1–1¼ in (2.5–3 cm) |
+| **Seed density** | ~30–40g seeds per 10 in × 20 in (25 cm × 50 cm) tray (dense sowing) |
 | **Temperature** | 18–24°C |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 8–12 days |
@@ -554,10 +556,10 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 | Parameter | Value |
 |-----------|-------|
 | **Zone & System** | Zone B, coco coir tray |
-| **EC range** | 0.6–1.0 mS/cm (misting solution) |
-| **pH range** | 6.0–6.5 |
-| **Media** | 2–3cm coco coir |
-| **Seed density** | ~15–20g seeds per 30×20cm tray |
+| **EC range** | Plain water. No nutrients |
+| **pH range** | 5.8–6.2 |
+| **Media** | Coco, 1–1¼ in (2.5–3 cm) |
+| **Seed density** | ~15–20g seeds per 10 in × 20 in (25 cm × 50 cm) tray |
 | **Temperature** | 16–22°C |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 6–10 days (fastest microgreen in the system) |
@@ -572,10 +574,10 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 | Parameter | Value |
 |-----------|-------|
 | **Zone & System** | Zone B, coco coir tray |
-| **EC range** | 0.6–1.0 mS/cm (misting solution) |
-| **pH range** | 6.0–6.8 |
-| **Media** | 2–3cm coco coir |
-| **Seed density** | ~60–80g peas per 30×20cm tray (shoulder-to-shoulder sowing) |
+| **EC range** | Optional 0.4–0.8 mS/cm only if the grow runs long. Otherwise plain water |
+| **pH range** | 5.8–6.2 |
+| **Media** | Coco, 1–1¼ in (2.5–3 cm) |
+| **Seed density** | ~60–80g peas per 10 in × 20 in (25 cm × 50 cm) tray (shoulder-to-shoulder sowing) |
 | **Temperature** | 15–22°C |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 8–12 days |
@@ -590,10 +592,10 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 | Parameter | Value |
 |-----------|-------|
 | **Zone & System** | Zone B, coco coir tray |
-| **EC range** | 0.6–1.0 mS/cm (misting solution) |
-| **pH range** | 6.0–6.5 |
-| **Media** | 2–3cm coco coir |
-| **Seed density** | ~8–12g seeds per 30×20cm tray (tiny seeds — do not over-sow) |
+| **EC range** | Plain water. No nutrients |
+| **pH range** | 5.8–6.2 |
+| **Media** | Coco, 1–1¼ in (2.5–3 cm) |
+| **Seed density** | ~8–12g seeds per 10 in × 20 in (25 cm × 50 cm) tray (tiny seeds — do not over-sow) |
 | **Temperature** | 16–22°C |
 | **Light (DLI)** | 12–18 mol/m²/day |
 | **Seed-to-harvest** | 7–10 days |
@@ -608,10 +610,10 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 | Parameter | Value |
 |-----------|-------|
 | **Zone & System** | Zone B, coco coir tray |
-| **EC range** | 0.4–0.8 mS/cm (misting solution) |
-| **pH range** | 6.0–7.0 |
-| **Media** | 2–3cm coco coir |
-| **Seed density** | ~40–50g wheat berries per 30×20cm tray |
+| **EC range** | Plain water. No nutrients. The 0.4–0.8 mS/cm option is only for sunflower and pea |
+| **pH range** | 5.8–6.2 |
+| **Media** | Coco, 1–1¼ in (2.5–3 cm) |
+| **Seed density** | ~40–50g wheat berries per 10 in × 20 in (25 cm × 50 cm) tray |
 | **Temperature** | 16–22°C |
 | **Light (DLI)** | 10–18 mol/m²/day |
 | **Seed-to-harvest** | 7–10 days (first cut); regrows for a second cut |
@@ -626,7 +628,15 @@ Zone B consists of 6 trays on a 2-tier shelf. All microgreens are grown in coco 
 
 ## ROOT VEGETABLES — Zone C, Grow Bags
 
-Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix. All are hand-fertigated (no flood fittings).
+Zone C is six bags, hand-fertigated, no flood fittings. Media by volume: 60% coco, 30% perlite, 10% vermiculite. No garden soil. Fertigation EC ceiling is **2.0 mS/cm**. Beetroot does not get a higher target. Working pH is **5.8–6.2**.
+
+| Bag | Count | Crop | Planning yield, one season |
+|-----|-------|------|----------------------------|
+| 5 US gal (19 L) | 2 | Radish | 15 lb (6.8 kg) |
+| 5 US gal (19 L) | 1 | Beetroot | 8 lb (3.6 kg) |
+| 10 US gal (38 L) | 3 | Carrot | 20 lb (9.1 kg) |
+
+Zone C total: 43 lb (20 kg).
 
 ---
 
@@ -634,15 +644,16 @@ Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone C, 10–15L grow bag |
-| **EC range** | 0.8–1.4 mS/cm |
-| **pH range** | 6.0–7.0 |
+| **Zone & System** | Zone C, two 5 US gal (19 L) bags |
+| **EC range** | 0.8–1.4 mS/cm. Ceiling 2.0 mS/cm |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Irrigation** | Manual fertigation 1–2× per day |
-| **Temperature** | Day 12–22°C |
+| **Temperature** | Day 54–72°F (12–22°C) |
 | **Light (DLI)** | Minimum 10; optimal 15–20 mol/m²/day |
 | **Seed-to-harvest** | 22–35 days (fastest root crop) |
-| **Spacing** | 5–8cm on centre; 20–30 per bag |
-| **Harvest method** | Pull by hand when roots 2–3cm diameter |
+| **Spacing** | 2–3 in (5–8 cm) on centre |
+| **Harvest method** | Pull by hand when roots are about ¾–1¼ in (2–3 cm) across |
+| **Planning yield** | 15 lb (6.8 kg) from the two bags, one season |
 
 **Tips:** Radishes bolt quickly in heat — cool spring and autumn are ideal growing seasons. Do not over-fertilise with nitrogen or roots will be small with excessive leaf growth. Sow every 2–3 weeks for continuous supply.
 
@@ -652,17 +663,18 @@ Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone C, 20–30L deep grow bag (minimum 30cm depth) |
-| **EC range** | 1.0–1.8 mS/cm |
-| **pH range** | 6.0–7.0 |
-| **Irrigation** | Manual fertigation 1× per day (carrots tolerate drier conditions) |
-| **Temperature** | Day 15–22°C |
+| **Zone & System** | Zone C, three 10 US gal (38 L) bags |
+| **EC range** | 1.0–1.8 mS/cm. Ceiling 2.0 mS/cm |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
+| **Irrigation** | Manual fertigation 1× per day (carrots tolerate a drier bag than radish) |
+| **Temperature** | Day 59–72°F (15–22°C) |
 | **Light (DLI)** | Minimum 10; optimal 15–20 mol/m²/day |
 | **Seed-to-harvest** | 70–90 days |
-| **Spacing** | 5–8cm on centre; thin to prevent forking |
-| **Harvest method** | Pull when shoulders are visible at media surface and diameter is 1.5–2cm |
+| **Spacing** | 2–3 in (5–8 cm) on centre; thin to prevent forking |
+| **Harvest method** | Pull when shoulders show and the root is about ⅝–¾ in (1.5–2 cm) across |
+| **Planning yield** | 20 lb (9.1 kg) from the three bags, one season |
 
-**Tips:** Use Nantes, Amsterdam, or Paris Market (round) varieties in grow bags — long Chantenay or Imperator types need 40cm+ depth. Thin seedlings to 5cm apart at 2 weeks to prevent forking. Do not let the media dry completely — uneven moisture causes split and misshapen roots.
+**Tips:** Use Nantes, Amsterdam, or Paris Market (round) varieties. Long Imperator types want more than the 10 US gal (38 L) bag gives them. Thin to about 2 in (5 cm) at 2 weeks so roots do not fork. Do not let the bag dry out completely. Uneven moisture splits roots.
 
 ---
 
@@ -670,17 +682,18 @@ Zone C consists of 6 grow bags in a 60% coco / 30% perlite / 10% vermiculite mix
 
 | Parameter | Value |
 |-----------|-------|
-| **Zone & System** | Zone C, 15–20L grow bag |
-| **EC range** | 1.4–2.0 mS/cm |
-| **pH range** | 6.0–7.0 |
+| **Zone & System** | Zone C, one 5 US gal (19 L) bag |
+| **EC range** | 1.4–2.0 mS/cm. 2.0 is the ceiling. Do not run beetroot hotter than the other bags |
+| **pH range** | 5.8–6.2 (acceptable 5.5–6.5) |
 | **Irrigation** | Manual fertigation 1–2× per day |
-| **Temperature** | Day 15–24°C |
+| **Temperature** | Day 59–75°F (15–24°C) |
 | **Light (DLI)** | Minimum 10; optimal 15–20 mol/m²/day |
 | **Seed-to-harvest** | 50–70 days |
-| **Spacing** | 10–15cm on centre (each "seed" is a cluster — thin to one per cluster) |
-| **Harvest method** | Pull when root is 4–6cm diameter; twist leaves off rather than cutting to prevent bleeding |
+| **Spacing** | 4–6 in (10–15 cm) on centre. Each "seed" is a cluster — thin to one |
+| **Harvest method** | Pull at about 1½–2½ in (4–6 cm) across. Twist the leaves off rather than cutting, so the root does not bleed |
+| **Planning yield** | 8 lb (3.6 kg) from the one bag, one season |
 
-**Tips:** Beetroot seeds are actually a cluster of 2–4 seeds — thin to one seedling per cluster at 2 weeks. Boron deficiency (black heart) is common in coco media — ensure your nutrient mix includes boron (most complete hydroponic nutrients do). High nitrogen gives abundant leaves but small roots — keep EC moderate.
+**Tips:** Each beet "seed" is a cluster of 2–4 seeds. Thin to one seedling at 2 weeks. Black heart is a boron shortage and shows up in coco. A complete hydroponic mix already has boron. High nitrogen grows leaves and small roots. Stay at or below 2.0 mS/cm.
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -730,39 +743,39 @@ The key principle for Table 3 is **succession planting** — ensuring the table 
 Tables 1 and 2 run a single long-season crop cycle per year, not succession planting:
 
 ```
-  TABLE 2 — ANNUAL CROP CYCLE:
+  TABLES 1 AND 2 — ONE SEASON
+  Outdoor season: mid-April through mid-October
+                  (SA: mid-October through mid-April)
+  Last spring frost: 15 April (SA: 15 October)
+  First fall frost:  20 October (SA: 20 April)
 
-  February/March (indoors):
-  ─ Start tomato, pepper, cucumber, courgette, aubergine seeds indoors
-  ─ Use rockwool cubes or Rapid Rooter under grow lights if available
-  ─ Maintain 22–25°C for germination
+  February (SA: August), indoors:
+  ─ Start the Table 1 crop (tomato or cucumber) and the Table 2 crop
+    (pepper, aubergine, or courgette)
+  ─ Rockwool at pH 5.8, or Rapid Rooter
+  ─ Germinate at 72–77°F (22–25°C)
 
-  April (hardening off):
-  ─ Begin hardening seedlings outdoors during warm days (minimum 12°C)
-  ─ Return indoors at night
-  ─ Do not transplant to the fruiting tables yet — nights still too cold
+  April (SA: October), harden off:
+  ─ Warm days only, above about 54°F (12°C)
+  ─ Back indoors at night until the frost date has passed
 
-  May (transplant):
-  ─ After last frost and once nights are consistently above 15°C
-  ─ Transplant chosen fruiting crops to Tables 1 and 2
-  ─ Select ONE primary crop combination:
-    Option A: 2–3 cherry tomatoes + 3–4 peppers
-    Option B: 2 cucumbers + 4 aubergines
-    Option C: 2 courgettes (ONLY courgettes — they fill the whole table)
+  After 15 April (SA: 15 October):
+  ─ Table 1: ONE indeterminate tomato, or ONE cucumber
+  ─ Table 2: 1–2 pepper, OR 1–2 aubergine, OR 1–2 courgette
+  ─ Cucumber and pepper want nights above 59°F (15°C), so they may wait
+    until May (SA: November)
+  ─ Do not put 2–3 tomatoes on Table 1. Do not put 3–4 peppers on Table 2.
+    Do not pair tomatoes with peppers on the same table
 
-  May–September (production):
-  ─ Regular feeding, EC management, flood schedule maintenance
-  ─ Harvesting every 2–3 days for cucumbers, courgettes, tomatoes
-  ─ Ongoing pest monitoring (see Guide 07)
+  Production, through September (SA: March):
+  ─ Vegetative floods 3× per day. Fruiting floods 4× per day. Stop there
+  ─ Heatwave 90–100°F (32–38°C): 40% shade, keep 4 floods, shorten duration
+  ─ Harvest cucumber, courgette, and tomato every 2–3 days
+  ─ One reservoir, so one EC. See Guide 02
 
-  September–October (end of season):
-  ─ Harvest final fruits before first frost
-  ─ Cut plants back, remove from net pots
-  ─ Begin LECA sterilisation protocol
-
-  October–November:
-  ─ Full cleaning and sterilisation of Tables 1 and 2
-  ─ Store or prepare for next season
+  By 20 October (SA: 20 April):
+  ─ Final fruit off. Plants out. LECA sterilisation (Guide 05, Section 12)
+  ─ That section is the bleach soak. The weekly media-EC flush is Guide 02
 ```
 
 ### LECA Sterilisation Between Heavy Fruiting Crops
@@ -775,13 +788,13 @@ After a season of tomatoes, cucumbers, or courgettes, the LECA in the fruiting t
 **Do not skip sterilisation between fruiting crop seasons.** Reusing LECA that has supported heavy fruiting crops without sterilisation is the single most common cause of disease carryover from one season to the next.
 
 ```
-  TABLE 2 END-OF-SEASON PROTOCOL:
+  TABLES 1 AND 2 — END OF SEASON:
 
-  1. Remove all plants — pull root balls from net pots
-     (Tomato and cucumber root masses may be 20–40cm diameter — work carefully)
+  1. Remove all plants — pull root balls from the net pots
+     (A tomato or cucumber root mass may be 8–16 in / 20–40 cm across)
   2. Remove all LECA from the table
-  3. Inspect and clean DRAIN FITTING and OVERFLOW FITTING separately
-     (These accumulate biofilm and root debris — scrub with bottle brush)
+  3. Clean that table's own 1 in (25 mm) drain and its own 1½ in (40 mm) overflow
+     (Biofilm and roots collect there. Scrub with a bottle brush)
   4. Wash the empty flood table with 5% bleach solution
   5. Follow full LECA sterilisation protocol (Guide 05, Section 12)
   6. Sun-dry LECA for 24–48 hours if possible
@@ -795,11 +808,12 @@ After a season of tomatoes, cucumbers, or courgettes, the LECA in the fruiting t
 ---
 
 
-*Next: [`guide/ebb-and-flow/07-pests-and-disease.md`](07-pests-and-disease.md) — Identification, treatment, IPM, and prevention*
-
 [↑ Back to TOC](#table-of-contents)
 
 ---
+
+> **Previous:** [Guide 05 — Growing Media](05-growing-media.md)
+> **Next:** [Guide 07 — Pests and Disease](07-pests-and-disease.md)
 
 <!-- copyright -->
 *Copyright (c) 2026 UncleJS. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt for non-commercial purposes with attribution and ShareAlike.*
