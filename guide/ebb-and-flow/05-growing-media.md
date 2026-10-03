@@ -582,33 +582,26 @@ flowchart TD
 
 ### First Flood After Transplant
 
-The timing of the first flood after transplant is important. Seedlings need time to establish before being fully submerged.
+Seat the pots, then start the vegetative flood schedule. Do not hold transplants on mist-only days or a one-flood ramp.
 
 ```
   POST-TRANSPLANT FLOOD SCHEDULE:
 
   Day 0 (transplant day):
-  ─ Mist all net pots thoroughly with dilute nutrient solution
-  ─ Do NOT run a full flood cycle on day of transplant
-  ─ Keep media lightly moist by hand-watering to the base of net pots
+  ─ Seat every net pot so the base stays in LECA contact
+  ─ Run the vegetative schedule: 3 floods per day, 15–30 minutes each
+  ─ Flood level is the design setting from the first cycle:
+    about ¾ in (2 cm) below the LECA surface
+  ─ Optional: mist foliage with plain water if transplant shock shows
+    as leaf wilt — mist is not a substitute for the flood schedule
 
-  Day 1:
-  ─ Run ONE flood cycle at a shorter duration (10 minutes)
-  ─ Keep the water about ½–¾ in (1–2 cm) below the base of the net pots
-    on this day only, so new roots are not held under water before they
-    have grown out of the cube
-  ─ The design flood, from day 2 on, is about ¾ in (2 cm) below the LECA surface
-
-  Day 2–3:
-  ─ Move to 3 floods per day at the normal 15–30 minute duration
-  ─ Flood level now at the design setting, about ¾ in (2 cm) below the media surface
-  ─ Plants should show signs of new growth — leaf expansion
-
-  Day 4–7:
-  ─ Full schedule: 3× per day for a vegetative crop, up to 4× per day once a fruiting crop is established. Four is the ceiling
-  ─ Plant is now fully established in the flood table
+  Day 1–7 (establishment):
+  ─ Stay at 3 floods per day while roots establish
+  ─ Move to 4× per day only after a fruiting crop is established
+  ─ Four is the ceiling. Never add a fifth flood for wilt recovery
+  ─ If plants still wilt 30 minutes after a completed flood, check
+    pot seating, EC, and shade — do not add an extra cycle
 ```
-
 ### Depth Requirements by Crop
 
 The bed is 5 in (13 cm) on every table. Roots use that depth. Do not specify a deeper bed for tomato or cucumber.

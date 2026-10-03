@@ -125,7 +125,7 @@ The flood tables are the largest variable cost item in the E&F system. You can b
 | **Timber (6 in × 1 in / 150 mm × 25 mm PAR sides, per table × 3)** | $21 — basic pine | $30 — exterior treated | $45 — smooth hardwood |
 | **Timber (2 in × 2 in / 50 mm × 50 mm base ribs, per table × 3)** | $9 | $12 | $15 |
 | **Plywood base 9mm exterior (per table × 3)** | $24 — basic ply | $33 — good exterior ply | $42 — marine ply |
-| **EPDM pond liner 1.7m × 1.1m (per table × 3)** | $30 — PVC liner, thinner grade | $54 — EPDM 0.75mm (3 pieces) | $72 — EPDM 1.0mm, premium |
+| **EPDM pond liner 5.6 ft × 3.6 ft (1.7 m × 1.1 m, per table × 3)** | $30 — PVC liner, thinner grade | $54 — EPDM 0.75mm (3 pieces) | $72 — EPDM 1.0mm, premium |
 | **Pond liner tape (2 rolls)** | $12 | $16 | $20 |
 | **Screws + wood glue** | $7 | $8 | $10 |
 | **Water-based timber preservative** | $6 | $10 | $14 |
@@ -163,7 +163,7 @@ Each table has two different fittings. The overflow is 1½ in (40 mm), with a st
 | **Submersible pump, 250 US gph (950 L/h), about 35 W. Range 200–300 US gph (760–1,140 L/h), 25–45 W** | $20 — no-name in that flow band | $32 — branded pump with a pre-filter | $42 — adjustable flow, pre-filter |
 | **Air pump 4–6 L/min (reservoir aeration)** | $8 | $12 | $18 |
 | **Air stone (2×)** | $3 | $4 | $6 |
-| **Airline tubing (2m)** | $2 | $3 | $3 |
+| **Airline tubing (6.5 ft / 2 m)** | $2 | $3 | $3 |
 | **Non-return valve (air line)** | $2 | $2 | $3 |
 | **Pump and aeration subtotal** | **$35** | **$53** | **$72** |
 
@@ -177,7 +177,7 @@ Each table has two different fittings. The overflow is 1½ in (40 mm), with a st
 | **1¼ in (32 mm) flexible drain hose (13 ft / 4 m)** | $8 | $10 | $13 |
 | **1 in (25 mm) T-junctions × 2 (supply manifold)** | $6 — irrigation Ts | $8 | $10 |
 | **1¼ in (32 mm) T-junctions × 2 (drain manifold)** | $6 | $8 | $10 |
-| **25mm inline ball valves (3×, one per table supply)** | $9 — tap valves | $12 — proper ball valves | $18 — quality brass ball valves |
+| **1 in (25 mm) inline ball valves (3×, one per table supply)** | $9 — tap valves | $12 — proper ball valves | $18 — quality brass ball valves |
 | **Barbed hose fittings + reducers (assorted pack)** | $5 | $7 | $9 |
 | **Hose clips (bag of 20)** | $4 | $5 | $6 |
 | **PTFE tape (roll)** | $1 | $1 | $1 |
@@ -190,7 +190,7 @@ The timer is the most critical electrical component in an E&F system. A power cu
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **Outdoor extension lead (10m, IP44)** | $12 | $18 | $25 |
+| **Outdoor extension lead (33 ft / 10 m, IP44)** | $12 | $18 | $25 |
 | **Digital timer with battery backup (primary)** | $10 — basic digital, battery backup | $16 — dual-program digital timer | $22 — commercial-grade 7-day digital |
 | **Second digital timer** | $0 — one digital timer is the control | $0 | $8 — a spare digital timer, not a mechanical one |
 | **120 V outdoor GFCI adaptor (SA: 230 V, 30 mA earth-leakage)** | $10 | $12 | $15 |
@@ -239,7 +239,7 @@ LECA is the largest line in the build. Each 4 ft × 2 ft table, 5 in (13 cm) dee
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
 | **40% shade cloth, about 10 ft × 6 ft (3 m × 2 m)** | $12 | $16 | $22 |
-| **Horticultural fleece 17g/m² (4m × 2m)** | $8 | $10 | $13 |
+| **Horticultural fleece 0.5 oz/yd² / 17 g/m² (13 ft × 6.5 ft / 4 m × 2 m)** | $8 | $10 | $13 |
 | **Fleece/shade cloth pegs or clips (bag of 20)** | $3 | $4 | $5 |
 | **Freeze water bottles (DIY — free)** | $0 | $0 | $0 |
 | **Aquarium heater 50W (winter)** | $0 — skip (winterise system) | $0 | $20 |
@@ -331,7 +331,7 @@ These costs recur each growing season (or more frequently for nutrients and seed
 | **pH Up** | $6 | $10 | $14 |
 | **Calibration sachets (replace annually)** | $5 | $8 | $10 |
 | **Rockwool/Rapid Rooter plugs (per succession)** | $6/succession × 4 = $24 | Same | Same |
-| **LECA annual recharge (rinse + reuse; buy ~10–15L replacement)** | $8 | $12 | $15 |
+| **LECA annual recharge (rinse + reuse; buy ~2.5–4 US gal / 10–15 L replacement)** | $8 | $12 | $15 |
 | **Seeds (all zones, per season)** | $20 | $35 | $50 |
 | **Pest/disease treatments (preventive)** | $10 | $20 | $30 |
 | **Microgreens coco coir top-up** | $8 | $12 | $16 |

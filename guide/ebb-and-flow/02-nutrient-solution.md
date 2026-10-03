@@ -341,13 +341,13 @@ Doses are per US gallon, with the per-litre figure in brackets. Add FloraMicro f
 | Seedling/clone | 4.7 ml (1.25 ml/L) | 4.7 ml (1.25 ml/L) | 1.9 ml (0.5 ml/L) | 0.6–0.8 |
 | Early vegetative | 11.4 ml (3 ml/L) | 3.8 ml (1 ml/L) | 7.6 ml (2 ml/L) | 1.0–1.4 |
 | Late vegetative | 15.1 ml (4 ml/L) | 7.6 ml (2 ml/L) | 11.4 ml (3 ml/L) | 1.4–1.8 |
-| Pre-flower / transition | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 1.8–2.4 |
-| Early bloom | 7.6 ml (2 ml/L) | 15.1 ml (4 ml/L) | 11.4 ml (3 ml/L) | 2.0–2.8 |
-| Mid bloom (fruiting crops) | 3.8 ml (1 ml/L) | 18.9 ml (5 ml/L) | 11.4 ml (3 ml/L) | 2.4–3.2 |
-| Late bloom / ripening | 0 | 22.7 ml (6 ml/L) | 11.4 ml (3 ml/L) | 2.8–3.8* |
+| Pre-flower / transition | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 11.4 ml (3 ml/L) | 2.0–2.5 |
+| Early bloom | 7.6 ml (2 ml/L) | 15.1 ml (4 ml/L) | 11.4 ml (3 ml/L) | 2.0–2.5 |
+| Mid bloom (fruiting crops) | 3.8 ml (1 ml/L) | 18.9 ml (5 ml/L) | 11.4 ml (3 ml/L) | 2.5–3.0 |
+| Late bloom / ripening | 0 | 22.7 ml (6 ml/L) | 11.4 ml (3 ml/L) | 2.5–3.5* |
 | Flush (final week) | 0 | 0 | 0 | 0.2–0.4 |
 
-\*GH Flora label schedule. For this design, do not exceed crop caps: tomato fruiting **2.5–3.5**, pepper fruiting **2.0–3.0**. If the bottle schedule would push tomato above 3.5, stop at the crop cap.
+\*Land inside this design's crop caps: tomato fruiting **2.5–3.5**, pepper fruiting **2.0–3.0**. Cap pepper at 3.0 even if the bottle schedule would go higher.
 
 > Always add FloraMicro first when mixing multiple components. The flush week (plain water only) in the final week before harvest reduces residual salts in the media and plant tissue — more important in E&F than in NFT because of salt accumulation in clay pebbles.
 

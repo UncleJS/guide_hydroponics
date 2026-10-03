@@ -873,9 +873,10 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
      surface or just above. The base of the net pot must stay in
      LECA contact — not hanging in open air (roots need capillary moisture).
 
-  6. After planting all seedlings, run one flood cycle immediately.
-     This wets the LECA fully and brings moisture to all root zones.
-     During first flood: check all net pots are seated correctly
+  6. After planting all seedlings, start the vegetative flood schedule:
+     3 floods per day, 15–30 minutes each, at the design flood level
+     (about ¾ in / 2 cm below the LECA surface). The first cycle wets
+     the bed and lets you check that every net pot stays seated
      (flood turbulence can dislodge unsecured pots).
 ```
 
@@ -903,7 +904,8 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
   □ All seedlings planted in pre-soaked LECA net pots
   □ Solution EC: 1.0–1.2 (gentler for transplant stress)
   □ Solution pH: 5.8–6.0
-  □ Run flood cycle immediately after planting
+  □ Start the vegetative schedule: 3 floods per day from this point
+  □ First flood at design level (¾ in / 2 cm below LECA surface)
 
   Hour 6:
   □ Check plants — mild wilting is normal (transplant shock)
@@ -911,18 +913,18 @@ LECA is an open, free-draining medium. Seedlings raised in rockwool cubes, coco 
   □ Check no net pots have shifted position
 
   Hour 24:
-  □ Run normal flood cycle (do not add extra cycles yet)
+  □ Confirm the 3× schedule is running (do not add a fourth or fifth cycle)
   □ Check EC and pH — record in logbook
   □ Plants should be recovering — wilting reducing
 
   Hour 48:
   □ Roots should be extending into LECA below the net pot
-  □ If plants are standing upright and new growth is beginning:
-    switch to normal flood schedule
-  □ If still wilting: run an extra flood cycle today; check EC not too high
+  □ Stay on 3 floods per day while roots establish
+  □ Move to 4× only after a fruiting crop is established. Four is the ceiling
+  □ If still wilting 30 minutes after a completed flood: check pot seating,
+    EC, and shade — do not add an extra flood cycle
   □ After day 3: gradually increase EC to standard target over 1 week
 ```
-
 [↑ Back to TOC](#table-of-contents)
 
 ---

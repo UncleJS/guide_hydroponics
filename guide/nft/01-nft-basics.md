@@ -27,7 +27,7 @@ Numbers in this guide follow [Design Constants](../design-constants.md). The zon
   - [Ideal for leafy crops because:](#ideal-for-leafy-crops-because)
   - [Poor for root vegetables because:](#poor-for-root-vegetables-because)
 - [9. Pump Runtime: Continuous vs Timed](#9-pump-runtime-continuous-vs-timed)
-  - [NFT is almost always run 24/7 (continuously)](#nft-is-almost-always-run-247-continuously)
+  - [NFT runs 24/7 (continuously)](#nft-runs-247-continuously)
   - [When a Timer Makes Sense](#when-a-timer-makes-sense)
 - [10. What Happens During Pump Failure](#10-what-happens-during-pump-failure)
   - [Emergency Protocol for NFT Pump Failure](#emergency-protocol-for-nft-pump-failure)
@@ -290,7 +290,7 @@ block-beta
 
 ## 9. Pump Runtime: Continuous vs Timed
 
-### NFT is almost always run 24/7 (continuously)
+### NFT runs 24/7 (continuously)
 
 Unlike ebb-and-flow systems that flood and drain on a timer, NFT relies on a **continuous thin film**. If the pump stops, the film disappears within seconds and the roots — now hanging in air — begin to desiccate. This is the Achilles heel of NFT.
 

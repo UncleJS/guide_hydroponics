@@ -340,7 +340,7 @@ An air pump is recommended in both tanks, especially once solution temperature c
 
 ### 4.4 Ice Bottle Method
 
-For a short heatwave (1–3 days), fill 1.5 US qt (1.5 L) bottles, freeze them, and float them in the tank that is hot. One bottle in the 10 US gal (38 L) fruiting tank moves the temperature more than the same bottle in the 20 US gal (76 L) greens tank.
+For a short heatwave (1–3 days), fill 1.5 US qt (1.4 L) bottles, freeze them, and float them in the tank that is hot. One bottle in the 10 US gal (38 L) fruiting tank moves the temperature more than the same bottle in the 20 US gal (76 L) greens tank.
 
 Typical impact: a few degrees for 4–6 hours per bottle, then the afternoon sun wins again unless the cloth is up.
 
@@ -348,7 +348,7 @@ Worked example, greens tank only:
 - 20 US gal (76 L) at 79°F (26°C)
 - Target 72°F (22°C), a 7°F (4°C) drop
 - Heat to remove is about 4°C × 76 kg × 4.18 kJ/kg°C ≈ 1,270 kJ
-- One frozen 1.5 US qt (1.5 L) bottle stores on the order of 500 kJ
+- One frozen 1.5 US qt (1.4 L) bottle stores on the order of 500 kJ
 - About three bottles for that drop in the greens tank, and ongoing sun will put heat back
 - The fruiting tank is half the volume, so the same three bottles go further there
 

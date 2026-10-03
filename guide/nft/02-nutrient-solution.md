@@ -378,9 +378,9 @@ Millilitres per 1 US gal (3.8 L). The figure in brackets is the same dose per li
 | Seedling/clone | 4.7 ml (1.25 ml/L) | 4.7 ml (1.25 ml/L) | 1.9 ml (0.5 ml/L) | 0.6–0.8 |
 | Early vegetative | 11 ml (3 ml/L) | 3.8 ml (1 ml/L) | 7.6 ml (2 ml/L) | 1.0–1.4 |
 | Late vegetative | 15 ml (4 ml/L) | 7.6 ml (2 ml/L) | 11 ml (3 ml/L) | 1.4–1.8 |
-| Early bloom (CH4) | 7.6 ml (2 ml/L) | 15 ml (4 ml/L) | 11 ml (3 ml/L) | 1.8–2.4 |
-| Mid bloom (CH4) | 3.8 ml (1 ml/L) | 19 ml (5 ml/L) | 11 ml (3 ml/L) | 2.0–2.8 |
-| Late bloom (CH4) | 0 ml | 23 ml (6 ml/L) | 11 ml (3 ml/L) | 2.4–3.2, then cap at the crop ceiling |
+| Early bloom (CH4) | 7.6 ml (2 ml/L) | 15 ml (4 ml/L) | 11 ml (3 ml/L) | 2.0–2.5 |
+| Mid bloom (CH4) | 3.8 ml (1 ml/L) | 19 ml (5 ml/L) | 11 ml (3 ml/L) | 2.5–3.0 |
+| Late bloom (CH4) | 0 ml | 23 ml (6 ml/L) | 11 ml (3 ml/L) | 2.5–3.5, then cap at the crop ceiling (tomato 3.5 / pepper 3.0) |
 | Flush (final week) | 0 ml | 0 ml | 0 ml | 0.2–0.4 |
 
 > Always add FloraMicro first when mixing multiple components.

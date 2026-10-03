@@ -326,7 +326,7 @@ Coco coir (coconut husk fibre) is the primary media for Zone C grow bags (root v
 
 ### Coco Coir Types
 
-- **Compressed blocks:** Expand when wetted (~5L block expands to ~60–70L). Very cost-effective.
+- **Compressed blocks:** Expand when wetted (~1.3 US gal / 5 L block expands to ~16–18 US gal / 60–70 L). Very cost-effective.
 - **Loose bagged coco:** Ready to use, convenient, and more expensive per US gal than a compressed block.
 - **Coco perlite pre-mixed:** Some brands sell 70/30 coco/perlite. For Zone C in this build, still add vermiculite so the bag ends at **60% coco / 30% perlite / 10% vermiculite**. Do not use 70/30 alone as the grow-bag recipe.
 - **Buffered coco:** Pre-treated with calcium/magnesium to prevent CEC issues. Worth the slight extra cost.

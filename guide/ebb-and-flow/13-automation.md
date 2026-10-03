@@ -319,12 +319,12 @@ Location 1 — Air temperature (ambient):
   Mount on the table frame, shaded side, at plant height (~90cm)
   NOT in direct sun (reads artificially high)
   NOT directly above reservoir (reads warm and humid)
-  Alert: HIGH >30°C, LOW <3°C, HUMIDITY >85%
+  Alert: HIGH >86°F (30°C), LOW <37°F (3°C), HUMIDITY >85%
 
 Location 2 — Reservoir water temperature:
   Use Govee H5179 (has waterproof probe)
   Hang probe into reservoir through inspection port
-  Alert: HIGH >24°C (stress begins), LOW <10°C (plant growth slows)
+  Alert: HIGH >77°F (25°C) (act on Pythium / low DO risk), LOW <50°F (10°C) (growth slows)
 
 Why reservoir temperature matters in E&F:
   Warm solution during flooding carries less dissolved oxygen.
@@ -462,9 +462,9 @@ EVERY 60 SECONDS, THE NODE:
      pump transition detected
 
   ALERTS (Telegram / email):
-  IF solution temp > 24°C                ──→ Send heat alert
-  IF solution temp < 10°C                ──→ Send cold alert
-  IF air temp < 3°C                      ──→ Send frost warning
+  IF solution temp > 77°F (25°C)         ──→ Send heat alert
+  IF solution temp < 50°F (10°C)         ──→ Send cold alert
+  IF air temp < 37°F (3°C)               ──→ Send frost warning
   IF humidity > 85%                      ──→ Send disease risk alert
   IF reservoir level < 75%               ──→ Send low-level alert
   IF reservoir level < 60%               ──→ Send CRITICAL alert
@@ -661,7 +661,7 @@ Panel 3: DRAIN CONFIRMATION STATUS (last 24h)
   → Table 3 drain confirmed / not confirmed
 
 Panel 4: SOLUTION TEMPERATURE (last 7 days)
-  → Line chart with DANGER threshold at 24°C
+  → Line chart with DANGER threshold at 77°F (25°C)
 
 Panel 5: EC and pH (last 7 days)
   → Dual line chart with target band shading
@@ -692,7 +692,7 @@ Panel 7: ALERT LOG
 | **Stuck-ON cutoff** | If the drain float is still up after the pump should be off, open the pump relay | Float input plus the pump relay | $10–$15 (R180–R270) |
 | **Stuck-OFF restart** | Secondary. If a scheduled flood never starts, a second path can start the pump | Second relay. Not the safety device | included above |
 | **Remote pump control** | Manually fire a flood cycle from phone | Smart plug with API / ESP32 relay | $0 (existing smart plug) |
-| **Cooling fan** | Fan blows across reservoir surface when temp > 24°C | 12V fan + relay module | $8–$12 |
+| **Cooling fan** | Fan blows across reservoir surface when temp > 77°F (25°C) | 12V fan + relay module | $8–$12 (R144–R216) |
 | **Reservoir auto top-up** | Float valve or solenoid opens water supply when level drops | Float valve or solenoid + level sensor | $15–$25 |
 
 ### 7.2 Stuck-ON Cutoff — the Primary Safety Action
@@ -842,11 +842,11 @@ flowchart TD
 | **Reservoir level** | JSN-SR04T waterproof ultrasonic | Trigger + Echo GPIO | 80–100% between floods | <75% WARNING; <60% CRITICAL | **CRITICAL** |
 | **Flood cycle count** | ACS712 current sensor (event counting) | Analog ADC | 3–4 events/day | Fewer than expected; or ON >35 min continuous | HIGH |
 | **Pump current** | ACS712 (5A) | Analog ADC | 0.08–0.15A during cycle | 0A during scheduled ON = failure | HIGH |
-| **Solution temperature** | DS18B20 waterproof | OneWire digital | 16–24°C | >24°C WARNING; >28°C CRITICAL; <10°C WARNING | HIGH |
-| **Air temperature** | DS18B20 or DHT22 | Digital GPIO | 10–30°C | <3°C frost WARNING | HIGH |
+| **Solution temperature** | DS18B20 waterproof | OneWire digital | 64–72°F (18–22°C) | >77°F (25°C) WARNING; >82°F (28°C) CRITICAL; <50°F (10°C) WARNING | HIGH |
+| **Air temperature** | DS18B20 or DHT22 | Digital GPIO | 50–86°F (10–30°C) | <37°F (3°C) frost WARNING | HIGH |
 | **Air humidity** | DHT22 / SHT30 | Digital GPIO | 40–80% | >85% for >6h = disease risk | MEDIUM |
 | **Solution pH** | DFRobot SEN0161-V2 | Analog ADC | 5.5–6.5 | <5.3 or >6.8 | MEDIUM |
-| **Solution EC** | DFRobot DFR0300 | Analog ADC | 1.2–2.0 mS/cm | <0.8 or >2.5 mS/cm; also check drain EC vs reservoir EC monthly | MEDIUM |
+| **Solution EC** | DFRobot DFR0300 | Analog ADC | Crop band: leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0 | Outside that crop's band; also check drain EC vs reservoir EC monthly | MEDIUM |
 | **Rain event** | FC-37 rain sensor | Digital GPIO | Dry | Rain detected → trigger EC check reminder | MEDIUM |
 | **Light level** | BH1750 | I2C (SDA/SCL) | Varies by season | Sudden drop = cloud cover / shade cloth needed | LOW |
 | **Grow bag moisture (Zone C)** | Capacitive soil sensor | Analog ADC | 40–70% | <30% = water needed | LOW |
@@ -1437,7 +1437,7 @@ Step 4: Build E&F dashboard panels
 
   Panel 4: SOLUTION TEMPERATURE
     → Time series: last 7 days
-    → Threshold band: green 16–24°C, yellow 10–16°C, red >24°C
+    → Threshold band: green 64–72°F (18–22°C), yellow 50–64°F (10–18°C), red >77°F (25°C)
 
   Panel 5: EC AND pH
     → Dual-axis time series: last 7 days
@@ -1509,12 +1509,12 @@ E&F ALERT PRIORITIES
     → Nutrient imbalance; plants may show stress within 48h
     → Action: Test and adjust reservoir; check for rain dilution
 
-  • Solution temperature > 24°C
+  • Solution temperature > 77°F (25°C)
     → Warm solution carries less DO; increased Pythium risk
     → Action: Deploy shade; add frozen water bottles to reservoir
 
-  • Air temperature < 3°C
-    → Frost risk; solution may approach 0°C overnight
+  • Air temperature < 37°F (3°C)
+    → Frost risk; solution may approach freezing overnight
     → Action: Deploy fleece; check if heater is operating
 
   • Rain detected + EC drop > 0.2 mS/cm post-rain

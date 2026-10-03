@@ -251,7 +251,7 @@ NFT has no growing media in the channels (only small net pot inserts at each pla
 
 The only accumulation risk in NFT is:
 - **Residue on channel walls** — this is cleaned between crop cycles with a 10% bleach solution or hydrogen peroxide soak, not a mineral flush
-- **Reservoir mineral build-up** — after 3–4 weeks, the reservoir itself should be fully changed to reset the dissolved mineral profile (see Section 5)
+- **Reservoir mineral build-up** — change on the Section 5 schedule: greens tank every 7 days, CH4 fruiting tank every 5–7 days (see Section 5). Do not wait 3–4 weeks.
 
 This is one of the genuine operational simplicity advantages of NFT over E&F.
 
@@ -272,15 +272,15 @@ This is one of the genuine operational simplicity advantages of NFT over E&F.
 
 E&F uses a larger reservoir because solution is stored both in the reservoir and in the media (up to 15–20% of total volume is always in the LECA). The larger volume also helps buffer the media EC fluctuations described above.
 
-The shorter change interval for E&F exists because:
-1. Salt accumulation in media accelerates solution degradation faster
-2. Flush events return contaminated (high-salt) water to the reservoir
-3. Fruiting crops (tomatoes, cucumbers, courgettes) common in E&F consume nutrients unevenly, causing element imbalance faster than leafy crops
+The longer change interval for E&F (10–14 days vs NFT 5–7 / 7 days) exists because:
+1. The 45 US gal (170 L) tank plus media-held solution buffers concentration swings longer than the smaller NFT tanks
+2. Media flush events still return salty water to the reservoir, so change sooner after a flush even inside the 10–14 day window
+3. Fruiting crops (tomatoes, cucumbers, courgettes) common in E&F still consume nutrients unevenly — watch EC drift, but do not treat E&F as the shorter-interval system
 
 ### Top-Up vs Full Change
 
 For both systems, you should distinguish between:
-- **Top-up**: adding fresh nutrient solution (at target EC) to replace volume lost to plant uptake and evaporation — done daily or as needed
+- **Top-up**: replacing volume lost to plant uptake and evaporation — done daily or as needed. Use plain water or nutrient stock according to the measured EC (see rule below), not a blanket “always at target EC” fill
 - **Full change**: emptying the entire reservoir, cleaning it, and refilling with fresh solution — done on schedule or when the solution becomes unmanageable
 
 **Top-up rule (both systems):**
@@ -414,7 +414,7 @@ E&F supports fruiting crops that NFT cannot sustain (cucumbers, courgettes, aube
 | Reservoir EC check | Twice daily | Once daily | E&F reservoir changes more slowly |
 | Reservoir pH check | Twice daily | Once daily | E&F reservoir changes more slowly |
 | Media EC check (E&F only) | — | Weekly | Push probe into LECA root zone |
-| Nutrient top-up | As needed (daily in summer) | As needed (daily in summer) | Top up at target EC |
+| Nutrient top-up | As needed (daily in summer) | As needed (daily in summer) | EC at/above target → plain water; EC below → nutrient stock |
 | pH correction | As needed | As needed, gradual | E&F: wait 2–3 flood cycles for equilibration |
 | Full solution change | Greens tank every 7 days; CH4 tank every 5–7 days | Every 10–14 days | Ebb and Flow: also after a media flush returns salty water to the tank |
 | Media flush (E&F only) | — | Monthly | See Section 4 for protocol |

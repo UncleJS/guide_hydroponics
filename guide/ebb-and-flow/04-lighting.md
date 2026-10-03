@@ -14,7 +14,7 @@
   - [PPFD — Photosynthetic Photon Flux Density](#ppfd-photosynthetic-photon-flux-density)
   - [DLI — Daily Light Integral](#dli-daily-light-integral)
 - [2. DLI Targets by Crop](#2-dli-targets-by-crop)
-  - [Seasonal DLI in a Temperate Climate](#seasonal-dli-in-a-temperate-climate)
+  - [Seasonal DLI at the Worked Site](#seasonal-dli-at-the-worked-site)
 - [3. Minimum Sun Hours Per Crop](#3-minimum-sun-hours-per-crop)
 - [4. Siting the System: Sun Mapping](#4-siting-the-system-sun-mapping)
   - [Southern Exposure (Northern Hemisphere)](#southern-exposure-northern-hemisphere)

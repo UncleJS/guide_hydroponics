@@ -362,7 +362,7 @@ Mount a float switch at the low-water mark in the return tank at the base of the
 
 - **Cost:** $3–$8 (R54–R144)
 - **Wiring:** Single digital input with 10 kΩ pull-up to 3.3V
-- **Alert:** Float LOW while pump is scheduled ON → pump failure or channel blockage
+- **Alert:** Float LOW while the 24h pump should be running → pump failure or channel blockage
 - **False positives:** Negligible — the return tank is always full during normal operation
 - **Limitation:** Does not distinguish pump failure from pipe blockage, but both are critical
 

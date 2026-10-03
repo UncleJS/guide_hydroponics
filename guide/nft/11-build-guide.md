@@ -676,7 +676,7 @@ flowchart TD
 
 An air pump with a stone in each reservoir raises dissolved oxygen, which matters once solution temperature climbs toward 77°F (25°C). Run it with the water pumps, 24 hours.
 
-**Spec:** one air pump that can feed two lines, about 1–1.5 US gpm of air is unnecessary — a small 4–6 L/min pump with a T and two airlines is enough for a 20 US gal tank and a 10 US gal tank. About $8–$20 (R144–R360). Put a non-return valve on each airline. Keep the air pump above the waterline so a stopped pump does not siphon.
+**Spec:** one air pump that can feed two lines — about 1.1–1.6 US gpm of air (4–6 L/min) with a T and two airlines is enough for a 20 US gal tank and a 10 US gal tank. About $8–$20 (R144–R360). Put a non-return valve on each airline. Keep the air pump above the waterline so a stopped pump does not siphon.
 
 Two stones, one in each tank. Do not bubble only the greens tank and leave CH4 flat.
 
@@ -920,7 +920,7 @@ Hour 48:
 ```mermaid
 block-beta
     columns 3
-    LED["LED panel 50–100W<br/>↕ 25–30 cm above trays"]:3
+    LED["LED panel 50–100W<br/>↕ 10–12 in (25–30 cm) above trays"]:3
     block:tier1["TIER 1 — Growth stage (3–7 days under light)"]:3
         T1A["tray"] T1B["tray"] T1C["tray"]
     end

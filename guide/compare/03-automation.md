@@ -119,7 +119,7 @@ The following sensors are high-value in both NFT and E&F.
 **Air temperature and humidity** (measures VPD — Vapour Pressure Deficit):
 - Sensor: DHT22 or SHT31 (SHT31 is more accurate and stable)
 - Location: inside the canopy zone, shaded from direct sun, at canopy height
-- Alert: air temperature above 32°C or below 5°C; relative humidity above 85% (disease risk)
+- Alert: air temperature above 90°F (32°C) or below 41°F (5°C); relative humidity above 85% (disease risk)
 
 **Water / solution temperature:**
 - Sensor: DS18B20 waterproof probe
@@ -130,12 +130,12 @@ The following sensors are high-value in both NFT and E&F.
 ### EC and pH
 
 Automated EC and pH monitoring requires submersible probes in the reservoir. Options:
-- **Atlas Scientific** EZO-EC and EZO-pH circuit boards with their probe set ($100–150 combined) — highest quality; I2C interface; Raspberry Pi and ESP32 compatible
-- **Gravity Analog** EC/pH probes from DFRobot (~$20–30 each) — lower accuracy; adequate for monitoring and alerts; not suitable for closed-loop dosing without calibration
+- **Atlas Scientific** EZO-EC and EZO-pH circuit boards with their probe set ($100–150 / R1,800–R2,700 combined) — highest quality; I2C interface; Raspberry Pi and ESP32 compatible
+- **Gravity Analog** EC/pH probes from DFRobot (~$20–30 / R360–R540 each) — lower accuracy; adequate for monitoring and alerts; not suitable for closed-loop dosing without calibration
 
 **Calibration requirement:** All EC and pH probes require calibration on initial setup and every 4–8 weeks. Keep calibration solution on hand and log calibration dates.
 
-**Reservation:** Automated EC/pH dosing (peristaltic pump + relay) is in the Full Tier ($200–400) and should not be attempted without thorough manual operation experience first.
+**Reservation:** Automated EC/pH dosing (peristaltic pump + relay) is in the Full Tier ($200–400 / R3,600–R7,200) and should not be attempted without thorough manual operation experience first.
 
 ### Reservoir Level
 
@@ -159,19 +159,19 @@ The highest-value sensor in NFT is confirmation that solution is flowing through
 
 **Option A — Float switch in return tank:**
 Mount a float switch in the return/collection tank at the base of the channels. If the pump is running, water constantly returns; if the pump stops, the return tank level drops below the float switch trigger point within 5–10 minutes.
-- Cost: $3–8 (float switch)
+- Cost: $3–8 (R54–R144) (float switch)
 - Pin: one digital input on ESP32 or microcontroller
 - Alert trigger: float switch signals LOW when it should be HIGH (pump is supposed to be running but return tank is empty)
 
 **Option B — Flow sensor on return pipe:**
 A Hall-effect flow sensor (YF-S201 or similar) on the return pipe gives a pulse count proportional to flow rate.
-- Cost: $6–15
+- Cost: $6–15 (R108–R270)
 - More precise than a float switch; can detect partial blockage (reduced flow rate) as well as total stoppage
 - Alert trigger: flow rate drops below threshold during pump-on hours
 
 **Option C — Simple pump current monitor:**
 A non-invasive AC current clamp (SCT-013) on the pump mains lead detects whether the pump is drawing current. If current drops to zero, the pump has stopped.
-- Cost: $8–15
+- Cost: $8–15 (R144–R270)
 - Does not confirm water is actually flowing (pump could be running but no water — air lock), but catches most failure modes
 
 **Recommended for a first build:** Option A (float switch in return tank). It is the cheapest, simplest to wire, and catches the most critical failure (pump stopped or pipe blocked).
@@ -205,12 +205,12 @@ Below 7.5 mg/L, root-zone oxygen stress begins. Above 77°F (25°C) reservoir te
 
 NFT has two loops. Fit the flow and level sensors on both the 20 US gal (76 L) greens tank and the 10 US gal (38 L) fruiting tank. One EC probe cannot serve both targets.
 
-1. **Flow sensor on each return** → the pump on that loop stopped ($10 each)
-2. **Float switch in each reservoir** → low water ($5 each)
-3. **DS18B20 in each reservoir** → water temperature ($3 each)
+1. **Flow sensor on each return** → the pump on that loop stopped ($10 / R180 each)
+2. **Float switch in each reservoir** → low water ($5 / R90 each)
+3. **DS18B20 in each reservoir** → water temperature ($3 / R54 each)
 4. **Canopy temperature and humidity** → $4–$8 (R72–R144)
 5. **pH probe in each reservoir** → $20–$80 (R360–R1,440)
-6. **EC probe in each reservoir** → $20–$80 (R360–R1,440). Greens target 0.8–1.8 mS/cm. CH4 fruiting target is 2.0–3.5 mS/cm. Do not dose both from one setpoint.
+6. **EC probe in each reservoir** → $20–$80 (R360–R1,440). Greens target 0.8–1.8 mS/cm. CH4 tomato fruiting 2.5–3.5 mS/cm; pepper fruiting 2.0–3.0 mS/cm. Do not dose both from one setpoint.
 7. **Automated top-up valve** on each tank (full tier)
 8. **Automated pH dosing** with a peristaltic pump (full tier)
 
@@ -285,12 +285,10 @@ This log provides:
 
 ### Stuck-ON Detection and Auto-Shutoff
 
-For growers who want an automated safety response (not just an alert):
-
-If the float switch remains CLOSED for more than 45 minutes after pump-off time, the microcontroller can:
-1. Cut power to the pump via relay (overriding the timer)
+Stuck-ON cutoff is the primary E&F safety action, not an optional add-on. If the float switch remains CLOSED about 30–45 minutes after pump-off, the microcontroller must:
+1. Open the pump relay (cut power, overriding the timer)
 2. Send an alert
-3. Lock out the pump until the operator acknowledges and resets
+3. Lock out further floods until the operator acknowledges and resets
 
 This requires a normally-open relay in series with the pump mains circuit, controlled by the ESP32.
 
@@ -300,15 +298,15 @@ This requires a normally-open relay in series with the pump mains circuit, contr
 
 From highest to lowest value-for-money:
 
-1. **Float switch in flood table** → drain confirmation + timer failure detection ($5)
-2. **DS18B20 in reservoir** → water temperature alert ($3)
-3. **DHT22/SHT31 at canopy** → air temperature and humidity ($4–8)
-4. **Float switch in reservoir** → low water level alert ($5)
+1. **Float switch in flood table** → drain confirmation + timer failure detection ($5 / R90)
+2. **DS18B20 in reservoir** → water temperature alert ($3 / R54)
+3. **DHT22/SHT31 at canopy** → air temperature and humidity ($4–8 / R72–R144)
+4. **Float switch in reservoir** → low water level alert ($5 / R90)
 5. **Flood cycle logger** → timestamp every flood/drain event (software only, uses float switch data)
-6. **Relay for pump cutoff** → auto-shutoff if drain fails ($6–15 for relay module)
-7. **pH probe in reservoir** → pH monitoring ($20–80)
-8. **EC probe in reservoir** → EC monitoring ($20–80)
-9. **Second float switch in table** → set at overflow level; double-confirmation of flooding ($5)
+6. **Relay for pump cutoff** → auto-shutoff if drain fails ($6–15 / R108–R270 for relay module)
+7. **pH probe in reservoir** → pH monitoring ($20–80 / R360–R1,440)
+8. **EC probe in reservoir** → EC monitoring ($20–80 / R360–R1,440)
+9. **Second float switch in table** → set at overflow level; double-confirmation of flooding ($5 / R90)
 10. **Automated pH/EC dosing** → Full Tier only
 
 [↑ Back to TOC](#table-of-contents)
@@ -325,33 +323,33 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 **Goal:** Know the temperature and humidity in real time from your phone.
 
 **Hardware:**
-- 1× ESP8266 (D1 Mini) or ESP32 — $4–8
-- 1× SHT31 temperature/humidity sensor — $4–8
-- 1× DS18B20 waterproof probe — $3–5
+- 1× ESP8266 (D1 Mini) or ESP32 — $4–8 (R72–R144)
+- 1× SHT31 temperature/humidity sensor — $4–8 (R72–R144)
+- 1× DS18B20 waterproof probe — $3–5 (R54–R90)
 - USB power supply and enclosure
 
 **Software:** ESPHome (flashes over USB; configures via YAML; integrates directly into Home Assistant)
 
 **What you get:**
 - Real-time temperature and humidity graph on phone
-- Alert if temperature goes above 32°C or below 5°C
+- Alert if temperature goes above 90°F (32°C) or below 41°F (5°C)
 - Solution temperature trend
 - No mains wiring required
 
-**NFT addition:** add a $5 float switch at the return tank, wire to a digital input — now you have pump failure alerting too.
+**NFT addition:** add a $5 (R90) float switch at the return tank, wire to a digital input — now you have pump failure alerting too.
 
-**E&F addition:** add a $5 float switch in the flood table, wire to a digital input — now you have drain confirmation alerting.
+**E&F addition:** add a $5 (R90) float switch in the flood table, wire to a digital input — now you have drain confirmation alerting.
 
 ### Mid Tier ($80–150): ESP32 Sensor Network
 
 **Goal:** Full monitoring of all parameters; alerting via MQTT/Home Assistant/Telegram.
 
 **Hardware (per system):**
-- 1× ESP32 development board — $8–12
+- 1× ESP32 development board — $8–12 (R144–R216)
 - 1× SHT31 sensor
 - 1× DS18B20 probe
-- 1× Atlas Scientific EZO-pH circuit + probe — $60–80 (or DFRobot analog pH probe — $20)
-- 1× Atlas Scientific EZO-EC circuit + probe — $55–75 (or DFRobot analog EC probe — $20)
+- 1× Atlas Scientific EZO-pH circuit + probe — $60–80 (R1,080–R1,440) (or DFRobot analog pH probe — $20 / R360)
+- 1× Atlas Scientific EZO-EC circuit + probe — $55–75 (R990–R1,350) (or DFRobot analog EC probe — $20 / R360)
 - 2× float switches (reservoir + return tank or table)
 - Junction box, DIN rail, waterproof connectors
 
@@ -371,9 +369,9 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 **Goal:** Automated pH correction, EC top-up, and pump safety cutoff.
 
 **Additional hardware:**
-- 2× peristaltic dosing pumps (pH up and pH down) — $15–25 each
-- 1× peristaltic dosing pump (nutrient concentrate) — $15–25
-- 2× mains relay modules (5V coil, 10A contacts) — $8–15 each
+- 2× peristaltic dosing pumps (pH up and pH down) — $15–25 (R270–R450) each
+- 1× peristaltic dosing pump (nutrient concentrate) — $15–25 (R270–R450)
+- 2× mains relay modules (5V coil, 10A contacts) — $8–15 (R144–R270) each
 - Food-grade silicone tubing
 - Calibrated dosing reservoirs for pH up, pH down, nutrient concentrate
 
@@ -382,7 +380,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 **What you get:**
 - pH maintained within ±0.2 units of target automatically
 - EC maintained by automated nutrient top-up when level drops below target
-- E&F: automatic pump cutoff if drain confirmation sensor does not clear within 45 minutes
+- E&F: automatic pump cutoff if drain confirmation sensor does not clear within about 30–45 minutes after pump-off
 - Detailed automated logging with anomaly detection
 
 **Cautions at Full Tier:**
@@ -461,25 +459,25 @@ graph TD
 | Reservoir low | Reservoir float LOW | Alert: High — top up required |
 | Water temperature high | DS18B20 > 77°F (25°C) | Alert: High |
 | Water temperature low | DS18B20 < 54°F (12°C) | Alert: Medium — nutrient uptake slowing |
-| Air temperature high | SHT31 > 32°C | Alert: High |
-| Air temperature low | SHT31 < 3°C | Alert: Critical — frost risk |
+| Air temperature high | SHT31 > 90°F (32°C) | Alert: High |
+| Air temperature low | SHT31 < 37°F (3°C) | Alert: Critical — frost risk |
 | pH high | EZO-pH > 6.8 | Alert: High |
 | pH low | EZO-pH < 5.2 | Alert: High |
-| EC high | EZO-EC > user threshold | Alert: Medium |
-| EC low | EZO-EC < user threshold | Alert: Medium |
+| EC high | EZO-EC > that tank's crop ceiling | Alert: Medium |
+| EC low | EZO-EC < that tank's crop floor | Alert: Medium |
 
 ### E&F Alert Conditions
 
 | Condition | Trigger | Action |
 |---|---|---|
-| Drain failure | Table float CLOSED for >30 min after pump-off time | Alert: Critical; optionally cut pump power |
+| Drain failure | Table float CLOSED about 30–45 min after pump-off | Critical: open pump relay, then alert |
 | Missed flood | Table float never CLOSED during expected flood window | Alert: High |
-| Timer stuck ON | Table float CLOSED continuously for >1 hour during non-flood period | Alert: Critical + auto pump cutoff |
+| Timer stuck ON | Table float CLOSED continuously outside a flood window | Critical: open pump relay, then alert |
 | Reservoir low | Reservoir float LOW | Alert: High — top up required |
-| Water temperature high | DS18B20 > 26°C | Alert: High |
-| Water temperature low | DS18B20 < 12°C | Alert: Medium |
-| Air temperature high | SHT31 > 32°C | Alert: High |
-| Air temperature low | SHT31 < 3°C | Alert: Critical — frost risk |
+| Water temperature high | DS18B20 > 77°F (25°C) | Alert: High |
+| Water temperature low | DS18B20 < 54°F (12°C) | Alert: Medium |
+| Air temperature high | SHT31 > 90°F (32°C) | Alert: High |
+| Air temperature low | SHT31 < 37°F (3°C) | Alert: Critical — frost risk |
 | pH high | EZO-pH > 6.8 | Alert: High |
 | pH low | EZO-pH < 5.2 | Alert: High |
 
@@ -557,7 +555,7 @@ graph TD
 - 1× float switch in NFT return tank
 - 1× float switch in E&F flood table
 - 1× float switch in shared/each reservoir
-- Total hardware cost: $25–35
+- Total hardware cost: $25–35 (R450–R630)
 - Covers the two most critical failure modes in each system
 
 This configuration, running ESPHome and Home Assistant, gives you 24/7 monitoring with phone alerts for less than the cost of replacing one batch of tomato plants lost to an undetected timer failure.
