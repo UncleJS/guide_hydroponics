@@ -1296,11 +1296,11 @@ Air temp: 88.5°F / 31.4°C
 Recommendation: Deploy shade cloth, add ice bottles
 
 🟢 DAILY SUMMARY — Feb 28
-Solution temp: min 16.8°C / max 22.3°C
-Air temp: min 8.2°C / max 19.7°C
+Solution temp: min 62°F (16.8°C) / max 72°F (22.3°C)
+Air temp: min 47°F (8.2°C) / max 67°F (19.7°C)
 pH: avg 5.92 (range 5.78–6.08)
 EC: avg 1.38 (range 1.31–1.44)
-Water consumed: ~6.2 L
+Water consumed: ~1.6 US gal (6.2 L)
 Pump uptime: 100%
 No alerts triggered today.
 ```
@@ -1331,7 +1331,7 @@ Pattern: Air temp regularly below solution temp at night
 Meaning: Normal — reservoir acts as thermal mass (retains heat)
 Action:  None required — this is beneficial in cool weather
 
-Pattern: Solution temp consistently 3–5°C above air temp in daytime
+Pattern: Solution temp consistently 5–9°F (3–5°C) above air temp in daytime
 Meaning: Pump and plumbing are absorbing heat (dark pipes in sun)
 Action:  Insulate or shade supply pipes; use white or reflective pipe cover
 ```
@@ -1397,12 +1397,12 @@ The real power of continuous data is seeing how variables interact:
 EXAMPLE CORRELATION: Reservoir temp vs. pH drift rate
 
 If your data shows:
-  Day 1: avg solution temp 18°C → pH changed +0.05
-  Day 2: avg solution temp 20°C → pH changed +0.08
+  Day 1: avg solution temp 64°F (18°C) → pH changed +0.05
+  Day 2: avg solution temp 68°F (20°C) → pH changed +0.08
   Day 3: avg solution temp 75°F (24°C) → pH changed +0.18
   Day 4: avg solution temp 77°F (25°C) → pH changed +0.31
 
-Conclusion: Every 2°C rise in solution temp roughly doubles pH drift rate.
+Conclusion: Every ~4°F (2°C) rise in solution temp roughly doubles pH drift rate.
 Action:     Prioritise temperature control (shade, insulation) over
             pH dosing — treating the cause, not the symptom.
 ```

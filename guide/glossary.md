@@ -224,7 +224,7 @@ An Ebb and Flow safety check that verifies each flood table has fully drained af
 Low-cost microcontroller boards with built-in WiFi (and Bluetooth on the ESP32) made by Espressif. The primary recommended automation platform in this guide. The ESP32 is the more capable successor with more GPIO pins, faster processor, and built-in Bluetooth.
 
 **EZO — Atlas Scientific EZO circuit boards**
-A range of pre-calibrated, high-accuracy sensor circuits (EZO-EC, EZO-pH, EZO-DO) from Atlas Scientific. More accurate than DIY analogue probes but significantly more expensive ($50–75 per circuit).
+A range of pre-calibrated, high-accuracy sensor circuits (EZO-EC, EZO-pH, EZO-DO) from Atlas Scientific. More accurate than DIY analogue probes but significantly more expensive ($50–75 / R900–R1,350 per circuit).
 
 **GPIO — General Purpose Input/Output**
 The programmable digital pins on a microcontroller. Each GPIO pin can be configured as an input (to read sensors, buttons, float switches) or an output (to control relays, LEDs, pumps). The ESP32 has up to 34 usable GPIO pins.

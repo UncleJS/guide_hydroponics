@@ -506,7 +506,7 @@ At Tier 1, DIY timber + pond liner tables cost $109 for all three tables versus 
 
 ```
 WHEN DIY TABLES WIN:
-  ✓ Non-standard sizes (narrower, longer, deeper than 120×60cm)
+  ✓ Non-standard sizes (narrower, longer, deeper than 4 ft × 2 ft / 120 × 60 cm)
   ✓ When quality timber and pond liner are locally cheap
   ✓ Tier 3 equivalent built for Tier 2 budget with patience
   ✓ Workshop hobby value — building is part of the pleasure

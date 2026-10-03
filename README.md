@@ -83,7 +83,7 @@ Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow ba
 
 ## Ebb & Flow Guide Library
 
-> Three 4 ft × 2 ft (1.22 m × 0.61 m) tables, 4 floods a day at most, 5 in (13 cm) of LECA. Fruiting crops, including ones NFT cannot hold.
+> Three 4 ft × 2 ft (1.22 m × 0.61 m) tables, vegetative starts at 3 floods a day, fruiting up to 4 (the ceiling), 5 in (13 cm) of LECA. Fruiting crops, including ones NFT cannot hold.
 
 | # | File | What It Covers |
 |---|------|----------------|

@@ -983,7 +983,7 @@ flowchart TD
     P5 --> CHECK_SALT{"Is there<br/>salt crust?"}
 
     CHECK_FLOOD -->|NO| W2
-    CHECK_FLOOD -->|YES| TREAT_PYTHIUM["Treat Pythium:<br/>Reduce floods,<br/>add DO₂, Hydroguard"]
+    CHECK_FLOOD -->|YES| TREAT_PYTHIUM["Treat Pythium:<br/>Keep 3 floods; shorten duration;<br/>never drop to 2 or add a 5th;<br/>add DO₂, Hydroguard"]
 
     CHECK_PH -->|NO| FIX_PH["Fix pH first:<br/>5.8–6.2"]
     CHECK_PH -->|YES| CHECK_SALT2{"Salt crust<br/>in LECA?"}

@@ -192,7 +192,7 @@ Each crop entry includes:
 | **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
-- Spinach germinates poorly above 25°C — start seeds indoors in early spring or late summer for the best results
+- Spinach germinates poorly above 77°F (25°C) — start seeds indoors in early spring or late summer for the best results
 - Best seasons in this system: March–May and September–October; avoid trying to grow through June–August (bolts rapidly in long days + heat)
 - Spinach is a higher-nitrogen crop — increase nitrogen component in your nutrient solution during spinach production (if using a two-part or customisable nutrient)
 - Spinach roots spread more sideways than down. The 5 in (13 cm) LECA bed on Table 3 is enough. Do not build a second, shallower table for it
@@ -333,7 +333,7 @@ Each crop entry includes:
 | **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
-- Parsley seed is notoriously slow to germinate — pre-soak in warm water for 24 hours before sowing; expect 14–21 days to germination at 18–22°C
+- Parsley seed is notoriously slow to germinate — pre-soak in warm water for 24 hours before sowing; expect 14–21 days to germination at 64–72°F (18–22°C)
 - Due to slow start, parsley should be started indoors in February/March for a spring transplant — do not direct-sow into LECA and expect quick results
 - Parsley is biennial — in its second season it will bolt and set seed in spring; treat as an annual and replant each season for best leaf production
 - Parsley's taproot has room in the 5 in (13 cm) LECA bed. An NFT channel does not give that taproot anywhere to go, which is why parsley is a Table 3 crop here
@@ -581,7 +581,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **Temperature** | 59–72°F (15–22°C) |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 8–12 days |
-| **Harvest method** | Cut tendrils and young leaves when 8–12cm tall |
+| **Harvest method** | Cut tendrils and young leaves when 3–5 in (8–12 cm) tall |
 
 **Tips:** Pre-soak peas for 8–12 hours. Grow cool — pea shoots taste sweeter in cooler conditions. Can be cut and allowed to regrow once for a second harvest.
 

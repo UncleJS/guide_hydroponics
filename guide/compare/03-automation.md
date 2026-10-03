@@ -299,11 +299,11 @@ This requires a normally-open relay in series with the pump mains circuit, contr
 From highest to lowest value-for-money:
 
 1. **Float switch in flood table** → drain confirmation + timer failure detection ($5 / R90)
-2. **DS18B20 in reservoir** → water temperature alert ($3 / R54)
-3. **DHT22/SHT31 at canopy** → air temperature and humidity ($4–8 / R72–R144)
-4. **Float switch in reservoir** → low water level alert ($5 / R90)
-5. **Flood cycle logger** → timestamp every flood/drain event (software only, uses float switch data)
-6. **Relay for pump cutoff** → auto-shutoff if drain fails ($6–15 / R108–R270 for relay module)
+2. **Relay for pump cutoff** → open the pump relay if the float is still up after pump-off ($6–15 / R108–R270). Required with the float — not a Full Tier luxury
+3. **DS18B20 in reservoir** → water temperature alert ($3 / R54)
+4. **DHT22/SHT31 at canopy** → air temperature and humidity ($4–8 / R72–R144)
+5. **Float switch in reservoir** → low water level alert ($5 / R90)
+6. **Flood cycle logger** → timestamp every flood/drain event (software only, uses float switch data)
 7. **pH probe in reservoir** → pH monitoring ($20–80 / R360–R1,440)
 8. **EC probe in reservoir** → EC monitoring ($20–80 / R360–R1,440)
 9. **Second float switch in table** → set at overflow level; double-confirmation of flooding ($5 / R90)
@@ -334,15 +334,14 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - Real-time temperature and humidity graph on phone
 - Alert if temperature goes above 90°F (32°C) or below 41°F (5°C)
 - Solution temperature trend
-- No mains wiring required
 
-**NFT addition:** add a $5 (R90) float switch at the return tank, wire to a digital input — now you have pump failure alerting too.
+**NFT addition:** add a $5 (R90) float switch on **each** return (greens loop and fruiting/CH4 loop) — pump-failure alerting per tank. Dual NFT is two loops; one float on one return is not enough.
 
-**E&F addition:** add a $5 (R90) float switch in the flood table, wire to a digital input — now you have drain confirmation alerting.
+**E&F addition:** add a $5 (R90) float switch in the flood table **and** a $6–15 (R108–R270) mains relay that **opens the pump circuit** if the float is still up about 30–45 minutes after pump-off. Alert alone is not the Budget E&F story.
 
 ### Mid Tier ($80–150): ESP32 Sensor Network
 
-**Goal:** Full monitoring of all parameters; alerting via MQTT/Home Assistant/Telegram.
+**Goal:** Full monitoring of all parameters; E&F stuck-ON cutoff already required; alerting via MQTT/Home Assistant/Telegram.
 
 **Hardware (per system):**
 - 1× ESP32 development board — $8–12 (R144–R216)
@@ -350,7 +349,8 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - 1× DS18B20 probe
 - 1× Atlas Scientific EZO-pH circuit + probe — $60–80 (R1,080–R1,440) (or DFRobot analog pH probe — $20 / R360)
 - 1× Atlas Scientific EZO-EC circuit + probe — $55–75 (R990–R1,350) (or DFRobot analog EC probe — $20 / R360)
-- 2× float switches (reservoir + return tank or table)
+- NFT: float switches for **both** returns (greens + fruiting) plus each reservoir
+- E&F: flood-table float **plus** pump cutoff relay (required); reservoir float
 - Junction box, DIN rail, waterproof connectors
 
 **Software:** ESPHome + Home Assistant (free, self-hosted on a Raspberry Pi or similar)
@@ -359,19 +359,19 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 - All parameters logged and graphed in Home Assistant dashboard
 - Threshold alerts delivered via Telegram or email
 - Historical data for trend analysis (identifying gradual EC drift, deteriorating pump performance)
-- NFT: pump failure alert within 5 minutes
-- E&F: drain failure alert within 30 minutes; missed flood alert
+- NFT: pump failure alert within 5 minutes on the loop that stopped
+- E&F: if drain confirmation does not clear within about 30–45 minutes after pump-off, **open the pump relay**, then alert; also missed-flood alert
 
 **Combined NFT + E&F:** run two ESP32 boards (one per system); both report to the same Home Assistant instance.
 
 ### Full Tier ($200–400): Closed-Loop Control
 
-**Goal:** Automated pH correction, EC top-up, and pump safety cutoff.
+**Goal:** Automated pH correction and EC top-up. E&F stuck-ON cutoff is already required from Budget/Mid — Full Tier adds dosing, not the first relay.
 
 **Additional hardware:**
 - 2× peristaltic dosing pumps (pH up and pH down) — $15–25 (R270–R450) each
 - 1× peristaltic dosing pump (nutrient concentrate) — $15–25 (R270–R450)
-- 2× mains relay modules (5V coil, 10A contacts) — $8–15 (R144–R270) each
+- Extra mains relay modules for dosing pumps — $8–15 (R144–R270) each (E&F stuck-ON cutoff relay is already in Budget/Mid)
 - Food-grade silicone tubing
 - Calibrated dosing reservoirs for pH up, pH down, nutrient concentrate
 
@@ -380,7 +380,7 @@ The following tiers apply equally to both systems. Where sensors or logic differ
 **What you get:**
 - pH maintained within ±0.2 units of target automatically
 - EC maintained by automated nutrient top-up when level drops below target
-- E&F: automatic pump cutoff if drain confirmation sensor does not clear within about 30–45 minutes after pump-off
+- E&F stuck-ON cutoff remains required (open pump relay about 30–45 minutes after failed drain) — dosing does not replace it
 - Detailed automated logging with anomaly detection
 
 **Cautions at Full Tier:**
@@ -534,31 +534,30 @@ A Home Assistant dashboard for a combined NFT + E&F system should include:
 ```mermaid
 graph TD
   A[Starting automation for<br/>NFT, Ebb and Flow, or both?] --> B{Budget?}
-  B -->|Under $40| C[Budget Tier<br/>WiFi temp/humidity<br/>+ 1 critical float switch]
-  B -->|$80-150| D[Mid Tier<br/>Full monitoring<br/>pH + EC + all float switches]
-  B -->|$200+| E[Full Tier<br/>Closed-loop dosing<br/>+ automated safety cutoffs]
+  B -->|Under $40| C[Budget Tier<br/>WiFi temp/humidity<br/>+ critical floats]
+  B -->|$80-150| D[Mid Tier<br/>Full monitoring<br/>pH + EC + floats + E&F relay]
+  B -->|$200+| E[Full Tier<br/>Closed-loop dosing<br/>cutoff already required]
   C --> F{Which system?}
-  F -->|NFT| G[Add float switch<br/>in return tank<br/>Pump failure alert]
-  F -->|Ebb and Flow| H[Add float switch<br/>in flood table<br/>Drain confirmation alert]
-  F -->|Both| I[Add both float switches<br/>Each on separate GPIO<br/>on same ESP32]
-  D --> J[Install Atlas EZO probes<br/>+ all float switches<br/>Home Assistant dashboard]
-  E --> K[Add peristaltic dosing pumps<br/>pH auto-correction<br/>Ebb and Flow pump relay cutoff]
-  K --> L{Ebb and Flow pump cutoff?}
-  L -->|Yes| M[Relay wired fail-safe<br/>Normally-open contact<br/>ESP32 de-energise on crash]
-  L -->|No - alerts only| N[Stick with alert-only<br/>respond manually]
+  F -->|NFT| G[Float on greens return<br/>and fruiting return<br/>Pump failure alert per loop]
+  F -->|Ebb and Flow| H[Flood-table float<br/>plus pump relay cutoff<br/>Open relay then alert]
+  F -->|Both| I[Both NFT returns<br/>E&F float plus relay<br/>Separate GPIO each]
+  D --> J[Atlas EZO probes<br/>all floats<br/>E&F relay already fitted]
+  E --> K[Add peristaltic dosing<br/>pH and EC auto-correction<br/>Keep E&F fail-safe relay]
+  K --> M[Relay wired fail-safe<br/>Normally-open contact<br/>ESP32 de-energise on crash]
 ```
 
 **The minimum viable automation for a new grower with both systems:**
 - 1× ESP32
 - 1× SHT31
 - 1× DS18B20
-- 1× float switch in NFT return tank
-- 1× float switch in E&F flood table
-- 1× float switch in shared/each reservoir
-- Total hardware cost: $25–35 (R450–R630)
-- Covers the two most critical failure modes in each system
+- 2× float switches on the NFT returns (greens loop + fruiting/CH4 loop)
+- 1× float switch in the E&F flood table
+- 1× mains relay for E&F stuck-ON cutoff (opens the pump circuit on failed drain)
+- Float switches in each reservoir (NFT greens, NFT fruiting, E&F)
+- Total hardware cost: about $40–55 (R720–R990) once the E&F relay and dual NFT returns are included
+- Covers pump-stop on each NFT loop and stuck-ON cutoff on E&F — alert alone is not enough for E&F
 
-This configuration, running ESPHome and Home Assistant, gives you 24/7 monitoring with phone alerts for less than the cost of replacing one batch of tomato plants lost to an undetected timer failure.
+This configuration, running ESPHome and Home Assistant, gives you 24/7 monitoring with phone alerts **and** E&F pump cutoff for less than the cost of replacing one batch of tomato plants lost to an undetected timer stuck ON.
 
 ---
 

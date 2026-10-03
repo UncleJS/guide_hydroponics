@@ -416,7 +416,7 @@ Raw rockwool has a pH of 7.5–8.0 due to calcium and limestone in its compositi
   ─ Ready to transplant to flood table when:
      • Seedling has 2–3 true leaves
      • Roots visibly emerging from base or sides of cube
-     • Plant is 4–8cm tall (crop dependent)
+     • Plant is 1½–3 in (4–8 cm) tall (crop dependent)
   ─ Do not wait too long — roots emerging from the cube base that coil
     around the tray become damaged during transplanting
 ```

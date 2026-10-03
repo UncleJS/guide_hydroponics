@@ -237,7 +237,7 @@ This is your current setup as documented in Guides 08 and 10. It works — but i
 DAILY DRAIN CONFIRMATION CHECK (manual, Tier 0):
 
 After the last flood cycle of the day (or ~30 min after it ends):
-  1. Push your hand 5–8cm into the LECA in each table.
+  1. Push your hand 2–3 in (5–8 cm) into the LECA in each table.
   2. The LECA should feel damp but not wet.
      No free liquid should collect in your palm.
   3. If free water is present 30+ min after flood end:
@@ -316,7 +316,7 @@ Features and placement for E&F:
 GOVEE SENSOR PLACEMENT (E&F specific)
 
 Location 1 — Air temperature (ambient):
-  Mount on the table frame, shaded side, at plant height (~90cm)
+  Mount on the table frame, shaded side, at plant height (~36 in / 90 cm)
   NOT in direct sun (reads artificially high)
   NOT directly above reservoir (reads warm and humid)
   Alert: HIGH >86°F (30°C), LOW <37°F (3°C), HUMIDITY >85%
@@ -846,7 +846,7 @@ flowchart TD
 | **Air temperature** | DS18B20 or DHT22 | Digital GPIO | 50–86°F (10–30°C) | <37°F (3°C) frost WARNING | HIGH |
 | **Air humidity** | DHT22 / SHT30 | Digital GPIO | 40–80% | >85% for >6h = disease risk | MEDIUM |
 | **Solution pH** | DFRobot SEN0161-V2 | Analog ADC | 5.5–6.5 | <5.3 or >6.8 | MEDIUM |
-| **Solution EC** | DFRobot DFR0300 | Analog ADC | Crop band: leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0 | Outside that crop's band; also check drain EC vs reservoir EC monthly | MEDIUM |
+| **Solution EC** | DFRobot DFR0300 | Analog ADC | Active crop band: leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0; courgette max 2.4; aubergine max 3.0 | Outside that crop's band; also check drain EC vs reservoir EC monthly | MEDIUM |
 | **Rain event** | FC-37 rain sensor | Digital GPIO | Dry | Rain detected → trigger EC check reminder | MEDIUM |
 | **Light level** | BH1750 | I2C (SDA/SCL) | Varies by season | Sudden drop = cloud cover / shade cloth needed | LOW |
 | **Grow bag moisture (Zone C)** | Capacitive soil sensor | Analog ADC | 40–70% | <30% = water needed | LOW |
@@ -1491,7 +1491,7 @@ E&F ALERT PRIORITIES
     → Pump at risk of dry run → incomplete floods → pump damage
     → Action: Top up reservoir; check for leak
 
-  • Solution temperature < 2°C
+  • Solution temperature < 36°F (2°C)
     → Freeze imminent → system damage
     → Action: Deploy fleece; activate heater
 
@@ -1505,8 +1505,10 @@ E&F ALERT PRIORITIES
     → Incomplete floods possible; top up today
     → Action: Top up reservoir
 
-  • EC > target + 30% or < target - 30%
-    → Nutrient imbalance; plants may show stress within 48h
+  • EC outside the active crop band
+    → Leafy 0.8–1.8; tomato fruiting 2.5–3.5; pepper fruiting 2.0–3.0;
+      courgette max 2.4; aubergine max 3.0. A ±30% drift warning is secondary
+      and must not excuse exceeding that crop's ceiling
     → Action: Test and adjust reservoir; check for rain dilution
 
   • Solution temperature > 77°F (25°C)
@@ -1570,16 +1572,16 @@ Action: Inspect drain port and hose. Clear blockage before next flood.
 🟡 RESERVOIR LOW
 Reservoir level: 27% (threshold: 30%)
 Estimated dry-flood risk: medium
-Action: Top up reservoir today — add 30–40L.
+Action: Top up reservoir today — add 8–11 US gal (30–40 L).
 
 🟢 DAILY SUMMARY — Mon 02 Mar
 Floods today: 3 / 3 expected ✅
 All drains confirmed ✅
-Solution temp: min 16.2°C / max 21.8°C ✅
-Air temp: min 7.1°C / max 17.4°C ✅
+Solution temp: min 61°F (16.2°C) / max 71°F (21.8°C) ✅
+Air temp: min 45°F (7.1°C) / max 63°F (17.4°C) ✅
 EC: avg 1.42 mS/cm ✅
 pH: avg 5.94 ✅
-Reservoir: 58% (consumed ~8L today)
+Reservoir: 58% (consumed ~2.1 US gal / 8 L today)
 Rain: no events
 ```
 
@@ -2034,7 +2036,7 @@ CORRECT FLOAT SWITCH PLACEMENT:
   3. After pump off, 20 min into drain:
      float switch SHOULD be dry = reads OFF.
   4. If float switch never reads OFF during a healthy drain:
-     it is placed too low — raise it 2cm and re-test.
+     it is placed too low — raise it ¾ in (2 cm) and re-test.
   5. If float switch never reads ON during a flood:
      it is placed too high — lower it and re-test.
 ```
