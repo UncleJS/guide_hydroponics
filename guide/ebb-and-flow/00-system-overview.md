@@ -39,7 +39,7 @@ A **medium-scale outdoor Ebb & Flow (flood-and-drain)** system for an inland mid
 | **Zone B — Microgreens Station** | Tray-based, coco coir media, manual/wicking | Sunflower, pea shoots, radish, broccoli, amaranth, wheatgrass |
 | **Zone C — Root Veg Grow Bags** | Passive grow bags, 60% coco / 30% perlite / 10% vermiculite, manual fertigation | Radishes, carrots, beet (beetroot) |
 
-**Critical difference from NFT:** Ebb & Flow uses a timer to control flood cycles. A timer that fails ON (pump runs continuously) will flood roots permanently and cause root rot within 2–4 hours. **Fit stuck-ON cutoff before the first crop:** a smart plug that cuts pump power on >35 min continuous draw, and preferably three table floats that open the pump relay if a table is still flooded after pump-off — see [Guide 13 — Automation](13-automation.md). Alert alone is not enough. A missed flood is a different fault: moist LECA buffers **8–24 hours**.
+**Critical difference from NFT:** Ebb & Flow uses a timer to control flood cycles. A timer that fails ON (pump runs continuously) will flood roots permanently and cause root rot within 2–4 hours. **Fit stuck-ON cutoff before the first crop:** Tier 1 — a smart plug that **cuts pump power** on >35 min continuous draw, then alerts. Tier 2 — three table floats that **open the pump relay** if any table is still flooded after pump-off — see [Guide 13 — Automation](13-automation.md). Alert alone is not enough. A missed flood is a different fault: moist LECA buffers **8–24 hours**.
 
 **Electrical:** 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). Put the timer and plugs in a weatherproof box.
 
@@ -147,7 +147,7 @@ flowchart TD
     TIMER -->|pump OFF| DRAIN["Gravity drain-back<br/>via drain fitting"]
     DRAIN --> RES["RESERVOIR<br/>positioned below table"]
     RES --> PUMP
-    TABLE -->|float switch monitors drain| FS["DRAIN CONFIRMATION<br/>FLOAT SWITCH<br/>ALERT if table not drained<br/>within 30 min of pump-OFF"]
+    TABLE -->|float switch monitors drain| FS["DRAIN CONFIRMATION<br/>FLOAT x3 + RELAY<br/>Open pump relay / cut power<br/>then alert if still flooded<br/>after pump-OFF"]
 ```
 
 [↑ Back to TOC](#table-of-contents)
@@ -168,15 +168,17 @@ flowchart TD
 | ¾ in (19 mm) barb × threaded fittings | 6 | Table inlet connections |
 | Submersible pump, 250 US gph (950 L/h), about 35 W | 1 | Acceptable range 200–300 US gph (760–1,140 L/h). With filter sponge |
 | Digital timer, 1-minute resolution, weatherproof box | 1 | Outdoor default. A mechanical timer is not the outdoor timer |
+| Smart plug on the pump (stuck-ON cutoff) | 1 | Required Tier 1: cut power if pump runs >35 min, then alert. In Guide 12 electrical BOM |
 | Food-grade reservoir, 45 US gal (170 L) | 1 | Acceptable range 40–50 US gal (151–189 L). Must sit lower than the table drains |
 | LECA clay pebbles | 90 US gal (340 L) to buy | 25 US gal (95 L) per table; 75 US gal (284 L) in the three tables. Pre-soak 24 h at pH 5.8 |
 | pH meter | 1 | Calibrate monthly |
 | EC/TDS meter | 1 | Calibrate monthly; also use for media EC |
 | pH Up (KOH solution) | 1 bottle | |
 | pH Down (phosphoric acid) | 1 bottle | |
-| Float switch (drain confirmation) | 3 | One per table; mounts inside table wall |
+| Float switch (drain confirmation) | 3 | One per table; Tier 2 stuck-ON path with pump cutoff relay |
+| Pump cutoff relay | 1 | Opens pump circuit if any table float is still up after pump-off |
 | Float switch (reservoir level) | 1 | Alerts to low reservoir |
-| ESP32 or ESP8266 + SHT31 | 1 set | Temperature monitoring + float switch alerts |
+| ESP32 or ESP8266 + SHT31 | 1 set | Temperature monitoring; drives float × 3 → relay cutoff |
 | Rockwool starter cubes | 30 | Seedling germination |
 | Coco coir plugs | 30 | Alternative to rockwool for transplanting to LECA |
 | Grow bags, 5 US gal (19 L) | 3 | Zone C — two radish, one beet (beetroot) |
@@ -190,7 +192,7 @@ flowchart TD
 | Shade cloth 40%, about 6.5 ft × 10 ft (2 m × 3 m) | 1 | Deploy when afternoon highs hold above 85°F (29°C). Also cuts rain dilution |
 | Frost fleece / horticultural fleece | 1 roll | Cold protection for fruiting crops |
 | Bamboo canes or tomato string | 12 | Vertical support for indeterminate plants |
-| Spare digital timer | 1 | Timer failure is a high-severity fault. The primary automatic safety action is the drain-confirmation float (Guide 13), not a second timer that only restarts a stopped pump |
+| Spare digital timer | 1 | Timer failure is a high-severity fault. Primary automatic safety is stuck-ON cutoff (smart plug and/or float × 3 + relay), not a second timer that only restarts a stopped pump |
 
 [↑ Back to TOC](#table-of-contents)
 
@@ -261,9 +263,11 @@ flowchart TD
 - [ ] Test flood: confirm water rises to overflow standpipe height, then stops
 - [ ] Test drain: confirm table fully empties within 15–20 minutes of pump off
 - [ ] Set the digital timer — start with 3 flood cycles per day at 20 minutes. Fruiting crops may later move to 4 floods per day. Do not program a 5th flood
-- [ ] Install float switch in each table (drain confirmation) — see [Guide 13 — Automation](13-automation.md)
+- [ ] Install smart plug on the pump — configure stuck-ON cutoff: cut power on >35 min continuous draw, then alert (Guide 13 Tier 1)
+- [ ] Install float switch in each table (drain confirmation) and pump cutoff relay — see [Guide 13 — Automation](13-automation.md)
 - [ ] Install float switch in reservoir (low level alert)
 - [ ] Test timer: observe a full flood cycle start to finish; confirm drain is complete before next cycle
+- [ ] Test stuck-ON cutoff: verify the smart plug (and relay path, if fitted) cuts pump power when run exceeds the threshold
 
 ### Week 4 — LECA, Nutrients & First Plants
 - [ ] Pre-soak LECA for 24 hours in pH 5.8 water (acceptable soak band 5.5–6.0); rinse; fill each table to 5 in (13 cm)

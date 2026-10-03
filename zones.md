@@ -163,7 +163,7 @@ flowchart TD
   t3 --> drain
 ```
 
-A timer that sticks **on** rots roots in **2–4 hours**. A float that confirms the table has drained is the safety device to fit before the first crop: if the float is still up after pump-off, **open the pump relay (cut power)** and alert. Do not start the pump again until the table is empty. Moist LECA still buffers a missed flood for **8–24 hours**.
+A timer that sticks **on** rots roots in **2–4 hours**. Fit stuck-ON cutoff before the first crop: Tier 1 smart plug that **cuts pump power** on >35 min continuous draw; Tier 2 float × 3 (one per table) that **opens the pump relay** if any float is still up after pump-off, then alert. Do not start the pump again until the table is empty. Moist LECA still buffers a missed flood for **8–24 hours**.
 
 Build steps: [guide/ebb-and-flow/11-build-guide.md](guide/ebb-and-flow/11-build-guide.md).
 

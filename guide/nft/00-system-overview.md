@@ -228,7 +228,7 @@ Worked climate: inland mid-USA, about 38°N, USDA 6b–7a. The month in brackets
 | **March (SA: September)** | Build and test if the site is workable. Germinate lettuce and herbs indoors | Lettuce, herbs (indoor germination) |
 | **April (SA: October)** | Last spring frost about April 15 (SA: October 15). Transplant greens and herbs after that date | Lettuce, spinach, basil, cilantro |
 | **April–May (SA: October–November)** | Start tomatoes under shelter and move CH4 out after frost risk passes | Cherry tomatoes, peppers |
-| **May (SA: November)** | Full system operational | All greens, herbs, strawberries on CH3 |
+| **May (SA: November)** | Full system operational | CH1 lettuce; CH2 herbs; CH3 greens and strawberries |
 | **June (SA: December)** | Succession planting. Summer highs 90–100°F (32–38°C). Deploy 40% shade when highs hold above 85°F (29°C) | Radishes, carrots, beet (beetroot) in grow bags |
 | **July (SA: January)** | Peak production and heat management | Heat-tolerant varieties; watch for bolting |
 | **August (SA: February)** | Continue harvests; watch for late-season bolting | Late summer succession |

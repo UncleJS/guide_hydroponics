@@ -21,7 +21,7 @@
 - [5. Step 2 — Building or Sourcing the Flood Tables](#5-step-2-building-or-sourcing-the-flood-tables)
   - [Option A — Buy a Ready-Made Flood Table](#option-a-buy-a-ready-made-flood-table)
   - [Option B — DIY Timber + Pond Liner Table](#option-b-diy-timber-pond-liner-table)
-  - [Levelling the Tables](#levelling-the-tables)
+  - [Leveling the Tables](#leveling-the-tables)
 - [6. Step 3 — Reservoir Setup and Positioning](#6-step-3-reservoir-setup-and-positioning)
   - [Under-Table vs. Beside-Table Reservoir](#under-table-vs-beside-table-reservoir)
   - [Reservoir Preparation](#reservoir-preparation)
@@ -80,7 +80,7 @@ Before building, confirm the full three-zone system you are constructing:
 flowchart TB
     T1["FLOOD TABLE 1 — 4 ft x 2 ft<br/>One tomato or one cucumber<br/>Open LECA bed, 5 in deep<br/>1.5 in overflow and 1 in drain"]
     T2["FLOOD TABLE 2 — 4 ft x 2 ft<br/>Pepper, eggplant (aubergine), or zucchini (courgette)<br/>1 or 2 plants in open LECA<br/>1.5 in overflow and 1 in drain"]
-    T3["FLOOD TABLE 3 — 4 ft x 2 ft<br/>Lettuce, herbs, or pak choi<br/>Open LECA bed<br/>1.5 in overflow and 1 in drain"]
+    T3["FLOOD TABLE 3 — 4 ft x 2 ft<br/>Lettuce, herbs, pak choi, strawberries<br/>Open LECA bed<br/>1.5 in overflow and 1 in drain"]
     RES["RESERVOIR — 45 US gal (170 L)<br/>Pump 250 US gph, about 35 W<br/>Sits below the drains"]
     TIMER["DIGITAL 1-MINUTE TIMER<br/>in a weatherproof box<br/>3 floods vegetative, 4 fruiting"]
     T1 -->|"gravity drain → reservoir"| RES
@@ -208,7 +208,7 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
     → Hose access preferred
 
   □ Level ground: Is the ground reasonably flat?
-    → Tables require precise levelling — your frame/support must provide this
+    → Tables require precise leveling — your frame/support must provide this
     → If ground has >5° slope, plan for deeper legs on the uphill side
 
   □ Drainage: Will overflow and drain runoff water drain away?
@@ -253,7 +253,7 @@ block-beta
 
 ## 5. Step 2 — Building or Sourcing the Flood Tables
 
-The flood table is the heart of the E&F system. You have two options: buy a purpose-made flood table (easier but more expensive) or build a DIY timber + pond liner table (cheaper, customisable, more work).
+The flood table is the heart of the E&F system. You have two options: buy a purpose-made flood table (easier but more expensive) or build a DIY timber + pond liner table (cheaper, customizable, more work).
 
 ### Option A — Buy a Ready-Made Flood Table
 
@@ -348,7 +348,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
      it flat and re-fold. Drain and recheck before fitting fittings.
 ```
 
-### Levelling the Tables
+### Leveling the Tables
 
 **This is the most critical step in E&F table construction.** An unlevel table creates:
 - Uneven flood distribution (one end deeper than the other)
@@ -356,7 +356,7 @@ A DIY table is cheaper than buying ready-made and allows custom sizing. The key 
 - Roots in the low corner perpetually wet — Pythium develops rapidly
 
 ```
-  LEVELLING PROCEDURE:
+  LEVELING PROCEDURE:
 
   1. Place table on its support structure (table legs, workbench, stand,
      or reservoir-top platform)
@@ -660,7 +660,7 @@ When the pump stops, solution returns down the 1 in (25 mm) line by gravity. The
 | Digital timer, 1-minute steps | Multiple programs. Battery keeps the schedule through a power cut | About $10–$20 (R180–R360) | This is the outdoor timer. It lives in a weatherproof box |
 | Smart plug | Cuts pump power if the pump runs too long (stuck-ON), then alerts | Needs WiFi, and a weatherproof box | Required Tier 1 cutoff. See Guide 13. It does not replace the digital timer |
 
-**Recommendation:** Digital timer, 1-minute resolution, in a weatherproof box, on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). A mechanical timer is not the outdoor control. A pump stuck ON rots roots in 2–4 hours. The Guide 13 drain float opens the pump relay if the float is still up after the pump should be off.
+**Recommendation:** Digital timer, 1-minute resolution, in a weatherproof box, on a 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). A mechanical timer is not the outdoor control. A pump stuck ON rots roots in 2–4 hours. Guide 13 float × 3 + relay opens the pump relay if the float is still up after the pump should be off.
 
 ### Setting Flood Times
 
@@ -1076,7 +1076,7 @@ Zone C planning total is 43 lb (20 kg). **Watering:** if the top ¾ in (2 cm) is
 
 **What happens:** A mechanical pin timer is not the outdoor control. A stuck pin, or a power cut that leaves the pin on, holds the pump on. Roots start to rot in 2–4 hours.
 
-**Prevention:** Use the digital 1-minute timer in a weatherproof box, on the 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). Unplug the timer and plug it back in. The program should still be there. The primary automatic safety, in Guide 13, opens the pump relay if the drain float is still up after the pump should be off. A second timer that only restarts a stopped pump does not fix a stuck-ON flood.
+**Prevention:** Use the digital 1-minute timer in a weatherproof box, on the 120 V outdoor GFCI (SA: 230 V, 30 mA earth-leakage). Unplug the timer and plug it back in. The program should still be there. The primary automatic safety, in Guide 13, opens the pump relay if any table float is still up after the pump should be off. A second timer that only restarts a stopped pump does not fix a stuck-ON flood.
 
 ### Mistake 8 — LECA Not Pre-Rinsed and Pre-Soaked
 

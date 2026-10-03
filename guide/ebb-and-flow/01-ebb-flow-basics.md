@@ -460,7 +460,7 @@ For an outdoor system, a single timer failure can destroy an entire crop. Recomm
 
 1. **Log your timer settings:** Write down the flood schedule (start times, duration) — if the timer resets due to power cut, you can reprogram immediately
 2. **Battery backup timer:** Some digital timers have a small battery that holds the program during brief power outages — worth the small extra cost
-3. **Smart plug alternative:** A WiFi smart plug (e.g., Tapo, Kasa) controlled via a phone app allows remote monitoring and manual override — also alerts you if power draw drops unexpectedly
+3. **Smart plug cutoff (required Tier 1):** A WiFi smart plug on the pump (e.g., Tapo, Kasa) must **cut pump power** if draw stays high for >35 minutes (stuck-ON), then alert. Remote monitoring and manual override are extras — alert alone is not the safety action
 4. **Physical inspection rule:** Check that the pump is actually running during each flood cycle (at least once per day) — you cannot rely on the timer display alone
 
 
@@ -526,7 +526,7 @@ This is the more common failure mode — the pump stops and no further floods oc
 - Keep a spare pump (same model or compatible)
 - Know the manual override on your timer (most have a manual ON button)
 - Keep a watering can accessible at all times during the growing season
-- If away from home: a WiFi smart plug on the pump circuit can alert you to power draw anomalies
+- If away from home: the required WiFi smart plug on the pump circuit must cut power on stuck-ON (>35 min continuous draw), then alert — do not rely on alert-only monitoring
 
 
 ---

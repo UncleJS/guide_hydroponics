@@ -35,7 +35,7 @@ Prices are US dollars with South African rand in brackets, at a planning rate of
 | **Timer failure** | Not used for the pumps | **High** — a pump stuck ON rots roots in 2–4 hours. **Required:** stuck-ON cutoff from Tier 1/2 (smart-plug cut and/or float × 3 + relay) — see [E&F Guide 13](guide/ebb-and-flow/13-automation.md) |
 | **Best for** | Lettuce, herbs, spinach, kale, plus cherry tomato and pepper on CH4 | Those crops, plus cucumber, zucchini (courgette), and eggplant (aubergine) |
 | **Crop limit** | No cucumber, zucchini (courgette), eggplant (aubergine), or root crops in the channels | No root crops in the tables. Carrots, radish, and beet stay in Zone C |
-| **Build cost** | Full three-zone Lean / Standard / Optimized **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$726 / $1,130 / $1,639** (R13,068 / R20,340 / R29,502). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
+| **Build cost** | Full three-zone Lean / Standard / Optimized **$468 / $769 / $1,080** (R8,424 / R13,842 / R19,440). BOM in [NFT Guide 12](guide/nft/12-budget-and-sourcing.md) | Full three-zone Budget / Mid / Premium **$689 / $1,088 / $1,587** (R12,402 / R19,584 / R28,566). BOM in [Ebb and Flow Guide 12](guide/ebb-and-flow/12-budget-and-sourcing.md) |
 | **Guide set** | [`guide/nft/`](guide/nft/) | [`guide/ebb-and-flow/`](guide/ebb-and-flow/) |
 
 Both systems share **Zone B (microgreens)** and **Zone C (root-vegetable grow bags)**. Only Zone A changes. The yard map for both is [`zones.md`](zones.md). Mains power is a **120 V outdoor GFCI** (SA: **230 V**, **30 mA earth-leakage**).

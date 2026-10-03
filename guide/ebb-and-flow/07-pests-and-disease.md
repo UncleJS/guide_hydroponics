@@ -382,7 +382,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 1/16–1/8 
     around the base of the table frame
 
   PHYSICAL:
-  ─ Hand-picking at night with a torch: most effective direct control
+  ─ Hand-picking at night with a flashlight: most effective direct control
     Check under table frame and around reservoir — slugs shelter there
 
   BAIT:
@@ -460,7 +460,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 1/16–1/8 
   ─ Flow should be STRONG for the first 3–5 minutes, then trickle to nothing
   ─ Table should be visually dry (no standing water visible) within 10 minutes
   ─ If the drain takes more than 15 minutes: blockage risk — clean the drain fitting immediately
-  ─ Guide 13 is the prevention for an over-flood: if the drain float is still up
+  ─ Guide 13 is the prevention for an over-flood: if any table float is still up
     after the pump should be off, open the pump relay. That stuck-ON cutoff
     is what stops a failed timer from holding roots under water.
 ```
@@ -495,7 +495,7 @@ Fungus gnats (*Sciaridae* species — primarily *Bradysia* spp.) are 1/16–1/8 
   ─ Fruiting floods stay at 4 times a day. That is the ceiling. Heat does not add a fifth flood
     and does not drop the schedule to 2. Shorten the floods and use 40% shade instead.
   ─ Confirm drain completion after every flood cycle (especially in summer).
-    The Guide 13 drain float opens the pump relay if the table is still flooded
+    Guide 13 float × 3 + relay opens the pump relay if the table is still flooded
     after the pump should be off.
   ─ Add beneficial bacteria (Bacillus subtilis products) to the reservoir monthly
     as a preventive — they compete with Pythium in the water

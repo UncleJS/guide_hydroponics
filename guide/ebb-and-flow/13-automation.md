@@ -7,7 +7,7 @@
 
 Manual monitoring works. But Ebb & Flow systems carry a silent failure mode that makes continuous data logging more important than in almost any other hydroponics method: **timer failure causing permanent flooding.** In NFT, a pump failure dries the roots in 15–30 minutes — visible and bad, but quickly spotted. In E&F, a timer or pump stuck in the ON state floods the table continuously. Roots sit submerged in stagnant, oxygen-depleted solution. Root rot begins within 2–4 hours. By the time you notice, the plants look fine from above — the damage is invisible until it is catastrophic.
 
-The primary automatic safety action is a stuck-ON cutoff. If the drain float is still up after the pump should be off, open the pump relay. Roots rot in 2–4 hours when a flood does not end. A second timer that only restarts a pump which failed to start is a convenience. It is not the safety story.
+The primary automatic safety action is a stuck-ON cutoff. If any table float is still up after the pump should be off, open the pump relay. Roots rot in 2–4 hours when a flood does not end. A second timer that only restarts a pump which failed to start is a convenience. It is not the safety story.
 
 This guide covers every level of E&F automation — from a $15 (R270) smart plug that confirms the pump is actually cycling, to a full ESP32-based sensor network with drain confirmation, flood-cycle logging, EC/pH dashboards, and dosing — in the same DIY spirit as the rest of the build. Prices below use $1 = R18, frozen 3 October 2026.
 
@@ -29,7 +29,7 @@ This guide covers every level of E&F automation — from a $15 (R270) smart plug
   - [4.4 WiFi Camera (Optional)](#44-wifi-camera-optional)
   - [4.5 Tier 1 Summary](#45-tier-1-summary)
 - [5. Tier 2 — ESP32 Sensor Node](#5-tier-2-esp32-sensor-node)
-  - [Cost: $30–$80 | Skill: Basic wiring, firmware flashing | Time: 3–5 hours](#cost-3080-skill-basic-wiring-firmware-flashing-time-35-hours)
+  - [Cost: $40–$90 | Skill: Basic wiring, firmware flashing | Time: 3–5 hours](#cost-4090-skill-basic-wiring-firmware-flashing-time-35-hours)
   - [5.1 Why ESP32?](#51-why-esp32)
   - [5.2 E&F-Specific Tier 2 Sensor Additions](#52-ef-specific-tier-2-sensor-additions)
   - [5.3 Flood Cycle Counter Logic](#53-flood-cycle-counter-logic)
@@ -371,7 +371,7 @@ For E&F specifically, a camera angled to show the drain hose exit into the reser
 
 ## 5. Tier 2 — ESP32 Sensor Node
 
-### Cost: $30–$80 | Skill: Basic wiring, firmware flashing | Time: 3–5 hours
+### Cost: $40–$90 | Skill: Basic wiring, firmware flashing | Time: 3–5 hours
 
 ### 5.1 Why ESP32?
 
@@ -500,7 +500,7 @@ EVERY 60 SECONDS, THE NODE:
 
 ### 6.1 The Drain Confirmation Sensor — The Most Important E&F Sensor
 
-The drain float is the sensor behind the primary safety action. It answers one question: is the bed still full after the pump should be off?
+The three table floats are the sensors behind the primary safety action. It answers one question: is the bed still full after the pump should be off?
 
 **Why this matters more than pH or EC sensors:**
 
@@ -712,7 +712,7 @@ Panel 7: ALERT LOG
 
 ### 7.2 Stuck-ON Cutoff — the Primary Safety Action
 
-The failure that rots roots is a pump that stays on. Root rot starts in 2–4 hours. The outdoor timer is already a digital 1-minute timer in a weatherproof box. Automation adds one action on top of that timer: if the drain float is still up after the pump should be off, open the pump relay.
+The failure that rots roots is a pump that stays on. Root rot starts in 2–4 hours. The outdoor timer is already a digital 1-minute timer in a weatherproof box. Automation adds one action on top of that timer: if any table float is still up after the pump should be off, open the pump relay.
 
 A second path that only starts a pump which failed to start is useful, and it is secondary. It does not stop a flood that never ended.
 
@@ -1500,7 +1500,7 @@ E&F ALERT PRIORITIES
 
 🔴 CRITICAL (wake you up at 3 AM — immediate action required)
 
-  • Pump running past the end of the flood, or the drain float still up
+  • Pump running past the end of the flood, or any table float still up
     → Stuck ON. Root rot in 2–4 hours
     → Action: open the pump relay. That is the primary automatic safety action.
       Then clear the 1 in drain or the timer.
@@ -2123,7 +2123,7 @@ if (millis() - flood_end_ms > 300000) {  // 5 min post-flood
 
 ### Pitfall 8 — A Stuck-OFF Restart Fighting the Stuck-ON Cutoff
 
-The primary action is still: if the drain float is still up after the pump should be off, open the pump relay. The stuck-OFF restart below is secondary, and it can fight that cutoff if both paths close the relay at once.
+The primary action is still: if any table float is still up after the pump should be off, open the pump relay. The stuck-OFF restart below is secondary, and it can fight that cutoff if both paths close the relay at once.
 
 **Problem:** The Tier 4 backup timer relay (ESP32-controlled) fires simultaneously with the primary timer. Both the primary timer and the backup relay are trying to control the same pump simultaneously. Under certain relay configurations, this can cause a race condition where both signal ON but the pump receives an ambiguous control signal.
 
@@ -2410,7 +2410,7 @@ SEASON 2–3 (when daily pH adjustments become tedious):
 
 TOTAL INVESTED OVER 2 SEASONS: ~$295–$435
   → Equivalent to a mid-range commercial hydroponic controller
-  → But fully customisable, repairable, and tailored to E&F specifically
+  → But fully customizable, repairable, and tailored to E&F specifically
   → You understand every component and can diagnose any failure
 ```
 

@@ -433,7 +433,7 @@ A YF-S201 (or YF-B10 for 1/2" pipe) measures actual flow rate by counting magnet
 
 - **Cost:** $6–$15 (R108–R270)
 - **Wiring:** One digital interrupt pin on ESP32
-- **Alert:** Flow on that loop drops below the example threshold in the YAML (`< 2.0`, which is 2 L/min, about 0.53 US gpm). Both pumps are supposed to be on 24 hours, so a zero or a collapsed reading is a failure, not a scheduled off period.
+- **Alert:** Flow on that loop drops below the example threshold in the YAML (`< 2.0`, which is 0.53 US gpm / 2 L/min). Both pumps are supposed to be on 24 hours, so a zero or a collapsed reading is a failure, not a scheduled off period.
 - **Advantage over float switch:** Can detect **partial blockage** — reduced flow rather than total stoppage
 - **Disadvantage:** Requires cutting into the return pipe; rotor can jam with algae/debris after months of use
 
@@ -460,7 +460,7 @@ binary_sensor:
     name: "Flow Rate Low"
     device_class: problem
     lambda: |-
-      // Alert if flow drops below 2 L/min when pump should be running
+      // Alert if flow drops below 0.53 US gpm (2 L/min) when pump should be running
       return id(return_flow_rate).state < 2.0;
     filters:
       - delayed_on: 120s   # only alert if low flow persists for 2 minutes
@@ -2067,7 +2067,7 @@ SEASON 2–3 (WHEN YOU'RE TIRED OF DAILY pH ADJUSTMENTS):
 
 TOTAL INVESTED OVER 2+ SEASONS: $250–$310 (R4,500–R5,580)
   → Equivalent to a mid-range commercial hydroponic controller
-  → But fully customisable, repairable, and you understand every component
+  → But fully customizable, repairable, and you understand every component
 ```
 
 

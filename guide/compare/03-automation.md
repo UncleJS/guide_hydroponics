@@ -139,7 +139,7 @@ Automated EC and pH monitoring requires submersible probes in the reservoir. Opt
 
 **Calibration requirement:** All EC and pH probes require calibration on initial setup and every 4–8 weeks. Keep calibration solution on hand and log calibration dates.
 
-**Reservation:** Automated EC/pH dosing (peristaltic pump + relay) is in the Full Tier ($200–400 / R3,600–R7,200) and should not be attempted without thorough manual operation experience first.
+**Reservation:** Automated EC/pH dosing (peristaltic pump + relay) is in the Full Tier ($150–300 / R2,700–R5,400) and should not be attempted without thorough manual operation experience first.
 
 ### Reservoir Level
 

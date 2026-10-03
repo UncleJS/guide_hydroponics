@@ -81,22 +81,22 @@ LECA is the cost driver. The three tables need 75 US gal (284 L) of pebbles at 5
 
 | Tier | Zone A | Full three-zone (A + B + C) |
 |---|---|---|
-| **Budget** | **$543 (R9,774)** | **$726 (R13,068)** |
-| **Mid** | **$867 (R15,606)** | **$1,130 (R20,340)** |
-| **Premium** | **$1,274 (R22,932)** | **$1,639 (R29,502)** |
+| **Budget** | **$543 (R9,774)** | **$689 (R12,402)** |
+| **Mid** | **$867 (R15,606)** | **$1,088 (R19,584)** |
+| **Premium** | **$1,274 (R22,932)** | **$1,587 (R28,566)** |
 
-Zone B is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C is $94 / $123 / $162 (R1,692 / R2,214 / R2,916). The line-item tables below add up to these totals. Bought flood trays are used for the Zone A total. DIY timber tables are listed as an option and are not in the total.
+Zone B is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C is $57 / $81 / $110 (R1,026 / R1,458 / R1,980). The line-item tables below add up to these totals. Bought flood trays are used for the Zone A total. DIY timber tables are listed as an option and are not in the total.
 
 ```
-BUDGET — $543 Zone A (R9,774), $726 for all three zones (R13,068)
+BUDGET — $543 Zone A (R9,774), $689 for all three zones (R12,402)
   Economy trays, repurposed 45 US gal tank, 250 US gph pump,
   digital 1-minute timer in a weatherproof box, smart-plug cutoff, 90 US gal of budget LECA.
 
-MID — $867 Zone A (R15,606), $1,130 for all three zones (R20,340)
+MID — $867 Zone A (R15,606), $1,088 for all three zones (R19,584)
   Purpose-built trays, bought reservoir, the same pump class with a pre-filter,
   the same digital timer, smart-plug cutoff, better LECA. This is the build most people should price.
 
-PREMIUM — $1,274 Zone A (R22,932), $1,639 for all three zones (R29,502)
+PREMIUM — $1,274 Zone A (R22,932), $1,587 for all three zones (R28,566)
   Commercial trays, insulated reservoir, combo meter, premium LECA.
   The timer is still the digital 1-minute unit in a weatherproof box; smart-plug cutoff stays required.
   A mechanical timer is not an upgrade.
@@ -307,19 +307,18 @@ This zone is identical to the NFT system Zone B — the microgreens station has 
 
 ## 4. Zone C — Root Veg Grow Bags BOM
 
-Same bags in either guide set. Two 5 US gal (19 L) bags for radish, one 5 US gal (19 L) bag for beet (beetroot), three 10 US gal (38 L) bags for carrot. Media by volume is 60% coco, 30% perlite, 10% vermiculite. No garden soil. Fertigation stays at or below 2.0 mS/cm. Beet (beetroot) does not get a higher target.
+Same bags in either guide set (identical to NFT Guide 12 Zone C). Two 5 US gal (19 L) bags for radish, one 5 US gal (19 L) bag for beet (beetroot), three 10 US gal (38 L) bags for carrot. Media by volume is 60% coco, 30% perlite, 10% vermiculite. No garden soil. Fertigation stays at or below 2.0 mS/cm. Beet (beetroot) does not get a higher target.
 
 | Item | Budget | Mid | Premium |
 |---|---|---|---|
-| **5 US gal (19 L) fabric bags (3×)** | $9 | $12 | $16 |
-| **10 US gal (38 L) fabric bags (3×)** | $15 | $18 | $24 |
-| **Coco coir, about 60% of the bag volume** | $22 | $28 | $36 |
-| **Perlite, about 30%** | $16 | $20 | $24 |
-| **Vermiculite, about 10%** | $10 | $12 | $16 |
-| **Fertilizer for fertigation at or below 2.0 mS/cm** | $8 | $12 | $15 |
-| **Drip saucers (6×)** | $6 | $9 | $13 |
-| **Radish, beet, and carrot seed** | $8 | $12 | $18 |
-| **Zone C total** | **$94 (R1,692)** | **$123 (R2,214)** | **$162 (R2,916)** |
+| **Bags: two 5 US gal (19 L) radish, one 5 US gal beet (beetroot), three 10 US gal (38 L) carrot** | $8 (R144) | $14 (R252) | $22 (R396) |
+| **Coco coir, 60% of the mix** | $12 (R216) | $15 (R270) | $18 (R324) |
+| **Perlite, 30% — about 13.5 US gal (51 L) for full bags** | $10 (R180) | $12 (R216) | $15 (R270) |
+| **Vermiculite, 10% — about 4.5 US gal (17 L) for full bags** | $6 (R108) | $8 (R144) | $10 (R180) |
+| **Fertilizer. Fertigation EC ceiling is 2.0 mS/cm, including beet (beetroot).** | $8 (R144) | $12 (R216) | $15 (R270) |
+| **Drip saucers, six** | $5 (R90) | $8 (R144) | $12 (R216) |
+| **Seed: radish, beet (beetroot), carrot** | $8 (R144) | $12 (R216) | $18 (R324) |
+| **Zone C total** | **$57 (R1,026)** | **$81 (R1,458)** | **$110 (R1,980)** |
 
 
 ---
@@ -365,9 +364,9 @@ These costs recur each growing season (or more frequently for nutrients and seed
 
 | Tier | Zone A | Zone B | Zone C | Total build |
 |---|---|---|---|---|
-| **Budget** | $543 (R9,774) | $89 (R1,602) | $94 (R1,692) | **$726 (R13,068)** |
-| **Mid** | $867 (R15,606) | $140 (R2,520) | $123 (R2,214) | **$1,130 (R20,340)** |
-| **Premium** | $1,274 (R22,932) | $203 (R3,654) | $162 (R2,916) | **$1,639 (R29,502)** |
+| **Budget** | $543 (R9,774) | $89 (R1,602) | $57 (R1,026) | **$689 (R12,402)** |
+| **Mid** | $867 (R15,606) | $140 (R2,520) | $81 (R1,458) | **$1,088 (R19,584)** |
+| **Premium** | $1,274 (R22,932) | $203 (R3,654) | $110 (R1,980) | **$1,587 (R28,566)** |
 
 ### Phasing the Build to Spread the Cost
 
@@ -378,13 +377,13 @@ flowchart TD
     P1["PHASE 1 — one table, Budget parts<br/>One tray, 25 US gal of LECA,<br/>one 1.5 in overflow, one 1 in drain,<br/>digital timer already included"]
     P2["PHASE 2 — Tables 2 and 3<br/>Two more trays, the rest of the 90 US gal of LECA,<br/>two more overflows and two more drains"]
     P3["PHASE 3 — Zone B<br/>plus $89 (R1,602)"]
-    P4["PHASE 4 — Zone C<br/>plus $94 (R1,692)<br/>Full Budget system $726 (R13,068)"]
+    P4["PHASE 4 — Zone C<br/>plus $57 (R1,026)<br/>Full Budget system $689 (R12,402)"]
     P5["PHASE 5 — better meter or trays when you want them<br/>The digital timer is already in Phase 1"]
 
     P1 --> P2 --> P3 --> P4 --> P5
 ```
 
-Phasing spreads the same Budget bill. The finished three-zone Budget total is still $726 (R13,068). The digital timer is in the first phase.
+Phasing spreads the same Budget bill. The finished three-zone Budget total is still $689 (R12,402). The digital timer is in the first phase.
 
 ### What You Get for Each Tier — Snapshot
 
@@ -789,12 +788,12 @@ Grocery value:                        about $80–$110 (R1,440–R1,980)
 ```
 MID BUILD, ALL THREE ZONES
 
-Build:                     $1,130 (R20,340)
+Build:                     $1,088 (R19,584)
 Running cost, mid:         $286 (R5,148)
 Grocery value, mid-range:  about $600 (R10,800) if the household eats most of it
 
 Optimistic net:            $600 − $286 = $314 (R5,652) a season
-Payback:                   $1,130 / $314 ≈ 3.6 seasons
+Payback:                   $1,088 / $314 ≈ 3.6 seasons
 ```
 
 A household that eats less of the microgreens and herbs:
@@ -803,7 +802,7 @@ A household that eats less of the microgreens and herbs:
 Conservative groceries:    $400 (R7,200)
 Running cost:              $286 (R5,148)
 Net:                       $114 (R2,052) a season
-Payback on $1,130:         about 10 seasons
+Payback on $1,088:         about 10 seasons
 ```
 
 The honest range is several seasons to about a decade, depending on how much of the harvest replaces a shop trip. LECA, bought once at 90 US gal (340 L), is most of the build and then mostly a cleaning job.
@@ -813,11 +812,11 @@ The honest range is several seasons to about a decade, depending on how much of 
 ```
 BUDGET BUILD, ALL THREE ZONES
 
-Build:                     $726 (R13,068)
+Build:                     $689 (R12,402)
 Running cost, low:         $173 (R3,114)
 Conservative groceries:    $400 (R7,200)
 Net:                       $227 (R4,086) a season
-Payback:                   $726 / $227 ≈ 3 seasons
+Payback:                   $689 / $227 ≈ 3 seasons
 ```
 
 ### 11.3 E&F vs. NFT Payback Comparison
@@ -831,10 +830,10 @@ xychart-beta
     title "Cumulative net, Mid build, conservative groceries"
     x-axis "Year" [0, 1, 2, 3, 4, 5]
     y-axis "Cumulative net, USD" -1200 --> 200
-    line [-1115, -1001, -887, -773, -659, -545]
+    line [-1088, -974, -860, -746, -632, -518]
 ```
 
-> The line uses the conservative net of $114 (R2,052) a year on a $1,130 (R20,340) Mid build, so year 5 is still negative. The optimistic net of $314 (R5,652) would cross zero in year 4. A replacement pump is about $25–$40 (R450–R720). Nutrient concentrates, acids, and pesticides stay in a latched box.
+> The line uses the conservative net of $114 (R2,052) a year on a $1,088 (R19,584) Mid build, so year 5 is still negative. The optimistic net of $314 (R5,652) would cross zero in year 4. A replacement pump is about $25–$40 (R450–R720). Nutrient concentrates, acids, and pesticides stay in a latched box.
 
 ### 11.5 Non-Financial Value
 
@@ -860,14 +859,14 @@ xychart-beta
     title "Ebb and flow build cost by tier and zone"
     x-axis ["Zone A (Flood Tables)", "Zone B (Microgreens)", "Zone C (Root Veg)", "TOTAL BUILD"]
     y-axis "Cost, USD" 0 --> 1800
-    bar [528, 89, 94, 711]
-    bar [852, 140, 123, 1115]
-    bar [1259, 203, 162, 1624]
+    bar [543, 89, 57, 689]
+    bar [867, 140, 81, 1088]
+    bar [1274, 203, 110, 1587]
 ```
 
 | | Budget | Mid | Premium |
 |---|---|---|---|
-| **Build** | $726 (R13,068) | $1,130 (R20,340) | $1,639 (R29,502) |
+| **Build** | $689 (R12,402) | $1,088 (R19,584) | $1,587 (R28,566) |
 | **Zone A only** | $543 (R9,774) | $867 (R15,606) | $1,274 (R22,932) |
 | **Season running** | $173 (R3,114) | $286 (R5,148) | $426 (R7,668) |
 | **Zone C groceries** | $80–$110 (R1,440–R1,980) | same harvest | same harvest |

@@ -196,7 +196,7 @@ Each crop entry includes:
 **E&F-specific tips:**
 - Spinach germinates poorly above 77°F (25°C) — start seeds indoors in early spring or late summer for the best results
 - Best seasons in this system: March–May and September–October; avoid trying to grow through June–August (bolts rapidly in long days + heat)
-- Spinach is a higher-nitrogen crop — increase nitrogen component in your nutrient solution during spinach production (if using a two-part or customisable nutrient)
+- Spinach is a higher-nitrogen crop — increase nitrogen component in your nutrient solution during spinach production (if using a two-part or customizable nutrient)
 - Spinach roots spread more sideways than down. The 5 in (13 cm) LECA bed on Table 3 is enough. Do not build a second, shallower table for it
 
 ---

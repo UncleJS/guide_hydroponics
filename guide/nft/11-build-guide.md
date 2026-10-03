@@ -713,7 +713,7 @@ Step 2: Power on BOTH pumps. They are not on a cycle timer.
   → CH4 flow comes from the fruiting pump only
 
 Step 3: Check each channel for flow
-  → Shine a torch into each channel at the low end
+  → Shine a flashlight into each channel at the low end
   → You should see a thin film of water moving toward the drain
   → Greens target: 0.26–0.53 US gpm (1–2 L/min) per channel
   → Time how long a 1 US qt (about 1 L) jug takes to fill at a drain
@@ -1042,7 +1042,7 @@ These are the most frequently reported mistakes in DIY NFT builds, and how to pr
 
 **What happens:** Algae blooms within 2–3 days. Green slime coats the reservoir walls, supply lines, and channels. pH spikes during the day (algae consumes CO₂, raising pH). DO₂ plummets at night (algae respiration consumes O₂). Pump clogs.
 
-**Prevention:** The reservoir must be 100% opaque. Shine a torch inside with the lid on — you should see zero glow on the outside. Wrap, paint, or box the reservoir fully. Black liner inside + white reflective exterior is the ideal combination.
+**Prevention:** The reservoir must be 100% opaque. Shine a flashlight inside with the lid on — you should see zero glow on the outside. Wrap, paint, or box the reservoir fully. Black liner inside + white reflective exterior is the ideal combination.
 
 ### Mistake 4 — Not deburring holes
 

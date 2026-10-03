@@ -84,11 +84,11 @@ Copied from [Ebb and Flow Guide 12](../ebb-and-flow/12-budget-and-sourcing.md):
 
 | Tier | Zone A | Full three zones (A + B + C) |
 |------|--------|------------------------------|
-| **Budget** | **$543 (R9,774)** | **$726 (R13,068)** |
-| **Mid** | **$867 (R15,606)** | **$1,130 (R20,340)** |
-| **Premium** | **$1,274 (R22,932)** | **$1,639 (R29,502)** |
+| **Budget** | **$543 (R9,774)** | **$689 (R12,402)** |
+| **Mid** | **$867 (R15,606)** | **$1,088 (R19,584)** |
+| **Premium** | **$1,274 (R22,932)** | **$1,587 (R28,566)** |
 
-Zone B alone is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C alone is $94 / $123 / $162 (R1,692 / R2,214 / R2,916).
+Zone B alone is $89 / $140 / $203 (R1,602 / R2,520 / R3,654). Zone C alone is $57 / $81 / $110 (R1,026 / R1,458 / R1,980) — same in both Guide 12s.
 
 LECA is the cost driver: buy **90 US gal (340 L)** for three tables at **5 in (13 cm)** depth. Each table needs a **1½ in (40 mm) overflow** and a **1 in (25 mm) drain**. The outdoor timer is digital, 1-minute steps, in a weatherproof box on a **120 V GFCI** (SA: 230 V, 30 mA earth-leakage). A mechanical timer is not the recommended outdoor control.
 
@@ -196,7 +196,7 @@ Using Mid-tier three-zone capital and Guide 12 Mid running / payback stories:
 | System | Build | Running (Guide 12 mid) | Guide 12 payback story |
 |--------|-------|------------------------|------------------------|
 | NFT Tier 2 Standard | **$769 (R13,842)** | **$247 (R4,446)** | Conservative grocery offset ~$500 → net ~$253 → **~3.0 seasons** |
-| Ebb and Flow Mid | **$1,130 (R20,340)** | **$286 (R5,148)** | Optimistic net ~$314 → **~3.6 seasons**; conservative net ~$114 → **~10 seasons** |
+| Ebb and Flow Mid | **$1,088 (R19,584)** | **$286 (R5,148)** | Optimistic net ~$314 → **~3.6 seasons**; conservative net ~$114 → **~10 seasons** |
 
 First season yield is often 40–60% of a mature year while you learn. Treat payback as a planning story, not a guarantee. Full arithmetic lives in each Guide 12.
 
@@ -209,7 +209,7 @@ First season yield is often 40–60% of a mature year while you learn. Treat pay
 
 | Item | NFT | Ebb and Flow |
 |------|-----|--------------|
-| Mid / Standard three-zone capital | **$769 (R13,842)** | **$1,130 (R20,340)** |
+| Mid / Standard three-zone capital | **$769 (R13,842)** | **$1,088 (R19,584)** |
 | Biggest cost | second pump/tank, meters, frame | LECA, 90 US gal (340 L) |
 | Pump hours | 24 h × 2 pumps | about 1.3 h/day |
 | Season running (Guide 12 mid) | **$247 (R4,446)** | **$286 (R5,148)** |
@@ -257,7 +257,7 @@ flowchart TD
   budget["What is your build budget?"] --> under500{"Under about $500 R9000?"}
   under500 -->|Yes| leafy["NFT Tier 1 Lean $468 R8424"]
   under500 -->|No| wantFruit{"Want cucumber zucchini (courgette) eggplant (aubergine)?"}
-  wantFruit -->|Yes| ef["Ebb and Flow Mid $1115 R20070"]
+  wantFruit -->|Yes| ef["Ebb and Flow Mid $1088 R19584"]
   wantFruit -->|No cherry pepper only| nftFruit["NFT Standard $769 R13842<br/>or Ebb and Flow"]
   leafy --> later["CH4 tank is already in the NFT BOM"]
 ```
@@ -266,7 +266,7 @@ flowchart TD
 |-----------|-------|
 | About $468 (R8,424) | NFT Tier 1 Lean, full three zones |
 | About $769 (R13,842) | NFT Tier 2 Standard (recommended) |
-| Cucumber, zucchini (courgette), eggplant (aubergine) | Ebb and Flow Mid, $1,130 (R20,340) |
+| Cucumber, zucchini (courgette), eggplant (aubergine) | Ebb and Flow Mid, $1,088 (R19,584) |
 | Both systems | NFT Standard plus Ebb and Flow Budget Zone A when the budget allows |
 
 

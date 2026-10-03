@@ -98,7 +98,7 @@ flowchart LR
   The bag rating is bulk volume, pore space included.
   There is no separate "leafy depth" and "fruiting depth" in this build.
   Table 1 (one tomato or one cucumber), Table 2 (1–2 pepper, eggplant (aubergine),
-  or zucchini (courgette)), and Table 3 (leafy, or a later fruiting crop) all use
+  or zucchini (courgette)), and Table 3 (leafy, strawberries, or a later fruiting crop) all use
   the same 5 in bed.
 
   Hardware cost, including media, is in Guide 12.
@@ -274,7 +274,7 @@ This build uses **one depth on every table: 5 in (13 cm)**. Table 1 is not the l
   Same depth, same flood ceiling. A zucchini (courgette) is one of those 1–2 plants,
   not a reason to deepen the bed or add a 5th flood.
 
-  TABLE 3 — lettuce, herbs, pak choi, or a later fruiting crop
+  TABLE 3 — lettuce, herbs, pak choi, strawberries, or a later fruiting crop
   Net pot:             2 in (50 mm) for leafy crops; 3 in (75 mm) if you
                        later put a fruiting crop here
   Floods:              3× per day while the crop is vegetative
@@ -726,7 +726,7 @@ Before refilling flood tables with previously used LECA:
 |------|----------|---------------|-----------------|-------|
 | Zone A — Table 1 | One indeterminate tomato or one cucumber | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pot. 3× vegetative, 4× fruiting |
 | Zone A — Table 2 | Pepper, eggplant (aubergine), or zucchini (courgette), 1–2 plants | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool or Rapid Rooter | 3–4 in (75–100 mm) net pots. Same flood ceiling |
-| Zone A — Table 3 | Lettuce, herbs, pak choi, or a later fruiting crop | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool cubes | 2 in (50 mm) net pots for leafy crops. 3× per day |
+| Zone A — Table 3 | Lettuce, herbs, pak choi, strawberries, or a later fruiting crop | LECA, 5 in (13 cm), 25 US gal (95 L) | Rockwool cubes | 2 in (50 mm) net pots for leafy crops. 3× per day |
 | Zone B | 6 trays, 10 in × 20 in (25 cm × 50 cm), two-tier shelf | Coco, 1–1¼ in (2.5–3 cm) | None | Plain water, pH 5.8–6.2. Optional EC 0.4–0.8 only for sunflower and pea |
 | Zone C | 2 × 5 US gal radish, 1 × 5 US gal beet, 3 × 10 US gal carrot | 60% coco + 30% perlite + 10% vermiculite | None | Fertigation EC ceiling 2.0 mS/cm. Beet (beetroot) does not go higher |
 | Propagation | Germination tray | Rockwool cubes or Rapid Rooter plugs | — | Condition rockwool at pH 5.8 |

@@ -283,7 +283,7 @@ flowchart LR
 **Treatment:**
 ```
   Level 1 — Hand picking at night:
-  ● Go out with a torch once it is fully dark
+  ● Go out with a flashlight once it is fully dark
   ● Pick slugs and snails into a bucket of salty water or drop in a container for birds
 
   Level 2 — Copper tape:

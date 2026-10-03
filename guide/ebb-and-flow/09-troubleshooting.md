@@ -333,7 +333,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   Is table draining completely between floods?
   └─ NO: Fix the drain first (see A2). Root rot is secondary to the drainage failure.
-         A pump stuck ON rots roots in 2–4 hours. If the Guide 13 drain float
+         A pump stuck ON rots roots in 2–4 hours. If Guide 13 float × 3
          is still up after the pump should be off, open the pump relay.
   └─ YES: Drainage is correct. Root rot is likely from:
          (a) Solution temperature above 77°F (25°C) — that is the pythium action line.
@@ -633,7 +633,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
   1. Shorten the next day's floods. Stay at 3 (vegetative) or 4 (fruiting).
      Do not add a fifth.
   2. Inspect roots: if brown and slimy, begin root rot treatment (see B1)
-  3. The primary safety device is the Guide 13 drain float. If the float is
+  3. The primary safety device is Guide 13 float × 3 + relay. If the float is
      still up after the pump should be off, it opens the pump relay.
      A second timer that only restarts a stopped pump does not stop a stuck-ON flood.
 

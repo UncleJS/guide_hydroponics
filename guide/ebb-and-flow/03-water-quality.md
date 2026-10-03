@@ -266,7 +266,7 @@ Outdoor systems have a natural advantage: free, soft, near-pure water falls from
 flowchart TD
     A["Roof area (any pitch)"] -->|rainwater| B["Guttering"]
     B --> C["First-flush diverter<br/>discards first 1.3-2.6 US gal per 270 ft2 of roof<br/>removes the initial dirty wash-off"]
-    C --> D["Rainwater butt or IBC<br/>53-264 US gal"]
+    C --> D["Rain barrel or IBC<br/>53-264 US gal"]
     D --> E["Outlet tap or siphon hose"]
     E --> F["Reservoir fill"]
     D:::tank

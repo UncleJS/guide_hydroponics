@@ -244,7 +244,7 @@ This is a uniquely important E&F maintenance task. Manually observe one complete
 
   Step 3 — Flood plateau:
   □ During flood, solution should remain steady at overflow height
-  □ Listen — pump should maintain a steady hum (not laboured)
+  □ Listen — pump should maintain a steady hum (not labored)
 
   Step 4 — Drain phase:
   □ When pump stops, time the drain
@@ -307,7 +307,7 @@ Salt buildup in LECA is a defining maintenance issue for Ebb & Flow — it does 
   WEEKLY ALGAE CHECK:
 
   [ ] Inspect table corners and walls below waterline (where algae grows first)
-  [ ] Check overflow fitting tube interior — shine a torch through
+  [ ] Check overflow fitting tube interior — shine a flashlight through
   [ ] Check reservoir walls through the access lid
   [ ] Check fill/return inlet tube where it enters the table
 
@@ -740,7 +740,7 @@ Catch problems before they become crises. Add these to your daily and weekly sca
   ⚠ Table not reaching expected flood depth → pump weak, or fill port partially blocked
   ⚠ Pump running but reservoir level dropping faster than normal
     → liner leak (solution is going into the ground, not draining back)
-  ⚠ Pump sounds different (laboured, intermittent) → impeller clogged; inspect
+  ⚠ Pump sounds different (labored, intermittent) → impeller clogged; inspect
 
   SOLUTION SIGNALS:
   ⚠ EC rising faster than normal despite no nutrients added → evaporation spike
@@ -769,7 +769,7 @@ Catch problems before they become crises. Add these to your daily and weekly sca
 ---
 
 
-> **Tip:** The weekly flood and drain check is the manual version of Guide 13. The automatic version opens the pump relay if the drain float is still up after the pump should be off.
+> **Tip:** The weekly flood and drain check is the manual version of Guide 13. The automatic version opens the pump relay if any table float is still up after the pump should be off.
 
 > **Previous:** [Guide 07 — Pests and Disease](./07-pests-and-disease.md)
 
