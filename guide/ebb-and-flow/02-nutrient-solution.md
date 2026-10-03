@@ -158,7 +158,7 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 
 | Crop | Seedling | Vegetative | Fruiting | Maximum |
 |------|----------|-----------|---------|---------|
-| Lettuce | 0.6–0.8 | 0.8–1.4 | 1.2–1.8 | 2.0 |
+| Lettuce | 0.6–0.8 | 0.8–1.4 | 1.2–1.8 | 1.8 |
 | Spinach | 0.8–1.0 | 1.4–2.0 | 1.8–2.2 | 2.5 |
 | Basil | 0.8–1.0 | 1.0–1.8 | 1.4–2.0 | 2.2 |
 | Cilantro/parsley | 0.8–1.0 | 1.2–1.6 | — | 1.8 |
@@ -167,8 +167,8 @@ In NFT, roots are bathed continuously in the nutrient solution — any osmotic s
 | Cherry tomatoes | 0.8–1.2 | 2.0–2.8 | 2.5–3.5 | 3.5 |
 | Peppers | 0.8–1.2 | 2.0–2.8 | 2.0–3.0 | 3.0 |
 | Cucumbers | 1.0–1.4 | 2.0–2.5 | 2.2–2.8 | 2.8 |
-| Courgette/zucchini | 1.0–1.2 | 1.8–2.4 | 2.4–3.2 | 3.8 |
-| Aubergine/eggplant | 1.0–1.4 | 2.0–2.8 | 2.8–3.5 | 4.0 |
+| Courgette/zucchini | 1.0–1.2 | 1.8–2.4 | 1.8–2.4 | 2.4 |
+| Aubergine/eggplant | 1.0–1.4 | 2.0–2.8 | 2.0–3.0 | 3.0 |
 | Strawberries | 0.8–1.0 | 1.2–1.8 | 1.6–2.2 | 2.5 |
 | Radishes (bags) | 0.8–1.0 | 1.2–1.6 | 1.4–1.8 | 2.0 |
 | Beetroot (bags) | 0.8–1.0 | 1.2–1.6 | 1.4–2.0 | 2.0 |

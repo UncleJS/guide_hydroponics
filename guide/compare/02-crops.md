@@ -265,7 +265,7 @@ LECA depth stays **5 in (13 cm)** for every table. Do not thin the bed to 1–1�
 1. Rockwool or coco plugs.  
 2. Transplant a little later (second true leaf) if you want.  
 3. Pre-soak LECA 24 hours at pH **5.8**, fill to **5 in (13 cm)**, make a **1¼–2 in (3–5 cm)** pocket.  
-4. First week: **4 floods/day**, then drop to **3×** for vegetative. Never a fifth flood.  
+4. First week: **3 floods/day** while roots establish. Move to **4×** only after a fruiting crop is established. Never a fifth flood.  
 5. Open LECA bed — no lid holes for net pots.
 
 Moving established plants between NFT and Ebb and Flow is a last resort. Expect a 3–7 day stall.

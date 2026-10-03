@@ -43,7 +43,7 @@ Estimated total build time: **8–12 hours** spread over 2–3 weekends.
 - [9. Step 6 — Electrical and Timer Setup](#9-step-6-electrical-and-timer-setup)
   - [9.1 Safety First](#91-safety-first)
   - [9.2 Timer Setup](#92-timer-setup)
-  - [9.3 Air Pump (Optional but Recommended)](#93-air-pump-optional-but-recommended)
+  - [9.3 Air Pump (Recommended in Both Tanks)](#93-air-pump-recommended-in-both-tanks)
 - [10. Step 7 — System Test (Water Only)](#10-step-7-system-test-water-only)
   - [10.1 Water Test Procedure](#101-water-test-procedure)
   - [10.2 Common Test Failures and Fixes](#102-common-test-failures-and-fixes)

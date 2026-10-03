@@ -968,8 +968,8 @@ In firmware (Arduino/ESP-IDF):
   bool table1_flooded = (table1_state == LOW);
 
 Physical mounting:
-  Drill 8–10mm hole in table WALL (not floor) at the desired
-  trigger height (3–4cm above the table floor — well below the flood
+  Drill 5/16–⅜ in (8–10 mm) hole in table WALL (not floor) at the desired
+  trigger height (1¼–1½ in / 3–4 cm above the table floor — well below the flood
   waterline, but high enough to read DRY once the table has drained;
   keep a small pocket in the LECA clear so the float moves freely).
   Feed cable through a PG7 cable gland.
@@ -1874,7 +1874,7 @@ TIMER WEATHERPROOFING RULES:
    the power cable into the housing from above.
 
 2. USE A DEDICATED WEATHERPROOF ENCLOSURE:
-   → IP65-rated outdoor enclosure, minimum 200mm × 150mm × 100mm
+   → IP65-rated outdoor enclosure, minimum 8 in × 6 in × 4 in (200 mm × 150 mm × 100 mm)
    → Mount on vertical surface so rain runs OFF, not into
    → All cable entries at bottom of enclosure only
    → Leave ventilation gap at bottom for condensation escape

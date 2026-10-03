@@ -12,7 +12,7 @@ Managing climate is the single greatest challenge of outdoor hydroponic growing.
 
 - [1. The Outdoor Climate Challenge](#1-the-outdoor-climate-challenge)
   - [Key variables to monitor outdoors](#key-variables-to-monitor-outdoors)
-- [2. Temperate Seasonal Calendar](#2-temperate-seasonal-calendar)
+- [2. Seasonal Calendar for This Site](#2-seasonal-calendar-for-this-site)
   - [Grow window by zone](#grow-window-by-zone)
   - [Season phases](#season-phases)
 - [3. Temperature Effects on the Hydroponic System](#3-temperature-effects-on-the-hydroponic-system)

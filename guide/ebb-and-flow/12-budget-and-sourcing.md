@@ -122,8 +122,8 @@ The flood tables are the largest variable cost item in the E&F system. You can b
 
 | Item | Tier 1 (Budget) | Tier 2 (Mid) | Tier 3 (Premium) |
 |---|---|---|---|
-| **Timber (150mm × 25mm PAR sides, per table × 3)** | $21 — basic pine | $30 — exterior treated | $45 — smooth hardwood |
-| **Timber (50mm × 50mm base ribs, per table × 3)** | $9 | $12 | $15 |
+| **Timber (6 in × 1 in / 150 mm × 25 mm PAR sides, per table × 3)** | $21 — basic pine | $30 — exterior treated | $45 — smooth hardwood |
+| **Timber (2 in × 2 in / 50 mm × 50 mm base ribs, per table × 3)** | $9 | $12 | $15 |
 | **Plywood base 9mm exterior (per table × 3)** | $24 — basic ply | $33 — good exterior ply | $42 — marine ply |
 | **EPDM pond liner 1.7m × 1.1m (per table × 3)** | $30 — PVC liner, thinner grade | $54 — EPDM 0.75mm (3 pieces) | $72 — EPDM 1.0mm, premium |
 | **Pond liner tape (2 rolls)** | $12 | $16 | $20 |
@@ -173,10 +173,10 @@ Each table has two different fittings. The overflow is 1½ in (40 mm), with a st
 
 | Item | Tier 1 | Tier 2 | Tier 3 |
 |---|---|---|---|
-| **25mm LDPE supply hose (4m)** | $6 | $7 | $8 |
-| **32mm flexible drain hose (4m)** | $8 | $10 | $13 |
-| **25mm T-junctions × 2 (supply manifold)** | $6 — irrigation Ts | $8 | $10 |
-| **32mm T-junctions × 2 (drain manifold)** | $6 | $8 | $10 |
+| **1 in (25 mm) LDPE supply hose (13 ft / 4 m)** | $6 | $7 | $8 |
+| **1¼ in (32 mm) flexible drain hose (13 ft / 4 m)** | $8 | $10 | $13 |
+| **1 in (25 mm) T-junctions × 2 (supply manifold)** | $6 — irrigation Ts | $8 | $10 |
+| **1¼ in (32 mm) T-junctions × 2 (drain manifold)** | $6 | $8 | $10 |
 | **25mm inline ball valves (3×, one per table supply)** | $9 — tap valves | $12 — proper ball valves | $18 — quality brass ball valves |
 | **Barbed hose fittings + reducers (assorted pack)** | $5 | $7 | $9 |
 | **Hose clips (bag of 20)** | $4 | $5 | $6 |

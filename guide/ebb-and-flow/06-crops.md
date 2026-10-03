@@ -165,7 +165,7 @@ Each crop entry includes:
 | **Light (DLI)** | Minimum 8; optimal 12–17 mol/m²/day |
 | **Seed-to-harvest** | 28–35 days to first cut; continues producing for 4–6 weeks |
 | **Spacing** | 8 in (20 cm) on centre — tighter spacing fine with cut-and-come-again |
-| **Harvest method** | Cut outer leaves 2–3cm above media surface — do not cut growing tip |
+| **Harvest method** | Cut outer leaves ¾–1¼ in (2–3 cm) above media surface — do not cut growing tip |
 | **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
@@ -283,7 +283,7 @@ Each crop entry includes:
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 28–35 days from cutting/transplant (mint is propagated from cuttings, not seed) |
 | **Spacing** | 8–10 in (20–25 cm) on centre; stolons spread but are contained by net pot |
-| **Harvest method** | Cut stems 5–7cm above media surface; regrows vigorously |
+| **Harvest method** | Cut stems 2–2¾ in (5–7 cm) above media surface; regrows vigorously |
 | **Net pot** | 2 in (51 mm) (3 in / 76 mm preferred — mint's root system is vigorous) |
 
 **E&F-specific tips:**
@@ -306,7 +306,7 @@ Each crop entry includes:
 | **Light (DLI)** | Minimum 8; optimal 12–16 mol/m²/day |
 | **Seed-to-harvest** | 30–40 days from transplant; continuous harvest for the season |
 | **Spacing** | 6–8 in (15–20 cm) on centre |
-| **Harvest method** | Snip to 2–5cm above media surface with scissors — regrows repeatedly |
+| **Harvest method** | Snip to ¾–2 in (2–5 cm) above media surface with scissors — regrows repeatedly |
 | **Net pot** | 2 in (51 mm) |
 
 **E&F-specific tips:**
@@ -563,7 +563,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **Temperature** | 61–72°F (16–22°C) |
 | **Light (DLI)** | 10–15 mol/m²/day |
 | **Seed-to-harvest** | 6–10 days (fastest microgreen in the system) |
-| **Harvest method** | Cut 1–2cm above media surface |
+| **Harvest method** | Cut ⅜–¾ in (1–2 cm) above media surface |
 
 **Tips:** Radish microgreens are the fastest crop in the system — a new tray every 7 days is achievable. Spicy flavour intensifies in cooler conditions. Use after harvest immediately — shelf life 3–4 days refrigerated.
 
@@ -617,7 +617,7 @@ Standard crops get **plain water at pH 5.8–6.2**. No nutrients. **Sunflower an
 | **Temperature** | 61–72°F (16–22°C) |
 | **Light (DLI)** | 10–18 mol/m²/day |
 | **Seed-to-harvest** | 7–10 days (first cut); regrows for a second cut |
-| **Harvest method** | Cut 1–2cm above media surface; allow to regrow for second harvest |
+| **Harvest method** | Cut ⅜–¾ in (1–2 cm) above media surface; allow to regrow for second harvest |
 
 **Tips:** Pre-soak wheat berries for 8–12 hours. Harvest before jointing (before second leaf appears from the same sheath as the first). Juice or blend immediately after harvest — wheatgrass loses nutritional quality rapidly after cutting.
 

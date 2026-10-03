@@ -563,8 +563,8 @@ This is the standard transplant method: seedlings germinated in rockwool cubes a
 ```mermaid
 flowchart TD
     A["Rockwool cube — seedling ready<br/>(2–3 true leaves, roots emerging from cube)"]
-    B["Select correct net pot size<br/>(50mm for greens/herbs, 75mm for fruiting crops)"]
-    C["Add 2–3cm of prepared LECA to net pot base"]
+    B["Select correct net pot size<br/>(2 in / 50 mm for greens/herbs, 3 in / 75 mm for fruiting crops)"]
+    C["Add ¾–1¼ in (2–3 cm) of prepared LECA to net pot base"]
     D["Place rockwool cube in net pot<br/>(cube sits in LECA, roots pointing down)"]
     E["Fill remaining space around cube with LECA<br/>(do not compact — light fill only)"]
     F["Place net pot in flood table at correct spacing"]

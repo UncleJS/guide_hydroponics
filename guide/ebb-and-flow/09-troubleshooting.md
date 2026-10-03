@@ -571,7 +571,7 @@ The most common E&F error is misdiagnosing a flood cycle problem as a nutrient d
 
   3. EC TOO HIGH OR LOW
      Out-of-range EC causes blossom stress: flowers abort rather than set.
-     Fix: Check EC — target 2.0–3.5 for tomatoes/peppers in fruit set.
+     Fix: Check EC — tomato fruiting 2.5–3.5 mS/cm; pepper fruiting 2.0–3.0 mS/cm. Do not run peppers at the tomato ceiling.
 
   4. FLOOD STRESS DURING FLOWERING
      Inconsistent flood cycles during bloom (missed floods, over-flooding)
